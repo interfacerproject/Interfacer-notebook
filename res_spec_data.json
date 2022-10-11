@@ -1,0 +1,32 @@
+{
+    "soap": {
+        "note": "Specification for soap to be used to wash the gowns",
+        "classification": "https://www.wikidata.org/wiki/Q34396",
+        "defaultUnit": "061WC6WV208402MC1QHRCYC2QM",
+        "id": "061WCDTECPXMY2BQVYEECGPGGR"
+    },
+    "water": {
+        "note": "Specification for water to be used to wash the gowns",
+        "classification": "https://www.wikidata.org/wiki/Q283",
+        "defaultUnit": "061WC6WVR5V019D96Z9MPJQEWW",
+        "id": "061WCFC77MQR60BAVTMGWV7G8W"
+    },
+    "cotton": {
+        "note": "Specification for cotton to be used to sew the gowns",
+        "classification": "https://www.wikidata.org/wiki/Q11457",
+        "defaultUnit": "061WC6WV208402MC1QHRCYC2QM",
+        "id": "061WCFC7WRDYSYY52S77NACW20"
+    },
+    "gown": {
+        "note": "Specification for gowns",
+        "classification": "https://www.wikidata.org/wiki/Q89990310",
+        "defaultUnit": "061WC64TFKPSFQAXRHYNYCN2KM",
+        "id": "061WCFC8H7C59SBPK79KNGE5QW"
+    },
+    "surgical_operation": {
+        "note": "Specification for surgical operations",
+        "classification": "https://www.wikidata.org/wiki/Q600236",
+        "defaultUnit": "061WC6WWDMJFBZWAFFQ6FT419M",
+        "id": "061WCFC97KQZXJXY73XZXZ69HW"
+    }
+}
