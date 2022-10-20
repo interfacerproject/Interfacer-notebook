@@ -56,10 +56,10 @@ First, use the provided Python script to inizialise the templates to the endpoin
 ```
 python make_files.py -e <your endpoint>
 ```
-**IMPORTANT**: this must be the same (literally) endpoint you also specify in the first cell of the notebook.
+**IMPORTANT**: this must be the same (literally) endpoint you also specify in the first cell of the notebook.  
 
-Run this when you are using an endpoint for the first time, or it might overwrite your existing conf files.
+Run this when you are using an endpoint for the first time. The script will not overwrite existing files, so if you want to reset the conf files you need to delete them manually.
 
-You should edit the `cred_users.<encoded_endpoint>.json` with the data for your 2 users.
+Subsequently, you should edit the `cred_users.<encoded_endpoint>.json` with the data for your 2 users.
 
 At this point you should be able to run all the notebook and inspect the data it generates.
