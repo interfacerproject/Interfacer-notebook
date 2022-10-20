@@ -1,0 +1,18 @@
+{
+    "piece": {
+        "label": "u_piece",
+        "symbol": "om2:one"
+    },
+    "mass": {
+        "label": "kg",
+        "symbol": "om2:kilogram"
+    },
+    "volume": {
+        "label": "lt",
+        "symbol": "om2:litre"
+    },
+    "time": {
+        "label": "h",
+        "symbol": "om2:hour"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "soap": {
+        "note": "Specification for soap to be used to wash the gowns",
+        "classification": "https://www.wikidata.org/wiki/Q34396"
+    },
+    "water": {
+        "note": "Specification for water to be used to wash the gowns",
+        "classification": "https://www.wikidata.org/wiki/Q283"
+    },
+    "cotton": {
+        "note": "Specification for cotton to be used to sew the gowns",
+        "classification": "https://www.wikidata.org/wiki/Q11457"
+    },
+    "gown": {
+        "note": "Specification for gowns",
+        "classification": "https://www.wikidata.org/wiki/Q89990310"
+    },
+    "surgical_operation": {
+        "note": "Specification for surgical operations",
+        "classification": "https://www.wikidata.org/wiki/Q600236"
+    }
+}
