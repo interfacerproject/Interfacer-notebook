@@ -1,0 +1,27 @@
+{
+    "one": {
+        "userChallenges": {
+            "whereParentsMet": "London",
+            "nameFirstPet": "Fuffy",
+            "nameFirstTeacher": "Jim",
+            "whereHomeTown": "Paris",
+            "nameMotherMaid": "Wright"
+        },
+        "name": "User One",
+        "username": "user1_username",
+        "email": "user1@example.org",
+        "note": "me.user1.org"    },
+    "two": {
+        "userChallenges": {
+            "whereParentsMet": "Amsterdam",
+            "nameFirstPet": "Toby",
+            "nameFirstTeacher": "Juliet",
+            "whereHomeTown": "Rome",
+            "nameMotherMaid": "Banks"
+        },
+        "name": "User Two",
+        "username": "user2",
+        "email": "user2@example.org",
+        "note": "me.user2.org"
+    }
+}
