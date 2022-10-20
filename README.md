@@ -51,17 +51,15 @@ Clicking on `interfacer.ipynb` will open the notebook in another tab.
 # Running the code
 The notebook reads some JSON files in order to have information about the users that need to be created, the locations, the resource specifications and the units used to quantify the resources. In the repo we provide template files called `*_example.json`.  
 
-First, you should copy the file `cred_users_example.json` to `.cred_users.json` and edit it to change the data of your 2 users.  
+First, use the provided Python script to inizialise the templates to the endpoint you want to use:
 
-Then you should copy or rename each example file to the same name without example:
 ```
-cp cred_users_example.json .cred_users.json
-# edit .cred_users.json with your data
+python make_files.py -e <your endpoint>
+```
+**IMPORTANT**: this must be the same (literally) endpoint you also specify in the first cell of the notebook.
 
-# the following files do not need editing
-cp loc_users_example.json loc_users.json
-cp res_spec_data_example.json res_spec_data.json
-cp units_data_example.json units_data.json
-```
+Run this when you are using an endpoint for the first time, or it might overwrite your existing conf files.
+
+You should edit the `cred_users.<encoded_endpoint>.json` with the data for your 2 users.
 
 At this point you should be able to run all the notebook and inspect the data it generates.
