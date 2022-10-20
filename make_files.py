@@ -3,6 +3,7 @@ import glob
 import argparse
 from six import text_type
 import shutil
+import os
     
 
 
@@ -15,11 +16,12 @@ def copy_files():
     files = glob.glob('*_example.json')
     for afile in files:
         new_file = get_filename(afile)
-        print(f'cp {afile} {new_file}')
-        shutil.copyfile(afile, new_file)
-        
-        
-    
+        if os.path.isfile(new_file):
+            print(f"{new_file} exists. Skipping")
+        else:
+            print(f'cp {afile} {new_file}')
+            shutil.copyfile(afile, new_file)
+            
     
 if __name__ == '__main__':
 
