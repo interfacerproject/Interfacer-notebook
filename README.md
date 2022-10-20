@@ -56,6 +56,9 @@ First, you should copy the file `cred_users_example.json` to `.cred_users.json` 
 Then you should copy or rename each example file to the same name without example:
 ```
 cp cred_users_example.json .cred_users.json
+# edit .cred_users.json with your data
+
+# the following files do not need editing
 cp loc_users_example.json loc_users.json
 cp res_spec_data_example.json res_spec_data.json
 cp units_data_example.json units_data.json
