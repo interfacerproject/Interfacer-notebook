@@ -1,0 +1,20 @@
+{
+    "one": {
+        "name": "OLVG",
+        "lat": 52.35871773455108,
+        "long": 4.916762398221842,
+        "addr": "Oosterpark 9, 1091 AC Amsterdam",
+        "note": "location.user1.org",
+        "id": "061YBTD5523BCFXN51CK1QC35G",
+        "user_id": "061YBSQ55V0XBSJBJHKH5KHGEW"
+    },
+    "two": {
+        "name": "CleanLease",
+        "lat": 51.47240440868687,
+        "long": 5.412460440524406,
+        "addr": "De schakel 30, 5651 Eindhoven",
+        "note": "location.user2.org",
+        "id": "061YBTD5T68NYG7WT9CJ6GX1YW",
+        "user_id": "061YBSQ5RFV35X37DDE16SYAAR"
+    }
+}
