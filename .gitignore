@@ -1,5 +1,5 @@
 .credentials.json
-.cred_users.json
-loc_users.json
-res_spec_data.json
-units_data.json
+cred_users.*.json
+loc_users.*.json
+res_spec_data.*.json
+units_data.*.json
