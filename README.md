@@ -39,6 +39,7 @@ pip install notebook
  pip install requests zenroom
  
  ```
+ **NOTE** at the moment the zenroom package is not up-to-date, you might need to install it from source.
  
 start jupyter notebook with:
 ```
