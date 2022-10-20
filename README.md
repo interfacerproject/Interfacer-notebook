@@ -35,6 +35,10 @@ Then proceed to install jupyter notebook:
 pip install notebook
 ```
  and the required packages:
+ ```
+ pip install requests zenroom
+ 
+ ```
  
 start jupyter notebook with:
 ```
@@ -56,3 +60,4 @@ cp res_spec_data_example.json res_spec_data.json
 cp units_data_example.json units_data.json
 ```
 
+At this point you should be able to run all the notebook and inspect the data it generates.
