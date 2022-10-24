@@ -17,7 +17,7 @@ The flow expressed according to Value Flows is represented by the following pict
 The notebook implements a part of it which concerns the agents `hospital` and `Textile Company` (called the cleaner in the notebook).
 
 # Installation
-Here the step by step installation:
+We assume you have python 3 installed on your system. Here the step by step installation:
 
 ```
 git clone <this repo>
@@ -28,18 +28,21 @@ It is better to create a virtual environment (for example with [miniconda](https
 conda create -n <name of env> python==3.9
 conda activate <name of env>
 ```
-Note that we use python 3.9 but we have not tested the code with other versions, the code should work also with other versions.
+Note that we use python 3.9 but we have not tested the code with other versions, the code should work also with other versions.  
 
-Then proceed to install jupyter notebook:
+If you have chosen not to install a virtual environment, use `pip3` instead of `pip` in the following commands.  
+
+Proceed to install jupyter notebook:
 ```
 pip install notebook
 ```
  and the required packages:
  ```
- pip install requests zenroom
+ pip install requests
+ pip install -U zenroom --pre
  
  ```
- **NOTE** at the moment the zenroom package is not up-to-date, you might need to install it from source.
+The latter will install the latest version of zenroom.
  
 start jupyter notebook with:
 ```
