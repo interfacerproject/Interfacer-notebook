@@ -35,11 +35,13 @@ If you have chosen not to install a virtual environment, use `pip3` instead of `
 Proceed to install jupyter notebook:
 ```
 pip install notebook
+#or pip3 install notebook if not using conda
 ```
  and the required packages:
  ```
  pip install requests
  pip install -U zenroom --pre
+ # or pip3 install requests and pip3 install -U zenroom --pre if not using conda
  
  ```
 The latter will install the latest version of zenroom.
@@ -48,8 +50,14 @@ start jupyter notebook with:
 ```
 jupyter notebook
 ```
+(if jupyer is not on your path, try search for it in your home directory, for example `~/.local/bin/jupyter notebook`)  
+
 A browser should open (or you should open it with the url indicated on the command line output).  
-Clicking on `interfacer.ipynb` will open the notebook in another tab.
+Jupyter notebook opens in the directory you launched it from.  
+![Notebook homepage](/img/homepage.png?raw=true "Notebook homepage")  
+
+Make sure you are in the Interfacer-notebook folder and click on `interfacer.ipynb` to open the notebook in another tab.  
+![notebook](/img/notebook.png?raw=true "Notebook start of page")  
 
 # Running the code
 The notebook reads some JSON files in order to have information about the users that need to be created, the locations, the resource specifications and the units used to quantify the resources. In the repo we provide template files called `*_example.json`.  
