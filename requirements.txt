@@ -71,5 +71,5 @@ urllib3==1.26.12
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==4.0.3
-zenroom==2.1.0.dev1665505728
+zenroom==2.1.0.dev1666872628
 zipp==3.8.1
