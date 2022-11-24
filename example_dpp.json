@@ -1,0 +1,178 @@
+{
+    "id": "062AKE93SPWNBRYE9E47A9ZGG4",
+    "name": "gown",
+    "children": [
+      {
+        "type": "EconomicEvent",
+        "id": "062AKE96HC545CKMNP087AVDC0",
+        "children": [
+          {
+            "type": "Process",
+            "id": "062AKE8Z16MM9JSS8KXNSQCGGC",
+            "children": [
+              {
+                "type": "EconomicEvent",
+                "id": "062AKE94EBKCCY6YWVYCD6HNDW",
+                "children": [
+                  {
+                    "type": "EconomicResource",
+                    "id": "062AKE93SPWNBRYE9E47A9ZGG4",
+                    "children": [
+                      {
+                        "type": "EconomicEvent",
+                        "id": "062AKE93R902TAR8VTX92QGTW8",
+                        "children": [
+                          {
+                            "type": "EconomicResource",
+                            "id": "062AKE9151GXYPRNW3GY6E5EP8",
+                            "children": [
+                              {
+                                "type": "EconomicEvent",
+                                "id": "062AKE9315RKDFRC6YZ21A2XZG",
+                                "children": [
+                                  {
+                                    "type": "Process",
+                                    "id": "062AKE8YD2219BA5MDS2G7NGRG",
+                                    "children": [
+                                      {
+                                        "type": "EconomicEvent",
+                                        "id": "062AKE91SXHP6JNWW1QNCXAAEW",
+                                        "children": [],
+                                        "name": "work"
+                                      },
+                                      {
+                                        "type": "EconomicEvent",
+                                        "id": "062AKE92CK2KWKWWYH0WPR7P2R",
+                                        "children": [
+                                          {
+                                            "type": "EconomicResource",
+                                            "id": "062AKE9151GXYPRNW3GY6E5EP8",
+                                            "children": [
+                                              {
+                                                "type": "EconomicEvent",
+                                                "id": "062AKE914D8PD688C0GGE8QH1M",
+                                                "children": [
+                                                  {
+                                                    "type": "EconomicResource",
+                                                    "id": "062AKE90E02WYJX5PR026X5MXM",
+                                                    "children": [
+                                                      {
+                                                        "type": "EconomicEvent",
+                                                        "id": "062AKE90DMVE2YXXG2G3F66S60",
+                                                        "children": [
+                                                          {
+                                                            "type": "Process",
+                                                            "id": "062AKE8XTC9QY4AJG4CQCSKXN4",
+                                                            "children": [
+                                                              {
+                                                                "type": "EconomicEvent",
+                                                                "id": "062AKE8ZQ5A310PQ4T26E1Z4JW",
+                                                                "children": [
+                                                                  {
+                                                                    "type": "EconomicResource",
+                                                                    "id": "062AKE8X08TNWYEZ47HJ2S1D2G",
+                                                                    "children": [
+                                                                      {
+                                                                        "type": "EconomicEvent",
+                                                                        "id": "062AKE8WZHY8M32K5VHDPT6PDR",
+                                                                        "children": [],
+                                                                        "name": "raise"
+                                                                      }
+                                                                    ],
+                                                                    "note": null,
+                                                                    "trackingIdentifier": "cotton-1767"
+                                                                  }
+                                                                ],
+                                                                "name": "consume"
+                                                              }
+                                                            ],
+                                                            "note": "Sew gown process performed by User One"
+                                                          }
+                                                        ],
+                                                        "name": "produce"
+                                                      }
+                                                    ],
+                                                    "note": null,
+                                                    "trackingIdentifier": "gown-4729"
+                                                  }
+                                                ],
+                                                "name": "transferCustody"
+                                              }
+                                            ],
+                                            "note": null,
+                                            "trackingIdentifier": "gown-4729"
+                                          }
+                                        ],
+                                        "name": "accept"
+                                      }
+                                    ],
+                                    "note": "Use gown process performed by User One"
+                                  }
+                                ],
+                                "name": "modify"
+                              }
+                            ],
+                            "note": null,
+                            "trackingIdentifier": "gown-4729"
+                          }
+                        ],
+                        "name": "transferCustody"
+                      }
+                    ],
+                    "note": null,
+                    "trackingIdentifier": "gown-4729"
+                  }
+                ],
+                "name": "accept"
+              },
+              {
+                "type": "EconomicEvent",
+                "id": "062AKE954XE4D36KYVB7V35SXW",
+                "children": [
+                  {
+                    "type": "EconomicResource",
+                    "id": "062AKE8WBHCEJWA61CRSXV3ZZC",
+                    "children": [
+                      {
+                        "type": "EconomicEvent",
+                        "id": "062AKE8WB5HDJE6HQMM64FFKJ4",
+                        "children": [],
+                        "name": "raise"
+                      }
+                    ],
+                    "note": null,
+                    "trackingIdentifier": "water-1227"
+                  }
+                ],
+                "name": "consume"
+              },
+              {
+                "type": "EconomicEvent",
+                "id": "062AKE95TZEMVDK4V2KC83QC1G",
+                "children": [
+                  {
+                    "type": "EconomicResource",
+                    "id": "062AKE8VNDSK7Q0858QWWJ9RVM",
+                    "children": [
+                      {
+                        "type": "EconomicEvent",
+                        "id": "062AKE8VMP4WJF6750DWQKFD1M",
+                        "children": [],
+                        "name": "raise"
+                      }
+                    ],
+                    "note": null,
+                    "trackingIdentifier": "soap-626"
+                  }
+                ],
+                "name": "consume"
+              }
+            ],
+            "note": "Clean gown process performed by User Two"
+          }
+        ],
+        "name": "modify"
+      }
+    ]
+  }
+  
