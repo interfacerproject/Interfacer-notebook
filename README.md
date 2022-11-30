@@ -41,7 +41,8 @@ pip install notebook
  ```
  pip install requests
  pip install -U zenroom --pre
- # or pip3 install requests and pip3 install -U zenroom --pre if not using conda
+ pip install plotly
+ # or pip3 install requests, pip3 install -U zenroom --pre and pip3 install plotly if not using conda
  
  ```
 The latter will install the latest version of zenroom.
