@@ -1,0 +1,100 @@
+Test for trace, in order of data entry
+   Adding extra tests for track, indented
+
+
+A - Alice
+A - Bob
+A - Carol
+################################################################
+# Note the following is not true,
+# since we cannot accept the same resource to the same process
+# so it seems we need different processes when the same resource
+# is involved
+################################################################
+PS - clean (use for all the cleaning processes)
+RS - gown
+RS - cotton
+RS - water
+RS - surgery work
+RS - soap
+RS - transport service # This is not used at the moment
+RS - sewing machine
+RS - shirt
+RS - shirt design
+RS - cotton scraps
+RS - cotton waste
+RS - cotton insulation
+
+E - raise cotton (100 kg, Alice)
+R - cotton
+
+E - consume cotton (25 kg, Alice)
+P - create gown
+E - produce gown (1, Alice)
+R - gown
+E - produce cotton scraps (7 kg, Alice)
+R - cotton scraps
+
+E - raise water (100 litres, Alice)
+R - water
+
+E - raise soap (30 kg, Alice)
+R - soap
+
+E - accept gown (1, Alice)
+E - consume water (25 litres, Alice)
+E - consume soap (10 kgs, Alice)
+P - clean gown
+E - modify gown (1, Alice)
+
+E - transferCustody of gown from Alice to Bob (1)
+
+E - accept gown (1, alice owns, Bob is custodian)
+E - work (surgery work, effortQuantity 5 hours, Bob)
+P - do surgery
+E - modify gown (1, alice owns, Bob is custodian)
+
+E - transferCustody of gown from Bob to Alice (1)
+
+E - accept gown (1, Alice)
+E - consume water (25 litres)
+E - consume soap (10 kgs, Alice)
+P - clean gown again
+E - modify gown (1, Alice)
+
+E - raise sewing machine (1, Carol)
+
+E - transfer cotton (10kg) from Alice to Carol
+
+E - work (effortQuantity 4h, Carol)
+P - create shirt design
+E - produce shirt design (1, Carol)
+R - shirt design
+
+E - consume cotton (5kg, Carol)
+E - cite shirt design (1, Carol)
+E - use sewing machine (3h effortQuantity, Carol)
+P - create shirt
+E - produce shirt (2, Carol)
+R - shirt
+
+E - lower cotton (2 kg, Carol)
+
+E - transfer shirt (1) from Carol to Alice
+
+E - accept gown (1, Alice)
+E - accept shirt (1, Alice)
+E - consume soap (10 kgs, Alice)
+P - clean gown and shirt (Clean_textile process, different process from previous ones)
+E - modify gown (1, Alice)
+E - modify shirt (1, Alice)
+
+E - consume cotton scraps (7kg, Alice)
+P - make cotton insulation
+E - produce cotton insulation (6 kg, Alice)
+E - produce cotton waste (1 kg, Alice)
+R - cotton waste
+
+E - transfer cotton waste (1 kg) Alice to Bob, new resource
+R - cotton waste (Bob)
+  
