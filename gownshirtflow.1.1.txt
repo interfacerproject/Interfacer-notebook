@@ -1,6 +1,7 @@
-Test for trace, in order of data entry
-   Adding extra tests for track, indented
+Test: gownshirtflow
+Version: 1.1
 
+Test for trace, in order of data entry
 
 A - Alice
 A - Bob
