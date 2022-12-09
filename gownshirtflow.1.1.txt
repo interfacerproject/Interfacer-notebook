@@ -6,12 +6,6 @@ Test for trace, in order of data entry
 A - Alice
 A - Bob
 A - Carol
-################################################################
-# Note the following is not true,
-# since we cannot accept the same resource to the same process
-# so it seems we need different processes when the same resource
-# is involved
-################################################################
 PS - clean (use for all the cleaning processes)
 RS - gown
 RS - cotton
