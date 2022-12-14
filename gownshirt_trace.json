@@ -1,8 +1,8 @@
 [
   {
-    "id": "062GS8V665YG4HVK8S1MTXRJZC",
+    "id": "062H0E2H1PAH8EEGZBE52DWKCG",
     "name": "gown",
-    "trackingIdentifier": "gown-4813",
+    "trackingIdentifier": "gown-4207",
     "type": "EconomicResource",
     "primaryAccountable": "Alice",
     "custodian": "Alice",
@@ -11,7 +11,7 @@
     "onhandQuantity": "1 (om2:one)",
     "children": [
       {
-        "id": "062GS8VHY5HFF1BVWEAH0ATH8W",
+        "id": "062H0E2WF9AHYVKC63TWBFEFKM",
         "name": "modify",
         "type": "EconomicEvent",
         "provider": "Alice",
@@ -19,13 +19,13 @@
         "resourceQuantity": "1 (om2:one)",
         "children": [
           {
-            "id": "062GS8TRZTRNQZEC68Y2CVJME0",
+            "id": "062H0E24BEM3HN2DWKYNWVMGTM",
             "name": "Clean_textile",
             "type": "Process",
             "note": "Clean gown and shirt process performed by Alice",
             "children": [
               {
-                "id": "062GS8VH9PP3CFMCCY44PHC3NW",
+                "id": "062H0E2VRY1J38W5CGZMTWP1QR",
                 "name": "consume",
                 "type": "EconomicEvent",
                 "provider": "Alice",
@@ -33,9 +33,9 @@
                 "resourceQuantity": "10 (om2:kilogram)",
                 "children": [
                   {
-                    "id": "062GS8TXP00B8TCSVHNHPYGGR4",
+                    "id": "062H0E28PVZ50BAZ3TXW08JB00",
                     "name": "soap",
-                    "trackingIdentifier": "soap-6120",
+                    "trackingIdentifier": "soap-6347",
                     "type": "EconomicResource",
                     "primaryAccountable": "Alice",
                     "custodian": "Alice",
@@ -44,7 +44,7 @@
                     "onhandQuantity": "0 (om2:kilogram)",
                     "children": [
                       {
-                        "id": "062GS8TXNTFZ1HR1XEC8YMNMJW",
+                        "id": "062H0E28PF70PZWVCJ4ZH9J55G",
                         "name": "raise",
                         "type": "EconomicEvent",
                         "provider": "Alice",
@@ -57,7 +57,39 @@
                 ]
               },
               {
-                "id": "062GS8VGHXH0JNYMD7HFZDBJYM",
+                "id": "062H0E2V4PWRSF0XZZPM0MM79C",
+                "name": "consume",
+                "type": "EconomicEvent",
+                "provider": "Alice",
+                "receiver": "Alice",
+                "resourceQuantity": "20 (om2:litre)",
+                "children": [
+                  {
+                    "id": "062H0E283YNP9CEP0X400RC3GR",
+                    "name": "water",
+                    "trackingIdentifier": "water-1335",
+                    "type": "EconomicResource",
+                    "primaryAccountable": "Alice",
+                    "custodian": "Alice",
+                    "metadata": null,
+                    "accountingQuantity": "0 (om2:litre)",
+                    "onhandQuantity": "0 (om2:litre)",
+                    "children": [
+                      {
+                        "id": "062H0E283SJ0Z1R6PPC7JAR4F4",
+                        "name": "raise",
+                        "type": "EconomicEvent",
+                        "provider": "Alice",
+                        "receiver": "Alice",
+                        "resourceQuantity": "60 (om2:litre)",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "062H0E2TGC8T1FNKWFJ1YQQ65W",
                 "name": "accept",
                 "type": "EconomicEvent",
                 "provider": "Alice",
@@ -65,9 +97,9 @@
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "062GS8VF71MM1M5D2XT5P9WRRG",
+                    "id": "062H0E2S5CQERZ82PWBDKEKEEG",
                     "name": "shirt",
-                    "trackingIdentifier": "shirt-755",
+                    "trackingIdentifier": "shirt-7803",
                     "type": "EconomicResource",
                     "primaryAccountable": "Alice",
                     "custodian": "Alice",
@@ -76,7 +108,7 @@
                     "onhandQuantity": "1 (om2:one)",
                     "children": [
                       {
-                        "id": "062GS8VJKR32M7F5G1N2M1QBDC",
+                        "id": "062H0E2X5W2ANGQWZ3YPRJ5J4W",
                         "name": "modify",
                         "type": "EconomicEvent",
                         "provider": "Alice",
@@ -85,7 +117,7 @@
                         "children": []
                       },
                       {
-                        "id": "062GS8VF6D86WZX19D185ZYFGC",
+                        "id": "062H0E2S4PMNP52EWBYG3SEJVW",
                         "name": "transfer",
                         "type": "EconomicEvent",
                         "provider": "Carol",
@@ -102,9 +134,9 @@
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "062GS8VDW5RYVG9RSM97KVZWAW",
+                            "id": "062H0E2QZH91WCTAW6C9CHDNH4",
                             "name": "shirt",
-                            "trackingIdentifier": "shirt-755",
+                            "trackingIdentifier": "shirt-7803",
                             "type": "EconomicResource",
                             "primaryAccountable": "Carol",
                             "custodian": "Carol",
@@ -113,7 +145,7 @@
                             "onhandQuantity": "1 (om2:one)",
                             "children": [
                               {
-                                "id": "062GS8VDVX1TYYGVP8QFQP3XY8",
+                                "id": "062H0E2QYTAD0FD9KA3B35MSDG",
                                 "name": "produce",
                                 "type": "EconomicEvent",
                                 "provider": "Carol",
@@ -121,13 +153,13 @@
                                 "resourceQuantity": "2 (om2:one)",
                                 "children": [
                                   {
-                                    "id": "062GS8TV1B8Z99F80CAT06FN9M",
+                                    "id": "062H0E26G4JQ8MKC9WC9F5TPGW",
                                     "name": "Create_shirt",
                                     "type": "Process",
                                     "note": "Create shirt process performed by Carol",
                                     "children": [
                                       {
-                                        "id": "062GS8VD6DK6AMMNDC4ZFM1P7M",
+                                        "id": "062H0E2QAHQJ3AS96K7BSQCJ68",
                                         "name": "use",
                                         "type": "EconomicEvent",
                                         "provider": "Carol",
@@ -135,9 +167,9 @@
                                         "effortQuantity": "3 (om2:hour)",
                                         "children": [
                                           {
-                                            "id": "062GS8TY642AGZQ5HD04PEE2QR",
+                                            "id": "062H0E298E8TDB55YX5Y1FY5W8",
                                             "name": "sewing_machine",
-                                            "trackingIdentifier": "sewing_machine-9764",
+                                            "trackingIdentifier": "sewing_machine-4271",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Carol",
                                             "custodian": "Carol",
@@ -146,7 +178,7 @@
                                             "onhandQuantity": "1 (om2:one)",
                                             "children": [
                                               {
-                                                "id": "062GS8TY5YADWGZBD14QMP7530",
+                                                "id": "062H0E297W1TQCTVY9FXRRDGV0",
                                                 "name": "raise",
                                                 "type": "EconomicEvent",
                                                 "provider": "Carol",
@@ -159,7 +191,7 @@
                                         ]
                                       },
                                       {
-                                        "id": "062GS8VCHMZ1WMTMR5BRQJW7AW",
+                                        "id": "062H0E2PQDR2ZRFQ8Z6K0W86MW",
                                         "name": "cite",
                                         "type": "EconomicEvent",
                                         "provider": "Carol",
@@ -167,9 +199,9 @@
                                         "resourceQuantity": "1 (om2:one)",
                                         "children": [
                                           {
-                                            "id": "062GS8VB5VR2M7GVBYX6RX8E1W",
+                                            "id": "062H0E2NG0KDBZRW3Q2AXBSPT4",
                                             "name": "shirt_design",
-                                            "trackingIdentifier": "shirt_design-1101",
+                                            "trackingIdentifier": "shirt_design-2888",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Carol",
                                             "custodian": "Carol",
@@ -178,7 +210,7 @@
                                             "onhandQuantity": "1 (om2:one)",
                                             "children": [
                                               {
-                                                "id": "062GS8VB5KT8X6HNZRV4Q2FERG",
+                                                "id": "062H0E2NFNFCRPDCYH9RCXEFHC",
                                                 "name": "produce",
                                                 "type": "EconomicEvent",
                                                 "provider": "Carol",
@@ -186,13 +218,13 @@
                                                 "resourceQuantity": "1 (om2:one)",
                                                 "children": [
                                                   {
-                                                    "id": "062GS8TTGH2FFFD5GQTFD0AF6R",
+                                                    "id": "062H0E25STR39B1AZCMT8TKBGM",
                                                     "name": "Create_shirt_design",
                                                     "type": "Process",
                                                     "note": "Create shirt design process performed by Carol",
                                                     "children": [
                                                       {
-                                                        "id": "062GS8VAHGK9VKF009WQYFPXD0",
+                                                        "id": "062H0E2MY1YVFQF0C7QKW35JH0",
                                                         "name": "work",
                                                         "type": "EconomicEvent",
                                                         "provider": "Carol",
@@ -209,7 +241,7 @@
                                         ]
                                       },
                                       {
-                                        "id": "062GS8VBVY2K82T1WRC7TRW9T0",
+                                        "id": "062H0E2P2NPFVAADE1KZBJ4EV0",
                                         "name": "consume",
                                         "type": "EconomicEvent",
                                         "provider": "Carol",
@@ -217,9 +249,9 @@
                                         "resourceQuantity": "5 (om2:kilogram)",
                                         "children": [
                                           {
-                                            "id": "062GS8V9PKS4FW7CNK5EV5HTWR",
+                                            "id": "062H0E2MA4RBRSWGK6JDRG8PR0",
                                             "name": "cotton",
-                                            "trackingIdentifier": "cotton-6979",
+                                            "trackingIdentifier": "cotton-6173",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Carol",
                                             "custodian": "Carol",
@@ -228,7 +260,7 @@
                                             "onhandQuantity": "3 (om2:kilogram)",
                                             "children": [
                                               {
-                                                "id": "062GS8VEH7TJRVEWD2KKTPFPBM",
+                                                "id": "062H0E2RHRWRS5WYVN2GWHXYWG",
                                                 "name": "lower",
                                                 "type": "EconomicEvent",
                                                 "provider": "Carol",
@@ -236,9 +268,9 @@
                                                 "resourceQuantity": "2 (om2:kilogram)",
                                                 "children": [
                                                   {
-                                                    "id": "062GS8V9PKS4FW7CNK5EV5HTWR",
+                                                    "id": "062H0E2MA4RBRSWGK6JDRG8PR0",
                                                     "name": "cotton",
-                                                    "trackingIdentifier": "cotton-6979",
+                                                    "trackingIdentifier": "cotton-6173",
                                                     "type": "EconomicResource",
                                                     "primaryAccountable": "Carol",
                                                     "custodian": "Carol",
@@ -247,7 +279,7 @@
                                                     "onhandQuantity": "3 (om2:kilogram)",
                                                     "children": [
                                                       {
-                                                        "id": "062GS8V9NQQMGCMGRSAXHBG8Z4",
+                                                        "id": "062H0E2M8PW4BSZTVFC3C3ZAP0",
                                                         "name": "transfer",
                                                         "type": "EconomicEvent",
                                                         "provider": "Alice",
@@ -264,9 +296,9 @@
                                                         "resourceQuantity": "10 (om2:kilogram)",
                                                         "children": [
                                                           {
-                                                            "id": "062GS8TWMPQSA0BK8VA44JH7JR",
+                                                            "id": "062H0E27K8YXTQATNNFP7VWCXG",
                                                             "name": "cotton",
-                                                            "trackingIdentifier": "cotton-6979",
+                                                            "trackingIdentifier": "cotton-6173",
                                                             "type": "EconomicResource",
                                                             "primaryAccountable": "Alice",
                                                             "custodian": "Alice",
@@ -275,7 +307,7 @@
                                                             "onhandQuantity": "65 (om2:kilogram)",
                                                             "children": [
                                                               {
-                                                                "id": "062GS8TWM8K1KN8MMQCP7BDH18",
+                                                                "id": "062H0E27K3MP60CMX1WDJNHDM4",
                                                                 "name": "raise",
                                                                 "type": "EconomicEvent",
                                                                 "provider": "Alice",
@@ -308,7 +340,7 @@
                 ]
               },
               {
-                "id": "062GS8VFWM3YTHNNBRXQM5CRTR",
+                "id": "062H0E2SV53ZDC0N2QQ5HCNJN4",
                 "name": "accept",
                 "type": "EconomicEvent",
                 "provider": "Alice",
@@ -316,9 +348,9 @@
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "062GS8V665YG4HVK8S1MTXRJZC",
+                    "id": "062H0E2H1PAH8EEGZBE52DWKCG",
                     "name": "gown",
-                    "trackingIdentifier": "gown-4813",
+                    "trackingIdentifier": "gown-4207",
                     "type": "EconomicResource",
                     "primaryAccountable": "Alice",
                     "custodian": "Alice",
@@ -327,7 +359,7 @@
                     "onhandQuantity": "1 (om2:one)",
                     "children": [
                       {
-                        "id": "062GS8V8W2PT1797PV6EFH3YJ4",
+                        "id": "062H0E2KM0K1EMJXFMT8BH8ZHG",
                         "name": "modify",
                         "type": "EconomicEvent",
                         "provider": "Alice",
@@ -335,13 +367,13 @@
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "062GS8TRFCQC8H4WAKNWDBXCYG",
+                            "id": "062H0E23RY81YFZD07FJW6QBP0",
                             "name": "Clean_gown_2",
                             "type": "Process",
                             "note": "Clean gown second time process performed by Alice",
                             "children": [
                               {
-                                "id": "062GS8V85DX2PK9RB3RQPCTK8G",
+                                "id": "062H0E2K1W88K9QWQQXJYDQXQ4",
                                 "name": "consume",
                                 "type": "EconomicEvent",
                                 "provider": "Alice",
@@ -349,9 +381,9 @@
                                 "resourceQuantity": "10 (om2:kilogram)",
                                 "children": [
                                   {
-                                    "id": "062GS8TXP00B8TCSVHNHPYGGR4",
+                                    "id": "062H0E28PVZ50BAZ3TXW08JB00",
                                     "name": "soap",
-                                    "trackingIdentifier": "soap-6120",
+                                    "trackingIdentifier": "soap-6347",
                                     "type": "EconomicResource",
                                     "primaryAccountable": "Alice",
                                     "custodian": "Alice",
@@ -363,39 +395,29 @@
                                 ]
                               },
                               {
-                                "id": "062GS8V7GMKD2VZWTHWCET604G",
+                                "id": "062H0E2JERBSQ0J0Z487B1GZD4",
                                 "name": "consume",
                                 "type": "EconomicEvent",
                                 "provider": "Alice",
                                 "receiver": "Alice",
-                                "resourceQuantity": "25 (om2:litre)",
+                                "resourceQuantity": "20 (om2:litre)",
                                 "children": [
                                   {
-                                    "id": "062GS8TX5YPY2MR3QJVDH5M9K4",
+                                    "id": "062H0E283YNP9CEP0X400RC3GR",
                                     "name": "water",
-                                    "trackingIdentifier": "water-3975",
+                                    "trackingIdentifier": "water-1335",
                                     "type": "EconomicResource",
                                     "primaryAccountable": "Alice",
                                     "custodian": "Alice",
                                     "metadata": null,
                                     "accountingQuantity": "0 (om2:litre)",
                                     "onhandQuantity": "0 (om2:litre)",
-                                    "children": [
-                                      {
-                                        "id": "062GS8TX5MFJ0Z5XTM4GZ46X5G",
-                                        "name": "raise",
-                                        "type": "EconomicEvent",
-                                        "provider": "Alice",
-                                        "receiver": "Alice",
-                                        "resourceQuantity": "50 (om2:litre)",
-                                        "children": []
-                                      }
-                                    ]
+                                    "children": []
                                   }
                                 ]
                               },
                               {
-                                "id": "062GS8V6V5MY8VN7JACZCYEZ6C",
+                                "id": "062H0E2HQ9J16DY2BYBXV8SFR0",
                                 "name": "accept",
                                 "type": "EconomicEvent",
                                 "provider": "Alice",
@@ -403,9 +425,9 @@
                                 "resourceQuantity": "1 (om2:one)",
                                 "children": [
                                   {
-                                    "id": "062GS8V665YG4HVK8S1MTXRJZC",
+                                    "id": "062H0E2H1PAH8EEGZBE52DWKCG",
                                     "name": "gown",
-                                    "trackingIdentifier": "gown-4813",
+                                    "trackingIdentifier": "gown-4207",
                                     "type": "EconomicResource",
                                     "primaryAccountable": "Alice",
                                     "custodian": "Alice",
@@ -414,7 +436,7 @@
                                     "onhandQuantity": "1 (om2:one)",
                                     "children": [
                                       {
-                                        "id": "062GS8V65PM86QQ536SWH5AY8C",
+                                        "id": "062H0E2H15FEMWQYW4ZW9NMG9R",
                                         "name": "transferCustody",
                                         "type": "EconomicEvent",
                                         "provider": "Bob",
@@ -431,9 +453,9 @@
                                         "resourceQuantity": "1 (om2:one)",
                                         "children": [
                                           {
-                                            "id": "062GS8V3F29ZQRKJFC0861YZW8",
+                                            "id": "062H0E2EAJP1A6QDBT4WC2KMAC",
                                             "name": "gown",
-                                            "trackingIdentifier": "gown-4813",
+                                            "trackingIdentifier": "gown-4207",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Bob",
                                             "custodian": "Bob",
@@ -442,7 +464,7 @@
                                             "onhandQuantity": "0 (om2:one)",
                                             "children": [
                                               {
-                                                "id": "062GS8V5E84G58VXPKQCKJ3J4R",
+                                                "id": "062H0E2GBK6HS3AE8TPXVT28N4",
                                                 "name": "modify",
                                                 "type": "EconomicEvent",
                                                 "provider": "Bob",
@@ -450,13 +472,13 @@
                                                 "resourceQuantity": "1 (om2:one)",
                                                 "children": [
                                                   {
-                                                    "id": "062GS8TT0E2AZGFTJD8X377774",
+                                                    "id": "062H0E25ACMM5CCX9G18K0X6B8",
                                                     "name": "Do_surgery",
                                                     "type": "Process",
                                                     "note": "Use gown in surgery process performed by Alice",
                                                     "children": [
                                                       {
-                                                        "id": "062GS8V4RCJKSD8M4XFTFVFPYG",
+                                                        "id": "062H0E2FS0AAVE0TDDK6ZRYZWG",
                                                         "name": "work",
                                                         "type": "EconomicEvent",
                                                         "provider": "Bob",
@@ -465,7 +487,7 @@
                                                         "children": []
                                                       },
                                                       {
-                                                        "id": "062GS8V444DC0T4XHHBHSRBMRG",
+                                                        "id": "062H0E2EYQ8QPBHFABKBP04BQ0",
                                                         "name": "accept",
                                                         "type": "EconomicEvent",
                                                         "provider": "Bob",
@@ -473,9 +495,9 @@
                                                         "resourceQuantity": "1 (om2:one)",
                                                         "children": [
                                                           {
-                                                            "id": "062GS8V3F29ZQRKJFC0861YZW8",
+                                                            "id": "062H0E2EAJP1A6QDBT4WC2KMAC",
                                                             "name": "gown",
-                                                            "trackingIdentifier": "gown-4813",
+                                                            "trackingIdentifier": "gown-4207",
                                                             "type": "EconomicResource",
                                                             "primaryAccountable": "Bob",
                                                             "custodian": "Bob",
@@ -484,7 +506,7 @@
                                                             "onhandQuantity": "0 (om2:one)",
                                                             "children": [
                                                               {
-                                                                "id": "062GS8V3ECBXPC8FYDA7AJNY8G",
+                                                                "id": "062H0E2E9FYM99EE8N0AER7W8R",
                                                                 "name": "transferCustody",
                                                                 "type": "EconomicEvent",
                                                                 "provider": "Alice",
@@ -501,9 +523,9 @@
                                                                 "resourceQuantity": "1 (om2:one)",
                                                                 "children": [
                                                                   {
-                                                                    "id": "062GS8TZM1FH856R72910DP66C",
+                                                                    "id": "062H0E2AHYM7SXH87ZYEM82YJ4",
                                                                     "name": "gown",
-                                                                    "trackingIdentifier": "gown-4813",
+                                                                    "trackingIdentifier": "gown-4207",
                                                                     "type": "EconomicResource",
                                                                     "primaryAccountable": "Alice",
                                                                     "custodian": "Alice",
@@ -512,7 +534,7 @@
                                                                     "onhandQuantity": "0 (om2:one)",
                                                                     "children": [
                                                                       {
-                                                                        "id": "062GS8V2SCW9521Q79AKCAAEDM",
+                                                                        "id": "062H0E2DNMX0WK67XQ1K7YWM7C",
                                                                         "name": "modify",
                                                                         "type": "EconomicEvent",
                                                                         "provider": "Alice",
@@ -520,13 +542,13 @@
                                                                         "resourceQuantity": "1 (om2:one)",
                                                                         "children": [
                                                                           {
-                                                                            "id": "062GS8TQZB1FR4QN1GR0FR7FFG",
+                                                                            "id": "062H0E23ABXSJ2NQ4F09N57CG8",
                                                                             "name": "Clean_gown_1",
                                                                             "type": "Process",
                                                                             "note": "Clean gown first time process performed by Alice",
                                                                             "children": [
                                                                               {
-                                                                                "id": "062GS8V24VVS4TW3922TH09JGC",
+                                                                                "id": "062H0E2D20B2MT0G80064J0658",
                                                                                 "name": "consume",
                                                                                 "type": "EconomicEvent",
                                                                                 "provider": "Alice",
@@ -534,9 +556,9 @@
                                                                                 "resourceQuantity": "10 (om2:kilogram)",
                                                                                 "children": [
                                                                                   {
-                                                                                    "id": "062GS8TXP00B8TCSVHNHPYGGR4",
+                                                                                    "id": "062H0E28PVZ50BAZ3TXW08JB00",
                                                                                     "name": "soap",
-                                                                                    "trackingIdentifier": "soap-6120",
+                                                                                    "trackingIdentifier": "soap-6347",
                                                                                     "type": "EconomicResource",
                                                                                     "primaryAccountable": "Alice",
                                                                                     "custodian": "Alice",
@@ -548,17 +570,17 @@
                                                                                 ]
                                                                               },
                                                                               {
-                                                                                "id": "062GS8V1GWM2BC0W2HF57AHKW8",
+                                                                                "id": "062H0E2CFZTCFCFHR47JQNRW00",
                                                                                 "name": "consume",
                                                                                 "type": "EconomicEvent",
                                                                                 "provider": "Alice",
                                                                                 "receiver": "Alice",
-                                                                                "resourceQuantity": "25 (om2:litre)",
+                                                                                "resourceQuantity": "20 (om2:litre)",
                                                                                 "children": [
                                                                                   {
-                                                                                    "id": "062GS8TX5YPY2MR3QJVDH5M9K4",
+                                                                                    "id": "062H0E283YNP9CEP0X400RC3GR",
                                                                                     "name": "water",
-                                                                                    "trackingIdentifier": "water-3975",
+                                                                                    "trackingIdentifier": "water-1335",
                                                                                     "type": "EconomicResource",
                                                                                     "primaryAccountable": "Alice",
                                                                                     "custodian": "Alice",
@@ -570,7 +592,7 @@
                                                                                 ]
                                                                               },
                                                                               {
-                                                                                "id": "062GS8V0VH07Y08PADXRS1EV08",
+                                                                                "id": "062H0E2BTR2655R7F202RCHEY8",
                                                                                 "name": "accept",
                                                                                 "type": "EconomicEvent",
                                                                                 "provider": "Alice",
@@ -578,9 +600,9 @@
                                                                                 "resourceQuantity": "1 (om2:one)",
                                                                                 "children": [
                                                                                   {
-                                                                                    "id": "062GS8TZM1FH856R72910DP66C",
+                                                                                    "id": "062H0E2AHYM7SXH87ZYEM82YJ4",
                                                                                     "name": "gown",
-                                                                                    "trackingIdentifier": "gown-4813",
+                                                                                    "trackingIdentifier": "gown-4207",
                                                                                     "type": "EconomicResource",
                                                                                     "primaryAccountable": "Alice",
                                                                                     "custodian": "Alice",
@@ -589,7 +611,7 @@
                                                                                     "onhandQuantity": "0 (om2:one)",
                                                                                     "children": [
                                                                                       {
-                                                                                        "id": "062GS8TZKQ7BCXA8TT33N8FR3G",
+                                                                                        "id": "062H0E2AHF4D741FSG2YT5DD2R",
                                                                                         "name": "produce",
                                                                                         "type": "EconomicEvent",
                                                                                         "provider": "Alice",
@@ -597,13 +619,13 @@
                                                                                         "resourceQuantity": "1 (om2:one)",
                                                                                         "children": [
                                                                                           {
-                                                                                            "id": "062GS8TSFM6JRCATNRT4PK8X98",
+                                                                                            "id": "062H0E24V1C4XRHNRXMZ3MTBXR",
                                                                                             "name": "Create_gown",
                                                                                             "type": "Process",
                                                                                             "note": "Create gown process performed by Alice",
                                                                                             "children": [
                                                                                               {
-                                                                                                "id": "062GS8TYXF5H4CJAVY0X4TFANW",
+                                                                                                "id": "062H0E29X7WPDCFEA69C70F7AC",
                                                                                                 "name": "consume",
                                                                                                 "type": "EconomicEvent",
                                                                                                 "provider": "Alice",
@@ -611,9 +633,9 @@
                                                                                                 "resourceQuantity": "25 (om2:kilogram)",
                                                                                                 "children": [
                                                                                                   {
-                                                                                                    "id": "062GS8TWMPQSA0BK8VA44JH7JR",
+                                                                                                    "id": "062H0E27K8YXTQATNNFP7VWCXG",
                                                                                                     "name": "cotton",
-                                                                                                    "trackingIdentifier": "cotton-6979",
+                                                                                                    "trackingIdentifier": "cotton-6173",
                                                                                                     "type": "EconomicResource",
                                                                                                     "primaryAccountable": "Alice",
                                                                                                     "custodian": "Alice",

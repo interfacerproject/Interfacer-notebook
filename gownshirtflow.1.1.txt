@@ -30,14 +30,14 @@ R - gown
 E - produce cotton scraps (7 kg, Alice)
 R - cotton scraps
 
-E - raise water (100 litres, Alice)
+E - raise water (60 litres, Alice)
 R - water
 
 E - raise soap (30 kg, Alice)
 R - soap
 
 E - accept gown (1, Alice)
-E - consume water (25 litres, Alice)
+E - consume water (30 litres, Alice)
 E - consume soap (10 kgs, Alice)
 P - clean gown
 E - modify gown (1, Alice)
@@ -52,7 +52,7 @@ E - modify gown (1, alice owns, Bob is custodian)
 E - transferCustody of gown from Bob to Alice (1)
 
 E - accept gown (1, Alice)
-E - consume water (25 litres)
+E - consume water (30 litres)
 E - consume soap (10 kgs, Alice)
 P - clean gown again
 E - modify gown (1, Alice)
@@ -80,6 +80,7 @@ E - transfer shirt (1) from Carol to Alice
 E - accept gown (1, Alice)
 E - accept shirt (1, Alice)
 E - consume soap (10 kgs, Alice)
+E - consume water (30 litres)
 P - clean gown and shirt (Clean_textile process, different process from previous ones)
 E - modify gown (1, Alice)
 E - modify shirt (1, Alice)
