@@ -4,7 +4,10 @@ loc_users.*.json
 res_spec_data.*.json
 units_data.*.json
 MathJax.js
-gownshirt_events.json
-gownshirt_trace.backend.json
 isogown_events.json
-isogown_trace.backend.json
+isogown_trace.list.json
+isogown_trace.tree.json
+gownshirt_events.json
+gownshirt_trace.list.json
+gownshirt_trace.tree.json
+

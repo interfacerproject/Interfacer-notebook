@@ -105,8 +105,44 @@ def check_trace_dpp(trace, assigned):
         if not found:
             print(f"NOT FOUND: {pref}")
 
+def check_betrace(tot_dpp, be_dpp):
+    # breakpoint()
+    if tot_dpp['id'] == be_dpp['node']['id']:
+        nr_ch = len(tot_dpp['children'])
+        nr_ch_be = len(be_dpp['children'])
+        if nr_ch == nr_ch_be:
+            if nr_ch == 0:
+                return
+            elif nr_ch == 1:
+                # breakpoint()
+                check_betrace(tot_dpp['children'][0], be_dpp['children'][0])
+            else:
+                for ch in tot_dpp['children']:
+                    found = False
+                    for ch_be in be_dpp['children']:
+                        if ch['id'] == ch_be['node']['id']:
+                            found = True
+                            check_betrace(ch, ch_be)
+                    if not found:
+                        print(f"Children {tot_dpp['id']} and {be_dpp['node']['id']} differ in ids")
+                        break
+                return
+        else:
+            print(f"Children of id {tot_dpp['id']} differ in number")
+            print(f"Children of back-end")
+            for ch in be_dpp['children']:
+                # breakpoint()
+                name = ch['node']['name'] if 'name' in ch['node'] else ch['node']['action_id']
+                print(f"Name: {name}, id {ch['node']['id']}")
+            print(f"Children of front-end")
+            for ch in tot_dpp['children']:
+                print(f"Name: {ch['name']}, id {ch['id']}")
+            
+    else:
+        print(f"{tot_dpp['id']} different from {be_dpp['node']['id']}")
 
-def check_traces(trace, events, tot_dpp):
+
+def check_traces(trace, events, tot_dpp, be_dpp):
     assigned = {}
     get_nodes(tot_dpp[0], assigned)
     print(BANNER)
@@ -114,14 +150,23 @@ def check_traces(trace, events, tot_dpp):
     check_duplicates(trace, events,assigned)
     check_trace_events(trace, events)
     check_trace_dpp(trace, assigned)
+    print(BANNER)
+    print("Are back-end and my trace the same?")
+
+    check_betrace(tot_dpp[0], be_dpp)
 
 
 if __name__ == "__main__":
-    with open("gownshirt_trace.json", "r") as f:
+    # pref = 'gownshirt'
+    pref = 'isogown'
+    with open(f"{pref}_trace.json", "r") as f:
         tot_dpp = json.loads(f.read())
-    with open("gownshirt_trace.backend.json", "r") as f:
+    with open(f"{pref}_trace.list.json", "r") as f:
         trace = json.loads(f.read())
-    with open("gownshirt_events.json", "r") as f:
+    with open(f"{pref}_events.json", "r") as f:
         events = json.loads(f.read())
+    with open(f"{pref}_trace.tree.json", "r") as f:
+        be_dpp = json.loads(f.read())
+
     # breakpoint()
-    check_traces(trace, events, tot_dpp)
+    check_traces(trace, events, tot_dpp, be_dpp)
