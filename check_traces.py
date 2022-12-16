@@ -1,5 +1,7 @@
 
 import json
+from pathlib import Path
+
 BANNER = "#" * 80
 
 def get_nodes(item, assigned):
@@ -105,7 +107,7 @@ def check_trace_dpp(trace, assigned):
         if not found:
             print(f"NOT FOUND: {pref}")
 
-def check_betrace(tot_dpp, be_dpp):
+def check_trace_be(tot_dpp, be_dpp):
     # breakpoint()
     if tot_dpp['id'] == be_dpp['node']['id']:
         nr_ch = len(tot_dpp['children'])
@@ -115,14 +117,14 @@ def check_betrace(tot_dpp, be_dpp):
                 return
             elif nr_ch == 1:
                 # breakpoint()
-                check_betrace(tot_dpp['children'][0], be_dpp['children'][0])
+                check_trace_be(tot_dpp['children'][0], be_dpp['children'][0])
             else:
                 for ch in tot_dpp['children']:
                     found = False
                     for ch_be in be_dpp['children']:
                         if ch['id'] == ch_be['node']['id']:
                             found = True
-                            check_betrace(ch, ch_be)
+                            check_trace_be(ch, ch_be)
                     if not found:
                         print(f"Children {tot_dpp['id']} and {be_dpp['node']['id']} differ in ids")
                         break
@@ -153,20 +155,30 @@ def check_traces(trace, events, tot_dpp, be_dpp):
     print(BANNER)
     print("Are back-end and my trace the same?")
 
-    check_betrace(tot_dpp[0], be_dpp)
+    check_trace_be(tot_dpp[0], be_dpp)
 
 
 if __name__ == "__main__":
     # pref = 'gownshirt'
-    pref = 'isogown'
-    with open(f"{pref}_trace.json", "r") as f:
-        tot_dpp = json.loads(f.read())
-    with open(f"{pref}_trace.list.json", "r") as f:
-        trace = json.loads(f.read())
-    with open(f"{pref}_events.json", "r") as f:
-        events = json.loads(f.read())
-    with open(f"{pref}_trace.tree.json", "r") as f:
-        be_dpp = json.loads(f.read())
+    p = Path('.')
+    prefs = []
+    for f in p.glob('./*_trace.json'):
+        prefs.append(f.name.split('_')[0])
+        # breakpoint()
+    
+    for pref in prefs:
+        print(BANNER)
+        print(BANNER)
+        print(f'Checking {pref}')
 
-    # breakpoint()
-    check_traces(trace, events, tot_dpp, be_dpp)
+        with open(f"{pref}_trace.json", "r") as f:
+            tot_dpp = json.loads(f.read())
+        with open(f"{pref}_trace.list.json", "r") as f:
+            trace = json.loads(f.read())
+        with open(f"{pref}_events.json", "r") as f:
+            events = json.loads(f.read())
+        with open(f"{pref}_trace.tree.json", "r") as f:
+            be_dpp = json.loads(f.read())
+
+        # breakpoint()
+        check_traces(trace, events, tot_dpp, be_dpp)
