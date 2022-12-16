@@ -12,7 +12,7 @@ This tool is written in Python and it is based on [Jupyter notebooks](https://ju
 This notebook implements a use-case defined during the [Reflow project](https://reflowproject.eu/) that focusses on making isolation gowns used in hospitals more circular. The use-case is described [here](https://reflowproject.eu/blog/the-development-of-circular-isolation-gowns-a-case-study/).  
 
 The flow expressed according to Value Flows is represented by the following picture (taken from this [repo](https://github.com/reflow-project/Amsterdam-pilot/tree/main/graphviz)):
-![Isolation Gowns Value Flows](/img/isolation_gowns.png?raw=true "Isolation Gowns Value Flows")
+![Isolation Gowns Value Flows](/img/isogowns.png?raw=true "Isolation Gowns Value Flows")
 
 The notebook implements a part of it which concerns the agents `hospital` and `Textile Company` (called the cleaner in the notebook).
 
