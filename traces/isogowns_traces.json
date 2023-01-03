@@ -1,0 +1,284 @@
+[
+  {
+    "id": "062QG5M8G6ZF8AZXTF02GD8MD4",
+    "name": "gown",
+    "trackingIdentifier": "gown-5832",
+    "type": "EconomicResource",
+    "primaryAccountable": "User Two",
+    "custodian": "User Two",
+    "metadata": null,
+    "accountingQuantity": "0 (om2:one)",
+    "onhandQuantity": "1 (om2:one)",
+    "children": [
+      {
+        "id": "062QG5MBPXXZA58M10FVYDG6GC",
+        "name": "modify",
+        "type": "EconomicEvent",
+        "provider": "User Two",
+        "receiver": "User Two",
+        "resourceQuantity": "1 (om2:one)",
+        "children": [
+          {
+            "id": "062QG5M49ZVED0TXQQT91GTSDG",
+            "name": "Clean_gown",
+            "type": "Process",
+            "note": "Clean gown process performed by User Two",
+            "children": [
+              {
+                "id": "062QG5MB31QBQ181MXVV8E8BDG",
+                "name": "consume",
+                "type": "EconomicEvent",
+                "provider": "User Two",
+                "receiver": "User Two",
+                "resourceQuantity": "50 (om2:kilogram)",
+                "children": [
+                  {
+                    "id": "062QG5M1EJPMCPS8D89WC4VF94",
+                    "name": "soap",
+                    "trackingIdentifier": "soap-9310",
+                    "type": "EconomicResource",
+                    "primaryAccountable": "User Two",
+                    "custodian": "User Two",
+                    "metadata": null,
+                    "accountingQuantity": "50 (om2:kilogram)",
+                    "onhandQuantity": "50 (om2:kilogram)",
+                    "children": [
+                      {
+                        "id": "062QG5M1E5RSFSX8MYDR0RA92R",
+                        "name": "raise",
+                        "type": "EconomicEvent",
+                        "provider": "User Two",
+                        "receiver": "User Two",
+                        "resourceQuantity": "100 (om2:kilogram)",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "062QG5MACYQD9CZCW1YZCXKC78",
+                "name": "consume",
+                "type": "EconomicEvent",
+                "provider": "User Two",
+                "receiver": "User Two",
+                "resourceQuantity": "25 (om2:litre)",
+                "children": [
+                  {
+                    "id": "062QG5M25FVJ3GMBYNCGNJVSNR",
+                    "name": "water",
+                    "trackingIdentifier": "water-1717",
+                    "type": "EconomicResource",
+                    "primaryAccountable": "User Two",
+                    "custodian": "User Two",
+                    "metadata": null,
+                    "accountingQuantity": "25 (om2:litre)",
+                    "onhandQuantity": "25 (om2:litre)",
+                    "children": [
+                      {
+                        "id": "062QG5M25289ZRA882043PM7RW",
+                        "name": "raise",
+                        "type": "EconomicEvent",
+                        "provider": "User Two",
+                        "receiver": "User Two",
+                        "resourceQuantity": "50 (om2:litre)",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "062QG5M9P8FZ5AQQKK17JH4ZWG",
+                "name": "accept",
+                "type": "EconomicEvent",
+                "provider": "User Two",
+                "receiver": "User Two",
+                "resourceQuantity": "1 (om2:one)",
+                "children": [
+                  {
+                    "id": "062QG5M8G6ZF8AZXTF02GD8MD4",
+                    "name": "gown",
+                    "trackingIdentifier": "gown-5832",
+                    "type": "EconomicResource",
+                    "primaryAccountable": "User Two",
+                    "custodian": "User Two",
+                    "metadata": null,
+                    "accountingQuantity": "0 (om2:one)",
+                    "onhandQuantity": "1 (om2:one)",
+                    "children": [
+                      {
+                        "id": "062QG5M8FFZE8QF6419MG19Z58",
+                        "name": "transferCustody",
+                        "type": "EconomicEvent",
+                        "provider": "User One",
+                        "receiver": "User Two",
+                        "atLocation": {
+                          "id": "062HANENSD6ATA2B3Q10SQE2FW",
+                          "name": "CleanLease",
+                          "alt": "0",
+                          "lat": "51.47240440868687",
+                          "long": "5.412460440524406",
+                          "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                          "note": "location.user2.org"
+                        },
+                        "resourceQuantity": "1 (om2:one)",
+                        "children": [
+                          {
+                            "id": "062QG5M62BDJ19R293WF856PD8",
+                            "name": "gown",
+                            "trackingIdentifier": "gown-5832",
+                            "type": "EconomicResource",
+                            "primaryAccountable": "User One",
+                            "custodian": "User One",
+                            "metadata": null,
+                            "accountingQuantity": "0 (om2:one)",
+                            "onhandQuantity": "0 (om2:one)",
+                            "children": [
+                              {
+                                "id": "062QG5M7W2VK5RBA66M770QX2W",
+                                "name": "modify",
+                                "type": "EconomicEvent",
+                                "provider": "User One",
+                                "receiver": "User One",
+                                "resourceQuantity": "1 (om2:one)",
+                                "children": [
+                                  {
+                                    "id": "062QG5M3SX8YG573TM310GJM2R",
+                                    "name": "Use_gown",
+                                    "type": "Process",
+                                    "note": "Use gown process performed by User One",
+                                    "children": [
+                                      {
+                                        "id": "062QG5M78K39QK5RBX2G7YFVBW",
+                                        "name": "accept",
+                                        "type": "EconomicEvent",
+                                        "provider": "User One",
+                                        "receiver": "User One",
+                                        "resourceQuantity": "1 (om2:one)",
+                                        "children": [
+                                          {
+                                            "id": "062QG5M62BDJ19R293WF856PD8",
+                                            "name": "gown",
+                                            "trackingIdentifier": "gown-5832",
+                                            "type": "EconomicResource",
+                                            "primaryAccountable": "User One",
+                                            "custodian": "User One",
+                                            "metadata": null,
+                                            "accountingQuantity": "0 (om2:one)",
+                                            "onhandQuantity": "0 (om2:one)",
+                                            "children": [
+                                              {
+                                                "id": "062QG5M61V50XRHB0TPBNGC0C8",
+                                                "name": "transferCustody",
+                                                "type": "EconomicEvent",
+                                                "provider": "User Two",
+                                                "receiver": "User One",
+                                                "atLocation": {
+                                                  "id": "062HANEN9BFWS6201ZDAZBHM9C",
+                                                  "name": "OLVG",
+                                                  "alt": "0",
+                                                  "lat": "52.35871773455108",
+                                                  "long": "4.916762398221842",
+                                                  "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                                  "note": "location.user1.org"
+                                                },
+                                                "resourceQuantity": "1 (om2:one)",
+                                                "children": [
+                                                  {
+                                                    "id": "062QG5M5FV5BK1TZ9WP7JRA4PG",
+                                                    "name": "gown",
+                                                    "trackingIdentifier": "gown-5832",
+                                                    "type": "EconomicResource",
+                                                    "primaryAccountable": "User Two",
+                                                    "custodian": "User Two",
+                                                    "metadata": null,
+                                                    "accountingQuantity": "1 (om2:one)",
+                                                    "onhandQuantity": "0 (om2:one)",
+                                                    "children": [
+                                                      {
+                                                        "id": "062QG5M5FFZGJMGH0T2QYEWS2G",
+                                                        "name": "produce",
+                                                        "type": "EconomicEvent",
+                                                        "provider": "User Two",
+                                                        "receiver": "User Two",
+                                                        "resourceQuantity": "1 (om2:one)",
+                                                        "children": [
+                                                          {
+                                                            "id": "062QG5M3A664MTQ4RV1J95T138",
+                                                            "name": "Sew_gown",
+                                                            "type": "Process",
+                                                            "note": "Sew gown process performed by User One",
+                                                            "children": [
+                                                              {
+                                                                "id": "062QG5M4VS9MB25N36N3WGE89W",
+                                                                "name": "consume",
+                                                                "type": "EconomicEvent",
+                                                                "provider": "User Two",
+                                                                "receiver": "User Two",
+                                                                "resourceQuantity": "10 (om2:kilogram)",
+                                                                "children": [
+                                                                  {
+                                                                    "id": "062QG5M2RPYFXZA1YH2RPKWNQM",
+                                                                    "name": "cotton",
+                                                                    "trackingIdentifier": "cotton-9427",
+                                                                    "type": "EconomicResource",
+                                                                    "primaryAccountable": "User Two",
+                                                                    "custodian": "User Two",
+                                                                    "metadata": null,
+                                                                    "accountingQuantity": "10 (om2:kilogram)",
+                                                                    "onhandQuantity": "10 (om2:kilogram)",
+                                                                    "children": [
+                                                                      {
+                                                                        "id": "062QG5M2R9A9E0TT0M3ZG3PK5M",
+                                                                        "name": "raise",
+                                                                        "type": "EconomicEvent",
+                                                                        "provider": "User Two",
+                                                                        "receiver": "User Two",
+                                                                        "resourceQuantity": "20 (om2:kilogram)",
+                                                                        "children": []
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "062QG5M6NHRYBH8C5BW5M3MNVG",
+                                        "name": "work",
+                                        "type": "EconomicEvent",
+                                        "provider": "User One",
+                                        "receiver": "User One",
+                                        "effortQuantity": "80 (om2:hour)",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
