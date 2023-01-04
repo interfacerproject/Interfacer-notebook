@@ -76,7 +76,7 @@ def get_HMAC(email, endpoint, newUser=True):
     if "errors" in result and len(result['errors']) > 0:
         for err in result['errors']:
             if err['message'] == "email exists":
-                return get_HMAC(email, newUser=False)
+                return get_HMAC(email, endpoint, newUser=False)
     
     return result
 
