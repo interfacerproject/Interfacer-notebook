@@ -547,7 +547,7 @@ def get_location_id(file, user_data, locs_data, user, endpoint):
             print("Response")
             print(json.dumps(res, indent=2))
 
-        result = res.json()
+        result = res
 
         if DEBUG_get_location_id:
             print("Result")
