@@ -9,12 +9,14 @@ This tool is written in Python and it is based on [Jupyter notebooks](https://ju
 }
 ```
 # Introduction
-This notebook implements a use-case defined during the [Reflow project](https://reflowproject.eu/) that focusses on making isolation gowns used in hospitals more circular. The use-case is described [here](https://reflowproject.eu/blog/the-development-of-circular-isolation-gowns-a-case-study/).  
-
-The flow expressed according to Value Flows is represented by the following picture (taken from this [repo](https://github.com/reflow-project/Amsterdam-pilot/tree/main/graphviz)):
+This repository contains notebooks for several use cases: 
+1. a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/isogowns.ipynb) defined during the [Reflow project](https://reflowproject.eu/) that focusses on making isolation gowns used in hospitals more circular. The use-case is described [here](https://reflowproject.eu/blog/the-development-of-circular-isolation-gowns-a-case-study/). The flow expressed according to Value Flows is represented by the following picture (taken from this [repo](https://github.com/reflow-project/Amsterdam-pilot/tree/main/graphviz)):
 ![Isolation Gowns Value Flows](/img/isogowns.png?raw=true "Isolation Gowns Value Flows")
 
-The notebook implements a part of it which concerns the agents `hospital` and `Textile Company` (called the cleaner in the notebook).
+    - The notebook implements a part of it which concerns the agents `hospital` and `Textile Company` (called the cleaner in the notebook).
+2. a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/gownshirt.ipynb) defined in this [file](https://github.com/interfacerproject/Interfacer-notebook/blob/main/gownshirt_flow.1.1.txt).
+3. a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/IFUsersFlows.ipynb) corresponding to the [Interfacer](https://www.interfacerproject.eu/) project's front-end [here](https://interfacer-gui-staging.dyne.org/).
+4. a flow corresponding to the [Libre Solar](https://libre.solar/) project (in progress).
 
 # Installation
 We assume you have python 3 installed on your system. Here the step by step installation:
@@ -61,17 +63,8 @@ Make sure you are in the Interfacer-notebook folder and click on `interfacer.ipy
 ![notebook](/img/notebook.png?raw=true "Notebook start of page")  
 
 # Running the code
-The notebook reads some JSON files in order to have information about the users that need to be created, the locations, the resource specifications and the units used to quantify the resources. In the repo we provide template files called `*_example.json`.  
+In one of the first cells of each use case you can customise the data for your users. Subsequently, the notebook creates some JSON files in order to store information about the users that has been created, the locations, the resource specifications and the units used to quantify the resources.
 
-First, use the provided Python script to inizialise the templates to the endpoint you want to use:
+This information is stored separately per use case and per endpoint on disk with a folder structure like \<use-case\>/\<endpoint\>/\<file\>.json.
 
-```
-python make_files.py -e <your endpoint>
-```
-**IMPORTANT**: this must be the same (literally) endpoint you also specify in the first cell of the notebook.  
-
-Run this when you are using an endpoint for the first time. The script will not overwrite existing files, so if you want to reset the conf files you need to delete them manually.
-
-Subsequently, you should edit the `cred_users.<encoded_endpoint>.json` with the data for your 2 users.
-
-At this point you should be able to run all the notebook and inspect the data it generates.
+When run again, the notebook will reuse info from existing files, avoiding recreating users,units,locations and specs that already exist. It will therefore not overwrite existing files, so if you want to reset the conf files you need to delete them manually.
