@@ -12,6 +12,31 @@ def make_sankey(srcs, trgs, lbls, vls, clr_nodes, clr_links):
 dict_node_colors = {'EconomicResource': '#e41a1c', 'EconomicEvent': '#377eb8', 'Process': '#4daf4a', 'Transfer': '#984ea3'}
 dict_link_colors = {'EconomicResource': '#fb6a4a', 'EconomicEvent': '#92c5de', 'Process': '#99d8c9', 'Transfer': '#bcbddc'}
 
+# def calc_quantity(dpp_item):
+    
+#     if 'onhandQuantity' in dpp_item:
+#         quantity = dpp_item['onhandQuantity']
+#     elif 'effortQuantity' in dpp_item:
+#         quantity = dpp_item['effortQuantity']
+#     elif 'resourceQuantity' in dpp_item:
+#         quantity = dpp_item['resourceQuantity']
+#     elif 'accounting_quantity_has_numerical_value' in dpp_item:
+#         quantity = dpp_item['accounting_quantity_has_numerical_value']
+#     elif 'onhand_quantity_has_numerical_value' in dpp_item:
+#         quantity = dpp_item['onhand_quantity_has_numerical_value']
+#     elif 'resource_quantity_has_numerical_value' in dpp_item:
+#         quantity = dpp_item['resource_quantity_has_numerical_value']
+#     elif 'effort_quantity_has_numerical_value' in dpp_item:
+#         quantity = dpp_item['effort_quantity_has_numerical_value']
+#     else:
+#         # breakpoint()
+#         quantity = '1 '
+
+#     quantity = int(quantity.split(' ')[0])
+#     quantity = max(quantity,1)
+#     return quantity
+    
+
 def calc_quantity(dpp_item):
     if 'onhandQuantity' in dpp_item:
         quantity = dpp_item['onhandQuantity']

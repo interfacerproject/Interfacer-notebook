@@ -46,18 +46,30 @@ def save_traces(use_case, tot_dpp, trace, be_dpp, event_seq):
     if not my_dir.is_dir():
         my_dir.mkdir(parents=True)
 
-    file = Path(my_dir, f'{use_case}_traces.json')
+    file = Path(my_dir, f'{use_case}_fe_trace.json')
     with open(file, "w") as f:
         f.write(json.dumps(tot_dpp, indent=2))
     
-    file = Path(my_dir, f'{use_case}_traces.list.json')
+    file = Path(my_dir, f'{use_case}_be_trace.json')
     with open(file, "w") as f:
         f.write(json.dumps(trace, indent=2))
 
-    file = Path(my_dir, f'{use_case}_traces.tree.json')
+    file = Path(my_dir, f'{use_case}_be_impl_fe_trace.json')
     with open(file, "w") as f:
         f.write(json.dumps(be_dpp, indent=2))
     
     file = Path(my_dir, f'{use_case}_events.json')
     with open(file, "w") as f:
         f.write(json.dumps(event_seq, indent=2))
+
+def differentiate_resources(dpp_item):
+    if dpp_item['type'] == 'EconomicResource':
+        for child in dpp_item['children']:
+            # breakpoint()
+            if child['name'] == 'modify':
+                # breakpoint()
+                dpp_item['id'] = dpp_item['id'] + child['id']
+                break
+    for child in dpp_item['children']:
+        differentiate_resources(child)
+

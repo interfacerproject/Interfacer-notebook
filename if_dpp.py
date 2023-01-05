@@ -1,3 +1,4 @@
+import json
 
 from if_consts import MAX_DEPTH, AGENT_FRAG, LOCATION_FRAG, QUANTITY_FRAG
 from if_lib import send_signed
@@ -48,7 +49,7 @@ def trace_query(id, user_data, endpoint):
     }
     """
 
-    res = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
     if DEBUG_trace_query:
         print("Query")
@@ -56,10 +57,345 @@ def trace_query(id, user_data, endpoint):
         print("Variables")
         print(variables)
         print("Result")
-        print(res)   
+        print(json.dumps(res_json, indent=2))   
 
-    return res['data']['economicResource']['trace']
+    return res_json['data']['economicResource']['trace']
 
+
+
+VERBOSE = True
+def fill_loc(a_dpp_item, item, field):
+    if item[field] == None:
+        return
+    loc_item = item[field]
+    a_dpp_item[field] = {}
+    a_dpp_item[field]['id'] = loc_item['id']
+    a_dpp_item[field]['name'] = loc_item['name']
+    a_dpp_item[field]['alt'] = loc_item['alt']
+    a_dpp_item[field]['lat'] = loc_item['lat']
+    a_dpp_item[field]['long'] = loc_item['long']                    
+    a_dpp_item[field]['mappableAddress'] = loc_item['mappableAddress']                    
+    a_dpp_item[field]['note'] = loc_item['note']                                    
+    
+def fill_quantity(a_dpp_item, item, field):
+    if item[field] != None:
+        a_dpp_item[field] = f"{item[field]['hasNumericalValue']} ({item[field]['hasUnit']['symbol']})"
+
+    
+def fill_event(a_dpp_item, item):
+    assert item['__typename'] == 'EconomicEvent'
+    a_dpp_item['id'] = item['id']
+    a_dpp_item['name'] = item['action']['id']
+    a_dpp_item['type'] = item['__typename']
+#     breakpoint()
+    if VERBOSE:
+        a_dpp_item['provider'] = item['provider']['name']
+        a_dpp_item['receiver'] = item['receiver']['name']
+        fill_loc(a_dpp_item, item, 'atLocation')
+        fill_loc(a_dpp_item, item, 'toLocation')
+        if 'effortQuantity' in item and item['effortQuantity'] != None:
+            fill_quantity(a_dpp_item, item, 'effortQuantity')
+        elif 'resourceQuantity' in item and item['resourceQuantity'] != None:
+            fill_quantity(a_dpp_item, item, 'resourceQuantity')
+#         elif 'resourceInventoriedAs' in item and item['resourceInventoriedAs'] != None:
+#             fill_quantity(a_dpp_item, item['resourceInventoriedAs'], 'onhandQuantity')
+        
+def fill_res(a_dpp_item, item):
+#     print(item['__typename'])
+    assert item['__typename'] == 'EconomicResource'
+    a_dpp_item['id'] = item['id']
+    a_dpp_item['name'] = item['name']
+    a_dpp_item['trackingIdentifier'] = item['trackingIdentifier']
+    a_dpp_item['type'] = item['__typename']
+    if VERBOSE:
+        a_dpp_item['primaryAccountable'] = item['primaryAccountable']['name']
+        a_dpp_item['custodian'] = item['custodian']['name']
+        a_dpp_item['metadata'] = item['metadata']
+        fill_loc(a_dpp_item, item, 'currentLocation')
+        fill_quantity(a_dpp_item, item, 'accountingQuantity')
+        fill_quantity(a_dpp_item, item, 'onhandQuantity')
+
+def fill_process(a_dpp_item, item):
+    assert item['__typename'] == 'Process'
+    a_dpp_item['id'] = item['id']
+    a_dpp_item['name'] = item['name']
+    a_dpp_item['type'] = item['__typename']
+    if VERBOSE:
+        a_dpp_item['note'] = item['note']
+
+
+
+DEBUG_er_before = False
+
+def er_before(id, user_data, dpp_children, depth, visited, endpoint):
+
+    if depth > MAX_DEPTH:
+        return
+    depth += 1
+
+    variables = {
+        "id": id
+    }
+    
+    query = """query($id:ID!) {
+        economicResource(id:$id) {
+            id
+            name
+            trackingIdentifier
+            __typename
+            metadata
+            primaryAccountable {
+              ...agent
+            }
+            custodian {
+              ...agent
+            }
+            accountingQuantity {
+                ...quantity
+            }
+            onhandQuantity{
+                ...quantity
+            }
+            currentLocation {
+                ...location
+            }
+            previous{
+                __typename
+                ... on EconomicEvent {
+                    id
+                    action {
+                        id
+                    }
+                }
+            }
+        }
+    }
+    """ + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG
+
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    
+    if DEBUG_er_before:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))   
+
+    dpp_item = {}    
+    fill_res(dpp_item, res_json['data']['economicResource'])
+    dpp_item['children'] = []
+    
+    dpp_children.append(dpp_item)
+    
+    events = res_json['data']['economicResource']['previous']
+    while events != []:
+        # We get the first event
+        event = events.pop(0)
+        # This must be of type EconomicEvent since the call only returns that             
+        assert event['__typename'] == "EconomicEvent"
+        # We include the raise event as it can be reached from more branches
+        # and it is assumed to be the starting point        
+#         if not event['action']['id'] == 'raise':
+        while event['id'] in visited:
+#                breakpoint()
+            if DEBUG_er_before:
+                print(f"id {event['id']} already in visited")
+            if events == []:
+                return
+            event = events.pop(0)
+        visited[event['id']] = {}            
+            
+        ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)         
+
+DEBUG_ee_before = False
+
+def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
+
+    if depth > MAX_DEPTH:
+        return
+    depth += 1
+
+    variables = {
+        "id": id
+    }
+    
+    query = """query($id:ID!) {
+        economicEvent(id:$id) {
+            id
+            __typename
+            action {
+                id
+                label
+            }
+            provider {
+                ...agent
+            }
+            receiver {
+                ...agent
+            }
+            atLocation {
+                ...location
+            }
+            toLocation {
+                ...location
+            }
+            effortQuantity {
+                ...quantity
+            }
+            resourceQuantity {
+                ...quantity
+            }
+            previous{
+                __typename
+                ... on  EconomicResource {
+                    id
+                    name
+                }
+                ... on EconomicEvent {
+                    id
+                    action {
+                        id
+                    }
+                }
+                ... on Process {
+                    id
+                    name
+                }
+            }
+          }
+        }
+    """ + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG
+
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    
+    if DEBUG_ee_before:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))   
+
+    dpp_item = {}    
+    fill_event(dpp_item, res_json['data']['economicEvent'])
+    dpp_item['children'] = []
+    
+    dpp_children.append(dpp_item)
+
+    pf_items = res_json['data']['economicEvent']['previous']
+    if DEBUG_ee_before:
+        print("pf_items")
+        print(pf_items)
+
+    if pf_items == None:
+        return
+    if type(pf_items) is dict:
+        pf_items = [pf_items]
+    if pf_items != []:
+        pf_item = pf_items[0]
+        if pf_item['id'] in visited:
+            print(f"id {pf_item['id']} already in visited")
+            return
+
+        if pf_item['__typename'] == "EconomicEvent":
+            visited[pf_item['id']] = {}
+            ee_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
+        if pf_item['__typename'] == "EconomicResource":
+            er_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
+        if pf_item['__typename'] == "Process":
+            visited[pf_item['id']] = {}
+            pr_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
+
+
+DEBUG_pr_before = False
+
+def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
+
+    if depth > MAX_DEPTH:
+        return
+    depth += 1
+
+    variables = {
+        "id": id
+    }
+    
+    query = """query($id:ID!) {
+      process(id:$id) {
+          id
+          name
+          note
+          __typename
+          previous{
+            __typename
+            ... on EconomicEvent {
+                id
+                action {
+                    id
+                }
+            }
+        }
+      }
+    }
+    """
+
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    
+    if DEBUG_pr_before:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))   
+
+    dpp_item = {}    
+    fill_process(dpp_item, res_json['data']['process'])
+    dpp_item['children'] = []
+    
+    dpp_children.append(dpp_item)
+
+    events = res_json['data']['process']['previous']
+    if events != []:
+        for event in events:
+            # This must be of type EconomicEvent since the call only returns that
+            assert event['__typename'] == "EconomicEvent"
+            if event['id'] in visited:
+                print(f"id {event['id']} already in visited")
+                continue
+            visited[event['id']] = {}
+            ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)
+
+
+DEBUG_get_ddp = True
+
+def get_ddp(res_id, user_data, endpoint):
+
+    variables = {
+        "id": res_id
+    }
+    
+    query = """query($id:ID!){
+        economicResource(id: $id) {
+            traceDpp
+        }
+    }
+    """
+
+    
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    
+    if DEBUG_get_ddp:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))
+        
+    be_dpp = res_json['data']['economicResource']['traceDpp']
+    
+    return be_dpp
 
 BANNER = "#" * 80
 
@@ -211,336 +547,14 @@ def check_traces(trace, events, tot_dpp, be_dpp):
     check_betrace(tot_dpp[0], be_dpp)
 
 
-VERBOSE = True
-def fill_loc(a_dpp_item, item, field):
-    if item[field] == None:
-        return
-    loc_item = item[field]
-    a_dpp_item[field] = {}
-    a_dpp_item[field]['id'] = loc_item['id']
-    a_dpp_item[field]['name'] = loc_item['name']
-    a_dpp_item[field]['alt'] = loc_item['alt']
-    a_dpp_item[field]['lat'] = loc_item['lat']
-    a_dpp_item[field]['long'] = loc_item['long']                    
-    a_dpp_item[field]['mappableAddress'] = loc_item['mappableAddress']                    
-    a_dpp_item[field]['note'] = loc_item['note']                                    
-    
-def fill_quantity(a_dpp_item, item, field):
-    if item[field] != None:
-        a_dpp_item[field] = f"{item[field]['hasNumericalValue']} ({item[field]['hasUnit']['symbol']})"
-
-    
-def fill_event(a_dpp_item, item):
-    assert item['__typename'] == 'EconomicEvent'
-    a_dpp_item['id'] = item['id']
-    a_dpp_item['name'] = item['action']['id']
-    a_dpp_item['type'] = item['__typename']
-#     breakpoint()
-    if VERBOSE:
-        a_dpp_item['provider'] = item['provider']['name']
-        a_dpp_item['receiver'] = item['receiver']['name']
-        fill_loc(a_dpp_item, item, 'atLocation')
-        fill_loc(a_dpp_item, item, 'toLocation')
-        if 'effortQuantity' in item and item['effortQuantity'] != None:
-            fill_quantity(a_dpp_item, item, 'effortQuantity')
-        elif 'resourceQuantity' in item and item['resourceQuantity'] != None:
-            fill_quantity(a_dpp_item, item, 'resourceQuantity')
-#         elif 'resourceInventoriedAs' in item and item['resourceInventoriedAs'] != None:
-#             fill_quantity(a_dpp_item, item['resourceInventoriedAs'], 'onhandQuantity')
-        
-def fill_res(a_dpp_item, item):
-#     print(item['__typename'])
-    assert item['__typename'] == 'EconomicResource'
-    a_dpp_item['id'] = item['id']
-    a_dpp_item['name'] = item['name']
-    a_dpp_item['trackingIdentifier'] = item['trackingIdentifier']
-    a_dpp_item['type'] = item['__typename']
-    if VERBOSE:
-        a_dpp_item['primaryAccountable'] = item['primaryAccountable']['name']
-        a_dpp_item['custodian'] = item['custodian']['name']
-        a_dpp_item['metadata'] = item['metadata']
-        fill_loc(a_dpp_item, item, 'currentLocation')
-        fill_quantity(a_dpp_item, item, 'accountingQuantity')
-        fill_quantity(a_dpp_item, item, 'onhandQuantity')
-
-def fill_process(a_dpp_item, item):
-    assert item['__typename'] == 'Process'
-    a_dpp_item['id'] = item['id']
-    a_dpp_item['name'] = item['name']
-    a_dpp_item['type'] = item['__typename']
-    if VERBOSE:
-        a_dpp_item['note'] = item['note']
-
-
-
-DEBUG_er_before = False
-
-def er_before(id, user_data, dpp_children, depth, visited, endpoint):
-
-    if depth > MAX_DEPTH:
-        return
-    depth += 1
-
-    variables = {
-        "id": id
-    }
-    
-    query = """query($id:ID!) {
-        economicResource(id:$id) {
-            id
-            name
-            trackingIdentifier
-            __typename
-            metadata
-            primaryAccountable {
-              ...agent
-            }
-            custodian {
-              ...agent
-            }
-            accountingQuantity {
-                ...quantity
-            }
-            onhandQuantity{
-                ...quantity
-            }
-            currentLocation {
-                ...location
-            }
-            previous{
-                __typename
-                ... on EconomicEvent {
-                    id
-                    action {
-                        id
-                    }
-                }
-            }
-        }
-    }
-    """ + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG
-
-    res = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
-    if DEBUG_er_before:
-        print("Query")
-        print(query)
-        print("Variables")
-        print(variables)
-        print("Result")
-        print(res)   
-
-    dpp_item = {}    
-    fill_res(dpp_item, res['data']['economicResource'])
-    dpp_item['children'] = []
-    
-    dpp_children.append(dpp_item)
-    
-    events = res['data']['economicResource']['previous']
-    while events != []:
-        # We get the first event
-        event = events.pop(0)
-        # This must be of type EconomicEvent since the call only returns that             
-        assert event['__typename'] == "EconomicEvent"
-        # We include the raise event as it can be reached from more branches
-        # and it is assumed to be the starting point        
-#         if not event['action']['id'] == 'raise':
-        while event['id'] in visited:
-#                breakpoint()
-            if DEBUG_er_before:
-                print(f"id {event['id']} already in visited")
-            if events == []:
-                return
-            event = events.pop(0)
-        visited[event['id']] = {}            
-            
-        ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)         
-
-DEBUG_ee_before = False
-
-def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
-
-    if depth > MAX_DEPTH:
-        return
-    depth += 1
-
-    variables = {
-        "id": id
-    }
-    
-    query = """query($id:ID!) {
-        economicEvent(id:$id) {
-            id
-            __typename
-            action {
-                id
-                label
-            }
-            provider {
-                ...agent
-            }
-            receiver {
-                ...agent
-            }
-            atLocation {
-                ...location
-            }
-            toLocation {
-                ...location
-            }
-            effortQuantity {
-                ...quantity
-            }
-            resourceQuantity {
-                ...quantity
-            }
-            previous{
-                __typename
-                ... on  EconomicResource {
-                    id
-                    name
-                }
-                ... on EconomicEvent {
-                    id
-                    action {
-                        id
-                    }
-                }
-                ... on Process {
-                    id
-                    name
-                }
-            }
-          }
-        }
-    """ + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG
-
-    res = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
-    if DEBUG_ee_before:
-        print("Query")
-        print(query)
-        print("Variables")
-        print(variables)
-        print("Result")
-        print(res)   
-
-    dpp_item = {}    
-    fill_event(dpp_item, res['data']['economicEvent'])
-    dpp_item['children'] = []
-    
-    dpp_children.append(dpp_item)
-
-    pf_items = res['data']['economicEvent']['previous']
-    if DEBUG_ee_before:
-        print("pf_items")
-        print(pf_items)
-
-    if pf_items == None:
-        return
-    if type(pf_items) is dict:
-        pf_items = [pf_items]
-    if pf_items != []:
-        pf_item = pf_items[0]
-        if pf_item['id'] in visited:
-            print(f"id {pf_item['id']} already in visited")
-            return
-
-        if pf_item['__typename'] == "EconomicEvent":
-            visited[pf_item['id']] = {}
-            ee_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
-        if pf_item['__typename'] == "EconomicResource":
-            er_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
-        if pf_item['__typename'] == "Process":
-            visited[pf_item['id']] = {}
-            pr_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
-
-
-DEBUG_pr_before = False
-
-def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
-
-    if depth > MAX_DEPTH:
-        return
-    depth += 1
-
-    variables = {
-        "id": id
-    }
-    
-    query = """query($id:ID!) {
-      process(id:$id) {
-          id
-          name
-          note
-          __typename
-          previous{
-            __typename
-            ... on EconomicEvent {
-                id
-                action {
-                    id
-                }
-            }
-        }
-      }
-    }
-    """
-
-    res = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
-    if DEBUG_pr_before:
-        print("Query")
-        print(query)
-        print("Variables")
-        print(variables)
-        print("Result")
-        print(res)   
-
-    dpp_item = {}    
-    fill_process(dpp_item, res['data']['process'])
-    dpp_item['children'] = []
-    
-    dpp_children.append(dpp_item)
-
-    events = res['data']['process']['previous']
-    if events != []:
-        for event in events:
-            # This must be of type EconomicEvent since the call only returns that
-            assert event['__typename'] == "EconomicEvent"
-            if event['id'] in visited:
-                print(f"id {event['id']} already in visited")
-                continue
-            visited[event['id']] = {}
-            ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)
-
-
-DEBUG_get_ddp = True
-
-def get_ddp(res_id, user_data, endpoint):
-
-    variables = {
-        "id": res_id
-    }
-    
-    query = """query($id:ID!){
-        economicResource(id: $id) {
-            traceDpp
-        }
-    }
-    """
-
-    
-    res = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
-    if DEBUG_get_ddp:
-        print("Query")
-        print(query)
-        print("Variables")
-        print(variables)
-        print("Result")
-        print(res)
-        
-    be_dpp = res['data']['economicResource']['traceDpp']
-    
-    return be_dpp
+def convert_bedpp(dpp):
+    # breakpoint()
+    conv_dpp = {k:v for k,v in dpp['node'].items()}
+    conv_dpp['type'] = dpp['type']
+    name = dpp['node']['name'] if 'name' in dpp['node'] else dpp['node']['action_id']
+    conv_dpp['name'] = name
+    dl = len(dpp['children'])
+    conv_dpp['children'] = [{} for i in range(dl)]
+    for ch in range(dl):
+        conv_dpp['children'][ch] = convert_bedpp(dpp['children'][ch])
+    return conv_dpp
