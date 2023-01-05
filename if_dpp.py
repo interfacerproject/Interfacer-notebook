@@ -235,7 +235,7 @@ def fill_event(a_dpp_item, item):
     a_dpp_item['id'] = item['id']
     a_dpp_item['name'] = item['action']['id']
     a_dpp_item['type'] = item['__typename']
-#     set_trace()
+#     breakpoint()
     if VERBOSE:
         a_dpp_item['provider'] = item['provider']['name']
         a_dpp_item['receiver'] = item['receiver']['name']
@@ -346,7 +346,7 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
         # and it is assumed to be the starting point        
 #         if not event['action']['id'] == 'raise':
         while event['id'] in visited:
-#                 set_trace()
+#                breakpoint()
             if DEBUG_er_before:
                 print(f"id {event['id']} already in visited")
             if events == []:
