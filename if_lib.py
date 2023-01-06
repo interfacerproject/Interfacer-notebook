@@ -884,25 +884,35 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
     }
 
 
-    if action in ['use', 'work']:
-        # If action is work or use then the quantity is about the action
+    if action in ['work']:
+        # Need to provide the specification of the type of work
+        variables['event']['resourceConformsTo'] = effort_spec['spec_id']
+        # If action is work then the quantity is about the action
         variables['event']['effortQuantity'] = {}
         var_obj = variables['event']['effortQuantity']
         var_obj['hasUnit'] = effort_spec['unit_id']
+        var_obj['hasNumericalValue'] = effort_spec['amount']
     else:
+        if action in ['use']:
+            # If action is use it might include a duration of usage
+            if effort_spec['unit_id'] != None:
+                variables['event']['effortQuantity'] = {}
+                var_obj = variables['event']['effortQuantity']
+                var_obj['hasUnit'] = effort_spec['unit_id']
+                var_obj['hasNumericalValue'] = effort_spec['amount']
+
         # If action is not work then the quantity is about the resource
         variables['event']['resourceQuantity'] = {}
         var_obj = variables['event']['resourceQuantity']
-        # find the unit from the resource's specification
+
         if action in ['produce']:
             _res = new_res
         else:
             _res = existing_res
+        # find the unit from the resource's specification
         var_obj['hasUnit'] = [specs['defaultUnit'] for name, specs in res_spec_data.items() \
                               if specs['id'] == _res['spec_id']][0]
-
-    
-    var_obj['hasNumericalValue'] = amount
+        var_obj['hasNumericalValue'] = amount
 
 
     if action in IN_PR_ACTIONS:
@@ -915,10 +925,6 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
     if action in ['accept', 'cite', 'consume', 'modify', 'use']:
         # These actions require a resource id to act upon
         variables['event']['resourceInventoriedAs'] = existing_res['id']
-        
-    if action in ['work']:
-        # Need to provide the specification of the type of work
-        variables['event']['resourceConformsTo'] = effort_spec['spec_id']
         
     if action in ['produce']:
         variables['newInventoriedResource'] = {};
