@@ -6,9 +6,10 @@ from zenroom import zenroom
 import base64
 from datetime import datetime, timezone
 import random
+from pdb import set_trace
 
 
-from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG
+from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG
 from if_utils import stringify
 
 # Test zenroom is correctly installed and running
@@ -872,6 +873,15 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
         print(f"We do not support {action} yet")
         assert 1 == 2
 
+    if not action in ['work']:
+        if existing_res == None and new_res == None:
+            print(f"No resource given for event")
+            assert 1 == 2
+
+        if existing_res != None and new_res != None:
+            print(f"Both existing and new resource given for event")
+            assert 1 == 2
+    
     ts = datetime.now(timezone.utc).isoformat()
     variables = {
         "event": {
@@ -883,7 +893,7 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
         }
     }
 
-
+    # set_trace()
     if action in ['work']:
         # Need to provide the specification of the type of work
         variables['event']['resourceConformsTo'] = effort_spec['spec_id']
@@ -905,10 +915,15 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
         variables['event']['resourceQuantity'] = {}
         var_obj = variables['event']['resourceQuantity']
 
-        if action in ['produce']:
-            _res = new_res
-        else:
+        if existing_res != None:
             _res = existing_res
+        elif new_res != None:
+            _res = new_res
+        
+        # if action in ['produce']:
+        #     _res = new_res
+        # else:
+        #     _res = existing_res
         # find the unit from the resource's specification
         var_obj['hasUnit'] = [specs['defaultUnit'] for name, specs in res_spec_data.items() \
                               if specs['id'] == _res['spec_id']][0]
@@ -921,6 +936,12 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
     elif action in OUT_PR_ACTIONS:
         # These actions are output of a process
         variables['event']['outputOf'] = process['id']
+    elif action in IN_OUT_PR_ACTIONS:
+        # These actions can be either input or output of a process
+        if existing_res != None:
+            variables['event']['inputOf'] = process['id']
+        elif new_res != None:
+            variables['event']['outputOf'] = process['id']
         
     if action in ['accept', 'cite', 'consume', 'modify', 'use']:
         # These actions require a resource id to act upon
@@ -930,6 +951,9 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
         variables['newInventoriedResource'] = {};
         variables['newInventoriedResource']['name'] = new_res['name']
         variables['newInventoriedResource']['trackingIdentifier'] = new_res['res_ref_id']
+        variables['event']['resourceConformsTo'] = new_res['spec_id']
+    
+    if action in ['deliverService']:
         variables['event']['resourceConformsTo'] = new_res['spec_id']
         
 

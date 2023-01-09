@@ -428,13 +428,14 @@ def check_duplicates(trace, events, assigned):
 
     print(BANNER)
     print("Check whether there are any duplicated events")
-    events_ids = {}
-    for i, event in enumerate(events):
-        if not event['event_id'] in events_ids:
-            events_ids[event['event_id']] = 1
+    events_proc_ids = {}
+    for i, evt_prc in enumerate(events):
+        id = evt_prc['event_id'] if 'event_id' in evt_prc else evt_prc['process_id']
+        if not id in events_proc_ids:
+            events_proc_ids[id] = 1
         else:
-            events_ids[event['event_id']] += 1
-            print(f"Event {event['event_id']} with action {event['action']} at pos {i} is a duplicate")
+            events_proc_ids[id] += 1
+            print(f"{'Event' if 'event_id' in evt_prc else 'Process'} {id} with {'action' if 'event_id' in evt_prc else 'name'} {evt_prc['action'] if 'event_id' in evt_prc else evt_prc['name']} at pos {i} is a duplicate")
 
     print(BANNER)
     print("Check whether there are any duplicated in dpp")
@@ -454,9 +455,9 @@ def check_trace_events(trace, events):
         found = False
         name = item['name'] if 'name' in item else item['action']['id']
         pref = f"trace item {name} id: {item['id']} of type {item['__typename']}"
-        for i, event in enumerate(events):
-            event_id = event['event_id']
-            if item['id'] == event_id:
+        for i, evt_prc in enumerate(events):
+            id = evt_prc['event_id'] if 'event_id' in evt_prc else evt_prc['process_id']
+            if item['id'] == id:
                 print(f"{pref} at pos {j} found at pos {i}")
                 found = True
         if not found:
@@ -464,13 +465,13 @@ def check_trace_events(trace, events):
 
     print(BANNER)
     print("Where are events in the trace?")
-    for i, event in enumerate(events):
+    for i, evt_prc in enumerate(events):
         found = False
-        event_id = event['event_id'] if 'event_id' in event else event['process_id']
-        name = event['action']
-        pref = f'Event {name} with id {event_id}'
+        id = evt_prc['event_id'] if 'event_id' in evt_prc else evt_prc['process_id']
+        name = evt_prc['action'] if 'event_id' in evt_prc else evt_prc['name']
+        pref = f'{"Event" if "event_id" in evt_prc else "Process"} {name} with id {id}'
         for j,item in enumerate(trace):
-            if item['id'] == event_id:
+            if item['id'] == id:
                 print(f'{pref} pos {i} found at pos {j}')
                 found = True
         if not found:

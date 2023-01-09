@@ -1,8 +1,9 @@
 # This does not include transfers
-SUPPORTED_ACTIONS = ['accept', 'cite', 'consume', 'modify', 'produce', 'use', 'work']
+SUPPORTED_ACTIONS = ['accept', 'cite', 'consume', 'modify', 'produce', 'use', 'work', 'deliverService']
 IN_PR_ACTIONS = ['accept', 'cite', 'consume', 'use', 'work']
 OUT_PR_ACTIONS = ['modify', 'produce']
-assert set(IN_PR_ACTIONS + OUT_PR_ACTIONS) == set(SUPPORTED_ACTIONS)
+IN_OUT_PR_ACTIONS = ['deliverService']
+assert set(IN_PR_ACTIONS + OUT_PR_ACTIONS + IN_OUT_PR_ACTIONS) == set(SUPPORTED_ACTIONS)
 
 
 MAX_DEPTH = 100000000
