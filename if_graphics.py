@@ -44,7 +44,7 @@ def calc_quantity(dpp_item):
         quantity = dpp_item['effortQuantity']
     else:
         quantity = '1 '
-    quantity = int(quantity.split(' ')[0])
+    quantity = float(quantity.split(' ')[0])
     quantity = max(quantity,1)
     return quantity
     
