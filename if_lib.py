@@ -864,7 +864,7 @@ def get_process(process_name, process_data, note, user_data, endpoint):
     
     create_process(cur_process, user_data, endpoint)    
 
-DEBUG_create_event = True
+DEBUG_create_event = False
 # This function implements all actions != transfer actions
 def create_event(user_data, action, note, amount, process, res_spec_data, endpoint, \
                  existing_res=None, new_res=None, effort_spec=None):
