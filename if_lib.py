@@ -540,6 +540,15 @@ def get_location_id(file, user_data, locs_data, user, endpoint):
 
         res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
+        if 'errors' in res_json:
+            print("Error message")
+            print(json.dumps(res_json['errors'], indent=2))
+            print("Query")
+            print(query)
+            print("Variables")
+            print(variables)
+            assert 1 == 2
+
         if DEBUG_get_location_id:
             print("Query")
             print(query)
@@ -599,6 +608,15 @@ def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint):
 
         res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
+        if 'errors' in res_json:
+            print("Error message")
+            print(json.dumps(res_json['errors'], indent=2))
+            print("Query")
+            print(query)
+            print("Variables")
+            print(variables)
+            assert 1 == 2
+
         # save the unit info
         units_data[f'{name}'] = {}
         units_data[f'{name}']['label'] = label
@@ -654,6 +672,16 @@ def get_resource_spec_id(file, user_data, res_spec_data, name, note, classificat
                 }"""
 
         res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+        if 'errors' in res_json:
+            print("Error message")
+            print(json.dumps(res_json['errors'], indent=2))
+            print("Query")
+            print(query)
+            print("Variables")
+            print(variables)
+            assert 1 == 2
+
 
         # save the unit info
         res_spec_data[f'{name}'] = {}
@@ -726,6 +754,16 @@ def create_resource(user_data, res_data, res_spec_data, amount, endpoint):
             }""" + AGENT_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
     if DEBUG_create_resource:
         print("Query")
         print(query)
@@ -789,6 +827,16 @@ def reduce_resource(user_data, res_data, res_spec_data, amount, endpoint):
             }""" + AGENT_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
     if DEBUG_reduce_resource:
         print("Query")
         print(query)
@@ -845,6 +893,16 @@ def create_process(cur_process, user_data, endpoint):
     }"""
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
 
     # save the unit info
     cur_process['id'] = res_json['data']['createProcess']['process']['id']
@@ -954,9 +1012,11 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
         variables['event']['resourceConformsTo'] = new_res['spec_id']
     
     if action in ['deliverService']:
-        variables['event']['resourceConformsTo'] = new_res['spec_id']
+        if existing_res != None:
+            variables['event']['resourceConformsTo'] = existing_res['spec_id']
+        elif new_res != None:
+            variables['event']['resourceConformsTo'] = new_res['spec_id']
         
-
     
     # Define the fields for the GraphQL response
 
@@ -994,6 +1054,15 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
     query = query + AGENT_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
     # assert False
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
 
     if DEBUG_create_event:
         print("Query")
@@ -1018,7 +1087,6 @@ def update_id(resource, new_id):
     resource['id'] = new_id
 
 # This function implements all transfer actions
-# NOTE: only tested with "transfer-custody"
 DEBUG_make_transfer = False
 
 def make_transfer(provider_data, action, note, receiver_data, amount, existing_res, locs_data, res_spec_data, endpoint):
@@ -1068,6 +1136,15 @@ def make_transfer(provider_data, action, note, receiver_data, amount, existing_r
 
     res_json = send_signed(query, variables, provider_data['username'], provider_data['keyring']['eddsa'], endpoint)
 
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
     if DEBUG_make_transfer:
         print("Query")
         print(query)
@@ -1098,6 +1175,15 @@ def show_resource(user_data, id, endpoint):
     """ + RESOURCE_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
 
     if DEBUG_show_resource:
         print("Query")
@@ -1131,6 +1217,15 @@ def show_proposal(user_data, id, endpoint):
     }""" + RESOURCE_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
 
     if DEBUG_show_resource:
         print("Query")
