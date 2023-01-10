@@ -14,7 +14,7 @@
       "id": "062SE13EVVW7J599566RMWYVHW",
       "name": "Designer2"
     },
-    "id": "062SEQGZ4R8F2EWQH305TFQ0V4",
+    "id": "062SQZXRXFB2AQG80NSZ46HQ4C",
     "name": "fancy collaborative bike",
     "note": null,
     "onhandQuantity": {
@@ -35,7 +35,7 @@
     "action": {
       "id": "produce"
     },
-    "id": "062SEQGZ4QMXZ9PRQGD0EZGZRM",
+    "id": "062SQZXRXADA8EB08MRZG9B2N8",
     "provider": {
       "id": "062SE13EVVW7J599566RMWYVHW",
       "name": "Designer2"
@@ -63,7 +63,7 @@
         "id": "062SE13EVVW7J599566RMWYVHW",
         "name": "Designer2"
       },
-      "id": "062SEQGZ4R8F2EWQH305TFQ0V4",
+      "id": "062SQZXRXFB2AQG80NSZ46HQ4C",
       "name": "fancy collaborative bike",
       "note": null,
       "onhandQuantity": {
@@ -90,7 +90,7 @@
   },
   {
     "__typename": "Process",
-    "id": "062SEQGK9P04JWVCP0Z82VQBVM",
+    "id": "062SQZXD3M2C1DKKP017SRS454",
     "name": "Creation_fancy_collaborative_bike",
     "note": "Creation of fancy collaborative bike by Designer2"
   },
@@ -99,7 +99,7 @@
     "action": {
       "id": "consume"
     },
-    "id": "062SEQGYFKNTD9XQ05MSJFK3ZW",
+    "id": "062SQZXR9KM5KVRVY0ASATHW4C",
     "provider": {
       "id": "062SE13EVVW7J599566RMWYVHW",
       "name": "Designer2"
@@ -123,7 +123,7 @@
         "id": "062SE13EVVW7J599566RMWYVHW",
         "name": "Designer2"
       },
-      "id": "062SEQGR16QJMXWGJ0BV69KXJC",
+      "id": "062SQZXHVYW93HPQ114ZA4NYRR",
       "name": "aluminium bike frame",
       "note": null,
       "onhandQuantity": {
@@ -153,7 +153,7 @@
     "action": {
       "id": "transfer"
     },
-    "id": "062SEQGR0K5NF0S8EDK5M4X97C",
+    "id": "062SQZXHV447QPCMS6H6FP71TC",
     "provider": {
       "id": "062SE13G24NBTVHE7T747SCVSR",
       "name": "Manufacturer1"
@@ -177,7 +177,7 @@
         "id": "062SE13G24NBTVHE7T747SCVSR",
         "name": "Manufacturer1"
       },
-      "id": "062SEQGQDY5FHPG9JZMTJYE0H8",
+      "id": "062SQZXH6ZXKYS0NTDC2WN2H7W",
       "name": "aluminium bike frame",
       "note": null,
       "onhandQuantity": {
@@ -207,7 +207,7 @@
     "action": {
       "id": "produce"
     },
-    "id": "062SEQGQDPZVFJ7TZFA6BNTMGG",
+    "id": "062SQZXH6RYHVDCR21Y3ZP7T6G",
     "provider": {
       "id": "062SE13G24NBTVHE7T747SCVSR",
       "name": "Manufacturer1"
@@ -235,7 +235,7 @@
         "id": "062SE13G24NBTVHE7T747SCVSR",
         "name": "Manufacturer1"
       },
-      "id": "062SEQGQDY5FHPG9JZMTJYE0H8",
+      "id": "062SQZXH6ZXKYS0NTDC2WN2H7W",
       "name": "aluminium bike frame",
       "note": null,
       "onhandQuantity": {
@@ -262,7 +262,7 @@
   },
   {
     "__typename": "Process",
-    "id": "062SEQGHXZ492HAGBBZG25QWPR",
+    "id": "062SQZXBS5C2GVFV00BKQSPDK0",
     "name": "Create_aluminium_bike_frame",
     "note": "Creation of aluminum bike frame by Manufacturer1"
   },
@@ -271,7 +271,7 @@
     "action": {
       "id": "consume"
     },
-    "id": "062SEQGPSRNZSAN7AN9BXM43TC",
+    "id": "062SQZXGGYP4K2ZBPM956E7AQR",
     "provider": {
       "id": "062SE13G24NBTVHE7T747SCVSR",
       "name": "Manufacturer1"
@@ -295,7 +295,7 @@
         "id": "062SE13G24NBTVHE7T747SCVSR",
         "name": "Manufacturer1"
       },
-      "id": "062SEQGM1J2ASXZ2CCVCSBATC8",
+      "id": "062SQZXDY7RASS9PNE93HD4ZB8",
       "name": "aluminium",
       "note": null,
       "onhandQuantity": {
@@ -325,7 +325,7 @@
     "action": {
       "id": "raise"
     },
-    "id": "062SEQGM0ZGMX0PQPP4FP9MS48",
+    "id": "062SQZXDXNM98P9KHS7E07NZZC",
     "provider": {
       "id": "062SE13G24NBTVHE7T747SCVSR",
       "name": "Manufacturer1"
@@ -353,7 +353,7 @@
         "id": "062SE13G24NBTVHE7T747SCVSR",
         "name": "Manufacturer1"
       },
-      "id": "062SEQGM1J2ASXZ2CCVCSBATC8",
+      "id": "062SQZXDY7RASS9PNE93HD4ZB8",
       "name": "aluminium",
       "note": null,
       "onhandQuantity": {
@@ -393,7 +393,7 @@
       "id": "062SE13G24NBTVHE7T747SCVSR",
       "name": "Manufacturer1"
     },
-    "id": "062SEQGM1J2ASXZ2CCVCSBATC8",
+    "id": "062SQZXDY7RASS9PNE93HD4ZB8",
     "name": "aluminium",
     "note": null,
     "onhandQuantity": {
@@ -414,14 +414,14 @@
     "action": {
       "id": "deliverService"
     },
-    "id": "062SEQGP83WBA9WGCSMRETBT0C",
+    "id": "062SQZXFR0AFSSJCB0YJK95460",
     "provider": {
-      "id": "062SE13G24NBTVHE7T747SCVSR",
-      "name": "Manufacturer1"
+      "id": "062SE13F84GFGGYFDZ099SFXM4",
+      "name": "Service_prov1"
     },
     "receiver": {
-      "id": "062SE13G24NBTVHE7T747SCVSR",
-      "name": "Manufacturer1"
+      "id": "062SE13F84GFGGYFDZ099SFXM4",
+      "name": "Service_prov1"
     },
     "resourceConformsTo": {
       "id": "062SE13VKMEJAA2KBFEZFXJGH4",
@@ -439,6 +439,34 @@
     }
   },
   {
+    "__typename": "Process",
+    "id": "062SQZXAW07KJ4D880TBCC39JG",
+    "name": "Create_bike_frame_manifacturing_service_ABC",
+    "note": "Creation of bike frame manufacturing service ABC by Service_prov1"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "work"
+    },
+    "id": "062SQZXF5GTKTBH5KXJNS9FMQC",
+    "provider": {
+      "id": "062SE13F84GFGGYFDZ099SFXM4",
+      "name": "Service_prov1"
+    },
+    "receiver": {
+      "id": "062SE13F84GFGGYFDZ099SFXM4",
+      "name": "Service_prov1"
+    },
+    "resourceConformsTo": {
+      "id": "062SE13ZEY4TGDK3A2NX69FW48",
+      "name": "manufacturing_work",
+      "note": "Specification for manufacturing work"
+    },
+    "resourceInventoriedAs": null,
+    "resourceQuantity": null
+  },
+  {
     "__typename": "EconomicResource",
     "accountingQuantity": {
       "hasNumericalValue": "0",
@@ -453,7 +481,7 @@
       "id": "062SE13G24NBTVHE7T747SCVSR",
       "name": "Manufacturer1"
     },
-    "id": "062SEQGQDY5FHPG9JZMTJYE0H8",
+    "id": "062SQZXH6ZXKYS0NTDC2WN2H7W",
     "name": "aluminium bike frame",
     "note": null,
     "onhandQuantity": {
@@ -484,7 +512,7 @@
       "id": "062SE13EVVW7J599566RMWYVHW",
       "name": "Designer2"
     },
-    "id": "062SEQGR16QJMXWGJ0BV69KXJC",
+    "id": "062SQZXHVYW93HPQ114ZA4NYRR",
     "name": "aluminium bike frame",
     "note": null,
     "onhandQuantity": {
@@ -505,7 +533,7 @@
     "action": {
       "id": "cite"
     },
-    "id": "062SEQGXVGAW1M47N3THSCMP5W",
+    "id": "062SQZXQMYR6NG69F8GY6YKQXR",
     "provider": {
       "id": "062SE13EVVW7J599566RMWYVHW",
       "name": "Designer2"
@@ -529,7 +557,7 @@
         "id": "062SE13EF9JE2H1HD23T64RP0W",
         "name": "Designer1"
       },
-      "id": "062SEQGTXWRGX5EEXPRMW2ACZR",
+      "id": "062SQZXN2SNFS53TNEK9C6VBTM",
       "name": "funky bike design",
       "note": null,
       "onhandQuantity": {
@@ -559,7 +587,7 @@
     "action": {
       "id": "produce"
     },
-    "id": "062SEQGTXEBD1GDKYV1KHA9S20",
+    "id": "062SQZXN2DXRB3NGB987MJEMCW",
     "provider": {
       "id": "062SE13EF9JE2H1HD23T64RP0W",
       "name": "Designer1"
@@ -587,7 +615,7 @@
         "id": "062SE13EF9JE2H1HD23T64RP0W",
         "name": "Designer1"
       },
-      "id": "062SEQGTXWRGX5EEXPRMW2ACZR",
+      "id": "062SQZXN2SNFS53TNEK9C6VBTM",
       "name": "funky bike design",
       "note": null,
       "onhandQuantity": {
@@ -614,7 +642,7 @@
   },
   {
     "__typename": "Process",
-    "id": "062SEQGJC0DWKSRW6J65NQGR7M",
+    "id": "062SQZXC70P6E5C41VF6CTK0N0",
     "name": "Create_funky_bike_design",
     "note": "Creation of funky bike design by Designer1"
   },
@@ -623,7 +651,7 @@
     "action": {
       "id": "work"
     },
-    "id": "062SEQGTBVSXDACHFGK5BWY5JC",
+    "id": "062SQZXMEX0WDS1HAS63XT64PW",
     "provider": {
       "id": "062SE13EF9JE2H1HD23T64RP0W",
       "name": "Designer1"
@@ -655,7 +683,7 @@
       "id": "062SE13EF9JE2H1HD23T64RP0W",
       "name": "Designer1"
     },
-    "id": "062SEQGTXWRGX5EEXPRMW2ACZR",
+    "id": "062SQZXN2SNFS53TNEK9C6VBTM",
     "name": "funky bike design",
     "note": null,
     "onhandQuantity": {
@@ -676,7 +704,7 @@
     "action": {
       "id": "consume"
     },
-    "id": "062SEQGX7Y2YZKNZEQRZNE0ZTR",
+    "id": "062SQZXQ123B88TRCJD87KABQG",
     "provider": {
       "id": "062SE13EVVW7J599566RMWYVHW",
       "name": "Designer2"
@@ -700,7 +728,7 @@
         "id": "062SE13EVVW7J599566RMWYVHW",
         "name": "Designer2"
       },
-      "id": "062SEQGSSB2Z3QBNY77A5NR5S0",
+      "id": "062SQZXKVTF1VM18BXJVWAT6B8",
       "name": "magic bike mirror",
       "note": null,
       "onhandQuantity": {
@@ -730,7 +758,7 @@
     "action": {
       "id": "transfer"
     },
-    "id": "062SEQGSRCM9NMSN1AC94XMRN8",
+    "id": "062SQZXKV1EX7H99NYVNBMY8D4",
     "provider": {
       "id": "062SE13GFE07NE730CQXNTN0C4",
       "name": "Manufacturer2"
@@ -754,7 +782,7 @@
         "id": "062SE13GFE07NE730CQXNTN0C4",
         "name": "Manufacturer2"
       },
-      "id": "062SEQGS63B68RPG0G5DS5SZN0",
+      "id": "062SQZXKA48S1ZVFGC6VQSE5R0",
       "name": "magic bike mirror",
       "note": null,
       "onhandQuantity": {
@@ -784,7 +812,7 @@
     "action": {
       "id": "produce"
     },
-    "id": "062SEQGS5MT2VFE25QRBZXXPW8",
+    "id": "062SQZXK9W1KPT28E2AKY83RW0",
     "provider": {
       "id": "062SE13GFE07NE730CQXNTN0C4",
       "name": "Manufacturer2"
@@ -812,7 +840,7 @@
         "id": "062SE13GFE07NE730CQXNTN0C4",
         "name": "Manufacturer2"
       },
-      "id": "062SEQGS63B68RPG0G5DS5SZN0",
+      "id": "062SQZXKA48S1ZVFGC6VQSE5R0",
       "name": "magic bike mirror",
       "note": null,
       "onhandQuantity": {
@@ -839,7 +867,7 @@
   },
   {
     "__typename": "Process",
-    "id": "062SEQGJTE3HWCMKAR9560FQXM",
+    "id": "062SQZXCNJA7T4AREF6C77M954",
     "name": "Creation_magic_bike_mirror",
     "note": "Creation of magic bike mirror by Manufacturer2"
   },
@@ -848,7 +876,7 @@
     "action": {
       "id": "consume"
     },
-    "id": "062SEQGRKPS3SE8FQYHP2SHR3R",
+    "id": "062SQZXJFJMG27N6M0JWPN962R",
     "provider": {
       "id": "062SE13GFE07NE730CQXNTN0C4",
       "name": "Manufacturer2"
@@ -872,7 +900,7 @@
         "id": "062SE13GFE07NE730CQXNTN0C4",
         "name": "Manufacturer2"
       },
-      "id": "062SEQGMJBC2VNPTEW7JCVWXCC",
+      "id": "062SQZXEG4QK0XVEMV2AZ5E4DR",
       "name": "glass",
       "note": null,
       "onhandQuantity": {
@@ -902,7 +930,7 @@
     "action": {
       "id": "raise"
     },
-    "id": "062SEQGMHMRK3DTQC00ZKBN3MM",
+    "id": "062SQZXEFQEG85G0GC8NNVH2V0",
     "provider": {
       "id": "062SE13GFE07NE730CQXNTN0C4",
       "name": "Manufacturer2"
@@ -930,7 +958,7 @@
         "id": "062SE13GFE07NE730CQXNTN0C4",
         "name": "Manufacturer2"
       },
-      "id": "062SEQGMJBC2VNPTEW7JCVWXCC",
+      "id": "062SQZXEG4QK0XVEMV2AZ5E4DR",
       "name": "glass",
       "note": null,
       "onhandQuantity": {
@@ -970,7 +998,7 @@
       "id": "062SE13GFE07NE730CQXNTN0C4",
       "name": "Manufacturer2"
     },
-    "id": "062SEQGMJBC2VNPTEW7JCVWXCC",
+    "id": "062SQZXEG4QK0XVEMV2AZ5E4DR",
     "name": "glass",
     "note": null,
     "onhandQuantity": {
@@ -1001,7 +1029,7 @@
       "id": "062SE13GFE07NE730CQXNTN0C4",
       "name": "Manufacturer2"
     },
-    "id": "062SEQGS63B68RPG0G5DS5SZN0",
+    "id": "062SQZXKA48S1ZVFGC6VQSE5R0",
     "name": "magic bike mirror",
     "note": null,
     "onhandQuantity": {
@@ -1032,7 +1060,7 @@
       "id": "062SE13EVVW7J599566RMWYVHW",
       "name": "Designer2"
     },
-    "id": "062SEQGSSB2Z3QBNY77A5NR5S0",
+    "id": "062SQZXKVTF1VM18BXJVWAT6B8",
     "name": "magic bike mirror",
     "note": null,
     "onhandQuantity": {
@@ -1053,7 +1081,7 @@
     "action": {
       "id": "deliverService"
     },
-    "id": "062SEQGWNXTJ1309MPDP66588R",
+    "id": "062SQZXP9HNCCV6PAR90AZNMDW",
     "provider": {
       "id": "062SE13G24NBTVHE7T747SCVSR",
       "name": "Manufacturer1"
@@ -1076,5 +1104,33 @@
         "symbol": "om2:one"
       }
     }
+  },
+  {
+    "__typename": "Process",
+    "id": "062SQZXBB3SB213NJJ0RCZJN4R",
+    "name": "Create_bike_assembly_service",
+    "note": "Creation of bike assembly 1-hour service by service_prov2"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "work"
+    },
+    "id": "062SQZXNRN6SM0PAHG0ZKDP9B0",
+    "provider": {
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "receiver": {
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "resourceConformsTo": {
+      "id": "062SE13ZEY4TGDK3A2NX69FW48",
+      "name": "manufacturing_work",
+      "note": "Specification for manufacturing work"
+    },
+    "resourceInventoriedAs": null,
+    "resourceQuantity": null
   }
 ]

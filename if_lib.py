@@ -925,7 +925,7 @@ def get_process(process_name, process_data, note, user_data, endpoint):
 DEBUG_create_event = False
 # This function implements all actions != transfer actions
 def create_event(user_data, action, note, amount, process, res_spec_data, endpoint, \
-                 existing_res=None, new_res=None, effort_spec=None):
+                 existing_res=None, new_res=None, effort_spec=None, process2=None):
 
     if not action in SUPPORTED_ACTIONS:
         print(f"We do not support {action} yet")
@@ -996,10 +996,14 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
         variables['event']['outputOf'] = process['id']
     elif action in IN_OUT_PR_ACTIONS:
         # These actions can be either input or output of a process
-        if existing_res != None:
+        if process2 == None:
+            if existing_res != None:
+                variables['event']['inputOf'] = process['id']
+            elif new_res != None:
+                variables['event']['outputOf'] = process['id']
+        else:
             variables['event']['inputOf'] = process['id']
-        elif new_res != None:
-            variables['event']['outputOf'] = process['id']
+            variables['event']['outputOf'] = process2['id']
         
     if action in ['accept', 'cite', 'consume', 'modify', 'use']:
         # These actions require a resource id to act upon

@@ -1,8 +1,8 @@
 [
   {
-    "id": "062SEQGZ4R8F2EWQH305TFQ0V4",
+    "id": "062SQZXRXFB2AQG80NSZ46HQ4C",
     "name": "fancy collaborative bike",
-    "trackingIdentifier": "fancy_collaborative_bike-8209",
+    "trackingIdentifier": "fancy_collaborative_bike-8707",
     "type": "EconomicResource",
     "primaryAccountable": "Designer2",
     "custodian": "Designer2",
@@ -11,7 +11,7 @@
     "onhandQuantity": "1 (om2:one)",
     "children": [
       {
-        "id": "062SEQGZ4QMXZ9PRQGD0EZGZRM",
+        "id": "062SQZXRXADA8EB08MRZG9B2N8",
         "name": "produce",
         "type": "EconomicEvent",
         "provider": "Designer2",
@@ -19,13 +19,13 @@
         "resourceQuantity": "1 (om2:one)",
         "children": [
           {
-            "id": "062SEQGK9P04JWVCP0Z82VQBVM",
+            "id": "062SQZXD3M2C1DKKP017SRS454",
             "name": "Creation_fancy_collaborative_bike",
             "type": "Process",
             "note": "Creation of fancy collaborative bike by Designer2",
             "children": [
               {
-                "id": "062SEQGYFKNTD9XQ05MSJFK3ZW",
+                "id": "062SQZXR9KM5KVRVY0ASATHW4C",
                 "name": "consume",
                 "type": "EconomicEvent",
                 "provider": "Designer2",
@@ -33,9 +33,9 @@
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "062SEQGR16QJMXWGJ0BV69KXJC",
+                    "id": "062SQZXHVYW93HPQ114ZA4NYRR",
                     "name": "aluminium bike frame",
-                    "trackingIdentifier": "aluminium_bike_frame-3536",
+                    "trackingIdentifier": "aluminium_bike_frame-2628",
                     "type": "EconomicResource",
                     "primaryAccountable": "Designer2",
                     "custodian": "Designer2",
@@ -44,7 +44,7 @@
                     "onhandQuantity": "0 (om2:one)",
                     "children": [
                       {
-                        "id": "062SEQGR0K5NF0S8EDK5M4X97C",
+                        "id": "062SQZXHV447QPCMS6H6FP71TC",
                         "name": "transfer",
                         "type": "EconomicEvent",
                         "provider": "Manufacturer1",
@@ -61,9 +61,9 @@
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "062SEQGQDY5FHPG9JZMTJYE0H8",
+                            "id": "062SQZXH6ZXKYS0NTDC2WN2H7W",
                             "name": "aluminium bike frame",
-                            "trackingIdentifier": "aluminium_bike_frame-3536",
+                            "trackingIdentifier": "aluminium_bike_frame-2628",
                             "type": "EconomicResource",
                             "primaryAccountable": "Manufacturer1",
                             "custodian": "Manufacturer1",
@@ -72,7 +72,7 @@
                             "onhandQuantity": "0 (om2:one)",
                             "children": [
                               {
-                                "id": "062SEQGQDPZVFJ7TZFA6BNTMGG",
+                                "id": "062SQZXH6RYHVDCR21Y3ZP7T6G",
                                 "name": "produce",
                                 "type": "EconomicEvent",
                                 "provider": "Manufacturer1",
@@ -80,13 +80,13 @@
                                 "resourceQuantity": "1 (om2:one)",
                                 "children": [
                                   {
-                                    "id": "062SEQGHXZ492HAGBBZG25QWPR",
+                                    "id": "062SQZXBS5C2GVFV00BKQSPDK0",
                                     "name": "Create_aluminium_bike_frame",
                                     "type": "Process",
                                     "note": "Creation of aluminum bike frame by Manufacturer1",
                                     "children": [
                                       {
-                                        "id": "062SEQGPSRNZSAN7AN9BXM43TC",
+                                        "id": "062SQZXGGYP4K2ZBPM956E7AQR",
                                         "name": "consume",
                                         "type": "EconomicEvent",
                                         "provider": "Manufacturer1",
@@ -94,9 +94,9 @@
                                         "resourceQuantity": "5 (om2:kilogram)",
                                         "children": [
                                           {
-                                            "id": "062SEQGM1J2ASXZ2CCVCSBATC8",
+                                            "id": "062SQZXDY7RASS9PNE93HD4ZB8",
                                             "name": "aluminium",
-                                            "trackingIdentifier": "aluminium-6761",
+                                            "trackingIdentifier": "aluminium-5940",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Manufacturer1",
                                             "custodian": "Manufacturer1",
@@ -105,7 +105,7 @@
                                             "onhandQuantity": "0 (om2:kilogram)",
                                             "children": [
                                               {
-                                                "id": "062SEQGM0ZGMX0PQPP4FP9MS48",
+                                                "id": "062SQZXDXNM98P9KHS7E07NZZC",
                                                 "name": "raise",
                                                 "type": "EconomicEvent",
                                                 "provider": "Manufacturer1",
@@ -118,13 +118,31 @@
                                         ]
                                       },
                                       {
-                                        "id": "062SEQGP83WBA9WGCSMRETBT0C",
+                                        "id": "062SQZXFR0AFSSJCB0YJK95460",
                                         "name": "deliverService",
                                         "type": "EconomicEvent",
-                                        "provider": "Manufacturer1",
-                                        "receiver": "Manufacturer1",
+                                        "provider": "Service_prov1",
+                                        "receiver": "Service_prov1",
                                         "resourceQuantity": "1 (om2:one)",
-                                        "children": []
+                                        "children": [
+                                          {
+                                            "id": "062SQZXAW07KJ4D880TBCC39JG",
+                                            "name": "Create_bike_frame_manifacturing_service_ABC",
+                                            "type": "Process",
+                                            "note": "Creation of bike frame manufacturing service ABC by Service_prov1",
+                                            "children": [
+                                              {
+                                                "id": "062SQZXF5GTKTBH5KXJNS9FMQC",
+                                                "name": "work",
+                                                "type": "EconomicEvent",
+                                                "provider": "Service_prov1",
+                                                "receiver": "Service_prov1",
+                                                "effortQuantity": "8 (om2:hour)",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
                                       }
                                     ]
                                   }
@@ -139,7 +157,7 @@
                 ]
               },
               {
-                "id": "062SEQGXVGAW1M47N3THSCMP5W",
+                "id": "062SQZXQMYR6NG69F8GY6YKQXR",
                 "name": "cite",
                 "type": "EconomicEvent",
                 "provider": "Designer2",
@@ -147,9 +165,9 @@
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "062SEQGTXWRGX5EEXPRMW2ACZR",
+                    "id": "062SQZXN2SNFS53TNEK9C6VBTM",
                     "name": "funky bike design",
-                    "trackingIdentifier": "funky_bike_design-8418",
+                    "trackingIdentifier": "funky_bike_design-6720",
                     "type": "EconomicResource",
                     "primaryAccountable": "Designer1",
                     "custodian": "Designer1",
@@ -158,7 +176,7 @@
                     "onhandQuantity": "1 (om2:one)",
                     "children": [
                       {
-                        "id": "062SEQGTXEBD1GDKYV1KHA9S20",
+                        "id": "062SQZXN2DXRB3NGB987MJEMCW",
                         "name": "produce",
                         "type": "EconomicEvent",
                         "provider": "Designer1",
@@ -166,13 +184,13 @@
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "062SEQGJC0DWKSRW6J65NQGR7M",
+                            "id": "062SQZXC70P6E5C41VF6CTK0N0",
                             "name": "Create_funky_bike_design",
                             "type": "Process",
                             "note": "Creation of funky bike design by Designer1",
                             "children": [
                               {
-                                "id": "062SEQGTBVSXDACHFGK5BWY5JC",
+                                "id": "062SQZXMEX0WDS1HAS63XT64PW",
                                 "name": "work",
                                 "type": "EconomicEvent",
                                 "provider": "Designer1",
@@ -189,7 +207,7 @@
                 ]
               },
               {
-                "id": "062SEQGX7Y2YZKNZEQRZNE0ZTR",
+                "id": "062SQZXQ123B88TRCJD87KABQG",
                 "name": "consume",
                 "type": "EconomicEvent",
                 "provider": "Designer2",
@@ -197,9 +215,9 @@
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "062SEQGSSB2Z3QBNY77A5NR5S0",
+                    "id": "062SQZXKVTF1VM18BXJVWAT6B8",
                     "name": "magic bike mirror",
-                    "trackingIdentifier": "magic_bike_mirror-5363",
+                    "trackingIdentifier": "magic_bike_mirror-5638",
                     "type": "EconomicResource",
                     "primaryAccountable": "Designer2",
                     "custodian": "Designer2",
@@ -208,7 +226,7 @@
                     "onhandQuantity": "0 (om2:one)",
                     "children": [
                       {
-                        "id": "062SEQGSRCM9NMSN1AC94XMRN8",
+                        "id": "062SQZXKV1EX7H99NYVNBMY8D4",
                         "name": "transfer",
                         "type": "EconomicEvent",
                         "provider": "Manufacturer2",
@@ -225,9 +243,9 @@
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "062SEQGS63B68RPG0G5DS5SZN0",
+                            "id": "062SQZXKA48S1ZVFGC6VQSE5R0",
                             "name": "magic bike mirror",
-                            "trackingIdentifier": "magic_bike_mirror-5363",
+                            "trackingIdentifier": "magic_bike_mirror-5638",
                             "type": "EconomicResource",
                             "primaryAccountable": "Manufacturer2",
                             "custodian": "Manufacturer2",
@@ -236,7 +254,7 @@
                             "onhandQuantity": "0 (om2:one)",
                             "children": [
                               {
-                                "id": "062SEQGS5MT2VFE25QRBZXXPW8",
+                                "id": "062SQZXK9W1KPT28E2AKY83RW0",
                                 "name": "produce",
                                 "type": "EconomicEvent",
                                 "provider": "Manufacturer2",
@@ -244,13 +262,13 @@
                                 "resourceQuantity": "1 (om2:one)",
                                 "children": [
                                   {
-                                    "id": "062SEQGJTE3HWCMKAR9560FQXM",
+                                    "id": "062SQZXCNJA7T4AREF6C77M954",
                                     "name": "Creation_magic_bike_mirror",
                                     "type": "Process",
                                     "note": "Creation of magic bike mirror by Manufacturer2",
                                     "children": [
                                       {
-                                        "id": "062SEQGRKPS3SE8FQYHP2SHR3R",
+                                        "id": "062SQZXJFJMG27N6M0JWPN962R",
                                         "name": "consume",
                                         "type": "EconomicEvent",
                                         "provider": "Manufacturer2",
@@ -258,9 +276,9 @@
                                         "resourceQuantity": "0.2 (om2:kilogram)",
                                         "children": [
                                           {
-                                            "id": "062SEQGMJBC2VNPTEW7JCVWXCC",
+                                            "id": "062SQZXEG4QK0XVEMV2AZ5E4DR",
                                             "name": "glass",
-                                            "trackingIdentifier": "glass-4820",
+                                            "trackingIdentifier": "glass-9165",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Manufacturer2",
                                             "custodian": "Manufacturer2",
@@ -269,7 +287,7 @@
                                             "onhandQuantity": "0.0 (om2:kilogram)",
                                             "children": [
                                               {
-                                                "id": "062SEQGMHMRK3DTQC00ZKBN3MM",
+                                                "id": "062SQZXEFQEG85G0GC8NNVH2V0",
                                                 "name": "raise",
                                                 "type": "EconomicEvent",
                                                 "provider": "Manufacturer2",
@@ -294,13 +312,31 @@
                 ]
               },
               {
-                "id": "062SEQGWNXTJ1309MPDP66588R",
+                "id": "062SQZXP9HNCCV6PAR90AZNMDW",
                 "name": "deliverService",
                 "type": "EconomicEvent",
                 "provider": "Manufacturer1",
                 "receiver": "Manufacturer1",
                 "resourceQuantity": "1 (om2:one)",
-                "children": []
+                "children": [
+                  {
+                    "id": "062SQZXBB3SB213NJJ0RCZJN4R",
+                    "name": "Create_bike_assembly_service",
+                    "type": "Process",
+                    "note": "Creation of bike assembly 1-hour service by service_prov2",
+                    "children": [
+                      {
+                        "id": "062SQZXNRN6SM0PAHG0ZKDP9B0",
+                        "name": "work",
+                        "type": "EconomicEvent",
+                        "provider": "service_prov2",
+                        "receiver": "service_prov2",
+                        "effortQuantity": "1 (om2:hour)",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
