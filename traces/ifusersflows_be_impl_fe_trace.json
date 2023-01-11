@@ -1,0 +1,911 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "node": {
+                        "id": "062SQZXNRN6SM0PAHG0ZKDP9B0",
+                        "action_id": "work",
+                        "resource_classified_as": null,
+                        "resource_quantity_has_numerical_value": null,
+                        "effort_quantity_has_numerical_value": "1",
+                        "has_beginning": null,
+                        "has_end": null,
+                        "has_point_in_time": "2023-01-10T14:05:04.701851Z",
+                        "note": "work to assemble bike",
+                        "agreed_in": null,
+                        "input_of_id": "062SQZXBB3SB213NJJ0RCZJN4R",
+                        "output_of_id": null,
+                        "provider_id": "062SE13FN2Y9YY44SCH82DPAPM",
+                        "receiver_id": "062SE13FN2Y9YY44SCH82DPAPM",
+                        "resource_inventoried_as_id": null,
+                        "to_resource_inventoried_as_id": null,
+                        "resource_conforms_to_id": "062SE13ZEY4TGDK3A2NX69FW48",
+                        "resource_quantity_has_unit_id": null,
+                        "effort_quantity_has_unit_id": "062SE13Q17TWJJJA2D9520GHV4",
+                        "to_location_id": null,
+                        "at_location_id": null,
+                        "realization_of_id": null,
+                        "triggered_by_id": null,
+                        "previous_event_id": null
+                      },
+                      "type": "EconomicEvent"
+                    }
+                  ],
+                  "node": {
+                    "id": "062SQZXBB3SB213NJJ0RCZJN4R",
+                    "name": "Create_bike_assembly_service",
+                    "note": "Creation of bike assembly 1-hour service by service_prov2",
+                    "has_beginning": "2023-01-10T14:05:02.052545Z",
+                    "has_end": "2023-01-10T14:05:02.052545Z",
+                    "finished": false,
+                    "deletable": false,
+                    "classified_as": null,
+                    "based_on_id": null,
+                    "planned_within_id": null
+                  },
+                  "type": "Process"
+                }
+              ],
+              "node": {
+                "id": "062SQZXP9HNCCV6PAR90AZNMDW",
+                "action_id": "deliverService",
+                "resource_classified_as": null,
+                "resource_quantity_has_numerical_value": "1",
+                "effort_quantity_has_numerical_value": null,
+                "has_beginning": null,
+                "has_end": null,
+                "has_point_in_time": "2023-01-10T14:05:04.852633Z",
+                "note": "produce service for bike assemblying",
+                "agreed_in": null,
+                "input_of_id": "062SQZXD3M2C1DKKP017SRS454",
+                "output_of_id": "062SQZXBB3SB213NJJ0RCZJN4R",
+                "provider_id": "062SE13G24NBTVHE7T747SCVSR",
+                "receiver_id": "062SE13G24NBTVHE7T747SCVSR",
+                "resource_inventoried_as_id": null,
+                "to_resource_inventoried_as_id": null,
+                "resource_conforms_to_id": "062SE13YG4CNV4YKNWCCRZRWKM",
+                "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                "effort_quantity_has_unit_id": null,
+                "to_location_id": null,
+                "at_location_id": null,
+                "realization_of_id": null,
+                "triggered_by_id": null,
+                "previous_event_id": null
+              },
+              "type": "EconomicEvent"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [],
+                                              "node": {
+                                                "id": "062SQZXEFQEG85G0GC8NNVH2V0",
+                                                "action_id": "raise",
+                                                "resource_classified_as": null,
+                                                "resource_quantity_has_numerical_value": "0.2",
+                                                "effort_quantity_has_numerical_value": null,
+                                                "has_beginning": null,
+                                                "has_end": null,
+                                                "has_point_in_time": "2023-01-10T14:05:02.848101Z",
+                                                "note": "update event",
+                                                "agreed_in": null,
+                                                "input_of_id": null,
+                                                "output_of_id": null,
+                                                "provider_id": "062SE13GFE07NE730CQXNTN0C4",
+                                                "receiver_id": "062SE13GFE07NE730CQXNTN0C4",
+                                                "resource_inventoried_as_id": "062SQZXEG4QK0XVEMV2AZ5E4DR",
+                                                "to_resource_inventoried_as_id": null,
+                                                "resource_conforms_to_id": "062SE13XGYE7BEWTYJ1XH8BKV0",
+                                                "resource_quantity_has_unit_id": "062SE13P2RER2TPJF6NP3A8754",
+                                                "effort_quantity_has_unit_id": null,
+                                                "to_location_id": null,
+                                                "at_location_id": null,
+                                                "realization_of_id": null,
+                                                "triggered_by_id": null,
+                                                "previous_event_id": null
+                                              },
+                                              "type": "EconomicEvent"
+                                            }
+                                          ],
+                                          "node": {
+                                            "id": "062SQZXEG4QK0XVEMV2AZ5E4DR",
+                                            "name": "glass",
+                                            "note": null,
+                                            "tracking_identifier": "glass-9165",
+                                            "classified_as": null,
+                                            "state_id": null,
+                                            "okhv": null,
+                                            "repo": null,
+                                            "version": null,
+                                            "licensor": null,
+                                            "license": null,
+                                            "metadata": null,
+                                            "accounting_quantity_has_numerical_value": "0.0",
+                                            "accounting_quantity_has_unit_id": "062SE13P2RER2TPJF6NP3A8754",
+                                            "onhand_quantity_has_numerical_value": "0.0",
+                                            "onhand_quantity_has_unit_id": "062SE13P2RER2TPJF6NP3A8754",
+                                            "conforms_to_id": "062SE13XGYE7BEWTYJ1XH8BKV0",
+                                            "primary_accountable_id": "062SE13GFE07NE730CQXNTN0C4",
+                                            "custodian_id": "062SE13GFE07NE730CQXNTN0C4",
+                                            "stage_id": null,
+                                            "current_location_id": null,
+                                            "lot_id": null,
+                                            "contained_in_id": null,
+                                            "unit_of_effort_id": null,
+                                            "previous_event_id": "062SQZXJFJMG27N6M0JWPN962R"
+                                          },
+                                          "type": "EconomicResource"
+                                        }
+                                      ],
+                                      "node": {
+                                        "id": "062SQZXJFJMG27N6M0JWPN962R",
+                                        "action_id": "consume",
+                                        "resource_classified_as": null,
+                                        "resource_quantity_has_numerical_value": "0.2",
+                                        "effort_quantity_has_numerical_value": null,
+                                        "has_beginning": null,
+                                        "has_end": null,
+                                        "has_point_in_time": "2023-01-10T14:05:03.863415Z",
+                                        "note": "consume glass for bike mirror",
+                                        "agreed_in": null,
+                                        "input_of_id": "062SQZXCNJA7T4AREF6C77M954",
+                                        "output_of_id": null,
+                                        "provider_id": "062SE13GFE07NE730CQXNTN0C4",
+                                        "receiver_id": "062SE13GFE07NE730CQXNTN0C4",
+                                        "resource_inventoried_as_id": "062SQZXEG4QK0XVEMV2AZ5E4DR",
+                                        "to_resource_inventoried_as_id": null,
+                                        "resource_conforms_to_id": null,
+                                        "resource_quantity_has_unit_id": "062SE13P2RER2TPJF6NP3A8754",
+                                        "effort_quantity_has_unit_id": null,
+                                        "to_location_id": null,
+                                        "at_location_id": null,
+                                        "realization_of_id": null,
+                                        "triggered_by_id": null,
+                                        "previous_event_id": "062SQZXEFQEG85G0GC8NNVH2V0"
+                                      },
+                                      "type": "EconomicEvent"
+                                    }
+                                  ],
+                                  "node": {
+                                    "id": "062SQZXCNJA7T4AREF6C77M954",
+                                    "name": "Creation_magic_bike_mirror",
+                                    "note": "Creation of magic bike mirror by Manufacturer2",
+                                    "has_beginning": "2023-01-10T14:05:02.388399Z",
+                                    "has_end": "2023-01-10T14:05:02.388399Z",
+                                    "finished": false,
+                                    "deletable": false,
+                                    "classified_as": null,
+                                    "based_on_id": null,
+                                    "planned_within_id": null
+                                  },
+                                  "type": "Process"
+                                }
+                              ],
+                              "node": {
+                                "id": "062SQZXK9W1KPT28E2AKY83RW0",
+                                "action_id": "produce",
+                                "resource_classified_as": null,
+                                "resource_quantity_has_numerical_value": "1",
+                                "effort_quantity_has_numerical_value": null,
+                                "has_beginning": null,
+                                "has_end": null,
+                                "has_point_in_time": "2023-01-10T14:05:04.071378Z",
+                                "note": "produce magic bike mirror",
+                                "agreed_in": null,
+                                "input_of_id": null,
+                                "output_of_id": "062SQZXCNJA7T4AREF6C77M954",
+                                "provider_id": "062SE13GFE07NE730CQXNTN0C4",
+                                "receiver_id": "062SE13GFE07NE730CQXNTN0C4",
+                                "resource_inventoried_as_id": "062SQZXKA48S1ZVFGC6VQSE5R0",
+                                "to_resource_inventoried_as_id": null,
+                                "resource_conforms_to_id": "062SE13XZPMAD0DXDEFVZJ2930",
+                                "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                                "effort_quantity_has_unit_id": null,
+                                "to_location_id": null,
+                                "at_location_id": null,
+                                "realization_of_id": null,
+                                "triggered_by_id": null,
+                                "previous_event_id": null
+                              },
+                              "type": "EconomicEvent"
+                            }
+                          ],
+                          "node": {
+                            "id": "062SQZXKA48S1ZVFGC6VQSE5R0",
+                            "name": "magic bike mirror",
+                            "note": null,
+                            "tracking_identifier": "magic_bike_mirror-5638",
+                            "classified_as": null,
+                            "state_id": null,
+                            "okhv": null,
+                            "repo": null,
+                            "version": null,
+                            "licensor": null,
+                            "license": null,
+                            "metadata": null,
+                            "accounting_quantity_has_numerical_value": "0",
+                            "accounting_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                            "onhand_quantity_has_numerical_value": "0",
+                            "onhand_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                            "conforms_to_id": "062SE13XZPMAD0DXDEFVZJ2930",
+                            "primary_accountable_id": "062SE13GFE07NE730CQXNTN0C4",
+                            "custodian_id": "062SE13GFE07NE730CQXNTN0C4",
+                            "stage_id": null,
+                            "current_location_id": null,
+                            "lot_id": null,
+                            "contained_in_id": null,
+                            "unit_of_effort_id": null,
+                            "previous_event_id": "062SQZXKV1EX7H99NYVNBMY8D4"
+                          },
+                          "type": "EconomicResource"
+                        }
+                      ],
+                      "node": {
+                        "id": "062SQZXKV1EX7H99NYVNBMY8D4",
+                        "action_id": "transfer",
+                        "resource_classified_as": null,
+                        "resource_quantity_has_numerical_value": "1",
+                        "effort_quantity_has_numerical_value": null,
+                        "has_beginning": null,
+                        "has_end": null,
+                        "has_point_in_time": "2023-01-10T14:05:04.225292Z",
+                        "note": "Transfer magic bike mirror from manufacturer2 to designer2",
+                        "agreed_in": null,
+                        "input_of_id": null,
+                        "output_of_id": null,
+                        "provider_id": "062SE13GFE07NE730CQXNTN0C4",
+                        "receiver_id": "062SE13EVVW7J599566RMWYVHW",
+                        "resource_inventoried_as_id": "062SQZXKA48S1ZVFGC6VQSE5R0",
+                        "to_resource_inventoried_as_id": "062SQZXKVTF1VM18BXJVWAT6B8",
+                        "resource_conforms_to_id": null,
+                        "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                        "effort_quantity_has_unit_id": null,
+                        "to_location_id": null,
+                        "at_location_id": "062SE13J9P4QKJ5B57S9RP9FF4",
+                        "realization_of_id": null,
+                        "triggered_by_id": null,
+                        "previous_event_id": "062SQZXK9W1KPT28E2AKY83RW0"
+                      },
+                      "type": "EconomicEvent"
+                    }
+                  ],
+                  "node": {
+                    "id": "062SQZXKVTF1VM18BXJVWAT6B8",
+                    "name": "magic bike mirror",
+                    "note": null,
+                    "tracking_identifier": "magic_bike_mirror-5638",
+                    "classified_as": null,
+                    "state_id": null,
+                    "okhv": null,
+                    "repo": null,
+                    "version": null,
+                    "licensor": null,
+                    "license": null,
+                    "metadata": null,
+                    "accounting_quantity_has_numerical_value": "0",
+                    "accounting_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                    "onhand_quantity_has_numerical_value": "0",
+                    "onhand_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                    "conforms_to_id": "062SE13XZPMAD0DXDEFVZJ2930",
+                    "primary_accountable_id": "062SE13EVVW7J599566RMWYVHW",
+                    "custodian_id": "062SE13EVVW7J599566RMWYVHW",
+                    "stage_id": null,
+                    "current_location_id": null,
+                    "lot_id": null,
+                    "contained_in_id": null,
+                    "unit_of_effort_id": null,
+                    "previous_event_id": "062SQZXQ123B88TRCJD87KABQG"
+                  },
+                  "type": "EconomicResource"
+                }
+              ],
+              "node": {
+                "id": "062SQZXQ123B88TRCJD87KABQG",
+                "action_id": "consume",
+                "resource_classified_as": null,
+                "resource_quantity_has_numerical_value": "1",
+                "effort_quantity_has_numerical_value": null,
+                "has_beginning": null,
+                "has_end": null,
+                "has_point_in_time": "2023-01-10T14:05:05.021065Z",
+                "note": "consume mirror for bike",
+                "agreed_in": null,
+                "input_of_id": "062SQZXD3M2C1DKKP017SRS454",
+                "output_of_id": null,
+                "provider_id": "062SE13EVVW7J599566RMWYVHW",
+                "receiver_id": "062SE13EVVW7J599566RMWYVHW",
+                "resource_inventoried_as_id": "062SQZXKVTF1VM18BXJVWAT6B8",
+                "to_resource_inventoried_as_id": null,
+                "resource_conforms_to_id": null,
+                "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                "effort_quantity_has_unit_id": null,
+                "to_location_id": null,
+                "at_location_id": null,
+                "realization_of_id": null,
+                "triggered_by_id": null,
+                "previous_event_id": "062SQZXKV1EX7H99NYVNBMY8D4"
+              },
+              "type": "EconomicEvent"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "node": {
+                                "id": "062SQZXMEX0WDS1HAS63XT64PW",
+                                "action_id": "work",
+                                "resource_classified_as": null,
+                                "resource_quantity_has_numerical_value": null,
+                                "effort_quantity_has_numerical_value": "8",
+                                "has_beginning": null,
+                                "has_end": null,
+                                "has_point_in_time": "2023-01-10T14:05:04.376154Z",
+                                "note": "work to create funky bike design",
+                                "agreed_in": null,
+                                "input_of_id": "062SQZXC70P6E5C41VF6CTK0N0",
+                                "output_of_id": null,
+                                "provider_id": "062SE13EF9JE2H1HD23T64RP0W",
+                                "receiver_id": "062SE13EF9JE2H1HD23T64RP0W",
+                                "resource_inventoried_as_id": null,
+                                "to_resource_inventoried_as_id": null,
+                                "resource_conforms_to_id": "062SEAYMHFQNVDY49QXEPNJBX4",
+                                "resource_quantity_has_unit_id": null,
+                                "effort_quantity_has_unit_id": "062SE13Q17TWJJJA2D9520GHV4",
+                                "to_location_id": null,
+                                "at_location_id": null,
+                                "realization_of_id": null,
+                                "triggered_by_id": null,
+                                "previous_event_id": null
+                              },
+                              "type": "EconomicEvent"
+                            }
+                          ],
+                          "node": {
+                            "id": "062SQZXC70P6E5C41VF6CTK0N0",
+                            "name": "Create_funky_bike_design",
+                            "note": "Creation of funky bike design by Designer1",
+                            "has_beginning": "2023-01-10T14:05:02.278272Z",
+                            "has_end": "2023-01-10T14:05:02.278272Z",
+                            "finished": false,
+                            "deletable": false,
+                            "classified_as": null,
+                            "based_on_id": null,
+                            "planned_within_id": null
+                          },
+                          "type": "Process"
+                        }
+                      ],
+                      "node": {
+                        "id": "062SQZXN2DXRB3NGB987MJEMCW",
+                        "action_id": "produce",
+                        "resource_classified_as": null,
+                        "resource_quantity_has_numerical_value": "1",
+                        "effort_quantity_has_numerical_value": null,
+                        "has_beginning": null,
+                        "has_end": null,
+                        "has_point_in_time": "2023-01-10T14:05:04.522617Z",
+                        "note": "produce design for funky bike",
+                        "agreed_in": null,
+                        "input_of_id": null,
+                        "output_of_id": "062SQZXC70P6E5C41VF6CTK0N0",
+                        "provider_id": "062SE13EF9JE2H1HD23T64RP0W",
+                        "receiver_id": "062SE13EF9JE2H1HD23T64RP0W",
+                        "resource_inventoried_as_id": "062SQZXN2SNFS53TNEK9C6VBTM",
+                        "to_resource_inventoried_as_id": null,
+                        "resource_conforms_to_id": "062SE13X248QCSAVD8B7CAQ3ZM",
+                        "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                        "effort_quantity_has_unit_id": null,
+                        "to_location_id": null,
+                        "at_location_id": null,
+                        "realization_of_id": null,
+                        "triggered_by_id": null,
+                        "previous_event_id": null
+                      },
+                      "type": "EconomicEvent"
+                    }
+                  ],
+                  "node": {
+                    "id": "062SQZXN2SNFS53TNEK9C6VBTM",
+                    "name": "funky bike design",
+                    "note": null,
+                    "tracking_identifier": "funky_bike_design-6720",
+                    "classified_as": null,
+                    "state_id": null,
+                    "okhv": null,
+                    "repo": null,
+                    "version": null,
+                    "licensor": null,
+                    "license": null,
+                    "metadata": null,
+                    "accounting_quantity_has_numerical_value": "1",
+                    "accounting_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                    "onhand_quantity_has_numerical_value": "1",
+                    "onhand_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                    "conforms_to_id": "062SE13X248QCSAVD8B7CAQ3ZM",
+                    "primary_accountable_id": "062SE13EF9JE2H1HD23T64RP0W",
+                    "custodian_id": "062SE13EF9JE2H1HD23T64RP0W",
+                    "stage_id": null,
+                    "current_location_id": null,
+                    "lot_id": null,
+                    "contained_in_id": null,
+                    "unit_of_effort_id": null,
+                    "previous_event_id": "062SQZXQMYR6NG69F8GY6YKQXR"
+                  },
+                  "type": "EconomicResource"
+                }
+              ],
+              "node": {
+                "id": "062SQZXQMYR6NG69F8GY6YKQXR",
+                "action_id": "cite",
+                "resource_classified_as": null,
+                "resource_quantity_has_numerical_value": "1",
+                "effort_quantity_has_numerical_value": null,
+                "has_beginning": null,
+                "has_end": null,
+                "has_point_in_time": "2023-01-10T14:05:05.188754Z",
+                "note": "cite design to build bike",
+                "agreed_in": null,
+                "input_of_id": "062SQZXD3M2C1DKKP017SRS454",
+                "output_of_id": null,
+                "provider_id": "062SE13EVVW7J599566RMWYVHW",
+                "receiver_id": "062SE13EVVW7J599566RMWYVHW",
+                "resource_inventoried_as_id": "062SQZXN2SNFS53TNEK9C6VBTM",
+                "to_resource_inventoried_as_id": null,
+                "resource_conforms_to_id": null,
+                "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                "effort_quantity_has_unit_id": null,
+                "to_location_id": null,
+                "at_location_id": null,
+                "realization_of_id": null,
+                "triggered_by_id": null,
+                "previous_event_id": "062SQZXN2DXRB3NGB987MJEMCW"
+              },
+              "type": "EconomicEvent"
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [],
+                                              "node": {
+                                                "id": "062SQZXF5GTKTBH5KXJNS9FMQC",
+                                                "action_id": "work",
+                                                "resource_classified_as": null,
+                                                "resource_quantity_has_numerical_value": null,
+                                                "effort_quantity_has_numerical_value": "8",
+                                                "has_beginning": null,
+                                                "has_end": null,
+                                                "has_point_in_time": "2023-01-10T14:05:03.008619Z",
+                                                "note": "work to manufacture bike frame",
+                                                "agreed_in": null,
+                                                "input_of_id": "062SQZXAW07KJ4D880TBCC39JG",
+                                                "output_of_id": null,
+                                                "provider_id": "062SE13F84GFGGYFDZ099SFXM4",
+                                                "receiver_id": "062SE13F84GFGGYFDZ099SFXM4",
+                                                "resource_inventoried_as_id": null,
+                                                "to_resource_inventoried_as_id": null,
+                                                "resource_conforms_to_id": "062SE13ZEY4TGDK3A2NX69FW48",
+                                                "resource_quantity_has_unit_id": null,
+                                                "effort_quantity_has_unit_id": "062SE13Q17TWJJJA2D9520GHV4",
+                                                "to_location_id": null,
+                                                "at_location_id": null,
+                                                "realization_of_id": null,
+                                                "triggered_by_id": null,
+                                                "previous_event_id": null
+                                              },
+                                              "type": "EconomicEvent"
+                                            }
+                                          ],
+                                          "node": {
+                                            "id": "062SQZXAW07KJ4D880TBCC39JG",
+                                            "name": "Create_bike_frame_manifacturing_service_ABC",
+                                            "note": "Creation of bike frame manufacturing service ABC by Service_prov1",
+                                            "has_beginning": "2023-01-10T14:05:01.874782Z",
+                                            "has_end": "2023-01-10T14:05:01.874782Z",
+                                            "finished": false,
+                                            "deletable": false,
+                                            "classified_as": null,
+                                            "based_on_id": null,
+                                            "planned_within_id": null
+                                          },
+                                          "type": "Process"
+                                        }
+                                      ],
+                                      "node": {
+                                        "id": "062SQZXFR0AFSSJCB0YJK95460",
+                                        "action_id": "deliverService",
+                                        "resource_classified_as": null,
+                                        "resource_quantity_has_numerical_value": "1",
+                                        "effort_quantity_has_numerical_value": null,
+                                        "has_beginning": null,
+                                        "has_end": null,
+                                        "has_point_in_time": "2023-01-10T14:05:03.163430Z",
+                                        "note": "produce service manufacturing the frame",
+                                        "agreed_in": null,
+                                        "input_of_id": "062SQZXBS5C2GVFV00BKQSPDK0",
+                                        "output_of_id": "062SQZXAW07KJ4D880TBCC39JG",
+                                        "provider_id": "062SE13F84GFGGYFDZ099SFXM4",
+                                        "receiver_id": "062SE13F84GFGGYFDZ099SFXM4",
+                                        "resource_inventoried_as_id": null,
+                                        "to_resource_inventoried_as_id": null,
+                                        "resource_conforms_to_id": "062SE13VKMEJAA2KBFEZFXJGH4",
+                                        "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                                        "effort_quantity_has_unit_id": null,
+                                        "to_location_id": null,
+                                        "at_location_id": null,
+                                        "realization_of_id": null,
+                                        "triggered_by_id": null,
+                                        "previous_event_id": null
+                                      },
+                                      "type": "EconomicEvent"
+                                    },
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [],
+                                              "node": {
+                                                "id": "062SQZXDXNM98P9KHS7E07NZZC",
+                                                "action_id": "raise",
+                                                "resource_classified_as": null,
+                                                "resource_quantity_has_numerical_value": "5",
+                                                "effort_quantity_has_numerical_value": null,
+                                                "has_beginning": null,
+                                                "has_end": null,
+                                                "has_point_in_time": "2023-01-10T14:05:02.694508Z",
+                                                "note": "update event",
+                                                "agreed_in": null,
+                                                "input_of_id": null,
+                                                "output_of_id": null,
+                                                "provider_id": "062SE13G24NBTVHE7T747SCVSR",
+                                                "receiver_id": "062SE13G24NBTVHE7T747SCVSR",
+                                                "resource_inventoried_as_id": "062SQZXDY7RASS9PNE93HD4ZB8",
+                                                "to_resource_inventoried_as_id": null,
+                                                "resource_conforms_to_id": "062SE13W3PRR4FYW3SGR9R3A3R",
+                                                "resource_quantity_has_unit_id": "062SE13P2RER2TPJF6NP3A8754",
+                                                "effort_quantity_has_unit_id": null,
+                                                "to_location_id": null,
+                                                "at_location_id": null,
+                                                "realization_of_id": null,
+                                                "triggered_by_id": null,
+                                                "previous_event_id": null
+                                              },
+                                              "type": "EconomicEvent"
+                                            }
+                                          ],
+                                          "node": {
+                                            "id": "062SQZXDY7RASS9PNE93HD4ZB8",
+                                            "name": "aluminium",
+                                            "note": null,
+                                            "tracking_identifier": "aluminium-5940",
+                                            "classified_as": null,
+                                            "state_id": null,
+                                            "okhv": null,
+                                            "repo": null,
+                                            "version": null,
+                                            "licensor": null,
+                                            "license": null,
+                                            "metadata": null,
+                                            "accounting_quantity_has_numerical_value": "0",
+                                            "accounting_quantity_has_unit_id": "062SE13P2RER2TPJF6NP3A8754",
+                                            "onhand_quantity_has_numerical_value": "0",
+                                            "onhand_quantity_has_unit_id": "062SE13P2RER2TPJF6NP3A8754",
+                                            "conforms_to_id": "062SE13W3PRR4FYW3SGR9R3A3R",
+                                            "primary_accountable_id": "062SE13G24NBTVHE7T747SCVSR",
+                                            "custodian_id": "062SE13G24NBTVHE7T747SCVSR",
+                                            "stage_id": null,
+                                            "current_location_id": null,
+                                            "lot_id": null,
+                                            "contained_in_id": null,
+                                            "unit_of_effort_id": null,
+                                            "previous_event_id": "062SQZXGGYP4K2ZBPM956E7AQR"
+                                          },
+                                          "type": "EconomicResource"
+                                        }
+                                      ],
+                                      "node": {
+                                        "id": "062SQZXGGYP4K2ZBPM956E7AQR",
+                                        "action_id": "consume",
+                                        "resource_classified_as": null,
+                                        "resource_quantity_has_numerical_value": "5",
+                                        "effort_quantity_has_numerical_value": null,
+                                        "has_beginning": null,
+                                        "has_end": null,
+                                        "has_point_in_time": "2023-01-10T14:05:03.362073Z",
+                                        "note": "consume aluminium for bike frame",
+                                        "agreed_in": null,
+                                        "input_of_id": "062SQZXBS5C2GVFV00BKQSPDK0",
+                                        "output_of_id": null,
+                                        "provider_id": "062SE13G24NBTVHE7T747SCVSR",
+                                        "receiver_id": "062SE13G24NBTVHE7T747SCVSR",
+                                        "resource_inventoried_as_id": "062SQZXDY7RASS9PNE93HD4ZB8",
+                                        "to_resource_inventoried_as_id": null,
+                                        "resource_conforms_to_id": null,
+                                        "resource_quantity_has_unit_id": "062SE13P2RER2TPJF6NP3A8754",
+                                        "effort_quantity_has_unit_id": null,
+                                        "to_location_id": null,
+                                        "at_location_id": null,
+                                        "realization_of_id": null,
+                                        "triggered_by_id": null,
+                                        "previous_event_id": "062SQZXDXNM98P9KHS7E07NZZC"
+                                      },
+                                      "type": "EconomicEvent"
+                                    }
+                                  ],
+                                  "node": {
+                                    "id": "062SQZXBS5C2GVFV00BKQSPDK0",
+                                    "name": "Create_aluminium_bike_frame",
+                                    "note": "Creation of aluminum bike frame by Manufacturer1",
+                                    "has_beginning": "2023-01-10T14:05:02.165997Z",
+                                    "has_end": "2023-01-10T14:05:02.165997Z",
+                                    "finished": false,
+                                    "deletable": false,
+                                    "classified_as": null,
+                                    "based_on_id": null,
+                                    "planned_within_id": null
+                                  },
+                                  "type": "Process"
+                                }
+                              ],
+                              "node": {
+                                "id": "062SQZXH6RYHVDCR21Y3ZP7T6G",
+                                "action_id": "produce",
+                                "resource_classified_as": null,
+                                "resource_quantity_has_numerical_value": "1",
+                                "effort_quantity_has_numerical_value": null,
+                                "has_beginning": null,
+                                "has_end": null,
+                                "has_point_in_time": "2023-01-10T14:05:03.522570Z",
+                                "note": "produce aluminium bike frame",
+                                "agreed_in": null,
+                                "input_of_id": null,
+                                "output_of_id": "062SQZXBS5C2GVFV00BKQSPDK0",
+                                "provider_id": "062SE13G24NBTVHE7T747SCVSR",
+                                "receiver_id": "062SE13G24NBTVHE7T747SCVSR",
+                                "resource_inventoried_as_id": "062SQZXH6ZXKYS0NTDC2WN2H7W",
+                                "to_resource_inventoried_as_id": null,
+                                "resource_conforms_to_id": "062SE13WJWPTCEW38027JQ0ZFG",
+                                "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                                "effort_quantity_has_unit_id": null,
+                                "to_location_id": null,
+                                "at_location_id": null,
+                                "realization_of_id": null,
+                                "triggered_by_id": null,
+                                "previous_event_id": null
+                              },
+                              "type": "EconomicEvent"
+                            }
+                          ],
+                          "node": {
+                            "id": "062SQZXH6ZXKYS0NTDC2WN2H7W",
+                            "name": "aluminium bike frame",
+                            "note": null,
+                            "tracking_identifier": "aluminium_bike_frame-2628",
+                            "classified_as": null,
+                            "state_id": null,
+                            "okhv": null,
+                            "repo": null,
+                            "version": null,
+                            "licensor": null,
+                            "license": null,
+                            "metadata": null,
+                            "accounting_quantity_has_numerical_value": "0",
+                            "accounting_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                            "onhand_quantity_has_numerical_value": "0",
+                            "onhand_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                            "conforms_to_id": "062SE13WJWPTCEW38027JQ0ZFG",
+                            "primary_accountable_id": "062SE13G24NBTVHE7T747SCVSR",
+                            "custodian_id": "062SE13G24NBTVHE7T747SCVSR",
+                            "stage_id": null,
+                            "current_location_id": null,
+                            "lot_id": null,
+                            "contained_in_id": null,
+                            "unit_of_effort_id": null,
+                            "previous_event_id": "062SQZXHV447QPCMS6H6FP71TC"
+                          },
+                          "type": "EconomicResource"
+                        }
+                      ],
+                      "node": {
+                        "id": "062SQZXHV447QPCMS6H6FP71TC",
+                        "action_id": "transfer",
+                        "resource_classified_as": null,
+                        "resource_quantity_has_numerical_value": "1",
+                        "effort_quantity_has_numerical_value": null,
+                        "has_beginning": null,
+                        "has_end": null,
+                        "has_point_in_time": "2023-01-10T14:05:03.689851Z",
+                        "note": "Transfer aluminium bike frame from manufacturer1 to designer2",
+                        "agreed_in": null,
+                        "input_of_id": null,
+                        "output_of_id": null,
+                        "provider_id": "062SE13G24NBTVHE7T747SCVSR",
+                        "receiver_id": "062SE13EVVW7J599566RMWYVHW",
+                        "resource_inventoried_as_id": "062SQZXH6ZXKYS0NTDC2WN2H7W",
+                        "to_resource_inventoried_as_id": "062SQZXHVYW93HPQ114ZA4NYRR",
+                        "resource_conforms_to_id": null,
+                        "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                        "effort_quantity_has_unit_id": null,
+                        "to_location_id": null,
+                        "at_location_id": "062SE13J9P4QKJ5B57S9RP9FF4",
+                        "realization_of_id": null,
+                        "triggered_by_id": null,
+                        "previous_event_id": "062SQZXH6RYHVDCR21Y3ZP7T6G"
+                      },
+                      "type": "EconomicEvent"
+                    }
+                  ],
+                  "node": {
+                    "id": "062SQZXHVYW93HPQ114ZA4NYRR",
+                    "name": "aluminium bike frame",
+                    "note": null,
+                    "tracking_identifier": "aluminium_bike_frame-2628",
+                    "classified_as": null,
+                    "state_id": null,
+                    "okhv": null,
+                    "repo": null,
+                    "version": null,
+                    "licensor": null,
+                    "license": null,
+                    "metadata": null,
+                    "accounting_quantity_has_numerical_value": "0",
+                    "accounting_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                    "onhand_quantity_has_numerical_value": "0",
+                    "onhand_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                    "conforms_to_id": "062SE13WJWPTCEW38027JQ0ZFG",
+                    "primary_accountable_id": "062SE13EVVW7J599566RMWYVHW",
+                    "custodian_id": "062SE13EVVW7J599566RMWYVHW",
+                    "stage_id": null,
+                    "current_location_id": null,
+                    "lot_id": null,
+                    "contained_in_id": null,
+                    "unit_of_effort_id": null,
+                    "previous_event_id": "062SQZXR9KM5KVRVY0ASATHW4C"
+                  },
+                  "type": "EconomicResource"
+                }
+              ],
+              "node": {
+                "id": "062SQZXR9KM5KVRVY0ASATHW4C",
+                "action_id": "consume",
+                "resource_classified_as": null,
+                "resource_quantity_has_numerical_value": "1",
+                "effort_quantity_has_numerical_value": null,
+                "has_beginning": null,
+                "has_end": null,
+                "has_point_in_time": "2023-01-10T14:05:05.348766Z",
+                "note": "consume aluminium bike frame",
+                "agreed_in": null,
+                "input_of_id": "062SQZXD3M2C1DKKP017SRS454",
+                "output_of_id": null,
+                "provider_id": "062SE13EVVW7J599566RMWYVHW",
+                "receiver_id": "062SE13EVVW7J599566RMWYVHW",
+                "resource_inventoried_as_id": "062SQZXHVYW93HPQ114ZA4NYRR",
+                "to_resource_inventoried_as_id": null,
+                "resource_conforms_to_id": null,
+                "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+                "effort_quantity_has_unit_id": null,
+                "to_location_id": null,
+                "at_location_id": null,
+                "realization_of_id": null,
+                "triggered_by_id": null,
+                "previous_event_id": "062SQZXHV447QPCMS6H6FP71TC"
+              },
+              "type": "EconomicEvent"
+            }
+          ],
+          "node": {
+            "id": "062SQZXD3M2C1DKKP017SRS454",
+            "name": "Creation_fancy_collaborative_bike",
+            "note": "Creation of fancy collaborative bike by Designer2",
+            "has_beginning": "2023-01-10T14:05:02.508678Z",
+            "has_end": "2023-01-10T14:05:02.508678Z",
+            "finished": false,
+            "deletable": false,
+            "classified_as": null,
+            "based_on_id": null,
+            "planned_within_id": null
+          },
+          "type": "Process"
+        }
+      ],
+      "node": {
+        "id": "062SQZXRXADA8EB08MRZG9B2N8",
+        "action_id": "produce",
+        "resource_classified_as": null,
+        "resource_quantity_has_numerical_value": "1",
+        "effort_quantity_has_numerical_value": null,
+        "has_beginning": null,
+        "has_end": null,
+        "has_point_in_time": "2023-01-10T14:05:05.513871Z",
+        "note": "produce fancy collaborative bike",
+        "agreed_in": null,
+        "input_of_id": null,
+        "output_of_id": "062SQZXD3M2C1DKKP017SRS454",
+        "provider_id": "062SE13EVVW7J599566RMWYVHW",
+        "receiver_id": "062SE13EVVW7J599566RMWYVHW",
+        "resource_inventoried_as_id": "062SQZXRXFB2AQG80NSZ46HQ4C",
+        "to_resource_inventoried_as_id": null,
+        "resource_conforms_to_id": "062SE13Z01FYWC33NKX6M57Z9M",
+        "resource_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+        "effort_quantity_has_unit_id": null,
+        "to_location_id": null,
+        "at_location_id": null,
+        "realization_of_id": null,
+        "triggered_by_id": null,
+        "previous_event_id": null
+      },
+      "type": "EconomicEvent"
+    }
+  ],
+  "node": {
+    "id": "062SQZXRXFB2AQG80NSZ46HQ4C",
+    "name": "fancy collaborative bike",
+    "note": null,
+    "tracking_identifier": "fancy_collaborative_bike-8707",
+    "classified_as": null,
+    "state_id": null,
+    "okhv": null,
+    "repo": null,
+    "version": null,
+    "licensor": null,
+    "license": null,
+    "metadata": null,
+    "accounting_quantity_has_numerical_value": "1",
+    "accounting_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+    "onhand_quantity_has_numerical_value": "1",
+    "onhand_quantity_has_unit_id": "062SE13NKW380G0DSWRD1KNXX4",
+    "conforms_to_id": "062SE13Z01FYWC33NKX6M57Z9M",
+    "primary_accountable_id": "062SE13EVVW7J599566RMWYVHW",
+    "custodian_id": "062SE13EVVW7J599566RMWYVHW",
+    "stage_id": null,
+    "current_location_id": null,
+    "lot_id": null,
+    "contained_in_id": null,
+    "unit_of_effort_id": null,
+    "previous_event_id": "062SQZXRXADA8EB08MRZG9B2N8"
+  },
+  "type": "EconomicResource"
+}

@@ -1,0 +1,347 @@
+[
+  {
+    "id": "062SQZXRXFB2AQG80NSZ46HQ4C",
+    "name": "fancy collaborative bike",
+    "trackingIdentifier": "fancy_collaborative_bike-8707",
+    "type": "EconomicResource",
+    "primaryAccountable": "Designer2",
+    "custodian": "Designer2",
+    "metadata": null,
+    "accountingQuantity": "1 (om2:one)",
+    "onhandQuantity": "1 (om2:one)",
+    "children": [
+      {
+        "id": "062SQZXRXADA8EB08MRZG9B2N8",
+        "name": "produce",
+        "type": "EconomicEvent",
+        "provider": "Designer2",
+        "receiver": "Designer2",
+        "resourceQuantity": "1 (om2:one)",
+        "children": [
+          {
+            "id": "062SQZXD3M2C1DKKP017SRS454",
+            "name": "Creation_fancy_collaborative_bike",
+            "type": "Process",
+            "note": "Creation of fancy collaborative bike by Designer2",
+            "children": [
+              {
+                "id": "062SQZXR9KM5KVRVY0ASATHW4C",
+                "name": "consume",
+                "type": "EconomicEvent",
+                "provider": "Designer2",
+                "receiver": "Designer2",
+                "resourceQuantity": "1 (om2:one)",
+                "children": [
+                  {
+                    "id": "062SQZXHVYW93HPQ114ZA4NYRR",
+                    "name": "aluminium bike frame",
+                    "trackingIdentifier": "aluminium_bike_frame-2628",
+                    "type": "EconomicResource",
+                    "primaryAccountable": "Designer2",
+                    "custodian": "Designer2",
+                    "metadata": null,
+                    "accountingQuantity": "0 (om2:one)",
+                    "onhandQuantity": "0 (om2:one)",
+                    "children": [
+                      {
+                        "id": "062SQZXHV447QPCMS6H6FP71TC",
+                        "name": "transfer",
+                        "type": "EconomicEvent",
+                        "provider": "Manufacturer1",
+                        "receiver": "Designer2",
+                        "atLocation": {
+                          "id": "062SE13J9P4QKJ5B57S9RP9FF4",
+                          "name": "Farback",
+                          "alt": "0",
+                          "lat": "52.3767127",
+                          "long": "4.8990591",
+                          "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+                          "note": "location.designer2.org"
+                        },
+                        "resourceQuantity": "1 (om2:one)",
+                        "children": [
+                          {
+                            "id": "062SQZXH6ZXKYS0NTDC2WN2H7W",
+                            "name": "aluminium bike frame",
+                            "trackingIdentifier": "aluminium_bike_frame-2628",
+                            "type": "EconomicResource",
+                            "primaryAccountable": "Manufacturer1",
+                            "custodian": "Manufacturer1",
+                            "metadata": null,
+                            "accountingQuantity": "0 (om2:one)",
+                            "onhandQuantity": "0 (om2:one)",
+                            "children": [
+                              {
+                                "id": "062SQZXH6RYHVDCR21Y3ZP7T6G",
+                                "name": "produce",
+                                "type": "EconomicEvent",
+                                "provider": "Manufacturer1",
+                                "receiver": "Manufacturer1",
+                                "resourceQuantity": "1 (om2:one)",
+                                "children": [
+                                  {
+                                    "id": "062SQZXBS5C2GVFV00BKQSPDK0",
+                                    "name": "Create_aluminium_bike_frame",
+                                    "type": "Process",
+                                    "note": "Creation of aluminum bike frame by Manufacturer1",
+                                    "children": [
+                                      {
+                                        "id": "062SQZXGGYP4K2ZBPM956E7AQR",
+                                        "name": "consume",
+                                        "type": "EconomicEvent",
+                                        "provider": "Manufacturer1",
+                                        "receiver": "Manufacturer1",
+                                        "resourceQuantity": "5 (om2:kilogram)",
+                                        "children": [
+                                          {
+                                            "id": "062SQZXDY7RASS9PNE93HD4ZB8",
+                                            "name": "aluminium",
+                                            "trackingIdentifier": "aluminium-5940",
+                                            "type": "EconomicResource",
+                                            "primaryAccountable": "Manufacturer1",
+                                            "custodian": "Manufacturer1",
+                                            "metadata": null,
+                                            "accountingQuantity": "0 (om2:kilogram)",
+                                            "onhandQuantity": "0 (om2:kilogram)",
+                                            "children": [
+                                              {
+                                                "id": "062SQZXDXNM98P9KHS7E07NZZC",
+                                                "name": "raise",
+                                                "type": "EconomicEvent",
+                                                "provider": "Manufacturer1",
+                                                "receiver": "Manufacturer1",
+                                                "resourceQuantity": "5 (om2:kilogram)",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "062SQZXFR0AFSSJCB0YJK95460",
+                                        "name": "deliverService",
+                                        "type": "EconomicEvent",
+                                        "provider": "Service_prov1",
+                                        "receiver": "Service_prov1",
+                                        "resourceQuantity": "1 (om2:one)",
+                                        "children": [
+                                          {
+                                            "id": "062SQZXAW07KJ4D880TBCC39JG",
+                                            "name": "Create_bike_frame_manifacturing_service_ABC",
+                                            "type": "Process",
+                                            "note": "Creation of bike frame manufacturing service ABC by Service_prov1",
+                                            "children": [
+                                              {
+                                                "id": "062SQZXF5GTKTBH5KXJNS9FMQC",
+                                                "name": "work",
+                                                "type": "EconomicEvent",
+                                                "provider": "Service_prov1",
+                                                "receiver": "Service_prov1",
+                                                "effortQuantity": "8 (om2:hour)",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "062SQZXQMYR6NG69F8GY6YKQXR",
+                "name": "cite",
+                "type": "EconomicEvent",
+                "provider": "Designer2",
+                "receiver": "Designer2",
+                "resourceQuantity": "1 (om2:one)",
+                "children": [
+                  {
+                    "id": "062SQZXN2SNFS53TNEK9C6VBTM",
+                    "name": "funky bike design",
+                    "trackingIdentifier": "funky_bike_design-6720",
+                    "type": "EconomicResource",
+                    "primaryAccountable": "Designer1",
+                    "custodian": "Designer1",
+                    "metadata": null,
+                    "accountingQuantity": "1 (om2:one)",
+                    "onhandQuantity": "1 (om2:one)",
+                    "children": [
+                      {
+                        "id": "062SQZXN2DXRB3NGB987MJEMCW",
+                        "name": "produce",
+                        "type": "EconomicEvent",
+                        "provider": "Designer1",
+                        "receiver": "Designer1",
+                        "resourceQuantity": "1 (om2:one)",
+                        "children": [
+                          {
+                            "id": "062SQZXC70P6E5C41VF6CTK0N0",
+                            "name": "Create_funky_bike_design",
+                            "type": "Process",
+                            "note": "Creation of funky bike design by Designer1",
+                            "children": [
+                              {
+                                "id": "062SQZXMEX0WDS1HAS63XT64PW",
+                                "name": "work",
+                                "type": "EconomicEvent",
+                                "provider": "Designer1",
+                                "receiver": "Designer1",
+                                "effortQuantity": "8 (om2:hour)",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "062SQZXQ123B88TRCJD87KABQG",
+                "name": "consume",
+                "type": "EconomicEvent",
+                "provider": "Designer2",
+                "receiver": "Designer2",
+                "resourceQuantity": "1 (om2:one)",
+                "children": [
+                  {
+                    "id": "062SQZXKVTF1VM18BXJVWAT6B8",
+                    "name": "magic bike mirror",
+                    "trackingIdentifier": "magic_bike_mirror-5638",
+                    "type": "EconomicResource",
+                    "primaryAccountable": "Designer2",
+                    "custodian": "Designer2",
+                    "metadata": null,
+                    "accountingQuantity": "0 (om2:one)",
+                    "onhandQuantity": "0 (om2:one)",
+                    "children": [
+                      {
+                        "id": "062SQZXKV1EX7H99NYVNBMY8D4",
+                        "name": "transfer",
+                        "type": "EconomicEvent",
+                        "provider": "Manufacturer2",
+                        "receiver": "Designer2",
+                        "atLocation": {
+                          "id": "062SE13J9P4QKJ5B57S9RP9FF4",
+                          "name": "Farback",
+                          "alt": "0",
+                          "lat": "52.3767127",
+                          "long": "4.8990591",
+                          "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+                          "note": "location.designer2.org"
+                        },
+                        "resourceQuantity": "1 (om2:one)",
+                        "children": [
+                          {
+                            "id": "062SQZXKA48S1ZVFGC6VQSE5R0",
+                            "name": "magic bike mirror",
+                            "trackingIdentifier": "magic_bike_mirror-5638",
+                            "type": "EconomicResource",
+                            "primaryAccountable": "Manufacturer2",
+                            "custodian": "Manufacturer2",
+                            "metadata": null,
+                            "accountingQuantity": "0 (om2:one)",
+                            "onhandQuantity": "0 (om2:one)",
+                            "children": [
+                              {
+                                "id": "062SQZXK9W1KPT28E2AKY83RW0",
+                                "name": "produce",
+                                "type": "EconomicEvent",
+                                "provider": "Manufacturer2",
+                                "receiver": "Manufacturer2",
+                                "resourceQuantity": "1 (om2:one)",
+                                "children": [
+                                  {
+                                    "id": "062SQZXCNJA7T4AREF6C77M954",
+                                    "name": "Creation_magic_bike_mirror",
+                                    "type": "Process",
+                                    "note": "Creation of magic bike mirror by Manufacturer2",
+                                    "children": [
+                                      {
+                                        "id": "062SQZXJFJMG27N6M0JWPN962R",
+                                        "name": "consume",
+                                        "type": "EconomicEvent",
+                                        "provider": "Manufacturer2",
+                                        "receiver": "Manufacturer2",
+                                        "resourceQuantity": "0.2 (om2:kilogram)",
+                                        "children": [
+                                          {
+                                            "id": "062SQZXEG4QK0XVEMV2AZ5E4DR",
+                                            "name": "glass",
+                                            "trackingIdentifier": "glass-9165",
+                                            "type": "EconomicResource",
+                                            "primaryAccountable": "Manufacturer2",
+                                            "custodian": "Manufacturer2",
+                                            "metadata": null,
+                                            "accountingQuantity": "0.0 (om2:kilogram)",
+                                            "onhandQuantity": "0.0 (om2:kilogram)",
+                                            "children": [
+                                              {
+                                                "id": "062SQZXEFQEG85G0GC8NNVH2V0",
+                                                "name": "raise",
+                                                "type": "EconomicEvent",
+                                                "provider": "Manufacturer2",
+                                                "receiver": "Manufacturer2",
+                                                "resourceQuantity": "0.2 (om2:kilogram)",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "062SQZXP9HNCCV6PAR90AZNMDW",
+                "name": "deliverService",
+                "type": "EconomicEvent",
+                "provider": "Manufacturer1",
+                "receiver": "Manufacturer1",
+                "resourceQuantity": "1 (om2:one)",
+                "children": [
+                  {
+                    "id": "062SQZXBB3SB213NJJ0RCZJN4R",
+                    "name": "Create_bike_assembly_service",
+                    "type": "Process",
+                    "note": "Creation of bike assembly 1-hour service by service_prov2",
+                    "children": [
+                      {
+                        "id": "062SQZXNRN6SM0PAHG0ZKDP9B0",
+                        "name": "work",
+                        "type": "EconomicEvent",
+                        "provider": "service_prov2",
+                        "receiver": "service_prov2",
+                        "effortQuantity": "1 (om2:hour)",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
