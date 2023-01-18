@@ -9,7 +9,8 @@ import random
 from pdb import set_trace
 
 
-from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG
+from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS
+from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, PROCESS_FRAG, PROCESSSPEC_FRAG
 from if_utils import stringify
 
 # Test zenroom is correctly installed and running
@@ -924,14 +925,17 @@ def get_process(process_name, process_data, note, user_data, endpoint):
 
 DEBUG_create_event = False
 # This function implements all actions != transfer actions
-def create_event(user_data, action, note, amount, process, res_spec_data, endpoint, \
-                 existing_res=None, new_res=None, effort_spec=None, process2=None):
+def create_event(provider, action, note, amount, process, res_spec_data, endpoint, \
+                 existing_res=None, new_res=None, effort_spec=None, receiver=None, process2=None):
 
     if not action in SUPPORTED_ACTIONS:
         print(f"We do not support {action} yet")
         assert 1 == 2
 
     if not action in ['work']:
+        # Sanity checks, the code does not support
+        # these cases (there might be valid VF actions that fall into these,
+        # but we have not addressed them yet)
         if existing_res == None and new_res == None:
             print(f"No resource given for event")
             assert 1 == 2
@@ -945,8 +949,8 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
         "event": {
             "action": action,
             "note": note,
-            "provider": user_data['id'],
-            "receiver": user_data['id'],
+            "provider": provider['id'],
+            "receiver": receiver['id'] if receiver != None else provider['id'],
             "hasPointInTime" : ts
         }
     }
@@ -1057,7 +1061,7 @@ def create_event(user_data, action, note, amount, process, res_spec_data, endpoi
 
     query = query + AGENT_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
     # assert False
-    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    res_json = send_signed(query, variables, provider['username'], provider['keyring']['eddsa'], endpoint)
     
     if 'errors' in res_json:
         print("Error message")
@@ -1092,7 +1096,6 @@ def update_id(resource, new_id):
 
 # This function implements all transfer actions
 DEBUG_make_transfer = False
-
 def make_transfer(provider_data, action, note, receiver_data, amount, existing_res, locs_data, res_spec_data, endpoint):
 
     ts = datetime.now(timezone.utc).isoformat()
@@ -1199,6 +1202,52 @@ def show_resource(user_data, id, endpoint):
 
     return res_json
 
+DEBUG_create_proposal = True
+def create_proposal(provider_data, name, note, hasBeginning, hasEnd, eligibleLocation, unitBased, endpoint):
+    
+    ts = datetime.now(timezone.utc).isoformat()
+
+    variables = {
+        "proposal": {
+            "name": name,
+            "note": note,
+            "unitBased": unitBased,
+            "hasBeginning": hasBeginning,
+            "hasEnd": hasEnd,
+            "eligibleLocation": eligibleLocation
+        }
+    }
+    
+    query = """mutation($proposal:ProposalCreateParams!) {
+                createProposal(proposal:$proposal) {
+                    proposal {
+                        ...proposal
+                    }
+                }
+            }""" + PROPOSAL_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+
+    res_json = send_signed(query, variables, provider_data['username'], provider_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
+    if DEBUG_create_proposal:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))   
+
+
+    return res_json['data']['createProposal']['proposal']['id'], ts
+
 
 DEBUG_show_proposal = False
 def show_proposal(user_data, id, endpoint):
@@ -1242,4 +1291,50 @@ def show_proposal(user_data, id, endpoint):
     return res_json
 
 
+
+DEBUG_create_intent = True
+def create_intent(provider_data, name, note, hasBeginning, hasEnd, eligibleLocation, unitBased, endpoint):
+    
+    ts = datetime.now(timezone.utc).isoformat()
+
+    variables = {
+        "proposal": {
+            "name": name,
+            "note": note,
+            "unitBased": unitBased,
+            "hasBeginning": hasBeginning,
+            "hasEnd": hasEnd,
+            "eligibleLocation": eligibleLocation
+        }
+    }
+    
+    query = """mutation($proposal:ProposalCreateParams!) {
+                createProposal(proposal:$proposal) {
+                    proposal {
+                        ...proposal
+                    }
+                }
+            }""" + PROPOSAL_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+
+    res_json = send_signed(query, variables, provider_data['username'], provider_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
+    if DEBUG_create_intent:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))   
+
+
+    return res_json['data']['proposal']['id'], ts
 

@@ -1,4 +1,5 @@
 import plotly.graph_objects as go
+from pdb import set_trace
 
 def make_sankey(srcs, trgs, lbls, vls, clr_nodes, clr_links):
     # data to dict, dict to sankey
@@ -38,14 +39,33 @@ dict_link_colors = {'EconomicResource': '#fb6a4a', 'EconomicEvent': '#92c5de', '
     
 
 def calc_quantity(dpp_item):
-    if 'onhandQuantity' in dpp_item:
+    if dpp_item['type'] == "Process":
+        # quantity = 0
+        # for child in dpp_item['children']:
+        #     quantity = quantity + calc_quantity(child)
+        # quantity = f'{quantity} '
+        quantity = '.1 '
+    elif 'onhandQuantity' in dpp_item:
         quantity = dpp_item['onhandQuantity']
+    elif 'resourceQuantity' in dpp_item:
+        quantity = dpp_item['resourceQuantity']
+    elif 'accounting_quantity_has_numerical_value' in dpp_item:
+        quantity = dpp_item['accounting_quantity_has_numerical_value']
+    elif 'onhand_quantity_has_numerical_value' in dpp_item:
+        quantity = dpp_item['onhand_quantity_has_numerical_value']
+    elif 'resource_quantity_has_numerical_value' in dpp_item:
+        quantity = dpp_item['resource_quantity_has_numerical_value']
     elif 'effortQuantity' in dpp_item:
-        quantity = dpp_item['effortQuantity']
+        # quantity = dpp_item['effortQuantity']
+        quantity = '.1 '
+    elif 'effort_quantity_has_numerical_value' in dpp_item:
+        # quantity = dpp_item['effort_quantity_has_numerical_value']
+        quantity = '.1 '
     else:
-        quantity = '1 '
+        set_trace()
+    
     quantity = float(quantity.split(' ')[0])
-    quantity = max(quantity,1)
+    quantity = max(quantity,0.1)
     return quantity
     
 def vis_dpp(dpp_item, count, assigned, labels, targets, sources, values, color_nodes, color_links):
