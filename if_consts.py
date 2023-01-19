@@ -198,7 +198,7 @@ INTENT_FRAG = """
             ...quantity
         }
         
-        deletable
+        # deletable
         due
         effortQuantity {
             ...quantity

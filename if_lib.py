@@ -914,6 +914,8 @@ def get_process(process_name, process_data, note, user_data, endpoint):
 
 #     name = process_name.replace(' ', '_')
 
+    if process_name in process_data:
+        return
     process_data[f'{process_name}'] = {}
 
     cur_process = process_data[f'{process_name}']
@@ -1202,19 +1204,19 @@ def show_resource(user_data, id, endpoint):
 
     return res_json
 
-DEBUG_create_proposal = True
-def create_proposal(provider_data, name, note, hasBeginning, hasEnd, eligibleLocation, unitBased, endpoint):
+DEBUG_create_proposal = False
+def create_proposal(proposal, user_data, endpoint):
     
-    ts = datetime.now(timezone.utc).isoformat()
+    # ts = datetime.now(timezone.utc).isoformat()
 
     variables = {
         "proposal": {
-            "name": name,
-            "note": note,
-            "unitBased": unitBased,
-            "hasBeginning": hasBeginning,
-            "hasEnd": hasEnd,
-            "eligibleLocation": eligibleLocation
+            "name": proposal['name'],
+            "note": proposal['note'],
+            "unitBased": proposal['unitBased'],
+            "hasBeginning": proposal['hasBeginning'],
+            "hasEnd": proposal['hasEnd'],
+            "eligibleLocation": proposal['eligibleLocation']
         }
     }
     
@@ -1226,7 +1228,7 @@ def create_proposal(provider_data, name, note, hasBeginning, hasEnd, eligibleLoc
                 }
             }""" + PROPOSAL_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
 
-    res_json = send_signed(query, variables, provider_data['username'], provider_data['keyring']['eddsa'], endpoint)
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
     if 'errors' in res_json:
         print("Error message")
@@ -1246,7 +1248,26 @@ def create_proposal(provider_data, name, note, hasBeginning, hasEnd, eligibleLoc
         print(json.dumps(res_json, indent=2))   
 
 
-    return res_json['data']['createProposal']['proposal']['id'], ts
+    proposal['id'] = res_json['data']['createProposal']['proposal']['id']
+
+# Wrapper for process creation
+def get_proposal(name, proposal_data, note, user_data, hasBeginning, hasEnd, eligibleLocation, unitBased, endpoint):
+
+    if name in proposal_data:
+        return
+
+    proposal_data[f'{name}'] = {}
+
+    cur_proposal = proposal_data[f'{name}']
+
+    cur_proposal['name'] = name
+    cur_proposal['note'] = note
+    cur_proposal['hasBeginning'] = hasBeginning
+    cur_proposal['hasEnd'] = hasEnd
+    cur_proposal['eligibleLocation'] = eligibleLocation
+    cur_proposal['unitBased'] = unitBased
+    
+    create_proposal(cur_proposal, user_data, endpoint)
 
 
 DEBUG_show_proposal = False
@@ -1293,30 +1314,48 @@ def show_proposal(user_data, id, endpoint):
 
 
 DEBUG_create_intent = True
-def create_intent(provider_data, name, note, hasBeginning, hasEnd, eligibleLocation, unitBased, endpoint):
+def create_intent(intent, user_data, res_spec_data, endpoint):
     
-    ts = datetime.now(timezone.utc).isoformat()
+    # ts = datetime.now(timezone.utc).isoformat()
 
     variables = {
-        "proposal": {
-            "name": name,
-            "note": note,
-            "unitBased": unitBased,
-            "hasBeginning": hasBeginning,
-            "hasEnd": hasEnd,
-            "eligibleLocation": eligibleLocation
+        "intent": {
+            "action": intent['action'],
+            "agreedIn": intent['agreedIn'],
+            "atLocation": intent['atLocation'],
+            "availableQuantity": intent['availableQuantity'],
+            "due": intent['due'],
+            "effortQuantity": intent['effortQuantity'],
+            "finished": intent['finished'],
+            "hasBeginning": intent['hasBeginning'],
+            "hasEnd": intent['hasEnd'],
+            "hasPointInTime": intent['hasPointInTime'],
+            "inputOf": intent['inputOf'],
+            "name": intent['name'],
+            "note": intent['note'],
+            "outputOf": intent['outputOf'],
+            "provider": intent['provider'],
+            "receiver": intent['receiver'],
+            "resourceClassifiedAs": intent['resourceClassifiedAs'],
+            "resourceConformsTo": intent['resourceConformsTo'],
+            "resourceInventoriedAs": intent['resourceInventoriedAs'],
+            "resourceQuantity": {
+              "hasUnit": [values['defaultUnit'] for key, values in res_spec_data.items() \
+                              if values['id'] == intent['resourceConformsTo']][0], 
+              "hasNumericalValue": intent['amount'] 
+            }
         }
     }
     
-    query = """mutation($proposal:ProposalCreateParams!) {
-                createProposal(proposal:$proposal) {
-                    proposal {
-                        ...proposal
+    query = """mutation($intent:IntentCreateParams!) {
+                createIntent(intent:$intent) {
+                    intent {
+                        ...intent
                     }
                 }
-            }""" + PROPOSAL_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+            }""" + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
 
-    res_json = send_signed(query, variables, provider_data['username'], provider_data['keyring']['eddsa'], endpoint)
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
     if 'errors' in res_json:
         print("Error message")
@@ -1336,5 +1375,123 @@ def create_intent(provider_data, name, note, hasBeginning, hasEnd, eligibleLocat
         print(json.dumps(res_json, indent=2))   
 
 
-    return res_json['data']['proposal']['id'], ts
+    intent['id'] = res_json['data']['createIntent']['intent']['id']
 
+
+def get_intent(name, intent_data, note, user_data, res_spec_data, provider, receiver, action, \
+           resourceClassifiedAs, resourceConformsTo, \
+           resourceInventoriedAs, amount, agreedIn, \
+           atLocation, availableQuantity, effortQuantity, \
+           finished, due, hasBeginning, hasEnd, hasPointInTime, \
+           inputOf, outputOf, endpoint):
+
+
+    if name in intent_data:
+        return
+
+    intent_data[f'{name}'] = {}
+
+    cur_intent = intent_data[f'{name}']
+
+    cur_intent['name'] = name
+    cur_intent['note'] = note
+    cur_intent['action'] = action
+    cur_intent['agreedIn'] = agreedIn
+    cur_intent['amount'] = amount
+    cur_intent['finished'] = finished
+    cur_intent['due'] = due
+    cur_intent['resourceClassifiedAs'] = resourceClassifiedAs
+    cur_intent['resourceConformsTo'] = resourceConformsTo
+    
+    cur_intent['resourceInventoriedAs'] = resourceInventoriedAs
+    cur_intent['availableQuantity'] = availableQuantity
+    cur_intent['effortQuantity'] = effortQuantity
+    
+
+    if provider != None and receiver != None:
+        print("At max one of provider and receiver must be specified")
+        assert 1==2
+    if provider == None and receiver == None:
+        print("At least one of provider or receiver must be specified")
+        assert 1==2
+        
+    cur_intent['provider'] = provider
+    cur_intent['receiver'] = receiver
+    if not ((hasPointInTime != None and not (hasBeginning!= None or hasEnd != None)) or \
+        ((hasBeginning!= None and hasEnd != None) and not hasPointInTime != None)):
+        print("Specify either hasPointInTime or  hasBeginning anf hasEnd")
+        assert 1==2
+    cur_intent['hasBeginning'] = hasBeginning
+    cur_intent['hasEnd'] = hasEnd
+    cur_intent['hasPointInTime'] = hasPointInTime
+    
+    cur_intent['atLocation'] = atLocation
+    cur_intent['inputOf'] = inputOf
+    cur_intent['outputOf'] = outputOf
+
+    
+    create_intent(cur_intent, user_data, res_spec_data, endpoint)
+
+DEBUG_create_proposedIntent = True
+def create_proposedIntent(cur_propint, user_data, endpoint):
+
+    # ts = datetime.now(timezone.utc).isoformat()
+
+    variables = {
+        "publishedIn": cur_propint['publishedIn'],
+        "publishes": cur_propint['publishes'],
+        "reciprocal": cur_propint['reciprocal']
+    }
+    
+    query = """mutation($publishedIn: ID!, $publishes: ID!, $reciprocal: Boolean){
+        proposeIntent(publishedIn:$publishedIn, publishes: $publishes, reciprocal:$reciprocal){
+            proposedIntent{
+                id
+                publishedIn {
+                    ...proposal
+                }
+                publishes {
+                    ...intent
+                }
+                reciprocal
+            }
+        }
+    }""" + PROPOSAL_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
+    if DEBUG_create_proposedIntent:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))   
+
+
+    cur_propint['id'] = res_json['data']['proposeIntent']['proposedIntent']['id']
+
+
+def get_proposedIntent(name, prop_int_data, user_data, publishedIn, publishes,reciprocal, endpoint):
+    
+    if name in prop_int_data:
+        return
+
+    prop_int_data[f'{name}'] = {}
+
+    cur_propint = prop_int_data[f'{name}']
+
+    cur_propint['publishedIn'] = publishedIn
+    cur_propint['publishes'] = publishes
+    cur_propint['reciprocal'] = reciprocal
+
+    create_proposedIntent(cur_propint, user_data, endpoint)
