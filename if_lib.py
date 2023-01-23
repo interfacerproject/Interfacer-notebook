@@ -123,7 +123,7 @@ def read_HMAC(file, users_data, user, endpoint):
 
 DEBUG_generate_keypair = False
 # Generate the user keypair (and the mnemonic seed)
-def generate_keypair(userdata):
+def generate_keypair(userdata: dict) -> dict:
     """
         This function calls zenroom to generate
         a keypair using the server-provided HMAC
@@ -252,7 +252,8 @@ def generate_keypair(userdata):
         resz = zenroom.zencode_exec(contract, data=data)
     except Exception as e:
         print(f'Exception in zenroom call: {e}')
-        return None
+        assert 1 == 2
+        return {}
 
     if DEBUG_generate_keypair:
         print(f'result: {resz}')
@@ -418,7 +419,7 @@ def get_id_person(file, users_data, user, endpoint):
 # sign and send each request now that we have a registered public key
 DEBUG_send_signed = False
 
-def send_signed(query, variables, username, eddsa, endpoint):
+def send_signed(query: str, variables: dict, username: str, eddsa: str, endpoint:str) -> dict:
 
     sign_script = """
     Scenario eddsa: sign a graph query
@@ -452,7 +453,7 @@ def send_signed(query, variables, username, eddsa, endpoint):
         resz = zenroom.zencode_exec(sign_script, keys=zenKeys, data=zenData_str)
     except Exception as e:
         print(f'Exception in zenroom call: {e}')
-        return None
+        return {}
 
     if DEBUG_send_signed:
         print("zenData")
@@ -928,7 +929,7 @@ def get_process(process_name, process_data, note, user_data, endpoint):
 DEBUG_create_event = False
 # This function implements all actions != transfer actions
 def create_event(provider, action, note, amount, process, res_spec_data, endpoint, \
-                 existing_res=None, new_res=None, effort_spec=None, receiver=None, process2=None):
+                 existing_res:dict={}, new_res:dict={}, effort_spec:dict={}, receiver=None, process2=None):
 
     if not action in SUPPORTED_ACTIONS:
         print(f"We do not support {action} yet")
@@ -938,11 +939,11 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
         # Sanity checks, the code does not support
         # these cases (there might be valid VF actions that fall into these,
         # but we have not addressed them yet)
-        if existing_res == None and new_res == None:
+        if existing_res == {} and new_res == {}:
             print(f"No resource given for event")
             assert 1 == 2
 
-        if existing_res != None and new_res != None:
+        if existing_res != {} and new_res != {}:
             print(f"Both existing and new resource given for event")
             assert 1 == 2
     
@@ -979,9 +980,10 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
         variables['event']['resourceQuantity'] = {}
         var_obj = variables['event']['resourceQuantity']
 
-        if existing_res != None:
+        _res = {}
+        if existing_res != {}:
             _res = existing_res
-        elif new_res != None:
+        elif new_res != {}:
             _res = new_res
         
         # if action in ['produce']:
@@ -1279,16 +1281,10 @@ def show_proposal(user_data, id, endpoint):
     
     query = """query($id:ID!){
       proposal(id:$id){
-        name
-        note
-        id
-        primaryIntents {
-          resourceInventoriedAs {
-            ...resource
-          }
-        }
+        ...proposal
       }
-    }""" + RESOURCE_FRAG
+    }""" + PROPOSAL_FRAG + PROPINT_FRAG + LOCATION_FRAG + INTENT_FRAG + RESOURCE_FRAG + \
+        QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
