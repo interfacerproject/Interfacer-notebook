@@ -1313,7 +1313,7 @@ def show_proposal(user_data, id, endpoint):
 
 
 
-DEBUG_create_intent = True
+DEBUG_create_intent = False
 def create_intent(intent, user_data, res_spec_data, endpoint):
     
     # ts = datetime.now(timezone.utc).isoformat()
@@ -1432,7 +1432,7 @@ def get_intent(name, intent_data, note, user_data, res_spec_data, provider, rece
     
     create_intent(cur_intent, user_data, res_spec_data, endpoint)
 
-DEBUG_create_proposedIntent = True
+DEBUG_create_proposedIntent = False
 def create_proposedIntent(cur_propint, user_data, endpoint):
 
     # ts = datetime.now(timezone.utc).isoformat()
