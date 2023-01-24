@@ -1,6 +1,8 @@
 import json
+from pdb import set_trace
 
-from if_consts import MAX_DEPTH, AGENT_FRAG, LOCATION_FRAG, QUANTITY_FRAG
+from if_consts import MAX_DEPTH
+from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, PROCESS_FRAG, PROCESSSPEC_FRAG
 from if_lib import send_signed
 
 DEBUG_trace_query = False
@@ -22,7 +24,7 @@ def trace_query(id, user_data, endpoint):
             receiver {...agent}
             resourceConformsTo {id name note}
             resourceInventoriedAs {...resource}
-            resourceQuantity {...measure}
+            resourceQuantity {...quantity}
           }
           ... on EconomicResource {...resource}
           ... on Process {id name note}
@@ -30,24 +32,7 @@ def trace_query(id, user_data, endpoint):
       }
     }
 
-    fragment measure on Measure {
-      hasNumericalValue
-      hasUnit {id label symbol}
-    }
-
-    fragment agent on Agent {
-      id name
-    }
-
-    fragment resource on EconomicResource {
-      id name note
-      primaryAccountable {...agent}
-      custodian {id name}
-      onhandQuantity {...measure}
-      accountingQuantity {...measure}
-      classifiedAs
-    }
-    """
+    """ + AGENT_FRAG + RESOURCE_FRAG + QUANTITY_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -81,7 +66,12 @@ def fill_quantity(a_dpp_item, item, field):
     if item[field] != None:
         a_dpp_item[field] = f"{item[field]['hasNumericalValue']} ({item[field]['hasUnit']['symbol']})"
 
-    
+def fill_agent(a_dpp_item, item):
+    a_dpp_item['id'] = item['id']
+    a_dpp_item['name'] = item['name']
+    a_dpp_item['type'] = item['__typename']
+    # set_trace()
+
 def fill_event(a_dpp_item, item):
     assert item['__typename'] == 'EconomicEvent'
     a_dpp_item['id'] = item['id']
@@ -89,8 +79,10 @@ def fill_event(a_dpp_item, item):
     a_dpp_item['type'] = item['__typename']
 #     breakpoint()
     if VERBOSE:
-        a_dpp_item['provider'] = item['provider']['name']
-        a_dpp_item['receiver'] = item['receiver']['name']
+        a_dpp_item['provider'] = {}
+        fill_agent(a_dpp_item['provider'], item['provider'])
+        a_dpp_item['receiver'] = {}
+        fill_agent(a_dpp_item['receiver'], item['receiver'])
         fill_loc(a_dpp_item, item, 'atLocation')
         fill_loc(a_dpp_item, item, 'toLocation')
         if 'effortQuantity' in item and item['effortQuantity'] != None:
@@ -204,7 +196,7 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
             if events == []:
                 return
             event = events.pop(0)
-        visited[event['id']] = {}            
+        visited.add(event['id'])
             
         ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)         
 
@@ -299,12 +291,12 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
             return
 
         if pf_item['__typename'] == "EconomicEvent":
-            visited[pf_item['id']] = {}
+            visited.add(pf_item['id'])
             ee_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
         if pf_item['__typename'] == "EconomicResource":
             er_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
         if pf_item['__typename'] == "Process":
-            visited[pf_item['id']] = {}
+            visited.add(pf_item['id'])
             pr_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
 
 
@@ -363,7 +355,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
             if event['id'] in visited:
                 print(f"id {event['id']} already in visited")
                 continue
-            visited[event['id']] = {}
+            visited.add(event['id'])
             ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)
 
 

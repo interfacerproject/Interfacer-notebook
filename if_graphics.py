@@ -39,6 +39,7 @@ dict_link_colors = {'EconomicResource': '#fb6a4a', 'EconomicEvent': '#92c5de', '
     
 
 def calc_quantity(dpp_item):
+    quantity = "ERROR"
     if dpp_item['type'] == "Process":
         # quantity = 0
         # for child in dpp_item['children']:

@@ -1,0 +1,1272 @@
+[
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "id": "062Y85RYN20MDFQJ987T4S455R",
+    "name": "fancy collaborative bike",
+    "onhandQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "produce"
+    },
+    "id": "062Y85RYMSQJXN7XRWXGT1PXM0",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "resourceConformsTo": {
+      "id": "062XW6CRPSZRJZGBHBWY2YX0SW",
+      "name": "fancy_collaborative_bike",
+      "note": "Repository for fancy collaborative bike"
+    },
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13FN2Y9YY44SCH82DPAPM",
+        "name": "service_prov2"
+      },
+      "id": "062Y85RYN20MDFQJ987T4S455R",
+      "name": "fancy collaborative bike",
+      "onhandQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13FN2Y9YY44SCH82DPAPM",
+        "name": "service_prov2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "Process",
+    "id": "062Y85RV91RXKBX2PTZ0XADCVM",
+    "name": "Creation_fancy_collaborative_bike",
+    "note": "Creation of fancy collaborative bike by Designer2"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "work"
+    },
+    "id": "062Y85RXWYJDTCGGZRYG91Z9Y4",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "resourceConformsTo": {
+      "id": "062XW6CQFZQQJ7B6DR9XETRQDG",
+      "name": "assemblying_work",
+      "note": "Specification for assemblying work"
+    },
+    "resourceInventoriedAs": null,
+    "resourceQuantity": null
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "consume"
+    },
+    "id": "062Y85RX4B0M9SJDRVWKSCVB24",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13FN2Y9YY44SCH82DPAPM",
+        "name": "service_prov2"
+      },
+      "id": "062Y85RTMJ8MVA8S22XATGVJXR",
+      "name": "aluminium bike frame",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13FN2Y9YY44SCH82DPAPM",
+        "name": "service_prov2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "transfer"
+    },
+    "id": "062Y85RTKKTM1Q311X7TP3GS9G",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13EVVW7J599566RMWYVHW",
+      "name": "Designer2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13EVVW7J599566RMWYVHW",
+        "name": "Designer2"
+      },
+      "id": "062Y85RNHW5T95BFXYFSJKWQMW",
+      "name": "aluminium bike frame",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13EVVW7J599566RMWYVHW",
+        "name": "Designer2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "transfer"
+    },
+    "id": "062Y85RNHB038CMMZ2T6K46NZW",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13EVVW7J599566RMWYVHW",
+      "name": "Designer2"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13G24NBTVHE7T747SCVSR",
+        "name": "Manufacturer1"
+      },
+      "id": "062Y85RMX69K7JAJ9M7NGBFPKR",
+      "name": "aluminium bike frame",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13G24NBTVHE7T747SCVSR",
+        "name": "Manufacturer1"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "produce"
+    },
+    "id": "062Y85RMWT6QQ7HRT7XW1DZK10",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "resourceConformsTo": {
+      "id": "062WYT884FEDGVD83BGP2R6K90",
+      "name": "aluminium_bike_frame",
+      "note": "Repository for aluminium bike frame"
+    },
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13G24NBTVHE7T747SCVSR",
+        "name": "Manufacturer1"
+      },
+      "id": "062Y85RMX69K7JAJ9M7NGBFPKR",
+      "name": "aluminium bike frame",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13G24NBTVHE7T747SCVSR",
+        "name": "Manufacturer1"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "Process",
+    "id": "062Y85R6GXB2J9YGYTEK33P2ZW",
+    "name": "Manifacture_aluminium_bike_frame",
+    "note": "Creation of aluminum bike frame by Manufacturer1"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "consume"
+    },
+    "id": "062Y85RM6RD4FZEXN27RMT0T0M",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13P2RER2TPJF6NP3A8754",
+          "label": "kg",
+          "symbol": "om2:kilogram"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13G24NBTVHE7T747SCVSR",
+        "name": "Manufacturer1"
+      },
+      "id": "062Y85RJWE6C3R23MTX74R2144",
+      "name": "aluminium",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13P2RER2TPJF6NP3A8754",
+          "label": "kg",
+          "symbol": "om2:kilogram"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13G24NBTVHE7T747SCVSR",
+        "name": "Manufacturer1"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "5",
+      "hasUnit": {
+        "id": "062SE13P2RER2TPJF6NP3A8754",
+        "label": "kg",
+        "symbol": "om2:kilogram"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "raise"
+    },
+    "id": "062Y85RJVTWEF2TFT0D8BE3QQ8",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "resourceConformsTo": {
+      "id": "062WZK13VKRPH30YFT8WG78FEG",
+      "name": "aluminium",
+      "note": "Aluminium 10mt, 4cm pipes"
+    },
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13P2RER2TPJF6NP3A8754",
+          "label": "kg",
+          "symbol": "om2:kilogram"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13G24NBTVHE7T747SCVSR",
+        "name": "Manufacturer1"
+      },
+      "id": "062Y85RJWE6C3R23MTX74R2144",
+      "name": "aluminium",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13P2RER2TPJF6NP3A8754",
+          "label": "kg",
+          "symbol": "om2:kilogram"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13G24NBTVHE7T747SCVSR",
+        "name": "Manufacturer1"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "5",
+      "hasUnit": {
+        "id": "062SE13P2RER2TPJF6NP3A8754",
+        "label": "kg",
+        "symbol": "om2:kilogram"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13P2RER2TPJF6NP3A8754",
+        "label": "kg",
+        "symbol": "om2:kilogram"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "id": "062Y85RJWE6C3R23MTX74R2144",
+    "name": "aluminium",
+    "onhandQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13P2RER2TPJF6NP3A8754",
+        "label": "kg",
+        "symbol": "om2:kilogram"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "work"
+    },
+    "id": "062Y85RKMP9T1X3J2GJJB524YC",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "resourceConformsTo": {
+      "id": "062WZK154HCGX80C6F838J2Y2W",
+      "name": "manufacturing_work",
+      "note": "Specification for manufacturing work"
+    },
+    "resourceInventoriedAs": null,
+    "resourceQuantity": null
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    },
+    "id": "062Y85RMX69K7JAJ9M7NGBFPKR",
+    "name": "aluminium bike frame",
+    "onhandQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13G24NBTVHE7T747SCVSR",
+      "name": "Manufacturer1"
+    }
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13EVVW7J599566RMWYVHW",
+      "name": "Designer2"
+    },
+    "id": "062Y85RNHW5T95BFXYFSJKWQMW",
+    "name": "aluminium bike frame",
+    "onhandQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13EVVW7J599566RMWYVHW",
+      "name": "Designer2"
+    }
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "id": "062Y85RTMJ8MVA8S22XATGVJXR",
+    "name": "aluminium bike frame",
+    "onhandQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "cite"
+    },
+    "id": "062Y85RWF3X0RW4P7AJH5FEF7C",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13EF9JE2H1HD23T64RP0W",
+        "name": "Designer1"
+      },
+      "id": "062Y85RJ65745PSBS1XY4CYBXG",
+      "name": "funky bike design",
+      "onhandQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13EF9JE2H1HD23T64RP0W",
+        "name": "Designer1"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "produce"
+    },
+    "id": "062Y85RJ5PPHJHA9TJEK13MA9G",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13EF9JE2H1HD23T64RP0W",
+      "name": "Designer1"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13EF9JE2H1HD23T64RP0W",
+      "name": "Designer1"
+    },
+    "resourceConformsTo": {
+      "id": "062WZGGFWZ939T1RQAJ242VPXC",
+      "name": "funky_bike_design",
+      "note": "Repository for funky bike design"
+    },
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13EF9JE2H1HD23T64RP0W",
+        "name": "Designer1"
+      },
+      "id": "062Y85RJ65745PSBS1XY4CYBXG",
+      "name": "funky bike design",
+      "onhandQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13EF9JE2H1HD23T64RP0W",
+        "name": "Designer1"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "Process",
+    "id": "062Y85RGX2T79NBYYQ8SN6J1T8",
+    "name": "Design_funky_bike",
+    "note": "Design of funky bike by Designer1"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "work"
+    },
+    "id": "062Y85RHJ2905P2YAJMH42Q7ZM",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13EF9JE2H1HD23T64RP0W",
+      "name": "Designer1"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13EF9JE2H1HD23T64RP0W",
+      "name": "Designer1"
+    },
+    "resourceConformsTo": {
+      "id": "062WZGGGJT2X8GDEV4X75EJFBW",
+      "name": "design_work",
+      "note": "Specification for design work"
+    },
+    "resourceInventoriedAs": null,
+    "resourceQuantity": null
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13EF9JE2H1HD23T64RP0W",
+      "name": "Designer1"
+    },
+    "id": "062Y85RJ65745PSBS1XY4CYBXG",
+    "name": "funky bike design",
+    "onhandQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13EF9JE2H1HD23T64RP0W",
+      "name": "Designer1"
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "consume"
+    },
+    "id": "062Y85RVVS705NP32BFE0MBGQW",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "-1",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13FN2Y9YY44SCH82DPAPM",
+        "name": "service_prov2"
+      },
+      "id": "062Y85RSV9FK748G026JVT216R",
+      "name": "magic bike mirror",
+      "onhandQuantity": {
+        "hasNumericalValue": "-1",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13FN2Y9YY44SCH82DPAPM",
+        "name": "service_prov2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "transfer"
+    },
+    "id": "062Y85RST9KF6NR3A8FMDA95Y4",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13EVVW7J599566RMWYVHW",
+      "name": "Designer2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13EVVW7J599566RMWYVHW",
+        "name": "Designer2"
+      },
+      "id": "062Y85RS4W1BNKPWBFCG9BHZWC",
+      "name": "magic bike mirror",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13EVVW7J599566RMWYVHW",
+        "name": "Designer2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "transfer"
+    },
+    "id": "062Y85RS4D2YJFPVF8F8X0F6T4",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13EVVW7J599566RMWYVHW",
+      "name": "Designer2"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13GFE07NE730CQXNTN0C4",
+        "name": "Manufacturer2"
+      },
+      "id": "062Y85RRENFXNR20TS63A41S7M",
+      "name": "magic bike mirror",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13GFE07NE730CQXNTN0C4",
+        "name": "Manufacturer2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "produce"
+    },
+    "id": "062Y85RRE4VE00GWF9VYFGJ8VR",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "resourceConformsTo": {
+      "id": "062WZMS7R1A8KM90QWQVQ49XT8",
+      "name": "magic_bike_mirror",
+      "note": "Repository for magic bike mirror"
+    },
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13GFE07NE730CQXNTN0C4",
+        "name": "Manufacturer2"
+      },
+      "id": "062Y85RRENFXNR20TS63A41S7M",
+      "name": "magic bike mirror",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "062SE13NKW380G0DSWRD1KNXX4",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13GFE07NE730CQXNTN0C4",
+        "name": "Manufacturer2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    }
+  },
+  {
+    "__typename": "Process",
+    "id": "062Y85RPV0VCY2NAXZ0GD8NSTR",
+    "name": "Creation_magic_bike_mirror",
+    "note": "Creation of magic bike mirror by Manufacturer2"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "consume"
+    },
+    "id": "062Y85RQHJGC4Y90VJV3N759MM",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0.0",
+        "hasUnit": {
+          "id": "062SE13P2RER2TPJF6NP3A8754",
+          "label": "kg",
+          "symbol": "om2:kilogram"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13GFE07NE730CQXNTN0C4",
+        "name": "Manufacturer2"
+      },
+      "id": "062Y85RP8007E1J4PPC04V60W4",
+      "name": "glass",
+      "onhandQuantity": {
+        "hasNumericalValue": "0.0",
+        "hasUnit": {
+          "id": "062SE13P2RER2TPJF6NP3A8754",
+          "label": "kg",
+          "symbol": "om2:kilogram"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13GFE07NE730CQXNTN0C4",
+        "name": "Manufacturer2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "0.2",
+      "hasUnit": {
+        "id": "062SE13P2RER2TPJF6NP3A8754",
+        "label": "kg",
+        "symbol": "om2:kilogram"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "raise"
+    },
+    "id": "062Y85RP7QV1R2E5JQ53WM7NDW",
+    "provider": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "receiver": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "resourceConformsTo": {
+      "id": "062WZMS5V5JAKWM8VG4A32RNJ0",
+      "name": "glass",
+      "note": "Glass for magic bike mirror"
+    },
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0.0",
+        "hasUnit": {
+          "id": "062SE13P2RER2TPJF6NP3A8754",
+          "label": "kg",
+          "symbol": "om2:kilogram"
+        }
+      },
+      "custodian": {
+        "__typename": "Person",
+        "id": "062SE13GFE07NE730CQXNTN0C4",
+        "name": "Manufacturer2"
+      },
+      "id": "062Y85RP8007E1J4PPC04V60W4",
+      "name": "glass",
+      "onhandQuantity": {
+        "hasNumericalValue": "0.0",
+        "hasUnit": {
+          "id": "062SE13P2RER2TPJF6NP3A8754",
+          "label": "kg",
+          "symbol": "om2:kilogram"
+        }
+      },
+      "primaryAccountable": {
+        "__typename": "Person",
+        "id": "062SE13GFE07NE730CQXNTN0C4",
+        "name": "Manufacturer2"
+      }
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "0.2",
+      "hasUnit": {
+        "id": "062SE13P2RER2TPJF6NP3A8754",
+        "label": "kg",
+        "symbol": "om2:kilogram"
+      }
+    }
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "0.0",
+      "hasUnit": {
+        "id": "062SE13P2RER2TPJF6NP3A8754",
+        "label": "kg",
+        "symbol": "om2:kilogram"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "id": "062Y85RP8007E1J4PPC04V60W4",
+    "name": "glass",
+    "onhandQuantity": {
+      "hasNumericalValue": "0.0",
+      "hasUnit": {
+        "id": "062SE13P2RER2TPJF6NP3A8754",
+        "label": "kg",
+        "symbol": "om2:kilogram"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    }
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    },
+    "id": "062Y85RRENFXNR20TS63A41S7M",
+    "name": "magic bike mirror",
+    "onhandQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13GFE07NE730CQXNTN0C4",
+      "name": "Manufacturer2"
+    }
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13EVVW7J599566RMWYVHW",
+      "name": "Designer2"
+    },
+    "id": "062Y85RS4W1BNKPWBFCG9BHZWC",
+    "name": "magic bike mirror",
+    "onhandQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13EVVW7J599566RMWYVHW",
+      "name": "Designer2"
+    }
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "-1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "custodian": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    },
+    "id": "062Y85RSV9FK748G026JVT216R",
+    "name": "magic bike mirror",
+    "onhandQuantity": {
+      "hasNumericalValue": "-1",
+      "hasUnit": {
+        "id": "062SE13NKW380G0DSWRD1KNXX4",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "__typename": "Person",
+      "id": "062SE13FN2Y9YY44SCH82DPAPM",
+      "name": "service_prov2"
+    }
+  }
+]

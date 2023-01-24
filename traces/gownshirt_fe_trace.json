@@ -1,8 +1,8 @@
 [
   {
-    "id": "062SCDBQSPRDXNZ4MNJ661T6VC",
+    "id": "062Y83VNKY3YWTY49EZVRGPXEM",
     "name": "gown",
-    "trackingIdentifier": "gown-223",
+    "trackingIdentifier": "gown-1648",
     "type": "EconomicResource",
     "primaryAccountable": "Alice",
     "custodian": "Alice",
@@ -11,31 +11,47 @@
     "onhandQuantity": "1 (om2:one)",
     "children": [
       {
-        "id": "062SCDC2K70E66YD52Q42S3AE4",
+        "id": "062Y83W269N21ACWYM8ME7AX5R",
         "name": "modify",
         "type": "EconomicEvent",
-        "provider": "Alice",
-        "receiver": "Alice",
+        "provider": {
+          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+          "name": "Alice",
+          "type": "Person"
+        },
+        "receiver": {
+          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+          "name": "Alice",
+          "type": "Person"
+        },
         "resourceQuantity": "1 (om2:one)",
         "children": [
           {
-            "id": "062SCDBBSM217YV7J6HXDB6DH0",
+            "id": "062Y83V7QRDGPT1S6R2VEMAG6M",
             "name": "Clean_textile",
             "type": "Process",
             "note": "Clean gown and shirt process performed by Alice",
             "children": [
               {
-                "id": "062SCDC21SGPA8FPG7H97M8J4G",
+                "id": "062Y83W1DX5MK48PSKET91F2PM",
                 "name": "consume",
                 "type": "EconomicEvent",
-                "provider": "Alice",
-                "receiver": "Alice",
+                "provider": {
+                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                  "name": "Alice",
+                  "type": "Person"
+                },
+                "receiver": {
+                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                  "name": "Alice",
+                  "type": "Person"
+                },
                 "resourceQuantity": "10 (om2:kilogram)",
                 "children": [
                   {
-                    "id": "062SCDBG1VR0B4WYPVFTV9SPJ8",
+                    "id": "062Y83VCFW7RG1BPQ6GT3C0BSR",
                     "name": "soap",
-                    "trackingIdentifier": "soap-6881",
+                    "trackingIdentifier": "soap-5222",
                     "type": "EconomicResource",
                     "primaryAccountable": "Alice",
                     "custodian": "Alice",
@@ -44,11 +60,19 @@
                     "onhandQuantity": "0 (om2:kilogram)",
                     "children": [
                       {
-                        "id": "062SCDBG1K3MKV9R6PZZFP13FC",
+                        "id": "062Y83VCFC2TKWYKCP6MM51GBW",
                         "name": "raise",
                         "type": "EconomicEvent",
-                        "provider": "Alice",
-                        "receiver": "Alice",
+                        "provider": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
+                        "receiver": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
                         "resourceQuantity": "30 (om2:kilogram)",
                         "children": []
                       }
@@ -57,17 +81,25 @@
                 ]
               },
               {
-                "id": "062SCDC1G9BAQXKNDXM938R8N0",
+                "id": "062Y83W0QRRZ5QVNRQFQP4M6F0",
                 "name": "consume",
                 "type": "EconomicEvent",
-                "provider": "Alice",
-                "receiver": "Alice",
+                "provider": {
+                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                  "name": "Alice",
+                  "type": "Person"
+                },
+                "receiver": {
+                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                  "name": "Alice",
+                  "type": "Person"
+                },
                 "resourceQuantity": "20 (om2:litre)",
                 "children": [
                   {
-                    "id": "062SCDBFHVTRHPDRCM1KWX1JNR",
+                    "id": "062Y83VBSH2AGXFFZK6PA40EV8",
                     "name": "water",
-                    "trackingIdentifier": "water-2302",
+                    "trackingIdentifier": "water-8814",
                     "type": "EconomicResource",
                     "primaryAccountable": "Alice",
                     "custodian": "Alice",
@@ -76,11 +108,19 @@
                     "onhandQuantity": "0 (om2:litre)",
                     "children": [
                       {
-                        "id": "062SCDBFHE31WNTRGX4N0MYEKC",
+                        "id": "062Y83VBS27FTMM9YAWQNM1EDM",
                         "name": "raise",
                         "type": "EconomicEvent",
-                        "provider": "Alice",
-                        "receiver": "Alice",
+                        "provider": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
+                        "receiver": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
                         "resourceQuantity": "60 (om2:litre)",
                         "children": []
                       }
@@ -89,17 +129,25 @@
                 ]
               },
               {
-                "id": "062SCDC0XJG5KEA82JWSY7XH6R",
+                "id": "062Y83VZXQRKNM5WCE9FJ6FBXR",
                 "name": "accept",
                 "type": "EconomicEvent",
-                "provider": "Alice",
-                "receiver": "Alice",
+                "provider": {
+                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                  "name": "Alice",
+                  "type": "Person"
+                },
+                "receiver": {
+                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                  "name": "Alice",
+                  "type": "Person"
+                },
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "062SCDBZR14V735F1CB5RQ96DM",
+                    "id": "062Y83VYHG9GHZW03C16RR3J8M",
                     "name": "shirt",
-                    "trackingIdentifier": "shirt-2043",
+                    "trackingIdentifier": "shirt-3708",
                     "type": "EconomicResource",
                     "primaryAccountable": "Alice",
                     "custodian": "Alice",
@@ -108,22 +156,38 @@
                     "onhandQuantity": "1 (om2:one)",
                     "children": [
                       {
-                        "id": "062SCDC358M26KWA5PPC4NNJJC",
+                        "id": "062Y83W2XC862Z7DMRK3VXSG8M",
                         "name": "modify",
                         "type": "EconomicEvent",
-                        "provider": "Alice",
-                        "receiver": "Alice",
+                        "provider": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
+                        "receiver": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
                         "resourceQuantity": "1 (om2:one)",
                         "children": []
                       },
                       {
-                        "id": "062SCDBZQEB4KQ0RZCCH63KT4R",
+                        "id": "062Y83VYH3FGS5BADKJYSEGN4R",
                         "name": "transfer",
                         "type": "EconomicEvent",
-                        "provider": "Carol",
-                        "receiver": "Alice",
+                        "provider": {
+                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                          "name": "Carol",
+                          "type": "Person"
+                        },
+                        "receiver": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
                         "atLocation": {
-                          "id": "062HBSBVMRH8ZCWAA7QWTJDGVM",
+                          "id": "062SDWS67C90KQ48HVZWSA0YKG",
                           "name": "Dyne",
                           "alt": "0",
                           "lat": "52.39679",
@@ -134,9 +198,9 @@
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "062SCDBYHX6JHQ447RP5R2C98R",
+                            "id": "062Y83VX6693T8SV70WPYTR8VR",
                             "name": "shirt",
-                            "trackingIdentifier": "shirt-2043",
+                            "trackingIdentifier": "shirt-3708",
                             "type": "EconomicResource",
                             "primaryAccountable": "Carol",
                             "custodian": "Carol",
@@ -145,31 +209,47 @@
                             "onhandQuantity": "1 (om2:one)",
                             "children": [
                               {
-                                "id": "062SCDBYHPSVWMHV87T1VQW9ER",
+                                "id": "062Y83VX523BWB230W5KWG5B1C",
                                 "name": "produce",
                                 "type": "EconomicEvent",
-                                "provider": "Carol",
-                                "receiver": "Carol",
+                                "provider": {
+                                  "id": "062SDWS57K10WTBBSW188GEQZW",
+                                  "name": "Carol",
+                                  "type": "Person"
+                                },
+                                "receiver": {
+                                  "id": "062SDWS57K10WTBBSW188GEQZW",
+                                  "name": "Carol",
+                                  "type": "Person"
+                                },
                                 "resourceQuantity": "2 (om2:one)",
                                 "children": [
                                   {
-                                    "id": "062SCDBDNJXWRFA39ARJNM0AW4",
+                                    "id": "062Y83V9YXWNXB55151GHVAJ70",
                                     "name": "Create_shirt",
                                     "type": "Process",
                                     "note": "Create shirt process performed by Carol",
                                     "children": [
                                       {
-                                        "id": "062SCDBXXP159D0T1N9W50HKWR",
+                                        "id": "062Y83VWDY3382FPSDV1XR1TGC",
                                         "name": "use",
                                         "type": "EconomicEvent",
-                                        "provider": "Carol",
-                                        "receiver": "Carol",
+                                        "provider": {
+                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                          "name": "Carol",
+                                          "type": "Person"
+                                        },
+                                        "receiver": {
+                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                          "name": "Carol",
+                                          "type": "Person"
+                                        },
                                         "effortQuantity": "3 (om2:hour)",
                                         "children": [
                                           {
-                                            "id": "062SCDBGJC1X9FNW12P3QADGN0",
+                                            "id": "062Y83VD2VCZQKQD6PXC9376J8",
                                             "name": "sewing_machine",
-                                            "trackingIdentifier": "sewing_machine-794",
+                                            "trackingIdentifier": "sewing_machine-124",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Carol",
                                             "custodian": "Carol",
@@ -178,11 +258,19 @@
                                             "onhandQuantity": "1 (om2:one)",
                                             "children": [
                                               {
-                                                "id": "062SCDBGHWMHWSFWYY8XJF8EZ0",
+                                                "id": "062Y83VD2D11Y1TGAV0N37XTVG",
                                                 "name": "raise",
                                                 "type": "EconomicEvent",
-                                                "provider": "Carol",
-                                                "receiver": "Carol",
+                                                "provider": {
+                                                  "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                  "name": "Carol",
+                                                  "type": "Person"
+                                                },
+                                                "receiver": {
+                                                  "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                  "name": "Carol",
+                                                  "type": "Person"
+                                                },
                                                 "resourceQuantity": "1 (om2:one)",
                                                 "children": []
                                               }
@@ -191,17 +279,25 @@
                                         ]
                                       },
                                       {
-                                        "id": "062SCDBX5Q3M3BYV5ESZQC8KBM",
+                                        "id": "062Y83VVRG4HD5M826NR6F6FD8",
                                         "name": "cite",
                                         "type": "EconomicEvent",
-                                        "provider": "Carol",
-                                        "receiver": "Carol",
+                                        "provider": {
+                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                          "name": "Carol",
+                                          "type": "Person"
+                                        },
+                                        "receiver": {
+                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                          "name": "Carol",
+                                          "type": "Person"
+                                        },
                                         "resourceQuantity": "1 (om2:one)",
                                         "children": [
                                           {
-                                            "id": "062SCDBW0CT181TYD0Y34GNZF0",
+                                            "id": "062Y83VTEV16RPY90BGZ6WEGQ8",
                                             "name": "shirt_design",
-                                            "trackingIdentifier": "shirt_design-5972",
+                                            "trackingIdentifier": "shirt_design-4680",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Carol",
                                             "custodian": "Carol",
@@ -210,25 +306,41 @@
                                             "onhandQuantity": "1 (om2:one)",
                                             "children": [
                                               {
-                                                "id": "062SCDBW03YQSR0VT46VBPP528",
+                                                "id": "062Y83VTE8JVSK09108SNHN7VM",
                                                 "name": "produce",
                                                 "type": "EconomicEvent",
-                                                "provider": "Carol",
-                                                "receiver": "Carol",
+                                                "provider": {
+                                                  "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                  "name": "Carol",
+                                                  "type": "Person"
+                                                },
+                                                "receiver": {
+                                                  "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                  "name": "Carol",
+                                                  "type": "Person"
+                                                },
                                                 "resourceQuantity": "1 (om2:one)",
                                                 "children": [
                                                   {
-                                                    "id": "062SCDBD66A14SBZ1KZ9Q3GZE0",
+                                                    "id": "062Y83V9ERNH1VF91EPDMEB8M0",
                                                     "name": "Create_shirt_design",
                                                     "type": "Process",
                                                     "note": "Create shirt design process performed by Carol",
                                                     "children": [
                                                       {
-                                                        "id": "062SCDBVE4A8HH4YG18CH8H8XR",
+                                                        "id": "062Y83VSRV0FZ7ZAVK2028BK4M",
                                                         "name": "work",
                                                         "type": "EconomicEvent",
-                                                        "provider": "Carol",
-                                                        "receiver": "Carol",
+                                                        "provider": {
+                                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                          "name": "Carol",
+                                                          "type": "Person"
+                                                        },
+                                                        "receiver": {
+                                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                          "name": "Carol",
+                                                          "type": "Person"
+                                                        },
                                                         "effortQuantity": "5 (om2:one)",
                                                         "children": []
                                                       }
@@ -241,17 +353,25 @@
                                         ]
                                       },
                                       {
-                                        "id": "062SCDBWKA56P075503S2F7RFG",
+                                        "id": "062Y83VV3E0Q0ZMJNZXMFQXFVR",
                                         "name": "consume",
                                         "type": "EconomicEvent",
-                                        "provider": "Carol",
-                                        "receiver": "Carol",
+                                        "provider": {
+                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                          "name": "Carol",
+                                          "type": "Person"
+                                        },
+                                        "receiver": {
+                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                          "name": "Carol",
+                                          "type": "Person"
+                                        },
                                         "resourceQuantity": "5 (om2:kilogram)",
                                         "children": [
                                           {
-                                            "id": "062SCDBTT83GJWK8TE4NK9693R",
+                                            "id": "062Y83VS38XH8N5DJG0KXFGFZ8",
                                             "name": "cotton",
-                                            "trackingIdentifier": "cotton-3731",
+                                            "trackingIdentifier": "cotton-1181",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Carol",
                                             "custodian": "Carol",
@@ -260,17 +380,25 @@
                                             "onhandQuantity": "3 (om2:kilogram)",
                                             "children": [
                                               {
-                                                "id": "062SCDBZ5R87C561BXFV3H1T6G",
+                                                "id": "062Y83VXWSERMFNG640MSMBZ9C",
                                                 "name": "lower",
                                                 "type": "EconomicEvent",
-                                                "provider": "Carol",
-                                                "receiver": "Carol",
+                                                "provider": {
+                                                  "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                  "name": "Carol",
+                                                  "type": "Person"
+                                                },
+                                                "receiver": {
+                                                  "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                  "name": "Carol",
+                                                  "type": "Person"
+                                                },
                                                 "resourceQuantity": "2 (om2:kilogram)",
                                                 "children": [
                                                   {
-                                                    "id": "062SCDBTT83GJWK8TE4NK9693R",
+                                                    "id": "062Y83VS38XH8N5DJG0KXFGFZ8",
                                                     "name": "cotton",
-                                                    "trackingIdentifier": "cotton-3731",
+                                                    "trackingIdentifier": "cotton-1181",
                                                     "type": "EconomicResource",
                                                     "primaryAccountable": "Carol",
                                                     "custodian": "Carol",
@@ -279,13 +407,21 @@
                                                     "onhandQuantity": "3 (om2:kilogram)",
                                                     "children": [
                                                       {
-                                                        "id": "062SCDBTSJN1B1XE4EBC0JXR3M",
+                                                        "id": "062Y83VS2BDYCFMBW2THT70SDG",
                                                         "name": "transfer",
                                                         "type": "EconomicEvent",
-                                                        "provider": "Alice",
-                                                        "receiver": "Carol",
+                                                        "provider": {
+                                                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                          "name": "Alice",
+                                                          "type": "Person"
+                                                        },
+                                                        "receiver": {
+                                                          "id": "062SDWS57K10WTBBSW188GEQZW",
+                                                          "name": "Carol",
+                                                          "type": "Person"
+                                                        },
                                                         "atLocation": {
-                                                          "id": "062HBSBW3G9YK4TJ26HP0S3VKC",
+                                                          "id": "062SDWS6PRERAXDJ9J8WFPWR2C",
                                                           "name": "CleanLease",
                                                           "alt": "0",
                                                           "lat": "51.47240440868687",
@@ -296,9 +432,9 @@
                                                         "resourceQuantity": "10 (om2:kilogram)",
                                                         "children": [
                                                           {
-                                                            "id": "062SCDBF0ZJR992GX4J68Z287M",
+                                                            "id": "062Y83VB6EPG8WHXM3JF98SHTC",
                                                             "name": "cotton",
-                                                            "trackingIdentifier": "cotton-3731",
+                                                            "trackingIdentifier": "cotton-1181",
                                                             "type": "EconomicResource",
                                                             "primaryAccountable": "Alice",
                                                             "custodian": "Alice",
@@ -307,11 +443,19 @@
                                                             "onhandQuantity": "65 (om2:kilogram)",
                                                             "children": [
                                                               {
-                                                                "id": "062SCDBF0JCRQQY182B9Y0X36G",
+                                                                "id": "062Y83VB5V7P6AXC8X3V28PRYW",
                                                                 "name": "raise",
                                                                 "type": "EconomicEvent",
-                                                                "provider": "Alice",
-                                                                "receiver": "Alice",
+                                                                "provider": {
+                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                  "name": "Alice",
+                                                                  "type": "Person"
+                                                                },
+                                                                "receiver": {
+                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                  "name": "Alice",
+                                                                  "type": "Person"
+                                                                },
                                                                 "resourceQuantity": "100 (om2:kilogram)",
                                                                 "children": []
                                                               }
@@ -340,17 +484,25 @@
                 ]
               },
               {
-                "id": "062SCDC0AQTH8CXJWF6PY2VWJW",
+                "id": "062Y83VZ514XEXX4ERQHENW3Q8",
                 "name": "accept",
                 "type": "EconomicEvent",
-                "provider": "Alice",
-                "receiver": "Alice",
+                "provider": {
+                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                  "name": "Alice",
+                  "type": "Person"
+                },
+                "receiver": {
+                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                  "name": "Alice",
+                  "type": "Person"
+                },
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "062SCDBQSPRDXNZ4MNJ661T6VC",
+                    "id": "062Y83VNKY3YWTY49EZVRGPXEM",
                     "name": "gown",
-                    "trackingIdentifier": "gown-223",
+                    "trackingIdentifier": "gown-1648",
                     "type": "EconomicResource",
                     "primaryAccountable": "Alice",
                     "custodian": "Alice",
@@ -359,31 +511,47 @@
                     "onhandQuantity": "1 (om2:one)",
                     "children": [
                       {
-                        "id": "062SCDBT6A0V2C7EMJBA27E01C",
+                        "id": "062Y83VRA94WT7Q6CWTFDXJD5M",
                         "name": "modify",
                         "type": "EconomicEvent",
-                        "provider": "Alice",
-                        "receiver": "Alice",
+                        "provider": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
+                        "receiver": {
+                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                          "name": "Alice",
+                          "type": "Person"
+                        },
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "062SCDBBAT2G65JKAQHN5YTJ2R",
+                            "id": "062Y83V77QKKMMQ38BF9NKV8WR",
                             "name": "Clean_gown_2",
                             "type": "Process",
                             "note": "Clean gown second time process performed by Alice",
                             "children": [
                               {
-                                "id": "062SCDBSKCXXZJ3FT9KEX8K298",
+                                "id": "062Y83VQPHEQJV5N8FTEBB32YC",
                                 "name": "consume",
                                 "type": "EconomicEvent",
-                                "provider": "Alice",
-                                "receiver": "Alice",
+                                "provider": {
+                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                  "name": "Alice",
+                                  "type": "Person"
+                                },
+                                "receiver": {
+                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                  "name": "Alice",
+                                  "type": "Person"
+                                },
                                 "resourceQuantity": "10 (om2:kilogram)",
                                 "children": [
                                   {
-                                    "id": "062SCDBG1VR0B4WYPVFTV9SPJ8",
+                                    "id": "062Y83VCFW7RG1BPQ6GT3C0BSR",
                                     "name": "soap",
-                                    "trackingIdentifier": "soap-6881",
+                                    "trackingIdentifier": "soap-5222",
                                     "type": "EconomicResource",
                                     "primaryAccountable": "Alice",
                                     "custodian": "Alice",
@@ -395,17 +563,25 @@
                                 ]
                               },
                               {
-                                "id": "062SCDBS0ADWCQTJDYRTW6T4BM",
+                                "id": "062Y83VQ1JBDRSMMY9K27VP2P8",
                                 "name": "consume",
                                 "type": "EconomicEvent",
-                                "provider": "Alice",
-                                "receiver": "Alice",
+                                "provider": {
+                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                  "name": "Alice",
+                                  "type": "Person"
+                                },
+                                "receiver": {
+                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                  "name": "Alice",
+                                  "type": "Person"
+                                },
                                 "resourceQuantity": "20 (om2:litre)",
                                 "children": [
                                   {
-                                    "id": "062SCDBFHVTRHPDRCM1KWX1JNR",
+                                    "id": "062Y83VBSH2AGXFFZK6PA40EV8",
                                     "name": "water",
-                                    "trackingIdentifier": "water-2302",
+                                    "trackingIdentifier": "water-8814",
                                     "type": "EconomicResource",
                                     "primaryAccountable": "Alice",
                                     "custodian": "Alice",
@@ -417,17 +593,25 @@
                                 ]
                               },
                               {
-                                "id": "062SCDBRCCV5B8XF8AC2J3VMG8",
+                                "id": "062Y83VP9T5F88MBFQ2FSZ3FWW",
                                 "name": "accept",
                                 "type": "EconomicEvent",
-                                "provider": "Alice",
-                                "receiver": "Alice",
+                                "provider": {
+                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                  "name": "Alice",
+                                  "type": "Person"
+                                },
+                                "receiver": {
+                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                  "name": "Alice",
+                                  "type": "Person"
+                                },
                                 "resourceQuantity": "1 (om2:one)",
                                 "children": [
                                   {
-                                    "id": "062SCDBQSPRDXNZ4MNJ661T6VC",
+                                    "id": "062Y83VNKY3YWTY49EZVRGPXEM",
                                     "name": "gown",
-                                    "trackingIdentifier": "gown-223",
+                                    "trackingIdentifier": "gown-1648",
                                     "type": "EconomicResource",
                                     "primaryAccountable": "Alice",
                                     "custodian": "Alice",
@@ -436,13 +620,21 @@
                                     "onhandQuantity": "1 (om2:one)",
                                     "children": [
                                       {
-                                        "id": "062SCDBQS15J7YQP5ZT1KG9NH0",
+                                        "id": "062Y83VNJX4Z1HQRSDTJZTX5BG",
                                         "name": "transferCustody",
                                         "type": "EconomicEvent",
-                                        "provider": "Bob",
-                                        "receiver": "Alice",
+                                        "provider": {
+                                          "id": "062SDWS5N7PX5SQ3GVFPX1TQRR",
+                                          "name": "Bob",
+                                          "type": "Person"
+                                        },
+                                        "receiver": {
+                                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                          "name": "Alice",
+                                          "type": "Person"
+                                        },
                                         "atLocation": {
-                                          "id": "062HBSBVMRH8ZCWAA7QWTJDGVM",
+                                          "id": "062SDWS67C90KQ48HVZWSA0YKG",
                                           "name": "Dyne",
                                           "alt": "0",
                                           "lat": "52.39679",
@@ -453,9 +645,9 @@
                                         "resourceQuantity": "1 (om2:one)",
                                         "children": [
                                           {
-                                            "id": "062SCDBND4K2TEWY6SWW8KPKZ0",
+                                            "id": "062Y83VJQ9RHSG9GNR25TW9YVW",
                                             "name": "gown",
-                                            "trackingIdentifier": "gown-223",
+                                            "trackingIdentifier": "gown-1648",
                                             "type": "EconomicResource",
                                             "primaryAccountable": "Bob",
                                             "custodian": "Bob",
@@ -464,40 +656,64 @@
                                             "onhandQuantity": "0 (om2:one)",
                                             "children": [
                                               {
-                                                "id": "062SCDBQ4E0Q061DGAH5FWAP5M",
+                                                "id": "062Y83VMSN7PXZAQMJ7PARZJDG",
                                                 "name": "modify",
                                                 "type": "EconomicEvent",
-                                                "provider": "Bob",
-                                                "receiver": "Bob",
+                                                "provider": {
+                                                  "id": "062SDWS5N7PX5SQ3GVFPX1TQRR",
+                                                  "name": "Bob",
+                                                  "type": "Person"
+                                                },
+                                                "receiver": {
+                                                  "id": "062SDWS5N7PX5SQ3GVFPX1TQRR",
+                                                  "name": "Bob",
+                                                  "type": "Person"
+                                                },
                                                 "resourceQuantity": "1 (om2:one)",
                                                 "children": [
                                                   {
-                                                    "id": "062SCDBCQK2CPZET8MM48KFTB8",
+                                                    "id": "062Y83V8ZR64MCAHNCZGYTTQVC",
                                                     "name": "Do_surgery",
                                                     "type": "Process",
                                                     "note": "Use gown in surgery process performed by Alice",
                                                     "children": [
                                                       {
-                                                        "id": "062SCDBPJMCSMECC1P4ADXVZAG",
+                                                        "id": "062Y83VM5C8D6ZJ2T4FTKTB9R0",
                                                         "name": "work",
                                                         "type": "EconomicEvent",
-                                                        "provider": "Bob",
-                                                        "receiver": "Bob",
+                                                        "provider": {
+                                                          "id": "062SDWS5N7PX5SQ3GVFPX1TQRR",
+                                                          "name": "Bob",
+                                                          "type": "Person"
+                                                        },
+                                                        "receiver": {
+                                                          "id": "062SDWS5N7PX5SQ3GVFPX1TQRR",
+                                                          "name": "Bob",
+                                                          "type": "Person"
+                                                        },
                                                         "effortQuantity": "5 (om2:hour)",
                                                         "children": []
                                                       },
                                                       {
-                                                        "id": "062SCDBP008577WEPWRZKSE9G4",
+                                                        "id": "062Y83VKCT6ENEFDGGE9TSC76W",
                                                         "name": "accept",
                                                         "type": "EconomicEvent",
-                                                        "provider": "Bob",
-                                                        "receiver": "Bob",
+                                                        "provider": {
+                                                          "id": "062SDWS5N7PX5SQ3GVFPX1TQRR",
+                                                          "name": "Bob",
+                                                          "type": "Person"
+                                                        },
+                                                        "receiver": {
+                                                          "id": "062SDWS5N7PX5SQ3GVFPX1TQRR",
+                                                          "name": "Bob",
+                                                          "type": "Person"
+                                                        },
                                                         "resourceQuantity": "1 (om2:one)",
                                                         "children": [
                                                           {
-                                                            "id": "062SCDBND4K2TEWY6SWW8KPKZ0",
+                                                            "id": "062Y83VJQ9RHSG9GNR25TW9YVW",
                                                             "name": "gown",
-                                                            "trackingIdentifier": "gown-223",
+                                                            "trackingIdentifier": "gown-1648",
                                                             "type": "EconomicResource",
                                                             "primaryAccountable": "Bob",
                                                             "custodian": "Bob",
@@ -506,13 +722,21 @@
                                                             "onhandQuantity": "0 (om2:one)",
                                                             "children": [
                                                               {
-                                                                "id": "062SCDBNBWFVW53VQYN8QHC8D8",
+                                                                "id": "062Y83VJPHD5YEBHM5ZTDBWJ0W",
                                                                 "name": "transferCustody",
                                                                 "type": "EconomicEvent",
-                                                                "provider": "Alice",
-                                                                "receiver": "Bob",
+                                                                "provider": {
+                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                  "name": "Alice",
+                                                                  "type": "Person"
+                                                                },
+                                                                "receiver": {
+                                                                  "id": "062SDWS5N7PX5SQ3GVFPX1TQRR",
+                                                                  "name": "Bob",
+                                                                  "type": "Person"
+                                                                },
                                                                 "atLocation": {
-                                                                  "id": "062HBSBWK2X915AFZ43SVGZVA8",
+                                                                  "id": "062SDWS77CZNQRCKJXRANN7RKR",
                                                                   "name": "Fab Lab Hamburg",
                                                                   "alt": "0",
                                                                   "lat": "51.1531305",
@@ -523,9 +747,9 @@
                                                                 "resourceQuantity": "1 (om2:one)",
                                                                 "children": [
                                                                   {
-                                                                    "id": "062SCDBHRJ92H62FVPG7Q7FPCC",
+                                                                    "id": "062Y83VEERZ2ZQ97PG105C15H0",
                                                                     "name": "gown",
-                                                                    "trackingIdentifier": "gown-223",
+                                                                    "trackingIdentifier": "gown-1648",
                                                                     "type": "EconomicResource",
                                                                     "primaryAccountable": "Alice",
                                                                     "custodian": "Alice",
@@ -534,31 +758,47 @@
                                                                     "onhandQuantity": "0 (om2:one)",
                                                                     "children": [
                                                                       {
-                                                                        "id": "062SCDBMS5DFS90VEC59V7RMSC",
+                                                                        "id": "062Y83VJ04SH32EPJ79E4C2BTC",
                                                                         "name": "modify",
                                                                         "type": "EconomicEvent",
-                                                                        "provider": "Alice",
-                                                                        "receiver": "Alice",
+                                                                        "provider": {
+                                                                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                          "name": "Alice",
+                                                                          "type": "Person"
+                                                                        },
+                                                                        "receiver": {
+                                                                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                          "name": "Alice",
+                                                                          "type": "Person"
+                                                                        },
                                                                         "resourceQuantity": "1 (om2:one)",
                                                                         "children": [
                                                                           {
-                                                                            "id": "062SCDBAVT0W18S0F5M4CAM4TR",
+                                                                            "id": "062Y83V6QG5HQXMCAFG1HWGN88",
                                                                             "name": "Clean_gown_1",
                                                                             "type": "Process",
                                                                             "note": "Clean gown first time process performed by Alice",
                                                                             "children": [
                                                                               {
-                                                                                "id": "062SCDBM63AZASY2BAZATM6K7G",
+                                                                                "id": "062Y83VHBTDN3TTA2913X9FYQ8",
                                                                                 "name": "consume",
                                                                                 "type": "EconomicEvent",
-                                                                                "provider": "Alice",
-                                                                                "receiver": "Alice",
+                                                                                "provider": {
+                                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                  "name": "Alice",
+                                                                                  "type": "Person"
+                                                                                },
+                                                                                "receiver": {
+                                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                  "name": "Alice",
+                                                                                  "type": "Person"
+                                                                                },
                                                                                 "resourceQuantity": "10 (om2:kilogram)",
                                                                                 "children": [
                                                                                   {
-                                                                                    "id": "062SCDBG1VR0B4WYPVFTV9SPJ8",
+                                                                                    "id": "062Y83VCFW7RG1BPQ6GT3C0BSR",
                                                                                     "name": "soap",
-                                                                                    "trackingIdentifier": "soap-6881",
+                                                                                    "trackingIdentifier": "soap-5222",
                                                                                     "type": "EconomicResource",
                                                                                     "primaryAccountable": "Alice",
                                                                                     "custodian": "Alice",
@@ -570,17 +810,25 @@
                                                                                 ]
                                                                               },
                                                                               {
-                                                                                "id": "062SCDBKJH38GBQKSRFE9PMKP8",
+                                                                                "id": "062Y83VGR5828RCAT2C5XQ21JC",
                                                                                 "name": "consume",
                                                                                 "type": "EconomicEvent",
-                                                                                "provider": "Alice",
-                                                                                "receiver": "Alice",
+                                                                                "provider": {
+                                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                  "name": "Alice",
+                                                                                  "type": "Person"
+                                                                                },
+                                                                                "receiver": {
+                                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                  "name": "Alice",
+                                                                                  "type": "Person"
+                                                                                },
                                                                                 "resourceQuantity": "20 (om2:litre)",
                                                                                 "children": [
                                                                                   {
-                                                                                    "id": "062SCDBFHVTRHPDRCM1KWX1JNR",
+                                                                                    "id": "062Y83VBSH2AGXFFZK6PA40EV8",
                                                                                     "name": "water",
-                                                                                    "trackingIdentifier": "water-2302",
+                                                                                    "trackingIdentifier": "water-8814",
                                                                                     "type": "EconomicResource",
                                                                                     "primaryAccountable": "Alice",
                                                                                     "custodian": "Alice",
@@ -592,17 +840,25 @@
                                                                                 ]
                                                                               },
                                                                               {
-                                                                                "id": "062SCDBJYHSE702VHQE0R17QT0",
+                                                                                "id": "062Y83VG188QWQQC2JSMWTJGDM",
                                                                                 "name": "accept",
                                                                                 "type": "EconomicEvent",
-                                                                                "provider": "Alice",
-                                                                                "receiver": "Alice",
+                                                                                "provider": {
+                                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                  "name": "Alice",
+                                                                                  "type": "Person"
+                                                                                },
+                                                                                "receiver": {
+                                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                  "name": "Alice",
+                                                                                  "type": "Person"
+                                                                                },
                                                                                 "resourceQuantity": "1 (om2:one)",
                                                                                 "children": [
                                                                                   {
-                                                                                    "id": "062SCDBHRJ92H62FVPG7Q7FPCC",
+                                                                                    "id": "062Y83VEERZ2ZQ97PG105C15H0",
                                                                                     "name": "gown",
-                                                                                    "trackingIdentifier": "gown-223",
+                                                                                    "trackingIdentifier": "gown-1648",
                                                                                     "type": "EconomicResource",
                                                                                     "primaryAccountable": "Alice",
                                                                                     "custodian": "Alice",
@@ -611,31 +867,47 @@
                                                                                     "onhandQuantity": "0 (om2:one)",
                                                                                     "children": [
                                                                                       {
-                                                                                        "id": "062SCDBHREB878KMQ1DYG3RYH0",
+                                                                                        "id": "062Y83VEEFJSE2VF2PC7ZPZ92G",
                                                                                         "name": "produce",
                                                                                         "type": "EconomicEvent",
-                                                                                        "provider": "Alice",
-                                                                                        "receiver": "Alice",
+                                                                                        "provider": {
+                                                                                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                          "name": "Alice",
+                                                                                          "type": "Person"
+                                                                                        },
+                                                                                        "receiver": {
+                                                                                          "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                          "name": "Alice",
+                                                                                          "type": "Person"
+                                                                                        },
                                                                                         "resourceQuantity": "1 (om2:one)",
                                                                                         "children": [
                                                                                           {
-                                                                                            "id": "062SCDBC8EYTX94HV5NCVEN8DG",
+                                                                                            "id": "062Y83V8FTHQDVQAGM68D7HA4R",
                                                                                             "name": "Create_gown",
                                                                                             "type": "Process",
                                                                                             "note": "Create gown process performed by Alice",
                                                                                             "children": [
                                                                                               {
-                                                                                                "id": "062SCDBH5QD8EPZ74Z5M75YEG0",
+                                                                                                "id": "062Y83VDSACY7C464S454MCT10",
                                                                                                 "name": "consume",
                                                                                                 "type": "EconomicEvent",
-                                                                                                "provider": "Alice",
-                                                                                                "receiver": "Alice",
+                                                                                                "provider": {
+                                                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                                  "name": "Alice",
+                                                                                                  "type": "Person"
+                                                                                                },
+                                                                                                "receiver": {
+                                                                                                  "id": "062SDWS4SRW8YZJCM5ZPMCWTJ8",
+                                                                                                  "name": "Alice",
+                                                                                                  "type": "Person"
+                                                                                                },
                                                                                                 "resourceQuantity": "25 (om2:kilogram)",
                                                                                                 "children": [
                                                                                                   {
-                                                                                                    "id": "062SCDBF0ZJR992GX4J68Z287M",
+                                                                                                    "id": "062Y83VB6EPG8WHXM3JF98SHTC",
                                                                                                     "name": "cotton",
-                                                                                                    "trackingIdentifier": "cotton-3731",
+                                                                                                    "trackingIdentifier": "cotton-1181",
                                                                                                     "type": "EconomicResource",
                                                                                                     "primaryAccountable": "Alice",
                                                                                                     "custodian": "Alice",

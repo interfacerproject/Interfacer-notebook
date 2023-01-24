@@ -11,6 +11,7 @@ AGENT_FRAG = """
     fragment agent on Agent {
         id
         name
+        __typename
     }
 """
 LOCATION_FRAG = """
