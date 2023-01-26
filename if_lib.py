@@ -929,7 +929,7 @@ def get_process(process_name, process_data, note, user_data, endpoint):
 DEBUG_create_event = False
 # This function implements all actions != transfer actions
 def create_event(provider, action, note, amount, process, res_spec_data, endpoint, \
-                 existing_res:dict={}, new_res:dict={}, effort_spec:dict={}, receiver=None, process2=None):
+                 existing_res:dict={}, new_res:dict={}, effort_spec:dict={}, receiver:dict={}, process2:dict={}):
 
     if not action in SUPPORTED_ACTIONS:
         print(f"We do not support {action} yet")
@@ -953,7 +953,7 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
             "action": action,
             "note": note,
             "provider": provider['id'],
-            "receiver": receiver['id'] if receiver != None else provider['id'],
+            "receiver": receiver['id'] if receiver != {} else provider['id'],
             "hasPointInTime" : ts
         }
     }
@@ -970,7 +970,7 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
     else:
         if action in ['use']:
             # If action is use it might include a duration of usage
-            if effort_spec['unit_id'] != None:
+            if effort_spec['unit_id'] != {}:
                 variables['event']['effortQuantity'] = {}
                 var_obj = variables['event']['effortQuantity']
                 var_obj['hasUnit'] = effort_spec['unit_id']
@@ -1004,10 +1004,10 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
         variables['event']['outputOf'] = process['id']
     elif action in IN_OUT_PR_ACTIONS:
         # These actions can be either input or output of a process
-        if process2 == None:
-            if existing_res != None:
+        if process2 == {}:
+            if existing_res != {}:
                 variables['event']['inputOf'] = process['id']
-            elif new_res != None:
+            elif new_res != {}:
                 variables['event']['outputOf'] = process['id']
         else:
             variables['event']['inputOf'] = process['id']
@@ -1024,9 +1024,9 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
         variables['event']['resourceConformsTo'] = new_res['spec_id']
     
     if action in ['deliverService']:
-        if existing_res != None:
+        if existing_res != {}:
             variables['event']['resourceConformsTo'] = existing_res['spec_id']
-        elif new_res != None:
+        elif new_res != {}:
             variables['event']['resourceConformsTo'] = new_res['spec_id']
         
     
