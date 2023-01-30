@@ -10,7 +10,10 @@ from pdb import set_trace
 
 
 from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS
-from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, PROCESS_FRAG, PROCESSSPEC_FRAG
+from if_consts import EVENT_FRAG, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, \
+    INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, PROCESS_FRAG, PROCESSSPEC_FRAG, \
+        UNIT_FRAG, RESSPEC_FRAG
+
 from if_utils import stringify
 
 # Test zenroom is correctly installed and running
@@ -1228,7 +1231,7 @@ def create_proposal(proposal, user_data, endpoint):
                         ...proposal
                     }
                 }
-            }""" + PROPOSAL_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+            }""" + PROPOSAL_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -1283,7 +1286,7 @@ def show_proposal(user_data, id, endpoint):
       proposal(id:$id){
         ...proposal
       }
-    }""" + PROPOSAL_FRAG + PROPINT_FRAG + LOCATION_FRAG + INTENT_FRAG + RESOURCE_FRAG + \
+    }""" + PROPOSAL_FRAG + PROPINT_FRAG + LOCATION_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + RESOURCE_FRAG + \
         QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
@@ -1349,7 +1352,8 @@ def create_intent(intent, user_data, res_spec_data, endpoint):
                         ...intent
                     }
                 }
-            }""" + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+            }""" + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + \
+                QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -1452,7 +1456,8 @@ def create_proposedIntent(cur_propint, user_data, endpoint):
                 reciprocal
             }
         }
-    }""" + PROPOSAL_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+    }""" + PROPOSAL_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + \
+        RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -1491,3 +1496,83 @@ def get_proposedIntent(name, prop_int_data, user_data, publishedIn, publishes,re
     cur_propint['reciprocal'] = reciprocal
 
     create_proposedIntent(cur_propint, user_data, endpoint)
+
+DEBUG_create_satisfaction = True
+def create_satisfaction(cur_sat, user_data, endpoint):
+
+    variables = {
+        "satisfaction": {
+            "effortQuantity": cur_sat['effortQuantity'],
+            "note": cur_sat['note'],
+            "resourceQuantity": cur_sat['resourceQuantity'],
+            "satisfiedByEvent": cur_sat['satisfiedByEvent'],
+            "satisfies": cur_sat['satisfies']
+        }
+    }
+    
+    query = """mutation($satisfaction: SatisfactionCreateParams!){
+        createSatisfaction(satisfaction:$satisfaction){
+            satisfaction{
+                id
+                effortQuantity {
+                    ...quantity
+                }
+                note
+                resourceQuantity{
+                    ...quantity
+                }
+                satisfiedByEvent {
+                    ...event
+                }
+                satisfies {
+                    ...intent
+                }
+            }
+        }
+    }""" + EVENT_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + \
+        QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
+    if DEBUG_create_satisfaction:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))   
+
+
+    cur_sat['id'] = res_json['data']['createSatisfaction']['satisfaction']['id']
+
+
+def get_satisfaction(name, user_data, event_id, intent_id, note, satisfaction_data, endpoint, effortQuantity:dict={}, resourceQuantity:dict={}):
+    
+    satisfaction_data[f'{name}'] = {}
+    cur_sat = satisfaction_data[f'{name}']
+
+    cur_sat["effortQuantity"] = {
+            "hasNumericalValue": effortQuantity['amount'],
+            "hasUnit": effortQuantity['unit_id'],
+        } if effortQuantity != {} else None
+
+    cur_sat["note"] = note
+    cur_sat["resourceQuantity"] = {
+            "hasNumericalValue": resourceQuantity['amount'],
+            "hasUnit": resourceQuantity['unit_id'],
+        } if resourceQuantity != {} else None
+    
+    cur_sat["satisfiedByEvent"] = event_id
+    
+    cur_sat["satisfies"] = intent_id
+
+    create_satisfaction(cur_sat, user_data, endpoint)

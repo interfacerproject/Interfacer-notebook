@@ -55,6 +55,27 @@ RESOURCE_FRAG = """
             }
           }
 """
+UNIT_FRAG = """
+    fragment unit on Unit {
+        id
+        label
+        symbol
+}
+"""
+RESSPEC_FRAG = """
+    fragment resourcespecification on ResourceSpecification {
+        defaultUnitOfEffort {
+            ...unit
+        }
+        defaultUnitOfResource {
+            ...unit
+        }
+        id
+        name
+        note
+        resourceClassifiedAs
+    }
+"""
 
 ACTION_FRAG = """
     fragment action on Action {
@@ -104,7 +125,7 @@ PROCESS_FRAG = """
 
 
 EVENT_FRAG = """
-    fragment event on Event {
+    fragment event on EconomicEvent {
         action {
             ...action
         }
@@ -129,9 +150,22 @@ EVENT_FRAG = """
             ...process
         }
         note
-        previous: ProductionFlowItem
-        previousEvent {
-            id
+        previous {
+            __typename
+            ... on EconomicEvent {
+                id
+                action {
+                    id
+                }
+            }
+            ... on EconomicResource {
+                id
+                name
+            }
+            ... on Process {
+                id
+                name
+            }
         }
         provider {
             ...agent
@@ -146,7 +180,9 @@ EVENT_FRAG = """
         # Agreement This economic event occurs as part of this agreement.
 
         resourceClassifiedAs
-        resourceConformsTo
+        resourceConformsTo {
+            ...resourcespecification
+        }
         resourceInventoriedAs {
             ...resource
         }
@@ -161,7 +197,7 @@ EVENT_FRAG = """
             ...resource
         }
         triggeredBy {
-            ...event
+            id
         }
     }
 """
@@ -228,8 +264,9 @@ INTENT_FRAG = """
         }
         resourceClassifiedAs
         
-        # resourceConformsTo: EconomicResource
-# The primary resource specification or definition of an existing or potential economic resource. A resource will have only one, as this specifies exactly what the resource is.
+        resourceConformsTo {
+            ...resourcespecification
+        }
 
         resourceInventoriedAs {
             ...resource
