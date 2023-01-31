@@ -78,11 +78,24 @@ def get_HMAC(email, endpoint, newUser=True):
         print("JSON")
         print(json.dumps(res_json, indent=2))
 
+    has_errors = False
     if "errors" in res_json and len(res_json['errors']) > 0:
         for err in res_json['errors']:
             if err['message'] == "email exists":
                 return get_HMAC(email, endpoint, newUser=False)
-    
+            else:
+                has_errors = True
+
+    if has_errors:
+        print("Payload")
+        print(payload)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))
+        assert 2 == 1
+
+
     return res_json
 
 
@@ -1497,7 +1510,7 @@ def get_proposedIntent(name, prop_int_data, user_data, publishedIn, publishes,re
 
     create_proposedIntent(cur_propint, user_data, endpoint)
 
-DEBUG_create_satisfaction = True
+DEBUG_create_satisfaction = False
 def create_satisfaction(cur_sat, user_data, endpoint):
 
     variables = {
@@ -1555,7 +1568,7 @@ def create_satisfaction(cur_sat, user_data, endpoint):
     cur_sat['id'] = res_json['data']['createSatisfaction']['satisfaction']['id']
 
 
-def get_satisfaction(name, user_data, event_id, intent_id, note, satisfaction_data, endpoint, effortQuantity:dict={}, resourceQuantity:dict={}):
+def get_satisfaction(name, user_data, event_id, intent_id, note, satisfaction_data, endpoint, effortQuantity:dict={}, amount=0, cur_res:dict={}, res_spec_data:dict={}):
     
     satisfaction_data[f'{name}'] = {}
     cur_sat = satisfaction_data[f'{name}']
@@ -1567,9 +1580,10 @@ def get_satisfaction(name, user_data, event_id, intent_id, note, satisfaction_da
 
     cur_sat["note"] = note
     cur_sat["resourceQuantity"] = {
-            "hasNumericalValue": resourceQuantity['amount'],
-            "hasUnit": resourceQuantity['unit_id'],
-        } if resourceQuantity != {} else None
+            "hasNumericalValue": amount,
+            "hasUnit": [specs['defaultUnit'] for name, specs in res_spec_data.items() \
+               if specs['id'] == cur_res['spec_id']][0],
+        } if res_spec_data != {} else None
     
     cur_sat["satisfiedByEvent"] = event_id
     
