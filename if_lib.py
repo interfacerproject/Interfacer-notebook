@@ -590,6 +590,65 @@ def get_location_id(file, user_data, locs_data, user, endpoint):
         print(f"Location id available in file for {loc_data['name']}")
         loc_data['id'] = temp_loc_data['id']
 
+# Read the location id from file or generate it by calling the back-end
+DEBUG_set_user_location = False
+def set_user_location(file, users_data, locs_data, user, endpoint):
+
+    user_data = users_data[user]
+
+    if 'location_id' in user_data:
+        print(f"Location id available for {user_data['name']}")
+        return
+
+    loc_data = locs_data[f'{user}']
+
+    variables = {
+        "person": {
+            "id":  user_data['id'],
+            "primaryLocation": loc_data['id']
+        }
+    }
+
+    query = """mutation($person: PersonUpdateParams!) {
+            updatePerson(person: $person) {
+                agent {
+                    ...agent
+                    primaryLocation {
+                        id
+                    }
+                }
+            }
+        }""" + AGENT_FRAG
+
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
+    if DEBUG_set_user_location:
+        print("Query")
+        print(query)
+
+        print("Variables")
+        print(variables)
+
+        print("Response")
+        print(json.dumps(res_json, indent=2))
+
+    # save the id in the location data
+    user_data['location_id'] = res_json['data']['updatePerson']['agent']['primaryLocation']['id']
+
+    # save data with location id (for each user, redudant)
+    with open(file,'w') as f:
+        # Save the entire location data, not just the user one
+        json.dump(users_data, f)
+
 
 # Read the unit id from file or generate it by calling the back-end
 def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint):
@@ -737,7 +796,7 @@ def create_resource(user_data, res_data, res_spec_data, amount, endpoint):
 
     variables = {
         "event": {
-            "note": "update event",
+            "note": "create resource",
             "action": "raise",
             "provider": provider, 
             "receiver": receiver,
@@ -746,7 +805,8 @@ def create_resource(user_data, res_data, res_spec_data, amount, endpoint):
               "hasUnit": unit_id,
               "hasNumericalValue": amount 
             },
-            "resourceConformsTo": res_data['spec_id']
+            "resourceConformsTo": res_data['spec_id'],
+            "toLocation" : user_data['location_id']
         },
         "newInventoriedResource": { 
             "name": res_data['name'],
@@ -1037,7 +1097,9 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
         variables['newInventoriedResource'] = {};
         variables['newInventoriedResource']['name'] = new_res['name']
         variables['newInventoriedResource']['trackingIdentifier'] = new_res['res_ref_id']
+        
         variables['event']['resourceConformsTo'] = new_res['spec_id']
+        variables['event']['toLocation'] = provider['location_id']
     
     if action in ['deliverService']:
         if existing_res != {}:
@@ -1128,7 +1190,7 @@ def make_transfer(provider_data, action, note, receiver_data, amount, existing_r
             "receiver": receiver_data['id'], 
             "resourceInventoriedAs": existing_res['id'],
             "hasPointInTime": ts,
-            "atLocation": [values['id'] for key, values in locs_data.items() \
+            "toLocation": [values['id'] for key, values in locs_data.items() \
                               if values['user_id'] == receiver_data['id']][0],
             "resourceQuantity": {
               "hasUnit": [values['defaultUnit'] for key, values in res_spec_data.items() \

@@ -1,17 +1,26 @@
 [
   {
-    "id": "0630EGCE8J6VGZ63BQ88W7NR2W",
+    "id": "0630W8TBEBBGS97AWH9FTJ7APR",
     "name": "fancy collaborative bike",
-    "trackingIdentifier": "fancy_collaborative_bike-7849",
+    "trackingIdentifier": "fancy_collaborative_bike-7515",
     "type": "EconomicResource",
     "primaryAccountable": "service_prov2",
     "custodian": "service_prov2",
     "metadata": null,
+    "currentLocation": {
+      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+      "name": "Lyondell Covestro Manufacturing",
+      "alt": "0",
+      "lat": "51.9650382",
+      "long": "4.0133683",
+      "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+      "note": "location.service_prov2.com"
+    },
     "accountingQuantity": "1 (om2:one)",
     "onhandQuantity": "1 (om2:one)",
     "children": [
       {
-        "id": "0630EGCE82PY28GRNGD34HQ3B4",
+        "id": "0630W8TBDXRN4M3C0J8DCAQ90M",
         "name": "produce",
         "type": "EconomicEvent",
         "provider": {
@@ -24,16 +33,25 @@
           "name": "service_prov2",
           "type": "Person"
         },
+        "toLocation": {
+          "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+          "name": "Lyondell Covestro Manufacturing",
+          "alt": "0",
+          "lat": "51.9650382",
+          "long": "4.0133683",
+          "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+          "note": "location.service_prov2.com"
+        },
         "resourceQuantity": "1 (om2:one)",
         "children": [
           {
-            "id": "0630EGBFEM8HRGB6X2FPSDFVSW",
-            "name": "Assembly_bike",
+            "id": "0630W8SHGR9QS4ZXFBV91HCVGC",
+            "name": "Assemble_bike",
             "type": "Process",
-            "note": "Assembly bike 1-hour service by service_prov2",
+            "note": "Assemble bike 1-hour service by service_prov2",
             "children": [
               {
-                "id": "0630EGCC78TBFAMV3BXNHD40K0",
+                "id": "0630W8TA9DV3955NCWGCGFGJ8C",
                 "name": "work",
                 "type": "EconomicEvent",
                 "provider": {
@@ -50,7 +68,7 @@
                 "children": []
               },
               {
-                "id": "0630EGCA80EN6FA6NTJCZEG910",
+                "id": "0630W8T96XBQ8W9SW3E25G6C4M",
                 "name": "consume",
                 "type": "EconomicEvent",
                 "provider": {
@@ -66,18 +84,27 @@
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "0630EGC6HHJBVMEFMKQWPFQ1ER",
+                    "id": "0630W8T68VWKVP0QJP3WMZFRY4",
                     "name": "aluminium bike frame",
-                    "trackingIdentifier": "aluminium_bike_frame-5527",
+                    "trackingIdentifier": "aluminium_bike_frame-3217",
                     "type": "EconomicResource",
                     "primaryAccountable": "service_prov2",
                     "custodian": "service_prov2",
                     "metadata": null,
+                    "currentLocation": {
+                      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+                      "name": "Lyondell Covestro Manufacturing",
+                      "alt": "0",
+                      "lat": "51.9650382",
+                      "long": "4.0133683",
+                      "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+                      "note": "location.service_prov2.com"
+                    },
                     "accountingQuantity": "0 (om2:one)",
                     "onhandQuantity": "0 (om2:one)",
                     "children": [
                       {
-                        "id": "0630EGC6GSR432PBTRX5GCXV14",
+                        "id": "0630W8T6897ANC7HJ40MN8EAEG",
                         "name": "transfer",
                         "type": "EconomicEvent",
                         "provider": {
@@ -90,7 +117,7 @@
                           "name": "service_prov2",
                           "type": "Person"
                         },
-                        "atLocation": {
+                        "toLocation": {
                           "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
                           "name": "Lyondell Covestro Manufacturing",
                           "alt": "0",
@@ -102,18 +129,27 @@
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "0630EGBYA42Q43QC20AZ1HBMNC",
+                            "id": "0630W8SYS5EHQ02E87JRQ7XW24",
                             "name": "aluminium bike frame",
-                            "trackingIdentifier": "aluminium_bike_frame-5527",
+                            "trackingIdentifier": "aluminium_bike_frame-3217",
                             "type": "EconomicResource",
                             "primaryAccountable": "Designer2",
                             "custodian": "Designer2",
                             "metadata": null,
+                            "currentLocation": {
+                              "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+                              "name": "Farback",
+                              "alt": "0",
+                              "lat": "52.3767127",
+                              "long": "4.8990591",
+                              "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+                              "note": "location.designer2.org"
+                            },
                             "accountingQuantity": "0 (om2:one)",
                             "onhandQuantity": "0 (om2:one)",
                             "children": [
                               {
-                                "id": "0630EGBY96NQA11WN2ZYT6N1EW",
+                                "id": "0630W8SYRG07YSYDEW4CTHNGDW",
                                 "name": "transfer",
                                 "type": "EconomicEvent",
                                 "provider": {
@@ -126,7 +162,7 @@
                                   "name": "Designer2",
                                   "type": "Person"
                                 },
-                                "atLocation": {
+                                "toLocation": {
                                   "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
                                   "name": "Farback",
                                   "alt": "0",
@@ -138,18 +174,27 @@
                                 "resourceQuantity": "1 (om2:one)",
                                 "children": [
                                   {
-                                    "id": "0630EGBWFA6TBVY9HYYDHXJCGR",
+                                    "id": "0630W8SX0JPDW0APT91HW1S8JG",
                                     "name": "aluminium bike frame",
-                                    "trackingIdentifier": "aluminium_bike_frame-5527",
+                                    "trackingIdentifier": "aluminium_bike_frame-3217",
                                     "type": "EconomicResource",
                                     "primaryAccountable": "Manufacturer1",
                                     "custodian": "Manufacturer1",
                                     "metadata": null,
+                                    "currentLocation": {
+                                      "id": "0630EEVX0YXTABESA8NSJAPJMR",
+                                      "name": "Fab Lab Hamburg",
+                                      "alt": "0",
+                                      "lat": "51.1531305",
+                                      "long": "5.2685045",
+                                      "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
+                                      "note": "location.manufacturer1.org"
+                                    },
                                     "accountingQuantity": "0 (om2:one)",
                                     "onhandQuantity": "0 (om2:one)",
                                     "children": [
                                       {
-                                        "id": "0630EGBWESWB1SDCYHWN34DVX0",
+                                        "id": "0630W8SWZX7GASGWECV0NFJ4B4",
                                         "name": "produce",
                                         "type": "EconomicEvent",
                                         "provider": {
@@ -162,16 +207,25 @@
                                           "name": "Manufacturer1",
                                           "type": "Person"
                                         },
+                                        "toLocation": {
+                                          "id": "0630EEVX0YXTABESA8NSJAPJMR",
+                                          "name": "Fab Lab Hamburg",
+                                          "alt": "0",
+                                          "lat": "51.1531305",
+                                          "long": "5.2685045",
+                                          "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
+                                          "note": "location.manufacturer1.org"
+                                        },
                                         "resourceQuantity": "1 (om2:one)",
                                         "children": [
                                           {
-                                            "id": "0630EGB2SJ8HMPT2Q7KEWQ0TNG",
+                                            "id": "0630W8S9KJS5PE1DMMBSAC1PZG",
                                             "name": "Manifacture_aluminium_bike_frame",
                                             "type": "Process",
                                             "note": "Creation of aluminum bike frame by Manufacturer1",
                                             "children": [
                                               {
-                                                "id": "0630EGBTJ8TY7NYC2HPBHN6M8W",
+                                                "id": "0630W8SV3BP6DRCKEKNV4KDAPG",
                                                 "name": "consume",
                                                 "type": "EconomicEvent",
                                                 "provider": {
@@ -187,18 +241,27 @@
                                                 "resourceQuantity": "5 (om2:kilogram)",
                                                 "children": [
                                                   {
-                                                    "id": "0630EGBR25YQP8N8W7C0HZWR6M",
+                                                    "id": "0630W8SRRB7HZQYTAYS66VJSDM",
                                                     "name": "aluminium",
-                                                    "trackingIdentifier": "aluminium-3073",
+                                                    "trackingIdentifier": "aluminium-4184",
                                                     "type": "EconomicResource",
                                                     "primaryAccountable": "Manufacturer1",
                                                     "custodian": "Manufacturer1",
                                                     "metadata": null,
+                                                    "currentLocation": {
+                                                      "id": "0630EEVX0YXTABESA8NSJAPJMR",
+                                                      "name": "Fab Lab Hamburg",
+                                                      "alt": "0",
+                                                      "lat": "51.1531305",
+                                                      "long": "5.2685045",
+                                                      "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
+                                                      "note": "location.manufacturer1.org"
+                                                    },
                                                     "accountingQuantity": "0 (om2:kilogram)",
                                                     "onhandQuantity": "0 (om2:kilogram)",
                                                     "children": [
                                                       {
-                                                        "id": "0630EGBR1R5PZDHBV6K5VQVKNM",
+                                                        "id": "0630W8SRQZHAQ6WBZ77Y4F3918",
                                                         "name": "raise",
                                                         "type": "EconomicEvent",
                                                         "provider": {
@@ -211,6 +274,15 @@
                                                           "name": "Manufacturer1",
                                                           "type": "Person"
                                                         },
+                                                        "toLocation": {
+                                                          "id": "0630EEVX0YXTABESA8NSJAPJMR",
+                                                          "name": "Fab Lab Hamburg",
+                                                          "alt": "0",
+                                                          "lat": "51.1531305",
+                                                          "long": "5.2685045",
+                                                          "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
+                                                          "note": "location.manufacturer1.org"
+                                                        },
                                                         "resourceQuantity": "5 (om2:kilogram)",
                                                         "children": []
                                                       }
@@ -219,7 +291,7 @@
                                                 ]
                                               },
                                               {
-                                                "id": "0630EGBS153XCRGZYXYCNBQRKR",
+                                                "id": "0630W8SSGVZH8WBVH5QJDHAFAW",
                                                 "name": "work",
                                                 "type": "EconomicEvent",
                                                 "provider": {
@@ -252,7 +324,7 @@
                 ]
               },
               {
-                "id": "0630EGC96XQSABTYPMYVMWY5SM",
+                "id": "0630W8T88SMS8JR81E93BGB2C0",
                 "name": "cite",
                 "type": "EconomicEvent",
                 "provider": {
@@ -268,18 +340,27 @@
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "0630EGBQ48WA17EKGZNR7K5804",
+                    "id": "0630W8SQQ1KM47ZD1ATHVA1PJ8",
                     "name": "funky bike design",
-                    "trackingIdentifier": "funky_bike_design-1457",
+                    "trackingIdentifier": "funky_bike_design-2764",
                     "type": "EconomicResource",
                     "primaryAccountable": "Designer1",
                     "custodian": "Designer1",
                     "metadata": null,
+                    "currentLocation": {
+                      "id": "0630EEVT4BKEF97MQ7ETR3VGVW",
+                      "name": "Dyne",
+                      "alt": "0",
+                      "lat": "52.39679",
+                      "long": "4.8781073",
+                      "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
+                      "note": "location.designer1.org"
+                    },
                     "accountingQuantity": "1 (om2:one)",
                     "onhandQuantity": "1 (om2:one)",
                     "children": [
                       {
-                        "id": "0630EGBQ3Z69XEA4DK42YWBJ20",
+                        "id": "0630W8SQPGDHRX4QYWJBE2VWKR",
                         "name": "produce",
                         "type": "EconomicEvent",
                         "provider": {
@@ -292,16 +373,25 @@
                           "name": "Designer1",
                           "type": "Person"
                         },
+                        "toLocation": {
+                          "id": "0630EEVT4BKEF97MQ7ETR3VGVW",
+                          "name": "Dyne",
+                          "alt": "0",
+                          "lat": "52.39679",
+                          "long": "4.8781073",
+                          "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
+                          "note": "location.designer1.org"
+                        },
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "0630EGBMV9JB71Z5X4EP1DFCAR",
+                            "id": "0630W8SNP8942Z95KTHKDGGTJM",
                             "name": "Design_funky_bike",
                             "type": "Process",
                             "note": "Design of funky bike by Designer1",
                             "children": [
                               {
-                                "id": "0630EGBP1858PGW70GNJA4AQDC",
+                                "id": "0630W8SPMG7TDHGHWQ85Z7J2VM",
                                 "name": "work",
                                 "type": "EconomicEvent",
                                 "provider": {
@@ -326,7 +416,7 @@
                 ]
               },
               {
-                "id": "0630EGC7WCM6BQEZY8TG1NJKT4",
+                "id": "0630W8T7BC8TGJP9SKXNES6B14",
                 "name": "consume",
                 "type": "EconomicEvent",
                 "provider": {
@@ -342,18 +432,27 @@
                 "resourceQuantity": "1 (om2:one)",
                 "children": [
                   {
-                    "id": "0630EGC59A3FVZYBXT28S8T4N0",
+                    "id": "0630W8T5B3JXESXQ7VS9DH1BEW",
                     "name": "magic bike mirror",
-                    "trackingIdentifier": "magic_bike_mirror-3267",
+                    "trackingIdentifier": "magic_bike_mirror-3495",
                     "type": "EconomicResource",
                     "primaryAccountable": "service_prov2",
                     "custodian": "service_prov2",
                     "metadata": null,
+                    "currentLocation": {
+                      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+                      "name": "Lyondell Covestro Manufacturing",
+                      "alt": "0",
+                      "lat": "51.9650382",
+                      "long": "4.0133683",
+                      "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+                      "note": "location.service_prov2.com"
+                    },
                     "accountingQuantity": "-1 (om2:one)",
                     "onhandQuantity": "-1 (om2:one)",
                     "children": [
                       {
-                        "id": "0630EGC58CVWA05A446WGH8WN0",
+                        "id": "0630W8T5A9ZYE6A3WR16SXH6AR",
                         "name": "transfer",
                         "type": "EconomicEvent",
                         "provider": {
@@ -366,7 +465,7 @@
                           "name": "service_prov2",
                           "type": "Person"
                         },
-                        "atLocation": {
+                        "toLocation": {
                           "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
                           "name": "Lyondell Covestro Manufacturing",
                           "alt": "0",
@@ -378,18 +477,27 @@
                         "resourceQuantity": "1 (om2:one)",
                         "children": [
                           {
-                            "id": "0630EGC49DF5MKKJNVHKXS2BNW",
+                            "id": "0630W8T4CY97KA39TK9HK7JR9C",
                             "name": "magic bike mirror",
-                            "trackingIdentifier": "magic_bike_mirror-3267",
+                            "trackingIdentifier": "magic_bike_mirror-3495",
                             "type": "EconomicResource",
                             "primaryAccountable": "Designer2",
                             "custodian": "Designer2",
                             "metadata": null,
+                            "currentLocation": {
+                              "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+                              "name": "Farback",
+                              "alt": "0",
+                              "lat": "52.3767127",
+                              "long": "4.8990591",
+                              "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+                              "note": "location.designer2.org"
+                            },
                             "accountingQuantity": "0 (om2:one)",
                             "onhandQuantity": "0 (om2:one)",
                             "children": [
                               {
-                                "id": "0630EGC48NSKM30319DZT7D1QC",
+                                "id": "0630W8T4C6BCDE4V8GE0K39BKW",
                                 "name": "transfer",
                                 "type": "EconomicEvent",
                                 "provider": {
@@ -402,7 +510,7 @@
                                   "name": "Designer2",
                                   "type": "Person"
                                 },
-                                "atLocation": {
+                                "toLocation": {
                                   "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
                                   "name": "Farback",
                                   "alt": "0",
@@ -414,18 +522,27 @@
                                 "resourceQuantity": "1 (om2:one)",
                                 "children": [
                                   {
-                                    "id": "0630EGC2ZVP1CZFV0S8AB3RK0W",
+                                    "id": "0630W8T3B6YCQBTM4CMTKJJ6V0",
                                     "name": "magic bike mirror",
-                                    "trackingIdentifier": "magic_bike_mirror-3267",
+                                    "trackingIdentifier": "magic_bike_mirror-3495",
                                     "type": "EconomicResource",
                                     "primaryAccountable": "Manufacturer2",
                                     "custodian": "Manufacturer2",
                                     "metadata": null,
+                                    "currentLocation": {
+                                      "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+                                      "name": "Fab Lab Amsterdam",
+                                      "alt": "0",
+                                      "lat": "52.372773",
+                                      "long": "4.8981243",
+                                      "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+                                      "note": "location.manufacturer2.org"
+                                    },
                                     "accountingQuantity": "0 (om2:one)",
                                     "onhandQuantity": "0 (om2:one)",
                                     "children": [
                                       {
-                                        "id": "0630EGC2ZCJ8ZNP1XH72SGNQQG",
+                                        "id": "0630W8T3AM8113JCAAHEAZBKMG",
                                         "name": "produce",
                                         "type": "EconomicEvent",
                                         "provider": {
@@ -438,16 +555,25 @@
                                           "name": "Manufacturer2",
                                           "type": "Person"
                                         },
+                                        "toLocation": {
+                                          "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+                                          "name": "Fab Lab Amsterdam",
+                                          "alt": "0",
+                                          "lat": "52.372773",
+                                          "long": "4.8981243",
+                                          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+                                          "note": "location.manufacturer2.org"
+                                        },
                                         "resourceQuantity": "1 (om2:one)",
                                         "children": [
                                           {
-                                            "id": "0630EGC0JJJ833QX9ABJKS1850",
+                                            "id": "0630W8T1HBK6BWH84KEEJ3G63R",
                                             "name": "Creation_magic_bike_mirror",
                                             "type": "Process",
                                             "note": "Creation of magic bike mirror by Manufacturer2",
                                             "children": [
                                               {
-                                                "id": "0630EGC1Z37XYN2NGTVP145YVG",
+                                                "id": "0630W8T2G3NEWA980V9Z2G9H8W",
                                                 "name": "consume",
                                                 "type": "EconomicEvent",
                                                 "provider": {
@@ -463,18 +589,27 @@
                                                 "resourceQuantity": "0.2 (om2:kilogram)",
                                                 "children": [
                                                   {
-                                                    "id": "0630EGBZNR3NZP0QJDN8Z17550",
+                                                    "id": "0630W8SZSWN43Q0D6A31YNWAN0",
                                                     "name": "glass",
-                                                    "trackingIdentifier": "glass-215",
+                                                    "trackingIdentifier": "glass-4931",
                                                     "type": "EconomicResource",
                                                     "primaryAccountable": "Manufacturer2",
                                                     "custodian": "Manufacturer2",
                                                     "metadata": null,
+                                                    "currentLocation": {
+                                                      "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+                                                      "name": "Fab Lab Amsterdam",
+                                                      "alt": "0",
+                                                      "lat": "52.372773",
+                                                      "long": "4.8981243",
+                                                      "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+                                                      "note": "location.manufacturer2.org"
+                                                    },
                                                     "accountingQuantity": "0.0 (om2:kilogram)",
                                                     "onhandQuantity": "0.0 (om2:kilogram)",
                                                     "children": [
                                                       {
-                                                        "id": "0630EGBZNBE6QTE4TPV7F3RAYC",
+                                                        "id": "0630W8SZSQVPVS1MRTF27KPH70",
                                                         "name": "raise",
                                                         "type": "EconomicEvent",
                                                         "provider": {
@@ -486,6 +621,15 @@
                                                           "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
                                                           "name": "Manufacturer2",
                                                           "type": "Person"
+                                                        },
+                                                        "toLocation": {
+                                                          "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+                                                          "name": "Fab Lab Amsterdam",
+                                                          "alt": "0",
+                                                          "lat": "52.372773",
+                                                          "long": "4.8981243",
+                                                          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+                                                          "note": "location.manufacturer2.org"
                                                         },
                                                         "resourceQuantity": "0.2 (om2:kilogram)",
                                                         "children": []
