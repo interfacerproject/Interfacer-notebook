@@ -129,7 +129,34 @@ PROCESS_FRAG = """
         # Plan: The process with its inputs and outputs is part of the plan.
     }
 """
-
+PROCESSGRP_FRAG = """
+    fragment processgroup on ProcessGroup {
+        groupedIn {
+            id
+            name
+            note
+        }
+        id
+        name
+        note
+        groups(first:100) {
+            edges {
+                cursor
+                node {
+                    __typename
+                    ...on Process {
+                        ...process
+                    }
+                    ...on ProcessGroup {
+                        id
+                        name
+                        note
+                    }
+                }
+            }
+        }
+    }
+"""        
 
 EVENT_FRAG = """
     fragment event on EconomicEvent {
