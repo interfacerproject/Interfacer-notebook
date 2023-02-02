@@ -11,7 +11,11 @@ AGENT_FRAG = """
     fragment agent on Agent {
         id
         name
-        __typename
+        type: __typename
+        note
+        primaryLocation {
+            ...location
+        }
     }
 """
 LOCATION_FRAG = """
@@ -41,6 +45,9 @@ RESOURCE_FRAG = """
     fragment resource on EconomicResource {
             id
             name
+            trackingIdentifier
+            type: __typename
+            metadata
             onhandQuantity {
                 ...quantity
             }
@@ -52,6 +59,9 @@ RESOURCE_FRAG = """
             }
             custodian {
                 ...agent
+            }
+            currentLocation {
+                ...location
             }
           }
 """
@@ -96,6 +106,7 @@ PROCESSSPEC_FRAG = """
 """
 PROCESS_FRAG = """
     fragment process on Process {
+        type: __typename
         basedOn {
             ...processspecification
         }
@@ -116,16 +127,13 @@ PROCESS_FRAG = """
             id
         }
         # Plan: The process with its inputs and outputs is part of the plan.
-
-        previous {
-            id
-        }
     }
 """
 
 
 EVENT_FRAG = """
     fragment event on EconomicEvent {
+        type : __typename
         action {
             ...action
         }
@@ -150,23 +158,6 @@ EVENT_FRAG = """
             ...process
         }
         note
-        previous {
-            __typename
-            ... on EconomicEvent {
-                id
-                action {
-                    id
-                }
-            }
-            ... on EconomicResource {
-                id
-                name
-            }
-            ... on Process {
-                id
-                name
-            }
-        }
         provider {
             ...agent
         }

@@ -347,7 +347,7 @@ def create_Person(name, username, email, eddsaPublicKey, endpoint, newPerson=Tru
                     ...agent
                 }
             }
-           }""" + AGENT_FRAG,
+           }""" + AGENT_FRAG + LOCATION_FRAG,
           "variables": json.dumps(variables)
         }
     else:
@@ -618,7 +618,7 @@ def set_user_location(file, users_data, locs_data, user, endpoint):
                     }
                 }
             }
-        }""" + AGENT_FRAG
+        }""" + AGENT_FRAG + LOCATION_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -829,7 +829,7 @@ def create_resource(user_data, res_data, res_spec_data, amount, endpoint):
                       }
                     }
                 }
-            }""" + AGENT_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
+            }""" + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -902,7 +902,7 @@ def reduce_resource(user_data, res_data, res_spec_data, amount, endpoint):
                       }
                     }
                 }
-            }""" + AGENT_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
+            }""" + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -1097,7 +1097,7 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
         variables['newInventoriedResource'] = {};
         variables['newInventoriedResource']['name'] = new_res['name']
         variables['newInventoriedResource']['trackingIdentifier'] = new_res['res_ref_id']
-        
+
         variables['event']['resourceConformsTo'] = new_res['spec_id']
         variables['event']['toLocation'] = provider['location_id']
     
@@ -1141,7 +1141,7 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
                 }}
             }}"""
 
-    query = query + AGENT_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
+    query = query + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
     # assert False
     res_json = send_signed(query, variables, provider['username'], provider['keyring']['eddsa'], endpoint)
     
@@ -1221,7 +1221,7 @@ def make_transfer(provider_data, action, note, receiver_data, amount, existing_r
                         }
                     }
                 }
-            }""" + AGENT_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
+            }""" + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
 
     res_json = send_signed(query, variables, provider_data['username'], provider_data['keyring']['eddsa'], endpoint)
 

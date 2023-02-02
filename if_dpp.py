@@ -1,8 +1,10 @@
 import json
 from pdb import set_trace
+import copy
 
 from if_consts import MAX_DEPTH
-from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, PROCESS_FRAG, PROCESSSPEC_FRAG
+from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, \
+    PROCESS_FRAG, PROCESSSPEC_FRAG, EVENT_FRAG, RESSPEC_FRAG, UNIT_FRAG
 from if_lib import send_signed
 
 DEBUG_trace_query = False
@@ -18,21 +20,15 @@ def trace_query(id, user_data, endpoint):
         trace {
           __typename
           ... on EconomicEvent {
-            id
-            action {id}
-            provider {...agent}
-            receiver {...agent}
-            resourceConformsTo {id name note}
-            resourceInventoriedAs {...resource}
-            resourceQuantity {...quantity}
+            ...event
           }
           ... on EconomicResource {...resource}
-          ... on Process {id name note}
+          ... on Process {...process}
         }
       }
     }
 
-    """ + AGENT_FRAG + RESOURCE_FRAG + QUANTITY_FRAG
+    """ + AGENT_FRAG + LOCATION_FRAG +  RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -44,6 +40,15 @@ def trace_query(id, user_data, endpoint):
         print("Result")
         print(json.dumps(res_json, indent=2))   
 
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
     return res_json['data']['economicResource']['trace']
 
 
@@ -54,22 +59,23 @@ def fill_loc(a_dpp_item, item, field):
         return
     loc_item = item[field]
     a_dpp_item[field] = {}
-    a_dpp_item[field]['id'] = loc_item['id']
-    a_dpp_item[field]['name'] = loc_item['name']
-    a_dpp_item[field]['alt'] = loc_item['alt']
-    a_dpp_item[field]['lat'] = loc_item['lat']
-    a_dpp_item[field]['long'] = loc_item['long']                    
-    a_dpp_item[field]['mappableAddress'] = loc_item['mappableAddress']                    
-    a_dpp_item[field]['note'] = loc_item['note']                                    
+    for key in loc_item.keys():
+        a_dpp_item[field][key] = loc_item[key]
     
 def fill_quantity(a_dpp_item, item, field):
     if item[field] != None:
-        a_dpp_item[field] = f"{item[field]['hasNumericalValue']} ({item[field]['hasUnit']['symbol']})"
+        quan_item = item[field]
+        a_dpp_item[field] = {}
+        for key in quan_item.keys():
+            a_dpp_item[field][key] = quan_item[key]
 
 def fill_agent(a_dpp_item, item):
     a_dpp_item['id'] = item['id']
     a_dpp_item['name'] = item['name']
     a_dpp_item['type'] = item['__typename']
+    a_dpp_item['note'] = item['note']
+    fill_loc(a_dpp_item, item, 'primaryLocation')
+
     # set_trace()
 
 def fill_event(a_dpp_item, item):
@@ -131,26 +137,7 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
     
     query = """query($id:ID!) {
         economicResource(id:$id) {
-            id
-            name
-            trackingIdentifier
-            __typename
-            metadata
-            primaryAccountable {
-              ...agent
-            }
-            custodian {
-              ...agent
-            }
-            accountingQuantity {
-                ...quantity
-            }
-            onhandQuantity{
-                ...quantity
-            }
-            currentLocation {
-                ...location
-            }
+            ...resource
             previous{
                 __typename
                 ... on EconomicEvent {
@@ -162,7 +149,7 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
             }
         }
     }
-    """ + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG
+    """ + RESOURCE_FRAG + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -174,8 +161,18 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
         print("Result")
         print(json.dumps(res_json, indent=2))   
 
-    dpp_item = {}    
-    fill_res(dpp_item, res_json['data']['economicResource'])
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
+    # dpp_item = {}    
+    # fill_res(dpp_item, res_json['data']['economicResource'])
+    dpp_item = copy.deepcopy(res_json['data']['economicResource'])
     dpp_item['children'] = []
     
     dpp_children.append(dpp_item)
@@ -214,30 +211,7 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
     
     query = """query($id:ID!) {
         economicEvent(id:$id) {
-            id
-            __typename
-            action {
-                id
-                label
-            }
-            provider {
-                ...agent
-            }
-            receiver {
-                ...agent
-            }
-            atLocation {
-                ...location
-            }
-            toLocation {
-                ...location
-            }
-            effortQuantity {
-                ...quantity
-            }
-            resourceQuantity {
-                ...quantity
-            }
+            ...event
             previous{
                 __typename
                 ... on  EconomicResource {
@@ -257,7 +231,7 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
             }
           }
         }
-    """ + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG
+    """ + EVENT_FRAG +  LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + RESSPEC_FRAG + RESOURCE_FRAG + UNIT_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -269,8 +243,20 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
         print("Result")
         print(json.dumps(res_json, indent=2))   
 
-    dpp_item = {}    
-    fill_event(dpp_item, res_json['data']['economicEvent'])
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
+    # dpp_item = {}    
+    # fill_event(dpp_item, res_json['data']['economicEvent'])
+    dpp_item = copy.deepcopy(res_json['data']['economicEvent'])
+    # Add a name field which events do not have
+    dpp_item['name'] = res_json['data']['economicEvent']['action']['id']
     dpp_item['children'] = []
     
     dpp_children.append(dpp_item)
@@ -314,10 +300,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
     
     query = """query($id:ID!) {
       process(id:$id) {
-          id
-          name
-          note
-          __typename
+          ...process
           previous{
             __typename
             ... on EconomicEvent {
@@ -329,7 +312,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
         }
       }
     }
-    """
+    """ + PROCESS_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -341,8 +324,18 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
         print("Result")
         print(json.dumps(res_json, indent=2))   
 
-    dpp_item = {}    
-    fill_process(dpp_item, res_json['data']['process'])
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
+    # dpp_item = {}    
+    # fill_process(dpp_item, res_json['data']['process'])
+    dpp_item = copy.deepcopy(res_json['data']['process'])
     dpp_item['children'] = []
     
     dpp_children.append(dpp_item)
@@ -385,6 +378,15 @@ def get_ddp(res_id, user_data, endpoint):
         print("Result")
         print(json.dumps(res_json, indent=2))
         
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        assert 1 == 2
+
     be_dpp = res_json['data']['economicResource']['traceDpp']
     
     return be_dpp
