@@ -4,7 +4,8 @@ import re
 from pathlib import Path
 
 # Function to show all the data
-def show_data(users_data, locs_data, res_data, units_data, res_spec_data, process_data, event_seq):
+def show_data(users_data:dict, locs_data:dict, res_data:dict, units_data:dict, res_spec_data:dict, process_data:dict, event_seq:dict, \
+    proposal_data:dict={}, intent_data:dict={}, prop_int_data:dict={}, satisfaction_data:dict={}):
     print("Users")
     print(json.dumps(users_data, indent=2))
     print("Locations")
@@ -23,6 +24,19 @@ def show_data(users_data, locs_data, res_data, units_data, res_spec_data, proces
 
     print("Event sequence")
     print(json.dumps(event_seq, indent=2))
+
+    print("Proposal data")
+    print(json.dumps(proposal_data, indent=2))
+
+    print("Intent data")
+    print(json.dumps(intent_data, indent=2))
+
+    print("Proposed Intent data")
+    print(json.dumps(prop_int_data, indent=2))
+
+    print("Satisfaction data")
+    print(json.dumps(satisfaction_data, indent=2))
+
 
 def get_filename(filename, ep, uc):
     pattern = r'http[s]?://'
