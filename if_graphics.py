@@ -39,33 +39,31 @@ dict_link_colors = {'EconomicResource': '#fb6a4a', 'EconomicEvent': '#92c5de', '
     
 
 def calc_quantity(dpp_item):
-    quantity = "ERROR"
+    quantity = .1
     if dpp_item['type'] == "Process":
         # quantity = 0
         # for child in dpp_item['children']:
-        #     quantity = quantity + calc_quantity(child)
-        # quantity = f'{quantity} '
-        quantity = '.1 '
-    elif 'onhandQuantity' in dpp_item:
-        quantity = dpp_item['onhandQuantity']
-    elif 'resourceQuantity' in dpp_item:
-        quantity = dpp_item['resourceQuantity']
-    elif 'accounting_quantity_has_numerical_value' in dpp_item:
-        quantity = dpp_item['accounting_quantity_has_numerical_value']
-    elif 'onhand_quantity_has_numerical_value' in dpp_item:
-        quantity = dpp_item['onhand_quantity_has_numerical_value']
-    elif 'resource_quantity_has_numerical_value' in dpp_item:
-        quantity = dpp_item['resource_quantity_has_numerical_value']
-    elif 'effortQuantity' in dpp_item:
-        # quantity = dpp_item['effortQuantity']
-        quantity = '.1 '
-    elif 'effort_quantity_has_numerical_value' in dpp_item:
-        # quantity = dpp_item['effort_quantity_has_numerical_value']
-        quantity = '.1 '
+        #     quantity = max(quantity,calc_quantity(child))
+        quantity = .1
+    elif dpp_item['type'] == "EconomicEvent":
+        if 'resourceQuantity' in dpp_item and dpp_item['resourceQuantity'] != None:
+            quantity = float(dpp_item['resourceQuantity']['hasNumericalValue'])
+        elif 'effortQuantity' in dpp_item and dpp_item['effortQuantity'] != None:
+            quantity = float(dpp_item['effortQuantity']['hasNumericalValue'])
+            # quantity = dpp_item['effortQuantity']
+        else:
+            print("No quantity specified for EconomicEvent")
+    elif dpp_item['type'] == "EconomicResource":
+        if 'onhandQuantity' in dpp_item and dpp_item['onhandQuantity'] != None:
+            quantity = float(dpp_item['onhandQuantity']['hasNumericalValue'])
+        elif 'accountingQuantity' in dpp_item and dpp_item['accountingQuantity'] != None:
+            quantity = float(dpp_item['accountingQuantity']['hasNumericalValue'])
+        else:
+            print("No quantity specified for EconomicResource")
     else:
-        set_trace()
+        print(f"Unkwnon type {dpp_item['type']}")
+        assert 1 == 2
     
-    quantity = float(quantity.split(' ')[0])
     quantity = max(quantity,0.1)
     return quantity
     
