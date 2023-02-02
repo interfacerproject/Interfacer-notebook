@@ -18,7 +18,7 @@ def flatten_dict(d: MutableMapping, parent_key: str = '', sep: str = '.'):
 
 # Function to show all the data
 def show_data(users_data:dict, locs_data:dict, res_data:dict, units_data:dict, res_spec_data:dict, process_data:dict, event_seq:dict, \
-    proposal_data:dict={}, intent_data:dict={}, prop_int_data:dict={}, satisfaction_data:dict={}):
+    proposal_data:dict={}, intent_data:dict={}, prop_int_data:dict={}, satisfaction_data:dict={}, processgrp_data:dict={}):
     print("Users")
     print(json.dumps(users_data, indent=2))
     print("Locations")
@@ -49,7 +49,10 @@ def show_data(users_data:dict, locs_data:dict, res_data:dict, units_data:dict, r
 
     print("Satisfaction data")
     print(json.dumps(satisfaction_data, indent=2))
-
+    
+    print("Process Groups data")
+    print(json.dumps(processgrp_data, indent=2))
+    
 
 def get_filename(filename, ep, uc):
     pattern = r'http[s]?://'
@@ -67,7 +70,7 @@ def get_filename(filename, ep, uc):
 def stringify(json_obj):
     return json.dumps(json_obj, separators=(',',':'))
 
-def save_traces(use_case, tot_dpp, trace, be_dpp, event_seq):
+def save_traces(use_case, tot_dpp, trace, be_dpp, event_seq, process_grps:dict={}):
     # Writing dpp to file
     my_dir = Path('traces')
     if not my_dir.is_dir():
@@ -89,6 +92,11 @@ def save_traces(use_case, tot_dpp, trace, be_dpp, event_seq):
     with open(file, "w") as f:
         f.write(json.dumps(event_seq, indent=2))
 
+    if process_grps != {}:
+        file = Path(my_dir, f'{use_case}_proc_grp.json')
+        with open(file, "w") as f:
+            f.write(json.dumps(process_grps, indent=2))
+    
 def differentiate_resources(dpp_item):
     if dpp_item['type'] == 'EconomicResource':
         for child in dpp_item['children']:

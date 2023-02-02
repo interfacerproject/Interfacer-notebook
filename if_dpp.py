@@ -173,6 +173,7 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
     # dpp_item = {}    
     # fill_res(dpp_item, res_json['data']['economicResource'])
     dpp_item = copy.deepcopy(res_json['data']['economicResource'])
+    dpp_item.pop('previous')
     dpp_item['children'] = []
     
     dpp_children.append(dpp_item)
@@ -257,6 +258,7 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
     dpp_item = copy.deepcopy(res_json['data']['economicEvent'])
     # Add a name field which events do not have
     dpp_item['name'] = res_json['data']['economicEvent']['action']['id']
+    dpp_item.pop('previous')
     dpp_item['children'] = []
     
     dpp_children.append(dpp_item)
@@ -336,6 +338,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
     # dpp_item = {}    
     # fill_process(dpp_item, res_json['data']['process'])
     dpp_item = copy.deepcopy(res_json['data']['process'])
+    dpp_item.pop('previous')
     dpp_item['children'] = []
     
     dpp_children.append(dpp_item)
