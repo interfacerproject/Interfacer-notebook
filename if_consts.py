@@ -138,6 +138,7 @@ PROCESSGRP_FRAG = """
         }
         id
         name
+        type: __typename
         note
         groups(first:100) {
             edges {

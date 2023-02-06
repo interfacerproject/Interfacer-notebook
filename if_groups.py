@@ -66,6 +66,8 @@ def get_processgrp(name, user_data, note, processgrp_data, endpoint, processgrp_
     cur_prgp["name"] = name
 
     cur_prgp["note"] = note
+
+    cur_prgp["type"] = "ProcessGroup"
     
     cur_prgp["groupedIn"] = processgrp_id
 

@@ -2,11 +2,12 @@
   "design_assemble_bike": {
     "name": "design_assemble_bike",
     "note": "Groups bike design and assemblage",
+    "type": "ProcessGroup",
     "groupedIn": null,
     "groups": [
-      "0631632NCSWT0D7QNR00AQF42W",
-      "0631632J7X3MV8CTABC1YVZE9G"
+      "0631F6NY6Y8R2HXCQFHN88XE60",
+      "0631F6NVB2WZVF00ANZG7XC3K0"
     ],
-    "id": "0631633AARZC2AZDKH1JZTZTGG"
+    "id": "0631F6PJ6Z182D95N4HQ163CX0"
   }
 }
