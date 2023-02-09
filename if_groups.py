@@ -75,6 +75,18 @@ def get_processgrp(name, user_data, note, processgrp_data, endpoint, processgrp_
 
     create_processgrp(cur_prgp, user_data, endpoint)
 
+    if processgrp_id != None:
+        # Need to insert the process group as child of the parent
+        for key in processgrp_data.keys():
+            # set_trace()
+            if processgrp_data[key]['id'] == processgrp_id:
+                processgrp_data[key]['groups'].append(cur_prgp['id'])
+                return
+        # we should not get here
+        print(f"Parent {processgrp_id} not found")
+        assert 1 == 2
+
+
 
 DEBUG_insert_procingrp = False
 def insert_procingrp(user_data, processgrp, process, endpoint):
