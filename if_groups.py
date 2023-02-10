@@ -1,3 +1,19 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (C) 2022-2023 Dyne.org foundation <foundation@dyne.org>.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 # Let's start with some lovely imports that should have been installed if not available by default
 import json
 import requests
@@ -66,12 +82,26 @@ def get_processgrp(name, user_data, note, processgrp_data, endpoint, processgrp_
     cur_prgp["name"] = name
 
     cur_prgp["note"] = note
+
+    cur_prgp["type"] = "ProcessGroup"
     
     cur_prgp["groupedIn"] = processgrp_id
 
     cur_prgp["groups"] = []
 
     create_processgrp(cur_prgp, user_data, endpoint)
+
+    if processgrp_id != None:
+        # Need to insert the process group as child of the parent
+        for key in processgrp_data.keys():
+            # set_trace()
+            if processgrp_data[key]['id'] == processgrp_id:
+                processgrp_data[key]['groups'].append(cur_prgp['id'])
+                return
+        # we should not get here
+        print(f"Parent {processgrp_id} not found")
+        assert 1 == 2
+
 
 
 DEBUG_insert_procingrp = False

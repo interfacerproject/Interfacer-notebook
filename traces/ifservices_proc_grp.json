@@ -2,11 +2,45 @@
   "design_assemble_bike": {
     "name": "design_assemble_bike",
     "note": "Groups bike design and assemblage",
+    "type": "ProcessGroup",
     "groupedIn": null,
     "groups": [
-      "0631632NCSWT0D7QNR00AQF42W",
-      "0631632J7X3MV8CTABC1YVZE9G"
+      "0633DJ6RYZ33B9VVGTD4XPD98W",
+      "0633DJ6NNVYYAN4Z7BYAFFRFC4"
     ],
-    "id": "0631633AARZC2AZDKH1JZTZTGG"
+    "id": "0633DJ7TXPEM6TCAS8KG0XFD3M"
+  },
+  "design_create_paint_package_mirror": {
+    "name": "design_create_paint_package_mirror",
+    "note": "Groups two groups: mirror design and creation and mirror painting and packaging",
+    "type": "ProcessGroup",
+    "groupedIn": null,
+    "groups": [
+      "0633DJ7XDJXR763FMYQ00HTHGR",
+      "0633DJ7Z8SWKHC0SWY0EX7VJ74"
+    ],
+    "id": "0633DJ7WRAGS3CFVDHED3T0AMR"
+  },
+  "design_create_mirror": {
+    "name": "design_create_mirror",
+    "note": "Groups mirror design and creation",
+    "type": "ProcessGroup",
+    "groupedIn": "0633DJ7WRAGS3CFVDHED3T0AMR",
+    "groups": [
+      "0633DJ71J1D5KGT7NAJSDA4N7C",
+      "0633DJ74SFG3MVEW39PKT9HJAG"
+    ],
+    "id": "0633DJ7XDJXR763FMYQ00HTHGR"
+  },
+  "paint_package_mirror": {
+    "name": "paint_package_mirror",
+    "note": "Groups mirror painting and packaging",
+    "type": "ProcessGroup",
+    "groupedIn": "0633DJ7WRAGS3CFVDHED3T0AMR",
+    "groups": [
+      "0633DJ7806TQ3CKYZ88444PRXW",
+      "0633DJ7CT6WG7YQD47YZDVY314"
+    ],
+    "id": "0633DJ7Z8SWKHC0SWY0EX7VJ74"
   }
 }

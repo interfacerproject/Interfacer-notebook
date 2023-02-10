@@ -33,7 +33,7 @@
       },
       "type": "Person"
     },
-    "id": "06316335MGQ5YK3CSRH1TN31HC",
+    "id": "0633DJ7NWANVZDY73VCKBPXKMG",
     "metadata": null,
     "name": "fancy collaborative bike",
     "onhandQuantity": {
@@ -59,7 +59,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "fancy_collaborative_bike-9754",
+    "trackingIdentifier": "fancy_collaborative_bike-2059",
     "type": "EconomicResource"
   },
   {
@@ -77,8 +77,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:44.811848Z",
-    "id": "06316335M6DAF4D9JWVHY31QKW",
+    "hasPointInTime": "2023-02-09T15:26:24.970827Z",
+    "id": "0633DJ7NW6GHB8AKT73TNK1RGG",
     "inputOf": null,
     "note": "produce fancy collaborative bike",
     "outputOf": {
@@ -86,9 +86,9 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:39.851459Z",
-      "hasEnd": "2023-02-02T16:53:39.851459Z",
-      "id": "0631632J7X3MV8CTABC1YVZE9G",
+      "hasBeginning": "2023-02-09T15:26:16.757770Z",
+      "hasEnd": "2023-02-09T15:26:16.757770Z",
+      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -174,7 +174,7 @@
         },
         "type": "Person"
       },
-      "id": "06316335MGQ5YK3CSRH1TN31HC",
+      "id": "0633DJ7NWANVZDY73VCKBPXKMG",
       "metadata": null,
       "name": "fancy collaborative bike",
       "onhandQuantity": {
@@ -200,7 +200,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "fancy_collaborative_bike-9754",
+      "trackingIdentifier": "fancy_collaborative_bike-2059",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -230,9 +230,9 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-02T16:53:39.851459Z",
-    "hasEnd": "2023-02-02T16:53:39.851459Z",
-    "id": "0631632J7X3MV8CTABC1YVZE9G",
+    "hasBeginning": "2023-02-09T15:26:16.757770Z",
+    "hasEnd": "2023-02-09T15:26:16.757770Z",
+    "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
     "name": "Assemble_bike",
     "nestedIn": null,
     "note": "Assemble bike 1-hour service by service_prov2",
@@ -261,16 +261,16 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:44.610431Z",
-    "id": "06316334W31G3GDWMC86SPE0D0",
+    "hasPointInTime": "2023-02-09T15:26:24.727794Z",
+    "id": "0633DJ7MZ4TA3QG3YE022ZEPER",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:39.851459Z",
-      "hasEnd": "2023-02-02T16:53:39.851459Z",
-      "id": "0631632J7X3MV8CTABC1YVZE9G",
+      "hasBeginning": "2023-02-09T15:26:16.757770Z",
+      "hasEnd": "2023-02-09T15:26:16.757770Z",
+      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -347,16 +347,16 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:44.416684Z",
-    "id": "063163341HMKMTFZF9NCGG54R4",
+    "hasPointInTime": "2023-02-09T15:26:24.502697Z",
+    "id": "0633DJ7M0EG56NCD3RTZ3YH2GC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:39.851459Z",
-      "hasEnd": "2023-02-02T16:53:39.851459Z",
-      "id": "0631632J7X3MV8CTABC1YVZE9G",
+      "hasBeginning": "2023-02-09T15:26:16.757770Z",
+      "hasEnd": "2023-02-09T15:26:16.757770Z",
+      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -431,7 +431,7 @@
         },
         "type": "Person"
       },
-      "id": "06316331XF9W03BYBTASNXFZWM",
+      "id": "0633DJ7HGZGSZQWSZHMXYVFBZW",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -457,7 +457,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-3352",
+      "trackingIdentifier": "aluminium_bike_frame-4620",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -488,8 +488,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:43.861444Z",
-    "id": "06316331WMNBSXPWBAKW0EPHT0",
+    "hasPointInTime": "2023-02-09T15:26:23.857633Z",
+    "id": "0633DJ7HG5RHYE7DRQTRM9N42R",
     "inputOf": null,
     "note": "Transfer aluminium bike frame from designer2 to service_prov2",
     "outputOf": null,
@@ -559,7 +559,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632WQAFCRVTHJGVC932YHM",
+      "id": "0633DJ707TP0MPKACKMSK3MRQ8",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -585,7 +585,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-3352",
+      "trackingIdentifier": "aluminium_bike_frame-4620",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -638,7 +638,7 @@
         },
         "type": "Person"
       },
-      "id": "06316331XF9W03BYBTASNXFZWM",
+      "id": "0633DJ7HGZGSZQWSZHMXYVFBZW",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -664,7 +664,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-3352",
+      "trackingIdentifier": "aluminium_bike_frame-4620",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -685,8 +685,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:42.520835Z",
-    "id": "0631632WPPZY63YQ65569YKEB8",
+    "hasPointInTime": "2023-02-09T15:26:19.454180Z",
+    "id": "0633DJ7071S5D57DPGVDMXWVZC",
     "inputOf": null,
     "note": "Transfer aluminium bike frame from manufacturer1 to designer2",
     "outputOf": null,
@@ -756,7 +756,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632V66J9XJ0CA9CD3HDBTR",
+      "id": "0633DJ6YSB7B1H9D2B8NY1QFBR",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -782,7 +782,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-3352",
+      "trackingIdentifier": "aluminium_bike_frame-4620",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -835,7 +835,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632WQAFCRVTHJGVC932YHM",
+      "id": "0633DJ707TP0MPKACKMSK3MRQ8",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -861,7 +861,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-3352",
+      "trackingIdentifier": "aluminium_bike_frame-4620",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -882,8 +882,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:42.137621Z",
-    "id": "0631632V5RGFEZXFBTX6VDT97R",
+    "hasPointInTime": "2023-02-09T15:26:19.086250Z",
+    "id": "0633DJ6YRWMMB4PBEPTXZXNWZ4",
     "inputOf": null,
     "note": "produce aluminium bike frame",
     "outputOf": {
@@ -891,9 +891,9 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:38.182356Z",
-      "hasEnd": "2023-02-02T16:53:38.182356Z",
-      "id": "0631632BY3R45RXTQ02KWMFC9W",
+      "hasBeginning": "2023-02-09T15:26:14.975725Z",
+      "hasEnd": "2023-02-09T15:26:14.975725Z",
+      "id": "0633DJ6EVFASKHPVH0PKQ501EM",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -979,7 +979,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632V66J9XJ0CA9CD3HDBTR",
+      "id": "0633DJ6YSB7B1H9D2B8NY1QFBR",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -1005,7 +1005,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-3352",
+      "trackingIdentifier": "aluminium_bike_frame-4620",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1035,9 +1035,9 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-02T16:53:38.182356Z",
-    "hasEnd": "2023-02-02T16:53:38.182356Z",
-    "id": "0631632BY3R45RXTQ02KWMFC9W",
+    "hasBeginning": "2023-02-09T15:26:14.975725Z",
+    "hasEnd": "2023-02-09T15:26:14.975725Z",
+    "id": "0633DJ6EVFASKHPVH0PKQ501EM",
     "name": "Manifacture_aluminium_bike_frame",
     "nestedIn": null,
     "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1059,16 +1059,16 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:41.747892Z",
-    "id": "0631632SNBRKAMRPSRJ0WVJVS8",
+    "hasPointInTime": "2023-02-09T15:26:18.687034Z",
+    "id": "0633DJ6X6AQ8R58J5C1JGZQMRC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:38.182356Z",
-      "hasEnd": "2023-02-02T16:53:38.182356Z",
-      "id": "0631632BY3R45RXTQ02KWMFC9W",
+      "hasBeginning": "2023-02-09T15:26:14.975725Z",
+      "hasEnd": "2023-02-09T15:26:14.975725Z",
+      "id": "0633DJ6EVFASKHPVH0PKQ501EM",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1143,7 +1143,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632QKY2PFAVTMJNB5ZKGYG",
+      "id": "0633DJ6V2BFKVDJ5HAA6XRRWXR",
       "metadata": null,
       "name": "aluminium",
       "onhandQuantity": {
@@ -1169,7 +1169,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium-2165",
+      "trackingIdentifier": "aluminium-2663",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1200,8 +1200,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:41.213134Z",
-    "id": "0631632QKDN3P0QQ8Z2ZZT616C",
+    "hasPointInTime": "2023-02-09T15:26:18.128483Z",
+    "id": "0633DJ6V1YWXDRC3084RW5WV68",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -1284,7 +1284,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632QKY2PFAVTMJNB5ZKGYG",
+      "id": "0633DJ6V2BFKVDJ5HAA6XRRWXR",
       "metadata": null,
       "name": "aluminium",
       "onhandQuantity": {
@@ -1310,7 +1310,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium-2165",
+      "trackingIdentifier": "aluminium-2663",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1368,7 +1368,7 @@
       },
       "type": "Person"
     },
-    "id": "0631632QKY2PFAVTMJNB5ZKGYG",
+    "id": "0633DJ6V2BFKVDJ5HAA6XRRWXR",
     "metadata": null,
     "name": "aluminium",
     "onhandQuantity": {
@@ -1394,7 +1394,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium-2165",
+    "trackingIdentifier": "aluminium-2663",
     "type": "EconomicResource"
   },
   {
@@ -1419,16 +1419,16 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:41.412333Z",
-    "id": "0631632RAVB7SZX7CWP39TW92R",
+    "hasPointInTime": "2023-02-09T15:26:18.322560Z",
+    "id": "0633DJ6VSCJR43WVB5BP9QZ5DR",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:38.182356Z",
-      "hasEnd": "2023-02-02T16:53:38.182356Z",
-      "id": "0631632BY3R45RXTQ02KWMFC9W",
+      "hasBeginning": "2023-02-09T15:26:14.975725Z",
+      "hasEnd": "2023-02-09T15:26:14.975725Z",
+      "id": "0633DJ6EVFASKHPVH0PKQ501EM",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1524,7 +1524,7 @@
       },
       "type": "Person"
     },
-    "id": "0631632V66J9XJ0CA9CD3HDBTR",
+    "id": "0633DJ6YSB7B1H9D2B8NY1QFBR",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
@@ -1550,7 +1550,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-3352",
+    "trackingIdentifier": "aluminium_bike_frame-4620",
     "type": "EconomicResource"
   },
   {
@@ -1587,7 +1587,7 @@
       },
       "type": "Person"
     },
-    "id": "0631632WQAFCRVTHJGVC932YHM",
+    "id": "0633DJ707TP0MPKACKMSK3MRQ8",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
@@ -1613,7 +1613,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-3352",
+    "trackingIdentifier": "aluminium_bike_frame-4620",
     "type": "EconomicResource"
   },
   {
@@ -1650,7 +1650,7 @@
       },
       "type": "Person"
     },
-    "id": "06316331XF9W03BYBTASNXFZWM",
+    "id": "0633DJ7HGZGSZQWSZHMXYVFBZW",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
@@ -1676,7 +1676,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-3352",
+    "trackingIdentifier": "aluminium_bike_frame-4620",
     "type": "EconomicResource"
   },
   {
@@ -1694,16 +1694,16 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:44.244196Z",
-    "id": "06316333CD1CF4R3XV2YESK1GR",
+    "hasPointInTime": "2023-02-09T15:26:24.296365Z",
+    "id": "0633DJ7K56YMGV4H4BDSYXN768",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:39.851459Z",
-      "hasEnd": "2023-02-02T16:53:39.851459Z",
-      "id": "0631632J7X3MV8CTABC1YVZE9G",
+      "hasBeginning": "2023-02-09T15:26:16.757770Z",
+      "hasEnd": "2023-02-09T15:26:16.757770Z",
+      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -1778,7 +1778,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632PS13104TSCA1N27VS9C",
+      "id": "0633DJ6TAFR7W16VRZ905D4Y0R",
       "metadata": null,
       "name": "funky bike design",
       "onhandQuantity": {
@@ -1804,7 +1804,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "funky_bike_design-9032",
+      "trackingIdentifier": "funky_bike_design-539",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1835,8 +1835,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:41.008910Z",
-    "id": "0631632PRH1TV5YSH46J1KNC2R",
+    "hasPointInTime": "2023-02-09T15:26:17.941401Z",
+    "id": "0633DJ6TA3J3X4KTVJVD9BQ0F0",
     "inputOf": null,
     "note": "produce design for funky bike",
     "outputOf": {
@@ -1844,9 +1844,9 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:40.652467Z",
-      "hasEnd": "2023-02-02T16:53:40.652467Z",
-      "id": "0631632NCSWT0D7QNR00AQF42W",
+      "hasBeginning": "2023-02-09T15:26:17.597869Z",
+      "hasEnd": "2023-02-09T15:26:17.597869Z",
+      "id": "0633DJ6RYZ33B9VVGTD4XPD98W",
       "name": "Design_funky_bike",
       "nestedIn": null,
       "note": "Design of funky bike by Designer1",
@@ -1932,7 +1932,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632PS13104TSCA1N27VS9C",
+      "id": "0633DJ6TAFR7W16VRZ905D4Y0R",
       "metadata": null,
       "name": "funky bike design",
       "onhandQuantity": {
@@ -1958,7 +1958,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "funky_bike_design-9032",
+      "trackingIdentifier": "funky_bike_design-539",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1988,9 +1988,9 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-02T16:53:40.652467Z",
-    "hasEnd": "2023-02-02T16:53:40.652467Z",
-    "id": "0631632NCSWT0D7QNR00AQF42W",
+    "hasBeginning": "2023-02-09T15:26:17.597869Z",
+    "hasEnd": "2023-02-09T15:26:17.597869Z",
+    "id": "0633DJ6RYZ33B9VVGTD4XPD98W",
     "name": "Design_funky_bike",
     "nestedIn": null,
     "note": "Design of funky bike by Designer1",
@@ -2019,16 +2019,16 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:40.835428Z",
-    "id": "0631632P2K3VKC576P5XTHB82C",
+    "hasPointInTime": "2023-02-09T15:26:17.766857Z",
+    "id": "0633DJ6SM8AEJ4YF6G9JY9GQ2G",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:40.652467Z",
-      "hasEnd": "2023-02-02T16:53:40.652467Z",
-      "id": "0631632NCSWT0D7QNR00AQF42W",
+      "hasBeginning": "2023-02-09T15:26:17.597869Z",
+      "hasEnd": "2023-02-09T15:26:17.597869Z",
+      "id": "0633DJ6RYZ33B9VVGTD4XPD98W",
       "name": "Design_funky_bike",
       "nestedIn": null,
       "note": "Design of funky bike by Designer1",
@@ -2124,7 +2124,7 @@
       },
       "type": "Person"
     },
-    "id": "0631632PS13104TSCA1N27VS9C",
+    "id": "0633DJ6TAFR7W16VRZ905D4Y0R",
     "metadata": null,
     "name": "funky bike design",
     "onhandQuantity": {
@@ -2150,7 +2150,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "funky_bike_design-9032",
+    "trackingIdentifier": "funky_bike_design-539",
     "type": "EconomicResource"
   },
   {
@@ -2168,16 +2168,16 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:44.065940Z",
-    "id": "06316332PR4NWB76EQ84789Y44",
+    "hasPointInTime": "2023-02-09T15:26:24.089468Z",
+    "id": "0633DJ7JD0T5KQAGY4EM9SG8YR",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:39.851459Z",
-      "hasEnd": "2023-02-02T16:53:39.851459Z",
-      "id": "0631632J7X3MV8CTABC1YVZE9G",
+      "hasBeginning": "2023-02-09T15:26:16.757770Z",
+      "hasEnd": "2023-02-09T15:26:16.757770Z",
+      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -2252,7 +2252,7 @@
         },
         "type": "Person"
       },
-      "id": "0631633141GTXHZ8WZ2HJ5NN8G",
+      "id": "0633DJ7GNMEMFH8DR8VSKG9DG0",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2278,7 +2278,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2284",
+      "trackingIdentifier": "magic_bike_mirror-734",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2309,8 +2309,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:43.664479Z",
-    "id": "063163313BYG9FVYBWQXTZS3HM",
+    "hasPointInTime": "2023-02-09T15:26:23.654416Z",
+    "id": "0633DJ7GN3BG5ESQR17B6686E4",
     "inputOf": null,
     "note": "Transfer magic bike mirror from designer2 to service_prov2",
     "outputOf": null,
@@ -2380,7 +2380,7 @@
         },
         "type": "Person"
       },
-      "id": "06316330CZR3KRDDSRN4STWVQG",
+      "id": "0633DJ7FTSAAKYYE70TK5F39PG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2406,7 +2406,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2284",
+      "trackingIdentifier": "magic_bike_mirror-734",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2459,7 +2459,7 @@
         },
         "type": "Person"
       },
-      "id": "0631633141GTXHZ8WZ2HJ5NN8G",
+      "id": "0633DJ7GNMEMFH8DR8VSKG9DG0",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2485,7 +2485,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2284",
+      "trackingIdentifier": "magic_bike_mirror-734",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -2506,8 +2506,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:43.474779Z",
-    "id": "06316330CAK06YPKHZ72A9X73G",
+    "hasPointInTime": "2023-02-09T15:26:23.441442Z",
+    "id": "0633DJ7FSXA7T8G1FBQDK3YS0G",
     "inputOf": null,
     "note": "Transfer magic bike mirror from manufacturer2 to designer2",
     "outputOf": null,
@@ -2577,7 +2577,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632ZP55RBMJZYAANRAWYNR",
+      "id": "0633DJ7777WWJPKQS4M18YE30G",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2603,7 +2603,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2284",
+      "trackingIdentifier": "magic_bike_mirror-734",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2656,7 +2656,7 @@
         },
         "type": "Person"
       },
-      "id": "06316330CZR3KRDDSRN4STWVQG",
+      "id": "0633DJ7FTSAAKYYE70TK5F39PG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2682,9 +2682,603 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2284",
+      "trackingIdentifier": "magic_bike_mirror-734",
       "type": "EconomicResource"
     },
+    "triggeredBy": null,
+    "type": "EconomicEvent"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "modify",
+      "inputOutput": "output",
+      "label": "modify",
+      "onhandEffect": "noEffect",
+      "pairsWith": "modify",
+      "resourceEffect": "noEffect"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": null,
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:23.238094Z",
+    "id": "0633DJ7F1SG33JXAF5FJ2WF5SW",
+    "inputOf": null,
+    "note": "modify mirror into packaged mirror",
+    "outputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:22.597748Z",
+      "hasEnd": "2023-02-09T15:26:22.597748Z",
+      "id": "0633DJ7CT6WG7YQD47YZDVY314",
+      "name": "Packaging_magic_bike_mirror",
+      "nestedIn": null,
+      "note": "Packaging magic bike mirror by Manufacturer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "provider": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "currentLocation": {
+        "alt": "0",
+        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "custodian": {
+        "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+        "name": "Manufacturer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8PC488H53XE30PW7YC7W",
+          "lat": "52.372773",
+          "long": "4.8981243",
+          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+          "name": "Fab Lab Amsterdam",
+          "note": "location.manufacturer2.org"
+        },
+        "type": "Person"
+      },
+      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "metadata": null,
+      "name": "magic bike mirror",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+        "name": "Manufacturer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8PC488H53XE30PW7YC7W",
+          "lat": "52.372773",
+          "long": "4.8981243",
+          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+          "name": "Fab Lab Amsterdam",
+          "note": "location.manufacturer2.org"
+        },
+        "type": "Person"
+      },
+      "trackingIdentifier": "magic_bike_mirror-734",
+      "type": "EconomicResource"
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "toLocation": null,
+    "toResourceInventoriedAs": null,
+    "triggeredBy": null,
+    "type": "EconomicEvent"
+  },
+  {
+    "__typename": "Process",
+    "basedOn": null,
+    "classifiedAs": null,
+    "deletable": false,
+    "finished": false,
+    "hasBeginning": "2023-02-09T15:26:22.597748Z",
+    "hasEnd": "2023-02-09T15:26:22.597748Z",
+    "id": "0633DJ7CT6WG7YQD47YZDVY314",
+    "name": "Packaging_magic_bike_mirror",
+    "nestedIn": null,
+    "note": "Packaging magic bike mirror by Manufacturer2",
+    "plannedWithin": null,
+    "type": "Process"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "accept",
+      "inputOutput": "notApplicable",
+      "label": "accept",
+      "onhandEffect": "input",
+      "pairsWith": "modify",
+      "resourceEffect": "noEffect"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": null,
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:23.033562Z",
+    "id": "0633DJ7E6N0FEQYCTX3JK20EYC",
+    "inputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:22.597748Z",
+      "hasEnd": "2023-02-09T15:26:22.597748Z",
+      "id": "0633DJ7CT6WG7YQD47YZDVY314",
+      "name": "Packaging_magic_bike_mirror",
+      "nestedIn": null,
+      "note": "Packaging magic bike mirror by Manufacturer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "note": "accept mirror for packaging",
+    "outputOf": null,
+    "provider": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "currentLocation": {
+        "alt": "0",
+        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "custodian": {
+        "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+        "name": "Manufacturer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8PC488H53XE30PW7YC7W",
+          "lat": "52.372773",
+          "long": "4.8981243",
+          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+          "name": "Fab Lab Amsterdam",
+          "note": "location.manufacturer2.org"
+        },
+        "type": "Person"
+      },
+      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "metadata": null,
+      "name": "magic bike mirror",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+        "name": "Manufacturer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8PC488H53XE30PW7YC7W",
+          "lat": "52.372773",
+          "long": "4.8981243",
+          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+          "name": "Fab Lab Amsterdam",
+          "note": "location.manufacturer2.org"
+        },
+        "type": "Person"
+      },
+      "trackingIdentifier": "magic_bike_mirror-734",
+      "type": "EconomicResource"
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "toLocation": null,
+    "toResourceInventoriedAs": null,
+    "triggeredBy": null,
+    "type": "EconomicEvent"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "modify",
+      "inputOutput": "output",
+      "label": "modify",
+      "onhandEffect": "noEffect",
+      "pairsWith": "modify",
+      "resourceEffect": "noEffect"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": null,
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:22.080862Z",
+    "id": "0633DJ7AJPCYJAZRJ6D2FQ5QP8",
+    "inputOf": null,
+    "note": "modify mirror into painted mirror",
+    "outputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:21.444730Z",
+      "hasEnd": "2023-02-09T15:26:21.444730Z",
+      "id": "0633DJ7806TQ3CKYZ88444PRXW",
+      "name": "Painting_magic_bike_mirror",
+      "nestedIn": null,
+      "note": "Painting magic bike mirror by Manufacturer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "provider": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "currentLocation": {
+        "alt": "0",
+        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "custodian": {
+        "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+        "name": "Manufacturer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8PC488H53XE30PW7YC7W",
+          "lat": "52.372773",
+          "long": "4.8981243",
+          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+          "name": "Fab Lab Amsterdam",
+          "note": "location.manufacturer2.org"
+        },
+        "type": "Person"
+      },
+      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "metadata": null,
+      "name": "magic bike mirror",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+        "name": "Manufacturer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8PC488H53XE30PW7YC7W",
+          "lat": "52.372773",
+          "long": "4.8981243",
+          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+          "name": "Fab Lab Amsterdam",
+          "note": "location.manufacturer2.org"
+        },
+        "type": "Person"
+      },
+      "trackingIdentifier": "magic_bike_mirror-734",
+      "type": "EconomicResource"
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "toLocation": null,
+    "toResourceInventoriedAs": null,
+    "triggeredBy": null,
+    "type": "EconomicEvent"
+  },
+  {
+    "__typename": "Process",
+    "basedOn": null,
+    "classifiedAs": null,
+    "deletable": false,
+    "finished": false,
+    "hasBeginning": "2023-02-09T15:26:21.444730Z",
+    "hasEnd": "2023-02-09T15:26:21.444730Z",
+    "id": "0633DJ7806TQ3CKYZ88444PRXW",
+    "name": "Painting_magic_bike_mirror",
+    "nestedIn": null,
+    "note": "Painting magic bike mirror by Manufacturer2",
+    "plannedWithin": null,
+    "type": "Process"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "accept",
+      "inputOutput": "notApplicable",
+      "label": "accept",
+      "onhandEffect": "input",
+      "pairsWith": "modify",
+      "resourceEffect": "noEffect"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": null,
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:21.838463Z",
+    "id": "0633DJ79JP9AVK30PD3NKP6W30",
+    "inputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:21.444730Z",
+      "hasEnd": "2023-02-09T15:26:21.444730Z",
+      "id": "0633DJ7806TQ3CKYZ88444PRXW",
+      "name": "Painting_magic_bike_mirror",
+      "nestedIn": null,
+      "note": "Painting magic bike mirror by Manufacturer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "note": "accept mirror for painting",
+    "outputOf": null,
+    "provider": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "currentLocation": {
+        "alt": "0",
+        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "custodian": {
+        "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+        "name": "Manufacturer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8PC488H53XE30PW7YC7W",
+          "lat": "52.372773",
+          "long": "4.8981243",
+          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+          "name": "Fab Lab Amsterdam",
+          "note": "location.manufacturer2.org"
+        },
+        "type": "Person"
+      },
+      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "metadata": null,
+      "name": "magic bike mirror",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+        "name": "Manufacturer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8PC488H53XE30PW7YC7W",
+          "lat": "52.372773",
+          "long": "4.8981243",
+          "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+          "name": "Fab Lab Amsterdam",
+          "note": "location.manufacturer2.org"
+        },
+        "type": "Person"
+      },
+      "trackingIdentifier": "magic_bike_mirror-734",
+      "type": "EconomicResource"
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "toLocation": null,
+    "toResourceInventoriedAs": null,
     "triggeredBy": null,
     "type": "EconomicEvent"
   },
@@ -2703,8 +3297,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:43.296599Z",
-    "id": "0631632ZNN9RVWK3RW4CKF1SXC",
+    "hasPointInTime": "2023-02-09T15:26:21.229976Z",
+    "id": "0633DJ776YEGMWF0HDK3W4HRN4",
     "inputOf": null,
     "note": "produce magic bike mirror",
     "outputOf": {
@@ -2712,9 +3306,9 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:42.927310Z",
-      "hasEnd": "2023-02-02T16:53:42.927310Z",
-      "id": "0631632Y6TNDQKPAJ7GJF1Z688",
+      "hasBeginning": "2023-02-09T15:26:20.623867Z",
+      "hasEnd": "2023-02-09T15:26:20.623867Z",
+      "id": "0633DJ74SFG3MVEW39PKT9HJAG",
       "name": "Creation_magic_bike_mirror",
       "nestedIn": null,
       "note": "Creation of magic bike mirror by Manufacturer2",
@@ -2800,7 +3394,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632ZP55RBMJZYAANRAWYNR",
+      "id": "0633DJ7777WWJPKQS4M18YE30G",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2826,7 +3420,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2284",
+      "trackingIdentifier": "magic_bike_mirror-734",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2856,9 +3450,9 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-02T16:53:42.927310Z",
-    "hasEnd": "2023-02-02T16:53:42.927310Z",
-    "id": "0631632Y6TNDQKPAJ7GJF1Z688",
+    "hasBeginning": "2023-02-09T15:26:20.623867Z",
+    "hasEnd": "2023-02-09T15:26:20.623867Z",
+    "id": "0633DJ74SFG3MVEW39PKT9HJAG",
     "name": "Creation_magic_bike_mirror",
     "nestedIn": null,
     "note": "Creation of magic bike mirror by Manufacturer2",
@@ -2880,16 +3474,16 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:43.100234Z",
-    "id": "0631632YYSWF8PC47Y88EH5HNR",
+    "hasPointInTime": "2023-02-09T15:26:21.039679Z",
+    "id": "0633DJ76D5A54P5SMAR1CB04HC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-02T16:53:42.927310Z",
-      "hasEnd": "2023-02-02T16:53:42.927310Z",
-      "id": "0631632Y6TNDQKPAJ7GJF1Z688",
+      "hasBeginning": "2023-02-09T15:26:20.623867Z",
+      "hasEnd": "2023-02-09T15:26:20.623867Z",
+      "id": "0633DJ74SFG3MVEW39PKT9HJAG",
       "name": "Creation_magic_bike_mirror",
       "nestedIn": null,
       "note": "Creation of magic bike mirror by Manufacturer2",
@@ -2964,7 +3558,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632XJ3RYG6B9C1CGF9JPQC",
+      "id": "0633DJ742V558WYJEM3TJTPDF4",
       "metadata": null,
       "name": "glass",
       "onhandQuantity": {
@@ -2990,7 +3584,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "glass-9560",
+      "trackingIdentifier": "glass-8782",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3021,8 +3615,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-02T16:53:42.743821Z",
-    "id": "0631632XHM5PHEWBCV7CXD7PJM",
+    "hasPointInTime": "2023-02-09T15:26:20.425178Z",
+    "id": "0633DJ742FQN9B4SYT3M88RBMG",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -3105,7 +3699,7 @@
         },
         "type": "Person"
       },
-      "id": "0631632XJ3RYG6B9C1CGF9JPQC",
+      "id": "0633DJ742V558WYJEM3TJTPDF4",
       "metadata": null,
       "name": "glass",
       "onhandQuantity": {
@@ -3131,7 +3725,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "glass-9560",
+      "trackingIdentifier": "glass-8782",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3189,7 +3783,7 @@
       },
       "type": "Person"
     },
-    "id": "0631632XJ3RYG6B9C1CGF9JPQC",
+    "id": "0633DJ742V558WYJEM3TJTPDF4",
     "metadata": null,
     "name": "glass",
     "onhandQuantity": {
@@ -3215,7 +3809,481 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "glass-9560",
+    "trackingIdentifier": "glass-8782",
+    "type": "EconomicResource"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "cite",
+      "inputOutput": "input",
+      "label": "cite",
+      "onhandEffect": "noEffect",
+      "pairsWith": "notApplicable",
+      "resourceEffect": "noEffect"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": null,
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:20.826452Z",
+    "id": "0633DJ75KAFZ4W76GQHA4Z9KXM",
+    "inputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:20.623867Z",
+      "hasEnd": "2023-02-09T15:26:20.623867Z",
+      "id": "0633DJ74SFG3MVEW39PKT9HJAG",
+      "name": "Creation_magic_bike_mirror",
+      "nestedIn": null,
+      "note": "Creation of magic bike mirror by Manufacturer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "note": "cite design to make mirror",
+    "outputOf": null,
+    "provider": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "currentLocation": {
+        "alt": "0",
+        "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "custodian": {
+        "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+        "name": "Designer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "lat": "52.3767127",
+          "long": "4.8990591",
+          "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+          "name": "Farback",
+          "note": "location.designer2.org"
+        },
+        "type": "Person"
+      },
+      "id": "0633DJ7355KNC4XRT90BHH170M",
+      "metadata": null,
+      "name": "magic mirror design",
+      "onhandQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+        "name": "Designer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "lat": "52.3767127",
+          "long": "4.8990591",
+          "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+          "name": "Farback",
+          "note": "location.designer2.org"
+        },
+        "type": "Person"
+      },
+      "trackingIdentifier": "magic_mirror_design-1110",
+      "type": "EconomicResource"
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "toLocation": null,
+    "toResourceInventoriedAs": null,
+    "triggeredBy": null,
+    "type": "EconomicEvent"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "produce",
+      "inputOutput": "output",
+      "label": "produce",
+      "onhandEffect": "increment",
+      "pairsWith": "notApplicable",
+      "resourceEffect": "increment"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": null,
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:20.190718Z",
+    "id": "0633DJ734SVWM8F1W1DDVBYV5R",
+    "inputOf": null,
+    "note": "produce design for magic mirror",
+    "outputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:19.769401Z",
+      "hasEnd": "2023-02-09T15:26:19.769401Z",
+      "id": "0633DJ71J1D5KGT7NAJSDA4N7C",
+      "name": "Design_magic_mirror",
+      "nestedIn": null,
+      "note": "Design of magic mirror by Designer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "provider": {
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": {
+      "defaultUnitOfEffort": null,
+      "defaultUnitOfResource": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      },
+      "id": "0633BMNQB944XK7Y3R4XZK6FBW",
+      "name": "magic_mirror_design",
+      "note": "Repository for magic mirror design",
+      "resourceClassifiedAs": [
+        "https://github.com/designer2/magic_mirror_design"
+      ]
+    },
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "currentLocation": {
+        "alt": "0",
+        "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "custodian": {
+        "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+        "name": "Designer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "lat": "52.3767127",
+          "long": "4.8990591",
+          "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+          "name": "Farback",
+          "note": "location.designer2.org"
+        },
+        "type": "Person"
+      },
+      "id": "0633DJ7355KNC4XRT90BHH170M",
+      "metadata": null,
+      "name": "magic mirror design",
+      "onhandQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+        "name": "Designer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "lat": "52.3767127",
+          "long": "4.8990591",
+          "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+          "name": "Farback",
+          "note": "location.designer2.org"
+        },
+        "type": "Person"
+      },
+      "trackingIdentifier": "magic_mirror_design-1110",
+      "type": "EconomicResource"
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "toLocation": {
+      "alt": "0",
+      "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+      "lat": "52.3767127",
+      "long": "4.8990591",
+      "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+      "name": "Farback",
+      "note": "location.designer2.org"
+    },
+    "toResourceInventoriedAs": null,
+    "triggeredBy": null,
+    "type": "EconomicEvent"
+  },
+  {
+    "__typename": "Process",
+    "basedOn": null,
+    "classifiedAs": null,
+    "deletable": false,
+    "finished": false,
+    "hasBeginning": "2023-02-09T15:26:19.769401Z",
+    "hasEnd": "2023-02-09T15:26:19.769401Z",
+    "id": "0633DJ71J1D5KGT7NAJSDA4N7C",
+    "name": "Design_magic_mirror",
+    "nestedIn": null,
+    "note": "Design of magic mirror by Designer2",
+    "plannedWithin": null,
+    "type": "Process"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "work",
+      "inputOutput": "input",
+      "label": "work",
+      "onhandEffect": "noEffect",
+      "pairsWith": "notApplicable",
+      "resourceEffect": "noEffect"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": {
+      "hasNumericalValue": "5",
+      "hasUnit": {
+        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "label": "h",
+        "symbol": "om2:hour"
+      }
+    },
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:19.960862Z",
+    "id": "0633DJ727X9C104WBKX0KT117C",
+    "inputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:19.769401Z",
+      "hasEnd": "2023-02-09T15:26:19.769401Z",
+      "id": "0633DJ71J1D5KGT7NAJSDA4N7C",
+      "name": "Design_magic_mirror",
+      "nestedIn": null,
+      "note": "Design of magic mirror by Designer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "note": "work to design magic mirror",
+    "outputOf": null,
+    "provider": {
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": {
+      "defaultUnitOfEffort": null,
+      "defaultUnitOfResource": {
+        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "label": "h",
+        "symbol": "om2:hour"
+      },
+      "id": "0630EEWNQTH0PBW1EVP5YC0K6R",
+      "name": "design_work",
+      "note": "Specification for design work",
+      "resourceClassifiedAs": [
+        "https://www.wikidata.org/wiki/Q82604"
+      ]
+    },
+    "resourceInventoriedAs": null,
+    "resourceQuantity": null,
+    "toLocation": null,
+    "toResourceInventoriedAs": null,
+    "triggeredBy": null,
+    "type": "EconomicEvent"
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "currentLocation": {
+      "alt": "0",
+      "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+      "lat": "52.3767127",
+      "long": "4.8990591",
+      "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+      "name": "Farback",
+      "note": "location.designer2.org"
+    },
+    "custodian": {
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "type": "Person"
+    },
+    "id": "0633DJ7355KNC4XRT90BHH170M",
+    "metadata": null,
+    "name": "magic mirror design",
+    "onhandQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "type": "Person"
+    },
+    "trackingIdentifier": "magic_mirror_design-1110",
     "type": "EconomicResource"
   },
   {
@@ -3252,7 +4320,7 @@
       },
       "type": "Person"
     },
-    "id": "0631632ZP55RBMJZYAANRAWYNR",
+    "id": "0633DJ7777WWJPKQS4M18YE30G",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
@@ -3278,8 +4346,194 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-2284",
+    "trackingIdentifier": "magic_bike_mirror-734",
     "type": "EconomicResource"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "work",
+      "inputOutput": "input",
+      "label": "work",
+      "onhandEffect": "noEffect",
+      "pairsWith": "notApplicable",
+      "resourceEffect": "noEffect"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": {
+      "hasNumericalValue": "6",
+      "hasUnit": {
+        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "label": "h",
+        "symbol": "om2:hour"
+      }
+    },
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:21.639200Z",
+    "id": "0633DJ78SZSV02V961NYHD6X0M",
+    "inputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:21.444730Z",
+      "hasEnd": "2023-02-09T15:26:21.444730Z",
+      "id": "0633DJ7806TQ3CKYZ88444PRXW",
+      "name": "Painting_magic_bike_mirror",
+      "nestedIn": null,
+      "note": "Painting magic bike mirror by Manufacturer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "note": "work to paint magic mirror",
+    "outputOf": null,
+    "provider": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": {
+      "defaultUnitOfEffort": null,
+      "defaultUnitOfResource": {
+        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "label": "h",
+        "symbol": "om2:hour"
+      },
+      "id": "0633CP3YHXSDNZ2RM25NRTFGB0",
+      "name": "painting_work",
+      "note": "Specification for painting work",
+      "resourceClassifiedAs": [
+        "https://www.wikidata.org/wiki/Q11629"
+      ]
+    },
+    "resourceInventoriedAs": null,
+    "resourceQuantity": null,
+    "toLocation": null,
+    "toResourceInventoriedAs": null,
+    "triggeredBy": null,
+    "type": "EconomicEvent"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "work",
+      "inputOutput": "input",
+      "label": "work",
+      "onhandEffect": "noEffect",
+      "pairsWith": "notApplicable",
+      "resourceEffect": "noEffect"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": {
+      "hasNumericalValue": "3",
+      "hasUnit": {
+        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "label": "h",
+        "symbol": "om2:hour"
+      }
+    },
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-02-09T15:26:22.852092Z",
+    "id": "0633DJ7DG053H2HR8715MBPDVG",
+    "inputOf": {
+      "basedOn": null,
+      "classifiedAs": null,
+      "deletable": false,
+      "finished": false,
+      "hasBeginning": "2023-02-09T15:26:22.597748Z",
+      "hasEnd": "2023-02-09T15:26:22.597748Z",
+      "id": "0633DJ7CT6WG7YQD47YZDVY314",
+      "name": "Packaging_magic_bike_mirror",
+      "nestedIn": null,
+      "note": "Packaging magic bike mirror by Manufacturer2",
+      "plannedWithin": null,
+      "type": "Process"
+    },
+    "note": "work to package magic mirror",
+    "outputOf": null,
+    "provider": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVR4N5Z16NNDGZ4KMV1AW",
+      "name": "Manufacturer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "06314G8PC488H53XE30PW7YC7W",
+        "lat": "52.372773",
+        "long": "4.8981243",
+        "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
+        "name": "Fab Lab Amsterdam",
+        "note": "location.manufacturer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": {
+      "defaultUnitOfEffort": null,
+      "defaultUnitOfResource": {
+        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "label": "h",
+        "symbol": "om2:hour"
+      },
+      "id": "0633CP43KPS5N8A6JY0WM8F8C8",
+      "name": "packaging_work",
+      "note": "Specification for packaging work",
+      "resourceClassifiedAs": [
+        "https://www.wikidata.org/wiki/Q207822"
+      ]
+    },
+    "resourceInventoriedAs": null,
+    "resourceQuantity": null,
+    "toLocation": null,
+    "toResourceInventoriedAs": null,
+    "triggeredBy": null,
+    "type": "EconomicEvent"
   },
   {
     "__typename": "EconomicResource",
@@ -3315,7 +4569,7 @@
       },
       "type": "Person"
     },
-    "id": "06316330CZR3KRDDSRN4STWVQG",
+    "id": "0633DJ7FTSAAKYYE70TK5F39PG",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
@@ -3341,7 +4595,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-2284",
+    "trackingIdentifier": "magic_bike_mirror-734",
     "type": "EconomicResource"
   },
   {
@@ -3378,7 +4632,7 @@
       },
       "type": "Person"
     },
-    "id": "0631633141GTXHZ8WZ2HJ5NN8G",
+    "id": "0633DJ7GNMEMFH8DR8VSKG9DG0",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
@@ -3404,7 +4658,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-2284",
+    "trackingIdentifier": "magic_bike_mirror-734",
     "type": "EconomicResource"
   }
 ]
