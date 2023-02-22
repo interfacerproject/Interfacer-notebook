@@ -510,7 +510,14 @@ def send_signed(query: str, variables: dict, username: str, eddsa: str, endpoint
     
     res = requests.post(endpoint, json=payload, headers=headers)
 
-    res_json = res.json()
+    try:
+        res_json = res.json()
+    except (json.decoder.JSONDecodeError):
+        print("Exception JSONDecodeError")
+        print(res)
+        assert 1 == 2
+        return {}
+
 
     if DEBUG_send_signed:
         print("Payload")
