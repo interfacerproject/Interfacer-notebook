@@ -129,6 +129,9 @@ PROCESS_FRAG = """
         classifiedAs
         deletable
         finished
+        groupedIn {
+            ...processgroup
+        }
         hasBeginning
         hasEnd
         id
@@ -158,11 +161,12 @@ PROCESSGRP_FRAG = """
         note
         groups(first:100) {
             edges {
-                cursor
                 node {
-                    __typename
+                    type: __typename
                     ...on Process {
-                        ...process
+                        id
+                        name
+                        note
                     }
                     ...on ProcessGroup {
                         id

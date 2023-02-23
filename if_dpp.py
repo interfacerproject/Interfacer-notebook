@@ -20,7 +20,7 @@ import copy
 
 from if_consts import MAX_DEPTH
 from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, \
-    PROCESS_FRAG, PROCESSSPEC_FRAG, EVENT_FRAG, RESSPEC_FRAG, UNIT_FRAG
+    PROCESS_FRAG, PROCESSGRP_FRAG, PROCESSSPEC_FRAG, EVENT_FRAG, RESSPEC_FRAG, UNIT_FRAG
 from if_lib import send_signed
 
 DEBUG_trace_query = False
@@ -44,7 +44,7 @@ def trace_query(id, user_data, endpoint):
       }
     }
 
-    """ + AGENT_FRAG + LOCATION_FRAG +  RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
+    """ + AGENT_FRAG + LOCATION_FRAG +  RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -248,7 +248,8 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
             }
           }
         }
-    """ + EVENT_FRAG +  LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + RESSPEC_FRAG + RESOURCE_FRAG + UNIT_FRAG + PROCESSSPEC_FRAG
+    """ + EVENT_FRAG +  LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + \
+        RESSPEC_FRAG + RESOURCE_FRAG + UNIT_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -330,7 +331,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
         }
       }
     }
-    """ + PROCESS_FRAG + PROCESSSPEC_FRAG
+    """ + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     

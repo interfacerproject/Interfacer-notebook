@@ -25,7 +25,7 @@ from if_lib import send_signed
 from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS
 from if_consts import EVENT_FRAG, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, \
     INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, PROCESS_FRAG, PROCESSSPEC_FRAG, \
-        UNIT_FRAG, RESSPEC_FRAG
+        UNIT_FRAG, RESSPEC_FRAG, PROCESSGRP_FRAG
 
 
 DEBUG_create_proposal = False
@@ -50,7 +50,8 @@ def create_proposal(proposal, user_data, endpoint):
                         ...proposal
                     }
                 }
-            }""" + PROPOSAL_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+            }""" + PROPOSAL_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + \
+                QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -106,7 +107,7 @@ def show_proposal(user_data, id, endpoint):
         ...proposal
       }
     }""" + PROPOSAL_FRAG + PROPINT_FRAG + LOCATION_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + RESOURCE_FRAG + \
-        QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+        QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -172,7 +173,7 @@ def create_intent(intent, user_data, res_spec_data, endpoint):
                     }
                 }
             }""" + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + \
-                QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+                QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -276,7 +277,7 @@ def create_proposedIntent(cur_propint, user_data, endpoint):
             }
         }
     }""" + PROPOSAL_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + \
-        RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+        RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -349,7 +350,7 @@ def create_satisfaction(cur_sat, user_data, endpoint):
             }
         }
     }""" + EVENT_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + \
-        QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+        QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG +PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
