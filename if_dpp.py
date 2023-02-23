@@ -15,6 +15,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import json
+import inspect
 from pdb import set_trace
 import copy
 
@@ -63,7 +64,7 @@ def trace_query(id, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     return res_json['data']['economicResource']['trace']
 
@@ -184,7 +185,7 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     # dpp_item = {}    
     # fill_res(dpp_item, res_json['data']['economicResource'])
@@ -268,7 +269,7 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     # dpp_item = {}    
     # fill_event(dpp_item, res_json['data']['economicEvent'])
@@ -350,7 +351,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     # dpp_item = {}    
     # fill_process(dpp_item, res_json['data']['process'])
@@ -372,7 +373,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
             ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)
 
 
-DEBUG_get_ddp = True
+DEBUG_get_ddp = False
 
 def get_dpp(res_id, user_data, endpoint):
 
@@ -405,7 +406,7 @@ def get_dpp(res_id, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     be_dpp = res_json['data']['economicResource']['traceDpp']
     

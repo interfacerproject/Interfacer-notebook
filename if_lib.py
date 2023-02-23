@@ -16,6 +16,7 @@
 
 # Let's start with some lovely imports that should have been installed if not available by default
 import json
+import inspect
 import requests
 import os
 from zenroom import zenroom
@@ -109,7 +110,7 @@ def get_HMAC(email, endpoint, newUser=True):
         print(variables)
         print("Result")
         print(json.dumps(res_json, indent=2))
-        assert 2 == 1
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
 
     return res_json
@@ -284,7 +285,7 @@ def generate_keypair(userdata: dict) -> dict:
         resz = zenroom.zencode_exec(contract, data=data)
     except Exception as e:
         print(f'Exception in zenroom call: {e}')
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
         return {}
 
     if DEBUG_generate_keypair:
@@ -515,8 +516,7 @@ def send_signed(query: str, variables: dict, username: str, eddsa: str, endpoint
     except (json.decoder.JSONDecodeError):
         print("Exception JSONDecodeError")
         print(res)
-        assert 1 == 2
-        return {}
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
 
     if DEBUG_send_signed:
@@ -588,7 +588,7 @@ def get_location_id(file, user_data, locs_data, user, endpoint):
             print(query)
             print("Variables")
             print(variables)
-            assert 1 == 2
+            raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
         if DEBUG_get_location_id:
             print("Query")
@@ -652,7 +652,7 @@ def set_user_location(file, users_data, locs_data, user, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_set_user_location:
         print("Query")
@@ -715,7 +715,7 @@ def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint):
             print(query)
             print("Variables")
             print(variables)
-            assert 1 == 2
+            raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
         # save the unit info
         units_data[f'{name}'] = {}
@@ -780,7 +780,7 @@ def get_resource_spec_id(file, user_data, res_spec_data, name, note, classificat
             print(query)
             print("Variables")
             print(variables)
-            assert 1 == 2
+            raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
 
         # save the unit info
@@ -863,7 +863,7 @@ def create_resource(user_data, res_data, res_spec_data, amount, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_create_resource:
         print("Query")
@@ -936,7 +936,7 @@ def reduce_resource(user_data, res_data, res_spec_data, amount, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_reduce_resource:
         print("Query")
@@ -1002,7 +1002,7 @@ def create_process(cur_process, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
 
     # save the unit info
@@ -1032,7 +1032,7 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
 
     if not action in SUPPORTED_ACTIONS:
         print(f"We do not support {action} yet")
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if not action in ['work']:
         # Sanity checks, the code does not support
@@ -1040,11 +1040,11 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
         # but we have not addressed them yet)
         if existing_res == {} and new_res == {}:
             print(f"No resource given for event")
-            assert 1 == 2
+            raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
         if existing_res != {} and new_res != {}:
             print(f"Both existing and new resource given for event")
-            assert 1 == 2
+            raise Exception(f"Error in function {inspect.stack()[0][3]}")
     
     ts = datetime.now(timezone.utc).isoformat()
     variables = {
@@ -1175,7 +1175,7 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_create_event:
         print("Query")
@@ -1255,7 +1255,7 @@ def make_transfer(provider_data, action, note, receiver_data, amount, existing_r
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_make_transfer:
         print("Query")
@@ -1295,7 +1295,7 @@ def show_resource(user_data, id, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_show_resource:
         print("Query")
