@@ -373,7 +373,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
 
 DEBUG_get_ddp = True
 
-def get_ddp(res_id, user_data, endpoint):
+def get_dpp(res_id, user_data, endpoint):
 
     variables = {
         "id": res_id
