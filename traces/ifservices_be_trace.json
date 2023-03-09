@@ -4,14 +4,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+      "id": "0637HHX9F65VEX7WVMKCK7W0MW",
       "lat": "51.9650382",
       "long": "4.0133683",
       "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -24,7 +24,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -33,13 +33,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ7NWANVZDY73VCKBPXKMG",
+    "id": "0637WV6SMZ6Z53H093WJ3CC9NM",
     "metadata": null,
     "name": "fancy collaborative bike",
     "onhandQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -50,7 +50,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -59,7 +59,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "fancy_collaborative_bike-2059",
+    "trackingIdentifier": "fancy_collaborative_bike-3203",
     "type": "EconomicResource"
   },
   {
@@ -77,8 +77,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:24.970827Z",
-    "id": "0633DJ7NW6GHB8AKT73TNK1RGG",
+    "hasPointInTime": "2023-02-23T13:18:27.924270Z",
+    "id": "0637WV6SMCYXFV2JTJSJ1RBQBW",
     "inputOf": null,
     "note": "produce fancy collaborative bike",
     "outputOf": {
@@ -86,9 +86,36 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:16.757770Z",
-      "hasEnd": "2023-02-09T15:26:16.757770Z",
-      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
+      "groupedIn": {
+        "groupedIn": null,
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "name": "Assemble_bike",
+                "note": "Assemble bike 1-hour service by service_prov2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "name": "Design_funky_bike",
+                "note": "Design of funky bike by Designer1",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "name": "design_assemble_bike",
+        "note": "Groups bike design and assemblage",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:12.715555Z",
+      "hasEnd": "2023-02-23T13:18:12.715555Z",
+      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -101,7 +128,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -117,7 +144,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -130,11 +157,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       },
-      "id": "0630EGCD8PYKGSFS4F4ZN83C0G",
+      "id": "0637HMF024WSPB6C45HTBAGA7G",
       "name": "fancy_collaborative_bike",
       "note": "Repository for fancy collaborative bike",
       "resourceClassifiedAs": [
@@ -145,14 +172,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -165,7 +192,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -174,13 +201,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7NWANVZDY73VCKBPXKMG",
+      "id": "0637WV6SMZ6Z53H093WJ3CC9NM",
       "metadata": null,
       "name": "fancy collaborative bike",
       "onhandQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -191,7 +218,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -200,20 +227,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "fancy_collaborative_bike-2059",
+      "trackingIdentifier": "fancy_collaborative_bike-3203",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+      "id": "0637HHX9F65VEX7WVMKCK7W0MW",
       "lat": "51.9650382",
       "long": "4.0133683",
       "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -230,9 +257,36 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-09T15:26:16.757770Z",
-    "hasEnd": "2023-02-09T15:26:16.757770Z",
-    "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
+    "groupedIn": {
+      "groupedIn": null,
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+              "name": "Assemble_bike",
+              "note": "Assemble bike 1-hour service by service_prov2",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "0637WV546QPQR4AQDZQ15AYV0M",
+              "name": "Design_funky_bike",
+              "note": "Design of funky bike by Designer1",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+      "name": "design_assemble_bike",
+      "note": "Groups bike design and assemblage",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-02-23T13:18:12.715555Z",
+    "hasEnd": "2023-02-23T13:18:12.715555Z",
+    "id": "0637WV4YB0GAJS6VH81XBJDH0M",
     "name": "Assemble_bike",
     "nestedIn": null,
     "note": "Assemble bike 1-hour service by service_prov2",
@@ -254,23 +308,50 @@
     "effortQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       }
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:24.727794Z",
-    "id": "0633DJ7MZ4TA3QG3YE022ZEPER",
+    "hasPointInTime": "2023-02-23T13:18:27.468234Z",
+    "id": "0637WV6QYBECBAACVEWS15APMM",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:16.757770Z",
-      "hasEnd": "2023-02-09T15:26:16.757770Z",
-      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
+      "groupedIn": {
+        "groupedIn": null,
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "name": "Assemble_bike",
+                "note": "Assemble bike 1-hour service by service_prov2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "name": "Design_funky_bike",
+                "note": "Design of funky bike by Designer1",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "name": "design_assemble_bike",
+        "note": "Groups bike design and assemblage",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:12.715555Z",
+      "hasEnd": "2023-02-23T13:18:12.715555Z",
+      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -285,7 +366,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -301,7 +382,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -314,11 +395,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       },
-      "id": "0630HCCSC8QY7YMVMZXHPJWKFM",
+      "id": "0637HMEWPRY6TEBS79S1JRDJ6R",
       "name": "assembleing_work",
       "note": "Specification for assembleing work",
       "resourceClassifiedAs": [
@@ -347,16 +428,43 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:24.502697Z",
-    "id": "0633DJ7M0EG56NCD3RTZ3YH2GC",
+    "hasPointInTime": "2023-02-23T13:18:27.074275Z",
+    "id": "0637WV6PC8TQRR9C4Q1NSHB000",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:16.757770Z",
-      "hasEnd": "2023-02-09T15:26:16.757770Z",
-      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
+      "groupedIn": {
+        "groupedIn": null,
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "name": "Assemble_bike",
+                "note": "Assemble bike 1-hour service by service_prov2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "name": "Design_funky_bike",
+                "note": "Design of funky bike by Designer1",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "name": "design_assemble_bike",
+        "note": "Groups bike design and assemblage",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:12.715555Z",
+      "hasEnd": "2023-02-23T13:18:12.715555Z",
+      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -371,7 +479,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -387,7 +495,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -402,14 +510,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -422,7 +530,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -431,13 +539,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7HGZGSZQWSZHMXYVFBZW",
+      "id": "0637WV6J0CKSK7EXQJQGXG14F0",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -448,7 +556,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -457,13 +565,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-4620",
+      "trackingIdentifier": "aluminium_bike_frame-7094",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -488,8 +596,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:23.857633Z",
-    "id": "0633DJ7HG5RHYE7DRQTRM9N42R",
+    "hasPointInTime": "2023-02-23T13:18:25.809805Z",
+    "id": "0637WV6HZVJYEQRMGX11YQA6Q4",
     "inputOf": null,
     "note": "Transfer aluminium bike frame from designer2 to service_prov2",
     "outputOf": null,
@@ -499,7 +607,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -515,7 +623,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -530,14 +638,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -550,7 +658,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -559,13 +667,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ707TP0MPKACKMSK3MRQ8",
+      "id": "0637WV5M2904WGNKAKZ5JBK3V0",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -576,7 +684,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -585,20 +693,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-4620",
+      "trackingIdentifier": "aluminium_bike_frame-7094",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+      "id": "0637HHX9F65VEX7WVMKCK7W0MW",
       "lat": "51.9650382",
       "long": "4.0133683",
       "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -609,14 +717,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -629,7 +737,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -638,13 +746,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7HGZGSZQWSZHMXYVFBZW",
+      "id": "0637WV6J0CKSK7EXQJQGXG14F0",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -655,7 +763,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -664,7 +772,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-4620",
+      "trackingIdentifier": "aluminium_bike_frame-7094",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -685,8 +793,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:19.454180Z",
-    "id": "0633DJ7071S5D57DPGVDMXWVZC",
+    "hasPointInTime": "2023-02-23T13:18:18.188854Z",
+    "id": "0637WV5M1P17KM25K8M7071RS0",
     "inputOf": null,
     "note": "Transfer aluminium bike frame from manufacturer1 to designer2",
     "outputOf": null,
@@ -696,7 +804,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -712,7 +820,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -727,14 +835,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVX0YXTABESA8NSJAPJMR",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -747,7 +855,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+          "id": "0637HHXD36AP82ZFVSMJVQSMYG",
           "lat": "51.1531305",
           "long": "5.2685045",
           "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -756,13 +864,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ6YSB7B1H9D2B8NY1QFBR",
+      "id": "0637WV5GS3RZPRESJV5A425EH0",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -773,7 +881,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+          "id": "0637HHXD36AP82ZFVSMJVQSMYG",
           "lat": "51.1531305",
           "long": "5.2685045",
           "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -782,20 +890,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-4620",
+      "trackingIdentifier": "aluminium_bike_frame-7094",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+      "id": "0637HHX3R6YTTHKET7GXW7RHSR",
       "lat": "52.3767127",
       "long": "4.8990591",
       "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -806,14 +914,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -826,7 +934,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -835,13 +943,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ707TP0MPKACKMSK3MRQ8",
+      "id": "0637WV5M2904WGNKAKZ5JBK3V0",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -852,7 +960,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -861,7 +969,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-4620",
+      "trackingIdentifier": "aluminium_bike_frame-7094",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -882,8 +990,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:19.086250Z",
-    "id": "0633DJ6YRWMMB4PBEPTXZXNWZ4",
+    "hasPointInTime": "2023-02-23T13:18:17.433723Z",
+    "id": "0637WV5GRMACGKV1H5BH2F119W",
     "inputOf": null,
     "note": "produce aluminium bike frame",
     "outputOf": {
@@ -891,9 +999,10 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:14.975725Z",
-      "hasEnd": "2023-02-09T15:26:14.975725Z",
-      "id": "0633DJ6EVFASKHPVH0PKQ501EM",
+      "groupedIn": null,
+      "hasBeginning": "2023-02-23T13:18:09.436166Z",
+      "hasEnd": "2023-02-23T13:18:09.436166Z",
+      "id": "0637WV4HWSCEYS103CBPPK1H58",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -906,7 +1015,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -922,7 +1031,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -935,11 +1044,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       },
-      "id": "0630EEW460D45FC42P5AF4WKF8",
+      "id": "0637HHXZZEN8Z3QVVHKJ64BHCM",
       "name": "aluminium_bike_frame",
       "note": "Repository for aluminium bike frame",
       "resourceClassifiedAs": [
@@ -950,14 +1059,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVX0YXTABESA8NSJAPJMR",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -970,7 +1079,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+          "id": "0637HHXD36AP82ZFVSMJVQSMYG",
           "lat": "51.1531305",
           "long": "5.2685045",
           "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -979,13 +1088,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ6YSB7B1H9D2B8NY1QFBR",
+      "id": "0637WV5GS3RZPRESJV5A425EH0",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -996,7 +1105,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+          "id": "0637HHXD36AP82ZFVSMJVQSMYG",
           "lat": "51.1531305",
           "long": "5.2685045",
           "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1005,20 +1114,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-4620",
+      "trackingIdentifier": "aluminium_bike_frame-7094",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVX0YXTABESA8NSJAPJMR",
+      "id": "0637HHXD36AP82ZFVSMJVQSMYG",
       "lat": "51.1531305",
       "long": "5.2685045",
       "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1035,9 +1144,10 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-09T15:26:14.975725Z",
-    "hasEnd": "2023-02-09T15:26:14.975725Z",
-    "id": "0633DJ6EVFASKHPVH0PKQ501EM",
+    "groupedIn": null,
+    "hasBeginning": "2023-02-23T13:18:09.436166Z",
+    "hasEnd": "2023-02-23T13:18:09.436166Z",
+    "id": "0637WV4HWSCEYS103CBPPK1H58",
     "name": "Manifacture_aluminium_bike_frame",
     "nestedIn": null,
     "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1059,16 +1169,17 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:18.687034Z",
-    "id": "0633DJ6X6AQ8R58J5C1JGZQMRC",
+    "hasPointInTime": "2023-02-23T13:18:16.445069Z",
+    "id": "0637WV5CSXT4731104NW1FJS24",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:14.975725Z",
-      "hasEnd": "2023-02-09T15:26:14.975725Z",
-      "id": "0633DJ6EVFASKHPVH0PKQ501EM",
+      "groupedIn": null,
+      "hasBeginning": "2023-02-23T13:18:09.436166Z",
+      "hasEnd": "2023-02-23T13:18:09.436166Z",
+      "id": "0637WV4HWSCEYS103CBPPK1H58",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1083,7 +1194,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1099,7 +1210,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1114,14 +1225,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+          "id": "0637HHXT0JKJW88JSBXK3HY34C",
           "label": "kg",
           "symbol": "om2:kilogram"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVX0YXTABESA8NSJAPJMR",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1134,7 +1245,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+          "id": "0637HHXD36AP82ZFVSMJVQSMYG",
           "lat": "51.1531305",
           "long": "5.2685045",
           "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1143,13 +1254,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ6V2BFKVDJ5HAA6XRRWXR",
+      "id": "0637WV58GZR2HHK40P7WT601NM",
       "metadata": null,
       "name": "aluminium",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+          "id": "0637HHXT0JKJW88JSBXK3HY34C",
           "label": "kg",
           "symbol": "om2:kilogram"
         }
@@ -1160,7 +1271,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+          "id": "0637HHXD36AP82ZFVSMJVQSMYG",
           "lat": "51.1531305",
           "long": "5.2685045",
           "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1169,13 +1280,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium-2663",
+      "trackingIdentifier": "aluminium-7442",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "5",
       "hasUnit": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       }
@@ -1200,8 +1311,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:18.128483Z",
-    "id": "0633DJ6V1YWXDRC3084RW5WV68",
+    "hasPointInTime": "2023-02-23T13:18:15.294468Z",
+    "id": "0637WV58GJ34WQERNA1XENMWZC",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -1211,7 +1322,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1227,7 +1338,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1240,11 +1351,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       },
-      "id": "0630EEW4ZVEYVDZN4KETAE5ZF8",
+      "id": "0637HHY1JQCJCWR19B1B0C0SN8",
       "name": "aluminium",
       "note": "Aluminium 10mt, 4cm pipes",
       "resourceClassifiedAs": [
@@ -1255,14 +1366,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+          "id": "0637HHXT0JKJW88JSBXK3HY34C",
           "label": "kg",
           "symbol": "om2:kilogram"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVX0YXTABESA8NSJAPJMR",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1275,7 +1386,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+          "id": "0637HHXD36AP82ZFVSMJVQSMYG",
           "lat": "51.1531305",
           "long": "5.2685045",
           "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1284,13 +1395,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ6V2BFKVDJ5HAA6XRRWXR",
+      "id": "0637WV58GZR2HHK40P7WT601NM",
       "metadata": null,
       "name": "aluminium",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+          "id": "0637HHXT0JKJW88JSBXK3HY34C",
           "label": "kg",
           "symbol": "om2:kilogram"
         }
@@ -1301,7 +1412,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+          "id": "0637HHXD36AP82ZFVSMJVQSMYG",
           "lat": "51.1531305",
           "long": "5.2685045",
           "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1310,20 +1421,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium-2663",
+      "trackingIdentifier": "aluminium-7442",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "5",
       "hasUnit": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVX0YXTABESA8NSJAPJMR",
+      "id": "0637HHXD36AP82ZFVSMJVQSMYG",
       "lat": "51.1531305",
       "long": "5.2685045",
       "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1339,14 +1450,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVX0YXTABESA8NSJAPJMR",
+      "id": "0637HHXD36AP82ZFVSMJVQSMYG",
       "lat": "51.1531305",
       "long": "5.2685045",
       "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1359,7 +1470,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1368,13 +1479,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ6V2BFKVDJ5HAA6XRRWXR",
+    "id": "0637WV58GZR2HHK40P7WT601NM",
     "metadata": null,
     "name": "aluminium",
     "onhandQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       }
@@ -1385,7 +1496,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1394,7 +1505,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium-2663",
+    "trackingIdentifier": "aluminium-7442",
     "type": "EconomicResource"
   },
   {
@@ -1412,23 +1523,24 @@
     "effortQuantity": {
       "hasNumericalValue": "8",
       "hasUnit": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       }
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:18.322560Z",
-    "id": "0633DJ6VSCJR43WVB5BP9QZ5DR",
+    "hasPointInTime": "2023-02-23T13:18:15.702851Z",
+    "id": "0637WV59ZGS1C0005SYPR4XQDC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:14.975725Z",
-      "hasEnd": "2023-02-09T15:26:14.975725Z",
-      "id": "0633DJ6EVFASKHPVH0PKQ501EM",
+      "groupedIn": null,
+      "hasBeginning": "2023-02-23T13:18:09.436166Z",
+      "hasEnd": "2023-02-23T13:18:09.436166Z",
+      "id": "0637WV4HWSCEYS103CBPPK1H58",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1443,7 +1555,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1459,7 +1571,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1472,11 +1584,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       },
-      "id": "0630EEW5Y4VD1GAB0PY97K2K2M",
+      "id": "0637HHY38B5ZSJ9N0X6G2QCPZM",
       "name": "manufacturing_work",
       "note": "Specification for manufacturing work",
       "resourceClassifiedAs": [
@@ -1495,14 +1607,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVX0YXTABESA8NSJAPJMR",
+      "id": "0637HHXD36AP82ZFVSMJVQSMYG",
       "lat": "51.1531305",
       "long": "5.2685045",
       "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1515,7 +1627,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1524,13 +1636,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ6YSB7B1H9D2B8NY1QFBR",
+    "id": "0637WV5GS3RZPRESJV5A425EH0",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -1541,7 +1653,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8N9BTHCX6FBYFYGN8GM4",
+        "id": "0637HHXD36AP82ZFVSMJVQSMYG",
         "lat": "51.1531305",
         "long": "5.2685045",
         "mappableAddress": "Stockmeyerstr. 43 Halle 4K Eingang von der Wasserseite, 20457 Hamburg, Germany",
@@ -1550,7 +1662,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-4620",
+    "trackingIdentifier": "aluminium_bike_frame-7094",
     "type": "EconomicResource"
   },
   {
@@ -1558,14 +1670,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+      "id": "0637HHX3R6YTTHKET7GXW7RHSR",
       "lat": "52.3767127",
       "long": "4.8990591",
       "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -1578,7 +1690,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -1587,13 +1699,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ707TP0MPKACKMSK3MRQ8",
+    "id": "0637WV5M2904WGNKAKZ5JBK3V0",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -1604,7 +1716,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -1613,7 +1725,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-4620",
+    "trackingIdentifier": "aluminium_bike_frame-7094",
     "type": "EconomicResource"
   },
   {
@@ -1621,14 +1733,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+      "id": "0637HHX9F65VEX7WVMKCK7W0MW",
       "lat": "51.9650382",
       "long": "4.0133683",
       "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -1641,7 +1753,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -1650,13 +1762,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ7HGZGSZQWSZHMXYVFBZW",
+    "id": "0637WV6J0CKSK7EXQJQGXG14F0",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -1667,7 +1779,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -1676,7 +1788,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-4620",
+    "trackingIdentifier": "aluminium_bike_frame-7094",
     "type": "EconomicResource"
   },
   {
@@ -1694,16 +1806,43 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:24.296365Z",
-    "id": "0633DJ7K56YMGV4H4BDSYXN768",
+    "hasPointInTime": "2023-02-23T13:18:26.709744Z",
+    "id": "0637WV6MY026JN10Q2C96EW2DC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:16.757770Z",
-      "hasEnd": "2023-02-09T15:26:16.757770Z",
-      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
+      "groupedIn": {
+        "groupedIn": null,
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "name": "Assemble_bike",
+                "note": "Assemble bike 1-hour service by service_prov2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "name": "Design_funky_bike",
+                "note": "Design of funky bike by Designer1",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "name": "design_assemble_bike",
+        "note": "Groups bike design and assemblage",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:12.715555Z",
+      "hasEnd": "2023-02-23T13:18:12.715555Z",
+      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -1718,7 +1857,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -1734,7 +1873,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -1749,14 +1888,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVT4BKEF97MQ7ETR3VGVW",
+        "id": "0637HHX0SRRF8672YA0VN30YW8",
         "lat": "52.39679",
         "long": "4.8781073",
         "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1769,7 +1908,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8H25EKTAGDWH6RFFNP9G",
+          "id": "0637HHX0SRRF8672YA0VN30YW8",
           "lat": "52.39679",
           "long": "4.8781073",
           "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1778,13 +1917,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ6TAFR7W16VRZ905D4Y0R",
+      "id": "0637WV56YQV8E3Q36Q446A8WRR",
       "metadata": null,
       "name": "funky bike design",
       "onhandQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -1795,7 +1934,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8H25EKTAGDWH6RFFNP9G",
+          "id": "0637HHX0SRRF8672YA0VN30YW8",
           "lat": "52.39679",
           "long": "4.8781073",
           "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1804,13 +1943,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "funky_bike_design-539",
+      "trackingIdentifier": "funky_bike_design-71",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -1835,8 +1974,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:17.941401Z",
-    "id": "0633DJ6TA3J3X4KTVJVD9BQ0F0",
+    "hasPointInTime": "2023-02-23T13:18:14.930625Z",
+    "id": "0637WV56Y95RXA84ADEKYRGQE0",
     "inputOf": null,
     "note": "produce design for funky bike",
     "outputOf": {
@@ -1844,9 +1983,36 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:17.597869Z",
-      "hasEnd": "2023-02-09T15:26:17.597869Z",
-      "id": "0633DJ6RYZ33B9VVGTD4XPD98W",
+      "groupedIn": {
+        "groupedIn": null,
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "name": "Assemble_bike",
+                "note": "Assemble bike 1-hour service by service_prov2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "name": "Design_funky_bike",
+                "note": "Design of funky bike by Designer1",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "name": "design_assemble_bike",
+        "note": "Groups bike design and assemblage",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:14.237158Z",
+      "hasEnd": "2023-02-23T13:18:14.237158Z",
+      "id": "0637WV546QPQR4AQDZQ15AYV0M",
       "name": "Design_funky_bike",
       "nestedIn": null,
       "note": "Design of funky bike by Designer1",
@@ -1859,7 +2025,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8H25EKTAGDWH6RFFNP9G",
+        "id": "0637HHX0SRRF8672YA0VN30YW8",
         "lat": "52.39679",
         "long": "4.8781073",
         "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1875,7 +2041,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8H25EKTAGDWH6RFFNP9G",
+        "id": "0637HHX0SRRF8672YA0VN30YW8",
         "lat": "52.39679",
         "long": "4.8781073",
         "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1888,11 +2054,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       },
-      "id": "0630EEWN3AGV8C7Q41ATQRRR2W",
+      "id": "0637HHYW5X6RRDCZ4X8K8M7WB8",
       "name": "funky_bike_design",
       "note": "Repository for funky bike design",
       "resourceClassifiedAs": [
@@ -1903,14 +2069,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVT4BKEF97MQ7ETR3VGVW",
+        "id": "0637HHX0SRRF8672YA0VN30YW8",
         "lat": "52.39679",
         "long": "4.8781073",
         "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1923,7 +2089,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8H25EKTAGDWH6RFFNP9G",
+          "id": "0637HHX0SRRF8672YA0VN30YW8",
           "lat": "52.39679",
           "long": "4.8781073",
           "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1932,13 +2098,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ6TAFR7W16VRZ905D4Y0R",
+      "id": "0637WV56YQV8E3Q36Q446A8WRR",
       "metadata": null,
       "name": "funky bike design",
       "onhandQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -1949,7 +2115,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8H25EKTAGDWH6RFFNP9G",
+          "id": "0637HHX0SRRF8672YA0VN30YW8",
           "lat": "52.39679",
           "long": "4.8781073",
           "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1958,20 +2124,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "funky_bike_design-539",
+      "trackingIdentifier": "funky_bike_design-71",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVT4BKEF97MQ7ETR3VGVW",
+      "id": "0637HHX0SRRF8672YA0VN30YW8",
       "lat": "52.39679",
       "long": "4.8781073",
       "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -1988,9 +2154,36 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-09T15:26:17.597869Z",
-    "hasEnd": "2023-02-09T15:26:17.597869Z",
-    "id": "0633DJ6RYZ33B9VVGTD4XPD98W",
+    "groupedIn": {
+      "groupedIn": null,
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+              "name": "Assemble_bike",
+              "note": "Assemble bike 1-hour service by service_prov2",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "0637WV546QPQR4AQDZQ15AYV0M",
+              "name": "Design_funky_bike",
+              "note": "Design of funky bike by Designer1",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+      "name": "design_assemble_bike",
+      "note": "Groups bike design and assemblage",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-02-23T13:18:14.237158Z",
+    "hasEnd": "2023-02-23T13:18:14.237158Z",
+    "id": "0637WV546QPQR4AQDZQ15AYV0M",
     "name": "Design_funky_bike",
     "nestedIn": null,
     "note": "Design of funky bike by Designer1",
@@ -2012,23 +2205,50 @@
     "effortQuantity": {
       "hasNumericalValue": "8",
       "hasUnit": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       }
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:17.766857Z",
-    "id": "0633DJ6SM8AEJ4YF6G9JY9GQ2G",
+    "hasPointInTime": "2023-02-23T13:18:14.580286Z",
+    "id": "0637WV55HMF3K7HEKTRKW4F6VG",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:17.597869Z",
-      "hasEnd": "2023-02-09T15:26:17.597869Z",
-      "id": "0633DJ6RYZ33B9VVGTD4XPD98W",
+      "groupedIn": {
+        "groupedIn": null,
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "name": "Assemble_bike",
+                "note": "Assemble bike 1-hour service by service_prov2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "name": "Design_funky_bike",
+                "note": "Design of funky bike by Designer1",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "name": "design_assemble_bike",
+        "note": "Groups bike design and assemblage",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:14.237158Z",
+      "hasEnd": "2023-02-23T13:18:14.237158Z",
+      "id": "0637WV546QPQR4AQDZQ15AYV0M",
       "name": "Design_funky_bike",
       "nestedIn": null,
       "note": "Design of funky bike by Designer1",
@@ -2043,7 +2263,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8H25EKTAGDWH6RFFNP9G",
+        "id": "0637HHX0SRRF8672YA0VN30YW8",
         "lat": "52.39679",
         "long": "4.8781073",
         "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -2059,7 +2279,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8H25EKTAGDWH6RFFNP9G",
+        "id": "0637HHX0SRRF8672YA0VN30YW8",
         "lat": "52.39679",
         "long": "4.8781073",
         "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -2072,11 +2292,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       },
-      "id": "0630EEWNQTH0PBW1EVP5YC0K6R",
+      "id": "0637HHYXEFC830WWZK8569A75G",
       "name": "design_work",
       "note": "Specification for design work",
       "resourceClassifiedAs": [
@@ -2095,14 +2315,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVT4BKEF97MQ7ETR3VGVW",
+      "id": "0637HHX0SRRF8672YA0VN30YW8",
       "lat": "52.39679",
       "long": "4.8781073",
       "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -2115,7 +2335,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8H25EKTAGDWH6RFFNP9G",
+        "id": "0637HHX0SRRF8672YA0VN30YW8",
         "lat": "52.39679",
         "long": "4.8781073",
         "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -2124,13 +2344,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ6TAFR7W16VRZ905D4Y0R",
+    "id": "0637WV56YQV8E3Q36Q446A8WRR",
     "metadata": null,
     "name": "funky bike design",
     "onhandQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -2141,7 +2361,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8H25EKTAGDWH6RFFNP9G",
+        "id": "0637HHX0SRRF8672YA0VN30YW8",
         "lat": "52.39679",
         "long": "4.8781073",
         "mappableAddress": "Haparandadam 7, A1, 1013 AK Amsterdam, Netherlands",
@@ -2150,7 +2370,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "funky_bike_design-539",
+    "trackingIdentifier": "funky_bike_design-71",
     "type": "EconomicResource"
   },
   {
@@ -2168,16 +2388,43 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:24.089468Z",
-    "id": "0633DJ7JD0T5KQAGY4EM9SG8YR",
+    "hasPointInTime": "2023-02-23T13:18:26.354538Z",
+    "id": "0637WV6KH7RPKBD6KEBVGMN8HC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:16.757770Z",
-      "hasEnd": "2023-02-09T15:26:16.757770Z",
-      "id": "0633DJ6NNVYYAN4Z7BYAFFRFC4",
+      "groupedIn": {
+        "groupedIn": null,
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "name": "Assemble_bike",
+                "note": "Assemble bike 1-hour service by service_prov2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "name": "Design_funky_bike",
+                "note": "Design of funky bike by Designer1",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "name": "design_assemble_bike",
+        "note": "Groups bike design and assemblage",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:12.715555Z",
+      "hasEnd": "2023-02-23T13:18:12.715555Z",
+      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -2192,7 +2439,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2208,7 +2455,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2223,14 +2470,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "-1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2243,7 +2490,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2252,13 +2499,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7GNMEMFH8DR8VSKG9DG0",
+      "id": "0637WV6G0AEFC2DZ46P1K8A75C",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "-1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -2269,7 +2516,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2278,13 +2525,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -2309,8 +2556,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:23.654416Z",
-    "id": "0633DJ7GN3BG5ESQR17B6686E4",
+    "hasPointInTime": "2023-02-23T13:18:25.444004Z",
+    "id": "0637WV6FZGX1VQR1GS5X7W0KAC",
     "inputOf": null,
     "note": "Transfer magic bike mirror from designer2 to service_prov2",
     "outputOf": null,
@@ -2320,7 +2567,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2336,7 +2583,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2351,14 +2598,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2371,7 +2618,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2380,13 +2627,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7FTSAAKYYE70TK5F39PG",
+      "id": "0637WV6EJF17ZC5KVR70PREF08",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -2397,7 +2644,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2406,20 +2653,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+      "id": "0637HHX9F65VEX7WVMKCK7W0MW",
       "lat": "51.9650382",
       "long": "4.0133683",
       "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2430,14 +2677,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "-1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2450,7 +2697,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2459,13 +2706,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7GNMEMFH8DR8VSKG9DG0",
+      "id": "0637WV6G0AEFC2DZ46P1K8A75C",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "-1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -2476,7 +2723,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8M6H3KYY9AET5B1RJR7C",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
           "lat": "51.9650382",
           "long": "4.0133683",
           "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -2485,7 +2732,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -2506,8 +2753,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:23.441442Z",
-    "id": "0633DJ7FSXA7T8G1FBQDK3YS0G",
+    "hasPointInTime": "2023-02-23T13:18:25.075721Z",
+    "id": "0637WV6EHPZFSKJPC3DK92629C",
     "inputOf": null,
     "note": "Transfer magic bike mirror from manufacturer2 to designer2",
     "outputOf": null,
@@ -2517,7 +2764,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2533,7 +2780,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2548,14 +2795,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2568,7 +2815,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2577,13 +2824,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "id": "0637WV60TD3G833NW3KYPDVYP0",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -2594,7 +2841,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2603,20 +2850,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+      "id": "0637HHX3R6YTTHKET7GXW7RHSR",
       "lat": "52.3767127",
       "long": "4.8990591",
       "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2627,14 +2874,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2647,7 +2894,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2656,13 +2903,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7FTSAAKYYE70TK5F39PG",
+      "id": "0637WV6EJF17ZC5KVR70PREF08",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -2673,7 +2920,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -2682,7 +2929,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -2703,8 +2950,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:23.238094Z",
-    "id": "0633DJ7F1SG33JXAF5FJ2WF5SW",
+    "hasPointInTime": "2023-02-23T13:18:24.708945Z",
+    "id": "0637WV6D4FSTEEVCFQSJRPX3HM",
     "inputOf": null,
     "note": "modify mirror into packaged mirror",
     "outputOf": {
@@ -2712,9 +2959,40 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:22.597748Z",
-      "hasEnd": "2023-02-09T15:26:22.597748Z",
-      "id": "0633DJ7CT6WG7YQD47YZDVY314",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "name": "Painting_magic_bike_mirror",
+                "note": "Painting magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "name": "Packaging_magic_bike_mirror",
+                "note": "Packaging magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "name": "paint_package_mirror",
+        "note": "Groups mirror painting and packaging",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:23.580534Z",
+      "hasEnd": "2023-02-23T13:18:23.580534Z",
+      "id": "0637WV68P9ARA2RW51WSMT9V4W",
       "name": "Packaging_magic_bike_mirror",
       "nestedIn": null,
       "note": "Packaging magic bike mirror by Manufacturer2",
@@ -2727,7 +3005,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2743,7 +3021,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2758,14 +3036,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2778,7 +3056,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2787,13 +3065,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "id": "0637WV60TD3G833NW3KYPDVYP0",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -2804,7 +3082,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2813,13 +3091,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -2835,9 +3113,40 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-09T15:26:22.597748Z",
-    "hasEnd": "2023-02-09T15:26:22.597748Z",
-    "id": "0633DJ7CT6WG7YQD47YZDVY314",
+    "groupedIn": {
+      "groupedIn": {
+        "id": "0637WV76T87G78V0ZTXB4PEXE4",
+        "name": "design_create_paint_package_mirror",
+        "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+      },
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+              "name": "Painting_magic_bike_mirror",
+              "note": "Painting magic bike mirror by Manufacturer2",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "0637WV68P9ARA2RW51WSMT9V4W",
+              "name": "Packaging_magic_bike_mirror",
+              "note": "Packaging magic bike mirror by Manufacturer2",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+      "name": "paint_package_mirror",
+      "note": "Groups mirror painting and packaging",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-02-23T13:18:23.580534Z",
+    "hasEnd": "2023-02-23T13:18:23.580534Z",
+    "id": "0637WV68P9ARA2RW51WSMT9V4W",
     "name": "Packaging_magic_bike_mirror",
     "nestedIn": null,
     "note": "Packaging magic bike mirror by Manufacturer2",
@@ -2859,16 +3168,47 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:23.033562Z",
-    "id": "0633DJ7E6N0FEQYCTX3JK20EYC",
+    "hasPointInTime": "2023-02-23T13:18:24.270852Z",
+    "id": "0637WV6BHQ4SMNAKRVM37EQPTC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:22.597748Z",
-      "hasEnd": "2023-02-09T15:26:22.597748Z",
-      "id": "0633DJ7CT6WG7YQD47YZDVY314",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "name": "Painting_magic_bike_mirror",
+                "note": "Painting magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "name": "Packaging_magic_bike_mirror",
+                "note": "Packaging magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "name": "paint_package_mirror",
+        "note": "Groups mirror painting and packaging",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:23.580534Z",
+      "hasEnd": "2023-02-23T13:18:23.580534Z",
+      "id": "0637WV68P9ARA2RW51WSMT9V4W",
       "name": "Packaging_magic_bike_mirror",
       "nestedIn": null,
       "note": "Packaging magic bike mirror by Manufacturer2",
@@ -2883,7 +3223,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2899,7 +3239,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2914,14 +3254,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2934,7 +3274,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2943,13 +3283,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "id": "0637WV60TD3G833NW3KYPDVYP0",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -2960,7 +3300,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -2969,13 +3309,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -3000,8 +3340,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:22.080862Z",
-    "id": "0633DJ7AJPCYJAZRJ6D2FQ5QP8",
+    "hasPointInTime": "2023-02-23T13:18:23.152375Z",
+    "id": "0637WV6749D1Q1FGDRKR5382YR",
     "inputOf": null,
     "note": "modify mirror into painted mirror",
     "outputOf": {
@@ -3009,9 +3349,40 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:21.444730Z",
-      "hasEnd": "2023-02-09T15:26:21.444730Z",
-      "id": "0633DJ7806TQ3CKYZ88444PRXW",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "name": "Painting_magic_bike_mirror",
+                "note": "Painting magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "name": "Packaging_magic_bike_mirror",
+                "note": "Packaging magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "name": "paint_package_mirror",
+        "note": "Groups mirror painting and packaging",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:22.032689Z",
+      "hasEnd": "2023-02-23T13:18:22.032689Z",
+      "id": "0637WV62MFCX1GJNS0Z1CANX3M",
       "name": "Painting_magic_bike_mirror",
       "nestedIn": null,
       "note": "Painting magic bike mirror by Manufacturer2",
@@ -3024,7 +3395,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3040,7 +3411,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3055,14 +3426,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3075,7 +3446,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3084,13 +3455,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "id": "0637WV60TD3G833NW3KYPDVYP0",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -3101,7 +3472,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3110,13 +3481,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -3132,9 +3503,40 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-09T15:26:21.444730Z",
-    "hasEnd": "2023-02-09T15:26:21.444730Z",
-    "id": "0633DJ7806TQ3CKYZ88444PRXW",
+    "groupedIn": {
+      "groupedIn": {
+        "id": "0637WV76T87G78V0ZTXB4PEXE4",
+        "name": "design_create_paint_package_mirror",
+        "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+      },
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+              "name": "Painting_magic_bike_mirror",
+              "note": "Painting magic bike mirror by Manufacturer2",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "0637WV68P9ARA2RW51WSMT9V4W",
+              "name": "Packaging_magic_bike_mirror",
+              "note": "Packaging magic bike mirror by Manufacturer2",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+      "name": "paint_package_mirror",
+      "note": "Groups mirror painting and packaging",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-02-23T13:18:22.032689Z",
+    "hasEnd": "2023-02-23T13:18:22.032689Z",
+    "id": "0637WV62MFCX1GJNS0Z1CANX3M",
     "name": "Painting_magic_bike_mirror",
     "nestedIn": null,
     "note": "Painting magic bike mirror by Manufacturer2",
@@ -3156,16 +3558,47 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:21.838463Z",
-    "id": "0633DJ79JP9AVK30PD3NKP6W30",
+    "hasPointInTime": "2023-02-23T13:18:22.785468Z",
+    "id": "0637WV65KVQS7J5CJFFDSXVCW4",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:21.444730Z",
-      "hasEnd": "2023-02-09T15:26:21.444730Z",
-      "id": "0633DJ7806TQ3CKYZ88444PRXW",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "name": "Painting_magic_bike_mirror",
+                "note": "Painting magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "name": "Packaging_magic_bike_mirror",
+                "note": "Packaging magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "name": "paint_package_mirror",
+        "note": "Groups mirror painting and packaging",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:22.032689Z",
+      "hasEnd": "2023-02-23T13:18:22.032689Z",
+      "id": "0637WV62MFCX1GJNS0Z1CANX3M",
       "name": "Painting_magic_bike_mirror",
       "nestedIn": null,
       "note": "Painting magic bike mirror by Manufacturer2",
@@ -3180,7 +3613,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3196,7 +3629,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3211,14 +3644,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3231,7 +3664,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3240,13 +3673,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "id": "0637WV60TD3G833NW3KYPDVYP0",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -3257,7 +3690,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3266,13 +3699,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -3297,8 +3730,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:21.229976Z",
-    "id": "0633DJ776YEGMWF0HDK3W4HRN4",
+    "hasPointInTime": "2023-02-23T13:18:21.527631Z",
+    "id": "0637WV60SWGN9DDXHWH57PV540",
     "inputOf": null,
     "note": "produce magic bike mirror",
     "outputOf": {
@@ -3306,9 +3739,40 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:20.623867Z",
-      "hasEnd": "2023-02-09T15:26:20.623867Z",
-      "id": "0633DJ74SFG3MVEW39PKT9HJAG",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "name": "Design_magic_mirror",
+                "note": "Design of magic mirror by Designer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "name": "Creation_magic_bike_mirror",
+                "note": "Creation of magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "name": "design_create_mirror",
+        "note": "Groups mirror design and creation",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:20.134087Z",
+      "hasEnd": "2023-02-23T13:18:20.134087Z",
+      "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
       "name": "Creation_magic_bike_mirror",
       "nestedIn": null,
       "note": "Creation of magic bike mirror by Manufacturer2",
@@ -3321,7 +3785,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3337,7 +3801,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3350,11 +3814,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       },
-      "id": "0630EG7V77V40NESABPSD9KVP4",
+      "id": "0637HMDZVKFE3HE5CTQH07XSFM",
       "name": "magic_bike_mirror",
       "note": "Repository for magic bike mirror",
       "resourceClassifiedAs": [
@@ -3365,14 +3829,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3385,7 +3849,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3394,13 +3858,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7777WWJPKQS4M18YE30G",
+      "id": "0637WV60TD3G833NW3KYPDVYP0",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
         "hasNumericalValue": "0",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -3411,7 +3875,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3420,20 +3884,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-734",
+      "trackingIdentifier": "magic_bike_mirror-2894",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+      "id": "0637HHXG5PT1DSSNXH42AG8NSC",
       "lat": "52.372773",
       "long": "4.8981243",
       "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3450,9 +3914,40 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-09T15:26:20.623867Z",
-    "hasEnd": "2023-02-09T15:26:20.623867Z",
-    "id": "0633DJ74SFG3MVEW39PKT9HJAG",
+    "groupedIn": {
+      "groupedIn": {
+        "id": "0637WV76T87G78V0ZTXB4PEXE4",
+        "name": "design_create_paint_package_mirror",
+        "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+      },
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+              "name": "Design_magic_mirror",
+              "note": "Design of magic mirror by Designer2",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+              "name": "Creation_magic_bike_mirror",
+              "note": "Creation of magic bike mirror by Manufacturer2",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "0637WV788ZSJ4G66AQS01KYAGG",
+      "name": "design_create_mirror",
+      "note": "Groups mirror design and creation",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-02-23T13:18:20.134087Z",
+    "hasEnd": "2023-02-23T13:18:20.134087Z",
+    "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
     "name": "Creation_magic_bike_mirror",
     "nestedIn": null,
     "note": "Creation of magic bike mirror by Manufacturer2",
@@ -3474,16 +3969,47 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:21.039679Z",
-    "id": "0633DJ76D5A54P5SMAR1CB04HC",
+    "hasPointInTime": "2023-02-23T13:18:20.910852Z",
+    "id": "0637WV5Y8F3MXN92GW45ZY3M7G",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:20.623867Z",
-      "hasEnd": "2023-02-09T15:26:20.623867Z",
-      "id": "0633DJ74SFG3MVEW39PKT9HJAG",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "name": "Design_magic_mirror",
+                "note": "Design of magic mirror by Designer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "name": "Creation_magic_bike_mirror",
+                "note": "Creation of magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "name": "design_create_mirror",
+        "note": "Groups mirror design and creation",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:20.134087Z",
+      "hasEnd": "2023-02-23T13:18:20.134087Z",
+      "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
       "name": "Creation_magic_bike_mirror",
       "nestedIn": null,
       "note": "Creation of magic bike mirror by Manufacturer2",
@@ -3498,7 +4024,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3514,7 +4040,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3529,14 +4055,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0.0",
         "hasUnit": {
-          "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+          "id": "0637HHXT0JKJW88JSBXK3HY34C",
           "label": "kg",
           "symbol": "om2:kilogram"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3549,7 +4075,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3558,13 +4084,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ742V558WYJEM3TJTPDF4",
+      "id": "0637WV5SW2QCBTYHVVCK778TTG",
       "metadata": null,
       "name": "glass",
       "onhandQuantity": {
         "hasNumericalValue": "0.0",
         "hasUnit": {
-          "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+          "id": "0637HHXT0JKJW88JSBXK3HY34C",
           "label": "kg",
           "symbol": "om2:kilogram"
         }
@@ -3575,7 +4101,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3584,13 +4110,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "glass-8782",
+      "trackingIdentifier": "glass-6021",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "0.2",
       "hasUnit": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       }
@@ -3615,8 +4141,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:20.425178Z",
-    "id": "0633DJ742FQN9B4SYT3M88RBMG",
+    "hasPointInTime": "2023-02-23T13:18:19.770535Z",
+    "id": "0637WV5SVJWYG388T716VYG23W",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -3626,7 +4152,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3642,7 +4168,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3655,11 +4181,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       },
-      "id": "0630EG7QTHT6A4THHNQS99ECQG",
+      "id": "0637HMDVWBN6TKKDNCA8HXD4TG",
       "name": "glass",
       "note": "Glass for magic bike mirror",
       "resourceClassifiedAs": [
@@ -3670,14 +4196,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "0.0",
         "hasUnit": {
-          "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+          "id": "0637HHXT0JKJW88JSBXK3HY34C",
           "label": "kg",
           "symbol": "om2:kilogram"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3690,7 +4216,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3699,13 +4225,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ742V558WYJEM3TJTPDF4",
+      "id": "0637WV5SW2QCBTYHVVCK778TTG",
       "metadata": null,
       "name": "glass",
       "onhandQuantity": {
         "hasNumericalValue": "0.0",
         "hasUnit": {
-          "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+          "id": "0637HHXT0JKJW88JSBXK3HY34C",
           "label": "kg",
           "symbol": "om2:kilogram"
         }
@@ -3716,7 +4242,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8PC488H53XE30PW7YC7W",
+          "id": "0637HHXG5PT1DSSNXH42AG8NSC",
           "lat": "52.372773",
           "long": "4.8981243",
           "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3725,20 +4251,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "glass-8782",
+      "trackingIdentifier": "glass-6021",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "0.2",
       "hasUnit": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+      "id": "0637HHXG5PT1DSSNXH42AG8NSC",
       "lat": "52.372773",
       "long": "4.8981243",
       "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3754,14 +4280,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "0.0",
       "hasUnit": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+      "id": "0637HHXG5PT1DSSNXH42AG8NSC",
       "lat": "52.372773",
       "long": "4.8981243",
       "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3774,7 +4300,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3783,13 +4309,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ742V558WYJEM3TJTPDF4",
+    "id": "0637WV5SW2QCBTYHVVCK778TTG",
     "metadata": null,
     "name": "glass",
     "onhandQuantity": {
       "hasNumericalValue": "0.0",
       "hasUnit": {
-        "id": "0630EEW0V6ZT3A7E772MKMTEXG",
+        "id": "0637HHXT0JKJW88JSBXK3HY34C",
         "label": "kg",
         "symbol": "om2:kilogram"
       }
@@ -3800,7 +4326,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3809,7 +4335,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "glass-8782",
+    "trackingIdentifier": "glass-6021",
     "type": "EconomicResource"
   },
   {
@@ -3827,16 +4353,47 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:20.826452Z",
-    "id": "0633DJ75KAFZ4W76GQHA4Z9KXM",
+    "hasPointInTime": "2023-02-23T13:18:20.532002Z",
+    "id": "0637WV5WTVXKYAC25QTPF2W90R",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:20.623867Z",
-      "hasEnd": "2023-02-09T15:26:20.623867Z",
-      "id": "0633DJ74SFG3MVEW39PKT9HJAG",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "name": "Design_magic_mirror",
+                "note": "Design of magic mirror by Designer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "name": "Creation_magic_bike_mirror",
+                "note": "Creation of magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "name": "design_create_mirror",
+        "note": "Groups mirror design and creation",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:20.134087Z",
+      "hasEnd": "2023-02-23T13:18:20.134087Z",
+      "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
       "name": "Creation_magic_bike_mirror",
       "nestedIn": null,
       "note": "Creation of magic bike mirror by Manufacturer2",
@@ -3851,7 +4408,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3867,7 +4424,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -3882,14 +4439,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -3902,7 +4459,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -3911,13 +4468,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7355KNC4XRT90BHH170M",
+      "id": "0637WV5RA3GZJSW4TKAJ7V0C80",
       "metadata": null,
       "name": "magic mirror design",
       "onhandQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -3928,7 +4485,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -3937,13 +4494,13 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_mirror_design-1110",
+      "trackingIdentifier": "magic_mirror_design-9408",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -3968,8 +4525,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:20.190718Z",
-    "id": "0633DJ734SVWM8F1W1DDVBYV5R",
+    "hasPointInTime": "2023-02-23T13:18:19.371949Z",
+    "id": "0637WV5R9SHZW1S8QWJSM41GT8",
     "inputOf": null,
     "note": "produce design for magic mirror",
     "outputOf": {
@@ -3977,9 +4534,40 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:19.769401Z",
-      "hasEnd": "2023-02-09T15:26:19.769401Z",
-      "id": "0633DJ71J1D5KGT7NAJSDA4N7C",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "name": "Design_magic_mirror",
+                "note": "Design of magic mirror by Designer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "name": "Creation_magic_bike_mirror",
+                "note": "Creation of magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "name": "design_create_mirror",
+        "note": "Groups mirror design and creation",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:18.687724Z",
+      "hasEnd": "2023-02-23T13:18:18.687724Z",
+      "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
       "name": "Design_magic_mirror",
       "nestedIn": null,
       "note": "Design of magic mirror by Designer2",
@@ -3992,7 +4580,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4008,7 +4596,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4021,11 +4609,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       },
-      "id": "0633BMNQB944XK7Y3R4XZK6FBW",
+      "id": "0637HMDPNN710BTGZW49RT0EDG",
       "name": "magic_mirror_design",
       "note": "Repository for magic mirror design",
       "resourceClassifiedAs": [
@@ -4036,14 +4624,14 @@
       "accountingQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
       },
       "currentLocation": {
         "alt": "0",
-        "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4056,7 +4644,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4065,13 +4653,13 @@
         },
         "type": "Person"
       },
-      "id": "0633DJ7355KNC4XRT90BHH170M",
+      "id": "0637WV5RA3GZJSW4TKAJ7V0C80",
       "metadata": null,
       "name": "magic mirror design",
       "onhandQuantity": {
         "hasNumericalValue": "1",
         "hasUnit": {
-          "id": "0630EEW06KJBJJ5Z90FSG48004",
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
           "symbol": "om2:one"
         }
@@ -4082,7 +4670,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "06314G8J40HXMC7JK91B1KQ3G4",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
           "lat": "52.3767127",
           "long": "4.8990591",
           "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4091,20 +4679,20 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_mirror_design-1110",
+      "trackingIdentifier": "magic_mirror_design-9408",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "toLocation": {
       "alt": "0",
-      "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+      "id": "0637HHX3R6YTTHKET7GXW7RHSR",
       "lat": "52.3767127",
       "long": "4.8990591",
       "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4121,9 +4709,40 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "hasBeginning": "2023-02-09T15:26:19.769401Z",
-    "hasEnd": "2023-02-09T15:26:19.769401Z",
-    "id": "0633DJ71J1D5KGT7NAJSDA4N7C",
+    "groupedIn": {
+      "groupedIn": {
+        "id": "0637WV76T87G78V0ZTXB4PEXE4",
+        "name": "design_create_paint_package_mirror",
+        "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+      },
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+              "name": "Design_magic_mirror",
+              "note": "Design of magic mirror by Designer2",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+              "name": "Creation_magic_bike_mirror",
+              "note": "Creation of magic bike mirror by Manufacturer2",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "0637WV788ZSJ4G66AQS01KYAGG",
+      "name": "design_create_mirror",
+      "note": "Groups mirror design and creation",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-02-23T13:18:18.687724Z",
+    "hasEnd": "2023-02-23T13:18:18.687724Z",
+    "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
     "name": "Design_magic_mirror",
     "nestedIn": null,
     "note": "Design of magic mirror by Designer2",
@@ -4145,23 +4764,54 @@
     "effortQuantity": {
       "hasNumericalValue": "5",
       "hasUnit": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       }
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:19.960862Z",
-    "id": "0633DJ727X9C104WBKX0KT117C",
+    "hasPointInTime": "2023-02-23T13:18:19.019824Z",
+    "id": "0637WV5PXMPGN0G2F30A6TCVVW",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:19.769401Z",
-      "hasEnd": "2023-02-09T15:26:19.769401Z",
-      "id": "0633DJ71J1D5KGT7NAJSDA4N7C",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "name": "Design_magic_mirror",
+                "note": "Design of magic mirror by Designer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "name": "Creation_magic_bike_mirror",
+                "note": "Creation of magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "name": "design_create_mirror",
+        "note": "Groups mirror design and creation",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:18.687724Z",
+      "hasEnd": "2023-02-23T13:18:18.687724Z",
+      "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
       "name": "Design_magic_mirror",
       "nestedIn": null,
       "note": "Design of magic mirror by Designer2",
@@ -4176,7 +4826,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4192,7 +4842,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4205,11 +4855,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       },
-      "id": "0630EEWNQTH0PBW1EVP5YC0K6R",
+      "id": "0637HHYXEFC830WWZK8569A75G",
       "name": "design_work",
       "note": "Specification for design work",
       "resourceClassifiedAs": [
@@ -4228,14 +4878,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+      "id": "0637HHX3R6YTTHKET7GXW7RHSR",
       "lat": "52.3767127",
       "long": "4.8990591",
       "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4248,7 +4898,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4257,13 +4907,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ7355KNC4XRT90BHH170M",
+    "id": "0637WV5RA3GZJSW4TKAJ7V0C80",
     "metadata": null,
     "name": "magic mirror design",
     "onhandQuantity": {
       "hasNumericalValue": "1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -4274,7 +4924,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4283,7 +4933,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_mirror_design-1110",
+    "trackingIdentifier": "magic_mirror_design-9408",
     "type": "EconomicResource"
   },
   {
@@ -4291,14 +4941,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVXK0NDMXEFB0E5CZY29M",
+      "id": "0637HHXG5PT1DSSNXH42AG8NSC",
       "lat": "52.372773",
       "long": "4.8981243",
       "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -4311,7 +4961,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -4320,13 +4970,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ7777WWJPKQS4M18YE30G",
+    "id": "0637WV60TD3G833NW3KYPDVYP0",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -4337,7 +4987,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -4346,7 +4996,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-734",
+    "trackingIdentifier": "magic_bike_mirror-2894",
     "type": "EconomicResource"
   },
   {
@@ -4364,23 +5014,54 @@
     "effortQuantity": {
       "hasNumericalValue": "6",
       "hasUnit": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       }
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:21.639200Z",
-    "id": "0633DJ78SZSV02V961NYHD6X0M",
+    "hasPointInTime": "2023-02-23T13:18:22.386138Z",
+    "id": "0637WV647Z4X3NTC9TAHHJF3F4",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:21.444730Z",
-      "hasEnd": "2023-02-09T15:26:21.444730Z",
-      "id": "0633DJ7806TQ3CKYZ88444PRXW",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "name": "Painting_magic_bike_mirror",
+                "note": "Painting magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "name": "Packaging_magic_bike_mirror",
+                "note": "Packaging magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "name": "paint_package_mirror",
+        "note": "Groups mirror painting and packaging",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:22.032689Z",
+      "hasEnd": "2023-02-23T13:18:22.032689Z",
+      "id": "0637WV62MFCX1GJNS0Z1CANX3M",
       "name": "Painting_magic_bike_mirror",
       "nestedIn": null,
       "note": "Painting magic bike mirror by Manufacturer2",
@@ -4395,7 +5076,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -4411,7 +5092,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -4424,11 +5105,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       },
-      "id": "0633CP3YHXSDNZ2RM25NRTFGB0",
+      "id": "0637HME5R349MGNSFX9XG7PVB0",
       "name": "painting_work",
       "note": "Specification for painting work",
       "resourceClassifiedAs": [
@@ -4457,23 +5138,54 @@
     "effortQuantity": {
       "hasNumericalValue": "3",
       "hasUnit": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       }
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-09T15:26:22.852092Z",
-    "id": "0633DJ7DG053H2HR8715MBPDVG",
+    "hasPointInTime": "2023-02-23T13:18:23.923134Z",
+    "id": "0637WV6A1FCNKCMXEYY9WHQ4CR",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "hasBeginning": "2023-02-09T15:26:22.597748Z",
-      "hasEnd": "2023-02-09T15:26:22.597748Z",
-      "id": "0633DJ7CT6WG7YQD47YZDVY314",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "name": "design_create_paint_package_mirror",
+          "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "name": "Painting_magic_bike_mirror",
+                "note": "Painting magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "name": "Packaging_magic_bike_mirror",
+                "note": "Packaging magic bike mirror by Manufacturer2",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "name": "paint_package_mirror",
+        "note": "Groups mirror painting and packaging",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-02-23T13:18:23.580534Z",
+      "hasEnd": "2023-02-23T13:18:23.580534Z",
+      "id": "0637WV68P9ARA2RW51WSMT9V4W",
       "name": "Packaging_magic_bike_mirror",
       "nestedIn": null,
       "note": "Packaging magic bike mirror by Manufacturer2",
@@ -4488,7 +5200,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -4504,7 +5216,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8PC488H53XE30PW7YC7W",
+        "id": "0637HHXG5PT1DSSNXH42AG8NSC",
         "lat": "52.372773",
         "long": "4.8981243",
         "mappableAddress": "Nieuwmarkt 4, 1012 CR Amsterdam, Netherlands",
@@ -4517,11 +5229,11 @@
     "resourceConformsTo": {
       "defaultUnitOfEffort": null,
       "defaultUnitOfResource": {
-        "id": "0630EEW2D2D8KVY5JX45Q7DVBW",
+        "id": "0637HHXWVB2N399YQ9AYYRFVQ4",
         "label": "h",
         "symbol": "om2:hour"
       },
-      "id": "0633CP43KPS5N8A6JY0WM8F8C8",
+      "id": "0637HMECRCSTMZSFPX9KG3H74W",
       "name": "packaging_work",
       "note": "Specification for packaging work",
       "resourceClassifiedAs": [
@@ -4540,14 +5252,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVTZKNXRW7NBM3TF2VP5W",
+      "id": "0637HHX3R6YTTHKET7GXW7RHSR",
       "lat": "52.3767127",
       "long": "4.8990591",
       "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4560,7 +5272,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4569,13 +5281,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ7FTSAAKYYE70TK5F39PG",
+    "id": "0637WV6EJF17ZC5KVR70PREF08",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
       "hasNumericalValue": "0",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -4586,7 +5298,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8J40HXMC7JK91B1KQ3G4",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
         "lat": "52.3767127",
         "long": "4.8990591",
         "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
@@ -4595,7 +5307,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-734",
+    "trackingIdentifier": "magic_bike_mirror-2894",
     "type": "EconomicResource"
   },
   {
@@ -4603,14 +5315,14 @@
     "accountingQuantity": {
       "hasNumericalValue": "-1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0630EEVWFTEV0GPXCSXQNVHNB8",
+      "id": "0637HHX9F65VEX7WVMKCK7W0MW",
       "lat": "51.9650382",
       "long": "4.0133683",
       "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -4623,7 +5335,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -4632,13 +5344,13 @@
       },
       "type": "Person"
     },
-    "id": "0633DJ7GNMEMFH8DR8VSKG9DG0",
+    "id": "0637WV6G0AEFC2DZ46P1K8A75C",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
       "hasNumericalValue": "-1",
       "hasUnit": {
-        "id": "0630EEW06KJBJJ5Z90FSG48004",
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
         "symbol": "om2:one"
       }
@@ -4649,7 +5361,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "06314G8M6H3KYY9AET5B1RJR7C",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
         "lat": "51.9650382",
         "long": "4.0133683",
         "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
@@ -4658,7 +5370,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-734",
+    "trackingIdentifier": "magic_bike_mirror-2894",
     "type": "EconomicResource"
   }
 ]

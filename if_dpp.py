@@ -15,12 +15,13 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import json
+import inspect
 from pdb import set_trace
 import copy
 
 from if_consts import MAX_DEPTH
 from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, \
-    PROCESS_FRAG, PROCESSSPEC_FRAG, EVENT_FRAG, RESSPEC_FRAG, UNIT_FRAG
+    PROCESS_FRAG, PROCESSGRP_FRAG, PROCESSSPEC_FRAG, EVENT_FRAG, RESSPEC_FRAG, UNIT_FRAG
 from if_lib import send_signed
 
 DEBUG_trace_query = False
@@ -44,7 +45,7 @@ def trace_query(id, user_data, endpoint):
       }
     }
 
-    """ + AGENT_FRAG + LOCATION_FRAG +  RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
+    """ + AGENT_FRAG + LOCATION_FRAG +  RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -63,7 +64,7 @@ def trace_query(id, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     return res_json['data']['economicResource']['trace']
 
@@ -184,7 +185,7 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     # dpp_item = {}    
     # fill_res(dpp_item, res_json['data']['economicResource'])
@@ -248,7 +249,8 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
             }
           }
         }
-    """ + EVENT_FRAG +  LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + RESSPEC_FRAG + RESOURCE_FRAG + UNIT_FRAG + PROCESSSPEC_FRAG
+    """ + EVENT_FRAG +  LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + \
+        RESSPEC_FRAG + RESOURCE_FRAG + UNIT_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -267,7 +269,7 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     # dpp_item = {}    
     # fill_event(dpp_item, res_json['data']['economicEvent'])
@@ -330,7 +332,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
         }
       }
     }
-    """ + PROCESS_FRAG + PROCESSSPEC_FRAG
+    """ + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
     
@@ -349,7 +351,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     # dpp_item = {}    
     # fill_process(dpp_item, res_json['data']['process'])
@@ -371,9 +373,9 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
             ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)
 
 
-DEBUG_get_ddp = True
+DEBUG_get_ddp = False
 
-def get_ddp(res_id, user_data, endpoint):
+def get_dpp(res_id, user_data, endpoint):
 
     variables = {
         "id": res_id
@@ -404,7 +406,7 @@ def get_ddp(res_id, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     be_dpp = res_json['data']['economicResource']['traceDpp']
     

@@ -13,7 +13,7 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
+import inspect
 import plotly.graph_objects as go
 from pdb import set_trace
 
@@ -78,7 +78,7 @@ def calc_quantity(dpp_item):
             print("No quantity specified for EconomicResource")
     else:
         print(f"Unkwnon type {dpp_item['type']}")
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
     
     quantity = max(quantity,0.1)
     return quantity

@@ -16,6 +16,7 @@
 
 # Let's start with some lovely imports that should have been installed if not available by default
 import json
+import inspect
 from datetime import datetime, timezone
 from pdb import set_trace
 
@@ -25,7 +26,7 @@ from if_lib import send_signed
 from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS
 from if_consts import EVENT_FRAG, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, \
     INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, PROCESS_FRAG, PROCESSSPEC_FRAG, \
-        UNIT_FRAG, RESSPEC_FRAG
+        UNIT_FRAG, RESSPEC_FRAG, PROCESSGRP_FRAG
 
 
 DEBUG_create_proposal = False
@@ -50,7 +51,8 @@ def create_proposal(proposal, user_data, endpoint):
                         ...proposal
                     }
                 }
-            }""" + PROPOSAL_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+            }""" + PROPOSAL_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + \
+                QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -61,7 +63,7 @@ def create_proposal(proposal, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_create_proposal:
         print("Query")
@@ -106,7 +108,7 @@ def show_proposal(user_data, id, endpoint):
         ...proposal
       }
     }""" + PROPOSAL_FRAG + PROPINT_FRAG + LOCATION_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + RESOURCE_FRAG + \
-        QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+        QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -117,7 +119,7 @@ def show_proposal(user_data, id, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_show_proposal:
         print("Query")
@@ -172,7 +174,7 @@ def create_intent(intent, user_data, res_spec_data, endpoint):
                     }
                 }
             }""" + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + \
-                QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+                QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -183,7 +185,7 @@ def create_intent(intent, user_data, res_spec_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_create_intent:
         print("Query")
@@ -228,18 +230,15 @@ def get_intent(name, intent_data, note, user_data, res_spec_data, provider, rece
     
 
     if provider != None and receiver != None:
-        print("At max one of provider and receiver must be specified")
-        assert 1==2
+        raise Exception("At max one of provider and receiver must be specified")
     if provider == None and receiver == None:
-        print("At least one of provider or receiver must be specified")
-        assert 1==2
+        raise Exception("At least one of provider or receiver must be specified")
         
     cur_intent['provider'] = provider
     cur_intent['receiver'] = receiver
     if not ((hasPointInTime != None and not (hasBeginning!= None or hasEnd != None)) or \
         ((hasBeginning!= None and hasEnd != None) and not hasPointInTime != None)):
-        print("Specify either hasPointInTime or  hasBeginning anf hasEnd")
-        assert 1==2
+        raise Exception("Specify either hasPointInTime or  hasBeginning anf hasEnd")
     cur_intent['hasBeginning'] = hasBeginning
     cur_intent['hasEnd'] = hasEnd
     cur_intent['hasPointInTime'] = hasPointInTime
@@ -276,7 +275,7 @@ def create_proposedIntent(cur_propint, user_data, endpoint):
             }
         }
     }""" + PROPOSAL_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + \
-        RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+        RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -287,7 +286,7 @@ def create_proposedIntent(cur_propint, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_create_proposedIntent:
         print("Query")
@@ -349,7 +348,7 @@ def create_satisfaction(cur_sat, user_data, endpoint):
             }
         }
     }""" + EVENT_FRAG + UNIT_FRAG + RESSPEC_FRAG + INTENT_FRAG + PROPINT_FRAG + AGENT_FRAG + LOCATION_FRAG + \
-        QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+        QUANTITY_FRAG + RESOURCE_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG +PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -360,7 +359,7 @@ def create_satisfaction(cur_sat, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_create_satisfaction:
         print("Query")

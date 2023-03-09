@@ -16,12 +16,9 @@
 
 # Let's start with some lovely imports that should have been installed if not available by default
 import json
-import requests
-import os
+import inspect
 from zenroom import zenroom
-import base64
 from datetime import datetime, timezone
-import random
 from pdb import set_trace
 
 
@@ -49,7 +46,7 @@ def create_processgrp(cur_prgp, user_data, endpoint):
                 ...processgroup
             }
         }
-    }""" + PROCESSGRP_FRAG + PROCESS_FRAG + PROCESSSPEC_FRAG
+    }""" + PROCESSGRP_FRAG 
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -60,7 +57,7 @@ def create_processgrp(cur_prgp, user_data, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_create_processgrp:
         print("Query")
@@ -72,6 +69,44 @@ def create_processgrp(cur_prgp, user_data, endpoint):
 
 
     cur_prgp['id'] = res_json['data']['createProcessGroup']['processGroup']['id']
+
+
+DEBUG_query_processgrp = False
+def query_processgrp(prgp_id, user_data, endpoint):
+
+    variables = {
+        "id": prgp_id
+    }
+    
+    query = """query($id:ID!){
+        processGroup(id: $id){
+            ...processgroup
+        }
+    }""" + PROCESSGRP_FRAG
+
+    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
+    if 'errors' in res_json:
+        print("Error message")
+        print(json.dumps(res_json['errors'], indent=2))
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
+
+    if DEBUG_query_processgrp:
+        print("Query")
+        print(query)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(json.dumps(res_json, indent=2))   
+
+
+    cur_prgp = res_json['data']['processGroup']
+    
+    return cur_prgp
 
 
 def get_processgrp(name, user_data, note, processgrp_data, endpoint, processgrp_id=None):
@@ -100,7 +135,7 @@ def get_processgrp(name, user_data, note, processgrp_data, endpoint, processgrp_
                 return
         # we should not get here
         print(f"Parent {processgrp_id} not found")
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
 
 
@@ -120,7 +155,7 @@ def insert_procingrp(user_data, processgrp, process, endpoint):
                 ...process
             }
         }
-    }""" + PROCESS_FRAG + PROCESSSPEC_FRAG
+    }""" + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
     res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
@@ -131,7 +166,7 @@ def insert_procingrp(user_data, processgrp, process, endpoint):
         print(query)
         print("Variables")
         print(variables)
-        assert 1 == 2
+        raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     if DEBUG_insert_procingrp:
         print("Query")
@@ -178,3 +213,50 @@ def insert_procingrp(user_data, processgrp, process, endpoint):
 #     }
 #   }
 # }
+# {k: v for k, v in dpp.items() if k not in ['children']}
+
+def fill_prcgrp(id, processgrp_data, user_data, endpoint):
+    prg_grp = query_processgrp(id, user_data, endpoint)
+    
+    processgrp_data[prg_grp['name']] = {}
+    in_obj = processgrp_data[prg_grp['name']]
+    in_obj['id'] = prg_grp['id']
+    in_obj['name'] = prg_grp['name']
+    in_obj['note'] = prg_grp['note']
+    in_obj['type'] = prg_grp['type']
+    
+    # breakpoint()
+    in_obj['groups'] = [node['node']['id'] for node in prg_grp['groups']['edges']]
+    if prg_grp['groupedIn'] != None:
+        in_obj['groupedIn'] = prg_grp['groupedIn']['id']
+        fill_prcgrp(in_obj['groupedIn'], processgrp_data, user_data, endpoint)
+    else: 
+        in_obj['groupedIn'] = None
+
+def find_procgrp(dpp, processgrp_data, user_data, endpoint):
+    present = False
+    if dpp['type'] == "Process":
+        # breakpoint()
+        if 'grouped_in_id' in dpp:
+            id = dpp['grouped_in_id']
+        elif 'groupedIn' in dpp:
+            if dpp['groupedIn'] != None:
+                id = dpp['groupedIn']['id']
+            else:
+                id = None
+        else:
+            raise Exception(f"Group keys not present in process {dpp['name']}")
+        if id != None:
+            for key in processgrp_data.keys():
+                if processgrp_data[key]['id'] == id:
+                    present = True
+                    # print(f"Process: {dpp['name']}, Group present: {processgrp_data[key]['name']}")
+                    # breakpoint()
+                    break
+            if not present:
+                fill_prcgrp(id, processgrp_data, user_data, endpoint)
+                # print(f"Process: {dpp['name']}, Group not present: {prg_grp['name']}")
+
+    for child in dpp['children']:
+        find_procgrp(child, processgrp_data, user_data, endpoint)
+
