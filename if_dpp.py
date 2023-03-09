@@ -396,7 +396,7 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
                       dpp_item['children'], depth, visited, endpoint)
 
 
-DEBUG_get_ddp = True
+DEBUG_get_ddp = False
 
 
 def get_dpp(res_id, user_data, endpoint):
