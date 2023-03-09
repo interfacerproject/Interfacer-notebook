@@ -59,7 +59,7 @@ This repository contains notebooks for several use cases:
 
 2.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/gownshirt.ipynb) defined in this [file](https://github.com/interfacerproject/Interfacer-notebook/blob/main/gownshirt_flow.1.1.txt).
 3.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/IFUsersFlows.ipynb) corresponding to the [Interfacer](https://www.interfacerproject.eu/) project's front-end [here](https://interfacer-gui-staging.dyne.org/).
-4.  a [flow] (https://github.com/interfacerproject/Interfacer-notebook/blob/main/libre-solar.ipynb) corresponding to the [Libre Solar](https://libre.solar/) project.
+4.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/libre-solar.ipynb) corresponding to the [Libre Solar](https://libre.solar/) project.
 5.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/IFServices.ipynb) including proposals and grouping.
 
 # [LIVE DEMO](https://interfacerproject.github.io/Interfacer-notebo)
