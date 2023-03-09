@@ -113,15 +113,4 @@ def save_traces(use_case, tot_dpp, trace, be_dpp, event_seq, process_grps:dict={
         file = Path(my_dir, f'{use_case}_proc_grp.json')
         with open(file, "w") as f:
             f.write(json.dumps(process_grps, indent=2))
-    
-def differentiate_resources(dpp_item):
-    if dpp_item['type'] == 'EconomicResource':
-        for child in dpp_item['children']:
-            # breakpoint()
-            if child['name'] == 'modify':
-                # breakpoint()
-                dpp_item['id'] = dpp_item['id'] + child['id']
-                break
-    for child in dpp_item['children']:
-        differentiate_resources(child)
 

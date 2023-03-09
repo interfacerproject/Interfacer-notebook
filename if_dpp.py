@@ -26,12 +26,17 @@ from if_lib import send_signed
 
 DEBUG_trace_query = False
 
+
 def trace_query(id, user_data, endpoint):
+    """
+        This function encapsulate the trace
+        algorithm implemented by the back-end
+    """
 
     variables = {
         "id": id
     }
-    
+
     query = """query($id:ID!) {
     economicResource(id:$id) {
         trace {
@@ -45,17 +50,18 @@ def trace_query(id, user_data, endpoint):
       }
     }
 
-    """ + AGENT_FRAG + LOCATION_FRAG +  RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
+    """ + AGENT_FRAG + LOCATION_FRAG + RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
 
-    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
+    res_json = send_signed(
+        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
     if DEBUG_trace_query:
         print("Query")
         print(query)
         print("Variables")
         print(variables)
         print("Result")
-        print(json.dumps(res_json, indent=2))   
+        print(json.dumps(res_json, indent=2))
 
     if 'errors' in res_json:
         print("Error message")
@@ -69,89 +75,95 @@ def trace_query(id, user_data, endpoint):
     return res_json['data']['economicResource']['trace']
 
 
+# VERBOSE = True
 
-VERBOSE = True
-def fill_loc(a_dpp_item, item, field):
-    if item[field] == None:
-        return
-    loc_item = item[field]
-    a_dpp_item[field] = {}
-    for key in loc_item.keys():
-        a_dpp_item[field][key] = loc_item[key]
-    
-def fill_quantity(a_dpp_item, item, field):
-    if item[field] != None:
-        quan_item = item[field]
-        a_dpp_item[field] = {}
-        for key in quan_item.keys():
-            a_dpp_item[field][key] = quan_item[key]
 
-def fill_agent(a_dpp_item, item):
-    a_dpp_item['id'] = item['id']
-    a_dpp_item['name'] = item['name']
-    a_dpp_item['type'] = item['__typename']
-    a_dpp_item['note'] = item['note']
-    fill_loc(a_dpp_item, item, 'primaryLocation')
+# def fill_loc(a_dpp_item, item, field):
+#     if item[field] == None:
+#         return
+#     loc_item = item[field]
+#     a_dpp_item[field] = {}
+#     for key in loc_item.keys():
+#         a_dpp_item[field][key] = loc_item[key]
 
-    # set_trace()
 
-def fill_event(a_dpp_item, item):
-    assert item['__typename'] == 'EconomicEvent'
-    a_dpp_item['id'] = item['id']
-    a_dpp_item['name'] = item['action']['id']
-    a_dpp_item['type'] = item['__typename']
-#     breakpoint()
-    if VERBOSE:
-        a_dpp_item['provider'] = {}
-        fill_agent(a_dpp_item['provider'], item['provider'])
-        a_dpp_item['receiver'] = {}
-        fill_agent(a_dpp_item['receiver'], item['receiver'])
-        fill_loc(a_dpp_item, item, 'atLocation')
-        fill_loc(a_dpp_item, item, 'toLocation')
-        if 'effortQuantity' in item and item['effortQuantity'] != None:
-            fill_quantity(a_dpp_item, item, 'effortQuantity')
-        elif 'resourceQuantity' in item and item['resourceQuantity'] != None:
-            fill_quantity(a_dpp_item, item, 'resourceQuantity')
-#         elif 'resourceInventoriedAs' in item and item['resourceInventoriedAs'] != None:
-#             fill_quantity(a_dpp_item, item['resourceInventoriedAs'], 'onhandQuantity')
-        
-def fill_res(a_dpp_item, item):
-#     print(item['__typename'])
-    assert item['__typename'] == 'EconomicResource'
-    a_dpp_item['id'] = item['id']
-    a_dpp_item['name'] = item['name']
-    a_dpp_item['trackingIdentifier'] = item['trackingIdentifier']
-    a_dpp_item['type'] = item['__typename']
-    if VERBOSE:
-        a_dpp_item['primaryAccountable'] = item['primaryAccountable']['name']
-        a_dpp_item['custodian'] = item['custodian']['name']
-        a_dpp_item['metadata'] = item['metadata']
-        fill_loc(a_dpp_item, item, 'currentLocation')
-        fill_quantity(a_dpp_item, item, 'accountingQuantity')
-        fill_quantity(a_dpp_item, item, 'onhandQuantity')
+# def fill_quantity(a_dpp_item, item, field):
+#     if item[field] != None:
+#         quan_item = item[field]
+#         a_dpp_item[field] = {}
+#         for key in quan_item.keys():
+#             a_dpp_item[field][key] = quan_item[key]
 
-def fill_process(a_dpp_item, item):
-    assert item['__typename'] == 'Process'
-    a_dpp_item['id'] = item['id']
-    a_dpp_item['name'] = item['name']
-    a_dpp_item['type'] = item['__typename']
-    if VERBOSE:
-        a_dpp_item['note'] = item['note']
 
+# def fill_agent(a_dpp_item, item):
+#     a_dpp_item['id'] = item['id']
+#     a_dpp_item['name'] = item['name']
+#     a_dpp_item['type'] = item['__typename']
+#     a_dpp_item['note'] = item['note']
+#     fill_loc(a_dpp_item, item, 'primaryLocation')
+
+#     # set_trace()
+
+
+# def fill_event(a_dpp_item, item):
+#     assert item['__typename'] == 'EconomicEvent'
+#     a_dpp_item['id'] = item['id']
+#     a_dpp_item['name'] = item['action']['id']
+#     a_dpp_item['type'] = item['__typename']
+# #     breakpoint()
+#     if VERBOSE:
+#         a_dpp_item['provider'] = {}
+#         fill_agent(a_dpp_item['provider'], item['provider'])
+#         a_dpp_item['receiver'] = {}
+#         fill_agent(a_dpp_item['receiver'], item['receiver'])
+#         fill_loc(a_dpp_item, item, 'atLocation')
+#         fill_loc(a_dpp_item, item, 'toLocation')
+#         if 'effortQuantity' in item and item['effortQuantity'] != None:
+#             fill_quantity(a_dpp_item, item, 'effortQuantity')
+#         elif 'resourceQuantity' in item and item['resourceQuantity'] != None:
+#             fill_quantity(a_dpp_item, item, 'resourceQuantity')
+# #         elif 'resourceInventoriedAs' in item and item['resourceInventoriedAs'] != None:
+# #             fill_quantity(a_dpp_item, item['resourceInventoriedAs'], 'onhandQuantity')
+
+
+# def fill_res(a_dpp_item, item):
+#     #     print(item['__typename'])
+#     assert item['__typename'] == 'EconomicResource'
+#     a_dpp_item['id'] = item['id']
+#     a_dpp_item['name'] = item['name']
+#     a_dpp_item['trackingIdentifier'] = item['trackingIdentifier']
+#     a_dpp_item['type'] = item['__typename']
+#     if VERBOSE:
+#         a_dpp_item['primaryAccountable'] = item['primaryAccountable']['name']
+#         a_dpp_item['custodian'] = item['custodian']['name']
+#         a_dpp_item['metadata'] = item['metadata']
+#         fill_loc(a_dpp_item, item, 'currentLocation')
+#         fill_quantity(a_dpp_item, item, 'accountingQuantity')
+#         fill_quantity(a_dpp_item, item, 'onhandQuantity')
+
+
+# def fill_process(a_dpp_item, item):
+#     assert item['__typename'] == 'Process'
+#     a_dpp_item['id'] = item['id']
+#     a_dpp_item['name'] = item['name']
+#     a_dpp_item['type'] = item['__typename']
+#     if VERBOSE:
+#         a_dpp_item['note'] = item['note']
 
 
 DEBUG_er_before = False
 
+
 def er_before(id, user_data, dpp_children, depth, visited, endpoint):
 
     if depth > MAX_DEPTH:
-        return
+        raise Exception(f"Max depth reached in function {inspect.stack()[0][3]}")
     depth += 1
 
     variables = {
         "id": id
     }
-    
+
     query = """query($id:ID!) {
         economicResource(id:$id) {
             ...resource
@@ -168,15 +180,16 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
     }
     """ + RESOURCE_FRAG + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG
 
-    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
+    res_json = send_signed(
+        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
     if DEBUG_er_before:
         print("Query")
         print(query)
         print("Variables")
         print(variables)
         print("Result")
-        print(json.dumps(res_json, indent=2))   
+        print(json.dumps(res_json, indent=2))
 
     if 'errors' in res_json:
         print("Error message")
@@ -187,46 +200,49 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(variables)
         raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
-    # dpp_item = {}    
+    # dpp_item = {}
     # fill_res(dpp_item, res_json['data']['economicResource'])
     dpp_item = copy.deepcopy(res_json['data']['economicResource'])
     dpp_item.pop('previous')
     dpp_item['children'] = []
-    
+
     dpp_children.append(dpp_item)
-    
+
     events = res_json['data']['economicResource']['previous']
     while events != []:
         # We get the first event
         event = events.pop(0)
-        # This must be of type EconomicEvent since the call only returns that             
+        # This must be of type EconomicEvent since the call only returns that
         assert event['__typename'] == "EconomicEvent"
         # We include the raise event as it can be reached from more branches
-        # and it is assumed to be the starting point        
+        # and it is assumed to be the starting point
 #         if not event['action']['id'] == 'raise':
         while event['id'] in visited:
-#                breakpoint()
-            if DEBUG_er_before:
-                print(f"id {event['id']} already in visited")
+            #                breakpoint()
+            # if DEBUG_er_before:
+            print(f"id {event['id']} already in visited in {inspect.stack()[0][3]}")
             if events == []:
                 return
             event = events.pop(0)
         visited.add(event['id'])
-            
-        ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)         
+
+        ee_before(event['id'], user_data, dpp_item['children'],
+                  depth, visited, endpoint)
+
 
 DEBUG_ee_before = False
+
 
 def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
 
     if depth > MAX_DEPTH:
-        return
+        raise Exception(f"Max depth reached in function {inspect.stack()[0][3]}")
     depth += 1
 
     variables = {
         "id": id
     }
-    
+
     query = """query($id:ID!) {
         economicEvent(id:$id) {
             ...event
@@ -249,18 +265,19 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
             }
           }
         }
-    """ + EVENT_FRAG +  LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + \
+    """ + EVENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + AGENT_FRAG + ACTION_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + \
         RESSPEC_FRAG + RESOURCE_FRAG + UNIT_FRAG + PROCESSSPEC_FRAG
 
-    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
+    res_json = send_signed(
+        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
     if DEBUG_ee_before:
         print("Query")
         print(query)
         print("Variables")
         print(variables)
         print("Result")
-        print(json.dumps(res_json, indent=2))   
+        print(json.dumps(res_json, indent=2))
 
     if 'errors' in res_json:
         print("Error message")
@@ -271,14 +288,14 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(variables)
         raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
-    # dpp_item = {}    
+    # dpp_item = {}
     # fill_event(dpp_item, res_json['data']['economicEvent'])
     dpp_item = copy.deepcopy(res_json['data']['economicEvent'])
     # Add a name field which events do not have
     dpp_item['name'] = res_json['data']['economicEvent']['action']['id']
     dpp_item.pop('previous')
     dpp_item['children'] = []
-    
+
     dpp_children.append(dpp_item)
 
     pf_items = res_json['data']['economicEvent']['previous']
@@ -293,31 +310,35 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
     if pf_items != []:
         pf_item = pf_items[0]
         if pf_item['id'] in visited:
-            print(f"id {pf_item['id']} already in visited")
+            print(f"id {pf_item['id']} already in visited in {inspect.stack()[0][3]}")
             return
 
         if pf_item['__typename'] == "EconomicEvent":
             visited.add(pf_item['id'])
-            ee_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
+            ee_before(pf_item['id'], user_data,
+                      dpp_item['children'], depth, visited, endpoint)
         if pf_item['__typename'] == "EconomicResource":
-            er_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
+            er_before(pf_item['id'], user_data,
+                      dpp_item['children'], depth, visited, endpoint)
         if pf_item['__typename'] == "Process":
             visited.add(pf_item['id'])
-            pr_before(pf_item['id'], user_data, dpp_item['children'], depth, visited, endpoint)
+            pr_before(pf_item['id'], user_data,
+                      dpp_item['children'], depth, visited, endpoint)
 
 
 DEBUG_pr_before = False
 
+
 def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
 
     if depth > MAX_DEPTH:
-        return
+        raise Exception(f"Max depth reached in function {inspect.stack()[0][3]}")
     depth += 1
 
     variables = {
         "id": id
     }
-    
+
     query = """query($id:ID!) {
       process(id:$id) {
           ...process
@@ -334,15 +355,16 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
     }
     """ + PROCESS_FRAG + PROCESSGRP_FRAG + PROCESSSPEC_FRAG
 
-    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
+    res_json = send_signed(
+        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
     if DEBUG_pr_before:
         print("Query")
         print(query)
         print("Variables")
         print(variables)
         print("Result")
-        print(json.dumps(res_json, indent=2))   
+        print(json.dumps(res_json, indent=2))
 
     if 'errors' in res_json:
         print("Error message")
@@ -353,12 +375,12 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
         print(variables)
         raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
-    # dpp_item = {}    
+    # dpp_item = {}
     # fill_process(dpp_item, res_json['data']['process'])
     dpp_item = copy.deepcopy(res_json['data']['process'])
     dpp_item.pop('previous')
     dpp_item['children'] = []
-    
+
     dpp_children.append(dpp_item)
 
     events = res_json['data']['process']['previous']
@@ -367,20 +389,22 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
             # This must be of type EconomicEvent since the call only returns that
             assert event['__typename'] == "EconomicEvent"
             if event['id'] in visited:
-                print(f"id {event['id']} already in visited")
+                print(f"id {event['id']} already in visited in {inspect.stack()[0][3]}")
                 continue
             visited.add(event['id'])
-            ee_before(event['id'], user_data, dpp_item['children'], depth, visited, endpoint)
+            ee_before(event['id'], user_data,
+                      dpp_item['children'], depth, visited, endpoint)
 
 
-DEBUG_get_ddp = False
+DEBUG_get_ddp = True
+
 
 def get_dpp(res_id, user_data, endpoint):
 
     variables = {
         "id": res_id
     }
-    
+
     query = """query($id:ID!){
         economicResource(id: $id) {
             traceDpp
@@ -388,9 +412,9 @@ def get_dpp(res_id, user_data, endpoint):
     }
     """
 
-    
-    res_json = send_signed(query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
-    
+    res_json = send_signed(
+        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+
     if DEBUG_get_ddp:
         print("Query")
         print(query)
@@ -398,7 +422,7 @@ def get_dpp(res_id, user_data, endpoint):
         print(variables)
         print("Result")
         print(json.dumps(res_json, indent=2))
-        
+
     if 'errors' in res_json:
         print("Error message")
         print(json.dumps(res_json['errors'], indent=2))
@@ -409,28 +433,43 @@ def get_dpp(res_id, user_data, endpoint):
         raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     be_dpp = res_json['data']['economicResource']['traceDpp']
-    
+
     return be_dpp
+
 
 BANNER = "#" * 80
 
-def get_nodes(item, assigned):
-    if item['id'] in assigned:
-        assigned[item['id']]['count'] += 1
+
+def list_nodes(item, assigned):
+    """
+        This function assign each node to a dict
+        with the count of how many times the node is present
+        in the dpp.
+    """
+    id = item['id'] if 'id' in item else item['node']['id']
+    if id in assigned:
+        assigned[id]['count'] += 1
     else:
-        assigned[item['id']] = {
+        # if 'node' in item and 'name' not in item['node']:
+        #     set_trace()
+        assigned[id] = {
             'count': 1,
-            'type' : item['type'],
-            'name' : item['name'],
+            'type': item['type'],
+            'name': item['name'] if 'name' in item else item['node']['name'] if 'name' in item['node'] else item['node']['action_id'],
         }
 
     nr_ch = len(item['children'])
 
     for ch in range(nr_ch):
         ch_dpp = item['children'][ch]
-        get_nodes(ch_dpp, assigned)
-    
-def check_duplicates(trace, events, assigned):
+        list_nodes(ch_dpp, assigned)
+
+
+def check_duplicates(trace, events, fe_assigned, be_assigned):
+    """
+        This function looks at the four types of trace
+        and check for duplicates
+    """
     print(BANNER)
     print("Check whether there are any duplicated trace items")
     item_ids = {}
@@ -439,7 +478,8 @@ def check_duplicates(trace, events, assigned):
             item_ids[item['id']] = 1
         else:
             item_ids[item['id']] += 1
-            print(f"Item {item['id']} of type {item['__typename']} at pos {j} is a duplicate")
+            print(
+                f"Item {item['id']} of type {item['__typename']} at pos {j} is a duplicate")
 
     print(BANNER)
     print("Check whether there are any duplicated events")
@@ -450,22 +490,37 @@ def check_duplicates(trace, events, assigned):
             events_proc_ids[id] = 1
         else:
             events_proc_ids[id] += 1
-            print(f"{'Event' if 'event_id' in evt_prc else 'Process'} {id} with {'action' if 'event_id' in evt_prc else 'name'} {evt_prc['action'] if 'event_id' in evt_prc else evt_prc['name']} at pos {i} is a duplicate")
+            print(
+                f"{'Event' if 'event_id' in evt_prc else 'Process'} {id} with {'action' if 'event_id' in evt_prc else 'name'} {evt_prc['action'] if 'event_id' in evt_prc else evt_prc['name']} at pos {i} is a duplicate")
 
     print(BANNER)
-    print("Check whether there are any duplicated in dpp")
-    for id in assigned.keys():
-        el = assigned[id]
+    print("Check whether there are any duplicated nodes in front-end dpp")
+    for id in fe_assigned.keys():
+        el = fe_assigned[id]
         if el['count'] > 1:
-            print(f"Element {el['name']} with id {id} with type {el['type']} has {el['count']-1} duplicates")
-    
+            print(
+                f"Element {el['name']} with id {id} with type {el['type']} has {el['count']-1} duplicates")
+
+    print(BANNER)
+    print("Check whether there are any duplicated nodes in back-end dpp")
+    for id in be_assigned.keys():
+        el = be_assigned[id]
+        if el['count'] > 1:
+            print(
+                f"Element {el['name']} with id {id} with type {el['type']} has {el['count']-1} duplicates")
 
 def check_trace_events(trace, events):
-    # we reverse the events to have last in first out 
+    """
+        This function compares the trace to the event list,
+        which is not useful when looking whether trace items are in events,
+        as the latter misses all resources, but it can be usefull to see
+        whether all items from events are in the trace as they should.
+    """
+    # we reverse the events to have last in first out
     events.reverse()
 
     print(BANNER)
-    print("Where are trace items in the events?")
+    print("Are trace items in the events?")
     for j, item in enumerate(trace):
         found = False
         name = item['name'] if 'name' in item else item['action']['id']
@@ -473,24 +528,25 @@ def check_trace_events(trace, events):
         for i, evt_prc in enumerate(events):
             id = evt_prc['event_id'] if 'event_id' in evt_prc else evt_prc['process_id']
             if item['id'] == id:
-                print(f"{pref} at pos {j} found at pos {i}")
+                # print(f"{pref} at pos {j} found at pos {i}")
                 found = True
         if not found:
             print(f"NOT FOUND: {pref}")
 
     print(BANNER)
-    print("Where are events in the trace?")
+    print("Are events in the trace?")
     for i, evt_prc in enumerate(events):
         found = False
         id = evt_prc['event_id'] if 'event_id' in evt_prc else evt_prc['process_id']
         name = evt_prc['action'] if 'event_id' in evt_prc else evt_prc['name']
         pref = f'{"Event" if "event_id" in evt_prc else "Process"} {name} with id {id}'
-        for j,item in enumerate(trace):
+        for j, item in enumerate(trace):
             if item['id'] == id:
-                print(f'{pref} pos {i} found at pos {j}')
+                # print(f'{pref} pos {i} found at pos {j}')
                 found = True
         if not found:
             print(f"NOT FOUND: {pref}")
+
 
 def check_trace_dpp(trace, assigned):
     print(BANNER)
@@ -508,14 +564,16 @@ def check_trace_dpp(trace, assigned):
         el = assigned[id]
         pref = f"Element {el['name']} with id {id} of type {el['type']}"
         found = False
-        for j,item in enumerate(trace):
+        for j, item in enumerate(trace):
             if item['id'] == id:
-                print(f"{pref} found at pos {j}")
+                # print(f"{pref} found at pos {j}")
                 found = True
         if not found:
             print(f"NOT FOUND: {pref}")
 
+
 def check_betrace(tot_dpp, be_dpp):
+    # set_trace()
     if tot_dpp['id'] == be_dpp['node']['id']:
         nr_ch = len(tot_dpp['children'])
         nr_ch_be = len(be_dpp['children'])
@@ -532,7 +590,8 @@ def check_betrace(tot_dpp, be_dpp):
                             found = True
                             check_betrace(ch, ch_be)
                     if not found:
-                        print(f"Children {tot_dpp['id']} and {be_dpp['node']['id']} differ in ids")
+                        print(
+                            f"Children {tot_dpp['id']} and {be_dpp['node']['id']} differ in ids")
                         break
                 return
         else:
@@ -544,28 +603,38 @@ def check_betrace(tot_dpp, be_dpp):
             print(f"Children of front-end")
             for ch in tot_dpp['children']:
                 print(f"Name: {ch['name']}, id {ch['id']}")
-            
+
     else:
         print(f"{tot_dpp['id']} different from {be_dpp['node']['id']}")
 
 
-def check_traces(trace, events, tot_dpp, be_dpp):
-    assigned = {}
-    get_nodes(tot_dpp[0], assigned)
+def check_traces(trace, events, fe_dpp, be_dpp):
+    """
+        This function checks the different traces
+        to see whether they are consistent.
+        <events> is a data structure containing only events and processes
+        as recorded by the front-end.
+    """
+    fe_assigned = {}
+    list_nodes(fe_dpp[0], fe_assigned)
+    be_assigned = {}
+    # set_trace()
+    list_nodes(be_dpp[0], be_assigned)
     print(BANNER)
-    print(f'nr trace: {len(trace)}, nr events: {len(events)}, nr dpp: {len(assigned)}')
-    check_duplicates(trace, events,assigned)
+    print(
+        f'nr trace: {len(trace)}, nr events: {len(events)}, nr front-end dpp: {len(fe_assigned)}, nr back-end dpp: {len(be_assigned)}')
+    check_duplicates(trace, events, fe_assigned, be_assigned)
     check_trace_events(trace, events)
-    check_trace_dpp(trace, assigned)
+    check_trace_dpp(trace, fe_assigned)
     print(BANNER)
     print("Are back-end and my trace the same?")
 
-    check_betrace(tot_dpp[0], be_dpp)
+    check_betrace(fe_dpp[0], be_dpp[0])
 
 
 def convert_bedpp(dpp):
-    # breakpoint()
-    conv_dpp = {k:v for k,v in dpp['node'].items()}
+    # set_trace()
+    conv_dpp = {k: v for k, v in dpp['node'].items()}
     conv_dpp['type'] = dpp['type']
     name = dpp['node']['name'] if 'name' in dpp['node'] else dpp['node']['action_id']
     conv_dpp['name'] = name
@@ -574,3 +643,14 @@ def convert_bedpp(dpp):
     for ch in range(dl):
         conv_dpp['children'][ch] = convert_bedpp(dpp['children'][ch])
     return conv_dpp
+
+def differentiate_resources(dpp_item):
+    if dpp_item['type'] == 'EconomicResource':
+        for child in dpp_item['children']:
+            # breakpoint()
+            if child['name'] == 'modify':
+                # breakpoint()
+                dpp_item['id'] = dpp_item['id'] + child['id']
+                break
+    for child in dpp_item['children']:
+        differentiate_resources(child)
