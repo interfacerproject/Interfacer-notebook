@@ -455,7 +455,7 @@ def list_nodes(item, assigned):
         assigned[id] = {
             'count': 1,
             'type': item['type'],
-            'name': item['name'] if 'name' in item else item['node']['name'] if 'name' in item['node'] else item['node']['action_id'],
+            'name': item['name'] if 'name' in item else item['node']['name'] if 'name' in item['node'] else item['node']['action']['id'],
         }
 
     nr_ch = len(item['children'])
@@ -636,7 +636,7 @@ def convert_bedpp(dpp):
     # set_trace()
     conv_dpp = {k: v for k, v in dpp['node'].items()}
     conv_dpp['type'] = dpp['type']
-    name = dpp['node']['name'] if 'name' in dpp['node'] else dpp['node']['action_id']
+    name = dpp['node']['name'] if 'name' in dpp['node'] else dpp['node']['action']['id']
     conv_dpp['name'] = name
     dl = len(dpp['children'])
     conv_dpp['children'] = [{} for i in range(dl)]
