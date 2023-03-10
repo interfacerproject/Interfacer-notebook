@@ -59,7 +59,8 @@ This repository contains notebooks for several use cases:
 
 2.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/gownshirt.ipynb) defined in this [file](https://github.com/interfacerproject/Interfacer-notebook/blob/main/gownshirt_flow.1.1.txt).
 3.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/IFUsersFlows.ipynb) corresponding to the [Interfacer](https://www.interfacerproject.eu/) project's front-end [here](https://interfacer-gui-staging.dyne.org/).
-4.  a flow corresponding to the [Libre Solar](https://libre.solar/) project (in progress).
+4.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/libre-solar.ipynb) corresponding to the [Libre Solar](https://libre.solar/) project.
+5.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/IFServices.ipynb) including proposals and grouping.
 
 # [LIVE DEMO](https://interfacerproject.github.io/Interfacer-notebo)
 
@@ -101,11 +102,11 @@ cd <cloned dir>
 It is better to create a virtual environment (for example with [miniconda](https://docs.conda.io/en/latest/miniconda.html)), but it is not obligatory, thus the next step is optional:
 
 ```
-conda create -n <name of env> python==3.9
+conda create -n <name of env> python==<your python version>
 conda activate <name of env>
 ```
 
-Note that we use python 3.9 but we have not tested the code with other versions, the code should work also with other versions.
+Note that we use python 3.11 and previously 3.9 but we have not tested the code with other versions. Nonetheless, the code should work also with other versions.
 
 If you have chosen not to install a virtual environment, use `pip3` instead of `pip` in the following commands.
 
@@ -120,7 +121,7 @@ and the required packages:
 
 ```
 pip install requests
-pip install -U zenroom --pre
+pip install zenroom
 pip install plotly
 # or pip3 install requests, pip3 install -U zenroom --pre and pip3 install plotly if not using conda
 

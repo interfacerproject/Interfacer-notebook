@@ -11,29 +11,29 @@
     },
     "currentLocation": {
       "alt": "0",
-      "id": "0637HHX9F65VEX7WVMKCK7W0MW",
-      "lat": "51.9650382",
-      "long": "4.0133683",
-      "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
-      "name": "Lyondell Covestro Manufacturing",
-      "note": "location.service_prov2.com"
+      "id": "0637HHX3R6YTTHKET7GXW7RHSR",
+      "lat": "52.3767127",
+      "long": "4.8990591",
+      "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+      "name": "Farback",
+      "note": "location.designer2.org"
     },
     "custodian": {
-      "id": "0630EEVQ2ZKZG83BC1R7Q2VMC8",
-      "name": "service_prov2",
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
-        "lat": "51.9650382",
-        "long": "4.0133683",
-        "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
-        "name": "Lyondell Covestro Manufacturing",
-        "note": "location.service_prov2.com"
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
       },
       "type": "Person"
     },
-    "id": "0637WV6SMZ6Z53H093WJ3CC9NM",
+    "id": "063CEGX85M7PC99M3NC3Q0PAZ0",
     "metadata": null,
     "name": "fancy collaborative bike",
     "onhandQuantity": {
@@ -45,6 +45,44 @@
       }
     },
     "primaryAccountable": {
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "type": "Person"
+    },
+    "trackingIdentifier": "fancy_collaborative_bike-4831",
+    "type": "EconomicResource"
+  },
+  {
+    "__typename": "EconomicEvent",
+    "action": {
+      "id": "transfer",
+      "inputOutput": "notApplicable",
+      "label": "transfer",
+      "onhandEffect": "decrementIncrement",
+      "pairsWith": "notApplicable",
+      "resourceEffect": "decrementIncrement"
+    },
+    "agreedIn": null,
+    "atLocation": null,
+    "effortQuantity": null,
+    "hasBeginning": null,
+    "hasEnd": null,
+    "hasPointInTime": "2023-03-09T16:45:44.515052Z",
+    "id": "063CEGX84M7PEA7AYW0SFRR4KR",
+    "inputOf": null,
+    "note": "Transfer fancy bike from service_prov2 to designer2",
+    "outputOf": null,
+    "provider": {
       "id": "0630EEVQ2ZKZG83BC1R7Q2VMC8",
       "name": "service_prov2",
       "note": null,
@@ -59,8 +97,167 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "fancy_collaborative_bike-3203",
-    "type": "EconomicResource"
+    "realizationOf": null,
+    "receiver": {
+      "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+      "name": "Designer2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "type": "Person"
+    },
+    "resourceClassifiedAs": null,
+    "resourceConformsTo": null,
+    "resourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "currentLocation": {
+        "alt": "0",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
+        "lat": "51.9650382",
+        "long": "4.0133683",
+        "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+        "name": "Lyondell Covestro Manufacturing",
+        "note": "location.service_prov2.com"
+      },
+      "custodian": {
+        "id": "0630EEVQ2ZKZG83BC1R7Q2VMC8",
+        "name": "service_prov2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
+          "lat": "51.9650382",
+          "long": "4.0133683",
+          "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+          "name": "Lyondell Covestro Manufacturing",
+          "note": "location.service_prov2.com"
+        },
+        "type": "Person"
+      },
+      "id": "063CEGX5CGDVY0YB4XP7RJHVJW",
+      "metadata": null,
+      "name": "fancy collaborative bike",
+      "onhandQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "id": "0630EEVQ2ZKZG83BC1R7Q2VMC8",
+        "name": "service_prov2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "0637HHX9F65VEX7WVMKCK7W0MW",
+          "lat": "51.9650382",
+          "long": "4.0133683",
+          "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+          "name": "Lyondell Covestro Manufacturing",
+          "note": "location.service_prov2.com"
+        },
+        "type": "Person"
+      },
+      "trackingIdentifier": "fancy_collaborative_bike-4831",
+      "type": "EconomicResource"
+    },
+    "resourceQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "toLocation": {
+      "alt": "0",
+      "id": "0637HHX3R6YTTHKET7GXW7RHSR",
+      "lat": "52.3767127",
+      "long": "4.8990591",
+      "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+      "name": "Farback",
+      "note": "location.designer2.org"
+    },
+    "toResourceInventoriedAs": {
+      "accountingQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "currentLocation": {
+        "alt": "0",
+        "id": "0637HHX3R6YTTHKET7GXW7RHSR",
+        "lat": "52.3767127",
+        "long": "4.8990591",
+        "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+        "name": "Farback",
+        "note": "location.designer2.org"
+      },
+      "custodian": {
+        "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+        "name": "Designer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
+          "lat": "52.3767127",
+          "long": "4.8990591",
+          "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+          "name": "Farback",
+          "note": "location.designer2.org"
+        },
+        "type": "Person"
+      },
+      "id": "063CEGX85M7PC99M3NC3Q0PAZ0",
+      "metadata": null,
+      "name": "fancy collaborative bike",
+      "onhandQuantity": {
+        "hasNumericalValue": "1",
+        "hasUnit": {
+          "id": "0637HHXR5WS6QETSJE7VSKA90R",
+          "label": "u_piece",
+          "symbol": "om2:one"
+        }
+      },
+      "primaryAccountable": {
+        "id": "0630EEVNS6Q0MB90D54N6QD0MG",
+        "name": "Designer2",
+        "note": null,
+        "primaryLocation": {
+          "alt": "0",
+          "id": "0637HHX3R6YTTHKET7GXW7RHSR",
+          "lat": "52.3767127",
+          "long": "4.8990591",
+          "mappableAddress": "Prins Hendrikkade 82 A, 1012 AE, Amsterdam, Netherlands",
+          "name": "Farback",
+          "note": "location.designer2.org"
+        },
+        "type": "Person"
+      },
+      "trackingIdentifier": "fancy_collaborative_bike-4831",
+      "type": "EconomicResource"
+    },
+    "triggeredBy": null,
+    "type": "EconomicEvent"
   },
   {
     "__typename": "EconomicEvent",
@@ -77,8 +274,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:27.924270Z",
-    "id": "0637WV6SMCYXFV2JTJSJ1RBQBW",
+    "hasPointInTime": "2023-03-09T16:45:43.801590Z",
+    "id": "063CEGX5C62VC2DQDK23Q2E81C",
     "inputOf": null,
     "note": "produce fancy collaborative bike",
     "outputOf": {
@@ -92,7 +289,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
                 "name": "Assemble_bike",
                 "note": "Assemble bike 1-hour service by service_prov2",
                 "type": "Process"
@@ -100,7 +297,7 @@
             },
             {
               "node": {
-                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "id": "063CEGVPA90VWA6R21PVMJKAJM",
                 "name": "Design_funky_bike",
                 "note": "Design of funky bike by Designer1",
                 "type": "Process"
@@ -108,14 +305,14 @@
             }
           ]
         },
-        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
         "name": "design_assemble_bike",
         "note": "Groups bike design and assemblage",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:12.715555Z",
-      "hasEnd": "2023-02-23T13:18:12.715555Z",
-      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+      "hasBeginning": "2023-03-09T16:45:30.311226Z",
+      "hasEnd": "2023-03-09T16:45:30.311226Z",
+      "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -170,7 +367,7 @@
     },
     "resourceInventoriedAs": {
       "accountingQuantity": {
-        "hasNumericalValue": "1",
+        "hasNumericalValue": "0",
         "hasUnit": {
           "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
@@ -201,11 +398,11 @@
         },
         "type": "Person"
       },
-      "id": "0637WV6SMZ6Z53H093WJ3CC9NM",
+      "id": "063CEGX5CGDVY0YB4XP7RJHVJW",
       "metadata": null,
       "name": "fancy collaborative bike",
       "onhandQuantity": {
-        "hasNumericalValue": "1",
+        "hasNumericalValue": "0",
         "hasUnit": {
           "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
@@ -227,7 +424,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "fancy_collaborative_bike-3203",
+      "trackingIdentifier": "fancy_collaborative_bike-4831",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -263,7 +460,7 @@
         "edges": [
           {
             "node": {
-              "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+              "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
               "name": "Assemble_bike",
               "note": "Assemble bike 1-hour service by service_prov2",
               "type": "Process"
@@ -271,7 +468,7 @@
           },
           {
             "node": {
-              "id": "0637WV546QPQR4AQDZQ15AYV0M",
+              "id": "063CEGVPA90VWA6R21PVMJKAJM",
               "name": "Design_funky_bike",
               "note": "Design of funky bike by Designer1",
               "type": "Process"
@@ -279,14 +476,14 @@
           }
         ]
       },
-      "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+      "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
       "name": "design_assemble_bike",
       "note": "Groups bike design and assemblage",
       "type": "ProcessGroup"
     },
-    "hasBeginning": "2023-02-23T13:18:12.715555Z",
-    "hasEnd": "2023-02-23T13:18:12.715555Z",
-    "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+    "hasBeginning": "2023-03-09T16:45:30.311226Z",
+    "hasEnd": "2023-03-09T16:45:30.311226Z",
+    "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
     "name": "Assemble_bike",
     "nestedIn": null,
     "note": "Assemble bike 1-hour service by service_prov2",
@@ -315,8 +512,8 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:27.468234Z",
-    "id": "0637WV6QYBECBAACVEWS15APMM",
+    "hasPointInTime": "2023-03-09T16:45:43.455808Z",
+    "id": "063CEGX3ZY1B7EVQ1FRRZRTDE8",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -328,7 +525,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
                 "name": "Assemble_bike",
                 "note": "Assemble bike 1-hour service by service_prov2",
                 "type": "Process"
@@ -336,7 +533,7 @@
             },
             {
               "node": {
-                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "id": "063CEGVPA90VWA6R21PVMJKAJM",
                 "name": "Design_funky_bike",
                 "note": "Design of funky bike by Designer1",
                 "type": "Process"
@@ -344,14 +541,14 @@
             }
           ]
         },
-        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
         "name": "design_assemble_bike",
         "note": "Groups bike design and assemblage",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:12.715555Z",
-      "hasEnd": "2023-02-23T13:18:12.715555Z",
-      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+      "hasBeginning": "2023-03-09T16:45:30.311226Z",
+      "hasEnd": "2023-03-09T16:45:30.311226Z",
+      "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -428,8 +625,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:27.074275Z",
-    "id": "0637WV6PC8TQRR9C4Q1NSHB000",
+    "hasPointInTime": "2023-03-09T16:45:43.095461Z",
+    "id": "063CEGX2KMN88WNQBEWHSDQ0KC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -441,7 +638,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
                 "name": "Assemble_bike",
                 "note": "Assemble bike 1-hour service by service_prov2",
                 "type": "Process"
@@ -449,7 +646,7 @@
             },
             {
               "node": {
-                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "id": "063CEGVPA90VWA6R21PVMJKAJM",
                 "name": "Design_funky_bike",
                 "note": "Design of funky bike by Designer1",
                 "type": "Process"
@@ -457,14 +654,14 @@
             }
           ]
         },
-        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
         "name": "design_assemble_bike",
         "note": "Groups bike design and assemblage",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:12.715555Z",
-      "hasEnd": "2023-02-23T13:18:12.715555Z",
-      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+      "hasBeginning": "2023-03-09T16:45:30.311226Z",
+      "hasEnd": "2023-03-09T16:45:30.311226Z",
+      "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -539,7 +736,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV6J0CKSK7EXQJQGXG14F0",
+      "id": "063CEGWYF9HYP341H2FA8B6DP0",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -565,7 +762,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-7094",
+      "trackingIdentifier": "aluminium_bike_frame-6025",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -596,8 +793,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:25.809805Z",
-    "id": "0637WV6HZVJYEQRMGX11YQA6Q4",
+    "hasPointInTime": "2023-03-09T16:45:42.024899Z",
+    "id": "063CEGWYEPQESRDVD1M7QT6A04",
     "inputOf": null,
     "note": "Transfer aluminium bike frame from designer2 to service_prov2",
     "outputOf": null,
@@ -667,7 +864,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV5M2904WGNKAKZ5JBK3V0",
+      "id": "063CEGW3HW0F00Z38M16J6X7J8",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -693,7 +890,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-7094",
+      "trackingIdentifier": "aluminium_bike_frame-6025",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -746,7 +943,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV6J0CKSK7EXQJQGXG14F0",
+      "id": "063CEGWYF9HYP341H2FA8B6DP0",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -772,7 +969,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-7094",
+      "trackingIdentifier": "aluminium_bike_frame-6025",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -793,8 +990,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:18.188854Z",
-    "id": "0637WV5M1P17KM25K8M7071RS0",
+    "hasPointInTime": "2023-03-09T16:45:35.152134Z",
+    "id": "063CEGW3GYZB1J82YQC3N3SFTR",
     "inputOf": null,
     "note": "Transfer aluminium bike frame from manufacturer1 to designer2",
     "outputOf": null,
@@ -864,7 +1061,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV5GS3RZPRESJV5A425EH0",
+      "id": "063CEGW0WB3D0CKMVCZPGTQF0G",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -890,7 +1087,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-7094",
+      "trackingIdentifier": "aluminium_bike_frame-6025",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -943,7 +1140,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV5M2904WGNKAKZ5JBK3V0",
+      "id": "063CEGW3HW0F00Z38M16J6X7J8",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -969,7 +1166,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-7094",
+      "trackingIdentifier": "aluminium_bike_frame-6025",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -990,8 +1187,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:17.433723Z",
-    "id": "0637WV5GRMACGKV1H5BH2F119W",
+    "hasPointInTime": "2023-03-09T16:45:34.471891Z",
+    "id": "063CEGW0VSTNKEAEDNVXFGBRPG",
     "inputOf": null,
     "note": "produce aluminium bike frame",
     "outputOf": {
@@ -1000,9 +1197,9 @@
       "deletable": false,
       "finished": false,
       "groupedIn": null,
-      "hasBeginning": "2023-02-23T13:18:09.436166Z",
-      "hasEnd": "2023-02-23T13:18:09.436166Z",
-      "id": "0637WV4HWSCEYS103CBPPK1H58",
+      "hasBeginning": "2023-03-09T16:45:27.257865Z",
+      "hasEnd": "2023-03-09T16:45:27.257865Z",
+      "id": "063CEGV4TWRM7746TVECB2PH3R",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1088,7 +1285,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV5GS3RZPRESJV5A425EH0",
+      "id": "063CEGW0WB3D0CKMVCZPGTQF0G",
       "metadata": null,
       "name": "aluminium bike frame",
       "onhandQuantity": {
@@ -1114,7 +1311,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium_bike_frame-7094",
+      "trackingIdentifier": "aluminium_bike_frame-6025",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1145,9 +1342,9 @@
     "deletable": false,
     "finished": false,
     "groupedIn": null,
-    "hasBeginning": "2023-02-23T13:18:09.436166Z",
-    "hasEnd": "2023-02-23T13:18:09.436166Z",
-    "id": "0637WV4HWSCEYS103CBPPK1H58",
+    "hasBeginning": "2023-03-09T16:45:27.257865Z",
+    "hasEnd": "2023-03-09T16:45:27.257865Z",
+    "id": "063CEGV4TWRM7746TVECB2PH3R",
     "name": "Manifacture_aluminium_bike_frame",
     "nestedIn": null,
     "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1169,17 +1366,17 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:16.445069Z",
-    "id": "0637WV5CSXT4731104NW1FJS24",
+    "hasPointInTime": "2023-03-09T16:45:33.768041Z",
+    "id": "063CEGVY4ZGR4S2222NZ91PQRR",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
       "groupedIn": null,
-      "hasBeginning": "2023-02-23T13:18:09.436166Z",
-      "hasEnd": "2023-02-23T13:18:09.436166Z",
-      "id": "0637WV4HWSCEYS103CBPPK1H58",
+      "hasBeginning": "2023-03-09T16:45:27.257865Z",
+      "hasEnd": "2023-03-09T16:45:27.257865Z",
+      "id": "063CEGV4TWRM7746TVECB2PH3R",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1254,7 +1451,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV58GZR2HHK40P7WT601NM",
+      "id": "063CEGVT3ZPNVZPVB3SSG9AQN8",
       "metadata": null,
       "name": "aluminium",
       "onhandQuantity": {
@@ -1280,7 +1477,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium-7442",
+      "trackingIdentifier": "aluminium-7266",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1311,8 +1508,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:15.294468Z",
-    "id": "0637WV58GJ34WQERNA1XENMWZC",
+    "hasPointInTime": "2023-03-09T16:45:32.744541Z",
+    "id": "063CEGVT3G4SGJ81B3AFKD32R0",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -1395,7 +1592,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV58GZR2HHK40P7WT601NM",
+      "id": "063CEGVT3ZPNVZPVB3SSG9AQN8",
       "metadata": null,
       "name": "aluminium",
       "onhandQuantity": {
@@ -1421,7 +1618,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "aluminium-7442",
+      "trackingIdentifier": "aluminium-7266",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1479,7 +1676,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV58GZR2HHK40P7WT601NM",
+    "id": "063CEGVT3ZPNVZPVB3SSG9AQN8",
     "metadata": null,
     "name": "aluminium",
     "onhandQuantity": {
@@ -1505,7 +1702,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium-7442",
+    "trackingIdentifier": "aluminium-7266",
     "type": "EconomicResource"
   },
   {
@@ -1530,17 +1727,17 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:15.702851Z",
-    "id": "0637WV59ZGS1C0005SYPR4XQDC",
+    "hasPointInTime": "2023-03-09T16:45:33.081065Z",
+    "id": "063CEGVVDS7EHYMN59QG7K2PE8",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
       "groupedIn": null,
-      "hasBeginning": "2023-02-23T13:18:09.436166Z",
-      "hasEnd": "2023-02-23T13:18:09.436166Z",
-      "id": "0637WV4HWSCEYS103CBPPK1H58",
+      "hasBeginning": "2023-03-09T16:45:27.257865Z",
+      "hasEnd": "2023-03-09T16:45:27.257865Z",
+      "id": "063CEGV4TWRM7746TVECB2PH3R",
       "name": "Manifacture_aluminium_bike_frame",
       "nestedIn": null,
       "note": "Creation of aluminum bike frame by Manufacturer1",
@@ -1636,7 +1833,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV5GS3RZPRESJV5A425EH0",
+    "id": "063CEGW0WB3D0CKMVCZPGTQF0G",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
@@ -1662,7 +1859,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-7094",
+    "trackingIdentifier": "aluminium_bike_frame-6025",
     "type": "EconomicResource"
   },
   {
@@ -1699,7 +1896,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV5M2904WGNKAKZ5JBK3V0",
+    "id": "063CEGW3HW0F00Z38M16J6X7J8",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
@@ -1725,7 +1922,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-7094",
+    "trackingIdentifier": "aluminium_bike_frame-6025",
     "type": "EconomicResource"
   },
   {
@@ -1762,7 +1959,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV6J0CKSK7EXQJQGXG14F0",
+    "id": "063CEGWYF9HYP341H2FA8B6DP0",
     "metadata": null,
     "name": "aluminium bike frame",
     "onhandQuantity": {
@@ -1788,7 +1985,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "aluminium_bike_frame-7094",
+    "trackingIdentifier": "aluminium_bike_frame-6025",
     "type": "EconomicResource"
   },
   {
@@ -1806,8 +2003,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:26.709744Z",
-    "id": "0637WV6MY026JN10Q2C96EW2DC",
+    "hasPointInTime": "2023-03-09T16:45:42.753589Z",
+    "id": "063CEGX186RPZNNV4HYHQ3ASF0",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -1819,7 +2016,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
                 "name": "Assemble_bike",
                 "note": "Assemble bike 1-hour service by service_prov2",
                 "type": "Process"
@@ -1827,7 +2024,7 @@
             },
             {
               "node": {
-                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "id": "063CEGVPA90VWA6R21PVMJKAJM",
                 "name": "Design_funky_bike",
                 "note": "Design of funky bike by Designer1",
                 "type": "Process"
@@ -1835,14 +2032,14 @@
             }
           ]
         },
-        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
         "name": "design_assemble_bike",
         "note": "Groups bike design and assemblage",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:12.715555Z",
-      "hasEnd": "2023-02-23T13:18:12.715555Z",
-      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+      "hasBeginning": "2023-03-09T16:45:30.311226Z",
+      "hasEnd": "2023-03-09T16:45:30.311226Z",
+      "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -1917,7 +2114,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV56YQV8E3Q36Q446A8WRR",
+      "id": "063CEGVRTV712B17X2WSXZHK2M",
       "metadata": null,
       "name": "funky bike design",
       "onhandQuantity": {
@@ -1943,7 +2140,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "funky_bike_design-71",
+      "trackingIdentifier": "funky_bike_design-2658",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1974,8 +2171,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:14.930625Z",
-    "id": "0637WV56Y95RXA84ADEKYRGQE0",
+    "hasPointInTime": "2023-03-09T16:45:32.415277Z",
+    "id": "063CEGVRT9JS9AZ56787T10D5R",
     "inputOf": null,
     "note": "produce design for funky bike",
     "outputOf": {
@@ -1989,7 +2186,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
                 "name": "Assemble_bike",
                 "note": "Assemble bike 1-hour service by service_prov2",
                 "type": "Process"
@@ -1997,7 +2194,7 @@
             },
             {
               "node": {
-                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "id": "063CEGVPA90VWA6R21PVMJKAJM",
                 "name": "Design_funky_bike",
                 "note": "Design of funky bike by Designer1",
                 "type": "Process"
@@ -2005,14 +2202,14 @@
             }
           ]
         },
-        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
         "name": "design_assemble_bike",
         "note": "Groups bike design and assemblage",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:14.237158Z",
-      "hasEnd": "2023-02-23T13:18:14.237158Z",
-      "id": "0637WV546QPQR4AQDZQ15AYV0M",
+      "hasBeginning": "2023-03-09T16:45:31.766676Z",
+      "hasEnd": "2023-03-09T16:45:31.766676Z",
+      "id": "063CEGVPA90VWA6R21PVMJKAJM",
       "name": "Design_funky_bike",
       "nestedIn": null,
       "note": "Design of funky bike by Designer1",
@@ -2098,7 +2295,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV56YQV8E3Q36Q446A8WRR",
+      "id": "063CEGVRTV712B17X2WSXZHK2M",
       "metadata": null,
       "name": "funky bike design",
       "onhandQuantity": {
@@ -2124,7 +2321,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "funky_bike_design-71",
+      "trackingIdentifier": "funky_bike_design-2658",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2160,7 +2357,7 @@
         "edges": [
           {
             "node": {
-              "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+              "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
               "name": "Assemble_bike",
               "note": "Assemble bike 1-hour service by service_prov2",
               "type": "Process"
@@ -2168,7 +2365,7 @@
           },
           {
             "node": {
-              "id": "0637WV546QPQR4AQDZQ15AYV0M",
+              "id": "063CEGVPA90VWA6R21PVMJKAJM",
               "name": "Design_funky_bike",
               "note": "Design of funky bike by Designer1",
               "type": "Process"
@@ -2176,14 +2373,14 @@
           }
         ]
       },
-      "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+      "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
       "name": "design_assemble_bike",
       "note": "Groups bike design and assemblage",
       "type": "ProcessGroup"
     },
-    "hasBeginning": "2023-02-23T13:18:14.237158Z",
-    "hasEnd": "2023-02-23T13:18:14.237158Z",
-    "id": "0637WV546QPQR4AQDZQ15AYV0M",
+    "hasBeginning": "2023-03-09T16:45:31.766676Z",
+    "hasEnd": "2023-03-09T16:45:31.766676Z",
+    "id": "063CEGVPA90VWA6R21PVMJKAJM",
     "name": "Design_funky_bike",
     "nestedIn": null,
     "note": "Design of funky bike by Designer1",
@@ -2212,8 +2409,8 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:14.580286Z",
-    "id": "0637WV55HMF3K7HEKTRKW4F6VG",
+    "hasPointInTime": "2023-03-09T16:45:32.089510Z",
+    "id": "063CEGVQK2WRX8P2XVB5DTM1C8",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -2225,7 +2422,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
                 "name": "Assemble_bike",
                 "note": "Assemble bike 1-hour service by service_prov2",
                 "type": "Process"
@@ -2233,7 +2430,7 @@
             },
             {
               "node": {
-                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "id": "063CEGVPA90VWA6R21PVMJKAJM",
                 "name": "Design_funky_bike",
                 "note": "Design of funky bike by Designer1",
                 "type": "Process"
@@ -2241,14 +2438,14 @@
             }
           ]
         },
-        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
         "name": "design_assemble_bike",
         "note": "Groups bike design and assemblage",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:14.237158Z",
-      "hasEnd": "2023-02-23T13:18:14.237158Z",
-      "id": "0637WV546QPQR4AQDZQ15AYV0M",
+      "hasBeginning": "2023-03-09T16:45:31.766676Z",
+      "hasEnd": "2023-03-09T16:45:31.766676Z",
+      "id": "063CEGVPA90VWA6R21PVMJKAJM",
       "name": "Design_funky_bike",
       "nestedIn": null,
       "note": "Design of funky bike by Designer1",
@@ -2344,7 +2541,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV56YQV8E3Q36Q446A8WRR",
+    "id": "063CEGVRTV712B17X2WSXZHK2M",
     "metadata": null,
     "name": "funky bike design",
     "onhandQuantity": {
@@ -2370,7 +2567,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "funky_bike_design-71",
+    "trackingIdentifier": "funky_bike_design-2658",
     "type": "EconomicResource"
   },
   {
@@ -2388,8 +2585,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:26.354538Z",
-    "id": "0637WV6KH7RPKBD6KEBVGMN8HC",
+    "hasPointInTime": "2023-03-09T16:45:42.398140Z",
+    "id": "063CEGWZWYT0GR03AKQTHWBJGC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -2401,7 +2598,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+                "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
                 "name": "Assemble_bike",
                 "note": "Assemble bike 1-hour service by service_prov2",
                 "type": "Process"
@@ -2409,7 +2606,7 @@
             },
             {
               "node": {
-                "id": "0637WV546QPQR4AQDZQ15AYV0M",
+                "id": "063CEGVPA90VWA6R21PVMJKAJM",
                 "name": "Design_funky_bike",
                 "note": "Design of funky bike by Designer1",
                 "type": "Process"
@@ -2417,14 +2614,14 @@
             }
           ]
         },
-        "id": "0637WV72SQD0X6D4GPZ0Q63WH0",
+        "id": "063CEGXDZ8Z6YQHDRA3KTAZ1NM",
         "name": "design_assemble_bike",
         "note": "Groups bike design and assemblage",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:12.715555Z",
-      "hasEnd": "2023-02-23T13:18:12.715555Z",
-      "id": "0637WV4YB0GAJS6VH81XBJDH0M",
+      "hasBeginning": "2023-03-09T16:45:30.311226Z",
+      "hasEnd": "2023-03-09T16:45:30.311226Z",
+      "id": "063CEGVGN8K8R3WF2MW5AKR8WC",
       "name": "Assemble_bike",
       "nestedIn": null,
       "note": "Assemble bike 1-hour service by service_prov2",
@@ -2468,7 +2665,7 @@
     "resourceConformsTo": null,
     "resourceInventoriedAs": {
       "accountingQuantity": {
-        "hasNumericalValue": "-1",
+        "hasNumericalValue": "0",
         "hasUnit": {
           "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
@@ -2499,11 +2696,11 @@
         },
         "type": "Person"
       },
-      "id": "0637WV6G0AEFC2DZ46P1K8A75C",
+      "id": "063CEGWX1CQ4DB1RZEWQ92PHAG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
-        "hasNumericalValue": "-1",
+        "hasNumericalValue": "0",
         "hasUnit": {
           "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
@@ -2525,7 +2722,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2556,8 +2753,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:25.444004Z",
-    "id": "0637WV6FZGX1VQR1GS5X7W0KAC",
+    "hasPointInTime": "2023-03-09T16:45:41.667999Z",
+    "id": "063CEGWX0ZEXPZHMYRM0AJYGB8",
     "inputOf": null,
     "note": "Transfer magic bike mirror from designer2 to service_prov2",
     "outputOf": null,
@@ -2627,7 +2824,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV6EJF17ZC5KVR70PREF08",
+      "id": "063CEGWVKPTRESKZ1R9XQR5SXW",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2653,7 +2850,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2675,7 +2872,7 @@
     },
     "toResourceInventoriedAs": {
       "accountingQuantity": {
-        "hasNumericalValue": "-1",
+        "hasNumericalValue": "0",
         "hasUnit": {
           "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
@@ -2706,11 +2903,11 @@
         },
         "type": "Person"
       },
-      "id": "0637WV6G0AEFC2DZ46P1K8A75C",
+      "id": "063CEGWX1CQ4DB1RZEWQ92PHAG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
-        "hasNumericalValue": "-1",
+        "hasNumericalValue": "0",
         "hasUnit": {
           "id": "0637HHXR5WS6QETSJE7VSKA90R",
           "label": "u_piece",
@@ -2732,7 +2929,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -2753,8 +2950,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:25.075721Z",
-    "id": "0637WV6EHPZFSKJPC3DK92629C",
+    "hasPointInTime": "2023-03-09T16:45:41.308907Z",
+    "id": "063CEGWVK2SDD231EZ4FP1GTK0",
     "inputOf": null,
     "note": "Transfer magic bike mirror from manufacturer2 to designer2",
     "outputOf": null,
@@ -2824,7 +3021,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV60TD3G833NW3KYPDVYP0",
+      "id": "063CEGWEY5EBDYGRTSX069E1KG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2850,7 +3047,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2903,7 +3100,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV6EJF17ZC5KVR70PREF08",
+      "id": "063CEGWVKPTRESKZ1R9XQR5SXW",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -2929,7 +3126,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "triggeredBy": null,
@@ -2950,8 +3147,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:24.708945Z",
-    "id": "0637WV6D4FSTEEVCFQSJRPX3HM",
+    "hasPointInTime": "2023-03-09T16:45:40.937929Z",
+    "id": "063CEGWT72BVZGY62RA3FMB2KM",
     "inputOf": null,
     "note": "modify mirror into packaged mirror",
     "outputOf": {
@@ -2961,7 +3158,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -2969,7 +3166,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
                 "name": "Painting_magic_bike_mirror",
                 "note": "Painting magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -2977,7 +3174,7 @@
             },
             {
               "node": {
-                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
                 "name": "Packaging_magic_bike_mirror",
                 "note": "Packaging magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -2985,14 +3182,14 @@
             }
           ]
         },
-        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "id": "063CEGXPZHCN2KBT6QMV6SX20R",
         "name": "paint_package_mirror",
         "note": "Groups mirror painting and packaging",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:23.580534Z",
-      "hasEnd": "2023-02-23T13:18:23.580534Z",
-      "id": "0637WV68P9ARA2RW51WSMT9V4W",
+      "hasBeginning": "2023-03-09T16:45:39.810836Z",
+      "hasEnd": "2023-03-09T16:45:39.810836Z",
+      "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
       "name": "Packaging_magic_bike_mirror",
       "nestedIn": null,
       "note": "Packaging magic bike mirror by Manufacturer2",
@@ -3065,7 +3262,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV60TD3G833NW3KYPDVYP0",
+      "id": "063CEGWEY5EBDYGRTSX069E1KG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -3091,7 +3288,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3115,7 +3312,7 @@
     "finished": false,
     "groupedIn": {
       "groupedIn": {
-        "id": "0637WV76T87G78V0ZTXB4PEXE4",
+        "id": "063CEGXHQQW3NQ4X35XNY2HF84",
         "name": "design_create_paint_package_mirror",
         "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
       },
@@ -3123,7 +3320,7 @@
         "edges": [
           {
             "node": {
-              "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+              "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
               "name": "Painting_magic_bike_mirror",
               "note": "Painting magic bike mirror by Manufacturer2",
               "type": "Process"
@@ -3131,7 +3328,7 @@
           },
           {
             "node": {
-              "id": "0637WV68P9ARA2RW51WSMT9V4W",
+              "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
               "name": "Packaging_magic_bike_mirror",
               "note": "Packaging magic bike mirror by Manufacturer2",
               "type": "Process"
@@ -3139,14 +3336,14 @@
           }
         ]
       },
-      "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+      "id": "063CEGXPZHCN2KBT6QMV6SX20R",
       "name": "paint_package_mirror",
       "note": "Groups mirror painting and packaging",
       "type": "ProcessGroup"
     },
-    "hasBeginning": "2023-02-23T13:18:23.580534Z",
-    "hasEnd": "2023-02-23T13:18:23.580534Z",
-    "id": "0637WV68P9ARA2RW51WSMT9V4W",
+    "hasBeginning": "2023-03-09T16:45:39.810836Z",
+    "hasEnd": "2023-03-09T16:45:39.810836Z",
+    "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
     "name": "Packaging_magic_bike_mirror",
     "nestedIn": null,
     "note": "Packaging magic bike mirror by Manufacturer2",
@@ -3168,8 +3365,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:24.270852Z",
-    "id": "0637WV6BHQ4SMNAKRVM37EQPTC",
+    "hasPointInTime": "2023-03-09T16:45:40.455405Z",
+    "id": "063CEGWRRTVH0HWTKQEGJBEAB8",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -3177,7 +3374,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -3185,7 +3382,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
                 "name": "Painting_magic_bike_mirror",
                 "note": "Painting magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -3193,7 +3390,7 @@
             },
             {
               "node": {
-                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
                 "name": "Packaging_magic_bike_mirror",
                 "note": "Packaging magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -3201,14 +3398,14 @@
             }
           ]
         },
-        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "id": "063CEGXPZHCN2KBT6QMV6SX20R",
         "name": "paint_package_mirror",
         "note": "Groups mirror painting and packaging",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:23.580534Z",
-      "hasEnd": "2023-02-23T13:18:23.580534Z",
-      "id": "0637WV68P9ARA2RW51WSMT9V4W",
+      "hasBeginning": "2023-03-09T16:45:39.810836Z",
+      "hasEnd": "2023-03-09T16:45:39.810836Z",
+      "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
       "name": "Packaging_magic_bike_mirror",
       "nestedIn": null,
       "note": "Packaging magic bike mirror by Manufacturer2",
@@ -3283,7 +3480,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV60TD3G833NW3KYPDVYP0",
+      "id": "063CEGWEY5EBDYGRTSX069E1KG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -3309,7 +3506,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3340,8 +3537,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:23.152375Z",
-    "id": "0637WV6749D1Q1FGDRKR5382YR",
+    "hasPointInTime": "2023-03-09T16:45:39.449311Z",
+    "id": "063CEGWMB5BD0CGWWZRG4G6AEM",
     "inputOf": null,
     "note": "modify mirror into painted mirror",
     "outputOf": {
@@ -3351,7 +3548,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -3359,7 +3556,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
                 "name": "Painting_magic_bike_mirror",
                 "note": "Painting magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -3367,7 +3564,7 @@
             },
             {
               "node": {
-                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
                 "name": "Packaging_magic_bike_mirror",
                 "note": "Packaging magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -3375,14 +3572,14 @@
             }
           ]
         },
-        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "id": "063CEGXPZHCN2KBT6QMV6SX20R",
         "name": "paint_package_mirror",
         "note": "Groups mirror painting and packaging",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:22.032689Z",
-      "hasEnd": "2023-02-23T13:18:22.032689Z",
-      "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+      "hasBeginning": "2023-03-09T16:45:38.420957Z",
+      "hasEnd": "2023-03-09T16:45:38.420957Z",
+      "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
       "name": "Painting_magic_bike_mirror",
       "nestedIn": null,
       "note": "Painting magic bike mirror by Manufacturer2",
@@ -3455,7 +3652,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV60TD3G833NW3KYPDVYP0",
+      "id": "063CEGWEY5EBDYGRTSX069E1KG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -3481,7 +3678,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3505,7 +3702,7 @@
     "finished": false,
     "groupedIn": {
       "groupedIn": {
-        "id": "0637WV76T87G78V0ZTXB4PEXE4",
+        "id": "063CEGXHQQW3NQ4X35XNY2HF84",
         "name": "design_create_paint_package_mirror",
         "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
       },
@@ -3513,7 +3710,7 @@
         "edges": [
           {
             "node": {
-              "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+              "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
               "name": "Painting_magic_bike_mirror",
               "note": "Painting magic bike mirror by Manufacturer2",
               "type": "Process"
@@ -3521,7 +3718,7 @@
           },
           {
             "node": {
-              "id": "0637WV68P9ARA2RW51WSMT9V4W",
+              "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
               "name": "Packaging_magic_bike_mirror",
               "note": "Packaging magic bike mirror by Manufacturer2",
               "type": "Process"
@@ -3529,14 +3726,14 @@
           }
         ]
       },
-      "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+      "id": "063CEGXPZHCN2KBT6QMV6SX20R",
       "name": "paint_package_mirror",
       "note": "Groups mirror painting and packaging",
       "type": "ProcessGroup"
     },
-    "hasBeginning": "2023-02-23T13:18:22.032689Z",
-    "hasEnd": "2023-02-23T13:18:22.032689Z",
-    "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+    "hasBeginning": "2023-03-09T16:45:38.420957Z",
+    "hasEnd": "2023-03-09T16:45:38.420957Z",
+    "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
     "name": "Painting_magic_bike_mirror",
     "nestedIn": null,
     "note": "Painting magic bike mirror by Manufacturer2",
@@ -3558,8 +3755,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:22.785468Z",
-    "id": "0637WV65KVQS7J5CJFFDSXVCW4",
+    "hasPointInTime": "2023-03-09T16:45:39.081353Z",
+    "id": "063CEGWJY6BH5NXBDNHP7XH128",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -3567,7 +3764,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -3575,7 +3772,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
                 "name": "Painting_magic_bike_mirror",
                 "note": "Painting magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -3583,7 +3780,7 @@
             },
             {
               "node": {
-                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
                 "name": "Packaging_magic_bike_mirror",
                 "note": "Packaging magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -3591,14 +3788,14 @@
             }
           ]
         },
-        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "id": "063CEGXPZHCN2KBT6QMV6SX20R",
         "name": "paint_package_mirror",
         "note": "Groups mirror painting and packaging",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:22.032689Z",
-      "hasEnd": "2023-02-23T13:18:22.032689Z",
-      "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+      "hasBeginning": "2023-03-09T16:45:38.420957Z",
+      "hasEnd": "2023-03-09T16:45:38.420957Z",
+      "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
       "name": "Painting_magic_bike_mirror",
       "nestedIn": null,
       "note": "Painting magic bike mirror by Manufacturer2",
@@ -3673,7 +3870,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV60TD3G833NW3KYPDVYP0",
+      "id": "063CEGWEY5EBDYGRTSX069E1KG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -3699,7 +3896,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3730,8 +3927,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:21.527631Z",
-    "id": "0637WV60SWGN9DDXHWH57PV540",
+    "hasPointInTime": "2023-03-09T16:45:38.053188Z",
+    "id": "063CEGWEXVZ4XDEH7W28NHEAPW",
     "inputOf": null,
     "note": "produce magic bike mirror",
     "outputOf": {
@@ -3741,7 +3938,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -3749,7 +3946,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
                 "name": "Design_magic_mirror",
                 "note": "Design of magic mirror by Designer2",
                 "type": "Process"
@@ -3757,7 +3954,7 @@
             },
             {
               "node": {
-                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "id": "063CEGWA5SPTK90D8VHY10HJXG",
                 "name": "Creation_magic_bike_mirror",
                 "note": "Creation of magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -3765,14 +3962,14 @@
             }
           ]
         },
-        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "id": "063CEGXK1KGJW1ECWNJQVMCQKM",
         "name": "design_create_mirror",
         "note": "Groups mirror design and creation",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:20.134087Z",
-      "hasEnd": "2023-02-23T13:18:20.134087Z",
-      "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+      "hasBeginning": "2023-03-09T16:45:36.829104Z",
+      "hasEnd": "2023-03-09T16:45:36.829104Z",
+      "id": "063CEGWA5SPTK90D8VHY10HJXG",
       "name": "Creation_magic_bike_mirror",
       "nestedIn": null,
       "note": "Creation of magic bike mirror by Manufacturer2",
@@ -3858,7 +4055,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV60TD3G833NW3KYPDVYP0",
+      "id": "063CEGWEY5EBDYGRTSX069E1KG",
       "metadata": null,
       "name": "magic bike mirror",
       "onhandQuantity": {
@@ -3884,7 +4081,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_bike_mirror-2894",
+      "trackingIdentifier": "magic_bike_mirror-8195",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3916,7 +4113,7 @@
     "finished": false,
     "groupedIn": {
       "groupedIn": {
-        "id": "0637WV76T87G78V0ZTXB4PEXE4",
+        "id": "063CEGXHQQW3NQ4X35XNY2HF84",
         "name": "design_create_paint_package_mirror",
         "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
       },
@@ -3924,7 +4121,7 @@
         "edges": [
           {
             "node": {
-              "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+              "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
               "name": "Design_magic_mirror",
               "note": "Design of magic mirror by Designer2",
               "type": "Process"
@@ -3932,7 +4129,7 @@
           },
           {
             "node": {
-              "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+              "id": "063CEGWA5SPTK90D8VHY10HJXG",
               "name": "Creation_magic_bike_mirror",
               "note": "Creation of magic bike mirror by Manufacturer2",
               "type": "Process"
@@ -3940,14 +4137,14 @@
           }
         ]
       },
-      "id": "0637WV788ZSJ4G66AQS01KYAGG",
+      "id": "063CEGXK1KGJW1ECWNJQVMCQKM",
       "name": "design_create_mirror",
       "note": "Groups mirror design and creation",
       "type": "ProcessGroup"
     },
-    "hasBeginning": "2023-02-23T13:18:20.134087Z",
-    "hasEnd": "2023-02-23T13:18:20.134087Z",
-    "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+    "hasBeginning": "2023-03-09T16:45:36.829104Z",
+    "hasEnd": "2023-03-09T16:45:36.829104Z",
+    "id": "063CEGWA5SPTK90D8VHY10HJXG",
     "name": "Creation_magic_bike_mirror",
     "nestedIn": null,
     "note": "Creation of magic bike mirror by Manufacturer2",
@@ -3969,8 +4166,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:20.910852Z",
-    "id": "0637WV5Y8F3MXN92GW45ZY3M7G",
+    "hasPointInTime": "2023-03-09T16:45:37.547351Z",
+    "id": "063CEGWDGP0HKMPM63VEB982MW",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -3978,7 +4175,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -3986,7 +4183,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
                 "name": "Design_magic_mirror",
                 "note": "Design of magic mirror by Designer2",
                 "type": "Process"
@@ -3994,7 +4191,7 @@
             },
             {
               "node": {
-                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "id": "063CEGWA5SPTK90D8VHY10HJXG",
                 "name": "Creation_magic_bike_mirror",
                 "note": "Creation of magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -4002,14 +4199,14 @@
             }
           ]
         },
-        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "id": "063CEGXK1KGJW1ECWNJQVMCQKM",
         "name": "design_create_mirror",
         "note": "Groups mirror design and creation",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:20.134087Z",
-      "hasEnd": "2023-02-23T13:18:20.134087Z",
-      "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+      "hasBeginning": "2023-03-09T16:45:36.829104Z",
+      "hasEnd": "2023-03-09T16:45:36.829104Z",
+      "id": "063CEGWA5SPTK90D8VHY10HJXG",
       "name": "Creation_magic_bike_mirror",
       "nestedIn": null,
       "note": "Creation of magic bike mirror by Manufacturer2",
@@ -4084,7 +4281,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV5SW2QCBTYHVVCK778TTG",
+      "id": "063CEGW8SJ54PZJZBQ6MN60YV8",
       "metadata": null,
       "name": "glass",
       "onhandQuantity": {
@@ -4110,7 +4307,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "glass-6021",
+      "trackingIdentifier": "glass-3715",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -4141,8 +4338,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:19.770535Z",
-    "id": "0637WV5SVJWYG388T716VYG23W",
+    "hasPointInTime": "2023-03-09T16:45:36.493844Z",
+    "id": "063CEGW8S8JK6WDZGPWDDDGZ3R",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -4225,7 +4422,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV5SW2QCBTYHVVCK778TTG",
+      "id": "063CEGW8SJ54PZJZBQ6MN60YV8",
       "metadata": null,
       "name": "glass",
       "onhandQuantity": {
@@ -4251,7 +4448,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "glass-6021",
+      "trackingIdentifier": "glass-3715",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -4309,7 +4506,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV5SW2QCBTYHVVCK778TTG",
+    "id": "063CEGW8SJ54PZJZBQ6MN60YV8",
     "metadata": null,
     "name": "glass",
     "onhandQuantity": {
@@ -4335,7 +4532,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "glass-6021",
+    "trackingIdentifier": "glass-3715",
     "type": "EconomicResource"
   },
   {
@@ -4353,8 +4550,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:20.532002Z",
-    "id": "0637WV5WTVXKYAC25QTPF2W90R",
+    "hasPointInTime": "2023-03-09T16:45:37.180383Z",
+    "id": "063CEGWBH45RC2XMQF7GQVDWDM",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -4362,7 +4559,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -4370,7 +4567,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
                 "name": "Design_magic_mirror",
                 "note": "Design of magic mirror by Designer2",
                 "type": "Process"
@@ -4378,7 +4575,7 @@
             },
             {
               "node": {
-                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "id": "063CEGWA5SPTK90D8VHY10HJXG",
                 "name": "Creation_magic_bike_mirror",
                 "note": "Creation of magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -4386,14 +4583,14 @@
             }
           ]
         },
-        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "id": "063CEGXK1KGJW1ECWNJQVMCQKM",
         "name": "design_create_mirror",
         "note": "Groups mirror design and creation",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:20.134087Z",
-      "hasEnd": "2023-02-23T13:18:20.134087Z",
-      "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+      "hasBeginning": "2023-03-09T16:45:36.829104Z",
+      "hasEnd": "2023-03-09T16:45:36.829104Z",
+      "id": "063CEGWA5SPTK90D8VHY10HJXG",
       "name": "Creation_magic_bike_mirror",
       "nestedIn": null,
       "note": "Creation of magic bike mirror by Manufacturer2",
@@ -4468,7 +4665,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV5RA3GZJSW4TKAJ7V0C80",
+      "id": "063CEGW7D4DSW8YR3ZJ30CFAFM",
       "metadata": null,
       "name": "magic mirror design",
       "onhandQuantity": {
@@ -4494,7 +4691,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_mirror_design-9408",
+      "trackingIdentifier": "magic_mirror_design-6633",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -4525,8 +4722,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:19.371949Z",
-    "id": "0637WV5R9SHZW1S8QWJSM41GT8",
+    "hasPointInTime": "2023-03-09T16:45:36.144380Z",
+    "id": "063CEGW7CN1ARS3PX5X68T6VHR",
     "inputOf": null,
     "note": "produce design for magic mirror",
     "outputOf": {
@@ -4536,7 +4733,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -4544,7 +4741,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
                 "name": "Design_magic_mirror",
                 "note": "Design of magic mirror by Designer2",
                 "type": "Process"
@@ -4552,7 +4749,7 @@
             },
             {
               "node": {
-                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "id": "063CEGWA5SPTK90D8VHY10HJXG",
                 "name": "Creation_magic_bike_mirror",
                 "note": "Creation of magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -4560,14 +4757,14 @@
             }
           ]
         },
-        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "id": "063CEGXK1KGJW1ECWNJQVMCQKM",
         "name": "design_create_mirror",
         "note": "Groups mirror design and creation",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:18.687724Z",
-      "hasEnd": "2023-02-23T13:18:18.687724Z",
-      "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+      "hasBeginning": "2023-03-09T16:45:35.511413Z",
+      "hasEnd": "2023-03-09T16:45:35.511413Z",
+      "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
       "name": "Design_magic_mirror",
       "nestedIn": null,
       "note": "Design of magic mirror by Designer2",
@@ -4653,7 +4850,7 @@
         },
         "type": "Person"
       },
-      "id": "0637WV5RA3GZJSW4TKAJ7V0C80",
+      "id": "063CEGW7D4DSW8YR3ZJ30CFAFM",
       "metadata": null,
       "name": "magic mirror design",
       "onhandQuantity": {
@@ -4679,7 +4876,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "magic_mirror_design-9408",
+      "trackingIdentifier": "magic_mirror_design-6633",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -4711,7 +4908,7 @@
     "finished": false,
     "groupedIn": {
       "groupedIn": {
-        "id": "0637WV76T87G78V0ZTXB4PEXE4",
+        "id": "063CEGXHQQW3NQ4X35XNY2HF84",
         "name": "design_create_paint_package_mirror",
         "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
       },
@@ -4719,7 +4916,7 @@
         "edges": [
           {
             "node": {
-              "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+              "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
               "name": "Design_magic_mirror",
               "note": "Design of magic mirror by Designer2",
               "type": "Process"
@@ -4727,7 +4924,7 @@
           },
           {
             "node": {
-              "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+              "id": "063CEGWA5SPTK90D8VHY10HJXG",
               "name": "Creation_magic_bike_mirror",
               "note": "Creation of magic bike mirror by Manufacturer2",
               "type": "Process"
@@ -4735,14 +4932,14 @@
           }
         ]
       },
-      "id": "0637WV788ZSJ4G66AQS01KYAGG",
+      "id": "063CEGXK1KGJW1ECWNJQVMCQKM",
       "name": "design_create_mirror",
       "note": "Groups mirror design and creation",
       "type": "ProcessGroup"
     },
-    "hasBeginning": "2023-02-23T13:18:18.687724Z",
-    "hasEnd": "2023-02-23T13:18:18.687724Z",
-    "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+    "hasBeginning": "2023-03-09T16:45:35.511413Z",
+    "hasEnd": "2023-03-09T16:45:35.511413Z",
+    "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
     "name": "Design_magic_mirror",
     "nestedIn": null,
     "note": "Design of magic mirror by Designer2",
@@ -4771,8 +4968,8 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:19.019824Z",
-    "id": "0637WV5PXMPGN0G2F30A6TCVVW",
+    "hasPointInTime": "2023-03-09T16:45:35.824501Z",
+    "id": "063CEGW64MYMNSB9PJEEE8TQ2R",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -4780,7 +4977,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -4788,7 +4985,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+                "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
                 "name": "Design_magic_mirror",
                 "note": "Design of magic mirror by Designer2",
                 "type": "Process"
@@ -4796,7 +4993,7 @@
             },
             {
               "node": {
-                "id": "0637WV5V9TWW7DG4XC58ZH4VYM",
+                "id": "063CEGWA5SPTK90D8VHY10HJXG",
                 "name": "Creation_magic_bike_mirror",
                 "note": "Creation of magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -4804,14 +5001,14 @@
             }
           ]
         },
-        "id": "0637WV788ZSJ4G66AQS01KYAGG",
+        "id": "063CEGXK1KGJW1ECWNJQVMCQKM",
         "name": "design_create_mirror",
         "note": "Groups mirror design and creation",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:18.687724Z",
-      "hasEnd": "2023-02-23T13:18:18.687724Z",
-      "id": "0637WV5NJ5Q6CQEKHZR02G1A90",
+      "hasBeginning": "2023-03-09T16:45:35.511413Z",
+      "hasEnd": "2023-03-09T16:45:35.511413Z",
+      "id": "063CEGW4XAPAYG3FJ8N6XC1QR8",
       "name": "Design_magic_mirror",
       "nestedIn": null,
       "note": "Design of magic mirror by Designer2",
@@ -4907,7 +5104,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV5RA3GZJSW4TKAJ7V0C80",
+    "id": "063CEGW7D4DSW8YR3ZJ30CFAFM",
     "metadata": null,
     "name": "magic mirror design",
     "onhandQuantity": {
@@ -4933,7 +5130,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_mirror_design-9408",
+    "trackingIdentifier": "magic_mirror_design-6633",
     "type": "EconomicResource"
   },
   {
@@ -4970,7 +5167,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV60TD3G833NW3KYPDVYP0",
+    "id": "063CEGWEY5EBDYGRTSX069E1KG",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
@@ -4996,7 +5193,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-2894",
+    "trackingIdentifier": "magic_bike_mirror-8195",
     "type": "EconomicResource"
   },
   {
@@ -5021,8 +5218,8 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:22.386138Z",
-    "id": "0637WV647Z4X3NTC9TAHHJF3F4",
+    "hasPointInTime": "2023-03-09T16:45:38.746740Z",
+    "id": "063CEGWHKTJVKHYQ97XPXGZHJM",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -5030,7 +5227,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -5038,7 +5235,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
                 "name": "Painting_magic_bike_mirror",
                 "note": "Painting magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -5046,7 +5243,7 @@
             },
             {
               "node": {
-                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
                 "name": "Packaging_magic_bike_mirror",
                 "note": "Packaging magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -5054,14 +5251,14 @@
             }
           ]
         },
-        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "id": "063CEGXPZHCN2KBT6QMV6SX20R",
         "name": "paint_package_mirror",
         "note": "Groups mirror painting and packaging",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:22.032689Z",
-      "hasEnd": "2023-02-23T13:18:22.032689Z",
-      "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+      "hasBeginning": "2023-03-09T16:45:38.420957Z",
+      "hasEnd": "2023-03-09T16:45:38.420957Z",
+      "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
       "name": "Painting_magic_bike_mirror",
       "nestedIn": null,
       "note": "Painting magic bike mirror by Manufacturer2",
@@ -5145,8 +5342,8 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-02-23T13:18:23.923134Z",
-    "id": "0637WV6A1FCNKCMXEYY9WHQ4CR",
+    "hasPointInTime": "2023-03-09T16:45:40.136765Z",
+    "id": "063CEGWPZG7AMNW5FY444EQ1Q8",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
@@ -5154,7 +5351,7 @@
       "finished": false,
       "groupedIn": {
         "groupedIn": {
-          "id": "0637WV76T87G78V0ZTXB4PEXE4",
+          "id": "063CEGXHQQW3NQ4X35XNY2HF84",
           "name": "design_create_paint_package_mirror",
           "note": "Groups two groups: mirror design and creation and mirror painting and packaging"
         },
@@ -5162,7 +5359,7 @@
           "edges": [
             {
               "node": {
-                "id": "0637WV62MFCX1GJNS0Z1CANX3M",
+                "id": "063CEGWGA7Q4CFZGJQ75SCMSH8",
                 "name": "Painting_magic_bike_mirror",
                 "note": "Painting magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -5170,7 +5367,7 @@
             },
             {
               "node": {
-                "id": "0637WV68P9ARA2RW51WSMT9V4W",
+                "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
                 "name": "Packaging_magic_bike_mirror",
                 "note": "Packaging magic bike mirror by Manufacturer2",
                 "type": "Process"
@@ -5178,14 +5375,14 @@
             }
           ]
         },
-        "id": "0637WV7C7RJBNEHZ5TSW6MRDT4",
+        "id": "063CEGXPZHCN2KBT6QMV6SX20R",
         "name": "paint_package_mirror",
         "note": "Groups mirror painting and packaging",
         "type": "ProcessGroup"
       },
-      "hasBeginning": "2023-02-23T13:18:23.580534Z",
-      "hasEnd": "2023-02-23T13:18:23.580534Z",
-      "id": "0637WV68P9ARA2RW51WSMT9V4W",
+      "hasBeginning": "2023-03-09T16:45:39.810836Z",
+      "hasEnd": "2023-03-09T16:45:39.810836Z",
+      "id": "063CEGWNQX1RTYAEDRKGYNG6PC",
       "name": "Packaging_magic_bike_mirror",
       "nestedIn": null,
       "note": "Packaging magic bike mirror by Manufacturer2",
@@ -5281,7 +5478,7 @@
       },
       "type": "Person"
     },
-    "id": "0637WV6EJF17ZC5KVR70PREF08",
+    "id": "063CEGWVKPTRESKZ1R9XQR5SXW",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
@@ -5307,13 +5504,13 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-2894",
+    "trackingIdentifier": "magic_bike_mirror-8195",
     "type": "EconomicResource"
   },
   {
     "__typename": "EconomicResource",
     "accountingQuantity": {
-      "hasNumericalValue": "-1",
+      "hasNumericalValue": "0",
       "hasUnit": {
         "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
@@ -5344,11 +5541,11 @@
       },
       "type": "Person"
     },
-    "id": "0637WV6G0AEFC2DZ46P1K8A75C",
+    "id": "063CEGWX1CQ4DB1RZEWQ92PHAG",
     "metadata": null,
     "name": "magic bike mirror",
     "onhandQuantity": {
-      "hasNumericalValue": "-1",
+      "hasNumericalValue": "0",
       "hasUnit": {
         "id": "0637HHXR5WS6QETSJE7VSKA90R",
         "label": "u_piece",
@@ -5370,7 +5567,70 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "magic_bike_mirror-2894",
+    "trackingIdentifier": "magic_bike_mirror-8195",
+    "type": "EconomicResource"
+  },
+  {
+    "__typename": "EconomicResource",
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "currentLocation": {
+      "alt": "0",
+      "id": "0637HHX9F65VEX7WVMKCK7W0MW",
+      "lat": "51.9650382",
+      "long": "4.0133683",
+      "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+      "name": "Lyondell Covestro Manufacturing",
+      "note": "location.service_prov2.com"
+    },
+    "custodian": {
+      "id": "0630EEVQ2ZKZG83BC1R7Q2VMC8",
+      "name": "service_prov2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
+        "lat": "51.9650382",
+        "long": "4.0133683",
+        "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+        "name": "Lyondell Covestro Manufacturing",
+        "note": "location.service_prov2.com"
+      },
+      "type": "Person"
+    },
+    "id": "063CEGX5CGDVY0YB4XP7RJHVJW",
+    "metadata": null,
+    "name": "fancy collaborative bike",
+    "onhandQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "0637HHXR5WS6QETSJE7VSKA90R",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "id": "0630EEVQ2ZKZG83BC1R7Q2VMC8",
+      "name": "service_prov2",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "0637HHX9F65VEX7WVMKCK7W0MW",
+        "lat": "51.9650382",
+        "long": "4.0133683",
+        "mappableAddress": "Australi\u00ebweg 7, 3199 KB Maasvlakte Rotterdam, Netherlands",
+        "name": "Lyondell Covestro Manufacturing",
+        "note": "location.service_prov2.com"
+      },
+      "type": "Person"
+    },
+    "trackingIdentifier": "fancy_collaborative_bike-4831",
     "type": "EconomicResource"
   }
 ]
