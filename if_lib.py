@@ -89,7 +89,16 @@ def get_HMAC(email, endpoint, newUser=True):
         print("Result")
         print(res)
 
-    res_json = res.json()
+    try:
+        res_json = res.json()
+    except Exception as e:
+        print("Payload")
+        print(payload)
+        print("Variables")
+        print(variables)
+        print("Result")
+        print(res)
+        raise Exception(f"Exception {e} in function {inspect.stack()[0][3]}")
     
     if DEBUG_get_HMAC:
         print("JSON")
@@ -405,7 +414,17 @@ def create_Person(name, username, email, eddsaPublicKey, endpoint, newPerson=Tru
         print("Response")
         print(res)
 
-    res_json = res.json()
+    try:
+        res_json = res.json()
+    except Exception as e:
+        print("Payload")
+        print(payload)
+        print("Headers")
+        print(headers)
+        print("Result")
+        print(res)
+        raise Exception(f"Exception {e} in function {inspect.stack()[0][3]}")
+
 
     if DEBUG_create_Person:
         print("Result")
@@ -513,10 +532,14 @@ def send_signed(query: str, variables: dict, username: str, eddsa: str, endpoint
 
     try:
         res_json = res.json()
-    except (json.decoder.JSONDecodeError):
-        print("Exception JSONDecodeError")
+    except Exception as e:
+        print("Payload")
+        print(payload)
+        print("Headers")
+        print(headers)
+        print("Result")
         print(res)
-        raise Exception(f"Error in function {inspect.stack()[0][3]}")
+        raise Exception(f"Exception {e} in function {inspect.stack()[0][3]}")
 
 
     if DEBUG_send_signed:

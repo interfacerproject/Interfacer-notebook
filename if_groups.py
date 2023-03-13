@@ -110,38 +110,52 @@ def query_processgrp(prgp_id, user_data, endpoint):
 
 
 def get_processgrp(name, user_data, note, processgrp_data, endpoint, processgrp_id=None):
-    
-    processgrp_data[f'{name}'] = {}
-    cur_prgp = processgrp_data[f'{name}']
+    """
+        This function populates the processgrp_data structure and 
+        calls the function to create the process group.
+        It also inserts the newly created process group inside another
+        process group if requested
+    """
+    if f'{name}' in processgrp_data:
+        print(f'Warning: process group {name} already exists')
+        if processgrp_id != None:
+            print(f"Request to insert existing process group {name} in {processgrp_id}")
+            raise Exception(f"Error in function {inspect.stack()[0][3]}")
+        
+    else:
+        processgrp_data[f'{name}'] = {}
+        cur_prgp = processgrp_data[f'{name}']
 
-    cur_prgp["name"] = name
+        cur_prgp["name"] = name
 
-    cur_prgp["note"] = note
+        cur_prgp["note"] = note
 
-    cur_prgp["type"] = "ProcessGroup"
-    
-    cur_prgp["groupedIn"] = processgrp_id
+        cur_prgp["type"] = "ProcessGroup"
+        
+        cur_prgp["groupedIn"] = processgrp_id
 
-    cur_prgp["groups"] = []
+        cur_prgp["groups"] = []
 
-    create_processgrp(cur_prgp, user_data, endpoint)
+        create_processgrp(cur_prgp, user_data, endpoint)
 
-    if processgrp_id != None:
-        # Need to insert the process group as child of the parent
-        for key in processgrp_data.keys():
-            # set_trace()
-            if processgrp_data[key]['id'] == processgrp_id:
-                processgrp_data[key]['groups'].append(cur_prgp['id'])
-                return
-        # we should not get here
-        print(f"Parent {processgrp_id} not found")
-        raise Exception(f"Error in function {inspect.stack()[0][3]}")
+        if processgrp_id != None:
+            # Need to insert the process group as child of the parent
+            for key in processgrp_data.keys():
+                # set_trace()
+                if processgrp_data[key]['id'] == processgrp_id:
+                    processgrp_data[key]['groups'].append(cur_prgp['id'])
+                    return
+            # we should not get here
+            print(f"Parent {processgrp_id} not found")
+            raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
 
 
 DEBUG_insert_procingrp = False
 def insert_procingrp(user_data, processgrp, process, endpoint):
-
+    """
+        This function inserts a process in a process group
+    """
     variables = {
         "process": {
             "id": process['id'],
@@ -181,41 +195,13 @@ def insert_procingrp(user_data, processgrp, process, endpoint):
     process['groupedIn'] = processgrp['id']
 
 
-# query {
-#   processGroup(id: id) {
-#     id
-#     name
-#     note
-#     groupedIn
-#     groups(first: 50, after: $handle) {
-#       edges {
-#         node {
-#           ... on Process {
-#           }
-#           ... on ProcessGroup {
-#           }
-#         }
-#       }
-#     }
-#   }
-
-#   process(id: id) {
-#     id
-#     name
-#     note
-#     groupedIn {}
-#   }
-
-#   processGroups(first: 50, after: $handle) {
-#     edges {
-#       node {
-#       }
-#     }
-#   }
-# }
 # {k: v for k, v in dpp.items() if k not in ['children']}
 
 def fill_prcgrp(id, processgrp_data, user_data, endpoint):
+    """
+        This function calls the function that queries the process group by 
+        and fills in the processgrp_data.
+    """
     prg_grp = query_processgrp(id, user_data, endpoint)
     
     processgrp_data[prg_grp['name']] = {}
@@ -225,16 +211,30 @@ def fill_prcgrp(id, processgrp_data, user_data, endpoint):
     in_obj['note'] = prg_grp['note']
     in_obj['type'] = prg_grp['type']
     
+    # add all children nodes
     # breakpoint()
     in_obj['groups'] = [node['node']['id'] for node in prg_grp['groups']['edges']]
+    
+    # check whether we need to retrieve a parent process group
     if prg_grp['groupedIn'] != None:
         in_obj['groupedIn'] = prg_grp['groupedIn']['id']
-        fill_prcgrp(in_obj['groupedIn'], processgrp_data, user_data, endpoint)
+        present = False
+        for key in processgrp_data.keys():
+            if processgrp_data[key]['id'] == in_obj['groupedIn']:
+                present = True
+                # print(f"Process: {dpp['name']}, Group present: {processgrp_data[key]['name']}")
+                # breakpoint()
+                break
+        if not present:
+            fill_prcgrp(in_obj['groupedIn'], processgrp_data, user_data, endpoint)
     else: 
         in_obj['groupedIn'] = None
 
 def find_procgrp(dpp, processgrp_data, user_data, endpoint):
-    present = False
+    """
+        This function recursively examines the dpp to reconstruct
+        the process group structure
+    """
     if dpp['type'] == "Process":
         # breakpoint()
         if 'grouped_in_id' in dpp:
@@ -246,7 +246,9 @@ def find_procgrp(dpp, processgrp_data, user_data, endpoint):
                 id = None
         else:
             raise Exception(f"Group keys not present in process {dpp['name']}")
+        
         if id != None:
+            present = False
             for key in processgrp_data.keys():
                 if processgrp_data[key]['id'] == id:
                     present = True
