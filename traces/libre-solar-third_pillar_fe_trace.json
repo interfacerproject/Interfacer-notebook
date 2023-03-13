@@ -1,0 +1,3622 @@
+[
+  {
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "currentLocation": {
+      "alt": "0",
+      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+      "lat": "53.54651094994547",
+      "long": "9.996357255816038",
+      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+      "name": "Fab City Hamburg",
+      "note": "location.user2.org"
+    },
+    "custodian": {
+      "id": "0630H1AJ39F268Q676VGD0YS5R",
+      "name": "User Two",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "lat": "53.54651094994547",
+        "long": "9.996357255816038",
+        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+        "name": "Fab City Hamburg",
+        "note": "location.user2.org"
+      },
+      "type": "Person"
+    },
+    "id": "063DNHNNTTAVDRR7BDM20760SC",
+    "metadata": null,
+    "name": "third_pillar",
+    "onhandQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "id": "0630H1AJ39F268Q676VGD0YS5R",
+      "name": "User Two",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "lat": "53.54651094994547",
+        "long": "9.996357255816038",
+        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+        "name": "Fab City Hamburg",
+        "note": "location.user2.org"
+      },
+      "type": "Person"
+    },
+    "trackingIdentifier": "third_pillar-9355",
+    "type": "EconomicResource",
+    "children": [
+      {
+        "action": {
+          "id": "modify",
+          "inputOutput": "output",
+          "label": "modify",
+          "onhandEffect": "noEffect",
+          "pairsWith": "modify",
+          "resourceEffect": "noEffect"
+        },
+        "agreedIn": null,
+        "atLocation": null,
+        "effortQuantity": null,
+        "hasBeginning": null,
+        "hasEnd": null,
+        "hasPointInTime": "2023-03-13T11:41:42.961423Z",
+        "id": "063DNHNY1EX0CHSRZRT5C3CHWR",
+        "inputOf": null,
+        "note": "modify Pillar",
+        "outputOf": {
+          "basedOn": null,
+          "classifiedAs": null,
+          "deletable": false,
+          "finished": false,
+          "groupedIn": {
+            "groupedIn": null,
+            "groups": {
+              "edges": [
+                {
+                  "node": {
+                    "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                    "name": "Third_Pillar_1",
+                    "note": "Assembly process Third_Pillar_1 defined by User One",
+                    "type": "Process"
+                  }
+                },
+                {
+                  "node": {
+                    "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                    "name": "Third_Pillar_2",
+                    "note": "Assembly process Third_Pillar_2 defined by User One",
+                    "type": "Process"
+                  }
+                }
+              ]
+            },
+            "id": "063DNHRVYTSVPKAW5T3PCANA84",
+            "name": "assemble_third_pillar",
+            "note": "Groups assembly events of the third pillar",
+            "type": "ProcessGroup"
+          },
+          "hasBeginning": "2023-03-13T11:41:08.372071Z",
+          "hasEnd": "2023-03-13T11:41:08.372071Z",
+          "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+          "name": "Third_Pillar_2",
+          "nestedIn": null,
+          "note": "Assembly process Third_Pillar_2 defined by User One",
+          "plannedWithin": null,
+          "type": "Process"
+        },
+        "provider": {
+          "id": "0630H1AJ39F268Q676VGD0YS5R",
+          "name": "User Two",
+          "note": null,
+          "primaryLocation": {
+            "alt": "0",
+            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+            "lat": "53.54651094994547",
+            "long": "9.996357255816038",
+            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+            "name": "Fab City Hamburg",
+            "note": "location.user2.org"
+          },
+          "type": "Person"
+        },
+        "realizationOf": null,
+        "receiver": {
+          "id": "0630H1AJ39F268Q676VGD0YS5R",
+          "name": "User Two",
+          "note": null,
+          "primaryLocation": {
+            "alt": "0",
+            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+            "lat": "53.54651094994547",
+            "long": "9.996357255816038",
+            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+            "name": "Fab City Hamburg",
+            "note": "location.user2.org"
+          },
+          "type": "Person"
+        },
+        "resourceClassifiedAs": null,
+        "resourceConformsTo": null,
+        "resourceInventoriedAs": {
+          "accountingQuantity": {
+            "hasNumericalValue": "0",
+            "hasUnit": {
+              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+              "label": "u_piece",
+              "symbol": "om2:one"
+            }
+          },
+          "currentLocation": {
+            "alt": "0",
+            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+            "lat": "53.54651094994547",
+            "long": "9.996357255816038",
+            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+            "name": "Fab City Hamburg",
+            "note": "location.user2.org"
+          },
+          "custodian": {
+            "id": "0630H1AJ39F268Q676VGD0YS5R",
+            "name": "User Two",
+            "note": null,
+            "primaryLocation": {
+              "alt": "0",
+              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+              "lat": "53.54651094994547",
+              "long": "9.996357255816038",
+              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+              "name": "Fab City Hamburg",
+              "note": "location.user2.org"
+            },
+            "type": "Person"
+          },
+          "id": "063DNHNNTTAVDRR7BDM20760SC",
+          "metadata": null,
+          "name": "third_pillar",
+          "onhandQuantity": {
+            "hasNumericalValue": "0",
+            "hasUnit": {
+              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+              "label": "u_piece",
+              "symbol": "om2:one"
+            }
+          },
+          "primaryAccountable": {
+            "id": "0630H1AJ39F268Q676VGD0YS5R",
+            "name": "User Two",
+            "note": null,
+            "primaryLocation": {
+              "alt": "0",
+              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+              "lat": "53.54651094994547",
+              "long": "9.996357255816038",
+              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+              "name": "Fab City Hamburg",
+              "note": "location.user2.org"
+            },
+            "type": "Person"
+          },
+          "trackingIdentifier": "third_pillar-9355",
+          "type": "EconomicResource"
+        },
+        "resourceQuantity": {
+          "hasNumericalValue": "1",
+          "hasUnit": {
+            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+            "label": "u_piece",
+            "symbol": "om2:one"
+          }
+        },
+        "toLocation": null,
+        "toResourceInventoriedAs": null,
+        "triggeredBy": null,
+        "type": "EconomicEvent",
+        "name": "modify",
+        "children": [
+          {
+            "basedOn": null,
+            "classifiedAs": null,
+            "deletable": false,
+            "finished": false,
+            "groupedIn": {
+              "groupedIn": null,
+              "groups": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                      "name": "Third_Pillar_1",
+                      "note": "Assembly process Third_Pillar_1 defined by User One",
+                      "type": "Process"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                      "name": "Third_Pillar_2",
+                      "note": "Assembly process Third_Pillar_2 defined by User One",
+                      "type": "Process"
+                    }
+                  }
+                ]
+              },
+              "id": "063DNHRVYTSVPKAW5T3PCANA84",
+              "name": "assemble_third_pillar",
+              "note": "Groups assembly events of the third pillar",
+              "type": "ProcessGroup"
+            },
+            "hasBeginning": "2023-03-13T11:41:08.372071Z",
+            "hasEnd": "2023-03-13T11:41:08.372071Z",
+            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+            "name": "Third_Pillar_2",
+            "nestedIn": null,
+            "note": "Assembly process Third_Pillar_2 defined by User One",
+            "plannedWithin": null,
+            "type": "Process",
+            "children": [
+              {
+                "action": {
+                  "id": "work",
+                  "inputOutput": "input",
+                  "label": "work",
+                  "onhandEffect": "noEffect",
+                  "pairsWith": "notApplicable",
+                  "resourceEffect": "noEffect"
+                },
+                "agreedIn": null,
+                "atLocation": null,
+                "effortQuantity": {
+                  "hasNumericalValue": "0.05",
+                  "hasUnit": {
+                    "id": "063DNHG3RK8RJHZ65VSPQ4GDMM",
+                    "label": "h",
+                    "symbol": "om2:hour"
+                  }
+                },
+                "hasBeginning": null,
+                "hasEnd": null,
+                "hasPointInTime": "2023-03-13T11:41:42.623836Z",
+                "id": "063DNHNWNWK2HMJ2EM8W1D9XX8",
+                "inputOf": {
+                  "basedOn": null,
+                  "classifiedAs": null,
+                  "deletable": false,
+                  "finished": false,
+                  "groupedIn": {
+                    "groupedIn": null,
+                    "groups": {
+                      "edges": [
+                        {
+                          "node": {
+                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                            "name": "Third_Pillar_1",
+                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                            "type": "Process"
+                          }
+                        },
+                        {
+                          "node": {
+                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                            "name": "Third_Pillar_2",
+                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                            "type": "Process"
+                          }
+                        }
+                      ]
+                    },
+                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                    "name": "assemble_third_pillar",
+                    "note": "Groups assembly events of the third pillar",
+                    "type": "ProcessGroup"
+                  },
+                  "hasBeginning": "2023-03-13T11:41:08.372071Z",
+                  "hasEnd": "2023-03-13T11:41:08.372071Z",
+                  "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                  "name": "Third_Pillar_2",
+                  "nestedIn": null,
+                  "note": "Assembly process Third_Pillar_2 defined by User One",
+                  "plannedWithin": null,
+                  "type": "Process"
+                },
+                "note": "Insert three M6nutplates more at the other end of the beam and use one of them to connect another RAconnector there.",
+                "outputOf": null,
+                "provider": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "realizationOf": null,
+                "receiver": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "resourceClassifiedAs": null,
+                "resourceConformsTo": {
+                  "defaultUnitOfEffort": null,
+                  "defaultUnitOfResource": {
+                    "id": "063DNHG3RK8RJHZ65VSPQ4GDMM",
+                    "label": "h",
+                    "symbol": "om2:hour"
+                  },
+                  "id": "063DNHGET3912R1CQ835DT4J24",
+                  "name": "assembly_construction",
+                  "note": "Specification for Frame assembly work",
+                  "resourceClassifiedAs": [
+                    "A resource specification URI"
+                  ]
+                },
+                "resourceInventoriedAs": null,
+                "resourceQuantity": null,
+                "toLocation": null,
+                "toResourceInventoriedAs": null,
+                "triggeredBy": null,
+                "type": "EconomicEvent",
+                "name": "work",
+                "children": []
+              },
+              {
+                "action": {
+                  "id": "use",
+                  "inputOutput": "input",
+                  "label": "use",
+                  "onhandEffect": "noEffect",
+                  "pairsWith": "notApplicable",
+                  "resourceEffect": "noEffect"
+                },
+                "agreedIn": null,
+                "atLocation": null,
+                "effortQuantity": {
+                  "hasNumericalValue": "0.03",
+                  "hasUnit": {
+                    "id": "063DNHG3RK8RJHZ65VSPQ4GDMM",
+                    "label": "h",
+                    "symbol": "om2:hour"
+                  }
+                },
+                "hasBeginning": null,
+                "hasEnd": null,
+                "hasPointInTime": "2023-03-13T11:41:42.275956Z",
+                "id": "063DNHNV9EJS4YSAPS49WMEJV0",
+                "inputOf": {
+                  "basedOn": null,
+                  "classifiedAs": null,
+                  "deletable": false,
+                  "finished": false,
+                  "groupedIn": {
+                    "groupedIn": null,
+                    "groups": {
+                      "edges": [
+                        {
+                          "node": {
+                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                            "name": "Third_Pillar_1",
+                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                            "type": "Process"
+                          }
+                        },
+                        {
+                          "node": {
+                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                            "name": "Third_Pillar_2",
+                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                            "type": "Process"
+                          }
+                        }
+                      ]
+                    },
+                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                    "name": "assemble_third_pillar",
+                    "note": "Groups assembly events of the third pillar",
+                    "type": "ProcessGroup"
+                  },
+                  "hasBeginning": "2023-03-13T11:41:08.372071Z",
+                  "hasEnd": "2023-03-13T11:41:08.372071Z",
+                  "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                  "name": "Third_Pillar_2",
+                  "nestedIn": null,
+                  "note": "Assembly process Third_Pillar_2 defined by User One",
+                  "plannedWithin": null,
+                  "type": "Process"
+                },
+                "note": "Input use Allen Key event for Lower Frame Assembly",
+                "outputOf": null,
+                "provider": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "realizationOf": null,
+                "receiver": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "resourceClassifiedAs": null,
+                "resourceConformsTo": null,
+                "resourceInventoriedAs": {
+                  "accountingQuantity": {
+                    "hasNumericalValue": "1",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "currentLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "custodian": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                  "metadata": null,
+                  "name": "Allen_Key",
+                  "onhandQuantity": {
+                    "hasNumericalValue": "1",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "primaryAccountable": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "trackingIdentifier": "Allen_Key-6509",
+                  "type": "EconomicResource"
+                },
+                "resourceQuantity": {
+                  "hasNumericalValue": "1",
+                  "hasUnit": {
+                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                    "label": "u_piece",
+                    "symbol": "om2:one"
+                  }
+                },
+                "toLocation": null,
+                "toResourceInventoriedAs": null,
+                "triggeredBy": null,
+                "type": "EconomicEvent",
+                "name": "use",
+                "children": [
+                  {
+                    "accountingQuantity": {
+                      "hasNumericalValue": "1",
+                      "hasUnit": {
+                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "currentLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "custodian": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "lat": "53.54651094994547",
+                        "long": "9.996357255816038",
+                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                        "name": "Fab City Hamburg",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                    "metadata": null,
+                    "name": "Allen_Key",
+                    "onhandQuantity": {
+                      "hasNumericalValue": "1",
+                      "hasUnit": {
+                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "primaryAccountable": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "lat": "53.54651094994547",
+                        "long": "9.996357255816038",
+                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                        "name": "Fab City Hamburg",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "trackingIdentifier": "Allen_Key-6509",
+                    "type": "EconomicResource",
+                    "children": [
+                      {
+                        "action": {
+                          "id": "raise",
+                          "inputOutput": "notApplicable",
+                          "label": "raise",
+                          "onhandEffect": "increment",
+                          "pairsWith": "notApplicable",
+                          "resourceEffect": "increment"
+                        },
+                        "agreedIn": null,
+                        "atLocation": null,
+                        "effortQuantity": null,
+                        "hasBeginning": null,
+                        "hasEnd": null,
+                        "hasPointInTime": "2023-03-13T11:40:59.704108Z",
+                        "id": "063DNHGN0RYADFERXGYYKX2VMC",
+                        "inputOf": null,
+                        "note": "create resource",
+                        "outputOf": null,
+                        "provider": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "realizationOf": null,
+                        "receiver": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "resourceClassifiedAs": null,
+                        "resourceConformsTo": {
+                          "defaultUnitOfEffort": null,
+                          "defaultUnitOfResource": {
+                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          },
+                          "id": "063DNHG53MM0KSTS7ET1G6W758",
+                          "name": "Allen_Key",
+                          "note": "Specification for DIN911 4mm hex tool (aka Allen Key) for assembly",
+                          "resourceClassifiedAs": [
+                            "https://www.fasteners.eu/standards/DIN/911/"
+                          ]
+                        },
+                        "resourceInventoriedAs": {
+                          "accountingQuantity": {
+                            "hasNumericalValue": "1",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "currentLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "custodian": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "lat": "53.54651094994547",
+                              "long": "9.996357255816038",
+                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                              "name": "Fab City Hamburg",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                          "metadata": null,
+                          "name": "Allen_Key",
+                          "onhandQuantity": {
+                            "hasNumericalValue": "1",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "primaryAccountable": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "lat": "53.54651094994547",
+                              "long": "9.996357255816038",
+                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                              "name": "Fab City Hamburg",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "trackingIdentifier": "Allen_Key-6509",
+                          "type": "EconomicResource"
+                        },
+                        "resourceQuantity": {
+                          "hasNumericalValue": "1",
+                          "hasUnit": {
+                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          }
+                        },
+                        "toLocation": {
+                          "alt": "0",
+                          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                          "lat": "53.54651094994547",
+                          "long": "9.996357255816038",
+                          "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                          "name": "Fab City Hamburg",
+                          "note": "location.user2.org"
+                        },
+                        "toResourceInventoriedAs": null,
+                        "triggeredBy": null,
+                        "type": "EconomicEvent",
+                        "name": "raise",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "action": {
+                  "id": "consume",
+                  "inputOutput": "input",
+                  "label": "consume",
+                  "onhandEffect": "decrement",
+                  "pairsWith": "notApplicable",
+                  "resourceEffect": "decrement"
+                },
+                "agreedIn": null,
+                "atLocation": null,
+                "effortQuantity": null,
+                "hasBeginning": null,
+                "hasEnd": null,
+                "hasPointInTime": "2023-03-13T11:41:41.931235Z",
+                "id": "063DNHNSZN7PGDYZ4HE15AWERR",
+                "inputOf": {
+                  "basedOn": null,
+                  "classifiedAs": null,
+                  "deletable": false,
+                  "finished": false,
+                  "groupedIn": {
+                    "groupedIn": null,
+                    "groups": {
+                      "edges": [
+                        {
+                          "node": {
+                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                            "name": "Third_Pillar_1",
+                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                            "type": "Process"
+                          }
+                        },
+                        {
+                          "node": {
+                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                            "name": "Third_Pillar_2",
+                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                            "type": "Process"
+                          }
+                        }
+                      ]
+                    },
+                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                    "name": "assemble_third_pillar",
+                    "note": "Groups assembly events of the third pillar",
+                    "type": "ProcessGroup"
+                  },
+                  "hasBeginning": "2023-03-13T11:41:08.372071Z",
+                  "hasEnd": "2023-03-13T11:41:08.372071Z",
+                  "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                  "name": "Third_Pillar_2",
+                  "nestedIn": null,
+                  "note": "Assembly process Third_Pillar_2 defined by User One",
+                  "plannedWithin": null,
+                  "type": "Process"
+                },
+                "note": "Input consume 1 x RAConnector event for Pillar Assembly",
+                "outputOf": null,
+                "provider": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "realizationOf": null,
+                "receiver": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "resourceClassifiedAs": null,
+                "resourceConformsTo": null,
+                "resourceInventoriedAs": {
+                  "accountingQuantity": {
+                    "hasNumericalValue": "42",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "currentLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "custodian": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                  "metadata": null,
+                  "name": "RAConnector",
+                  "onhandQuantity": {
+                    "hasNumericalValue": "42",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "primaryAccountable": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "trackingIdentifier": "RAConnector-6095",
+                  "type": "EconomicResource"
+                },
+                "resourceQuantity": {
+                  "hasNumericalValue": "1",
+                  "hasUnit": {
+                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                    "label": "u_piece",
+                    "symbol": "om2:one"
+                  }
+                },
+                "toLocation": null,
+                "toResourceInventoriedAs": null,
+                "triggeredBy": null,
+                "type": "EconomicEvent",
+                "name": "consume",
+                "children": [
+                  {
+                    "accountingQuantity": {
+                      "hasNumericalValue": "42",
+                      "hasUnit": {
+                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "currentLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "custodian": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "lat": "53.54651094994547",
+                        "long": "9.996357255816038",
+                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                        "name": "Fab City Hamburg",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                    "metadata": null,
+                    "name": "RAConnector",
+                    "onhandQuantity": {
+                      "hasNumericalValue": "42",
+                      "hasUnit": {
+                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "primaryAccountable": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "lat": "53.54651094994547",
+                        "long": "9.996357255816038",
+                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                        "name": "Fab City Hamburg",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "trackingIdentifier": "RAConnector-6095",
+                    "type": "EconomicResource",
+                    "children": [
+                      {
+                        "action": {
+                          "id": "raise",
+                          "inputOutput": "notApplicable",
+                          "label": "raise",
+                          "onhandEffect": "increment",
+                          "pairsWith": "notApplicable",
+                          "resourceEffect": "increment"
+                        },
+                        "agreedIn": null,
+                        "atLocation": null,
+                        "effortQuantity": null,
+                        "hasBeginning": null,
+                        "hasEnd": null,
+                        "hasPointInTime": "2023-03-13T11:41:01.127754Z",
+                        "id": "063DNHGTJ2D16NK94C8GJCZ0T4",
+                        "inputOf": null,
+                        "note": "create resource",
+                        "outputOf": null,
+                        "provider": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "realizationOf": null,
+                        "receiver": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "resourceClassifiedAs": null,
+                        "resourceConformsTo": {
+                          "defaultUnitOfEffort": null,
+                          "defaultUnitOfResource": {
+                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          },
+                          "id": "063DNHG9Y2E7ED32KG2QNB0ZCR",
+                          "name": "RAConnector",
+                          "note": "Specification for connector",
+                          "resourceClassifiedAs": [
+                            "A resource specification URI"
+                          ]
+                        },
+                        "resourceInventoriedAs": {
+                          "accountingQuantity": {
+                            "hasNumericalValue": "42",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "currentLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "custodian": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "lat": "53.54651094994547",
+                              "long": "9.996357255816038",
+                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                              "name": "Fab City Hamburg",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                          "metadata": null,
+                          "name": "RAConnector",
+                          "onhandQuantity": {
+                            "hasNumericalValue": "42",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "primaryAccountable": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "lat": "53.54651094994547",
+                              "long": "9.996357255816038",
+                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                              "name": "Fab City Hamburg",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "trackingIdentifier": "RAConnector-6095",
+                          "type": "EconomicResource"
+                        },
+                        "resourceQuantity": {
+                          "hasNumericalValue": "50",
+                          "hasUnit": {
+                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          }
+                        },
+                        "toLocation": {
+                          "alt": "0",
+                          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                          "lat": "53.54651094994547",
+                          "long": "9.996357255816038",
+                          "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                          "name": "Fab City Hamburg",
+                          "note": "location.user2.org"
+                        },
+                        "toResourceInventoriedAs": null,
+                        "triggeredBy": null,
+                        "type": "EconomicEvent",
+                        "name": "raise",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "action": {
+                  "id": "consume",
+                  "inputOutput": "input",
+                  "label": "consume",
+                  "onhandEffect": "decrement",
+                  "pairsWith": "notApplicable",
+                  "resourceEffect": "decrement"
+                },
+                "agreedIn": null,
+                "atLocation": null,
+                "effortQuantity": null,
+                "hasBeginning": null,
+                "hasEnd": null,
+                "hasPointInTime": "2023-03-13T11:41:41.561668Z",
+                "id": "063DNHNRMS3072K7P9QWN8F2TC",
+                "inputOf": {
+                  "basedOn": null,
+                  "classifiedAs": null,
+                  "deletable": false,
+                  "finished": false,
+                  "groupedIn": {
+                    "groupedIn": null,
+                    "groups": {
+                      "edges": [
+                        {
+                          "node": {
+                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                            "name": "Third_Pillar_1",
+                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                            "type": "Process"
+                          }
+                        },
+                        {
+                          "node": {
+                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                            "name": "Third_Pillar_2",
+                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                            "type": "Process"
+                          }
+                        }
+                      ]
+                    },
+                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                    "name": "assemble_third_pillar",
+                    "note": "Groups assembly events of the third pillar",
+                    "type": "ProcessGroup"
+                  },
+                  "hasBeginning": "2023-03-13T11:41:08.372071Z",
+                  "hasEnd": "2023-03-13T11:41:08.372071Z",
+                  "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                  "name": "Third_Pillar_2",
+                  "nestedIn": null,
+                  "note": "Assembly process Third_Pillar_2 defined by User One",
+                  "plannedWithin": null,
+                  "type": "Process"
+                },
+                "note": "Input consume 3 x M6nutplate event for Pillar Assembly",
+                "outputOf": null,
+                "provider": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "realizationOf": null,
+                "receiver": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "resourceClassifiedAs": null,
+                "resourceConformsTo": null,
+                "resourceInventoriedAs": {
+                  "accountingQuantity": {
+                    "hasNumericalValue": "-9",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "currentLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "custodian": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                  "metadata": null,
+                  "name": "M6nutplate",
+                  "onhandQuantity": {
+                    "hasNumericalValue": "-9",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "primaryAccountable": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "trackingIdentifier": "M6nutplate-3709",
+                  "type": "EconomicResource"
+                },
+                "resourceQuantity": {
+                  "hasNumericalValue": "3",
+                  "hasUnit": {
+                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                    "label": "u_piece",
+                    "symbol": "om2:one"
+                  }
+                },
+                "toLocation": null,
+                "toResourceInventoriedAs": null,
+                "triggeredBy": null,
+                "type": "EconomicEvent",
+                "name": "consume",
+                "children": [
+                  {
+                    "accountingQuantity": {
+                      "hasNumericalValue": "-9",
+                      "hasUnit": {
+                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "currentLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "custodian": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "lat": "53.54651094994547",
+                        "long": "9.996357255816038",
+                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                        "name": "Fab City Hamburg",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                    "metadata": null,
+                    "name": "M6nutplate",
+                    "onhandQuantity": {
+                      "hasNumericalValue": "-9",
+                      "hasUnit": {
+                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "primaryAccountable": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "lat": "53.54651094994547",
+                        "long": "9.996357255816038",
+                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                        "name": "Fab City Hamburg",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "trackingIdentifier": "M6nutplate-3709",
+                    "type": "EconomicResource",
+                    "children": [
+                      {
+                        "action": {
+                          "id": "raise",
+                          "inputOutput": "notApplicable",
+                          "label": "raise",
+                          "onhandEffect": "increment",
+                          "pairsWith": "notApplicable",
+                          "resourceEffect": "increment"
+                        },
+                        "agreedIn": null,
+                        "atLocation": null,
+                        "effortQuantity": null,
+                        "hasBeginning": null,
+                        "hasEnd": null,
+                        "hasPointInTime": "2023-03-13T11:41:00.065781Z",
+                        "id": "063DNHGPGJE726B0YSE01EERSC",
+                        "inputOf": null,
+                        "note": "create resource",
+                        "outputOf": null,
+                        "provider": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "realizationOf": null,
+                        "receiver": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "resourceClassifiedAs": null,
+                        "resourceConformsTo": {
+                          "defaultUnitOfEffort": null,
+                          "defaultUnitOfResource": {
+                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          },
+                          "id": "063DNHG696QR5Y4BBTAZ8RAA6R",
+                          "name": "M6nutplate",
+                          "note": "Specification for M6 nut for Right-Angle-Connector ",
+                          "resourceClassifiedAs": [
+                            "https://www.fasteners.eu/standards/DIN/562/"
+                          ]
+                        },
+                        "resourceInventoriedAs": {
+                          "accountingQuantity": {
+                            "hasNumericalValue": "-9",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "currentLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "custodian": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "lat": "53.54651094994547",
+                              "long": "9.996357255816038",
+                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                              "name": "Fab City Hamburg",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                          "metadata": null,
+                          "name": "M6nutplate",
+                          "onhandQuantity": {
+                            "hasNumericalValue": "-9",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "primaryAccountable": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "lat": "53.54651094994547",
+                              "long": "9.996357255816038",
+                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                              "name": "Fab City Hamburg",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "trackingIdentifier": "M6nutplate-3709",
+                          "type": "EconomicResource"
+                        },
+                        "resourceQuantity": {
+                          "hasNumericalValue": "50",
+                          "hasUnit": {
+                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          }
+                        },
+                        "toLocation": {
+                          "alt": "0",
+                          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                          "lat": "53.54651094994547",
+                          "long": "9.996357255816038",
+                          "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                          "name": "Fab City Hamburg",
+                          "note": "location.user2.org"
+                        },
+                        "toResourceInventoriedAs": null,
+                        "triggeredBy": null,
+                        "type": "EconomicEvent",
+                        "name": "raise",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "action": {
+                  "id": "accept",
+                  "inputOutput": "notApplicable",
+                  "label": "accept",
+                  "onhandEffect": "input",
+                  "pairsWith": "modify",
+                  "resourceEffect": "noEffect"
+                },
+                "agreedIn": null,
+                "atLocation": null,
+                "effortQuantity": null,
+                "hasBeginning": null,
+                "hasEnd": null,
+                "hasPointInTime": "2023-03-13T11:41:41.206853Z",
+                "id": "063DNHNQ4CAVGK87E6VGDWVAWW",
+                "inputOf": {
+                  "basedOn": null,
+                  "classifiedAs": null,
+                  "deletable": false,
+                  "finished": false,
+                  "groupedIn": {
+                    "groupedIn": null,
+                    "groups": {
+                      "edges": [
+                        {
+                          "node": {
+                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                            "name": "Third_Pillar_1",
+                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                            "type": "Process"
+                          }
+                        },
+                        {
+                          "node": {
+                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                            "name": "Third_Pillar_2",
+                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                            "type": "Process"
+                          }
+                        }
+                      ]
+                    },
+                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                    "name": "assemble_third_pillar",
+                    "note": "Groups assembly events of the third pillar",
+                    "type": "ProcessGroup"
+                  },
+                  "hasBeginning": "2023-03-13T11:41:08.372071Z",
+                  "hasEnd": "2023-03-13T11:41:08.372071Z",
+                  "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                  "name": "Third_Pillar_2",
+                  "nestedIn": null,
+                  "note": "Assembly process Third_Pillar_2 defined by User One",
+                  "plannedWithin": null,
+                  "type": "Process"
+                },
+                "note": "accept Pillar to be modified",
+                "outputOf": null,
+                "provider": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "realizationOf": null,
+                "receiver": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "resourceClassifiedAs": null,
+                "resourceConformsTo": null,
+                "resourceInventoriedAs": {
+                  "accountingQuantity": {
+                    "hasNumericalValue": "0",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "currentLocation": {
+                    "alt": "0",
+                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "lat": "53.54651094994547",
+                    "long": "9.996357255816038",
+                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                    "name": "Fab City Hamburg",
+                    "note": "location.user2.org"
+                  },
+                  "custodian": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "id": "063DNHNNTTAVDRR7BDM20760SC",
+                  "metadata": null,
+                  "name": "third_pillar",
+                  "onhandQuantity": {
+                    "hasNumericalValue": "0",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "primaryAccountable": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "trackingIdentifier": "third_pillar-9355",
+                  "type": "EconomicResource"
+                },
+                "resourceQuantity": {
+                  "hasNumericalValue": "1",
+                  "hasUnit": {
+                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                    "label": "u_piece",
+                    "symbol": "om2:one"
+                  }
+                },
+                "toLocation": null,
+                "toResourceInventoriedAs": null,
+                "triggeredBy": null,
+                "type": "EconomicEvent",
+                "name": "accept",
+                "children": [
+                  {
+                    "accountingQuantity": {
+                      "hasNumericalValue": "0",
+                      "hasUnit": {
+                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "currentLocation": {
+                      "alt": "0",
+                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "lat": "53.54651094994547",
+                      "long": "9.996357255816038",
+                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                      "name": "Fab City Hamburg",
+                      "note": "location.user2.org"
+                    },
+                    "custodian": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "lat": "53.54651094994547",
+                        "long": "9.996357255816038",
+                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                        "name": "Fab City Hamburg",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "id": "063DNHNNTTAVDRR7BDM20760SC",
+                    "metadata": null,
+                    "name": "third_pillar",
+                    "onhandQuantity": {
+                      "hasNumericalValue": "0",
+                      "hasUnit": {
+                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "primaryAccountable": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "lat": "53.54651094994547",
+                        "long": "9.996357255816038",
+                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                        "name": "Fab City Hamburg",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "trackingIdentifier": "third_pillar-9355",
+                    "type": "EconomicResource",
+                    "children": [
+                      {
+                        "action": {
+                          "id": "produce",
+                          "inputOutput": "output",
+                          "label": "produce",
+                          "onhandEffect": "increment",
+                          "pairsWith": "notApplicable",
+                          "resourceEffect": "increment"
+                        },
+                        "agreedIn": null,
+                        "atLocation": null,
+                        "effortQuantity": null,
+                        "hasBeginning": null,
+                        "hasEnd": null,
+                        "hasPointInTime": "2023-03-13T11:41:40.850015Z",
+                        "id": "063DNHNNT5H07EY0DBRR63JHRM",
+                        "inputOf": null,
+                        "note": "produce Pillar",
+                        "outputOf": {
+                          "basedOn": null,
+                          "classifiedAs": null,
+                          "deletable": false,
+                          "finished": false,
+                          "groupedIn": {
+                            "groupedIn": null,
+                            "groups": {
+                              "edges": [
+                                {
+                                  "node": {
+                                    "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                    "name": "Third_Pillar_1",
+                                    "note": "Assembly process Third_Pillar_1 defined by User One",
+                                    "type": "Process"
+                                  }
+                                },
+                                {
+                                  "node": {
+                                    "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                                    "name": "Third_Pillar_2",
+                                    "note": "Assembly process Third_Pillar_2 defined by User One",
+                                    "type": "Process"
+                                  }
+                                }
+                              ]
+                            },
+                            "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                            "name": "assemble_third_pillar",
+                            "note": "Groups assembly events of the third pillar",
+                            "type": "ProcessGroup"
+                          },
+                          "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                          "hasEnd": "2023-03-13T11:41:08.054137Z",
+                          "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                          "name": "Third_Pillar_1",
+                          "nestedIn": null,
+                          "note": "Assembly process Third_Pillar_1 defined by User One",
+                          "plannedWithin": null,
+                          "type": "Process"
+                        },
+                        "provider": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "realizationOf": null,
+                        "receiver": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "resourceClassifiedAs": null,
+                        "resourceConformsTo": {
+                          "defaultUnitOfEffort": null,
+                          "defaultUnitOfResource": {
+                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          },
+                          "id": "063DNHGJF827J0A3XG1QJTJKS0",
+                          "name": "pillar",
+                          "note": "Specification for pillar",
+                          "resourceClassifiedAs": [
+                            "A resource specification URI"
+                          ]
+                        },
+                        "resourceInventoriedAs": {
+                          "accountingQuantity": {
+                            "hasNumericalValue": "0",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "currentLocation": {
+                            "alt": "0",
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "lat": "53.54651094994547",
+                            "long": "9.996357255816038",
+                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                            "name": "Fab City Hamburg",
+                            "note": "location.user2.org"
+                          },
+                          "custodian": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "lat": "53.54651094994547",
+                              "long": "9.996357255816038",
+                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                              "name": "Fab City Hamburg",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "id": "063DNHNNTTAVDRR7BDM20760SC",
+                          "metadata": null,
+                          "name": "third_pillar",
+                          "onhandQuantity": {
+                            "hasNumericalValue": "0",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "primaryAccountable": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "lat": "53.54651094994547",
+                              "long": "9.996357255816038",
+                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                              "name": "Fab City Hamburg",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "trackingIdentifier": "third_pillar-9355",
+                          "type": "EconomicResource"
+                        },
+                        "resourceQuantity": {
+                          "hasNumericalValue": "1",
+                          "hasUnit": {
+                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          }
+                        },
+                        "toLocation": {
+                          "alt": "0",
+                          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                          "lat": "53.54651094994547",
+                          "long": "9.996357255816038",
+                          "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                          "name": "Fab City Hamburg",
+                          "note": "location.user2.org"
+                        },
+                        "toResourceInventoriedAs": null,
+                        "triggeredBy": null,
+                        "type": "EconomicEvent",
+                        "name": "produce",
+                        "children": [
+                          {
+                            "basedOn": null,
+                            "classifiedAs": null,
+                            "deletable": false,
+                            "finished": false,
+                            "groupedIn": {
+                              "groupedIn": null,
+                              "groups": {
+                                "edges": [
+                                  {
+                                    "node": {
+                                      "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                      "name": "Third_Pillar_1",
+                                      "note": "Assembly process Third_Pillar_1 defined by User One",
+                                      "type": "Process"
+                                    }
+                                  },
+                                  {
+                                    "node": {
+                                      "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                                      "name": "Third_Pillar_2",
+                                      "note": "Assembly process Third_Pillar_2 defined by User One",
+                                      "type": "Process"
+                                    }
+                                  }
+                                ]
+                              },
+                              "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                              "name": "assemble_third_pillar",
+                              "note": "Groups assembly events of the third pillar",
+                              "type": "ProcessGroup"
+                            },
+                            "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                            "hasEnd": "2023-03-13T11:41:08.054137Z",
+                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                            "name": "Third_Pillar_1",
+                            "nestedIn": null,
+                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                            "plannedWithin": null,
+                            "type": "Process",
+                            "children": [
+                              {
+                                "action": {
+                                  "id": "work",
+                                  "inputOutput": "input",
+                                  "label": "work",
+                                  "onhandEffect": "noEffect",
+                                  "pairsWith": "notApplicable",
+                                  "resourceEffect": "noEffect"
+                                },
+                                "agreedIn": null,
+                                "atLocation": null,
+                                "effortQuantity": {
+                                  "hasNumericalValue": "0.05",
+                                  "hasUnit": {
+                                    "id": "063DNHG3RK8RJHZ65VSPQ4GDMM",
+                                    "label": "h",
+                                    "symbol": "om2:hour"
+                                  }
+                                },
+                                "hasBeginning": null,
+                                "hasEnd": null,
+                                "hasPointInTime": "2023-03-13T11:41:40.509001Z",
+                                "id": "063DNHNMCR5RPAPB4V2WH4Y8T8",
+                                "inputOf": {
+                                  "basedOn": null,
+                                  "classifiedAs": null,
+                                  "deletable": false,
+                                  "finished": false,
+                                  "groupedIn": {
+                                    "groupedIn": null,
+                                    "groups": {
+                                      "edges": [
+                                        {
+                                          "node": {
+                                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                            "name": "Third_Pillar_1",
+                                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        },
+                                        {
+                                          "node": {
+                                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                                            "name": "Third_Pillar_2",
+                                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                                    "name": "assemble_third_pillar",
+                                    "note": "Groups assembly events of the third pillar",
+                                    "type": "ProcessGroup"
+                                  },
+                                  "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                                  "hasEnd": "2023-03-13T11:41:08.054137Z",
+                                  "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                  "name": "Third_Pillar_1",
+                                  "nestedIn": null,
+                                  "note": "Assembly process Third_Pillar_1 defined by User One",
+                                  "plannedWithin": null,
+                                  "type": "Process"
+                                },
+                                "note": "Insert one M6nutplate at one end of a Tslot32 beam and use it to connect one of the RAconnectors to that beam with a M6x12 screw.",
+                                "outputOf": null,
+                                "provider": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "realizationOf": null,
+                                "receiver": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "resourceClassifiedAs": null,
+                                "resourceConformsTo": {
+                                  "defaultUnitOfEffort": null,
+                                  "defaultUnitOfResource": {
+                                    "id": "063DNHG3RK8RJHZ65VSPQ4GDMM",
+                                    "label": "h",
+                                    "symbol": "om2:hour"
+                                  },
+                                  "id": "063DNHGET3912R1CQ835DT4J24",
+                                  "name": "assembly_construction",
+                                  "note": "Specification for Frame assembly work",
+                                  "resourceClassifiedAs": [
+                                    "A resource specification URI"
+                                  ]
+                                },
+                                "resourceInventoriedAs": null,
+                                "resourceQuantity": null,
+                                "toLocation": null,
+                                "toResourceInventoriedAs": null,
+                                "triggeredBy": null,
+                                "type": "EconomicEvent",
+                                "name": "work",
+                                "children": []
+                              },
+                              {
+                                "action": {
+                                  "id": "use",
+                                  "inputOutput": "input",
+                                  "label": "use",
+                                  "onhandEffect": "noEffect",
+                                  "pairsWith": "notApplicable",
+                                  "resourceEffect": "noEffect"
+                                },
+                                "agreedIn": null,
+                                "atLocation": null,
+                                "effortQuantity": {
+                                  "hasNumericalValue": "0.03",
+                                  "hasUnit": {
+                                    "id": "063DNHG3RK8RJHZ65VSPQ4GDMM",
+                                    "label": "h",
+                                    "symbol": "om2:hour"
+                                  }
+                                },
+                                "hasBeginning": null,
+                                "hasEnd": null,
+                                "hasPointInTime": "2023-03-13T11:41:40.161687Z",
+                                "id": "063DNHNK3A11EC6Q4FYGJ19Z44",
+                                "inputOf": {
+                                  "basedOn": null,
+                                  "classifiedAs": null,
+                                  "deletable": false,
+                                  "finished": false,
+                                  "groupedIn": {
+                                    "groupedIn": null,
+                                    "groups": {
+                                      "edges": [
+                                        {
+                                          "node": {
+                                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                            "name": "Third_Pillar_1",
+                                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        },
+                                        {
+                                          "node": {
+                                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                                            "name": "Third_Pillar_2",
+                                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                                    "name": "assemble_third_pillar",
+                                    "note": "Groups assembly events of the third pillar",
+                                    "type": "ProcessGroup"
+                                  },
+                                  "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                                  "hasEnd": "2023-03-13T11:41:08.054137Z",
+                                  "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                  "name": "Third_Pillar_1",
+                                  "nestedIn": null,
+                                  "note": "Assembly process Third_Pillar_1 defined by User One",
+                                  "plannedWithin": null,
+                                  "type": "Process"
+                                },
+                                "note": "Input use Allen Key event for Lower Frame Assembly",
+                                "outputOf": null,
+                                "provider": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "realizationOf": null,
+                                "receiver": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "resourceClassifiedAs": null,
+                                "resourceConformsTo": null,
+                                "resourceInventoriedAs": {
+                                  "accountingQuantity": {
+                                    "hasNumericalValue": "1",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "currentLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "custodian": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                                  "metadata": null,
+                                  "name": "Allen_Key",
+                                  "onhandQuantity": {
+                                    "hasNumericalValue": "1",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "primaryAccountable": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "trackingIdentifier": "Allen_Key-6509",
+                                  "type": "EconomicResource"
+                                },
+                                "resourceQuantity": {
+                                  "hasNumericalValue": "1",
+                                  "hasUnit": {
+                                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                    "label": "u_piece",
+                                    "symbol": "om2:one"
+                                  }
+                                },
+                                "toLocation": null,
+                                "toResourceInventoriedAs": null,
+                                "triggeredBy": null,
+                                "type": "EconomicEvent",
+                                "name": "use",
+                                "children": [
+                                  {
+                                    "accountingQuantity": {
+                                      "hasNumericalValue": "1",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "currentLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "custodian": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                                    "metadata": null,
+                                    "name": "Allen_Key",
+                                    "onhandQuantity": {
+                                      "hasNumericalValue": "1",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "primaryAccountable": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "trackingIdentifier": "Allen_Key-6509",
+                                    "type": "EconomicResource",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "action": {
+                                  "id": "consume",
+                                  "inputOutput": "input",
+                                  "label": "consume",
+                                  "onhandEffect": "decrement",
+                                  "pairsWith": "notApplicable",
+                                  "resourceEffect": "decrement"
+                                },
+                                "agreedIn": null,
+                                "atLocation": null,
+                                "effortQuantity": null,
+                                "hasBeginning": null,
+                                "hasEnd": null,
+                                "hasPointInTime": "2023-03-13T11:41:39.833097Z",
+                                "id": "063DNHNHRCBHEMKCN9TWSM9RDW",
+                                "inputOf": {
+                                  "basedOn": null,
+                                  "classifiedAs": null,
+                                  "deletable": false,
+                                  "finished": false,
+                                  "groupedIn": {
+                                    "groupedIn": null,
+                                    "groups": {
+                                      "edges": [
+                                        {
+                                          "node": {
+                                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                            "name": "Third_Pillar_1",
+                                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        },
+                                        {
+                                          "node": {
+                                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                                            "name": "Third_Pillar_2",
+                                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                                    "name": "assemble_third_pillar",
+                                    "note": "Groups assembly events of the third pillar",
+                                    "type": "ProcessGroup"
+                                  },
+                                  "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                                  "hasEnd": "2023-03-13T11:41:08.054137Z",
+                                  "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                  "name": "Third_Pillar_1",
+                                  "nestedIn": null,
+                                  "note": "Assembly process Third_Pillar_1 defined by User One",
+                                  "plannedWithin": null,
+                                  "type": "Process"
+                                },
+                                "note": "Input consume 1 x M6x12 event for Pillar Assembly",
+                                "outputOf": null,
+                                "provider": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "realizationOf": null,
+                                "receiver": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "resourceClassifiedAs": null,
+                                "resourceConformsTo": null,
+                                "resourceInventoriedAs": {
+                                  "accountingQuantity": {
+                                    "hasNumericalValue": "38",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "currentLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "custodian": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "id": "063DNHGQX9J49T6HPGYMH0SKTC",
+                                  "metadata": null,
+                                  "name": "M6x12",
+                                  "onhandQuantity": {
+                                    "hasNumericalValue": "38",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "primaryAccountable": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "trackingIdentifier": "M6x12-2703",
+                                  "type": "EconomicResource"
+                                },
+                                "resourceQuantity": {
+                                  "hasNumericalValue": "1",
+                                  "hasUnit": {
+                                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                    "label": "u_piece",
+                                    "symbol": "om2:one"
+                                  }
+                                },
+                                "toLocation": null,
+                                "toResourceInventoriedAs": null,
+                                "triggeredBy": null,
+                                "type": "EconomicEvent",
+                                "name": "consume",
+                                "children": [
+                                  {
+                                    "accountingQuantity": {
+                                      "hasNumericalValue": "38",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "currentLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "custodian": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "id": "063DNHGQX9J49T6HPGYMH0SKTC",
+                                    "metadata": null,
+                                    "name": "M6x12",
+                                    "onhandQuantity": {
+                                      "hasNumericalValue": "38",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "primaryAccountable": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "trackingIdentifier": "M6x12-2703",
+                                    "type": "EconomicResource",
+                                    "children": [
+                                      {
+                                        "action": {
+                                          "id": "raise",
+                                          "inputOutput": "notApplicable",
+                                          "label": "raise",
+                                          "onhandEffect": "increment",
+                                          "pairsWith": "notApplicable",
+                                          "resourceEffect": "increment"
+                                        },
+                                        "agreedIn": null,
+                                        "atLocation": null,
+                                        "effortQuantity": null,
+                                        "hasBeginning": null,
+                                        "hasEnd": null,
+                                        "hasPointInTime": "2023-03-13T11:41:00.450402Z",
+                                        "id": "063DNHGQWWEE6MVNZQZZ235GRG",
+                                        "inputOf": null,
+                                        "note": "create resource",
+                                        "outputOf": null,
+                                        "provider": {
+                                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                          "name": "User Two",
+                                          "note": null,
+                                          "primaryLocation": {
+                                            "alt": "0",
+                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "lat": "53.54651094994547",
+                                            "long": "9.996357255816038",
+                                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                            "name": "Fab City Hamburg",
+                                            "note": "location.user2.org"
+                                          },
+                                          "type": "Person"
+                                        },
+                                        "realizationOf": null,
+                                        "receiver": {
+                                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                          "name": "User Two",
+                                          "note": null,
+                                          "primaryLocation": {
+                                            "alt": "0",
+                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "lat": "53.54651094994547",
+                                            "long": "9.996357255816038",
+                                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                            "name": "Fab City Hamburg",
+                                            "note": "location.user2.org"
+                                          },
+                                          "type": "Person"
+                                        },
+                                        "resourceClassifiedAs": null,
+                                        "resourceConformsTo": {
+                                          "defaultUnitOfEffort": null,
+                                          "defaultUnitOfResource": {
+                                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                            "label": "u_piece",
+                                            "symbol": "om2:one"
+                                          },
+                                          "id": "063DNHG7GP6YN29ZKMVAYJQJ5W",
+                                          "name": "M6x12",
+                                          "note": "Specification for screw for right angled connector",
+                                          "resourceClassifiedAs": [
+                                            "https://www.fasteners.eu/standards/ISO/7380/"
+                                          ]
+                                        },
+                                        "resourceInventoriedAs": {
+                                          "accountingQuantity": {
+                                            "hasNumericalValue": "38",
+                                            "hasUnit": {
+                                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                              "label": "u_piece",
+                                              "symbol": "om2:one"
+                                            }
+                                          },
+                                          "currentLocation": {
+                                            "alt": "0",
+                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "lat": "53.54651094994547",
+                                            "long": "9.996357255816038",
+                                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                            "name": "Fab City Hamburg",
+                                            "note": "location.user2.org"
+                                          },
+                                          "custodian": {
+                                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                            "name": "User Two",
+                                            "note": null,
+                                            "primaryLocation": {
+                                              "alt": "0",
+                                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                              "lat": "53.54651094994547",
+                                              "long": "9.996357255816038",
+                                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                              "name": "Fab City Hamburg",
+                                              "note": "location.user2.org"
+                                            },
+                                            "type": "Person"
+                                          },
+                                          "id": "063DNHGQX9J49T6HPGYMH0SKTC",
+                                          "metadata": null,
+                                          "name": "M6x12",
+                                          "onhandQuantity": {
+                                            "hasNumericalValue": "38",
+                                            "hasUnit": {
+                                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                              "label": "u_piece",
+                                              "symbol": "om2:one"
+                                            }
+                                          },
+                                          "primaryAccountable": {
+                                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                            "name": "User Two",
+                                            "note": null,
+                                            "primaryLocation": {
+                                              "alt": "0",
+                                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                              "lat": "53.54651094994547",
+                                              "long": "9.996357255816038",
+                                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                              "name": "Fab City Hamburg",
+                                              "note": "location.user2.org"
+                                            },
+                                            "type": "Person"
+                                          },
+                                          "trackingIdentifier": "M6x12-2703",
+                                          "type": "EconomicResource"
+                                        },
+                                        "resourceQuantity": {
+                                          "hasNumericalValue": "50",
+                                          "hasUnit": {
+                                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                            "label": "u_piece",
+                                            "symbol": "om2:one"
+                                          }
+                                        },
+                                        "toLocation": {
+                                          "alt": "0",
+                                          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                          "lat": "53.54651094994547",
+                                          "long": "9.996357255816038",
+                                          "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                          "name": "Fab City Hamburg",
+                                          "note": "location.user2.org"
+                                        },
+                                        "toResourceInventoriedAs": null,
+                                        "triggeredBy": null,
+                                        "type": "EconomicEvent",
+                                        "name": "raise",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "action": {
+                                  "id": "consume",
+                                  "inputOutput": "input",
+                                  "label": "consume",
+                                  "onhandEffect": "decrement",
+                                  "pairsWith": "notApplicable",
+                                  "resourceEffect": "decrement"
+                                },
+                                "agreedIn": null,
+                                "atLocation": null,
+                                "effortQuantity": null,
+                                "hasBeginning": null,
+                                "hasEnd": null,
+                                "hasPointInTime": "2023-03-13T11:41:39.491187Z",
+                                "id": "063DNHNGEK29GCR69SK23PDKCC",
+                                "inputOf": {
+                                  "basedOn": null,
+                                  "classifiedAs": null,
+                                  "deletable": false,
+                                  "finished": false,
+                                  "groupedIn": {
+                                    "groupedIn": null,
+                                    "groups": {
+                                      "edges": [
+                                        {
+                                          "node": {
+                                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                            "name": "Third_Pillar_1",
+                                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        },
+                                        {
+                                          "node": {
+                                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                                            "name": "Third_Pillar_2",
+                                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                                    "name": "assemble_third_pillar",
+                                    "note": "Groups assembly events of the third pillar",
+                                    "type": "ProcessGroup"
+                                  },
+                                  "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                                  "hasEnd": "2023-03-13T11:41:08.054137Z",
+                                  "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                  "name": "Third_Pillar_1",
+                                  "nestedIn": null,
+                                  "note": "Assembly process Third_Pillar_1 defined by User One",
+                                  "plannedWithin": null,
+                                  "type": "Process"
+                                },
+                                "note": "Input consume 1 x RAConnector event for Pillar Assembly",
+                                "outputOf": null,
+                                "provider": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "realizationOf": null,
+                                "receiver": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "resourceClassifiedAs": null,
+                                "resourceConformsTo": null,
+                                "resourceInventoriedAs": {
+                                  "accountingQuantity": {
+                                    "hasNumericalValue": "42",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "currentLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "custodian": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                                  "metadata": null,
+                                  "name": "RAConnector",
+                                  "onhandQuantity": {
+                                    "hasNumericalValue": "42",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "primaryAccountable": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "trackingIdentifier": "RAConnector-6095",
+                                  "type": "EconomicResource"
+                                },
+                                "resourceQuantity": {
+                                  "hasNumericalValue": "1",
+                                  "hasUnit": {
+                                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                    "label": "u_piece",
+                                    "symbol": "om2:one"
+                                  }
+                                },
+                                "toLocation": null,
+                                "toResourceInventoriedAs": null,
+                                "triggeredBy": null,
+                                "type": "EconomicEvent",
+                                "name": "consume",
+                                "children": [
+                                  {
+                                    "accountingQuantity": {
+                                      "hasNumericalValue": "42",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "currentLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "custodian": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                                    "metadata": null,
+                                    "name": "RAConnector",
+                                    "onhandQuantity": {
+                                      "hasNumericalValue": "42",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "primaryAccountable": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "trackingIdentifier": "RAConnector-6095",
+                                    "type": "EconomicResource",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "action": {
+                                  "id": "consume",
+                                  "inputOutput": "input",
+                                  "label": "consume",
+                                  "onhandEffect": "decrement",
+                                  "pairsWith": "notApplicable",
+                                  "resourceEffect": "decrement"
+                                },
+                                "agreedIn": null,
+                                "atLocation": null,
+                                "effortQuantity": null,
+                                "hasBeginning": null,
+                                "hasEnd": null,
+                                "hasPointInTime": "2023-03-13T11:41:39.134799Z",
+                                "id": "063DNHNF2DGFJYJAKAVYMRYSBW",
+                                "inputOf": {
+                                  "basedOn": null,
+                                  "classifiedAs": null,
+                                  "deletable": false,
+                                  "finished": false,
+                                  "groupedIn": {
+                                    "groupedIn": null,
+                                    "groups": {
+                                      "edges": [
+                                        {
+                                          "node": {
+                                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                            "name": "Third_Pillar_1",
+                                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        },
+                                        {
+                                          "node": {
+                                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                                            "name": "Third_Pillar_2",
+                                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                                    "name": "assemble_third_pillar",
+                                    "note": "Groups assembly events of the third pillar",
+                                    "type": "ProcessGroup"
+                                  },
+                                  "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                                  "hasEnd": "2023-03-13T11:41:08.054137Z",
+                                  "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                  "name": "Third_Pillar_1",
+                                  "nestedIn": null,
+                                  "note": "Assembly process Third_Pillar_1 defined by User One",
+                                  "plannedWithin": null,
+                                  "type": "Process"
+                                },
+                                "note": "Input consume 1 x M6nutplate event for Pillar Assembly",
+                                "outputOf": null,
+                                "provider": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "realizationOf": null,
+                                "receiver": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "resourceClassifiedAs": null,
+                                "resourceConformsTo": null,
+                                "resourceInventoriedAs": {
+                                  "accountingQuantity": {
+                                    "hasNumericalValue": "-9",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "currentLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "custodian": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                                  "metadata": null,
+                                  "name": "M6nutplate",
+                                  "onhandQuantity": {
+                                    "hasNumericalValue": "-9",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "primaryAccountable": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "trackingIdentifier": "M6nutplate-3709",
+                                  "type": "EconomicResource"
+                                },
+                                "resourceQuantity": {
+                                  "hasNumericalValue": "1",
+                                  "hasUnit": {
+                                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                    "label": "u_piece",
+                                    "symbol": "om2:one"
+                                  }
+                                },
+                                "toLocation": null,
+                                "toResourceInventoriedAs": null,
+                                "triggeredBy": null,
+                                "type": "EconomicEvent",
+                                "name": "consume",
+                                "children": [
+                                  {
+                                    "accountingQuantity": {
+                                      "hasNumericalValue": "-9",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "currentLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "custodian": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                                    "metadata": null,
+                                    "name": "M6nutplate",
+                                    "onhandQuantity": {
+                                      "hasNumericalValue": "-9",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "primaryAccountable": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "trackingIdentifier": "M6nutplate-3709",
+                                    "type": "EconomicResource",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "action": {
+                                  "id": "consume",
+                                  "inputOutput": "input",
+                                  "label": "consume",
+                                  "onhandEffect": "decrement",
+                                  "pairsWith": "notApplicable",
+                                  "resourceEffect": "decrement"
+                                },
+                                "agreedIn": null,
+                                "atLocation": null,
+                                "effortQuantity": null,
+                                "hasBeginning": null,
+                                "hasEnd": null,
+                                "hasPointInTime": "2023-03-13T11:41:38.780621Z",
+                                "id": "063DNHNDPS80DCR6438J0E0A1G",
+                                "inputOf": {
+                                  "basedOn": null,
+                                  "classifiedAs": null,
+                                  "deletable": false,
+                                  "finished": false,
+                                  "groupedIn": {
+                                    "groupedIn": null,
+                                    "groups": {
+                                      "edges": [
+                                        {
+                                          "node": {
+                                            "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                            "name": "Third_Pillar_1",
+                                            "note": "Assembly process Third_Pillar_1 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        },
+                                        {
+                                          "node": {
+                                            "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+                                            "name": "Third_Pillar_2",
+                                            "note": "Assembly process Third_Pillar_2 defined by User One",
+                                            "type": "Process"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "id": "063DNHRVYTSVPKAW5T3PCANA84",
+                                    "name": "assemble_third_pillar",
+                                    "note": "Groups assembly events of the third pillar",
+                                    "type": "ProcessGroup"
+                                  },
+                                  "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                                  "hasEnd": "2023-03-13T11:41:08.054137Z",
+                                  "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                                  "name": "Third_Pillar_1",
+                                  "nestedIn": null,
+                                  "note": "Assembly process Third_Pillar_1 defined by User One",
+                                  "plannedWithin": null,
+                                  "type": "Process"
+                                },
+                                "note": "Input consume Tslot32 event for Pillar Assembly",
+                                "outputOf": null,
+                                "provider": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "realizationOf": null,
+                                "receiver": {
+                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                  "name": "User Two",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "resourceClassifiedAs": null,
+                                "resourceConformsTo": null,
+                                "resourceInventoriedAs": {
+                                  "accountingQuantity": {
+                                    "hasNumericalValue": "46",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "currentLocation": {
+                                    "alt": "0",
+                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "lat": "53.54651094994547",
+                                    "long": "9.996357255816038",
+                                    "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                    "name": "Fab City Hamburg",
+                                    "note": "location.user2.org"
+                                  },
+                                  "custodian": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "id": "063DNHGXBXKAR76EK6ECY2DC00",
+                                  "metadata": null,
+                                  "name": "Tslot32",
+                                  "onhandQuantity": {
+                                    "hasNumericalValue": "46",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "primaryAccountable": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                    "name": "User Two",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "trackingIdentifier": "Tslot32-2303",
+                                  "type": "EconomicResource"
+                                },
+                                "resourceQuantity": {
+                                  "hasNumericalValue": "1",
+                                  "hasUnit": {
+                                    "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                    "label": "u_piece",
+                                    "symbol": "om2:one"
+                                  }
+                                },
+                                "toLocation": null,
+                                "toResourceInventoriedAs": null,
+                                "triggeredBy": null,
+                                "type": "EconomicEvent",
+                                "name": "consume",
+                                "children": [
+                                  {
+                                    "accountingQuantity": {
+                                      "hasNumericalValue": "46",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "currentLocation": {
+                                      "alt": "0",
+                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "lat": "53.54651094994547",
+                                      "long": "9.996357255816038",
+                                      "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                      "name": "Fab City Hamburg",
+                                      "note": "location.user2.org"
+                                    },
+                                    "custodian": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "id": "063DNHGXBXKAR76EK6ECY2DC00",
+                                    "metadata": null,
+                                    "name": "Tslot32",
+                                    "onhandQuantity": {
+                                      "hasNumericalValue": "46",
+                                      "hasUnit": {
+                                        "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                        "label": "u_piece",
+                                        "symbol": "om2:one"
+                                      }
+                                    },
+                                    "primaryAccountable": {
+                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                      "name": "User Two",
+                                      "note": null,
+                                      "primaryLocation": {
+                                        "alt": "0",
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "lat": "53.54651094994547",
+                                        "long": "9.996357255816038",
+                                        "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                        "name": "Fab City Hamburg",
+                                        "note": "location.user2.org"
+                                      },
+                                      "type": "Person"
+                                    },
+                                    "trackingIdentifier": "Tslot32-2303",
+                                    "type": "EconomicResource",
+                                    "children": [
+                                      {
+                                        "action": {
+                                          "id": "raise",
+                                          "inputOutput": "notApplicable",
+                                          "label": "raise",
+                                          "onhandEffect": "increment",
+                                          "pairsWith": "notApplicable",
+                                          "resourceEffect": "increment"
+                                        },
+                                        "agreedIn": null,
+                                        "atLocation": null,
+                                        "effortQuantity": null,
+                                        "hasBeginning": null,
+                                        "hasEnd": null,
+                                        "hasPointInTime": "2023-03-13T11:41:01.836384Z",
+                                        "id": "063DNHGXBN24N7FV14M6NNSQKW",
+                                        "inputOf": null,
+                                        "note": "create resource",
+                                        "outputOf": null,
+                                        "provider": {
+                                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                          "name": "User Two",
+                                          "note": null,
+                                          "primaryLocation": {
+                                            "alt": "0",
+                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "lat": "53.54651094994547",
+                                            "long": "9.996357255816038",
+                                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                            "name": "Fab City Hamburg",
+                                            "note": "location.user2.org"
+                                          },
+                                          "type": "Person"
+                                        },
+                                        "realizationOf": null,
+                                        "receiver": {
+                                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                          "name": "User Two",
+                                          "note": null,
+                                          "primaryLocation": {
+                                            "alt": "0",
+                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "lat": "53.54651094994547",
+                                            "long": "9.996357255816038",
+                                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                            "name": "Fab City Hamburg",
+                                            "note": "location.user2.org"
+                                          },
+                                          "type": "Person"
+                                        },
+                                        "resourceClassifiedAs": null,
+                                        "resourceConformsTo": {
+                                          "defaultUnitOfEffort": null,
+                                          "defaultUnitOfResource": {
+                                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                            "label": "u_piece",
+                                            "symbol": "om2:one"
+                                          },
+                                          "id": "063DNHGCCKHF0B2BSPEVC4X778",
+                                          "name": "Tslot32",
+                                          "note": "Specification for a frame slot",
+                                          "resourceClassifiedAs": [
+                                            "https://www.motedis.com/en/Profile-20x20-B-type-slot-6"
+                                          ]
+                                        },
+                                        "resourceInventoriedAs": {
+                                          "accountingQuantity": {
+                                            "hasNumericalValue": "46",
+                                            "hasUnit": {
+                                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                              "label": "u_piece",
+                                              "symbol": "om2:one"
+                                            }
+                                          },
+                                          "currentLocation": {
+                                            "alt": "0",
+                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "lat": "53.54651094994547",
+                                            "long": "9.996357255816038",
+                                            "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                            "name": "Fab City Hamburg",
+                                            "note": "location.user2.org"
+                                          },
+                                          "custodian": {
+                                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                            "name": "User Two",
+                                            "note": null,
+                                            "primaryLocation": {
+                                              "alt": "0",
+                                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                              "lat": "53.54651094994547",
+                                              "long": "9.996357255816038",
+                                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                              "name": "Fab City Hamburg",
+                                              "note": "location.user2.org"
+                                            },
+                                            "type": "Person"
+                                          },
+                                          "id": "063DNHGXBXKAR76EK6ECY2DC00",
+                                          "metadata": null,
+                                          "name": "Tslot32",
+                                          "onhandQuantity": {
+                                            "hasNumericalValue": "46",
+                                            "hasUnit": {
+                                              "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                              "label": "u_piece",
+                                              "symbol": "om2:one"
+                                            }
+                                          },
+                                          "primaryAccountable": {
+                                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                            "name": "User Two",
+                                            "note": null,
+                                            "primaryLocation": {
+                                              "alt": "0",
+                                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                              "lat": "53.54651094994547",
+                                              "long": "9.996357255816038",
+                                              "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                              "name": "Fab City Hamburg",
+                                              "note": "location.user2.org"
+                                            },
+                                            "type": "Person"
+                                          },
+                                          "trackingIdentifier": "Tslot32-2303",
+                                          "type": "EconomicResource"
+                                        },
+                                        "resourceQuantity": {
+                                          "hasNumericalValue": "50",
+                                          "hasUnit": {
+                                            "id": "063DNHG03VDESDJT3T4RFKXTJC",
+                                            "label": "u_piece",
+                                            "symbol": "om2:one"
+                                          }
+                                        },
+                                        "toLocation": {
+                                          "alt": "0",
+                                          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                          "lat": "53.54651094994547",
+                                          "long": "9.996357255816038",
+                                          "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
+                                          "name": "Fab City Hamburg",
+                                          "note": "location.user2.org"
+                                        },
+                                        "toResourceInventoriedAs": null,
+                                        "triggeredBy": null,
+                                        "type": "EconomicEvent",
+                                        "name": "raise",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
