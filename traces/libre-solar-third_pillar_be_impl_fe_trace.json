@@ -1,0 +1,1828 @@
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "node": {
+                  "action": {
+                    "id": "work"
+                  },
+                  "agreedIn": null,
+                  "atLocation": {
+                    "id": null
+                  },
+                  "effortQuantity": {
+                    "hasNumericalValue": "0.05",
+                    "hasUnit": {
+                      "id": "063DNHG3RK8RJHZ65VSPQ4GDMM"
+                    }
+                  },
+                  "hasBeginning": null,
+                  "hasEnd": null,
+                  "hasPointInTime": "2023-03-13T11:41:42.623836Z",
+                  "id": "063DNHNWNWK2HMJ2EM8W1D9XX8",
+                  "inputOf": {
+                    "id": "063DNHHPVZD8VBA4WD2DS9FZGM"
+                  },
+                  "note": "Insert three M6nutplates more at the other end of the beam and use one of them to connect another RAconnector there.",
+                  "outputOf": {
+                    "id": null
+                  },
+                  "previousEvent": {
+                    "id": null
+                  },
+                  "provider": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "realizationOf": {
+                    "id": null
+                  },
+                  "receiver": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "resourceClassifiedAs": null,
+                  "resourceConformsTo": {
+                    "id": "063DNHGET3912R1CQ835DT4J24"
+                  },
+                  "resourceInventoriedAs": {
+                    "id": null
+                  },
+                  "resourceMetadata": null,
+                  "resourceQuantity": {
+                    "hasNumericalValue": null,
+                    "hasUnit": {
+                      "id": null
+                    }
+                  },
+                  "toLocation": {
+                    "id": null
+                  },
+                  "toResourceInventoriedAs": {
+                    "id": null
+                  },
+                  "triggeredBy": {
+                    "id": null
+                  }
+                },
+                "type": "EconomicEvent"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "node": {
+                          "action": {
+                            "id": "raise"
+                          },
+                          "agreedIn": null,
+                          "atLocation": {
+                            "id": null
+                          },
+                          "effortQuantity": {
+                            "hasNumericalValue": null,
+                            "hasUnit": {
+                              "id": null
+                            }
+                          },
+                          "hasBeginning": null,
+                          "hasEnd": null,
+                          "hasPointInTime": "2023-03-13T11:40:59.704108Z",
+                          "id": "063DNHGN0RYADFERXGYYKX2VMC",
+                          "inputOf": {
+                            "id": null
+                          },
+                          "note": "create resource",
+                          "outputOf": {
+                            "id": null
+                          },
+                          "previousEvent": {
+                            "id": null
+                          },
+                          "provider": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                          },
+                          "realizationOf": {
+                            "id": null
+                          },
+                          "receiver": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                          },
+                          "resourceClassifiedAs": null,
+                          "resourceConformsTo": {
+                            "id": "063DNHG53MM0KSTS7ET1G6W758"
+                          },
+                          "resourceInventoriedAs": {
+                            "id": "063DNHGN131V3PFNEAJ2FN7Y4R"
+                          },
+                          "resourceMetadata": null,
+                          "resourceQuantity": {
+                            "hasNumericalValue": "1",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                            }
+                          },
+                          "toLocation": {
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                          },
+                          "toResourceInventoriedAs": {
+                            "id": null
+                          },
+                          "triggeredBy": {
+                            "id": null
+                          }
+                        },
+                        "type": "EconomicEvent"
+                      }
+                    ],
+                    "node": {
+                      "accountingQuantity": {
+                        "hasNumericalValue": "1",
+                        "hasUnit": {
+                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                        }
+                      },
+                      "classifiedAs": null,
+                      "conformsTo": {
+                        "id": "063DNHG53MM0KSTS7ET1G6W758"
+                      },
+                      "containedIn": {
+                        "id": null
+                      },
+                      "currentLocation": {
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                      },
+                      "custodian": {
+                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                      },
+                      "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                      "license": null,
+                      "licensor": null,
+                      "lot": {
+                        "id": null
+                      },
+                      "metadata": null,
+                      "name": "Allen_Key",
+                      "note": null,
+                      "okhv": null,
+                      "onhandQuantityHas": {
+                        "hasUnit": {
+                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                        },
+                        "numericalValue": "1"
+                      },
+                      "previousEvent": {
+                        "id": "063DNHRFMZ84EP27JFYZK0QSFC"
+                      },
+                      "primaryAccountable": {
+                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                      },
+                      "repo": null,
+                      "stage": {
+                        "id": null
+                      },
+                      "state": {
+                        "id": null
+                      },
+                      "trackingIdentifier": "Allen_Key-6509",
+                      "unitOfEffort": {
+                        "id": null
+                      },
+                      "version": null
+                    },
+                    "type": "EconomicResource"
+                  }
+                ],
+                "node": {
+                  "action": {
+                    "id": "use"
+                  },
+                  "agreedIn": null,
+                  "atLocation": {
+                    "id": null
+                  },
+                  "effortQuantity": {
+                    "hasNumericalValue": "0.03",
+                    "hasUnit": {
+                      "id": "063DNHG3RK8RJHZ65VSPQ4GDMM"
+                    }
+                  },
+                  "hasBeginning": null,
+                  "hasEnd": null,
+                  "hasPointInTime": "2023-03-13T11:41:42.275956Z",
+                  "id": "063DNHNV9EJS4YSAPS49WMEJV0",
+                  "inputOf": {
+                    "id": "063DNHHPVZD8VBA4WD2DS9FZGM"
+                  },
+                  "note": "Input use Allen Key event for Lower Frame Assembly",
+                  "outputOf": {
+                    "id": null
+                  },
+                  "previousEvent": {
+                    "id": "063DNHNK3A11EC6Q4FYGJ19Z44"
+                  },
+                  "provider": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "realizationOf": {
+                    "id": null
+                  },
+                  "receiver": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "resourceClassifiedAs": null,
+                  "resourceConformsTo": {
+                    "id": null
+                  },
+                  "resourceInventoriedAs": {
+                    "id": "063DNHGN131V3PFNEAJ2FN7Y4R"
+                  },
+                  "resourceMetadata": null,
+                  "resourceQuantity": {
+                    "hasNumericalValue": "1",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                    }
+                  },
+                  "toLocation": {
+                    "id": null
+                  },
+                  "toResourceInventoriedAs": {
+                    "id": null
+                  },
+                  "triggeredBy": {
+                    "id": null
+                  }
+                },
+                "type": "EconomicEvent"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "node": {
+                          "action": {
+                            "id": "raise"
+                          },
+                          "agreedIn": null,
+                          "atLocation": {
+                            "id": null
+                          },
+                          "effortQuantity": {
+                            "hasNumericalValue": null,
+                            "hasUnit": {
+                              "id": null
+                            }
+                          },
+                          "hasBeginning": null,
+                          "hasEnd": null,
+                          "hasPointInTime": "2023-03-13T11:41:01.127754Z",
+                          "id": "063DNHGTJ2D16NK94C8GJCZ0T4",
+                          "inputOf": {
+                            "id": null
+                          },
+                          "note": "create resource",
+                          "outputOf": {
+                            "id": null
+                          },
+                          "previousEvent": {
+                            "id": null
+                          },
+                          "provider": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                          },
+                          "realizationOf": {
+                            "id": null
+                          },
+                          "receiver": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                          },
+                          "resourceClassifiedAs": null,
+                          "resourceConformsTo": {
+                            "id": "063DNHG9Y2E7ED32KG2QNB0ZCR"
+                          },
+                          "resourceInventoriedAs": {
+                            "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G"
+                          },
+                          "resourceMetadata": null,
+                          "resourceQuantity": {
+                            "hasNumericalValue": "50",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                            }
+                          },
+                          "toLocation": {
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                          },
+                          "toResourceInventoriedAs": {
+                            "id": null
+                          },
+                          "triggeredBy": {
+                            "id": null
+                          }
+                        },
+                        "type": "EconomicEvent"
+                      }
+                    ],
+                    "node": {
+                      "accountingQuantity": {
+                        "hasNumericalValue": "42",
+                        "hasUnit": {
+                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                        }
+                      },
+                      "classifiedAs": null,
+                      "conformsTo": {
+                        "id": "063DNHG9Y2E7ED32KG2QNB0ZCR"
+                      },
+                      "containedIn": {
+                        "id": null
+                      },
+                      "currentLocation": {
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                      },
+                      "custodian": {
+                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                      },
+                      "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                      "license": null,
+                      "licensor": null,
+                      "lot": {
+                        "id": null
+                      },
+                      "metadata": null,
+                      "name": "RAConnector",
+                      "note": null,
+                      "okhv": null,
+                      "onhandQuantityHas": {
+                        "hasUnit": {
+                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                        },
+                        "numericalValue": "42"
+                      },
+                      "previousEvent": {
+                        "id": "063DNHPBRSG6ZXDYJESH9VT5NW"
+                      },
+                      "primaryAccountable": {
+                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                      },
+                      "repo": null,
+                      "stage": {
+                        "id": null
+                      },
+                      "state": {
+                        "id": null
+                      },
+                      "trackingIdentifier": "RAConnector-6095",
+                      "unitOfEffort": {
+                        "id": null
+                      },
+                      "version": null
+                    },
+                    "type": "EconomicResource"
+                  }
+                ],
+                "node": {
+                  "action": {
+                    "id": "consume"
+                  },
+                  "agreedIn": null,
+                  "atLocation": {
+                    "id": null
+                  },
+                  "effortQuantity": {
+                    "hasNumericalValue": null,
+                    "hasUnit": {
+                      "id": null
+                    }
+                  },
+                  "hasBeginning": null,
+                  "hasEnd": null,
+                  "hasPointInTime": "2023-03-13T11:41:41.931235Z",
+                  "id": "063DNHNSZN7PGDYZ4HE15AWERR",
+                  "inputOf": {
+                    "id": "063DNHHPVZD8VBA4WD2DS9FZGM"
+                  },
+                  "note": "Input consume 1 x RAConnector event for Pillar Assembly",
+                  "outputOf": {
+                    "id": null
+                  },
+                  "previousEvent": {
+                    "id": "063DNHNGEK29GCR69SK23PDKCC"
+                  },
+                  "provider": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "realizationOf": {
+                    "id": null
+                  },
+                  "receiver": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "resourceClassifiedAs": null,
+                  "resourceConformsTo": {
+                    "id": null
+                  },
+                  "resourceInventoriedAs": {
+                    "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G"
+                  },
+                  "resourceMetadata": null,
+                  "resourceQuantity": {
+                    "hasNumericalValue": "1",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                    }
+                  },
+                  "toLocation": {
+                    "id": null
+                  },
+                  "toResourceInventoriedAs": {
+                    "id": null
+                  },
+                  "triggeredBy": {
+                    "id": null
+                  }
+                },
+                "type": "EconomicEvent"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "node": {
+                          "action": {
+                            "id": "raise"
+                          },
+                          "agreedIn": null,
+                          "atLocation": {
+                            "id": null
+                          },
+                          "effortQuantity": {
+                            "hasNumericalValue": null,
+                            "hasUnit": {
+                              "id": null
+                            }
+                          },
+                          "hasBeginning": null,
+                          "hasEnd": null,
+                          "hasPointInTime": "2023-03-13T11:41:00.065781Z",
+                          "id": "063DNHGPGJE726B0YSE01EERSC",
+                          "inputOf": {
+                            "id": null
+                          },
+                          "note": "create resource",
+                          "outputOf": {
+                            "id": null
+                          },
+                          "previousEvent": {
+                            "id": null
+                          },
+                          "provider": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                          },
+                          "realizationOf": {
+                            "id": null
+                          },
+                          "receiver": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                          },
+                          "resourceClassifiedAs": null,
+                          "resourceConformsTo": {
+                            "id": "063DNHG696QR5Y4BBTAZ8RAA6R"
+                          },
+                          "resourceInventoriedAs": {
+                            "id": "063DNHGPH3QD5BDSWBVAF8KEYW"
+                          },
+                          "resourceMetadata": null,
+                          "resourceQuantity": {
+                            "hasNumericalValue": "50",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                            }
+                          },
+                          "toLocation": {
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                          },
+                          "toResourceInventoriedAs": {
+                            "id": null
+                          },
+                          "triggeredBy": {
+                            "id": null
+                          }
+                        },
+                        "type": "EconomicEvent"
+                      }
+                    ],
+                    "node": {
+                      "accountingQuantity": {
+                        "hasNumericalValue": "-9",
+                        "hasUnit": {
+                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                        }
+                      },
+                      "classifiedAs": null,
+                      "conformsTo": {
+                        "id": "063DNHG696QR5Y4BBTAZ8RAA6R"
+                      },
+                      "containedIn": {
+                        "id": null
+                      },
+                      "currentLocation": {
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                      },
+                      "custodian": {
+                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                      },
+                      "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                      "license": null,
+                      "licensor": null,
+                      "lot": {
+                        "id": null
+                      },
+                      "metadata": null,
+                      "name": "M6nutplate",
+                      "note": null,
+                      "okhv": null,
+                      "onhandQuantityHas": {
+                        "hasUnit": {
+                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                        },
+                        "numericalValue": "-9"
+                      },
+                      "previousEvent": {
+                        "id": "063DNHRCZE15BHMKCXEKCNQJMC"
+                      },
+                      "primaryAccountable": {
+                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                      },
+                      "repo": null,
+                      "stage": {
+                        "id": null
+                      },
+                      "state": {
+                        "id": null
+                      },
+                      "trackingIdentifier": "M6nutplate-3709",
+                      "unitOfEffort": {
+                        "id": null
+                      },
+                      "version": null
+                    },
+                    "type": "EconomicResource"
+                  }
+                ],
+                "node": {
+                  "action": {
+                    "id": "consume"
+                  },
+                  "agreedIn": null,
+                  "atLocation": {
+                    "id": null
+                  },
+                  "effortQuantity": {
+                    "hasNumericalValue": null,
+                    "hasUnit": {
+                      "id": null
+                    }
+                  },
+                  "hasBeginning": null,
+                  "hasEnd": null,
+                  "hasPointInTime": "2023-03-13T11:41:41.561668Z",
+                  "id": "063DNHNRMS3072K7P9QWN8F2TC",
+                  "inputOf": {
+                    "id": "063DNHHPVZD8VBA4WD2DS9FZGM"
+                  },
+                  "note": "Input consume 3 x M6nutplate event for Pillar Assembly",
+                  "outputOf": {
+                    "id": null
+                  },
+                  "previousEvent": {
+                    "id": "063DNHNF2DGFJYJAKAVYMRYSBW"
+                  },
+                  "provider": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "realizationOf": {
+                    "id": null
+                  },
+                  "receiver": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "resourceClassifiedAs": null,
+                  "resourceConformsTo": {
+                    "id": null
+                  },
+                  "resourceInventoriedAs": {
+                    "id": "063DNHGPH3QD5BDSWBVAF8KEYW"
+                  },
+                  "resourceMetadata": null,
+                  "resourceQuantity": {
+                    "hasNumericalValue": "3",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                    }
+                  },
+                  "toLocation": {
+                    "id": null
+                  },
+                  "toResourceInventoriedAs": {
+                    "id": null
+                  },
+                  "triggeredBy": {
+                    "id": null
+                  }
+                },
+                "type": "EconomicEvent"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "node": {
+                                  "action": {
+                                    "id": "work"
+                                  },
+                                  "agreedIn": null,
+                                  "atLocation": {
+                                    "id": null
+                                  },
+                                  "effortQuantity": {
+                                    "hasNumericalValue": "0.05",
+                                    "hasUnit": {
+                                      "id": "063DNHG3RK8RJHZ65VSPQ4GDMM"
+                                    }
+                                  },
+                                  "hasBeginning": null,
+                                  "hasEnd": null,
+                                  "hasPointInTime": "2023-03-13T11:41:40.509001Z",
+                                  "id": "063DNHNMCR5RPAPB4V2WH4Y8T8",
+                                  "inputOf": {
+                                    "id": "063DNHHNMSFF9TPBNX4QA084JM"
+                                  },
+                                  "note": "Insert one M6nutplate at one end of a Tslot32 beam and use it to connect one of the RAconnectors to that beam with a M6x12 screw.",
+                                  "outputOf": {
+                                    "id": null
+                                  },
+                                  "previousEvent": {
+                                    "id": null
+                                  },
+                                  "provider": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "realizationOf": {
+                                    "id": null
+                                  },
+                                  "receiver": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "resourceClassifiedAs": null,
+                                  "resourceConformsTo": {
+                                    "id": "063DNHGET3912R1CQ835DT4J24"
+                                  },
+                                  "resourceInventoriedAs": {
+                                    "id": null
+                                  },
+                                  "resourceMetadata": null,
+                                  "resourceQuantity": {
+                                    "hasNumericalValue": null,
+                                    "hasUnit": {
+                                      "id": null
+                                    }
+                                  },
+                                  "toLocation": {
+                                    "id": null
+                                  },
+                                  "toResourceInventoriedAs": {
+                                    "id": null
+                                  },
+                                  "triggeredBy": {
+                                    "id": null
+                                  }
+                                },
+                                "type": "EconomicEvent"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [],
+                                    "node": {
+                                      "accountingQuantity": {
+                                        "hasNumericalValue": "1",
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        }
+                                      },
+                                      "classifiedAs": null,
+                                      "conformsTo": {
+                                        "id": "063DNHG53MM0KSTS7ET1G6W758"
+                                      },
+                                      "containedIn": {
+                                        "id": null
+                                      },
+                                      "currentLocation": {
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                                      },
+                                      "custodian": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                                      "license": null,
+                                      "licensor": null,
+                                      "lot": {
+                                        "id": null
+                                      },
+                                      "metadata": null,
+                                      "name": "Allen_Key",
+                                      "note": null,
+                                      "okhv": null,
+                                      "onhandQuantityHas": {
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        },
+                                        "numericalValue": "1"
+                                      },
+                                      "previousEvent": {
+                                        "id": "063DNHRFMZ84EP27JFYZK0QSFC"
+                                      },
+                                      "primaryAccountable": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "repo": null,
+                                      "stage": {
+                                        "id": null
+                                      },
+                                      "state": {
+                                        "id": null
+                                      },
+                                      "trackingIdentifier": "Allen_Key-6509",
+                                      "unitOfEffort": {
+                                        "id": null
+                                      },
+                                      "version": null
+                                    },
+                                    "type": "EconomicResource"
+                                  }
+                                ],
+                                "node": {
+                                  "action": {
+                                    "id": "use"
+                                  },
+                                  "agreedIn": null,
+                                  "atLocation": {
+                                    "id": null
+                                  },
+                                  "effortQuantity": {
+                                    "hasNumericalValue": "0.03",
+                                    "hasUnit": {
+                                      "id": "063DNHG3RK8RJHZ65VSPQ4GDMM"
+                                    }
+                                  },
+                                  "hasBeginning": null,
+                                  "hasEnd": null,
+                                  "hasPointInTime": "2023-03-13T11:41:40.161687Z",
+                                  "id": "063DNHNK3A11EC6Q4FYGJ19Z44",
+                                  "inputOf": {
+                                    "id": "063DNHHNMSFF9TPBNX4QA084JM"
+                                  },
+                                  "note": "Input use Allen Key event for Lower Frame Assembly",
+                                  "outputOf": {
+                                    "id": null
+                                  },
+                                  "previousEvent": {
+                                    "id": "063DNHN9HJEY46MGAKHZ7DDZSR"
+                                  },
+                                  "provider": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "realizationOf": {
+                                    "id": null
+                                  },
+                                  "receiver": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "resourceClassifiedAs": null,
+                                  "resourceConformsTo": {
+                                    "id": null
+                                  },
+                                  "resourceInventoriedAs": {
+                                    "id": "063DNHGN131V3PFNEAJ2FN7Y4R"
+                                  },
+                                  "resourceMetadata": null,
+                                  "resourceQuantity": {
+                                    "hasNumericalValue": "1",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                    }
+                                  },
+                                  "toLocation": {
+                                    "id": null
+                                  },
+                                  "toResourceInventoriedAs": {
+                                    "id": null
+                                  },
+                                  "triggeredBy": {
+                                    "id": null
+                                  }
+                                },
+                                "type": "EconomicEvent"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [
+                                      {
+                                        "children": [],
+                                        "node": {
+                                          "action": {
+                                            "id": "raise"
+                                          },
+                                          "agreedIn": null,
+                                          "atLocation": {
+                                            "id": null
+                                          },
+                                          "effortQuantity": {
+                                            "hasNumericalValue": null,
+                                            "hasUnit": {
+                                              "id": null
+                                            }
+                                          },
+                                          "hasBeginning": null,
+                                          "hasEnd": null,
+                                          "hasPointInTime": "2023-03-13T11:41:00.450402Z",
+                                          "id": "063DNHGQWWEE6MVNZQZZ235GRG",
+                                          "inputOf": {
+                                            "id": null
+                                          },
+                                          "note": "create resource",
+                                          "outputOf": {
+                                            "id": null
+                                          },
+                                          "previousEvent": {
+                                            "id": null
+                                          },
+                                          "provider": {
+                                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                          },
+                                          "realizationOf": {
+                                            "id": null
+                                          },
+                                          "receiver": {
+                                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                          },
+                                          "resourceClassifiedAs": null,
+                                          "resourceConformsTo": {
+                                            "id": "063DNHG7GP6YN29ZKMVAYJQJ5W"
+                                          },
+                                          "resourceInventoriedAs": {
+                                            "id": "063DNHGQX9J49T6HPGYMH0SKTC"
+                                          },
+                                          "resourceMetadata": null,
+                                          "resourceQuantity": {
+                                            "hasNumericalValue": "50",
+                                            "hasUnit": {
+                                              "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                            }
+                                          },
+                                          "toLocation": {
+                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                                          },
+                                          "toResourceInventoriedAs": {
+                                            "id": null
+                                          },
+                                          "triggeredBy": {
+                                            "id": null
+                                          }
+                                        },
+                                        "type": "EconomicEvent"
+                                      }
+                                    ],
+                                    "node": {
+                                      "accountingQuantity": {
+                                        "hasNumericalValue": "38",
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        }
+                                      },
+                                      "classifiedAs": null,
+                                      "conformsTo": {
+                                        "id": "063DNHG7GP6YN29ZKMVAYJQJ5W"
+                                      },
+                                      "containedIn": {
+                                        "id": null
+                                      },
+                                      "currentLocation": {
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                                      },
+                                      "custodian": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "id": "063DNHGQX9J49T6HPGYMH0SKTC",
+                                      "license": null,
+                                      "licensor": null,
+                                      "lot": {
+                                        "id": null
+                                      },
+                                      "metadata": null,
+                                      "name": "M6x12",
+                                      "note": null,
+                                      "okhv": null,
+                                      "onhandQuantityHas": {
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        },
+                                        "numericalValue": "38"
+                                      },
+                                      "previousEvent": {
+                                        "id": "063DNHREAMGJZGNV2Z8BNEA5CR"
+                                      },
+                                      "primaryAccountable": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "repo": null,
+                                      "stage": {
+                                        "id": null
+                                      },
+                                      "state": {
+                                        "id": null
+                                      },
+                                      "trackingIdentifier": "M6x12-2703",
+                                      "unitOfEffort": {
+                                        "id": null
+                                      },
+                                      "version": null
+                                    },
+                                    "type": "EconomicResource"
+                                  }
+                                ],
+                                "node": {
+                                  "action": {
+                                    "id": "consume"
+                                  },
+                                  "agreedIn": null,
+                                  "atLocation": {
+                                    "id": null
+                                  },
+                                  "effortQuantity": {
+                                    "hasNumericalValue": null,
+                                    "hasUnit": {
+                                      "id": null
+                                    }
+                                  },
+                                  "hasBeginning": null,
+                                  "hasEnd": null,
+                                  "hasPointInTime": "2023-03-13T11:41:39.833097Z",
+                                  "id": "063DNHNHRCBHEMKCN9TWSM9RDW",
+                                  "inputOf": {
+                                    "id": "063DNHHNMSFF9TPBNX4QA084JM"
+                                  },
+                                  "note": "Input consume 1 x M6x12 event for Pillar Assembly",
+                                  "outputOf": {
+                                    "id": null
+                                  },
+                                  "previousEvent": {
+                                    "id": "063DNHN0238JTPM9NCX9JWQ7NM"
+                                  },
+                                  "provider": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "realizationOf": {
+                                    "id": null
+                                  },
+                                  "receiver": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "resourceClassifiedAs": null,
+                                  "resourceConformsTo": {
+                                    "id": null
+                                  },
+                                  "resourceInventoriedAs": {
+                                    "id": "063DNHGQX9J49T6HPGYMH0SKTC"
+                                  },
+                                  "resourceMetadata": null,
+                                  "resourceQuantity": {
+                                    "hasNumericalValue": "1",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                    }
+                                  },
+                                  "toLocation": {
+                                    "id": null
+                                  },
+                                  "toResourceInventoriedAs": {
+                                    "id": null
+                                  },
+                                  "triggeredBy": {
+                                    "id": null
+                                  }
+                                },
+                                "type": "EconomicEvent"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [],
+                                    "node": {
+                                      "accountingQuantity": {
+                                        "hasNumericalValue": "42",
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        }
+                                      },
+                                      "classifiedAs": null,
+                                      "conformsTo": {
+                                        "id": "063DNHG9Y2E7ED32KG2QNB0ZCR"
+                                      },
+                                      "containedIn": {
+                                        "id": null
+                                      },
+                                      "currentLocation": {
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                                      },
+                                      "custodian": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                                      "license": null,
+                                      "licensor": null,
+                                      "lot": {
+                                        "id": null
+                                      },
+                                      "metadata": null,
+                                      "name": "RAConnector",
+                                      "note": null,
+                                      "okhv": null,
+                                      "onhandQuantityHas": {
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        },
+                                        "numericalValue": "42"
+                                      },
+                                      "previousEvent": {
+                                        "id": "063DNHPBRSG6ZXDYJESH9VT5NW"
+                                      },
+                                      "primaryAccountable": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "repo": null,
+                                      "stage": {
+                                        "id": null
+                                      },
+                                      "state": {
+                                        "id": null
+                                      },
+                                      "trackingIdentifier": "RAConnector-6095",
+                                      "unitOfEffort": {
+                                        "id": null
+                                      },
+                                      "version": null
+                                    },
+                                    "type": "EconomicResource"
+                                  }
+                                ],
+                                "node": {
+                                  "action": {
+                                    "id": "consume"
+                                  },
+                                  "agreedIn": null,
+                                  "atLocation": {
+                                    "id": null
+                                  },
+                                  "effortQuantity": {
+                                    "hasNumericalValue": null,
+                                    "hasUnit": {
+                                      "id": null
+                                    }
+                                  },
+                                  "hasBeginning": null,
+                                  "hasEnd": null,
+                                  "hasPointInTime": "2023-03-13T11:41:39.491187Z",
+                                  "id": "063DNHNGEK29GCR69SK23PDKCC",
+                                  "inputOf": {
+                                    "id": "063DNHHNMSFF9TPBNX4QA084JM"
+                                  },
+                                  "note": "Input consume 1 x RAConnector event for Pillar Assembly",
+                                  "outputOf": {
+                                    "id": null
+                                  },
+                                  "previousEvent": {
+                                    "id": "063DNHN85XQG6TRQXEMNJC3CPG"
+                                  },
+                                  "provider": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "realizationOf": {
+                                    "id": null
+                                  },
+                                  "receiver": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "resourceClassifiedAs": null,
+                                  "resourceConformsTo": {
+                                    "id": null
+                                  },
+                                  "resourceInventoriedAs": {
+                                    "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G"
+                                  },
+                                  "resourceMetadata": null,
+                                  "resourceQuantity": {
+                                    "hasNumericalValue": "1",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                    }
+                                  },
+                                  "toLocation": {
+                                    "id": null
+                                  },
+                                  "toResourceInventoriedAs": {
+                                    "id": null
+                                  },
+                                  "triggeredBy": {
+                                    "id": null
+                                  }
+                                },
+                                "type": "EconomicEvent"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [],
+                                    "node": {
+                                      "accountingQuantity": {
+                                        "hasNumericalValue": "-9",
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        }
+                                      },
+                                      "classifiedAs": null,
+                                      "conformsTo": {
+                                        "id": "063DNHG696QR5Y4BBTAZ8RAA6R"
+                                      },
+                                      "containedIn": {
+                                        "id": null
+                                      },
+                                      "currentLocation": {
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                                      },
+                                      "custodian": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                                      "license": null,
+                                      "licensor": null,
+                                      "lot": {
+                                        "id": null
+                                      },
+                                      "metadata": null,
+                                      "name": "M6nutplate",
+                                      "note": null,
+                                      "okhv": null,
+                                      "onhandQuantityHas": {
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        },
+                                        "numericalValue": "-9"
+                                      },
+                                      "previousEvent": {
+                                        "id": "063DNHRCZE15BHMKCXEKCNQJMC"
+                                      },
+                                      "primaryAccountable": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "repo": null,
+                                      "stage": {
+                                        "id": null
+                                      },
+                                      "state": {
+                                        "id": null
+                                      },
+                                      "trackingIdentifier": "M6nutplate-3709",
+                                      "unitOfEffort": {
+                                        "id": null
+                                      },
+                                      "version": null
+                                    },
+                                    "type": "EconomicResource"
+                                  }
+                                ],
+                                "node": {
+                                  "action": {
+                                    "id": "consume"
+                                  },
+                                  "agreedIn": null,
+                                  "atLocation": {
+                                    "id": null
+                                  },
+                                  "effortQuantity": {
+                                    "hasNumericalValue": null,
+                                    "hasUnit": {
+                                      "id": null
+                                    }
+                                  },
+                                  "hasBeginning": null,
+                                  "hasEnd": null,
+                                  "hasPointInTime": "2023-03-13T11:41:39.134799Z",
+                                  "id": "063DNHNF2DGFJYJAKAVYMRYSBW",
+                                  "inputOf": {
+                                    "id": "063DNHHNMSFF9TPBNX4QA084JM"
+                                  },
+                                  "note": "Input consume 1 x M6nutplate event for Pillar Assembly",
+                                  "outputOf": {
+                                    "id": null
+                                  },
+                                  "previousEvent": {
+                                    "id": "063DNHN6S2WKX5AQ2QD64YVXTW"
+                                  },
+                                  "provider": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "realizationOf": {
+                                    "id": null
+                                  },
+                                  "receiver": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "resourceClassifiedAs": null,
+                                  "resourceConformsTo": {
+                                    "id": null
+                                  },
+                                  "resourceInventoriedAs": {
+                                    "id": "063DNHGPH3QD5BDSWBVAF8KEYW"
+                                  },
+                                  "resourceMetadata": null,
+                                  "resourceQuantity": {
+                                    "hasNumericalValue": "1",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                    }
+                                  },
+                                  "toLocation": {
+                                    "id": null
+                                  },
+                                  "toResourceInventoriedAs": {
+                                    "id": null
+                                  },
+                                  "triggeredBy": {
+                                    "id": null
+                                  }
+                                },
+                                "type": "EconomicEvent"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "children": [
+                                      {
+                                        "children": [],
+                                        "node": {
+                                          "action": {
+                                            "id": "raise"
+                                          },
+                                          "agreedIn": null,
+                                          "atLocation": {
+                                            "id": null
+                                          },
+                                          "effortQuantity": {
+                                            "hasNumericalValue": null,
+                                            "hasUnit": {
+                                              "id": null
+                                            }
+                                          },
+                                          "hasBeginning": null,
+                                          "hasEnd": null,
+                                          "hasPointInTime": "2023-03-13T11:41:01.836384Z",
+                                          "id": "063DNHGXBN24N7FV14M6NNSQKW",
+                                          "inputOf": {
+                                            "id": null
+                                          },
+                                          "note": "create resource",
+                                          "outputOf": {
+                                            "id": null
+                                          },
+                                          "previousEvent": {
+                                            "id": null
+                                          },
+                                          "provider": {
+                                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                          },
+                                          "realizationOf": {
+                                            "id": null
+                                          },
+                                          "receiver": {
+                                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                          },
+                                          "resourceClassifiedAs": null,
+                                          "resourceConformsTo": {
+                                            "id": "063DNHGCCKHF0B2BSPEVC4X778"
+                                          },
+                                          "resourceInventoriedAs": {
+                                            "id": "063DNHGXBXKAR76EK6ECY2DC00"
+                                          },
+                                          "resourceMetadata": null,
+                                          "resourceQuantity": {
+                                            "hasNumericalValue": "50",
+                                            "hasUnit": {
+                                              "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                            }
+                                          },
+                                          "toLocation": {
+                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                                          },
+                                          "toResourceInventoriedAs": {
+                                            "id": null
+                                          },
+                                          "triggeredBy": {
+                                            "id": null
+                                          }
+                                        },
+                                        "type": "EconomicEvent"
+                                      }
+                                    ],
+                                    "node": {
+                                      "accountingQuantity": {
+                                        "hasNumericalValue": "46",
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        }
+                                      },
+                                      "classifiedAs": null,
+                                      "conformsTo": {
+                                        "id": "063DNHGCCKHF0B2BSPEVC4X778"
+                                      },
+                                      "containedIn": {
+                                        "id": null
+                                      },
+                                      "currentLocation": {
+                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                                      },
+                                      "custodian": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "id": "063DNHGXBXKAR76EK6ECY2DC00",
+                                      "license": null,
+                                      "licensor": null,
+                                      "lot": {
+                                        "id": null
+                                      },
+                                      "metadata": null,
+                                      "name": "Tslot32",
+                                      "note": null,
+                                      "okhv": null,
+                                      "onhandQuantityHas": {
+                                        "hasUnit": {
+                                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                        },
+                                        "numericalValue": "46"
+                                      },
+                                      "previousEvent": {
+                                        "id": "063DNHNZC0SABZF8MJT0T9WKCC"
+                                      },
+                                      "primaryAccountable": {
+                                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                      },
+                                      "repo": null,
+                                      "stage": {
+                                        "id": null
+                                      },
+                                      "state": {
+                                        "id": null
+                                      },
+                                      "trackingIdentifier": "Tslot32-2303",
+                                      "unitOfEffort": {
+                                        "id": null
+                                      },
+                                      "version": null
+                                    },
+                                    "type": "EconomicResource"
+                                  }
+                                ],
+                                "node": {
+                                  "action": {
+                                    "id": "consume"
+                                  },
+                                  "agreedIn": null,
+                                  "atLocation": {
+                                    "id": null
+                                  },
+                                  "effortQuantity": {
+                                    "hasNumericalValue": null,
+                                    "hasUnit": {
+                                      "id": null
+                                    }
+                                  },
+                                  "hasBeginning": null,
+                                  "hasEnd": null,
+                                  "hasPointInTime": "2023-03-13T11:41:38.780621Z",
+                                  "id": "063DNHNDPS80DCR6438J0E0A1G",
+                                  "inputOf": {
+                                    "id": "063DNHHNMSFF9TPBNX4QA084JM"
+                                  },
+                                  "note": "Input consume Tslot32 event for Pillar Assembly",
+                                  "outputOf": {
+                                    "id": null
+                                  },
+                                  "previousEvent": {
+                                    "id": "063DNHMVX42BVG6NRW4VKJTXV8"
+                                  },
+                                  "provider": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "realizationOf": {
+                                    "id": null
+                                  },
+                                  "receiver": {
+                                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                                  },
+                                  "resourceClassifiedAs": null,
+                                  "resourceConformsTo": {
+                                    "id": null
+                                  },
+                                  "resourceInventoriedAs": {
+                                    "id": "063DNHGXBXKAR76EK6ECY2DC00"
+                                  },
+                                  "resourceMetadata": null,
+                                  "resourceQuantity": {
+                                    "hasNumericalValue": "1",
+                                    "hasUnit": {
+                                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                                    }
+                                  },
+                                  "toLocation": {
+                                    "id": null
+                                  },
+                                  "toResourceInventoriedAs": {
+                                    "id": null
+                                  },
+                                  "triggeredBy": {
+                                    "id": null
+                                  }
+                                },
+                                "type": "EconomicEvent"
+                              }
+                            ],
+                            "node": {
+                              "basedOn": {
+                                "id": null
+                              },
+                              "classifiedAs": null,
+                              "deletable": false,
+                              "finished": false,
+                              "groupedIn": {
+                                "id": "063DNHRVYTSVPKAW5T3PCANA84"
+                              },
+                              "hasBeginning": "2023-03-13T11:41:08.054137Z",
+                              "hasEnd": "2023-03-13T11:41:08.054137Z",
+                              "id": "063DNHHNMSFF9TPBNX4QA084JM",
+                              "name": "Third_Pillar_1",
+                              "note": "Assembly process Third_Pillar_1 defined by User One",
+                              "plannedWithin": {
+                                "id": null
+                              }
+                            },
+                            "type": "Process"
+                          }
+                        ],
+                        "node": {
+                          "action": {
+                            "id": "produce"
+                          },
+                          "agreedIn": null,
+                          "atLocation": {
+                            "id": null
+                          },
+                          "effortQuantity": {
+                            "hasNumericalValue": null,
+                            "hasUnit": {
+                              "id": null
+                            }
+                          },
+                          "hasBeginning": null,
+                          "hasEnd": null,
+                          "hasPointInTime": "2023-03-13T11:41:40.850015Z",
+                          "id": "063DNHNNT5H07EY0DBRR63JHRM",
+                          "inputOf": {
+                            "id": null
+                          },
+                          "note": "produce Pillar",
+                          "outputOf": {
+                            "id": "063DNHHNMSFF9TPBNX4QA084JM"
+                          },
+                          "previousEvent": {
+                            "id": null
+                          },
+                          "provider": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                          },
+                          "realizationOf": {
+                            "id": null
+                          },
+                          "receiver": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R"
+                          },
+                          "resourceClassifiedAs": null,
+                          "resourceConformsTo": {
+                            "id": "063DNHGJF827J0A3XG1QJTJKS0"
+                          },
+                          "resourceInventoriedAs": {
+                            "id": "063DNHNNTTAVDRR7BDM20760SC"
+                          },
+                          "resourceMetadata": null,
+                          "resourceQuantity": {
+                            "hasNumericalValue": "1",
+                            "hasUnit": {
+                              "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                            }
+                          },
+                          "toLocation": {
+                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                          },
+                          "toResourceInventoriedAs": {
+                            "id": null
+                          },
+                          "triggeredBy": {
+                            "id": null
+                          }
+                        },
+                        "type": "EconomicEvent"
+                      }
+                    ],
+                    "node": {
+                      "accountingQuantity": {
+                        "hasNumericalValue": "0",
+                        "hasUnit": {
+                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                        }
+                      },
+                      "classifiedAs": null,
+                      "conformsTo": {
+                        "id": "063DNHGJF827J0A3XG1QJTJKS0"
+                      },
+                      "containedIn": {
+                        "id": null
+                      },
+                      "currentLocation": {
+                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+                      },
+                      "custodian": {
+                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                      },
+                      "id": "063DNHNNTTAVDRR7BDM20760SC",
+                      "license": null,
+                      "licensor": null,
+                      "lot": {
+                        "id": null
+                      },
+                      "metadata": null,
+                      "name": "third_pillar",
+                      "note": null,
+                      "okhv": null,
+                      "onhandQuantityHas": {
+                        "hasUnit": {
+                          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                        },
+                        "numericalValue": "0"
+                      },
+                      "previousEvent": {
+                        "id": "063DNHQ64WVR2NY17FD7YSWXSG"
+                      },
+                      "primaryAccountable": {
+                        "id": "0630H1AJ39F268Q676VGD0YS5R"
+                      },
+                      "repo": null,
+                      "stage": {
+                        "id": null
+                      },
+                      "state": {
+                        "id": null
+                      },
+                      "trackingIdentifier": "third_pillar-9355",
+                      "unitOfEffort": {
+                        "id": null
+                      },
+                      "version": null
+                    },
+                    "type": "EconomicResource"
+                  }
+                ],
+                "node": {
+                  "action": {
+                    "id": "accept"
+                  },
+                  "agreedIn": null,
+                  "atLocation": {
+                    "id": null
+                  },
+                  "effortQuantity": {
+                    "hasNumericalValue": null,
+                    "hasUnit": {
+                      "id": null
+                    }
+                  },
+                  "hasBeginning": null,
+                  "hasEnd": null,
+                  "hasPointInTime": "2023-03-13T11:41:41.206853Z",
+                  "id": "063DNHNQ4CAVGK87E6VGDWVAWW",
+                  "inputOf": {
+                    "id": "063DNHHPVZD8VBA4WD2DS9FZGM"
+                  },
+                  "note": "accept Pillar to be modified",
+                  "outputOf": {
+                    "id": null
+                  },
+                  "previousEvent": {
+                    "id": "063DNHNNT5H07EY0DBRR63JHRM"
+                  },
+                  "provider": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "realizationOf": {
+                    "id": null
+                  },
+                  "receiver": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R"
+                  },
+                  "resourceClassifiedAs": null,
+                  "resourceConformsTo": {
+                    "id": null
+                  },
+                  "resourceInventoriedAs": {
+                    "id": "063DNHNNTTAVDRR7BDM20760SC"
+                  },
+                  "resourceMetadata": null,
+                  "resourceQuantity": {
+                    "hasNumericalValue": "1",
+                    "hasUnit": {
+                      "id": "063DNHG03VDESDJT3T4RFKXTJC"
+                    }
+                  },
+                  "toLocation": {
+                    "id": null
+                  },
+                  "toResourceInventoriedAs": {
+                    "id": null
+                  },
+                  "triggeredBy": {
+                    "id": null
+                  }
+                },
+                "type": "EconomicEvent"
+              }
+            ],
+            "node": {
+              "basedOn": {
+                "id": null
+              },
+              "classifiedAs": null,
+              "deletable": false,
+              "finished": false,
+              "groupedIn": {
+                "id": "063DNHRVYTSVPKAW5T3PCANA84"
+              },
+              "hasBeginning": "2023-03-13T11:41:08.372071Z",
+              "hasEnd": "2023-03-13T11:41:08.372071Z",
+              "id": "063DNHHPVZD8VBA4WD2DS9FZGM",
+              "name": "Third_Pillar_2",
+              "note": "Assembly process Third_Pillar_2 defined by User One",
+              "plannedWithin": {
+                "id": null
+              }
+            },
+            "type": "Process"
+          }
+        ],
+        "node": {
+          "action": {
+            "id": "modify"
+          },
+          "agreedIn": null,
+          "atLocation": {
+            "id": null
+          },
+          "effortQuantity": {
+            "hasNumericalValue": null,
+            "hasUnit": {
+              "id": null
+            }
+          },
+          "hasBeginning": null,
+          "hasEnd": null,
+          "hasPointInTime": "2023-03-13T11:41:42.961423Z",
+          "id": "063DNHNY1EX0CHSRZRT5C3CHWR",
+          "inputOf": {
+            "id": null
+          },
+          "note": "modify Pillar",
+          "outputOf": {
+            "id": "063DNHHPVZD8VBA4WD2DS9FZGM"
+          },
+          "previousEvent": {
+            "id": "063DNHNQ4CAVGK87E6VGDWVAWW"
+          },
+          "provider": {
+            "id": "0630H1AJ39F268Q676VGD0YS5R"
+          },
+          "realizationOf": {
+            "id": null
+          },
+          "receiver": {
+            "id": "0630H1AJ39F268Q676VGD0YS5R"
+          },
+          "resourceClassifiedAs": null,
+          "resourceConformsTo": {
+            "id": null
+          },
+          "resourceInventoriedAs": {
+            "id": "063DNHNNTTAVDRR7BDM20760SC"
+          },
+          "resourceMetadata": null,
+          "resourceQuantity": {
+            "hasNumericalValue": "1",
+            "hasUnit": {
+              "id": "063DNHG03VDESDJT3T4RFKXTJC"
+            }
+          },
+          "toLocation": {
+            "id": null
+          },
+          "toResourceInventoriedAs": {
+            "id": null
+          },
+          "triggeredBy": {
+            "id": null
+          }
+        },
+        "type": "EconomicEvent"
+      }
+    ],
+    "node": {
+      "accountingQuantity": {
+        "hasNumericalValue": "0",
+        "hasUnit": {
+          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+        }
+      },
+      "classifiedAs": null,
+      "conformsTo": {
+        "id": "063DNHGJF827J0A3XG1QJTJKS0"
+      },
+      "containedIn": {
+        "id": null
+      },
+      "currentLocation": {
+        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC"
+      },
+      "custodian": {
+        "id": "0630H1AJ39F268Q676VGD0YS5R"
+      },
+      "id": "063DNHNNTTAVDRR7BDM20760SC",
+      "license": null,
+      "licensor": null,
+      "lot": {
+        "id": null
+      },
+      "metadata": null,
+      "name": "third_pillar",
+      "note": null,
+      "okhv": null,
+      "onhandQuantityHas": {
+        "hasUnit": {
+          "id": "063DNHG03VDESDJT3T4RFKXTJC"
+        },
+        "numericalValue": "0"
+      },
+      "previousEvent": {
+        "id": "063DNHQ64WVR2NY17FD7YSWXSG"
+      },
+      "primaryAccountable": {
+        "id": "0630H1AJ39F268Q676VGD0YS5R"
+      },
+      "repo": null,
+      "stage": {
+        "id": null
+      },
+      "state": {
+        "id": null
+      },
+      "trackingIdentifier": "third_pillar-9355",
+      "unitOfEffort": {
+        "id": null
+      },
+      "version": null
+    },
+    "type": "EconomicResource"
+  }
+]
