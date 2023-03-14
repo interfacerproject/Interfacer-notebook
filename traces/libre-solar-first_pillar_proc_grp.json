@@ -1,0 +1,46 @@
+{
+  "assemble_first_pillar": {
+    "name": "assemble_first_pillar",
+    "note": "Groups assembly events of the first pillar",
+    "type": "ProcessGroup",
+    "groupedIn": null,
+    "groups": [
+      "063DNHHGNQFFG0TE49G6XGHFCR",
+      "063DNHHHWM7JXYRR9XABY2X3H8"
+    ],
+    "id": "063DNHRM7X88ST1775P8MRMDM8"
+  },
+  "assemble_second_pillar": {
+    "name": "assemble_second_pillar",
+    "note": "Groups assembly events of the second pillar",
+    "type": "ProcessGroup",
+    "groupedIn": null,
+    "groups": [
+      "063DNHHK3T8C0K9DC6HJ574ZV4",
+      "063DNHHMCE80EAQQ4K3BRJ5CC0"
+    ],
+    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR"
+  },
+  "assemble_third_pillar": {
+    "name": "assemble_third_pillar",
+    "note": "Groups assembly events of the third pillar",
+    "type": "ProcessGroup",
+    "groupedIn": null,
+    "groups": [
+      "063DNHHNMSFF9TPBNX4QA084JM",
+      "063DNHHPVZD8VBA4WD2DS9FZGM"
+    ],
+    "id": "063DNHRVYTSVPKAW5T3PCANA84"
+  },
+  "assemble_forth_pillar": {
+    "name": "assemble_forth_pillar",
+    "note": "Groups assembly events of the forth pillar",
+    "type": "ProcessGroup",
+    "groupedIn": null,
+    "groups": [
+      "063DNHHR59W79AFCBK3JDGE6RR",
+      "063DNHHSEYVSAPV1VGF5B1H3M8"
+    ],
+    "id": "063DNHRZVYW0SANZACXDF09G64"
+  }
+}
