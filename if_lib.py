@@ -394,12 +394,15 @@ def create_Person(name, username, email, eddsaPublicKey, endpoint, newPerson=Tru
 #     print(json.dumps(payload, indent=2))
 
     # Temporarily: we need a key to create a person, before email authentication is implemented
-    file = '.credentials.json'
-    assert os.path.isfile(file)
+    if 'IF_KEY' in os.environ:
+        SECRET_KEY = os.environ['IF_KEY']
+    else:
+        file = '.credentials.json'
+        assert os.path.isfile(file)
 
-    with open(file) as f:
-        data = json.load(f)
-        SECRET_KEY = data['key']
+        with open(file) as f:
+            data = json.load(f)
+            SECRET_KEY = data['key']
         
     headers={'zenflows-admin': SECRET_KEY}
     res = requests.post(endpoint, json=payload, headers=headers)
