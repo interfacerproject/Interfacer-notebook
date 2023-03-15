@@ -1,14 +1,48 @@
 import papermill as pm
 from pathlib import Path
 import json
+import argparse
 
 TRACE_DIR = './traces'
 REF_DIR = './test_ref'
+ENDPOINT = 'http://zenflows-debug.interfacer.dyne.org/api'
+NB_FILE = 'IFServices.ipynb'
 
-NOT_COMPARABLE = ['id', 'trackingIdentifier', 'hasPointInTime', 'hasBeginning', 'hasEnd']
+NOT_COMPARABLE = ['id', 'trackingIdentifier',
+                  'hasPointInTime', 'hasBeginning', 'hasEnd']
+
+params = [
+    {
+        "positional": ['-e', '--endpoint'],
+        "params": {
+            "dest": 'endpoint',
+            "action": 'store',
+            "default": ENDPOINT,
+            "help": 'specifies the endpoint to talk to'
+        }
+    },
+    {
+        "positional": ['-n', '--nb_file'],
+        "params":{
+            "dest": 'nb_file',
+            "action": 'store',
+            "default": NB_FILE,
+            "help": 'specifies the full path to the notebook'
+        }
+    },
+    {
+        "positional": ['-p', '--present'],
+        "params":{
+            "dest": 'present',
+            "action": 'store_true',
+            "help": 'specifies whether the trace has already been calculated'
+        }
+    }
+]
+
 
 def cmp_nodes(ref_dpp, new_dpp, prt=False):
-    
+
     if type(ref_dpp) is not dict:
         if not ref_dpp == new_dpp:
             # print(f'Values {ref_dpp} and {new_dpp} differ')
@@ -41,6 +75,7 @@ def cmp_nodes(ref_dpp, new_dpp, prt=False):
             return False
     return True
 
+
 def cmp_traces_rec(ref_dpp, new_dpp):
     for ref_child in ref_dpp['children']:
         found = False
@@ -57,6 +92,7 @@ def cmp_traces_rec(ref_dpp, new_dpp):
 
     return True
 
+
 def cmp_traces(ref_dpp, new_dpp):
 
     if not cmp_nodes(ref_dpp, new_dpp):
@@ -66,13 +102,14 @@ def cmp_traces(ref_dpp, new_dpp):
     return cmp_traces_rec(ref_dpp, new_dpp)
 
 
-def main(nb_file, endpoint, present):
+def test_dpp(nb_file, endpoint, present):
+    # breakpoint()
     parameters = pm.inspect_notebook(nb_file)
     exp_name = parameters['USE_CASE']['default'].replace("'", "")
 
     if not present:
-        pm.execute_notebook(nb_file, '/dev/null', parameters=dict(ENDPOINT=endpoint))
-
+        pm.execute_notebook(nb_file, '/dev/null',
+                            parameters=dict(ENDPOINT=endpoint))
 
     trace_file = f'{exp_name}_fe_trace.json'
 
@@ -88,44 +125,23 @@ def main(nb_file, endpoint, present):
 
     if cmp_traces(ref_dpp, new_dpp):
         print("verification passed")
+        assert 1
     else:
         print("verification NOT passed")
+        assert 0
 
 
 if __name__ == "__main__":
-    import argparse
-    from six import text_type
 
     parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
 
-    parser.add_argument(
-        '-e', '--endpoint',
-        dest='endpoint',
-        type=text_type,
-        nargs=1,
-        default=['http://zenflows-debug.interfacer.dyne.org/api'],
-        help='specifies the endpoint to talk to',
-    )
+    # breakpoint()
+    for argmt in params:
+        parser.add_argument(*argmt['positional'], **argmt['params'])
 
-    parser.add_argument(
-        '-f', '--filename',
-        dest='filename',
-        type=text_type,
-        nargs=1,
-        default=['IFServices.ipynb'],
-        help='specifies the full path to the notebook',
-    )
-
-    parser.add_argument(
-        '-p', '--present',
-        dest='present',
-        action='store_true',
-        default=False,
-        help='specifies whether the trace has already been calculated',
-    )
     args, unknown = parser.parse_known_args()
 
-    main(args.filename[0], args.endpoint[0], args.present)
+    test_dpp(args.nb_file, args.endpoint, args.present)
