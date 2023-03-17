@@ -1,46 +1,125 @@
 {
+  "assemble_box_frame": {
+    "name": "assemble_box_frame",
+    "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars",
+    "type": "ProcessGroup",
+    "groupedIn": null,
+    "groups": [
+      "063EMWQH2VPSB96TSVPY8NKW9C",
+      "063EMWQVHGQT4GDATJ999QRN1G",
+      "063EMWR21G0YQ5ZN381F4M3EKW",
+      "063EMWR5Z24AEKWN8TDJRXG63C",
+      "063EMWRA101CED5PMC6JWBD3RW",
+      "063EMWRDYZZVS5Y9D0Z6509AN0",
+      "063EMWRHZWFWDE9DA67CXPR75M",
+      "063EMWRRNY23KNT9J2Q3BQYTNC",
+      "063EMWRXZP6CTBWJRNRKQ2NY20"
+    ],
+    "id": "063EMWQFSDMZFBYZN73AX14CVR"
+  },
+  "assemble_upper_frame": {
+    "name": "assemble_upper_frame",
+    "note": "Groups assembly events of the upper frame",
+    "type": "ProcessGroup",
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
+    "groups": [
+      "063EMWF815PHEJ69RGEDASRTJ4",
+      "063EMWF9CPZYPKT455ZDAQ3A9C",
+      "063EMWFAX4ZNB5AJRPJ8X25C2M",
+      "063EMWFCEXMTQDM7VC9ASSEEQR"
+    ],
+    "id": "063EMWQH2VPSB96TSVPY8NKW9C"
+  },
+  "assemble_lower_frame": {
+    "name": "assemble_lower_frame",
+    "note": "Groups assembly events of the lower frame",
+    "type": "ProcessGroup",
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
+    "groups": [
+      "063EMWFFWSG4X0XM7QS8V8F60R",
+      "063EMWFHN0YXS549Q8NXGDQ5T0",
+      "063EMWFK1HPXD4KTWQ6J2NCERG",
+      "063EMWFMAB45BND2DK55CSFN5G"
+    ],
+    "id": "063EMWQVHGQT4GDATJ999QRN1G"
+  },
   "assemble_first_pillar": {
     "name": "assemble_first_pillar",
     "note": "Groups assembly events of the first pillar",
     "type": "ProcessGroup",
-    "groupedIn": null,
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
     "groups": [
-      "063DNHHGNQFFG0TE49G6XGHFCR",
-      "063DNHHHWM7JXYRR9XABY2X3H8"
+      "063EMWFT52RQ50FGE0CZNY0RDR",
+      "063EMWFVFP81SXZFYZ9ZCTM7FR"
     ],
-    "id": "063DNHRM7X88ST1775P8MRMDM8"
+    "id": "063EMWR21G0YQ5ZN381F4M3EKW"
   },
   "assemble_second_pillar": {
     "name": "assemble_second_pillar",
     "note": "Groups assembly events of the second pillar",
     "type": "ProcessGroup",
-    "groupedIn": null,
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
     "groups": [
-      "063DNHHK3T8C0K9DC6HJ574ZV4",
-      "063DNHHMCE80EAQQ4K3BRJ5CC0"
+      "063EMWFWVFATT4G54NDWHCBY60",
+      "063EMWFY5QT22V140FCV93N3WM"
     ],
-    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR"
+    "id": "063EMWR5Z24AEKWN8TDJRXG63C"
   },
   "assemble_third_pillar": {
     "name": "assemble_third_pillar",
     "note": "Groups assembly events of the third pillar",
     "type": "ProcessGroup",
-    "groupedIn": null,
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
     "groups": [
-      "063DNHHNMSFF9TPBNX4QA084JM",
-      "063DNHHPVZD8VBA4WD2DS9FZGM"
+      "063EMWFZT91M055KVF4K5J41H8",
+      "063EMWG169QZR946Y3CEQFGH5M"
     ],
-    "id": "063DNHRVYTSVPKAW5T3PCANA84"
+    "id": "063EMWRA101CED5PMC6JWBD3RW"
   },
   "assemble_forth_pillar": {
     "name": "assemble_forth_pillar",
     "note": "Groups assembly events of the forth pillar",
     "type": "ProcessGroup",
-    "groupedIn": null,
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
     "groups": [
-      "063DNHHR59W79AFCBK3JDGE6RR",
-      "063DNHHSEYVSAPV1VGF5B1H3M8"
+      "063EMWG2SWY5P3HRRBAXTCX96R",
+      "063EMWG4FTCSTJXVW85C7XG0K0"
     ],
-    "id": "063DNHRZVYW0SANZACXDF09G64"
+    "id": "063EMWRDYZZVS5Y9D0Z6509AN0"
+  },
+  "attach_pillars_to_box_frame": {
+    "name": "attach_pillars_to_box_frame",
+    "note": "Groups assembly attaching 4 pillars to box_frame",
+    "type": "ProcessGroup",
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
+    "groups": [
+      "063EMWG8FSYNGV3J4YD77VKC1C",
+      "063EMWG9T77ZDP7QT562572MA4",
+      "063EMWGB6VZAWDFZWK3K0MFRH4",
+      "063EMWGCG749167RRCSN4C06SG"
+    ],
+    "id": "063EMWRHZWFWDE9DA67CXPR75M"
+  },
+  "insert_nutplates_in_box_frame": {
+    "name": "insert_nutplates_in_box_frame",
+    "note": "Groups assembly inserting nutplates into box_frame",
+    "type": "ProcessGroup",
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
+    "groups": [
+      "063EMWGDTNW2NQHG0ASSD5R360",
+      "063EMWGFDQMAW1FQCGAWX9TVK0",
+      "063EMWGGQN1MXHQ1PDN3262BKG"
+    ],
+    "id": "063EMWRRNY23KNT9J2Q3BQYTNC"
+  },
+  "attach_upper_frame_to_box_frame": {
+    "name": "attach_upper_frame_to_box_frame",
+    "note": "Groups assembly attaching upper frame to box frame",
+    "type": "ProcessGroup",
+    "groupedIn": "063EMWQFSDMZFBYZN73AX14CVR",
+    "groups": [
+      "063EMWGJ2JG4SMQM1EPF25JHFC"
+    ],
+    "id": "063EMWRXZP6CTBWJRNRKQ2NY20"
   }
 }

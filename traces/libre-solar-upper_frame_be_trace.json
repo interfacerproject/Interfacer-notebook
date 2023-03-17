@@ -24,7 +24,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -33,7 +33,7 @@
       },
       "type": "Person"
     },
-    "id": "063DNHJDFQDAAZRCHTHREXJR84",
+    "id": "063EMWGVRQMV6WJFRS42R1M9Q4",
     "metadata": null,
     "name": "upper_frame",
     "onhandQuantity": {
@@ -50,7 +50,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -59,7 +59,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "upper_frame-8674",
+    "trackingIdentifier": "upper_frame-6763",
     "type": "EconomicResource"
   },
   {
@@ -77,8 +77,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:20.503494Z",
-    "id": "063DNHK6A2PS9MWP3EEXPG7G58",
+    "hasPointInTime": "2023-03-16T12:43:19.034061Z",
+    "id": "063EMWHQR5V2N64WMP0EDAH4DR",
     "inputOf": null,
     "note": "modify UpperFrame_4",
     "outputOf": {
@@ -86,10 +86,56 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.832550Z",
-      "hasEnd": "2023-03-13T11:41:03.832550Z",
-      "id": "063DNHH552HCFB9TDZ700B8Y7R",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.704198Z",
+      "hasEnd": "2023-03-16T12:42:59.704198Z",
+      "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
       "name": "UpperFrame_4",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_4 defined by User One",
@@ -102,7 +148,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -118,7 +164,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -153,7 +199,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -162,7 +208,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHJDFQDAAZRCHTHREXJR84",
+      "id": "063EMWGVRQMV6WJFRS42R1M9Q4",
       "metadata": null,
       "name": "upper_frame",
       "onhandQuantity": {
@@ -179,7 +225,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -188,7 +234,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "upper_frame-8674",
+      "trackingIdentifier": "upper_frame-6763",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -210,10 +256,56 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "groupedIn": null,
-    "hasBeginning": "2023-03-13T11:41:03.832550Z",
-    "hasEnd": "2023-03-13T11:41:03.832550Z",
-    "id": "063DNHH552HCFB9TDZ700B8Y7R",
+    "groupedIn": {
+      "groupedIn": {
+        "id": "063EMWQFSDMZFBYZN73AX14CVR",
+        "name": "assemble_box_frame",
+        "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+      },
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "063EMWF815PHEJ69RGEDASRTJ4",
+              "name": "UpperFrame_1",
+              "note": "Assembly process UpperFrame_1 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+              "name": "UpperFrame_2",
+              "note": "Assembly process UpperFrame_2 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+              "name": "UpperFrame_3",
+              "note": "Assembly process UpperFrame_3 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+              "name": "UpperFrame_4",
+              "note": "Assembly process UpperFrame_4 defined by User One",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+      "name": "assemble_upper_frame",
+      "note": "Groups assembly events of the upper frame",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-03-16T12:42:59.704198Z",
+    "hasEnd": "2023-03-16T12:42:59.704198Z",
+    "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
     "name": "UpperFrame_4",
     "nestedIn": null,
     "note": "Assembly process UpperFrame_4 defined by User One",
@@ -235,17 +327,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:18.381812Z",
-    "id": "063DNHJXZRXHE6N63FPQT4KDBM",
+    "hasPointInTime": "2023-03-16T12:43:16.652097Z",
+    "id": "063EMWHEJ7QAKYQP71MXT4VG3R",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.832550Z",
-      "hasEnd": "2023-03-13T11:41:03.832550Z",
-      "id": "063DNHH552HCFB9TDZ700B8Y7R",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.704198Z",
+      "hasEnd": "2023-03-16T12:42:59.704198Z",
+      "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
       "name": "UpperFrame_4",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_4 defined by User One",
@@ -260,7 +398,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -276,7 +414,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -311,7 +449,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -320,7 +458,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHJDFQDAAZRCHTHREXJR84",
+      "id": "063EMWGVRQMV6WJFRS42R1M9Q4",
       "metadata": null,
       "name": "upper_frame",
       "onhandQuantity": {
@@ -337,7 +475,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -346,7 +484,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "upper_frame-8674",
+      "trackingIdentifier": "upper_frame-6763",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -377,8 +515,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:18.000320Z",
-    "id": "063DNHJWJXG8NK0D1S271F4RZ8",
+    "hasPointInTime": "2023-03-16T12:43:16.215591Z",
+    "id": "063EMWHCW3CKV5SJJEGSJYKXEC",
     "inputOf": null,
     "note": "modify UpperFrame_3",
     "outputOf": {
@@ -386,10 +524,56 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.528784Z",
-      "hasEnd": "2023-03-13T11:41:03.528784Z",
-      "id": "063DNHH3X8QFQ8WT5V198VH0TC",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.310654Z",
+      "hasEnd": "2023-03-16T12:42:59.310654Z",
+      "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
       "name": "UpperFrame_3",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_3 defined by User One",
@@ -402,7 +586,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -418,7 +602,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -453,7 +637,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -462,7 +646,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHJDFQDAAZRCHTHREXJR84",
+      "id": "063EMWGVRQMV6WJFRS42R1M9Q4",
       "metadata": null,
       "name": "upper_frame",
       "onhandQuantity": {
@@ -479,7 +663,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -488,7 +672,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "upper_frame-8674",
+      "trackingIdentifier": "upper_frame-6763",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -510,10 +694,56 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "groupedIn": null,
-    "hasBeginning": "2023-03-13T11:41:03.528784Z",
-    "hasEnd": "2023-03-13T11:41:03.528784Z",
-    "id": "063DNHH3X8QFQ8WT5V198VH0TC",
+    "groupedIn": {
+      "groupedIn": {
+        "id": "063EMWQFSDMZFBYZN73AX14CVR",
+        "name": "assemble_box_frame",
+        "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+      },
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "063EMWF815PHEJ69RGEDASRTJ4",
+              "name": "UpperFrame_1",
+              "note": "Assembly process UpperFrame_1 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+              "name": "UpperFrame_2",
+              "note": "Assembly process UpperFrame_2 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+              "name": "UpperFrame_3",
+              "note": "Assembly process UpperFrame_3 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+              "name": "UpperFrame_4",
+              "note": "Assembly process UpperFrame_4 defined by User One",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+      "name": "assemble_upper_frame",
+      "note": "Groups assembly events of the upper frame",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-03-16T12:42:59.310654Z",
+    "hasEnd": "2023-03-16T12:42:59.310654Z",
+    "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
     "name": "UpperFrame_3",
     "nestedIn": null,
     "note": "Assembly process UpperFrame_3 defined by User One",
@@ -535,17 +765,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:15.906090Z",
-    "id": "063DNHJMB265MEBCJ55FX91BBR",
+    "hasPointInTime": "2023-03-16T12:43:13.850068Z",
+    "id": "063EMWH3KKH2XEKCJS26KZXA9M",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.528784Z",
-      "hasEnd": "2023-03-13T11:41:03.528784Z",
-      "id": "063DNHH3X8QFQ8WT5V198VH0TC",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.310654Z",
+      "hasEnd": "2023-03-16T12:42:59.310654Z",
+      "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
       "name": "UpperFrame_3",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_3 defined by User One",
@@ -560,7 +836,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -576,7 +852,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -611,7 +887,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -620,7 +896,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHJDFQDAAZRCHTHREXJR84",
+      "id": "063EMWGVRQMV6WJFRS42R1M9Q4",
       "metadata": null,
       "name": "upper_frame",
       "onhandQuantity": {
@@ -637,7 +913,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -646,7 +922,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "upper_frame-8674",
+      "trackingIdentifier": "upper_frame-6763",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -677,8 +953,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:15.544828Z",
-    "id": "063DNHJJY38YRGE1EAW7502918",
+    "hasPointInTime": "2023-03-16T12:43:13.381100Z",
+    "id": "063EMWH1YG9T1QHZV7PJZCTDN0",
     "inputOf": null,
     "note": "modify UpperFrame_2",
     "outputOf": {
@@ -686,10 +962,56 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.163303Z",
-      "hasEnd": "2023-03-13T11:41:03.163303Z",
-      "id": "063DNHH2PB6XDMY67FAPD7S9ZW",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.960121Z",
+      "hasEnd": "2023-03-16T12:42:58.960121Z",
+      "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
       "name": "UpperFrame_2",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_2 defined by User One",
@@ -702,7 +1024,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -718,7 +1040,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -753,7 +1075,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -762,7 +1084,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHJDFQDAAZRCHTHREXJR84",
+      "id": "063EMWGVRQMV6WJFRS42R1M9Q4",
       "metadata": null,
       "name": "upper_frame",
       "onhandQuantity": {
@@ -779,7 +1101,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -788,7 +1110,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "upper_frame-8674",
+      "trackingIdentifier": "upper_frame-6763",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -810,10 +1132,56 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "groupedIn": null,
-    "hasBeginning": "2023-03-13T11:41:03.163303Z",
-    "hasEnd": "2023-03-13T11:41:03.163303Z",
-    "id": "063DNHH2PB6XDMY67FAPD7S9ZW",
+    "groupedIn": {
+      "groupedIn": {
+        "id": "063EMWQFSDMZFBYZN73AX14CVR",
+        "name": "assemble_box_frame",
+        "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+      },
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "063EMWF815PHEJ69RGEDASRTJ4",
+              "name": "UpperFrame_1",
+              "note": "Assembly process UpperFrame_1 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+              "name": "UpperFrame_2",
+              "note": "Assembly process UpperFrame_2 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+              "name": "UpperFrame_3",
+              "note": "Assembly process UpperFrame_3 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+              "name": "UpperFrame_4",
+              "note": "Assembly process UpperFrame_4 defined by User One",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+      "name": "assemble_upper_frame",
+      "note": "Groups assembly events of the upper frame",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-03-16T12:42:58.960121Z",
+    "hasEnd": "2023-03-16T12:42:58.960121Z",
+    "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
     "name": "UpperFrame_2",
     "nestedIn": null,
     "note": "Assembly process UpperFrame_2 defined by User One",
@@ -835,17 +1203,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:14.496888Z",
-    "id": "063DNHJET5SP0QQ1ZCDVME07X0",
+    "hasPointInTime": "2023-03-16T12:43:12.232719Z",
+    "id": "063EMWGX66M5F8A6QD8WEFW7CG",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.163303Z",
-      "hasEnd": "2023-03-13T11:41:03.163303Z",
-      "id": "063DNHH2PB6XDMY67FAPD7S9ZW",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.960121Z",
+      "hasEnd": "2023-03-16T12:42:58.960121Z",
+      "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
       "name": "UpperFrame_2",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_2 defined by User One",
@@ -860,7 +1274,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -876,7 +1290,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -911,7 +1325,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -920,7 +1334,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHJDFQDAAZRCHTHREXJR84",
+      "id": "063EMWGVRQMV6WJFRS42R1M9Q4",
       "metadata": null,
       "name": "upper_frame",
       "onhandQuantity": {
@@ -937,7 +1351,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -946,7 +1360,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "upper_frame-8674",
+      "trackingIdentifier": "upper_frame-6763",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -977,8 +1391,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:14.137863Z",
-    "id": "063DNHJDF8YZRS2720RVHJ70T0",
+    "hasPointInTime": "2023-03-16T12:43:11.848496Z",
+    "id": "063EMWGVR0JHBC9W61DXNFN8D4",
     "inputOf": null,
     "note": "produce UpperFrame",
     "outputOf": {
@@ -986,10 +1400,56 @@
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:02.851622Z",
-      "hasEnd": "2023-03-13T11:41:02.851622Z",
-      "id": "063DNHH19BY2P3R6Y1VGADNN14",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.565934Z",
+      "hasEnd": "2023-03-16T12:42:58.565934Z",
+      "id": "063EMWF815PHEJ69RGEDASRTJ4",
       "name": "UpperFrame_1",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_1 defined by User One",
@@ -1002,7 +1462,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1018,7 +1478,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1066,7 +1526,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1075,7 +1535,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHJDFQDAAZRCHTHREXJR84",
+      "id": "063EMWGVRQMV6WJFRS42R1M9Q4",
       "metadata": null,
       "name": "upper_frame",
       "onhandQuantity": {
@@ -1092,7 +1552,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1101,7 +1561,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "upper_frame-8674",
+      "trackingIdentifier": "upper_frame-6763",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1131,10 +1591,56 @@
     "classifiedAs": null,
     "deletable": false,
     "finished": false,
-    "groupedIn": null,
-    "hasBeginning": "2023-03-13T11:41:02.851622Z",
-    "hasEnd": "2023-03-13T11:41:02.851622Z",
-    "id": "063DNHH19BY2P3R6Y1VGADNN14",
+    "groupedIn": {
+      "groupedIn": {
+        "id": "063EMWQFSDMZFBYZN73AX14CVR",
+        "name": "assemble_box_frame",
+        "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+      },
+      "groups": {
+        "edges": [
+          {
+            "node": {
+              "id": "063EMWF815PHEJ69RGEDASRTJ4",
+              "name": "UpperFrame_1",
+              "note": "Assembly process UpperFrame_1 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+              "name": "UpperFrame_2",
+              "note": "Assembly process UpperFrame_2 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+              "name": "UpperFrame_3",
+              "note": "Assembly process UpperFrame_3 defined by User One",
+              "type": "Process"
+            }
+          },
+          {
+            "node": {
+              "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+              "name": "UpperFrame_4",
+              "note": "Assembly process UpperFrame_4 defined by User One",
+              "type": "Process"
+            }
+          }
+        ]
+      },
+      "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+      "name": "assemble_upper_frame",
+      "note": "Groups assembly events of the upper frame",
+      "type": "ProcessGroup"
+    },
+    "hasBeginning": "2023-03-16T12:42:58.565934Z",
+    "hasEnd": "2023-03-16T12:42:58.565934Z",
+    "id": "063EMWF815PHEJ69RGEDASRTJ4",
     "name": "UpperFrame_1",
     "nestedIn": null,
     "note": "Assembly process UpperFrame_1 defined by User One",
@@ -1163,17 +1669,63 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:13.793143Z",
-    "id": "063DNHJC1M60096YKNW1W1W5HW",
+    "hasPointInTime": "2023-03-16T12:43:11.430400Z",
+    "id": "063EMWGT2V9BHHMKWDH1AAPWGC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:02.851622Z",
-      "hasEnd": "2023-03-13T11:41:02.851622Z",
-      "id": "063DNHH19BY2P3R6Y1VGADNN14",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.565934Z",
+      "hasEnd": "2023-03-16T12:42:58.565934Z",
+      "id": "063EMWF815PHEJ69RGEDASRTJ4",
       "name": "UpperFrame_1",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_1 defined by User One",
@@ -1188,7 +1740,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFP7KEN1Z5QPJMJPM8J3G",
+        "id": "063DYBM64F266A18K2G82JA7E4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1204,7 +1756,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFP7KEN1Z5QPJMJPM8J3G",
+        "id": "063DYBM64F266A18K2G82JA7E4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1257,17 +1809,63 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:13.454624Z",
-    "id": "063DNHJANZZBAJYDZN3S5Q66QR",
+    "hasPointInTime": "2023-03-16T12:43:11.010985Z",
+    "id": "063EMWGRJM22KWYR4N06S2SJYG",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:02.851622Z",
-      "hasEnd": "2023-03-13T11:41:02.851622Z",
-      "id": "063DNHH19BY2P3R6Y1VGADNN14",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.565934Z",
+      "hasEnd": "2023-03-16T12:42:58.565934Z",
+      "id": "063EMWF815PHEJ69RGEDASRTJ4",
       "name": "UpperFrame_1",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_1 defined by User One",
@@ -1282,7 +1880,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1298,7 +1896,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1333,7 +1931,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1342,7 +1940,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+      "id": "063EMWESDK0ET5G0G9P7V49674",
       "metadata": null,
       "name": "Allen_Key",
       "onhandQuantity": {
@@ -1359,7 +1957,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1368,7 +1966,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Allen_Key-6509",
+      "trackingIdentifier": "Allen_Key-381",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1399,8 +1997,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:40:59.704108Z",
-    "id": "063DNHGN0RYADFERXGYYKX2VMC",
+    "hasPointInTime": "2023-03-16T12:42:54.509644Z",
+    "id": "063EMWESCZ1Y9ZFPFA8B4B9EW4",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -1410,7 +2008,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1426,7 +2024,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1474,7 +2072,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1483,7 +2081,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+      "id": "063EMWESDK0ET5G0G9P7V49674",
       "metadata": null,
       "name": "Allen_Key",
       "onhandQuantity": {
@@ -1500,7 +2098,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1509,7 +2107,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Allen_Key-6509",
+      "trackingIdentifier": "Allen_Key-381",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1558,7 +2156,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1567,7 +2165,7 @@
       },
       "type": "Person"
     },
-    "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+    "id": "063EMWESDK0ET5G0G9P7V49674",
     "metadata": null,
     "name": "Allen_Key",
     "onhandQuantity": {
@@ -1584,7 +2182,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1593,7 +2191,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "Allen_Key-6509",
+    "trackingIdentifier": "Allen_Key-381",
     "type": "EconomicResource"
   },
   {
@@ -1611,17 +2209,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:13.066646Z",
-    "id": "063DNHJ98M4YHX2KHD12KTQ6J0",
+    "hasPointInTime": "2023-03-16T12:43:10.603548Z",
+    "id": "063EMWGPZ2RBVX9B4GA8RS3PXR",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:02.851622Z",
-      "hasEnd": "2023-03-13T11:41:02.851622Z",
-      "id": "063DNHH19BY2P3R6Y1VGADNN14",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.565934Z",
+      "hasEnd": "2023-03-16T12:42:58.565934Z",
+      "id": "063EMWF815PHEJ69RGEDASRTJ4",
       "name": "UpperFrame_1",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_1 defined by User One",
@@ -1636,7 +2280,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1652,7 +2296,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1687,7 +2331,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1696,7 +2340,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGS8RTFDV80WZ9N022MFG",
+      "id": "063EMWEY57TBYZWAQ7CN8M509R",
       "metadata": null,
       "name": "M6x25cyl",
       "onhandQuantity": {
@@ -1713,7 +2357,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1722,7 +2366,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "M6x25cyl-3682",
+      "trackingIdentifier": "M6x25cyl-208",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1753,8 +2397,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:00.773824Z",
-    "id": "063DNHGS8EENSBA83CZ5ET2P84",
+    "hasPointInTime": "2023-03-16T12:42:56.076551Z",
+    "id": "063EMWEY4RRC2XEPM1VGTGXSS4",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -1764,7 +2408,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1780,7 +2424,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1828,7 +2472,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1837,7 +2481,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGS8RTFDV80WZ9N022MFG",
+      "id": "063EMWEY57TBYZWAQ7CN8M509R",
       "metadata": null,
       "name": "M6x25cyl",
       "onhandQuantity": {
@@ -1854,7 +2498,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1863,7 +2507,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "M6x25cyl-3682",
+      "trackingIdentifier": "M6x25cyl-208",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -1912,7 +2556,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1921,7 +2565,7 @@
       },
       "type": "Person"
     },
-    "id": "063DNHGS8RTFDV80WZ9N022MFG",
+    "id": "063EMWEY57TBYZWAQ7CN8M509R",
     "metadata": null,
     "name": "M6x25cyl",
     "onhandQuantity": {
@@ -1938,7 +2582,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1947,7 +2591,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "M6x25cyl-3682",
+    "trackingIdentifier": "M6x25cyl-208",
     "type": "EconomicResource"
   },
   {
@@ -1965,17 +2609,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:12.685121Z",
-    "id": "063DNHJ7QGQANVQXTY672G7NHR",
+    "hasPointInTime": "2023-03-16T12:43:10.203681Z",
+    "id": "063EMWGNBZVED87FY8Z0Z6MH3R",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:02.851622Z",
-      "hasEnd": "2023-03-13T11:41:02.851622Z",
-      "id": "063DNHH19BY2P3R6Y1VGADNN14",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.565934Z",
+      "hasEnd": "2023-03-16T12:42:58.565934Z",
+      "id": "063EMWF815PHEJ69RGEDASRTJ4",
       "name": "UpperFrame_1",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_1 defined by User One",
@@ -1990,7 +2680,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2006,7 +2696,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2041,7 +2731,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2050,7 +2740,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGW15PGVBNHW4WM7DZ4QR",
+      "id": "063EMWF236QTTQR34BA27Y1628",
       "metadata": null,
       "name": "Tslot16",
       "onhandQuantity": {
@@ -2067,7 +2757,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2076,7 +2766,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Tslot16-8169",
+      "trackingIdentifier": "Tslot16-4582",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2107,8 +2797,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:01.462483Z",
-    "id": "063DNHGW0SM1ENVG637Z9VQ68W",
+    "hasPointInTime": "2023-03-16T12:42:57.001156Z",
+    "id": "063EMWF22RW42A956QXPPY3Z7M",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -2118,7 +2808,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2134,7 +2824,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2182,7 +2872,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2191,7 +2881,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGW15PGVBNHW4WM7DZ4QR",
+      "id": "063EMWF236QTTQR34BA27Y1628",
       "metadata": null,
       "name": "Tslot16",
       "onhandQuantity": {
@@ -2208,7 +2898,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2217,7 +2907,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Tslot16-8169",
+      "trackingIdentifier": "Tslot16-4582",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2266,7 +2956,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2275,7 +2965,7 @@
       },
       "type": "Person"
     },
-    "id": "063DNHGW15PGVBNHW4WM7DZ4QR",
+    "id": "063EMWF236QTTQR34BA27Y1628",
     "metadata": null,
     "name": "Tslot16",
     "onhandQuantity": {
@@ -2292,7 +2982,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2301,7 +2991,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "Tslot16-8169",
+    "trackingIdentifier": "Tslot16-4582",
     "type": "EconomicResource"
   },
   {
@@ -2319,17 +3009,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:12.321686Z",
-    "id": "063DNHJ69VGFCH8C56H4B8F3MR",
+    "hasPointInTime": "2023-03-16T12:43:09.722641Z",
+    "id": "063EMWGKJXBQ07D1RWGASTSEWR",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:02.851622Z",
-      "hasEnd": "2023-03-13T11:41:02.851622Z",
-      "id": "063DNHH19BY2P3R6Y1VGADNN14",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.565934Z",
+      "hasEnd": "2023-03-16T12:42:58.565934Z",
+      "id": "063EMWF815PHEJ69RGEDASRTJ4",
       "name": "UpperFrame_1",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_1 defined by User One",
@@ -2344,7 +3080,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2360,7 +3096,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2395,7 +3131,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2404,7 +3140,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGYQHF4AJBR7P6HFSQ084",
+      "id": "063EMWF516XHVNRA0TE76CT3GW",
       "metadata": null,
       "name": "Tslot32con",
       "onhandQuantity": {
@@ -2421,7 +3157,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2430,7 +3166,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Tslot32con-9212",
+      "trackingIdentifier": "Tslot32con-9303",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2461,8 +3197,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:02.177813Z",
-    "id": "063DNHGYQ9XH3BX7GD3FV8NXBW",
+    "hasPointInTime": "2023-03-16T12:42:57.842871Z",
+    "id": "063EMWF50WT89T7EKSXWBPN474",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -2472,7 +3208,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2488,7 +3224,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2536,7 +3272,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2545,7 +3281,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGYQHF4AJBR7P6HFSQ084",
+      "id": "063EMWF516XHVNRA0TE76CT3GW",
       "metadata": null,
       "name": "Tslot32con",
       "onhandQuantity": {
@@ -2562,7 +3298,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2571,7 +3307,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Tslot32con-9212",
+      "trackingIdentifier": "Tslot32con-9303",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2620,7 +3356,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2629,7 +3365,7 @@
       },
       "type": "Person"
     },
-    "id": "063DNHGYQHF4AJBR7P6HFSQ084",
+    "id": "063EMWF516XHVNRA0TE76CT3GW",
     "metadata": null,
     "name": "Tslot32con",
     "onhandQuantity": {
@@ -2646,7 +3382,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2655,7 +3391,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "Tslot32con-9212",
+    "trackingIdentifier": "Tslot32con-9303",
     "type": "EconomicResource"
   },
   {
@@ -2680,17 +3416,63 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:15.211571Z",
-    "id": "063DNHJHJDMW8ZG8SE260J7W1G",
+    "hasPointInTime": "2023-03-16T12:43:12.988661Z",
+    "id": "063EMWH08PG3MWDHV06H2C5VP8",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.163303Z",
-      "hasEnd": "2023-03-13T11:41:03.163303Z",
-      "id": "063DNHH2PB6XDMY67FAPD7S9ZW",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.960121Z",
+      "hasEnd": "2023-03-16T12:42:58.960121Z",
+      "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
       "name": "UpperFrame_2",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_2 defined by User One",
@@ -2705,7 +3487,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFP7KEN1Z5QPJMJPM8J3G",
+        "id": "063DYBM64F266A18K2G82JA7E4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2721,7 +3503,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFP7KEN1Z5QPJMJPM8J3G",
+        "id": "063DYBM64F266A18K2G82JA7E4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2767,17 +3549,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:14.865510Z",
-    "id": "063DNHJG8EPJ48BTZ7SGBPA468",
+    "hasPointInTime": "2023-03-16T12:43:12.606773Z",
+    "id": "063EMWGYQZMSHNC962M31GKYNG",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.163303Z",
-      "hasEnd": "2023-03-13T11:41:03.163303Z",
-      "id": "063DNHH2PB6XDMY67FAPD7S9ZW",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:58.960121Z",
+      "hasEnd": "2023-03-16T12:42:58.960121Z",
+      "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
       "name": "UpperFrame_2",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_2 defined by User One",
@@ -2792,7 +3620,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2808,7 +3636,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2843,7 +3671,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2852,7 +3680,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+      "id": "063EMWETZNS4EG24RHMG5B3FC0",
       "metadata": null,
       "name": "M6nutplate",
       "onhandQuantity": {
@@ -2869,7 +3697,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2878,7 +3706,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "M6nutplate-3709",
+      "trackingIdentifier": "M6nutplate-5953",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -2909,8 +3737,8 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:00.065781Z",
-    "id": "063DNHGPGJE726B0YSE01EERSC",
+    "hasPointInTime": "2023-03-16T12:42:55.250160Z",
+    "id": "063EMWETZBKX7Y13YYDYCH6FWG",
     "inputOf": null,
     "note": "create resource",
     "outputOf": null,
@@ -2920,7 +3748,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2936,7 +3764,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2984,7 +3812,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2993,7 +3821,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+      "id": "063EMWETZNS4EG24RHMG5B3FC0",
       "metadata": null,
       "name": "M6nutplate",
       "onhandQuantity": {
@@ -3010,7 +3838,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3019,7 +3847,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "M6nutplate-3709",
+      "trackingIdentifier": "M6nutplate-5953",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3068,7 +3896,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3077,7 +3905,7 @@
       },
       "type": "Person"
     },
-    "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+    "id": "063EMWETZNS4EG24RHMG5B3FC0",
     "metadata": null,
     "name": "M6nutplate",
     "onhandQuantity": {
@@ -3094,7 +3922,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3103,7 +3931,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "M6nutplate-3709",
+    "trackingIdentifier": "M6nutplate-5953",
     "type": "EconomicResource"
   },
   {
@@ -3128,17 +3956,63 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:17.661779Z",
-    "id": "063DNHJV4WQ8BVCJZQYRN550TG",
+    "hasPointInTime": "2023-03-16T12:43:15.828848Z",
+    "id": "063EMWHBBFW232H37R16G9J3D0",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.528784Z",
-      "hasEnd": "2023-03-13T11:41:03.528784Z",
-      "id": "063DNHH3X8QFQ8WT5V198VH0TC",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.310654Z",
+      "hasEnd": "2023-03-16T12:42:59.310654Z",
+      "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
       "name": "UpperFrame_3",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_3 defined by User One",
@@ -3153,7 +4027,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFP7KEN1Z5QPJMJPM8J3G",
+        "id": "063DYBM64F266A18K2G82JA7E4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3169,7 +4043,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFP7KEN1Z5QPJMJPM8J3G",
+        "id": "063DYBM64F266A18K2G82JA7E4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3222,17 +4096,63 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:17.312813Z",
-    "id": "063DNHJSTPX3RQ3DW95TKKV9ZW",
+    "hasPointInTime": "2023-03-16T12:43:15.390098Z",
+    "id": "063EMWH9NWG5K3X1G0ZVYFWMXR",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.528784Z",
-      "hasEnd": "2023-03-13T11:41:03.528784Z",
-      "id": "063DNHH3X8QFQ8WT5V198VH0TC",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.310654Z",
+      "hasEnd": "2023-03-16T12:42:59.310654Z",
+      "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
       "name": "UpperFrame_3",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_3 defined by User One",
@@ -3247,7 +4167,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3263,7 +4183,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3298,7 +4218,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3307,7 +4227,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+      "id": "063EMWESDK0ET5G0G9P7V49674",
       "metadata": null,
       "name": "Allen_Key",
       "onhandQuantity": {
@@ -3324,7 +4244,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3333,7 +4253,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Allen_Key-6509",
+      "trackingIdentifier": "Allen_Key-381",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3364,17 +4284,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:16.968513Z",
-    "id": "063DNHJRF8NDE2AEBTWA45CRY4",
+    "hasPointInTime": "2023-03-16T12:43:14.993506Z",
+    "id": "063EMWH81BCETH274PTM8406BW",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.528784Z",
-      "hasEnd": "2023-03-13T11:41:03.528784Z",
-      "id": "063DNHH3X8QFQ8WT5V198VH0TC",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.310654Z",
+      "hasEnd": "2023-03-16T12:42:59.310654Z",
+      "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
       "name": "UpperFrame_3",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_3 defined by User One",
@@ -3389,7 +4355,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3405,7 +4371,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3440,7 +4406,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3449,7 +4415,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGS8RTFDV80WZ9N022MFG",
+      "id": "063EMWEY57TBYZWAQ7CN8M509R",
       "metadata": null,
       "name": "M6x25cyl",
       "onhandQuantity": {
@@ -3466,7 +4432,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3475,7 +4441,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "M6x25cyl-3682",
+      "trackingIdentifier": "M6x25cyl-208",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3506,17 +4472,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:16.619047Z",
-    "id": "063DNHJQ3BMV73JT445ZFV0C7M",
+    "hasPointInTime": "2023-03-16T12:43:14.618897Z",
+    "id": "063EMWH6FYAFN9W2PC04KJ7NA0",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.528784Z",
-      "hasEnd": "2023-03-13T11:41:03.528784Z",
-      "id": "063DNHH3X8QFQ8WT5V198VH0TC",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.310654Z",
+      "hasEnd": "2023-03-16T12:42:59.310654Z",
+      "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
       "name": "UpperFrame_3",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_3 defined by User One",
@@ -3531,7 +4543,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3547,7 +4559,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3582,7 +4594,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3591,7 +4603,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGW15PGVBNHW4WM7DZ4QR",
+      "id": "063EMWF236QTTQR34BA27Y1628",
       "metadata": null,
       "name": "Tslot16",
       "onhandQuantity": {
@@ -3608,7 +4620,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3617,7 +4629,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Tslot16-8169",
+      "trackingIdentifier": "Tslot16-4582",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3648,17 +4660,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:16.261175Z",
-    "id": "063DNHJNNW1VZPM96B2ZZMEB74",
+    "hasPointInTime": "2023-03-16T12:43:14.263474Z",
+    "id": "063EMWH52SGESQRBM653V05QQ0",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.528784Z",
-      "hasEnd": "2023-03-13T11:41:03.528784Z",
-      "id": "063DNHH3X8QFQ8WT5V198VH0TC",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.310654Z",
+      "hasEnd": "2023-03-16T12:42:59.310654Z",
+      "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
       "name": "UpperFrame_3",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_3 defined by User One",
@@ -3673,7 +4731,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3689,7 +4747,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3724,7 +4782,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3733,7 +4791,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+      "id": "063EMWETZNS4EG24RHMG5B3FC0",
       "metadata": null,
       "name": "M6nutplate",
       "onhandQuantity": {
@@ -3750,7 +4808,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3759,7 +4817,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "M6nutplate-3709",
+      "trackingIdentifier": "M6nutplate-5953",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3797,17 +4855,63 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:20.137618Z",
-    "id": "063DNHK4TG5TH38BW7VYA4F8CM",
+    "hasPointInTime": "2023-03-16T12:43:18.655247Z",
+    "id": "063EMWHP7YYD965E244YA2XXJC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.832550Z",
-      "hasEnd": "2023-03-13T11:41:03.832550Z",
-      "id": "063DNHH552HCFB9TDZ700B8Y7R",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.704198Z",
+      "hasEnd": "2023-03-16T12:42:59.704198Z",
+      "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
       "name": "UpperFrame_4",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_4 defined by User One",
@@ -3822,7 +4926,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3838,7 +4942,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3873,7 +4977,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3882,7 +4986,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+      "id": "063EMWESDK0ET5G0G9P7V49674",
       "metadata": null,
       "name": "Allen_Key",
       "onhandQuantity": {
@@ -3899,7 +5003,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3908,7 +5012,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Allen_Key-6509",
+      "trackingIdentifier": "Allen_Key-381",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -3946,17 +5050,63 @@
     },
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:19.792760Z",
-    "id": "063DNHK3G46FGWYTHJVNFNJQE8",
+    "hasPointInTime": "2023-03-16T12:43:18.297510Z",
+    "id": "063EMWHMWVMK30FAZFHH9G6BAR",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.832550Z",
-      "hasEnd": "2023-03-13T11:41:03.832550Z",
-      "id": "063DNHH552HCFB9TDZ700B8Y7R",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.704198Z",
+      "hasEnd": "2023-03-16T12:42:59.704198Z",
+      "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
       "name": "UpperFrame_4",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_4 defined by User One",
@@ -3971,7 +5121,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3987,7 +5137,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4022,7 +5172,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4031,7 +5181,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+      "id": "063EMWESDK0ET5G0G9P7V49674",
       "metadata": null,
       "name": "Allen_Key",
       "onhandQuantity": {
@@ -4048,7 +5198,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4057,7 +5207,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Allen_Key-6509",
+      "trackingIdentifier": "Allen_Key-381",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -4088,17 +5238,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:19.444273Z",
-    "id": "063DNHK25AMYP1BWVQCZT16898",
+    "hasPointInTime": "2023-03-16T12:43:17.895240Z",
+    "id": "063EMWHKERG01KBX04ME3S9EAC",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.832550Z",
-      "hasEnd": "2023-03-13T11:41:03.832550Z",
-      "id": "063DNHH552HCFB9TDZ700B8Y7R",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.704198Z",
+      "hasEnd": "2023-03-16T12:42:59.704198Z",
+      "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
       "name": "UpperFrame_4",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_4 defined by User One",
@@ -4113,7 +5309,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4129,7 +5325,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4164,7 +5360,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4173,7 +5369,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGS8RTFDV80WZ9N022MFG",
+      "id": "063EMWEY57TBYZWAQ7CN8M509R",
       "metadata": null,
       "name": "M6x25cyl",
       "onhandQuantity": {
@@ -4190,7 +5386,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4199,7 +5395,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "M6x25cyl-3682",
+      "trackingIdentifier": "M6x25cyl-208",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -4230,17 +5426,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:19.083364Z",
-    "id": "063DNHK0QXC2857QPSTXZ11VZC",
+    "hasPointInTime": "2023-03-16T12:43:17.482934Z",
+    "id": "063EMWHHRDRNN8T764PK63F9FG",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.832550Z",
-      "hasEnd": "2023-03-13T11:41:03.832550Z",
-      "id": "063DNHH552HCFB9TDZ700B8Y7R",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.704198Z",
+      "hasEnd": "2023-03-16T12:42:59.704198Z",
+      "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
       "name": "UpperFrame_4",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_4 defined by User One",
@@ -4255,7 +5497,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4271,7 +5513,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4306,7 +5548,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4315,7 +5557,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGYQHF4AJBR7P6HFSQ084",
+      "id": "063EMWF516XHVNRA0TE76CT3GW",
       "metadata": null,
       "name": "Tslot32con",
       "onhandQuantity": {
@@ -4332,7 +5574,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4341,7 +5583,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "Tslot32con-9212",
+      "trackingIdentifier": "Tslot32con-9303",
       "type": "EconomicResource"
     },
     "resourceQuantity": {
@@ -4372,17 +5614,63 @@
     "effortQuantity": null,
     "hasBeginning": null,
     "hasEnd": null,
-    "hasPointInTime": "2023-03-13T11:41:18.742688Z",
-    "id": "063DNHJZC34F1CCJMJFKZHA5JC",
+    "hasPointInTime": "2023-03-16T12:43:17.071667Z",
+    "id": "063EMWHGB1RFSM5Y4E5T5Y1Y0R",
     "inputOf": {
       "basedOn": null,
       "classifiedAs": null,
       "deletable": false,
       "finished": false,
-      "groupedIn": null,
-      "hasBeginning": "2023-03-13T11:41:03.832550Z",
-      "hasEnd": "2023-03-13T11:41:03.832550Z",
-      "id": "063DNHH552HCFB9TDZ700B8Y7R",
+      "groupedIn": {
+        "groupedIn": {
+          "id": "063EMWQFSDMZFBYZN73AX14CVR",
+          "name": "assemble_box_frame",
+          "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+        },
+        "groups": {
+          "edges": [
+            {
+              "node": {
+                "id": "063EMWF815PHEJ69RGEDASRTJ4",
+                "name": "UpperFrame_1",
+                "note": "Assembly process UpperFrame_1 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWF9CPZYPKT455ZDAQ3A9C",
+                "name": "UpperFrame_2",
+                "note": "Assembly process UpperFrame_2 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFAX4ZNB5AJRPJ8X25C2M",
+                "name": "UpperFrame_3",
+                "note": "Assembly process UpperFrame_3 defined by User One",
+                "type": "Process"
+              }
+            },
+            {
+              "node": {
+                "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
+                "name": "UpperFrame_4",
+                "note": "Assembly process UpperFrame_4 defined by User One",
+                "type": "Process"
+              }
+            }
+          ]
+        },
+        "id": "063EMWQH2VPSB96TSVPY8NKW9C",
+        "name": "assemble_upper_frame",
+        "note": "Groups assembly events of the upper frame",
+        "type": "ProcessGroup"
+      },
+      "hasBeginning": "2023-03-16T12:42:59.704198Z",
+      "hasEnd": "2023-03-16T12:42:59.704198Z",
+      "id": "063EMWFCEXMTQDM7VC9ASSEEQR",
       "name": "UpperFrame_4",
       "nestedIn": null,
       "note": "Assembly process UpperFrame_4 defined by User One",
@@ -4397,7 +5685,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4413,7 +5701,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4448,7 +5736,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4457,7 +5745,7 @@
         },
         "type": "Person"
       },
-      "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+      "id": "063EMWETZNS4EG24RHMG5B3FC0",
       "metadata": null,
       "name": "M6nutplate",
       "onhandQuantity": {
@@ -4474,7 +5762,7 @@
         "note": null,
         "primaryLocation": {
           "alt": "0",
-          "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+          "id": "063DYBM777BTZTPJV48DJAK0J4",
           "lat": "53.54651094994547",
           "long": "9.996357255816038",
           "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -4483,7 +5771,7 @@
         },
         "type": "Person"
       },
-      "trackingIdentifier": "M6nutplate-3709",
+      "trackingIdentifier": "M6nutplate-5953",
       "type": "EconomicResource"
     },
     "resourceQuantity": {

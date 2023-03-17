@@ -23,7 +23,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -32,7 +32,7 @@
       },
       "type": "Person"
     },
-    "id": "063DNHN3ZE0DBQGZD2N1BC7H3R",
+    "id": "063EMWKV8AMH3G4X84XH421650",
     "metadata": null,
     "name": "second_pillar",
     "onhandQuantity": {
@@ -49,7 +49,7 @@
       "note": null,
       "primaryLocation": {
         "alt": "0",
-        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+        "id": "063DYBM777BTZTPJV48DJAK0J4",
         "lat": "53.54651094994547",
         "long": "9.996357255816038",
         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -58,7 +58,7 @@
       },
       "type": "Person"
     },
-    "trackingIdentifier": "second_pillar-1610",
+    "trackingIdentifier": "second_pillar-9814",
     "type": "EconomicResource",
     "children": [
       {
@@ -75,8 +75,8 @@
         "effortQuantity": null,
         "hasBeginning": null,
         "hasEnd": null,
-        "hasPointInTime": "2023-03-13T11:41:38.421285Z",
-        "id": "063DNHNCAA3QN7Z3XWTMJSGRCG",
+        "hasPointInTime": "2023-03-16T12:43:38.579742Z",
+        "id": "063EMWM446N2ATM9AGVGMBNJPG",
         "inputOf": null,
         "note": "modify Pillar",
         "outputOf": {
@@ -85,12 +85,16 @@
           "deletable": false,
           "finished": false,
           "groupedIn": {
-            "groupedIn": null,
+            "groupedIn": {
+              "id": "063EMWQFSDMZFBYZN73AX14CVR",
+              "name": "assemble_box_frame",
+              "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+            },
             "groups": {
               "edges": [
                 {
                   "node": {
-                    "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                    "id": "063EMWFWVFATT4G54NDWHCBY60",
                     "name": "Second_Pillar_1",
                     "note": "Assembly process Second_Pillar_1 defined by User One",
                     "type": "Process"
@@ -98,7 +102,7 @@
                 },
                 {
                   "node": {
-                    "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                    "id": "063EMWFY5QT22V140FCV93N3WM",
                     "name": "Second_Pillar_2",
                     "note": "Assembly process Second_Pillar_2 defined by User One",
                     "type": "Process"
@@ -106,14 +110,14 @@
                 }
               ]
             },
-            "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+            "id": "063EMWR5Z24AEKWN8TDJRXG63C",
             "name": "assemble_second_pillar",
             "note": "Groups assembly events of the second pillar",
             "type": "ProcessGroup"
           },
-          "hasBeginning": "2023-03-13T11:41:07.732508Z",
-          "hasEnd": "2023-03-13T11:41:07.732508Z",
-          "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+          "hasBeginning": "2023-03-16T12:43:04.306244Z",
+          "hasEnd": "2023-03-16T12:43:04.306244Z",
+          "id": "063EMWFY5QT22V140FCV93N3WM",
           "name": "Second_Pillar_2",
           "nestedIn": null,
           "note": "Assembly process Second_Pillar_2 defined by User One",
@@ -126,7 +130,7 @@
           "note": null,
           "primaryLocation": {
             "alt": "0",
-            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+            "id": "063DYBM777BTZTPJV48DJAK0J4",
             "lat": "53.54651094994547",
             "long": "9.996357255816038",
             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -142,7 +146,7 @@
           "note": null,
           "primaryLocation": {
             "alt": "0",
-            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+            "id": "063DYBM777BTZTPJV48DJAK0J4",
             "lat": "53.54651094994547",
             "long": "9.996357255816038",
             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -177,7 +181,7 @@
             "note": null,
             "primaryLocation": {
               "alt": "0",
-              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+              "id": "063DYBM777BTZTPJV48DJAK0J4",
               "lat": "53.54651094994547",
               "long": "9.996357255816038",
               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -186,7 +190,7 @@
             },
             "type": "Person"
           },
-          "id": "063DNHN3ZE0DBQGZD2N1BC7H3R",
+          "id": "063EMWKV8AMH3G4X84XH421650",
           "metadata": null,
           "name": "second_pillar",
           "onhandQuantity": {
@@ -203,7 +207,7 @@
             "note": null,
             "primaryLocation": {
               "alt": "0",
-              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+              "id": "063DYBM777BTZTPJV48DJAK0J4",
               "lat": "53.54651094994547",
               "long": "9.996357255816038",
               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -212,7 +216,7 @@
             },
             "type": "Person"
           },
-          "trackingIdentifier": "second_pillar-1610",
+          "trackingIdentifier": "second_pillar-9814",
           "type": "EconomicResource"
         },
         "resourceQuantity": {
@@ -235,12 +239,16 @@
             "deletable": false,
             "finished": false,
             "groupedIn": {
-              "groupedIn": null,
+              "groupedIn": {
+                "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                "name": "assemble_box_frame",
+                "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+              },
               "groups": {
                 "edges": [
                   {
                     "node": {
-                      "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                      "id": "063EMWFWVFATT4G54NDWHCBY60",
                       "name": "Second_Pillar_1",
                       "note": "Assembly process Second_Pillar_1 defined by User One",
                       "type": "Process"
@@ -248,7 +256,7 @@
                   },
                   {
                     "node": {
-                      "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                      "id": "063EMWFY5QT22V140FCV93N3WM",
                       "name": "Second_Pillar_2",
                       "note": "Assembly process Second_Pillar_2 defined by User One",
                       "type": "Process"
@@ -256,14 +264,14 @@
                   }
                 ]
               },
-              "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+              "id": "063EMWR5Z24AEKWN8TDJRXG63C",
               "name": "assemble_second_pillar",
               "note": "Groups assembly events of the second pillar",
               "type": "ProcessGroup"
             },
-            "hasBeginning": "2023-03-13T11:41:07.732508Z",
-            "hasEnd": "2023-03-13T11:41:07.732508Z",
-            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+            "hasBeginning": "2023-03-16T12:43:04.306244Z",
+            "hasEnd": "2023-03-16T12:43:04.306244Z",
+            "id": "063EMWFY5QT22V140FCV93N3WM",
             "name": "Second_Pillar_2",
             "nestedIn": null,
             "note": "Assembly process Second_Pillar_2 defined by User One",
@@ -291,20 +299,24 @@
                 },
                 "hasBeginning": null,
                 "hasEnd": null,
-                "hasPointInTime": "2023-03-13T11:41:38.074942Z",
-                "id": "063DNHNAYMX70CHZ3HT6V3DA08",
+                "hasPointInTime": "2023-03-16T12:43:38.185297Z",
+                "id": "063EMWM2NPTA0YQ9NXEG85JQJ0",
                 "inputOf": {
                   "basedOn": null,
                   "classifiedAs": null,
                   "deletable": false,
                   "finished": false,
                   "groupedIn": {
-                    "groupedIn": null,
+                    "groupedIn": {
+                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                      "name": "assemble_box_frame",
+                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                    },
                     "groups": {
                       "edges": [
                         {
                           "node": {
-                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                             "name": "Second_Pillar_1",
                             "note": "Assembly process Second_Pillar_1 defined by User One",
                             "type": "Process"
@@ -312,7 +324,7 @@
                         },
                         {
                           "node": {
-                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                            "id": "063EMWFY5QT22V140FCV93N3WM",
                             "name": "Second_Pillar_2",
                             "note": "Assembly process Second_Pillar_2 defined by User One",
                             "type": "Process"
@@ -320,14 +332,14 @@
                         }
                       ]
                     },
-                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                     "name": "assemble_second_pillar",
                     "note": "Groups assembly events of the second pillar",
                     "type": "ProcessGroup"
                   },
-                  "hasBeginning": "2023-03-13T11:41:07.732508Z",
-                  "hasEnd": "2023-03-13T11:41:07.732508Z",
-                  "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                  "hasBeginning": "2023-03-16T12:43:04.306244Z",
+                  "hasEnd": "2023-03-16T12:43:04.306244Z",
+                  "id": "063EMWFY5QT22V140FCV93N3WM",
                   "name": "Second_Pillar_2",
                   "nestedIn": null,
                   "note": "Assembly process Second_Pillar_2 defined by User One",
@@ -342,7 +354,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -358,7 +370,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -412,20 +424,24 @@
                 },
                 "hasBeginning": null,
                 "hasEnd": null,
-                "hasPointInTime": "2023-03-13T11:41:37.714241Z",
-                "id": "063DNHN9HJEY46MGAKHZ7DDZSR",
+                "hasPointInTime": "2023-03-16T12:43:37.807978Z",
+                "id": "063EMWM147YYKC4H4AC35JK1ZM",
                 "inputOf": {
                   "basedOn": null,
                   "classifiedAs": null,
                   "deletable": false,
                   "finished": false,
                   "groupedIn": {
-                    "groupedIn": null,
+                    "groupedIn": {
+                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                      "name": "assemble_box_frame",
+                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                    },
                     "groups": {
                       "edges": [
                         {
                           "node": {
-                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                             "name": "Second_Pillar_1",
                             "note": "Assembly process Second_Pillar_1 defined by User One",
                             "type": "Process"
@@ -433,7 +449,7 @@
                         },
                         {
                           "node": {
-                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                            "id": "063EMWFY5QT22V140FCV93N3WM",
                             "name": "Second_Pillar_2",
                             "note": "Assembly process Second_Pillar_2 defined by User One",
                             "type": "Process"
@@ -441,14 +457,14 @@
                         }
                       ]
                     },
-                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                     "name": "assemble_second_pillar",
                     "note": "Groups assembly events of the second pillar",
                     "type": "ProcessGroup"
                   },
-                  "hasBeginning": "2023-03-13T11:41:07.732508Z",
-                  "hasEnd": "2023-03-13T11:41:07.732508Z",
-                  "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                  "hasBeginning": "2023-03-16T12:43:04.306244Z",
+                  "hasEnd": "2023-03-16T12:43:04.306244Z",
+                  "id": "063EMWFY5QT22V140FCV93N3WM",
                   "name": "Second_Pillar_2",
                   "nestedIn": null,
                   "note": "Assembly process Second_Pillar_2 defined by User One",
@@ -463,7 +479,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -479,7 +495,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -514,7 +530,7 @@
                     "note": null,
                     "primaryLocation": {
                       "alt": "0",
-                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                       "lat": "53.54651094994547",
                       "long": "9.996357255816038",
                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -523,7 +539,7 @@
                     },
                     "type": "Person"
                   },
-                  "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                  "id": "063EMWESDK0ET5G0G9P7V49674",
                   "metadata": null,
                   "name": "Allen_Key",
                   "onhandQuantity": {
@@ -540,7 +556,7 @@
                     "note": null,
                     "primaryLocation": {
                       "alt": "0",
-                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                       "lat": "53.54651094994547",
                       "long": "9.996357255816038",
                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -549,7 +565,7 @@
                     },
                     "type": "Person"
                   },
-                  "trackingIdentifier": "Allen_Key-6509",
+                  "trackingIdentifier": "Allen_Key-381",
                   "type": "EconomicResource"
                 },
                 "resourceQuantity": {
@@ -590,7 +606,7 @@
                       "note": null,
                       "primaryLocation": {
                         "alt": "0",
-                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                         "lat": "53.54651094994547",
                         "long": "9.996357255816038",
                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -599,7 +615,7 @@
                       },
                       "type": "Person"
                     },
-                    "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                    "id": "063EMWESDK0ET5G0G9P7V49674",
                     "metadata": null,
                     "name": "Allen_Key",
                     "onhandQuantity": {
@@ -616,7 +632,7 @@
                       "note": null,
                       "primaryLocation": {
                         "alt": "0",
-                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                         "lat": "53.54651094994547",
                         "long": "9.996357255816038",
                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -625,7 +641,7 @@
                       },
                       "type": "Person"
                     },
-                    "trackingIdentifier": "Allen_Key-6509",
+                    "trackingIdentifier": "Allen_Key-381",
                     "type": "EconomicResource",
                     "children": [
                       {
@@ -642,8 +658,8 @@
                         "effortQuantity": null,
                         "hasBeginning": null,
                         "hasEnd": null,
-                        "hasPointInTime": "2023-03-13T11:40:59.704108Z",
-                        "id": "063DNHGN0RYADFERXGYYKX2VMC",
+                        "hasPointInTime": "2023-03-16T12:42:54.509644Z",
+                        "id": "063EMWESCZ1Y9ZFPFA8B4B9EW4",
                         "inputOf": null,
                         "note": "create resource",
                         "outputOf": null,
@@ -653,7 +669,7 @@
                           "note": null,
                           "primaryLocation": {
                             "alt": "0",
-                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                             "lat": "53.54651094994547",
                             "long": "9.996357255816038",
                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -669,7 +685,7 @@
                           "note": null,
                           "primaryLocation": {
                             "alt": "0",
-                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                             "lat": "53.54651094994547",
                             "long": "9.996357255816038",
                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -717,7 +733,7 @@
                             "note": null,
                             "primaryLocation": {
                               "alt": "0",
-                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                               "lat": "53.54651094994547",
                               "long": "9.996357255816038",
                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -726,7 +742,7 @@
                             },
                             "type": "Person"
                           },
-                          "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                          "id": "063EMWESDK0ET5G0G9P7V49674",
                           "metadata": null,
                           "name": "Allen_Key",
                           "onhandQuantity": {
@@ -743,7 +759,7 @@
                             "note": null,
                             "primaryLocation": {
                               "alt": "0",
-                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                               "lat": "53.54651094994547",
                               "long": "9.996357255816038",
                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -752,7 +768,7 @@
                             },
                             "type": "Person"
                           },
-                          "trackingIdentifier": "Allen_Key-6509",
+                          "trackingIdentifier": "Allen_Key-381",
                           "type": "EconomicResource"
                         },
                         "resourceQuantity": {
@@ -796,20 +812,24 @@
                 "effortQuantity": null,
                 "hasBeginning": null,
                 "hasEnd": null,
-                "hasPointInTime": "2023-03-13T11:41:37.362839Z",
-                "id": "063DNHN85XQG6TRQXEMNJC3CPG",
+                "hasPointInTime": "2023-03-16T12:43:37.437444Z",
+                "id": "063EMWKZQG9GM1CNZGC0HRT3F0",
                 "inputOf": {
                   "basedOn": null,
                   "classifiedAs": null,
                   "deletable": false,
                   "finished": false,
                   "groupedIn": {
-                    "groupedIn": null,
+                    "groupedIn": {
+                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                      "name": "assemble_box_frame",
+                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                    },
                     "groups": {
                       "edges": [
                         {
                           "node": {
-                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                             "name": "Second_Pillar_1",
                             "note": "Assembly process Second_Pillar_1 defined by User One",
                             "type": "Process"
@@ -817,7 +837,7 @@
                         },
                         {
                           "node": {
-                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                            "id": "063EMWFY5QT22V140FCV93N3WM",
                             "name": "Second_Pillar_2",
                             "note": "Assembly process Second_Pillar_2 defined by User One",
                             "type": "Process"
@@ -825,14 +845,14 @@
                         }
                       ]
                     },
-                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                     "name": "assemble_second_pillar",
                     "note": "Groups assembly events of the second pillar",
                     "type": "ProcessGroup"
                   },
-                  "hasBeginning": "2023-03-13T11:41:07.732508Z",
-                  "hasEnd": "2023-03-13T11:41:07.732508Z",
-                  "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                  "hasBeginning": "2023-03-16T12:43:04.306244Z",
+                  "hasEnd": "2023-03-16T12:43:04.306244Z",
+                  "id": "063EMWFY5QT22V140FCV93N3WM",
                   "name": "Second_Pillar_2",
                   "nestedIn": null,
                   "note": "Assembly process Second_Pillar_2 defined by User One",
@@ -847,7 +867,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -863,7 +883,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -898,7 +918,7 @@
                     "note": null,
                     "primaryLocation": {
                       "alt": "0",
-                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                       "lat": "53.54651094994547",
                       "long": "9.996357255816038",
                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -907,7 +927,7 @@
                     },
                     "type": "Person"
                   },
-                  "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                  "id": "063EMWF0A8T753P91RKD9GXQ2W",
                   "metadata": null,
                   "name": "RAConnector",
                   "onhandQuantity": {
@@ -924,7 +944,7 @@
                     "note": null,
                     "primaryLocation": {
                       "alt": "0",
-                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                       "lat": "53.54651094994547",
                       "long": "9.996357255816038",
                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -933,7 +953,7 @@
                     },
                     "type": "Person"
                   },
-                  "trackingIdentifier": "RAConnector-6095",
+                  "trackingIdentifier": "RAConnector-544",
                   "type": "EconomicResource"
                 },
                 "resourceQuantity": {
@@ -974,7 +994,7 @@
                       "note": null,
                       "primaryLocation": {
                         "alt": "0",
-                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                         "lat": "53.54651094994547",
                         "long": "9.996357255816038",
                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -983,7 +1003,7 @@
                       },
                       "type": "Person"
                     },
-                    "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                    "id": "063EMWF0A8T753P91RKD9GXQ2W",
                     "metadata": null,
                     "name": "RAConnector",
                     "onhandQuantity": {
@@ -1000,7 +1020,7 @@
                       "note": null,
                       "primaryLocation": {
                         "alt": "0",
-                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                         "lat": "53.54651094994547",
                         "long": "9.996357255816038",
                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1009,7 +1029,7 @@
                       },
                       "type": "Person"
                     },
-                    "trackingIdentifier": "RAConnector-6095",
+                    "trackingIdentifier": "RAConnector-544",
                     "type": "EconomicResource",
                     "children": [
                       {
@@ -1026,8 +1046,8 @@
                         "effortQuantity": null,
                         "hasBeginning": null,
                         "hasEnd": null,
-                        "hasPointInTime": "2023-03-13T11:41:01.127754Z",
-                        "id": "063DNHGTJ2D16NK94C8GJCZ0T4",
+                        "hasPointInTime": "2023-03-16T12:42:56.472265Z",
+                        "id": "063EMWF09KA5Y21MMYNXS2NZBC",
                         "inputOf": null,
                         "note": "create resource",
                         "outputOf": null,
@@ -1037,7 +1057,7 @@
                           "note": null,
                           "primaryLocation": {
                             "alt": "0",
-                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                             "lat": "53.54651094994547",
                             "long": "9.996357255816038",
                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1053,7 +1073,7 @@
                           "note": null,
                           "primaryLocation": {
                             "alt": "0",
-                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                             "lat": "53.54651094994547",
                             "long": "9.996357255816038",
                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1101,7 +1121,7 @@
                             "note": null,
                             "primaryLocation": {
                               "alt": "0",
-                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                               "lat": "53.54651094994547",
                               "long": "9.996357255816038",
                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1110,7 +1130,7 @@
                             },
                             "type": "Person"
                           },
-                          "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                          "id": "063EMWF0A8T753P91RKD9GXQ2W",
                           "metadata": null,
                           "name": "RAConnector",
                           "onhandQuantity": {
@@ -1127,7 +1147,7 @@
                             "note": null,
                             "primaryLocation": {
                               "alt": "0",
-                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                               "lat": "53.54651094994547",
                               "long": "9.996357255816038",
                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1136,7 +1156,7 @@
                             },
                             "type": "Person"
                           },
-                          "trackingIdentifier": "RAConnector-6095",
+                          "trackingIdentifier": "RAConnector-544",
                           "type": "EconomicResource"
                         },
                         "resourceQuantity": {
@@ -1180,20 +1200,24 @@
                 "effortQuantity": null,
                 "hasBeginning": null,
                 "hasEnd": null,
-                "hasPointInTime": "2023-03-13T11:41:36.994141Z",
-                "id": "063DNHN6S2WKX5AQ2QD64YVXTW",
+                "hasPointInTime": "2023-03-16T12:43:37.068995Z",
+                "id": "063EMWKY8J5ZA6VTS1QBDZBQ38",
                 "inputOf": {
                   "basedOn": null,
                   "classifiedAs": null,
                   "deletable": false,
                   "finished": false,
                   "groupedIn": {
-                    "groupedIn": null,
+                    "groupedIn": {
+                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                      "name": "assemble_box_frame",
+                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                    },
                     "groups": {
                       "edges": [
                         {
                           "node": {
-                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                             "name": "Second_Pillar_1",
                             "note": "Assembly process Second_Pillar_1 defined by User One",
                             "type": "Process"
@@ -1201,7 +1225,7 @@
                         },
                         {
                           "node": {
-                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                            "id": "063EMWFY5QT22V140FCV93N3WM",
                             "name": "Second_Pillar_2",
                             "note": "Assembly process Second_Pillar_2 defined by User One",
                             "type": "Process"
@@ -1209,14 +1233,14 @@
                         }
                       ]
                     },
-                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                     "name": "assemble_second_pillar",
                     "note": "Groups assembly events of the second pillar",
                     "type": "ProcessGroup"
                   },
-                  "hasBeginning": "2023-03-13T11:41:07.732508Z",
-                  "hasEnd": "2023-03-13T11:41:07.732508Z",
-                  "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                  "hasBeginning": "2023-03-16T12:43:04.306244Z",
+                  "hasEnd": "2023-03-16T12:43:04.306244Z",
+                  "id": "063EMWFY5QT22V140FCV93N3WM",
                   "name": "Second_Pillar_2",
                   "nestedIn": null,
                   "note": "Assembly process Second_Pillar_2 defined by User One",
@@ -1231,7 +1255,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1247,7 +1271,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1282,7 +1306,7 @@
                     "note": null,
                     "primaryLocation": {
                       "alt": "0",
-                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                       "lat": "53.54651094994547",
                       "long": "9.996357255816038",
                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1291,7 +1315,7 @@
                     },
                     "type": "Person"
                   },
-                  "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                  "id": "063EMWETZNS4EG24RHMG5B3FC0",
                   "metadata": null,
                   "name": "M6nutplate",
                   "onhandQuantity": {
@@ -1308,7 +1332,7 @@
                     "note": null,
                     "primaryLocation": {
                       "alt": "0",
-                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                       "lat": "53.54651094994547",
                       "long": "9.996357255816038",
                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1317,7 +1341,7 @@
                     },
                     "type": "Person"
                   },
-                  "trackingIdentifier": "M6nutplate-3709",
+                  "trackingIdentifier": "M6nutplate-5953",
                   "type": "EconomicResource"
                 },
                 "resourceQuantity": {
@@ -1358,7 +1382,7 @@
                       "note": null,
                       "primaryLocation": {
                         "alt": "0",
-                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                         "lat": "53.54651094994547",
                         "long": "9.996357255816038",
                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1367,7 +1391,7 @@
                       },
                       "type": "Person"
                     },
-                    "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                    "id": "063EMWETZNS4EG24RHMG5B3FC0",
                     "metadata": null,
                     "name": "M6nutplate",
                     "onhandQuantity": {
@@ -1384,7 +1408,7 @@
                       "note": null,
                       "primaryLocation": {
                         "alt": "0",
-                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                         "lat": "53.54651094994547",
                         "long": "9.996357255816038",
                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1393,7 +1417,7 @@
                       },
                       "type": "Person"
                     },
-                    "trackingIdentifier": "M6nutplate-3709",
+                    "trackingIdentifier": "M6nutplate-5953",
                     "type": "EconomicResource",
                     "children": [
                       {
@@ -1410,8 +1434,8 @@
                         "effortQuantity": null,
                         "hasBeginning": null,
                         "hasEnd": null,
-                        "hasPointInTime": "2023-03-13T11:41:00.065781Z",
-                        "id": "063DNHGPGJE726B0YSE01EERSC",
+                        "hasPointInTime": "2023-03-16T12:42:55.250160Z",
+                        "id": "063EMWETZBKX7Y13YYDYCH6FWG",
                         "inputOf": null,
                         "note": "create resource",
                         "outputOf": null,
@@ -1421,7 +1445,7 @@
                           "note": null,
                           "primaryLocation": {
                             "alt": "0",
-                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                             "lat": "53.54651094994547",
                             "long": "9.996357255816038",
                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1437,7 +1461,7 @@
                           "note": null,
                           "primaryLocation": {
                             "alt": "0",
-                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                             "lat": "53.54651094994547",
                             "long": "9.996357255816038",
                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1485,7 +1509,7 @@
                             "note": null,
                             "primaryLocation": {
                               "alt": "0",
-                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                               "lat": "53.54651094994547",
                               "long": "9.996357255816038",
                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1494,7 +1518,7 @@
                             },
                             "type": "Person"
                           },
-                          "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                          "id": "063EMWETZNS4EG24RHMG5B3FC0",
                           "metadata": null,
                           "name": "M6nutplate",
                           "onhandQuantity": {
@@ -1511,7 +1535,7 @@
                             "note": null,
                             "primaryLocation": {
                               "alt": "0",
-                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                               "lat": "53.54651094994547",
                               "long": "9.996357255816038",
                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1520,7 +1544,7 @@
                             },
                             "type": "Person"
                           },
-                          "trackingIdentifier": "M6nutplate-3709",
+                          "trackingIdentifier": "M6nutplate-5953",
                           "type": "EconomicResource"
                         },
                         "resourceQuantity": {
@@ -1564,20 +1588,24 @@
                 "effortQuantity": null,
                 "hasBeginning": null,
                 "hasEnd": null,
-                "hasPointInTime": "2023-03-13T11:41:36.645750Z",
-                "id": "063DNHN5AR4KBFNDY5PAGS9SR8",
+                "hasPointInTime": "2023-03-16T12:43:36.668488Z",
+                "id": "063EMWKWRVFCN0R30QQ7DBARE4",
                 "inputOf": {
                   "basedOn": null,
                   "classifiedAs": null,
                   "deletable": false,
                   "finished": false,
                   "groupedIn": {
-                    "groupedIn": null,
+                    "groupedIn": {
+                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                      "name": "assemble_box_frame",
+                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                    },
                     "groups": {
                       "edges": [
                         {
                           "node": {
-                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                             "name": "Second_Pillar_1",
                             "note": "Assembly process Second_Pillar_1 defined by User One",
                             "type": "Process"
@@ -1585,7 +1613,7 @@
                         },
                         {
                           "node": {
-                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                            "id": "063EMWFY5QT22V140FCV93N3WM",
                             "name": "Second_Pillar_2",
                             "note": "Assembly process Second_Pillar_2 defined by User One",
                             "type": "Process"
@@ -1593,14 +1621,14 @@
                         }
                       ]
                     },
-                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                     "name": "assemble_second_pillar",
                     "note": "Groups assembly events of the second pillar",
                     "type": "ProcessGroup"
                   },
-                  "hasBeginning": "2023-03-13T11:41:07.732508Z",
-                  "hasEnd": "2023-03-13T11:41:07.732508Z",
-                  "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                  "hasBeginning": "2023-03-16T12:43:04.306244Z",
+                  "hasEnd": "2023-03-16T12:43:04.306244Z",
+                  "id": "063EMWFY5QT22V140FCV93N3WM",
                   "name": "Second_Pillar_2",
                   "nestedIn": null,
                   "note": "Assembly process Second_Pillar_2 defined by User One",
@@ -1615,7 +1643,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1631,7 +1659,7 @@
                   "note": null,
                   "primaryLocation": {
                     "alt": "0",
-                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                     "lat": "53.54651094994547",
                     "long": "9.996357255816038",
                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1666,7 +1694,7 @@
                     "note": null,
                     "primaryLocation": {
                       "alt": "0",
-                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                       "lat": "53.54651094994547",
                       "long": "9.996357255816038",
                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1675,7 +1703,7 @@
                     },
                     "type": "Person"
                   },
-                  "id": "063DNHN3ZE0DBQGZD2N1BC7H3R",
+                  "id": "063EMWKV8AMH3G4X84XH421650",
                   "metadata": null,
                   "name": "second_pillar",
                   "onhandQuantity": {
@@ -1692,7 +1720,7 @@
                     "note": null,
                     "primaryLocation": {
                       "alt": "0",
-                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                       "lat": "53.54651094994547",
                       "long": "9.996357255816038",
                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1701,7 +1729,7 @@
                     },
                     "type": "Person"
                   },
-                  "trackingIdentifier": "second_pillar-1610",
+                  "trackingIdentifier": "second_pillar-9814",
                   "type": "EconomicResource"
                 },
                 "resourceQuantity": {
@@ -1742,7 +1770,7 @@
                       "note": null,
                       "primaryLocation": {
                         "alt": "0",
-                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                         "lat": "53.54651094994547",
                         "long": "9.996357255816038",
                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1751,7 +1779,7 @@
                       },
                       "type": "Person"
                     },
-                    "id": "063DNHN3ZE0DBQGZD2N1BC7H3R",
+                    "id": "063EMWKV8AMH3G4X84XH421650",
                     "metadata": null,
                     "name": "second_pillar",
                     "onhandQuantity": {
@@ -1768,7 +1796,7 @@
                       "note": null,
                       "primaryLocation": {
                         "alt": "0",
-                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                         "lat": "53.54651094994547",
                         "long": "9.996357255816038",
                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1777,7 +1805,7 @@
                       },
                       "type": "Person"
                     },
-                    "trackingIdentifier": "second_pillar-1610",
+                    "trackingIdentifier": "second_pillar-9814",
                     "type": "EconomicResource",
                     "children": [
                       {
@@ -1794,8 +1822,8 @@
                         "effortQuantity": null,
                         "hasBeginning": null,
                         "hasEnd": null,
-                        "hasPointInTime": "2023-03-13T11:41:36.296535Z",
-                        "id": "063DNHN3Z28T27WKJK0RJ9HA34",
+                        "hasPointInTime": "2023-03-16T12:43:36.306711Z",
+                        "id": "063EMWKV834VKFCPGGDA50NV0W",
                         "inputOf": null,
                         "note": "produce Pillar",
                         "outputOf": {
@@ -1804,12 +1832,16 @@
                           "deletable": false,
                           "finished": false,
                           "groupedIn": {
-                            "groupedIn": null,
+                            "groupedIn": {
+                              "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                              "name": "assemble_box_frame",
+                              "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                            },
                             "groups": {
                               "edges": [
                                 {
                                   "node": {
-                                    "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                    "id": "063EMWFWVFATT4G54NDWHCBY60",
                                     "name": "Second_Pillar_1",
                                     "note": "Assembly process Second_Pillar_1 defined by User One",
                                     "type": "Process"
@@ -1817,7 +1849,7 @@
                                 },
                                 {
                                   "node": {
-                                    "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                                    "id": "063EMWFY5QT22V140FCV93N3WM",
                                     "name": "Second_Pillar_2",
                                     "note": "Assembly process Second_Pillar_2 defined by User One",
                                     "type": "Process"
@@ -1825,14 +1857,14 @@
                                 }
                               ]
                             },
-                            "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                            "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                             "name": "assemble_second_pillar",
                             "note": "Groups assembly events of the second pillar",
                             "type": "ProcessGroup"
                           },
-                          "hasBeginning": "2023-03-13T11:41:07.415940Z",
-                          "hasEnd": "2023-03-13T11:41:07.415940Z",
-                          "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                          "hasBeginning": "2023-03-16T12:43:03.969318Z",
+                          "hasEnd": "2023-03-16T12:43:03.969318Z",
+                          "id": "063EMWFWVFATT4G54NDWHCBY60",
                           "name": "Second_Pillar_1",
                           "nestedIn": null,
                           "note": "Assembly process Second_Pillar_1 defined by User One",
@@ -1845,7 +1877,7 @@
                           "note": null,
                           "primaryLocation": {
                             "alt": "0",
-                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                             "lat": "53.54651094994547",
                             "long": "9.996357255816038",
                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1861,7 +1893,7 @@
                           "note": null,
                           "primaryLocation": {
                             "alt": "0",
-                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                             "lat": "53.54651094994547",
                             "long": "9.996357255816038",
                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1909,7 +1941,7 @@
                             "note": null,
                             "primaryLocation": {
                               "alt": "0",
-                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                               "lat": "53.54651094994547",
                               "long": "9.996357255816038",
                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1918,7 +1950,7 @@
                             },
                             "type": "Person"
                           },
-                          "id": "063DNHN3ZE0DBQGZD2N1BC7H3R",
+                          "id": "063EMWKV8AMH3G4X84XH421650",
                           "metadata": null,
                           "name": "second_pillar",
                           "onhandQuantity": {
@@ -1935,7 +1967,7 @@
                             "note": null,
                             "primaryLocation": {
                               "alt": "0",
-                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                               "lat": "53.54651094994547",
                               "long": "9.996357255816038",
                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -1944,7 +1976,7 @@
                             },
                             "type": "Person"
                           },
-                          "trackingIdentifier": "second_pillar-1610",
+                          "trackingIdentifier": "second_pillar-9814",
                           "type": "EconomicResource"
                         },
                         "resourceQuantity": {
@@ -1975,12 +2007,16 @@
                             "deletable": false,
                             "finished": false,
                             "groupedIn": {
-                              "groupedIn": null,
+                              "groupedIn": {
+                                "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                                "name": "assemble_box_frame",
+                                "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                              },
                               "groups": {
                                 "edges": [
                                   {
                                     "node": {
-                                      "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                      "id": "063EMWFWVFATT4G54NDWHCBY60",
                                       "name": "Second_Pillar_1",
                                       "note": "Assembly process Second_Pillar_1 defined by User One",
                                       "type": "Process"
@@ -1988,7 +2024,7 @@
                                   },
                                   {
                                     "node": {
-                                      "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                                      "id": "063EMWFY5QT22V140FCV93N3WM",
                                       "name": "Second_Pillar_2",
                                       "note": "Assembly process Second_Pillar_2 defined by User One",
                                       "type": "Process"
@@ -1996,14 +2032,14 @@
                                   }
                                 ]
                               },
-                              "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                              "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                               "name": "assemble_second_pillar",
                               "note": "Groups assembly events of the second pillar",
                               "type": "ProcessGroup"
                             },
-                            "hasBeginning": "2023-03-13T11:41:07.415940Z",
-                            "hasEnd": "2023-03-13T11:41:07.415940Z",
-                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                            "hasBeginning": "2023-03-16T12:43:03.969318Z",
+                            "hasEnd": "2023-03-16T12:43:03.969318Z",
+                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                             "name": "Second_Pillar_1",
                             "nestedIn": null,
                             "note": "Assembly process Second_Pillar_1 defined by User One",
@@ -2031,20 +2067,24 @@
                                 },
                                 "hasBeginning": null,
                                 "hasEnd": null,
-                                "hasPointInTime": "2023-03-13T11:41:35.969361Z",
-                                "id": "063DNHN2M73ZK1KWJF0FW9ZAQG",
+                                "hasPointInTime": "2023-03-16T12:43:35.958833Z",
+                                "id": "063EMWKSVQ9SEND9JSECQTVMCW",
                                 "inputOf": {
                                   "basedOn": null,
                                   "classifiedAs": null,
                                   "deletable": false,
                                   "finished": false,
                                   "groupedIn": {
-                                    "groupedIn": null,
+                                    "groupedIn": {
+                                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                                      "name": "assemble_box_frame",
+                                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                                    },
                                     "groups": {
                                       "edges": [
                                         {
                                           "node": {
-                                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                                             "name": "Second_Pillar_1",
                                             "note": "Assembly process Second_Pillar_1 defined by User One",
                                             "type": "Process"
@@ -2052,7 +2092,7 @@
                                         },
                                         {
                                           "node": {
-                                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                                            "id": "063EMWFY5QT22V140FCV93N3WM",
                                             "name": "Second_Pillar_2",
                                             "note": "Assembly process Second_Pillar_2 defined by User One",
                                             "type": "Process"
@@ -2060,14 +2100,14 @@
                                         }
                                       ]
                                     },
-                                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                                     "name": "assemble_second_pillar",
                                     "note": "Groups assembly events of the second pillar",
                                     "type": "ProcessGroup"
                                   },
-                                  "hasBeginning": "2023-03-13T11:41:07.415940Z",
-                                  "hasEnd": "2023-03-13T11:41:07.415940Z",
-                                  "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                  "hasBeginning": "2023-03-16T12:43:03.969318Z",
+                                  "hasEnd": "2023-03-16T12:43:03.969318Z",
+                                  "id": "063EMWFWVFATT4G54NDWHCBY60",
                                   "name": "Second_Pillar_1",
                                   "nestedIn": null,
                                   "note": "Assembly process Second_Pillar_1 defined by User One",
@@ -2082,7 +2122,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2098,7 +2138,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2152,20 +2192,24 @@
                                 },
                                 "hasBeginning": null,
                                 "hasEnd": null,
-                                "hasPointInTime": "2023-03-13T11:41:35.635865Z",
-                                "id": "063DNHN1ATGYYYX4MZDP083DRW",
+                                "hasPointInTime": "2023-03-16T12:43:35.577234Z",
+                                "id": "063EMWKRE22KNY58YY280479YC",
                                 "inputOf": {
                                   "basedOn": null,
                                   "classifiedAs": null,
                                   "deletable": false,
                                   "finished": false,
                                   "groupedIn": {
-                                    "groupedIn": null,
+                                    "groupedIn": {
+                                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                                      "name": "assemble_box_frame",
+                                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                                    },
                                     "groups": {
                                       "edges": [
                                         {
                                           "node": {
-                                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                                             "name": "Second_Pillar_1",
                                             "note": "Assembly process Second_Pillar_1 defined by User One",
                                             "type": "Process"
@@ -2173,7 +2217,7 @@
                                         },
                                         {
                                           "node": {
-                                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                                            "id": "063EMWFY5QT22V140FCV93N3WM",
                                             "name": "Second_Pillar_2",
                                             "note": "Assembly process Second_Pillar_2 defined by User One",
                                             "type": "Process"
@@ -2181,14 +2225,14 @@
                                         }
                                       ]
                                     },
-                                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                                     "name": "assemble_second_pillar",
                                     "note": "Groups assembly events of the second pillar",
                                     "type": "ProcessGroup"
                                   },
-                                  "hasBeginning": "2023-03-13T11:41:07.415940Z",
-                                  "hasEnd": "2023-03-13T11:41:07.415940Z",
-                                  "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                  "hasBeginning": "2023-03-16T12:43:03.969318Z",
+                                  "hasEnd": "2023-03-16T12:43:03.969318Z",
+                                  "id": "063EMWFWVFATT4G54NDWHCBY60",
                                   "name": "Second_Pillar_1",
                                   "nestedIn": null,
                                   "note": "Assembly process Second_Pillar_1 defined by User One",
@@ -2203,7 +2247,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2219,7 +2263,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2254,7 +2298,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2263,7 +2307,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                                  "id": "063EMWESDK0ET5G0G9P7V49674",
                                   "metadata": null,
                                   "name": "Allen_Key",
                                   "onhandQuantity": {
@@ -2280,7 +2324,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2289,7 +2333,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "trackingIdentifier": "Allen_Key-6509",
+                                  "trackingIdentifier": "Allen_Key-381",
                                   "type": "EconomicResource"
                                 },
                                 "resourceQuantity": {
@@ -2330,7 +2374,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2339,7 +2383,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "id": "063DNHGN131V3PFNEAJ2FN7Y4R",
+                                    "id": "063EMWESDK0ET5G0G9P7V49674",
                                     "metadata": null,
                                     "name": "Allen_Key",
                                     "onhandQuantity": {
@@ -2356,7 +2400,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2365,7 +2409,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "trackingIdentifier": "Allen_Key-6509",
+                                    "trackingIdentifier": "Allen_Key-381",
                                     "type": "EconomicResource",
                                     "children": []
                                   }
@@ -2385,20 +2429,24 @@
                                 "effortQuantity": null,
                                 "hasBeginning": null,
                                 "hasEnd": null,
-                                "hasPointInTime": "2023-03-13T11:41:35.282199Z",
-                                "id": "063DNHN0238JTPM9NCX9JWQ7NM",
+                                "hasPointInTime": "2023-03-16T12:43:35.229748Z",
+                                "id": "063EMWKPZXAGF35DA59M3PGPCW",
                                 "inputOf": {
                                   "basedOn": null,
                                   "classifiedAs": null,
                                   "deletable": false,
                                   "finished": false,
                                   "groupedIn": {
-                                    "groupedIn": null,
+                                    "groupedIn": {
+                                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                                      "name": "assemble_box_frame",
+                                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                                    },
                                     "groups": {
                                       "edges": [
                                         {
                                           "node": {
-                                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                                             "name": "Second_Pillar_1",
                                             "note": "Assembly process Second_Pillar_1 defined by User One",
                                             "type": "Process"
@@ -2406,7 +2454,7 @@
                                         },
                                         {
                                           "node": {
-                                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                                            "id": "063EMWFY5QT22V140FCV93N3WM",
                                             "name": "Second_Pillar_2",
                                             "note": "Assembly process Second_Pillar_2 defined by User One",
                                             "type": "Process"
@@ -2414,14 +2462,14 @@
                                         }
                                       ]
                                     },
-                                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                                     "name": "assemble_second_pillar",
                                     "note": "Groups assembly events of the second pillar",
                                     "type": "ProcessGroup"
                                   },
-                                  "hasBeginning": "2023-03-13T11:41:07.415940Z",
-                                  "hasEnd": "2023-03-13T11:41:07.415940Z",
-                                  "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                  "hasBeginning": "2023-03-16T12:43:03.969318Z",
+                                  "hasEnd": "2023-03-16T12:43:03.969318Z",
+                                  "id": "063EMWFWVFATT4G54NDWHCBY60",
                                   "name": "Second_Pillar_1",
                                   "nestedIn": null,
                                   "note": "Assembly process Second_Pillar_1 defined by User One",
@@ -2436,7 +2484,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2452,7 +2500,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2487,7 +2535,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2496,7 +2544,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "id": "063DNHGQX9J49T6HPGYMH0SKTC",
+                                  "id": "063EMWEWPC31K4R0FBKE95ZKVC",
                                   "metadata": null,
                                   "name": "M6x12",
                                   "onhandQuantity": {
@@ -2513,7 +2561,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2522,7 +2570,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "trackingIdentifier": "M6x12-2703",
+                                  "trackingIdentifier": "M6x12-687",
                                   "type": "EconomicResource"
                                 },
                                 "resourceQuantity": {
@@ -2563,7 +2611,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2572,7 +2620,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "id": "063DNHGQX9J49T6HPGYMH0SKTC",
+                                    "id": "063EMWEWPC31K4R0FBKE95ZKVC",
                                     "metadata": null,
                                     "name": "M6x12",
                                     "onhandQuantity": {
@@ -2589,7 +2637,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2598,7 +2646,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "trackingIdentifier": "M6x12-2703",
+                                    "trackingIdentifier": "M6x12-687",
                                     "type": "EconomicResource",
                                     "children": [
                                       {
@@ -2615,8 +2663,8 @@
                                         "effortQuantity": null,
                                         "hasBeginning": null,
                                         "hasEnd": null,
-                                        "hasPointInTime": "2023-03-13T11:41:00.450402Z",
-                                        "id": "063DNHGQWWEE6MVNZQZZ235GRG",
+                                        "hasPointInTime": "2023-03-16T12:42:55.663475Z",
+                                        "id": "063EMWEWP0A6MVQHXRE9QVF9B0",
                                         "inputOf": null,
                                         "note": "create resource",
                                         "outputOf": null,
@@ -2626,7 +2674,7 @@
                                           "note": null,
                                           "primaryLocation": {
                                             "alt": "0",
-                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                                             "lat": "53.54651094994547",
                                             "long": "9.996357255816038",
                                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2642,7 +2690,7 @@
                                           "note": null,
                                           "primaryLocation": {
                                             "alt": "0",
-                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                                             "lat": "53.54651094994547",
                                             "long": "9.996357255816038",
                                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2690,7 +2738,7 @@
                                             "note": null,
                                             "primaryLocation": {
                                               "alt": "0",
-                                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                                               "lat": "53.54651094994547",
                                               "long": "9.996357255816038",
                                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2699,7 +2747,7 @@
                                             },
                                             "type": "Person"
                                           },
-                                          "id": "063DNHGQX9J49T6HPGYMH0SKTC",
+                                          "id": "063EMWEWPC31K4R0FBKE95ZKVC",
                                           "metadata": null,
                                           "name": "M6x12",
                                           "onhandQuantity": {
@@ -2716,7 +2764,7 @@
                                             "note": null,
                                             "primaryLocation": {
                                               "alt": "0",
-                                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                                               "lat": "53.54651094994547",
                                               "long": "9.996357255816038",
                                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2725,7 +2773,7 @@
                                             },
                                             "type": "Person"
                                           },
-                                          "trackingIdentifier": "M6x12-2703",
+                                          "trackingIdentifier": "M6x12-687",
                                           "type": "EconomicResource"
                                         },
                                         "resourceQuantity": {
@@ -2769,20 +2817,24 @@
                                 "effortQuantity": null,
                                 "hasBeginning": null,
                                 "hasEnd": null,
-                                "hasPointInTime": "2023-03-13T11:41:34.928416Z",
-                                "id": "063DNHMYMQWP5ARNAN4E9V2DMR",
+                                "hasPointInTime": "2023-03-16T12:43:34.821164Z",
+                                "id": "063EMWKNM3EBGRP99S9DVXPXV8",
                                 "inputOf": {
                                   "basedOn": null,
                                   "classifiedAs": null,
                                   "deletable": false,
                                   "finished": false,
                                   "groupedIn": {
-                                    "groupedIn": null,
+                                    "groupedIn": {
+                                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                                      "name": "assemble_box_frame",
+                                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                                    },
                                     "groups": {
                                       "edges": [
                                         {
                                           "node": {
-                                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                                             "name": "Second_Pillar_1",
                                             "note": "Assembly process Second_Pillar_1 defined by User One",
                                             "type": "Process"
@@ -2790,7 +2842,7 @@
                                         },
                                         {
                                           "node": {
-                                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                                            "id": "063EMWFY5QT22V140FCV93N3WM",
                                             "name": "Second_Pillar_2",
                                             "note": "Assembly process Second_Pillar_2 defined by User One",
                                             "type": "Process"
@@ -2798,14 +2850,14 @@
                                         }
                                       ]
                                     },
-                                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                                     "name": "assemble_second_pillar",
                                     "note": "Groups assembly events of the second pillar",
                                     "type": "ProcessGroup"
                                   },
-                                  "hasBeginning": "2023-03-13T11:41:07.415940Z",
-                                  "hasEnd": "2023-03-13T11:41:07.415940Z",
-                                  "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                  "hasBeginning": "2023-03-16T12:43:03.969318Z",
+                                  "hasEnd": "2023-03-16T12:43:03.969318Z",
+                                  "id": "063EMWFWVFATT4G54NDWHCBY60",
                                   "name": "Second_Pillar_1",
                                   "nestedIn": null,
                                   "note": "Assembly process Second_Pillar_1 defined by User One",
@@ -2820,7 +2872,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2836,7 +2888,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2871,7 +2923,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2880,7 +2932,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                                  "id": "063EMWF0A8T753P91RKD9GXQ2W",
                                   "metadata": null,
                                   "name": "RAConnector",
                                   "onhandQuantity": {
@@ -2897,7 +2949,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2906,7 +2958,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "trackingIdentifier": "RAConnector-6095",
+                                  "trackingIdentifier": "RAConnector-544",
                                   "type": "EconomicResource"
                                 },
                                 "resourceQuantity": {
@@ -2947,7 +2999,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2956,7 +3008,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "id": "063DNHGTJ9NY1KZKWWH1VWHZ9G",
+                                    "id": "063EMWF0A8T753P91RKD9GXQ2W",
                                     "metadata": null,
                                     "name": "RAConnector",
                                     "onhandQuantity": {
@@ -2973,7 +3025,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -2982,7 +3034,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "trackingIdentifier": "RAConnector-6095",
+                                    "trackingIdentifier": "RAConnector-544",
                                     "type": "EconomicResource",
                                     "children": []
                                   }
@@ -3002,20 +3054,24 @@
                                 "effortQuantity": null,
                                 "hasBeginning": null,
                                 "hasEnd": null,
-                                "hasPointInTime": "2023-03-13T11:41:34.579170Z",
-                                "id": "063DNHMX8RFEE7XDYHYXTQWMQC",
+                                "hasPointInTime": "2023-03-16T12:43:34.405696Z",
+                                "id": "063EMWKKY64J0J84V67FAC4MTM",
                                 "inputOf": {
                                   "basedOn": null,
                                   "classifiedAs": null,
                                   "deletable": false,
                                   "finished": false,
                                   "groupedIn": {
-                                    "groupedIn": null,
+                                    "groupedIn": {
+                                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                                      "name": "assemble_box_frame",
+                                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                                    },
                                     "groups": {
                                       "edges": [
                                         {
                                           "node": {
-                                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                                             "name": "Second_Pillar_1",
                                             "note": "Assembly process Second_Pillar_1 defined by User One",
                                             "type": "Process"
@@ -3023,7 +3079,7 @@
                                         },
                                         {
                                           "node": {
-                                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                                            "id": "063EMWFY5QT22V140FCV93N3WM",
                                             "name": "Second_Pillar_2",
                                             "note": "Assembly process Second_Pillar_2 defined by User One",
                                             "type": "Process"
@@ -3031,14 +3087,14 @@
                                         }
                                       ]
                                     },
-                                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                                     "name": "assemble_second_pillar",
                                     "note": "Groups assembly events of the second pillar",
                                     "type": "ProcessGroup"
                                   },
-                                  "hasBeginning": "2023-03-13T11:41:07.415940Z",
-                                  "hasEnd": "2023-03-13T11:41:07.415940Z",
-                                  "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                  "hasBeginning": "2023-03-16T12:43:03.969318Z",
+                                  "hasEnd": "2023-03-16T12:43:03.969318Z",
+                                  "id": "063EMWFWVFATT4G54NDWHCBY60",
                                   "name": "Second_Pillar_1",
                                   "nestedIn": null,
                                   "note": "Assembly process Second_Pillar_1 defined by User One",
@@ -3053,7 +3109,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3069,7 +3125,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3104,7 +3160,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3113,7 +3169,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                                  "id": "063EMWETZNS4EG24RHMG5B3FC0",
                                   "metadata": null,
                                   "name": "M6nutplate",
                                   "onhandQuantity": {
@@ -3130,7 +3186,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3139,7 +3195,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "trackingIdentifier": "M6nutplate-3709",
+                                  "trackingIdentifier": "M6nutplate-5953",
                                   "type": "EconomicResource"
                                 },
                                 "resourceQuantity": {
@@ -3180,7 +3236,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3189,7 +3245,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "id": "063DNHGPH3QD5BDSWBVAF8KEYW",
+                                    "id": "063EMWETZNS4EG24RHMG5B3FC0",
                                     "metadata": null,
                                     "name": "M6nutplate",
                                     "onhandQuantity": {
@@ -3206,7 +3262,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3215,7 +3271,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "trackingIdentifier": "M6nutplate-3709",
+                                    "trackingIdentifier": "M6nutplate-5953",
                                     "type": "EconomicResource",
                                     "children": []
                                   }
@@ -3235,20 +3291,24 @@
                                 "effortQuantity": null,
                                 "hasBeginning": null,
                                 "hasEnd": null,
-                                "hasPointInTime": "2023-03-13T11:41:34.203706Z",
-                                "id": "063DNHMVX42BVG6NRW4VKJTXV8",
+                                "hasPointInTime": "2023-03-16T12:43:34.044007Z",
+                                "id": "063EMWKJDFVAV7CD6NT6BHTE5M",
                                 "inputOf": {
                                   "basedOn": null,
                                   "classifiedAs": null,
                                   "deletable": false,
                                   "finished": false,
                                   "groupedIn": {
-                                    "groupedIn": null,
+                                    "groupedIn": {
+                                      "id": "063EMWQFSDMZFBYZN73AX14CVR",
+                                      "name": "assemble_box_frame",
+                                      "note": "Groups box frame subcomponent groups: upper frame, lower frame & four pillars"
+                                    },
                                     "groups": {
                                       "edges": [
                                         {
                                           "node": {
-                                            "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                            "id": "063EMWFWVFATT4G54NDWHCBY60",
                                             "name": "Second_Pillar_1",
                                             "note": "Assembly process Second_Pillar_1 defined by User One",
                                             "type": "Process"
@@ -3256,7 +3316,7 @@
                                         },
                                         {
                                           "node": {
-                                            "id": "063DNHHMCE80EAQQ4K3BRJ5CC0",
+                                            "id": "063EMWFY5QT22V140FCV93N3WM",
                                             "name": "Second_Pillar_2",
                                             "note": "Assembly process Second_Pillar_2 defined by User One",
                                             "type": "Process"
@@ -3264,14 +3324,14 @@
                                         }
                                       ]
                                     },
-                                    "id": "063DNHRR3FFRDYJF1Q6YD1XSDR",
+                                    "id": "063EMWR5Z24AEKWN8TDJRXG63C",
                                     "name": "assemble_second_pillar",
                                     "note": "Groups assembly events of the second pillar",
                                     "type": "ProcessGroup"
                                   },
-                                  "hasBeginning": "2023-03-13T11:41:07.415940Z",
-                                  "hasEnd": "2023-03-13T11:41:07.415940Z",
-                                  "id": "063DNHHK3T8C0K9DC6HJ574ZV4",
+                                  "hasBeginning": "2023-03-16T12:43:03.969318Z",
+                                  "hasEnd": "2023-03-16T12:43:03.969318Z",
+                                  "id": "063EMWFWVFATT4G54NDWHCBY60",
                                   "name": "Second_Pillar_1",
                                   "nestedIn": null,
                                   "note": "Assembly process Second_Pillar_1 defined by User One",
@@ -3286,7 +3346,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3302,7 +3362,7 @@
                                   "note": null,
                                   "primaryLocation": {
                                     "alt": "0",
-                                    "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                    "id": "063DYBM777BTZTPJV48DJAK0J4",
                                     "lat": "53.54651094994547",
                                     "long": "9.996357255816038",
                                     "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3337,7 +3397,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3346,7 +3406,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "id": "063DNHGXBXKAR76EK6ECY2DC00",
+                                  "id": "063EMWF3J5KHSZ6PW4SRD3F5B0",
                                   "metadata": null,
                                   "name": "Tslot32",
                                   "onhandQuantity": {
@@ -3363,7 +3423,7 @@
                                     "note": null,
                                     "primaryLocation": {
                                       "alt": "0",
-                                      "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                      "id": "063DYBM777BTZTPJV48DJAK0J4",
                                       "lat": "53.54651094994547",
                                       "long": "9.996357255816038",
                                       "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3372,7 +3432,7 @@
                                     },
                                     "type": "Person"
                                   },
-                                  "trackingIdentifier": "Tslot32-2303",
+                                  "trackingIdentifier": "Tslot32-6979",
                                   "type": "EconomicResource"
                                 },
                                 "resourceQuantity": {
@@ -3413,7 +3473,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3422,7 +3482,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "id": "063DNHGXBXKAR76EK6ECY2DC00",
+                                    "id": "063EMWF3J5KHSZ6PW4SRD3F5B0",
                                     "metadata": null,
                                     "name": "Tslot32",
                                     "onhandQuantity": {
@@ -3439,7 +3499,7 @@
                                       "note": null,
                                       "primaryLocation": {
                                         "alt": "0",
-                                        "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                        "id": "063DYBM777BTZTPJV48DJAK0J4",
                                         "lat": "53.54651094994547",
                                         "long": "9.996357255816038",
                                         "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3448,7 +3508,7 @@
                                       },
                                       "type": "Person"
                                     },
-                                    "trackingIdentifier": "Tslot32-2303",
+                                    "trackingIdentifier": "Tslot32-6979",
                                     "type": "EconomicResource",
                                     "children": [
                                       {
@@ -3465,8 +3525,8 @@
                                         "effortQuantity": null,
                                         "hasBeginning": null,
                                         "hasEnd": null,
-                                        "hasPointInTime": "2023-03-13T11:41:01.836384Z",
-                                        "id": "063DNHGXBN24N7FV14M6NNSQKW",
+                                        "hasPointInTime": "2023-03-16T12:42:57.450656Z",
+                                        "id": "063EMWF3HXGVSQ3XP9QBV5HHJ0",
                                         "inputOf": null,
                                         "note": "create resource",
                                         "outputOf": null,
@@ -3476,7 +3536,7 @@
                                           "note": null,
                                           "primaryLocation": {
                                             "alt": "0",
-                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                                             "lat": "53.54651094994547",
                                             "long": "9.996357255816038",
                                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3492,7 +3552,7 @@
                                           "note": null,
                                           "primaryLocation": {
                                             "alt": "0",
-                                            "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                            "id": "063DYBM777BTZTPJV48DJAK0J4",
                                             "lat": "53.54651094994547",
                                             "long": "9.996357255816038",
                                             "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3540,7 +3600,7 @@
                                             "note": null,
                                             "primaryLocation": {
                                               "alt": "0",
-                                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                                               "lat": "53.54651094994547",
                                               "long": "9.996357255816038",
                                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3549,7 +3609,7 @@
                                             },
                                             "type": "Person"
                                           },
-                                          "id": "063DNHGXBXKAR76EK6ECY2DC00",
+                                          "id": "063EMWF3J5KHSZ6PW4SRD3F5B0",
                                           "metadata": null,
                                           "name": "Tslot32",
                                           "onhandQuantity": {
@@ -3566,7 +3626,7 @@
                                             "note": null,
                                             "primaryLocation": {
                                               "alt": "0",
-                                              "id": "063DNHFRT9BWZ1XH7XS6WGY8XC",
+                                              "id": "063DYBM777BTZTPJV48DJAK0J4",
                                               "lat": "53.54651094994547",
                                               "long": "9.996357255816038",
                                               "mappableAddress": "Zippelhaus 5A, 20457 Hamburg, Germany",
@@ -3575,7 +3635,7 @@
                                             },
                                             "type": "Person"
                                           },
-                                          "trackingIdentifier": "Tslot32-2303",
+                                          "trackingIdentifier": "Tslot32-6979",
                                           "type": "EconomicResource"
                                         },
                                         "resourceQuantity": {
