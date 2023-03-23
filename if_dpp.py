@@ -450,8 +450,8 @@ def list_nodes(item, assigned):
     if id in assigned:
         assigned[id]['count'] += 1
     else:
-        # if 'node' in item and 'name' not in item['node']:
-        #     set_trace()
+        if 'node' not in item and 'name' not in item:
+            raise Exception(f"Item's format is not expected: {item}. Error in function {inspect.stack()[0][3]}")
         assigned[id] = {
             'count': 1,
             'type': item['type'],
@@ -615,11 +615,17 @@ def check_traces(trace, events, fe_dpp, be_dpp):
         <events> is a data structure containing only events and processes
         as recorded by the front-end.
     """
+    # set_trace()
     fe_assigned = {}
     list_nodes(fe_dpp[0], fe_assigned)
     be_assigned = {}
     # set_trace()
-    list_nodes(be_dpp[0], be_assigned)
+    if type(be_dpp) == dict:
+        list_nodes(be_dpp, be_assigned)
+    elif type(be_dpp) == list and len(be_dpp) == 1:
+        list_nodes(be_dpp[0], be_assigned)
+    else:
+        raise Exception(f"Unknown type of be_dpp. Error in function {inspect.stack()[0][3]}")
     print(BANNER)
     print(
         f'nr trace: {len(trace)}, nr events: {len(events)}, nr front-end dpp: {len(fe_assigned)}, nr back-end dpp: {len(be_assigned)}')
