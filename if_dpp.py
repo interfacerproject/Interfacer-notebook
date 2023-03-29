@@ -598,7 +598,7 @@ def check_betrace(tot_dpp, be_dpp):
             print(f"Children of id {tot_dpp['id']} differ in number")
             print(f"Children of back-end")
             for ch in be_dpp['children']:
-                name = ch['node']['name'] if 'name' in ch['node'] else ch['node']['action_id']
+                name = ch['node']['name'] if 'name' in ch['node'] else ch['node']['action']['id']
                 print(f"Name: {name}, id {ch['node']['id']}")
             print(f"Children of front-end")
             for ch in tot_dpp['children']:
