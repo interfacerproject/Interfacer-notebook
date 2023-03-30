@@ -62,7 +62,7 @@ This repository contains notebooks for several use cases:
 4.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/libre-solar.ipynb) corresponding to the [Libre Solar](https://libre.solar/) project.
 5.  a [flow](https://github.com/interfacerproject/Interfacer-notebook/blob/main/IFServices.ipynb) including proposals and grouping.
 
-# [LIVE DEMO](https://interfacerproject.github.io/Interfacer-notebo)
+# [LIVE DEMO](https://interfacerproject.github.io/Interfacer-notebook)
 
 <br>
 
