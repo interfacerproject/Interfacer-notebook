@@ -590,9 +590,7 @@ def check_betrace(tot_dpp, be_dpp):
                             found = True
                             check_betrace(ch, ch_be)
                     if not found:
-                        print(
-                            f"Children {tot_dpp['id']} and {be_dpp['node']['id']} differ in ids")
-                        break
+                        raise Exception(f"Children {tot_dpp['id']} and {be_dpp['node']['id']} differ in ids")
                 return
         else:
             print(f"Children of id {tot_dpp['id']} differ in number")
@@ -603,9 +601,10 @@ def check_betrace(tot_dpp, be_dpp):
             print(f"Children of front-end")
             for ch in tot_dpp['children']:
                 print(f"Name: {ch['name']}, id {ch['id']}")
+            raise Exception(f"Children of id {tot_dpp['id']} differ in number")
 
     else:
-        print(f"{tot_dpp['id']} different from {be_dpp['node']['id']}")
+        raise Exception(f"{tot_dpp['id']} different from {be_dpp['node']['id']}")
 
 
 def check_traces(trace, events, fe_dpp, be_dpp):
