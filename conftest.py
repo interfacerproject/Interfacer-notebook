@@ -23,9 +23,9 @@ def present(request):
     return request.config.getoption("--present")
 
 
-@pytest.fixture
-def nb_file(request):
-    return request.config.getoption("--nb_file")
+# @pytest.fixture
+# def nb_file(request):
+#     return request.config.getoption("--nb_file")
 
 
 @pytest.fixture

@@ -1,0 +1,2681 @@
+[
+  {
+    "accountingQuantity": {
+      "hasNumericalValue": "0",
+      "hasUnit": {
+        "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "currentLocation": {
+      "alt": "0",
+      "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+      "lat": "51.47240440868687",
+      "long": "5.412460440524406",
+      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+      "name": "CleanLease",
+      "note": "location.user2.org"
+    },
+    "custodian": {
+      "id": "0630H1AJ39F268Q676VGD0YS5R",
+      "name": "User Two",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+        "lat": "51.47240440868687",
+        "long": "5.412460440524406",
+        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+        "name": "CleanLease",
+        "note": "location.user2.org"
+      },
+      "type": "Person"
+    },
+    "id": "063MF64M5N7ZRXGN8E9PTRPH94",
+    "metadata": null,
+    "name": "gown",
+    "onhandQuantity": {
+      "hasNumericalValue": "1",
+      "hasUnit": {
+        "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+        "label": "u_piece",
+        "symbol": "om2:one"
+      }
+    },
+    "primaryAccountable": {
+      "id": "0630H1AJ39F268Q676VGD0YS5R",
+      "name": "User Two",
+      "note": null,
+      "primaryLocation": {
+        "alt": "0",
+        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+        "lat": "51.47240440868687",
+        "long": "5.412460440524406",
+        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+        "name": "CleanLease",
+        "note": "location.user2.org"
+      },
+      "type": "Person"
+    },
+    "trackingIdentifier": "gown-6491",
+    "type": "EconomicResource",
+    "children": [
+      {
+        "action": {
+          "id": "modify",
+          "inputOutput": "output",
+          "label": "modify",
+          "onhandEffect": "noEffect",
+          "pairsWith": "modify",
+          "resourceEffect": "noEffect"
+        },
+        "agreedIn": null,
+        "atLocation": null,
+        "effortQuantity": null,
+        "hasBeginning": null,
+        "hasEnd": null,
+        "hasPointInTime": "2023-04-03T14:49:55.523962Z",
+        "id": "063MF64T4W71SQ8762B478BE38",
+        "inputOf": null,
+        "note": "modify clean after washing",
+        "outputOf": {
+          "basedOn": null,
+          "classifiedAs": null,
+          "deletable": false,
+          "finished": false,
+          "groupedIn": null,
+          "hasBeginning": "2023-04-03T14:49:50.640440Z",
+          "hasEnd": "2023-04-03T14:49:50.640440Z",
+          "id": "063MF6489A5X2GWCFGMETWN4TG",
+          "name": "Clean_gown",
+          "nestedIn": null,
+          "note": "Clean gown process performed by User Two",
+          "plannedWithin": null,
+          "type": "Process"
+        },
+        "provider": {
+          "id": "0630H1AJ39F268Q676VGD0YS5R",
+          "name": "User Two",
+          "note": null,
+          "primaryLocation": {
+            "alt": "0",
+            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+            "lat": "51.47240440868687",
+            "long": "5.412460440524406",
+            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+            "name": "CleanLease",
+            "note": "location.user2.org"
+          },
+          "type": "Person"
+        },
+        "realizationOf": null,
+        "receiver": {
+          "id": "0630H1AJ39F268Q676VGD0YS5R",
+          "name": "User Two",
+          "note": null,
+          "primaryLocation": {
+            "alt": "0",
+            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+            "lat": "51.47240440868687",
+            "long": "5.412460440524406",
+            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+            "name": "CleanLease",
+            "note": "location.user2.org"
+          },
+          "type": "Person"
+        },
+        "resourceClassifiedAs": null,
+        "resourceConformsTo": null,
+        "resourceInventoriedAs": {
+          "accountingQuantity": {
+            "hasNumericalValue": "0",
+            "hasUnit": {
+              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+              "label": "u_piece",
+              "symbol": "om2:one"
+            }
+          },
+          "currentLocation": {
+            "alt": "0",
+            "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+            "lat": "51.47240440868687",
+            "long": "5.412460440524406",
+            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+            "name": "CleanLease",
+            "note": "location.user2.org"
+          },
+          "custodian": {
+            "id": "0630H1AJ39F268Q676VGD0YS5R",
+            "name": "User Two",
+            "note": null,
+            "primaryLocation": {
+              "alt": "0",
+              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+              "lat": "51.47240440868687",
+              "long": "5.412460440524406",
+              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+              "name": "CleanLease",
+              "note": "location.user2.org"
+            },
+            "type": "Person"
+          },
+          "id": "063MF64M5N7ZRXGN8E9PTRPH94",
+          "metadata": null,
+          "name": "gown",
+          "onhandQuantity": {
+            "hasNumericalValue": "1",
+            "hasUnit": {
+              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+              "label": "u_piece",
+              "symbol": "om2:one"
+            }
+          },
+          "primaryAccountable": {
+            "id": "0630H1AJ39F268Q676VGD0YS5R",
+            "name": "User Two",
+            "note": null,
+            "primaryLocation": {
+              "alt": "0",
+              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+              "lat": "51.47240440868687",
+              "long": "5.412460440524406",
+              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+              "name": "CleanLease",
+              "note": "location.user2.org"
+            },
+            "type": "Person"
+          },
+          "trackingIdentifier": "gown-6491",
+          "type": "EconomicResource"
+        },
+        "resourceQuantity": {
+          "hasNumericalValue": "1",
+          "hasUnit": {
+            "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+            "label": "u_piece",
+            "symbol": "om2:one"
+          }
+        },
+        "toLocation": null,
+        "toResourceInventoriedAs": null,
+        "triggeredBy": null,
+        "type": "EconomicEvent",
+        "name": "modify",
+        "children": [
+          {
+            "basedOn": null,
+            "classifiedAs": null,
+            "deletable": false,
+            "finished": false,
+            "groupedIn": null,
+            "hasBeginning": "2023-04-03T14:49:50.640440Z",
+            "hasEnd": "2023-04-03T14:49:50.640440Z",
+            "id": "063MF6489A5X2GWCFGMETWN4TG",
+            "name": "Clean_gown",
+            "nestedIn": null,
+            "note": "Clean gown process performed by User Two",
+            "plannedWithin": null,
+            "type": "Process",
+            "children": [
+              {
+                "action": {
+                  "id": "consume",
+                  "inputOutput": "input",
+                  "label": "consume",
+                  "onhandEffect": "decrement",
+                  "pairsWith": "notApplicable",
+                  "resourceEffect": "decrement"
+                },
+                "agreedIn": null,
+                "atLocation": null,
+                "effortQuantity": null,
+                "hasBeginning": null,
+                "hasEnd": null,
+                "hasPointInTime": "2023-04-03T14:49:55.129234Z",
+                "id": "063MF64RRJCCT8MQA2HP6BAKDG",
+                "inputOf": {
+                  "basedOn": null,
+                  "classifiedAs": null,
+                  "deletable": false,
+                  "finished": false,
+                  "groupedIn": null,
+                  "hasBeginning": "2023-04-03T14:49:50.640440Z",
+                  "hasEnd": "2023-04-03T14:49:50.640440Z",
+                  "id": "063MF6489A5X2GWCFGMETWN4TG",
+                  "name": "Clean_gown",
+                  "nestedIn": null,
+                  "note": "Clean gown process performed by User Two",
+                  "plannedWithin": null,
+                  "type": "Process"
+                },
+                "note": "consume soap for the washing",
+                "outputOf": null,
+                "provider": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "realizationOf": null,
+                "receiver": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "resourceClassifiedAs": null,
+                "resourceConformsTo": null,
+                "resourceInventoriedAs": {
+                  "accountingQuantity": {
+                    "hasNumericalValue": "50",
+                    "hasUnit": {
+                      "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                      "label": "kg",
+                      "symbol": "om2:kilogram"
+                    }
+                  },
+                  "currentLocation": {
+                    "alt": "0",
+                    "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "custodian": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "id": "063MF63ZNMQS3ZSM5ATBQMFYXC",
+                  "metadata": null,
+                  "name": "soap",
+                  "onhandQuantity": {
+                    "hasNumericalValue": "50",
+                    "hasUnit": {
+                      "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                      "label": "kg",
+                      "symbol": "om2:kilogram"
+                    }
+                  },
+                  "primaryAccountable": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "trackingIdentifier": "soap-1133",
+                  "type": "EconomicResource"
+                },
+                "resourceQuantity": {
+                  "hasNumericalValue": "50",
+                  "hasUnit": {
+                    "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                    "label": "kg",
+                    "symbol": "om2:kilogram"
+                  }
+                },
+                "toLocation": null,
+                "toResourceInventoriedAs": null,
+                "triggeredBy": null,
+                "type": "EconomicEvent",
+                "name": "consume",
+                "children": [
+                  {
+                    "accountingQuantity": {
+                      "hasNumericalValue": "50",
+                      "hasUnit": {
+                        "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                        "label": "kg",
+                        "symbol": "om2:kilogram"
+                      }
+                    },
+                    "currentLocation": {
+                      "alt": "0",
+                      "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "custodian": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                        "lat": "51.47240440868687",
+                        "long": "5.412460440524406",
+                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                        "name": "CleanLease",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "id": "063MF63ZNMQS3ZSM5ATBQMFYXC",
+                    "metadata": null,
+                    "name": "soap",
+                    "onhandQuantity": {
+                      "hasNumericalValue": "50",
+                      "hasUnit": {
+                        "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                        "label": "kg",
+                        "symbol": "om2:kilogram"
+                      }
+                    },
+                    "primaryAccountable": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                        "lat": "51.47240440868687",
+                        "long": "5.412460440524406",
+                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                        "name": "CleanLease",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "trackingIdentifier": "soap-1133",
+                    "type": "EconomicResource",
+                    "children": [
+                      {
+                        "action": {
+                          "id": "raise",
+                          "inputOutput": "notApplicable",
+                          "label": "raise",
+                          "onhandEffect": "increment",
+                          "pairsWith": "notApplicable",
+                          "resourceEffect": "increment"
+                        },
+                        "agreedIn": null,
+                        "atLocation": null,
+                        "effortQuantity": null,
+                        "hasBeginning": null,
+                        "hasEnd": null,
+                        "hasPointInTime": "2023-04-03T14:49:48.689531Z",
+                        "id": "063MF63ZN2BS5EGAW60E021V78",
+                        "inputOf": null,
+                        "note": "create resource",
+                        "outputOf": null,
+                        "provider": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                            "lat": "51.47240440868687",
+                            "long": "5.412460440524406",
+                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                            "name": "CleanLease",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "realizationOf": null,
+                        "receiver": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                            "lat": "51.47240440868687",
+                            "long": "5.412460440524406",
+                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                            "name": "CleanLease",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "resourceClassifiedAs": null,
+                        "resourceConformsTo": {
+                          "defaultUnitOfEffort": null,
+                          "defaultUnitOfResource": {
+                            "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                            "label": "kg",
+                            "symbol": "om2:kilogram"
+                          },
+                          "id": "06314FWQHNPGV1376MHAFJM484",
+                          "name": "soap",
+                          "note": "Specification for soap to be used to wash the gowns",
+                          "resourceClassifiedAs": [
+                            "https://www.wikidata.org/wiki/Q34396"
+                          ]
+                        },
+                        "resourceInventoriedAs": {
+                          "accountingQuantity": {
+                            "hasNumericalValue": "50",
+                            "hasUnit": {
+                              "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                              "label": "kg",
+                              "symbol": "om2:kilogram"
+                            }
+                          },
+                          "currentLocation": {
+                            "alt": "0",
+                            "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                            "lat": "51.47240440868687",
+                            "long": "5.412460440524406",
+                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                            "name": "CleanLease",
+                            "note": "location.user2.org"
+                          },
+                          "custodian": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                              "lat": "51.47240440868687",
+                              "long": "5.412460440524406",
+                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                              "name": "CleanLease",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "id": "063MF63ZNMQS3ZSM5ATBQMFYXC",
+                          "metadata": null,
+                          "name": "soap",
+                          "onhandQuantity": {
+                            "hasNumericalValue": "50",
+                            "hasUnit": {
+                              "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                              "label": "kg",
+                              "symbol": "om2:kilogram"
+                            }
+                          },
+                          "primaryAccountable": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                              "lat": "51.47240440868687",
+                              "long": "5.412460440524406",
+                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                              "name": "CleanLease",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "trackingIdentifier": "soap-1133",
+                          "type": "EconomicResource"
+                        },
+                        "resourceQuantity": {
+                          "hasNumericalValue": "100",
+                          "hasUnit": {
+                            "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                            "label": "kg",
+                            "symbol": "om2:kilogram"
+                          }
+                        },
+                        "toLocation": {
+                          "alt": "0",
+                          "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                          "lat": "51.47240440868687",
+                          "long": "5.412460440524406",
+                          "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                          "name": "CleanLease",
+                          "note": "location.user2.org"
+                        },
+                        "toResourceInventoriedAs": null,
+                        "triggeredBy": null,
+                        "type": "EconomicEvent",
+                        "name": "raise",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "action": {
+                  "id": "consume",
+                  "inputOutput": "input",
+                  "label": "consume",
+                  "onhandEffect": "decrement",
+                  "pairsWith": "notApplicable",
+                  "resourceEffect": "decrement"
+                },
+                "agreedIn": null,
+                "atLocation": null,
+                "effortQuantity": null,
+                "hasBeginning": null,
+                "hasEnd": null,
+                "hasPointInTime": "2023-04-03T14:49:54.733898Z",
+                "id": "063MF64Q87097E82QSM7ZN6TXW",
+                "inputOf": {
+                  "basedOn": null,
+                  "classifiedAs": null,
+                  "deletable": false,
+                  "finished": false,
+                  "groupedIn": null,
+                  "hasBeginning": "2023-04-03T14:49:50.640440Z",
+                  "hasEnd": "2023-04-03T14:49:50.640440Z",
+                  "id": "063MF6489A5X2GWCFGMETWN4TG",
+                  "name": "Clean_gown",
+                  "nestedIn": null,
+                  "note": "Clean gown process performed by User Two",
+                  "plannedWithin": null,
+                  "type": "Process"
+                },
+                "note": "consume water for the washing",
+                "outputOf": null,
+                "provider": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "realizationOf": null,
+                "receiver": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "resourceClassifiedAs": null,
+                "resourceConformsTo": null,
+                "resourceInventoriedAs": {
+                  "accountingQuantity": {
+                    "hasNumericalValue": "25",
+                    "hasUnit": {
+                      "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                      "label": "lt",
+                      "symbol": "om2:litre"
+                    }
+                  },
+                  "currentLocation": {
+                    "alt": "0",
+                    "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "custodian": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "id": "063MF640ZFCR08NYYF4AXM9QGM",
+                  "metadata": null,
+                  "name": "water",
+                  "onhandQuantity": {
+                    "hasNumericalValue": "25",
+                    "hasUnit": {
+                      "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                      "label": "lt",
+                      "symbol": "om2:litre"
+                    }
+                  },
+                  "primaryAccountable": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "trackingIdentifier": "water-9464",
+                  "type": "EconomicResource"
+                },
+                "resourceQuantity": {
+                  "hasNumericalValue": "25",
+                  "hasUnit": {
+                    "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                    "label": "lt",
+                    "symbol": "om2:litre"
+                  }
+                },
+                "toLocation": null,
+                "toResourceInventoriedAs": null,
+                "triggeredBy": null,
+                "type": "EconomicEvent",
+                "name": "consume",
+                "children": [
+                  {
+                    "accountingQuantity": {
+                      "hasNumericalValue": "25",
+                      "hasUnit": {
+                        "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                        "label": "lt",
+                        "symbol": "om2:litre"
+                      }
+                    },
+                    "currentLocation": {
+                      "alt": "0",
+                      "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "custodian": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                        "lat": "51.47240440868687",
+                        "long": "5.412460440524406",
+                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                        "name": "CleanLease",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "id": "063MF640ZFCR08NYYF4AXM9QGM",
+                    "metadata": null,
+                    "name": "water",
+                    "onhandQuantity": {
+                      "hasNumericalValue": "25",
+                      "hasUnit": {
+                        "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                        "label": "lt",
+                        "symbol": "om2:litre"
+                      }
+                    },
+                    "primaryAccountable": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                        "lat": "51.47240440868687",
+                        "long": "5.412460440524406",
+                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                        "name": "CleanLease",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "trackingIdentifier": "water-9464",
+                    "type": "EconomicResource",
+                    "children": [
+                      {
+                        "action": {
+                          "id": "raise",
+                          "inputOutput": "notApplicable",
+                          "label": "raise",
+                          "onhandEffect": "increment",
+                          "pairsWith": "notApplicable",
+                          "resourceEffect": "increment"
+                        },
+                        "agreedIn": null,
+                        "atLocation": null,
+                        "effortQuantity": null,
+                        "hasBeginning": null,
+                        "hasEnd": null,
+                        "hasPointInTime": "2023-04-03T14:49:49.077399Z",
+                        "id": "063MF640Z0RXPY2GZ4HF002QXR",
+                        "inputOf": null,
+                        "note": "create resource",
+                        "outputOf": null,
+                        "provider": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                            "lat": "51.47240440868687",
+                            "long": "5.412460440524406",
+                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                            "name": "CleanLease",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "realizationOf": null,
+                        "receiver": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                            "lat": "51.47240440868687",
+                            "long": "5.412460440524406",
+                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                            "name": "CleanLease",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "resourceClassifiedAs": null,
+                        "resourceConformsTo": {
+                          "defaultUnitOfEffort": null,
+                          "defaultUnitOfResource": {
+                            "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                            "label": "lt",
+                            "symbol": "om2:litre"
+                          },
+                          "id": "06314FWR2SVGY7V69689HDP2A0",
+                          "name": "water",
+                          "note": "Specification for water to be used to wash the gowns",
+                          "resourceClassifiedAs": [
+                            "https://www.wikidata.org/wiki/Q283"
+                          ]
+                        },
+                        "resourceInventoriedAs": {
+                          "accountingQuantity": {
+                            "hasNumericalValue": "25",
+                            "hasUnit": {
+                              "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                              "label": "lt",
+                              "symbol": "om2:litre"
+                            }
+                          },
+                          "currentLocation": {
+                            "alt": "0",
+                            "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                            "lat": "51.47240440868687",
+                            "long": "5.412460440524406",
+                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                            "name": "CleanLease",
+                            "note": "location.user2.org"
+                          },
+                          "custodian": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                              "lat": "51.47240440868687",
+                              "long": "5.412460440524406",
+                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                              "name": "CleanLease",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "id": "063MF640ZFCR08NYYF4AXM9QGM",
+                          "metadata": null,
+                          "name": "water",
+                          "onhandQuantity": {
+                            "hasNumericalValue": "25",
+                            "hasUnit": {
+                              "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                              "label": "lt",
+                              "symbol": "om2:litre"
+                            }
+                          },
+                          "primaryAccountable": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                              "lat": "51.47240440868687",
+                              "long": "5.412460440524406",
+                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                              "name": "CleanLease",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "trackingIdentifier": "water-9464",
+                          "type": "EconomicResource"
+                        },
+                        "resourceQuantity": {
+                          "hasNumericalValue": "50",
+                          "hasUnit": {
+                            "id": "06314FWPF8FAEYZX0FJVPR8F98",
+                            "label": "lt",
+                            "symbol": "om2:litre"
+                          }
+                        },
+                        "toLocation": {
+                          "alt": "0",
+                          "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                          "lat": "51.47240440868687",
+                          "long": "5.412460440524406",
+                          "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                          "name": "CleanLease",
+                          "note": "location.user2.org"
+                        },
+                        "toResourceInventoriedAs": null,
+                        "triggeredBy": null,
+                        "type": "EconomicEvent",
+                        "name": "raise",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "action": {
+                  "id": "accept",
+                  "inputOutput": "notApplicable",
+                  "label": "accept",
+                  "onhandEffect": "input",
+                  "pairsWith": "modify",
+                  "resourceEffect": "noEffect"
+                },
+                "agreedIn": null,
+                "atLocation": null,
+                "effortQuantity": null,
+                "hasBeginning": null,
+                "hasEnd": null,
+                "hasPointInTime": "2023-04-03T14:49:54.349856Z",
+                "id": "063MF64NN4YVZ8T4BKRXHRQE1G",
+                "inputOf": {
+                  "basedOn": null,
+                  "classifiedAs": null,
+                  "deletable": false,
+                  "finished": false,
+                  "groupedIn": null,
+                  "hasBeginning": "2023-04-03T14:49:50.640440Z",
+                  "hasEnd": "2023-04-03T14:49:50.640440Z",
+                  "id": "063MF6489A5X2GWCFGMETWN4TG",
+                  "name": "Clean_gown",
+                  "nestedIn": null,
+                  "note": "Clean gown process performed by User Two",
+                  "plannedWithin": null,
+                  "type": "Process"
+                },
+                "note": "accept gowns to be cleaned",
+                "outputOf": null,
+                "provider": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "realizationOf": null,
+                "receiver": {
+                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                  "name": "User Two",
+                  "note": null,
+                  "primaryLocation": {
+                    "alt": "0",
+                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "type": "Person"
+                },
+                "resourceClassifiedAs": null,
+                "resourceConformsTo": null,
+                "resourceInventoriedAs": {
+                  "accountingQuantity": {
+                    "hasNumericalValue": "0",
+                    "hasUnit": {
+                      "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "currentLocation": {
+                    "alt": "0",
+                    "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                    "lat": "51.47240440868687",
+                    "long": "5.412460440524406",
+                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                    "name": "CleanLease",
+                    "note": "location.user2.org"
+                  },
+                  "custodian": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "id": "063MF64M5N7ZRXGN8E9PTRPH94",
+                  "metadata": null,
+                  "name": "gown",
+                  "onhandQuantity": {
+                    "hasNumericalValue": "1",
+                    "hasUnit": {
+                      "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                      "label": "u_piece",
+                      "symbol": "om2:one"
+                    }
+                  },
+                  "primaryAccountable": {
+                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                    "name": "User Two",
+                    "note": null,
+                    "primaryLocation": {
+                      "alt": "0",
+                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "type": "Person"
+                  },
+                  "trackingIdentifier": "gown-6491",
+                  "type": "EconomicResource"
+                },
+                "resourceQuantity": {
+                  "hasNumericalValue": "1",
+                  "hasUnit": {
+                    "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                    "label": "u_piece",
+                    "symbol": "om2:one"
+                  }
+                },
+                "toLocation": null,
+                "toResourceInventoriedAs": null,
+                "triggeredBy": null,
+                "type": "EconomicEvent",
+                "name": "accept",
+                "children": [
+                  {
+                    "accountingQuantity": {
+                      "hasNumericalValue": "0",
+                      "hasUnit": {
+                        "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "currentLocation": {
+                      "alt": "0",
+                      "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                      "lat": "51.47240440868687",
+                      "long": "5.412460440524406",
+                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                      "name": "CleanLease",
+                      "note": "location.user2.org"
+                    },
+                    "custodian": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                        "lat": "51.47240440868687",
+                        "long": "5.412460440524406",
+                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                        "name": "CleanLease",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "id": "063MF64M5N7ZRXGN8E9PTRPH94",
+                    "metadata": null,
+                    "name": "gown",
+                    "onhandQuantity": {
+                      "hasNumericalValue": "1",
+                      "hasUnit": {
+                        "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                        "label": "u_piece",
+                        "symbol": "om2:one"
+                      }
+                    },
+                    "primaryAccountable": {
+                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                      "name": "User Two",
+                      "note": null,
+                      "primaryLocation": {
+                        "alt": "0",
+                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                        "lat": "51.47240440868687",
+                        "long": "5.412460440524406",
+                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                        "name": "CleanLease",
+                        "note": "location.user2.org"
+                      },
+                      "type": "Person"
+                    },
+                    "trackingIdentifier": "gown-6491",
+                    "type": "EconomicResource",
+                    "children": [
+                      {
+                        "action": {
+                          "id": "transferCustody",
+                          "inputOutput": "notApplicable",
+                          "label": "transfer-custody",
+                          "onhandEffect": "decrementIncrement",
+                          "pairsWith": "notApplicable",
+                          "resourceEffect": "noEffect"
+                        },
+                        "agreedIn": null,
+                        "atLocation": null,
+                        "effortQuantity": null,
+                        "hasBeginning": null,
+                        "hasEnd": null,
+                        "hasPointInTime": "2023-04-03T14:49:53.652592Z",
+                        "id": "063MF64M4WX2595JRZ98RZQ7AW",
+                        "inputOf": null,
+                        "note": "Transfer gowns to cleaner",
+                        "outputOf": null,
+                        "provider": {
+                          "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                          "name": "User One",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                            "lat": "52.35871773455108",
+                            "long": "4.916762398221842",
+                            "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                            "name": "OLVG",
+                            "note": "location.user1.org"
+                          },
+                          "type": "Person"
+                        },
+                        "realizationOf": null,
+                        "receiver": {
+                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                          "name": "User Two",
+                          "note": null,
+                          "primaryLocation": {
+                            "alt": "0",
+                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                            "lat": "51.47240440868687",
+                            "long": "5.412460440524406",
+                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                            "name": "CleanLease",
+                            "note": "location.user2.org"
+                          },
+                          "type": "Person"
+                        },
+                        "resourceClassifiedAs": null,
+                        "resourceConformsTo": null,
+                        "resourceInventoriedAs": {
+                          "accountingQuantity": {
+                            "hasNumericalValue": "0",
+                            "hasUnit": {
+                              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "currentLocation": {
+                            "alt": "0",
+                            "id": "06314FWK826K05J2QC2HPDBR2G",
+                            "lat": "52.35871773455108",
+                            "long": "4.916762398221842",
+                            "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                            "name": "OLVG",
+                            "note": "location.user1.org"
+                          },
+                          "custodian": {
+                            "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                            "name": "User One",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                              "lat": "52.35871773455108",
+                              "long": "4.916762398221842",
+                              "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                              "name": "OLVG",
+                              "note": "location.user1.org"
+                            },
+                            "type": "Person"
+                          },
+                          "id": "063MF64CS9A0N9R5480YCKRMA0",
+                          "metadata": null,
+                          "name": "gown",
+                          "onhandQuantity": {
+                            "hasNumericalValue": "0",
+                            "hasUnit": {
+                              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "primaryAccountable": {
+                            "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                            "name": "User One",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                              "lat": "52.35871773455108",
+                              "long": "4.916762398221842",
+                              "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                              "name": "OLVG",
+                              "note": "location.user1.org"
+                            },
+                            "type": "Person"
+                          },
+                          "trackingIdentifier": "gown-6491",
+                          "type": "EconomicResource"
+                        },
+                        "resourceQuantity": {
+                          "hasNumericalValue": "1",
+                          "hasUnit": {
+                            "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                            "label": "u_piece",
+                            "symbol": "om2:one"
+                          }
+                        },
+                        "toLocation": {
+                          "alt": "0",
+                          "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                          "lat": "51.47240440868687",
+                          "long": "5.412460440524406",
+                          "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                          "name": "CleanLease",
+                          "note": "location.user2.org"
+                        },
+                        "toResourceInventoriedAs": {
+                          "accountingQuantity": {
+                            "hasNumericalValue": "0",
+                            "hasUnit": {
+                              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "currentLocation": {
+                            "alt": "0",
+                            "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                            "lat": "51.47240440868687",
+                            "long": "5.412460440524406",
+                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                            "name": "CleanLease",
+                            "note": "location.user2.org"
+                          },
+                          "custodian": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                              "lat": "51.47240440868687",
+                              "long": "5.412460440524406",
+                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                              "name": "CleanLease",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "id": "063MF64M5N7ZRXGN8E9PTRPH94",
+                          "metadata": null,
+                          "name": "gown",
+                          "onhandQuantity": {
+                            "hasNumericalValue": "1",
+                            "hasUnit": {
+                              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                              "label": "u_piece",
+                              "symbol": "om2:one"
+                            }
+                          },
+                          "primaryAccountable": {
+                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                            "name": "User Two",
+                            "note": null,
+                            "primaryLocation": {
+                              "alt": "0",
+                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                              "lat": "51.47240440868687",
+                              "long": "5.412460440524406",
+                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                              "name": "CleanLease",
+                              "note": "location.user2.org"
+                            },
+                            "type": "Person"
+                          },
+                          "trackingIdentifier": "gown-6491",
+                          "type": "EconomicResource"
+                        },
+                        "triggeredBy": null,
+                        "type": "EconomicEvent",
+                        "name": "transferCustody",
+                        "children": [
+                          {
+                            "accountingQuantity": {
+                              "hasNumericalValue": "0",
+                              "hasUnit": {
+                                "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                "label": "u_piece",
+                                "symbol": "om2:one"
+                              }
+                            },
+                            "currentLocation": {
+                              "alt": "0",
+                              "id": "06314FWK826K05J2QC2HPDBR2G",
+                              "lat": "52.35871773455108",
+                              "long": "4.916762398221842",
+                              "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                              "name": "OLVG",
+                              "note": "location.user1.org"
+                            },
+                            "custodian": {
+                              "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                              "name": "User One",
+                              "note": null,
+                              "primaryLocation": {
+                                "alt": "0",
+                                "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                "lat": "52.35871773455108",
+                                "long": "4.916762398221842",
+                                "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                "name": "OLVG",
+                                "note": "location.user1.org"
+                              },
+                              "type": "Person"
+                            },
+                            "id": "063MF64CS9A0N9R5480YCKRMA0",
+                            "metadata": null,
+                            "name": "gown",
+                            "onhandQuantity": {
+                              "hasNumericalValue": "0",
+                              "hasUnit": {
+                                "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                "label": "u_piece",
+                                "symbol": "om2:one"
+                              }
+                            },
+                            "primaryAccountable": {
+                              "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                              "name": "User One",
+                              "note": null,
+                              "primaryLocation": {
+                                "alt": "0",
+                                "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                "lat": "52.35871773455108",
+                                "long": "4.916762398221842",
+                                "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                "name": "OLVG",
+                                "note": "location.user1.org"
+                              },
+                              "type": "Person"
+                            },
+                            "trackingIdentifier": "gown-6491",
+                            "type": "EconomicResource",
+                            "children": [
+                              {
+                                "action": {
+                                  "id": "modify",
+                                  "inputOutput": "output",
+                                  "label": "modify",
+                                  "onhandEffect": "noEffect",
+                                  "pairsWith": "modify",
+                                  "resourceEffect": "noEffect"
+                                },
+                                "agreedIn": null,
+                                "atLocation": null,
+                                "effortQuantity": null,
+                                "hasBeginning": null,
+                                "hasEnd": null,
+                                "hasPointInTime": "2023-04-03T14:49:53.246110Z",
+                                "id": "063MF64H9CNPP3Q5W57ZR62PBR",
+                                "inputOf": null,
+                                "note": "modify dirty after use",
+                                "outputOf": {
+                                  "basedOn": null,
+                                  "classifiedAs": null,
+                                  "deletable": false,
+                                  "finished": false,
+                                  "groupedIn": null,
+                                  "hasBeginning": "2023-04-03T14:49:50.294179Z",
+                                  "hasEnd": "2023-04-03T14:49:50.294179Z",
+                                  "id": "063MF645T4EBV955VZD9FDNR2M",
+                                  "name": "Use_gown",
+                                  "nestedIn": null,
+                                  "note": "Use gown process performed by User One",
+                                  "plannedWithin": null,
+                                  "type": "Process"
+                                },
+                                "provider": {
+                                  "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                  "name": "User One",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                    "lat": "52.35871773455108",
+                                    "long": "4.916762398221842",
+                                    "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                    "name": "OLVG",
+                                    "note": "location.user1.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "realizationOf": null,
+                                "receiver": {
+                                  "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                  "name": "User One",
+                                  "note": null,
+                                  "primaryLocation": {
+                                    "alt": "0",
+                                    "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                    "lat": "52.35871773455108",
+                                    "long": "4.916762398221842",
+                                    "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                    "name": "OLVG",
+                                    "note": "location.user1.org"
+                                  },
+                                  "type": "Person"
+                                },
+                                "resourceClassifiedAs": null,
+                                "resourceConformsTo": null,
+                                "resourceInventoriedAs": {
+                                  "accountingQuantity": {
+                                    "hasNumericalValue": "0",
+                                    "hasUnit": {
+                                      "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "currentLocation": {
+                                    "alt": "0",
+                                    "id": "06314FWK826K05J2QC2HPDBR2G",
+                                    "lat": "52.35871773455108",
+                                    "long": "4.916762398221842",
+                                    "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                    "name": "OLVG",
+                                    "note": "location.user1.org"
+                                  },
+                                  "custodian": {
+                                    "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                    "name": "User One",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                      "lat": "52.35871773455108",
+                                      "long": "4.916762398221842",
+                                      "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                      "name": "OLVG",
+                                      "note": "location.user1.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "id": "063MF64CS9A0N9R5480YCKRMA0",
+                                  "metadata": null,
+                                  "name": "gown",
+                                  "onhandQuantity": {
+                                    "hasNumericalValue": "0",
+                                    "hasUnit": {
+                                      "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                      "label": "u_piece",
+                                      "symbol": "om2:one"
+                                    }
+                                  },
+                                  "primaryAccountable": {
+                                    "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                    "name": "User One",
+                                    "note": null,
+                                    "primaryLocation": {
+                                      "alt": "0",
+                                      "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                      "lat": "52.35871773455108",
+                                      "long": "4.916762398221842",
+                                      "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                      "name": "OLVG",
+                                      "note": "location.user1.org"
+                                    },
+                                    "type": "Person"
+                                  },
+                                  "trackingIdentifier": "gown-6491",
+                                  "type": "EconomicResource"
+                                },
+                                "resourceQuantity": {
+                                  "hasNumericalValue": "1",
+                                  "hasUnit": {
+                                    "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                    "label": "u_piece",
+                                    "symbol": "om2:one"
+                                  }
+                                },
+                                "toLocation": null,
+                                "toResourceInventoriedAs": null,
+                                "triggeredBy": null,
+                                "type": "EconomicEvent",
+                                "name": "modify",
+                                "children": [
+                                  {
+                                    "basedOn": null,
+                                    "classifiedAs": null,
+                                    "deletable": false,
+                                    "finished": false,
+                                    "groupedIn": null,
+                                    "hasBeginning": "2023-04-03T14:49:50.294179Z",
+                                    "hasEnd": "2023-04-03T14:49:50.294179Z",
+                                    "id": "063MF645T4EBV955VZD9FDNR2M",
+                                    "name": "Use_gown",
+                                    "nestedIn": null,
+                                    "note": "Use gown process performed by User One",
+                                    "plannedWithin": null,
+                                    "type": "Process",
+                                    "children": [
+                                      {
+                                        "action": {
+                                          "id": "accept",
+                                          "inputOutput": "notApplicable",
+                                          "label": "accept",
+                                          "onhandEffect": "input",
+                                          "pairsWith": "modify",
+                                          "resourceEffect": "noEffect"
+                                        },
+                                        "agreedIn": null,
+                                        "atLocation": null,
+                                        "effortQuantity": null,
+                                        "hasBeginning": null,
+                                        "hasEnd": null,
+                                        "hasPointInTime": "2023-04-03T14:49:52.784355Z",
+                                        "id": "063MF64FR90A7Q7TMNXQDVQJ2R",
+                                        "inputOf": {
+                                          "basedOn": null,
+                                          "classifiedAs": null,
+                                          "deletable": false,
+                                          "finished": false,
+                                          "groupedIn": null,
+                                          "hasBeginning": "2023-04-03T14:49:50.294179Z",
+                                          "hasEnd": "2023-04-03T14:49:50.294179Z",
+                                          "id": "063MF645T4EBV955VZD9FDNR2M",
+                                          "name": "Use_gown",
+                                          "nestedIn": null,
+                                          "note": "Use gown process performed by User One",
+                                          "plannedWithin": null,
+                                          "type": "Process"
+                                        },
+                                        "note": "accept use for surgery",
+                                        "outputOf": null,
+                                        "provider": {
+                                          "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                          "name": "User One",
+                                          "note": null,
+                                          "primaryLocation": {
+                                            "alt": "0",
+                                            "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                            "lat": "52.35871773455108",
+                                            "long": "4.916762398221842",
+                                            "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                            "name": "OLVG",
+                                            "note": "location.user1.org"
+                                          },
+                                          "type": "Person"
+                                        },
+                                        "realizationOf": null,
+                                        "receiver": {
+                                          "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                          "name": "User One",
+                                          "note": null,
+                                          "primaryLocation": {
+                                            "alt": "0",
+                                            "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                            "lat": "52.35871773455108",
+                                            "long": "4.916762398221842",
+                                            "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                            "name": "OLVG",
+                                            "note": "location.user1.org"
+                                          },
+                                          "type": "Person"
+                                        },
+                                        "resourceClassifiedAs": null,
+                                        "resourceConformsTo": null,
+                                        "resourceInventoriedAs": {
+                                          "accountingQuantity": {
+                                            "hasNumericalValue": "0",
+                                            "hasUnit": {
+                                              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                              "label": "u_piece",
+                                              "symbol": "om2:one"
+                                            }
+                                          },
+                                          "currentLocation": {
+                                            "alt": "0",
+                                            "id": "06314FWK826K05J2QC2HPDBR2G",
+                                            "lat": "52.35871773455108",
+                                            "long": "4.916762398221842",
+                                            "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                            "name": "OLVG",
+                                            "note": "location.user1.org"
+                                          },
+                                          "custodian": {
+                                            "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                            "name": "User One",
+                                            "note": null,
+                                            "primaryLocation": {
+                                              "alt": "0",
+                                              "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                              "lat": "52.35871773455108",
+                                              "long": "4.916762398221842",
+                                              "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                              "name": "OLVG",
+                                              "note": "location.user1.org"
+                                            },
+                                            "type": "Person"
+                                          },
+                                          "id": "063MF64CS9A0N9R5480YCKRMA0",
+                                          "metadata": null,
+                                          "name": "gown",
+                                          "onhandQuantity": {
+                                            "hasNumericalValue": "0",
+                                            "hasUnit": {
+                                              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                              "label": "u_piece",
+                                              "symbol": "om2:one"
+                                            }
+                                          },
+                                          "primaryAccountable": {
+                                            "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                            "name": "User One",
+                                            "note": null,
+                                            "primaryLocation": {
+                                              "alt": "0",
+                                              "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                              "lat": "52.35871773455108",
+                                              "long": "4.916762398221842",
+                                              "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                              "name": "OLVG",
+                                              "note": "location.user1.org"
+                                            },
+                                            "type": "Person"
+                                          },
+                                          "trackingIdentifier": "gown-6491",
+                                          "type": "EconomicResource"
+                                        },
+                                        "resourceQuantity": {
+                                          "hasNumericalValue": "1",
+                                          "hasUnit": {
+                                            "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                            "label": "u_piece",
+                                            "symbol": "om2:one"
+                                          }
+                                        },
+                                        "toLocation": null,
+                                        "toResourceInventoriedAs": null,
+                                        "triggeredBy": null,
+                                        "type": "EconomicEvent",
+                                        "name": "accept",
+                                        "children": [
+                                          {
+                                            "accountingQuantity": {
+                                              "hasNumericalValue": "0",
+                                              "hasUnit": {
+                                                "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                "label": "u_piece",
+                                                "symbol": "om2:one"
+                                              }
+                                            },
+                                            "currentLocation": {
+                                              "alt": "0",
+                                              "id": "06314FWK826K05J2QC2HPDBR2G",
+                                              "lat": "52.35871773455108",
+                                              "long": "4.916762398221842",
+                                              "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                              "name": "OLVG",
+                                              "note": "location.user1.org"
+                                            },
+                                            "custodian": {
+                                              "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                              "name": "User One",
+                                              "note": null,
+                                              "primaryLocation": {
+                                                "alt": "0",
+                                                "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                                "lat": "52.35871773455108",
+                                                "long": "4.916762398221842",
+                                                "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                                "name": "OLVG",
+                                                "note": "location.user1.org"
+                                              },
+                                              "type": "Person"
+                                            },
+                                            "id": "063MF64CS9A0N9R5480YCKRMA0",
+                                            "metadata": null,
+                                            "name": "gown",
+                                            "onhandQuantity": {
+                                              "hasNumericalValue": "0",
+                                              "hasUnit": {
+                                                "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                "label": "u_piece",
+                                                "symbol": "om2:one"
+                                              }
+                                            },
+                                            "primaryAccountable": {
+                                              "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                              "name": "User One",
+                                              "note": null,
+                                              "primaryLocation": {
+                                                "alt": "0",
+                                                "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                                "lat": "52.35871773455108",
+                                                "long": "4.916762398221842",
+                                                "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                                "name": "OLVG",
+                                                "note": "location.user1.org"
+                                              },
+                                              "type": "Person"
+                                            },
+                                            "trackingIdentifier": "gown-6491",
+                                            "type": "EconomicResource",
+                                            "children": [
+                                              {
+                                                "action": {
+                                                  "id": "transferCustody",
+                                                  "inputOutput": "notApplicable",
+                                                  "label": "transfer-custody",
+                                                  "onhandEffect": "decrementIncrement",
+                                                  "pairsWith": "notApplicable",
+                                                  "resourceEffect": "noEffect"
+                                                },
+                                                "agreedIn": null,
+                                                "atLocation": null,
+                                                "effortQuantity": null,
+                                                "hasBeginning": null,
+                                                "hasEnd": null,
+                                                "hasPointInTime": "2023-04-03T14:49:52.086007Z",
+                                                "id": "063MF64CRFF81A379VPY8J74Z8",
+                                                "inputOf": null,
+                                                "note": "Transfer gowns to hospital",
+                                                "outputOf": null,
+                                                "provider": {
+                                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                  "name": "User Two",
+                                                  "note": null,
+                                                  "primaryLocation": {
+                                                    "alt": "0",
+                                                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                    "lat": "51.47240440868687",
+                                                    "long": "5.412460440524406",
+                                                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                    "name": "CleanLease",
+                                                    "note": "location.user2.org"
+                                                  },
+                                                  "type": "Person"
+                                                },
+                                                "realizationOf": null,
+                                                "receiver": {
+                                                  "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                                  "name": "User One",
+                                                  "note": null,
+                                                  "primaryLocation": {
+                                                    "alt": "0",
+                                                    "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                                    "lat": "52.35871773455108",
+                                                    "long": "4.916762398221842",
+                                                    "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                                    "name": "OLVG",
+                                                    "note": "location.user1.org"
+                                                  },
+                                                  "type": "Person"
+                                                },
+                                                "resourceClassifiedAs": null,
+                                                "resourceConformsTo": null,
+                                                "resourceInventoriedAs": {
+                                                  "accountingQuantity": {
+                                                    "hasNumericalValue": "1",
+                                                    "hasUnit": {
+                                                      "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                      "label": "u_piece",
+                                                      "symbol": "om2:one"
+                                                    }
+                                                  },
+                                                  "currentLocation": {
+                                                    "alt": "0",
+                                                    "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                                                    "lat": "51.47240440868687",
+                                                    "long": "5.412460440524406",
+                                                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                    "name": "CleanLease",
+                                                    "note": "location.user2.org"
+                                                  },
+                                                  "custodian": {
+                                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                    "name": "User Two",
+                                                    "note": null,
+                                                    "primaryLocation": {
+                                                      "alt": "0",
+                                                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                      "lat": "51.47240440868687",
+                                                      "long": "5.412460440524406",
+                                                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                      "name": "CleanLease",
+                                                      "note": "location.user2.org"
+                                                    },
+                                                    "type": "Person"
+                                                  },
+                                                  "id": "063MF64BD60M69J2CVNEBXZN7R",
+                                                  "metadata": null,
+                                                  "name": "gown",
+                                                  "onhandQuantity": {
+                                                    "hasNumericalValue": "0",
+                                                    "hasUnit": {
+                                                      "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                      "label": "u_piece",
+                                                      "symbol": "om2:one"
+                                                    }
+                                                  },
+                                                  "primaryAccountable": {
+                                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                    "name": "User Two",
+                                                    "note": null,
+                                                    "primaryLocation": {
+                                                      "alt": "0",
+                                                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                      "lat": "51.47240440868687",
+                                                      "long": "5.412460440524406",
+                                                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                      "name": "CleanLease",
+                                                      "note": "location.user2.org"
+                                                    },
+                                                    "type": "Person"
+                                                  },
+                                                  "trackingIdentifier": "gown-6491",
+                                                  "type": "EconomicResource"
+                                                },
+                                                "resourceQuantity": {
+                                                  "hasNumericalValue": "1",
+                                                  "hasUnit": {
+                                                    "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                    "label": "u_piece",
+                                                    "symbol": "om2:one"
+                                                  }
+                                                },
+                                                "toLocation": {
+                                                  "alt": "0",
+                                                  "id": "06314FWK826K05J2QC2HPDBR2G",
+                                                  "lat": "52.35871773455108",
+                                                  "long": "4.916762398221842",
+                                                  "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                                  "name": "OLVG",
+                                                  "note": "location.user1.org"
+                                                },
+                                                "toResourceInventoriedAs": {
+                                                  "accountingQuantity": {
+                                                    "hasNumericalValue": "0",
+                                                    "hasUnit": {
+                                                      "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                      "label": "u_piece",
+                                                      "symbol": "om2:one"
+                                                    }
+                                                  },
+                                                  "currentLocation": {
+                                                    "alt": "0",
+                                                    "id": "06314FWK826K05J2QC2HPDBR2G",
+                                                    "lat": "52.35871773455108",
+                                                    "long": "4.916762398221842",
+                                                    "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                                    "name": "OLVG",
+                                                    "note": "location.user1.org"
+                                                  },
+                                                  "custodian": {
+                                                    "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                                    "name": "User One",
+                                                    "note": null,
+                                                    "primaryLocation": {
+                                                      "alt": "0",
+                                                      "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                                      "lat": "52.35871773455108",
+                                                      "long": "4.916762398221842",
+                                                      "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                                      "name": "OLVG",
+                                                      "note": "location.user1.org"
+                                                    },
+                                                    "type": "Person"
+                                                  },
+                                                  "id": "063MF64CS9A0N9R5480YCKRMA0",
+                                                  "metadata": null,
+                                                  "name": "gown",
+                                                  "onhandQuantity": {
+                                                    "hasNumericalValue": "0",
+                                                    "hasUnit": {
+                                                      "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                      "label": "u_piece",
+                                                      "symbol": "om2:one"
+                                                    }
+                                                  },
+                                                  "primaryAccountable": {
+                                                    "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                                    "name": "User One",
+                                                    "note": null,
+                                                    "primaryLocation": {
+                                                      "alt": "0",
+                                                      "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                                      "lat": "52.35871773455108",
+                                                      "long": "4.916762398221842",
+                                                      "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                                      "name": "OLVG",
+                                                      "note": "location.user1.org"
+                                                    },
+                                                    "type": "Person"
+                                                  },
+                                                  "trackingIdentifier": "gown-6491",
+                                                  "type": "EconomicResource"
+                                                },
+                                                "triggeredBy": null,
+                                                "type": "EconomicEvent",
+                                                "name": "transferCustody",
+                                                "children": [
+                                                  {
+                                                    "accountingQuantity": {
+                                                      "hasNumericalValue": "1",
+                                                      "hasUnit": {
+                                                        "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                        "label": "u_piece",
+                                                        "symbol": "om2:one"
+                                                      }
+                                                    },
+                                                    "currentLocation": {
+                                                      "alt": "0",
+                                                      "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                                                      "lat": "51.47240440868687",
+                                                      "long": "5.412460440524406",
+                                                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                      "name": "CleanLease",
+                                                      "note": "location.user2.org"
+                                                    },
+                                                    "custodian": {
+                                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                      "name": "User Two",
+                                                      "note": null,
+                                                      "primaryLocation": {
+                                                        "alt": "0",
+                                                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                        "lat": "51.47240440868687",
+                                                        "long": "5.412460440524406",
+                                                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                        "name": "CleanLease",
+                                                        "note": "location.user2.org"
+                                                      },
+                                                      "type": "Person"
+                                                    },
+                                                    "id": "063MF64BD60M69J2CVNEBXZN7R",
+                                                    "metadata": null,
+                                                    "name": "gown",
+                                                    "onhandQuantity": {
+                                                      "hasNumericalValue": "0",
+                                                      "hasUnit": {
+                                                        "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                        "label": "u_piece",
+                                                        "symbol": "om2:one"
+                                                      }
+                                                    },
+                                                    "primaryAccountable": {
+                                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                      "name": "User Two",
+                                                      "note": null,
+                                                      "primaryLocation": {
+                                                        "alt": "0",
+                                                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                        "lat": "51.47240440868687",
+                                                        "long": "5.412460440524406",
+                                                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                        "name": "CleanLease",
+                                                        "note": "location.user2.org"
+                                                      },
+                                                      "type": "Person"
+                                                    },
+                                                    "trackingIdentifier": "gown-6491",
+                                                    "type": "EconomicResource",
+                                                    "children": [
+                                                      {
+                                                        "action": {
+                                                          "id": "produce",
+                                                          "inputOutput": "output",
+                                                          "label": "produce",
+                                                          "onhandEffect": "increment",
+                                                          "pairsWith": "notApplicable",
+                                                          "resourceEffect": "increment"
+                                                        },
+                                                        "agreedIn": null,
+                                                        "atLocation": null,
+                                                        "effortQuantity": null,
+                                                        "hasBeginning": null,
+                                                        "hasEnd": null,
+                                                        "hasPointInTime": "2023-04-03T14:49:51.744022Z",
+                                                        "id": "063MF64BCX472GTFDPBCJBYA4R",
+                                                        "inputOf": null,
+                                                        "note": "produce gown",
+                                                        "outputOf": {
+                                                          "basedOn": null,
+                                                          "classifiedAs": null,
+                                                          "deletable": false,
+                                                          "finished": false,
+                                                          "groupedIn": null,
+                                                          "hasBeginning": "2023-04-03T14:49:49.818538Z",
+                                                          "hasEnd": "2023-04-03T14:49:49.818538Z",
+                                                          "id": "063MF6446YTNZAKX5F4BD8J1TW",
+                                                          "name": "Sew_gown",
+                                                          "nestedIn": null,
+                                                          "note": "Sew gown process performed by User One",
+                                                          "plannedWithin": null,
+                                                          "type": "Process"
+                                                        },
+                                                        "provider": {
+                                                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                          "name": "User Two",
+                                                          "note": null,
+                                                          "primaryLocation": {
+                                                            "alt": "0",
+                                                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                            "lat": "51.47240440868687",
+                                                            "long": "5.412460440524406",
+                                                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                            "name": "CleanLease",
+                                                            "note": "location.user2.org"
+                                                          },
+                                                          "type": "Person"
+                                                        },
+                                                        "realizationOf": null,
+                                                        "receiver": {
+                                                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                          "name": "User Two",
+                                                          "note": null,
+                                                          "primaryLocation": {
+                                                            "alt": "0",
+                                                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                            "lat": "51.47240440868687",
+                                                            "long": "5.412460440524406",
+                                                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                            "name": "CleanLease",
+                                                            "note": "location.user2.org"
+                                                          },
+                                                          "type": "Person"
+                                                        },
+                                                        "resourceClassifiedAs": null,
+                                                        "resourceConformsTo": {
+                                                          "defaultUnitOfEffort": null,
+                                                          "defaultUnitOfResource": {
+                                                            "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                            "label": "u_piece",
+                                                            "symbol": "om2:one"
+                                                          },
+                                                          "id": "06314FWS42M4YPTS18NF43Z1S8",
+                                                          "name": "gown",
+                                                          "note": "Specification for gowns",
+                                                          "resourceClassifiedAs": [
+                                                            "https://www.wikidata.org/wiki/Q89990310"
+                                                          ]
+                                                        },
+                                                        "resourceInventoriedAs": {
+                                                          "accountingQuantity": {
+                                                            "hasNumericalValue": "1",
+                                                            "hasUnit": {
+                                                              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                              "label": "u_piece",
+                                                              "symbol": "om2:one"
+                                                            }
+                                                          },
+                                                          "currentLocation": {
+                                                            "alt": "0",
+                                                            "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                                                            "lat": "51.47240440868687",
+                                                            "long": "5.412460440524406",
+                                                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                            "name": "CleanLease",
+                                                            "note": "location.user2.org"
+                                                          },
+                                                          "custodian": {
+                                                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                            "name": "User Two",
+                                                            "note": null,
+                                                            "primaryLocation": {
+                                                              "alt": "0",
+                                                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                              "lat": "51.47240440868687",
+                                                              "long": "5.412460440524406",
+                                                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                              "name": "CleanLease",
+                                                              "note": "location.user2.org"
+                                                            },
+                                                            "type": "Person"
+                                                          },
+                                                          "id": "063MF64BD60M69J2CVNEBXZN7R",
+                                                          "metadata": null,
+                                                          "name": "gown",
+                                                          "onhandQuantity": {
+                                                            "hasNumericalValue": "0",
+                                                            "hasUnit": {
+                                                              "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                              "label": "u_piece",
+                                                              "symbol": "om2:one"
+                                                            }
+                                                          },
+                                                          "primaryAccountable": {
+                                                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                            "name": "User Two",
+                                                            "note": null,
+                                                            "primaryLocation": {
+                                                              "alt": "0",
+                                                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                              "lat": "51.47240440868687",
+                                                              "long": "5.412460440524406",
+                                                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                              "name": "CleanLease",
+                                                              "note": "location.user2.org"
+                                                            },
+                                                            "type": "Person"
+                                                          },
+                                                          "trackingIdentifier": "gown-6491",
+                                                          "type": "EconomicResource"
+                                                        },
+                                                        "resourceQuantity": {
+                                                          "hasNumericalValue": "1",
+                                                          "hasUnit": {
+                                                            "id": "06314FWNFKD1VDBPG9MVGXA2RM",
+                                                            "label": "u_piece",
+                                                            "symbol": "om2:one"
+                                                          }
+                                                        },
+                                                        "toLocation": {
+                                                          "alt": "0",
+                                                          "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                                                          "lat": "51.47240440868687",
+                                                          "long": "5.412460440524406",
+                                                          "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                          "name": "CleanLease",
+                                                          "note": "location.user2.org"
+                                                        },
+                                                        "toResourceInventoriedAs": null,
+                                                        "triggeredBy": null,
+                                                        "type": "EconomicEvent",
+                                                        "name": "produce",
+                                                        "children": [
+                                                          {
+                                                            "basedOn": null,
+                                                            "classifiedAs": null,
+                                                            "deletable": false,
+                                                            "finished": false,
+                                                            "groupedIn": null,
+                                                            "hasBeginning": "2023-04-03T14:49:49.818538Z",
+                                                            "hasEnd": "2023-04-03T14:49:49.818538Z",
+                                                            "id": "063MF6446YTNZAKX5F4BD8J1TW",
+                                                            "name": "Sew_gown",
+                                                            "nestedIn": null,
+                                                            "note": "Sew gown process performed by User One",
+                                                            "plannedWithin": null,
+                                                            "type": "Process",
+                                                            "children": [
+                                                              {
+                                                                "action": {
+                                                                  "id": "consume",
+                                                                  "inputOutput": "input",
+                                                                  "label": "consume",
+                                                                  "onhandEffect": "decrement",
+                                                                  "pairsWith": "notApplicable",
+                                                                  "resourceEffect": "decrement"
+                                                                },
+                                                                "agreedIn": null,
+                                                                "atLocation": null,
+                                                                "effortQuantity": null,
+                                                                "hasBeginning": null,
+                                                                "hasEnd": null,
+                                                                "hasPointInTime": "2023-04-03T14:49:51.283373Z",
+                                                                "id": "063MF649SFB4HM2CN7QCA74RGM",
+                                                                "inputOf": {
+                                                                  "basedOn": null,
+                                                                  "classifiedAs": null,
+                                                                  "deletable": false,
+                                                                  "finished": false,
+                                                                  "groupedIn": null,
+                                                                  "hasBeginning": "2023-04-03T14:49:49.818538Z",
+                                                                  "hasEnd": "2023-04-03T14:49:49.818538Z",
+                                                                  "id": "063MF6446YTNZAKX5F4BD8J1TW",
+                                                                  "name": "Sew_gown",
+                                                                  "nestedIn": null,
+                                                                  "note": "Sew gown process performed by User One",
+                                                                  "plannedWithin": null,
+                                                                  "type": "Process"
+                                                                },
+                                                                "note": "consume cotton for sewing",
+                                                                "outputOf": null,
+                                                                "provider": {
+                                                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                  "name": "User Two",
+                                                                  "note": null,
+                                                                  "primaryLocation": {
+                                                                    "alt": "0",
+                                                                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                    "lat": "51.47240440868687",
+                                                                    "long": "5.412460440524406",
+                                                                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                    "name": "CleanLease",
+                                                                    "note": "location.user2.org"
+                                                                  },
+                                                                  "type": "Person"
+                                                                },
+                                                                "realizationOf": null,
+                                                                "receiver": {
+                                                                  "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                  "name": "User Two",
+                                                                  "note": null,
+                                                                  "primaryLocation": {
+                                                                    "alt": "0",
+                                                                    "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                    "lat": "51.47240440868687",
+                                                                    "long": "5.412460440524406",
+                                                                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                    "name": "CleanLease",
+                                                                    "note": "location.user2.org"
+                                                                  },
+                                                                  "type": "Person"
+                                                                },
+                                                                "resourceClassifiedAs": null,
+                                                                "resourceConformsTo": null,
+                                                                "resourceInventoriedAs": {
+                                                                  "accountingQuantity": {
+                                                                    "hasNumericalValue": "10",
+                                                                    "hasUnit": {
+                                                                      "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                      "label": "kg",
+                                                                      "symbol": "om2:kilogram"
+                                                                    }
+                                                                  },
+                                                                  "currentLocation": {
+                                                                    "alt": "0",
+                                                                    "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                                                                    "lat": "51.47240440868687",
+                                                                    "long": "5.412460440524406",
+                                                                    "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                    "name": "CleanLease",
+                                                                    "note": "location.user2.org"
+                                                                  },
+                                                                  "custodian": {
+                                                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                    "name": "User Two",
+                                                                    "note": null,
+                                                                    "primaryLocation": {
+                                                                      "alt": "0",
+                                                                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                      "lat": "51.47240440868687",
+                                                                      "long": "5.412460440524406",
+                                                                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                      "name": "CleanLease",
+                                                                      "note": "location.user2.org"
+                                                                    },
+                                                                    "type": "Person"
+                                                                  },
+                                                                  "id": "063MF642DHZSJQ1HS33H0CAZ8C",
+                                                                  "metadata": null,
+                                                                  "name": "cotton",
+                                                                  "onhandQuantity": {
+                                                                    "hasNumericalValue": "10",
+                                                                    "hasUnit": {
+                                                                      "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                      "label": "kg",
+                                                                      "symbol": "om2:kilogram"
+                                                                    }
+                                                                  },
+                                                                  "primaryAccountable": {
+                                                                    "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                    "name": "User Two",
+                                                                    "note": null,
+                                                                    "primaryLocation": {
+                                                                      "alt": "0",
+                                                                      "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                      "lat": "51.47240440868687",
+                                                                      "long": "5.412460440524406",
+                                                                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                      "name": "CleanLease",
+                                                                      "note": "location.user2.org"
+                                                                    },
+                                                                    "type": "Person"
+                                                                  },
+                                                                  "trackingIdentifier": "cotton-4387",
+                                                                  "type": "EconomicResource"
+                                                                },
+                                                                "resourceQuantity": {
+                                                                  "hasNumericalValue": "10",
+                                                                  "hasUnit": {
+                                                                    "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                    "label": "kg",
+                                                                    "symbol": "om2:kilogram"
+                                                                  }
+                                                                },
+                                                                "toLocation": null,
+                                                                "toResourceInventoriedAs": null,
+                                                                "triggeredBy": null,
+                                                                "type": "EconomicEvent",
+                                                                "name": "consume",
+                                                                "children": [
+                                                                  {
+                                                                    "accountingQuantity": {
+                                                                      "hasNumericalValue": "10",
+                                                                      "hasUnit": {
+                                                                        "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                        "label": "kg",
+                                                                        "symbol": "om2:kilogram"
+                                                                      }
+                                                                    },
+                                                                    "currentLocation": {
+                                                                      "alt": "0",
+                                                                      "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                                                                      "lat": "51.47240440868687",
+                                                                      "long": "5.412460440524406",
+                                                                      "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                      "name": "CleanLease",
+                                                                      "note": "location.user2.org"
+                                                                    },
+                                                                    "custodian": {
+                                                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                      "name": "User Two",
+                                                                      "note": null,
+                                                                      "primaryLocation": {
+                                                                        "alt": "0",
+                                                                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                        "lat": "51.47240440868687",
+                                                                        "long": "5.412460440524406",
+                                                                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                        "name": "CleanLease",
+                                                                        "note": "location.user2.org"
+                                                                      },
+                                                                      "type": "Person"
+                                                                    },
+                                                                    "id": "063MF642DHZSJQ1HS33H0CAZ8C",
+                                                                    "metadata": null,
+                                                                    "name": "cotton",
+                                                                    "onhandQuantity": {
+                                                                      "hasNumericalValue": "10",
+                                                                      "hasUnit": {
+                                                                        "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                        "label": "kg",
+                                                                        "symbol": "om2:kilogram"
+                                                                      }
+                                                                    },
+                                                                    "primaryAccountable": {
+                                                                      "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                      "name": "User Two",
+                                                                      "note": null,
+                                                                      "primaryLocation": {
+                                                                        "alt": "0",
+                                                                        "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                        "lat": "51.47240440868687",
+                                                                        "long": "5.412460440524406",
+                                                                        "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                        "name": "CleanLease",
+                                                                        "note": "location.user2.org"
+                                                                      },
+                                                                      "type": "Person"
+                                                                    },
+                                                                    "trackingIdentifier": "cotton-4387",
+                                                                    "type": "EconomicResource",
+                                                                    "children": [
+                                                                      {
+                                                                        "action": {
+                                                                          "id": "raise",
+                                                                          "inputOutput": "notApplicable",
+                                                                          "label": "raise",
+                                                                          "onhandEffect": "increment",
+                                                                          "pairsWith": "notApplicable",
+                                                                          "resourceEffect": "increment"
+                                                                        },
+                                                                        "agreedIn": null,
+                                                                        "atLocation": null,
+                                                                        "effortQuantity": null,
+                                                                        "hasBeginning": null,
+                                                                        "hasEnd": null,
+                                                                        "hasPointInTime": "2023-04-03T14:49:49.421912Z",
+                                                                        "id": "063MF642CWXE6D31DFCJ07WMEC",
+                                                                        "inputOf": null,
+                                                                        "note": "create resource",
+                                                                        "outputOf": null,
+                                                                        "provider": {
+                                                                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                          "name": "User Two",
+                                                                          "note": null,
+                                                                          "primaryLocation": {
+                                                                            "alt": "0",
+                                                                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                            "lat": "51.47240440868687",
+                                                                            "long": "5.412460440524406",
+                                                                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                            "name": "CleanLease",
+                                                                            "note": "location.user2.org"
+                                                                          },
+                                                                          "type": "Person"
+                                                                        },
+                                                                        "realizationOf": null,
+                                                                        "receiver": {
+                                                                          "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                          "name": "User Two",
+                                                                          "note": null,
+                                                                          "primaryLocation": {
+                                                                            "alt": "0",
+                                                                            "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                            "lat": "51.47240440868687",
+                                                                            "long": "5.412460440524406",
+                                                                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                            "name": "CleanLease",
+                                                                            "note": "location.user2.org"
+                                                                          },
+                                                                          "type": "Person"
+                                                                        },
+                                                                        "resourceClassifiedAs": null,
+                                                                        "resourceConformsTo": {
+                                                                          "defaultUnitOfEffort": null,
+                                                                          "defaultUnitOfResource": {
+                                                                            "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                            "label": "kg",
+                                                                            "symbol": "om2:kilogram"
+                                                                          },
+                                                                          "id": "06314FWRKN52XNHWTWA586G2AM",
+                                                                          "name": "cotton",
+                                                                          "note": "Specification for cotton to be used to sew the gowns",
+                                                                          "resourceClassifiedAs": [
+                                                                            "https://www.wikidata.org/wiki/Q11457"
+                                                                          ]
+                                                                        },
+                                                                        "resourceInventoriedAs": {
+                                                                          "accountingQuantity": {
+                                                                            "hasNumericalValue": "10",
+                                                                            "hasUnit": {
+                                                                              "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                              "label": "kg",
+                                                                              "symbol": "om2:kilogram"
+                                                                            }
+                                                                          },
+                                                                          "currentLocation": {
+                                                                            "alt": "0",
+                                                                            "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                                                                            "lat": "51.47240440868687",
+                                                                            "long": "5.412460440524406",
+                                                                            "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                            "name": "CleanLease",
+                                                                            "note": "location.user2.org"
+                                                                          },
+                                                                          "custodian": {
+                                                                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                            "name": "User Two",
+                                                                            "note": null,
+                                                                            "primaryLocation": {
+                                                                              "alt": "0",
+                                                                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                              "lat": "51.47240440868687",
+                                                                              "long": "5.412460440524406",
+                                                                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                              "name": "CleanLease",
+                                                                              "note": "location.user2.org"
+                                                                            },
+                                                                            "type": "Person"
+                                                                          },
+                                                                          "id": "063MF642DHZSJQ1HS33H0CAZ8C",
+                                                                          "metadata": null,
+                                                                          "name": "cotton",
+                                                                          "onhandQuantity": {
+                                                                            "hasNumericalValue": "10",
+                                                                            "hasUnit": {
+                                                                              "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                              "label": "kg",
+                                                                              "symbol": "om2:kilogram"
+                                                                            }
+                                                                          },
+                                                                          "primaryAccountable": {
+                                                                            "id": "0630H1AJ39F268Q676VGD0YS5R",
+                                                                            "name": "User Two",
+                                                                            "note": null,
+                                                                            "primaryLocation": {
+                                                                              "alt": "0",
+                                                                              "id": "063JVZGGRE8RN70NKACRKWD5HR",
+                                                                              "lat": "51.47240440868687",
+                                                                              "long": "5.412460440524406",
+                                                                              "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                              "name": "CleanLease",
+                                                                              "note": "location.user2.org"
+                                                                            },
+                                                                            "type": "Person"
+                                                                          },
+                                                                          "trackingIdentifier": "cotton-4387",
+                                                                          "type": "EconomicResource"
+                                                                        },
+                                                                        "resourceQuantity": {
+                                                                          "hasNumericalValue": "20",
+                                                                          "hasUnit": {
+                                                                            "id": "06314FWNZT3NFMZAACMRJ37K1M",
+                                                                            "label": "kg",
+                                                                            "symbol": "om2:kilogram"
+                                                                          }
+                                                                        },
+                                                                        "toLocation": {
+                                                                          "alt": "0",
+                                                                          "id": "06314FWM9TDB72H3Q5FAEHK0B0",
+                                                                          "lat": "51.47240440868687",
+                                                                          "long": "5.412460440524406",
+                                                                          "mappableAddress": "De schakel 30, 5651 Eindhoven",
+                                                                          "name": "CleanLease",
+                                                                          "note": "location.user2.org"
+                                                                        },
+                                                                        "toResourceInventoriedAs": null,
+                                                                        "triggeredBy": null,
+                                                                        "type": "EconomicEvent",
+                                                                        "name": "raise",
+                                                                        "children": []
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "action": {
+                                          "id": "work",
+                                          "inputOutput": "input",
+                                          "label": "work",
+                                          "onhandEffect": "noEffect",
+                                          "pairsWith": "notApplicable",
+                                          "resourceEffect": "noEffect"
+                                        },
+                                        "agreedIn": null,
+                                        "atLocation": null,
+                                        "effortQuantity": {
+                                          "hasNumericalValue": "80",
+                                          "hasUnit": {
+                                            "id": "06314FWPYV3NZFY9SG024EDKE8",
+                                            "label": "h",
+                                            "symbol": "om2:hour"
+                                          }
+                                        },
+                                        "hasBeginning": null,
+                                        "hasEnd": null,
+                                        "hasPointInTime": "2023-04-03T14:49:52.452841Z",
+                                        "id": "063MF64E4M3AJ4Z5WVGV3ERBV0",
+                                        "inputOf": {
+                                          "basedOn": null,
+                                          "classifiedAs": null,
+                                          "deletable": false,
+                                          "finished": false,
+                                          "groupedIn": null,
+                                          "hasBeginning": "2023-04-03T14:49:50.294179Z",
+                                          "hasEnd": "2023-04-03T14:49:50.294179Z",
+                                          "id": "063MF645T4EBV955VZD9FDNR2M",
+                                          "name": "Use_gown",
+                                          "nestedIn": null,
+                                          "note": "Use gown process performed by User One",
+                                          "plannedWithin": null,
+                                          "type": "Process"
+                                        },
+                                        "note": "work perform surgery",
+                                        "outputOf": null,
+                                        "provider": {
+                                          "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                          "name": "User One",
+                                          "note": null,
+                                          "primaryLocation": {
+                                            "alt": "0",
+                                            "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                            "lat": "52.35871773455108",
+                                            "long": "4.916762398221842",
+                                            "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                            "name": "OLVG",
+                                            "note": "location.user1.org"
+                                          },
+                                          "type": "Person"
+                                        },
+                                        "realizationOf": null,
+                                        "receiver": {
+                                          "id": "0630H1AHMPVJ02ARTN8TFRK5ZW",
+                                          "name": "User One",
+                                          "note": null,
+                                          "primaryLocation": {
+                                            "alt": "0",
+                                            "id": "063JVZGFHM4G879CBK2KXS7G0C",
+                                            "lat": "52.35871773455108",
+                                            "long": "4.916762398221842",
+                                            "mappableAddress": "Oosterpark 9, 1091 AC Amsterdam",
+                                            "name": "OLVG",
+                                            "note": "location.user1.org"
+                                          },
+                                          "type": "Person"
+                                        },
+                                        "resourceClassifiedAs": null,
+                                        "resourceConformsTo": {
+                                          "defaultUnitOfEffort": null,
+                                          "defaultUnitOfResource": {
+                                            "id": "06314FWPYV3NZFY9SG024EDKE8",
+                                            "label": "h",
+                                            "symbol": "om2:hour"
+                                          },
+                                          "id": "06314FWSMX528RG86MEMCCA14R",
+                                          "name": "surgical_operation",
+                                          "note": "Specification for surgical operations",
+                                          "resourceClassifiedAs": [
+                                            "https://www.wikidata.org/wiki/Q600236"
+                                          ]
+                                        },
+                                        "resourceInventoriedAs": null,
+                                        "resourceQuantity": null,
+                                        "toLocation": null,
+                                        "toResourceInventoriedAs": null,
+                                        "triggeredBy": null,
+                                        "type": "EconomicEvent",
+                                        "name": "work",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

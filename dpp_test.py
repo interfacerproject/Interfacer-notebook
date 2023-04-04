@@ -2,6 +2,7 @@ import papermill as pm
 from pathlib import Path
 import json
 import argparse
+from pdb import set_trace
 
 TRACE_DIR = './traces'
 REF_DIR = './test_ref'
@@ -21,15 +22,15 @@ params = [
             "help": 'specifies the endpoint to talk to'
         }
     },
-    {
-        "positional": ['-n', '--nb_file'],
-        "params":{
-            "dest": 'nb_file',
-            "action": 'store',
-            "default": NB_FILE,
-            "help": 'specifies the full path to the notebook'
-        }
-    },
+    # {
+    #     "positional": ['-n', '--nb_file'],
+    #     "params":{
+    #         "dest": 'nb_file',
+    #         "action": 'store',
+    #         "default": NB_FILE,
+    #         "help": 'specifies the full path to the notebook'
+    #     }
+    # },
     {
         "positional": ['-p', '--present'],
         "params":{
@@ -54,6 +55,7 @@ def cmp_nodes(ref_dpp, new_dpp, prt=False):
         if not ref_dpp == new_dpp:
             if cmp_nodes_verbose:
                 print(f'Values {ref_dpp} and {new_dpp} differ')
+            # set_trace()
             return False
         else:
             return True
@@ -66,6 +68,7 @@ def cmp_nodes(ref_dpp, new_dpp, prt=False):
             if not cmp_nodes(ref_dpp[key], new_dpp[key]):
                 if cmp_nodes_verbose:
                     print(f'Dict {key} is diffent')
+                # set_trace()
                 return False
         elif type(ref_dpp[key]) is list:
             # find corresponding items to compare
@@ -78,10 +81,12 @@ def cmp_nodes(ref_dpp, new_dpp, prt=False):
                 if not found:
                     if cmp_nodes_verbose:
                         print(f'Item {ref_item} is not in new trace')
+                    # set_trace()
                     return False
         elif ref_dpp[key] != new_dpp[key]:
             if cmp_nodes_verbose:
                 print(f'Key {key} is diffent: {ref_dpp[key]} != {new_dpp[key]}')
+            # set_trace()
             return False
     return True
 
@@ -104,6 +109,7 @@ def cmp_traces_rec(ref_dpp, new_dpp):
         if not found:
             print(
                 f"{ref_dpp['name']} and {new_dpp['name']} have diffent children")
+            # set_trace()
             return False
 
     return True
@@ -118,12 +124,14 @@ def cmp_traces(ref_dpp, new_dpp):
     """
     if not cmp_nodes(ref_dpp, new_dpp):
         print(f"{ref_dpp['name']} and {new_dpp['name']} are different")
+        # set_trace()
         return False
 
     return cmp_traces_rec(ref_dpp, new_dpp)
 
 
-def test_dpp(nb_file, endpoint, present):
+# def test_dpp(nb_file, endpoint, present):
+def test_dpp(endpoint, present):
     """
         This function runs the notebook if present==False,
         (meaning the trace file is already available)
@@ -131,30 +139,46 @@ def test_dpp(nb_file, endpoint, present):
         and passes them to the function that performs the comparison
     """
     # breakpoint()
-    parameters = pm.inspect_notebook(nb_file)
-    exp_name = parameters['USE_CASE']['default'].replace("'", "")
+    nb_files = sorted(Path('.').glob('*.ipynb'))
+    test_passed = True
 
-    if not present:
-        pm.execute_notebook(nb_file, '/dev/null',
-                            parameters=dict(ENDPOINT=endpoint))
+    for nb_file in nb_files:
+        print(f"Testing {nb_file}")
+        parameters = pm.inspect_notebook(nb_file)
+        exp_name = parameters['USE_CASE']['default'].replace("'", "")
 
-    trace_file = f'{exp_name}_fe_trace.json'
+        if not present:
+            try:
+                pm.execute_notebook(nb_file, '/dev/null',
+                                parameters=dict(ENDPOINT=endpoint))
+            except pm.exceptions.PapermillExecutionError as e:
+                # set_trace()
+                print(f"Exception in notebook {nb_file}")
+                print(e.evalue)
+                test_passed = False
+                continue
 
-    file_to_read = Path(REF_DIR, trace_file)
-    with open(file_to_read, 'r') as f:
-        ref_dpp = json.loads(f.read())
-        ref_dpp = ref_dpp[0]
+        trace_file = f'{exp_name}_fe_trace.json'
 
-    file_to_read = Path(TRACE_DIR, trace_file)
-    with open(file_to_read, 'r') as f:
-        new_dpp = json.loads(f.read())
-        new_dpp = new_dpp[0]
+        file_to_read = Path(REF_DIR, trace_file)
+        with open(file_to_read, 'r') as f:
+            ref_dpp = json.loads(f.read())
+            ref_dpp = ref_dpp[0]
 
-    if cmp_traces(ref_dpp, new_dpp):
-        print("verification passed")
+        file_to_read = Path(TRACE_DIR, trace_file)
+        with open(file_to_read, 'r') as f:
+            new_dpp = json.loads(f.read())
+            new_dpp = new_dpp[0]
+
+        if cmp_traces(ref_dpp, new_dpp):
+            print(f"{nb_file}: verification passed")
+        else:
+            print(f"{nb_file}: verification NOT passed")
+            test_passed = False
+            # assert 0
+    if test_passed:
         assert 1
     else:
-        print("verification NOT passed")
         assert 0
 
 
@@ -171,4 +195,5 @@ if __name__ == "__main__":
 
     args, unknown = parser.parse_known_args()
 
-    test_dpp(args.nb_file, args.endpoint, args.present)
+    # test_dpp(args.nb_file, args.endpoint, args.present)
+    test_dpp(args.endpoint, args.present)
