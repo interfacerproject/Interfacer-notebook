@@ -19,6 +19,7 @@ import json
 import inspect
 import requests
 import os
+import contextlib
 from zenroom import zenroom
 import base64
 from datetime import datetime, timezone
@@ -32,6 +33,13 @@ from if_consts import EVENT_FRAG, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROP
         UNIT_FRAG, RESSPEC_FRAG
 
 from if_utils import stringify
+
+def zenroom_wrapper(contract, keys=None, data=None):
+    with open(os.devnull, 'w') as f:
+        with contextlib.redirect_stderr(f):
+            # set_trace()
+            return zenroom.zencode_exec(contract, keys=keys, data=data)
+
 
 # Test zenroom is correctly installed and running
 def generate_random_challenge():

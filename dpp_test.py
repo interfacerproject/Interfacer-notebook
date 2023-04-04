@@ -22,15 +22,15 @@ params = [
             "help": 'specifies the endpoint to talk to'
         }
     },
-    # {
-    #     "positional": ['-n', '--nb_file'],
-    #     "params":{
-    #         "dest": 'nb_file',
-    #         "action": 'store',
-    #         "default": NB_FILE,
-    #         "help": 'specifies the full path to the notebook'
-    #     }
-    # },
+    {
+        "positional": ['-n', '--nb_file'],
+        "params":{
+            "dest": 'nb_file',
+            "action": 'store',
+            "default": '',
+            "help": 'specifies the full path to the notebook'
+        }
+    },
     {
         "positional": ['-p', '--present'],
         "params":{
@@ -67,7 +67,7 @@ def cmp_nodes(ref_dpp, new_dpp, prt=False):
         elif type(ref_dpp[key]) is dict:
             if not cmp_nodes(ref_dpp[key], new_dpp[key]):
                 if cmp_nodes_verbose:
-                    print(f'Dict {key} is diffent')
+                    print(f'Dict {key} is different')
                 # set_trace()
                 return False
         elif type(ref_dpp[key]) is list:
@@ -85,7 +85,7 @@ def cmp_nodes(ref_dpp, new_dpp, prt=False):
                     return False
         elif ref_dpp[key] != new_dpp[key]:
             if cmp_nodes_verbose:
-                print(f'Key {key} is diffent: {ref_dpp[key]} != {new_dpp[key]}')
+                print(f'Key {key} is different: {ref_dpp[key]} != {new_dpp[key]}')
             # set_trace()
             return False
     return True
@@ -108,7 +108,7 @@ def cmp_traces_rec(ref_dpp, new_dpp):
         # Corresponding children not found
         if not found:
             print(
-                f"{ref_dpp['name']} and {new_dpp['name']} have diffent children")
+                f"{ref_dpp['name']} and {new_dpp['name']} have different children")
             # set_trace()
             return False
 
@@ -123,15 +123,14 @@ def cmp_traces(ref_dpp, new_dpp):
         children nodes
     """
     if not cmp_nodes(ref_dpp, new_dpp):
-        print(f"{ref_dpp['name']} and {new_dpp['name']} are different")
+        print(f"Reference {ref_dpp['name']} with id {ref_dpp['id']} and {new_dpp['name']} with id {new_dpp['id']} are different")
         # set_trace()
         return False
 
     return cmp_traces_rec(ref_dpp, new_dpp)
 
 
-# def test_dpp(nb_file, endpoint, present):
-def test_dpp(endpoint, present):
+def test_dpp(nb_file, endpoint, present):
     """
         This function runs the notebook if present==False,
         (meaning the trace file is already available)
@@ -139,7 +138,11 @@ def test_dpp(endpoint, present):
         and passes them to the function that performs the comparison
     """
     # breakpoint()
-    nb_files = sorted(Path('.').glob('*.ipynb'))
+    if nb_file == '':
+        nb_files = sorted(Path('.').glob('*.ipynb'))
+    else:
+        nb_files = [nb_file]
+
     test_passed = True
 
     for nb_file in nb_files:
@@ -195,5 +198,5 @@ if __name__ == "__main__":
 
     args, unknown = parser.parse_known_args()
 
-    # test_dpp(args.nb_file, args.endpoint, args.present)
-    test_dpp(args.endpoint, args.present)
+    test_dpp(args.nb_file, args.endpoint, args.present)
+
