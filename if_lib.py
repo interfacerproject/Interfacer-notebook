@@ -79,7 +79,7 @@ def get_HMAC(email, endpoint, newUser=True):
 
     
     payload = {
-      "query": """mutation ($firstRegistration: Boolean!, $userData: String!){
+      "query": """mutation ($firstRegistration: Boolean!, $userData: JSONObject!){
   
         keypairoomServer(firstRegistration: $firstRegistration, userData: $userData)
       
