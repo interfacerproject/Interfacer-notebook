@@ -149,10 +149,13 @@ def test_dpp(nb_file, endpoint, present):
         print(f"Testing {nb_file}")
         parameters = pm.inspect_notebook(nb_file)
         exp_name = parameters['USE_CASE']['default'].replace("'", "")
+        # breakpoint()
+        out_file = nb_file.stem + ".log"
+        # out_file = '/dev/null'
 
         if not present:
             try:
-                pm.execute_notebook(nb_file, '/dev/null',
+                pm.execute_notebook(nb_file, out_file,
                                 parameters=dict(ENDPOINT=endpoint))
             except pm.exceptions.PapermillExecutionError as e:
                 # set_trace()
