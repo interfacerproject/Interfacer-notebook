@@ -16,7 +16,7 @@ jobs:
   build_and_test:
 
     runs-on: ubuntu-latest
-
+    environment: test_trace
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.11

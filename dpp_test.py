@@ -141,7 +141,7 @@ def test_dpp(nb_file, endpoint, present):
     if nb_file == '':
         nb_files = sorted(Path('.').glob('*.ipynb'))
     else:
-        nb_files = [nb_file]
+        nb_files = [Path(nb_file)]
 
     test_passed = True
 
@@ -150,7 +150,7 @@ def test_dpp(nb_file, endpoint, present):
         parameters = pm.inspect_notebook(nb_file)
         exp_name = parameters['USE_CASE']['default'].replace("'", "")
         # breakpoint()
-        out_file = nb_file.stem + ".log"
+        out_file = nb_file.stem + ".nb.log"
         # out_file = '/dev/null'
 
         if not present:
