@@ -171,7 +171,7 @@ def read_HMAC(file, users_data, user, endpoint):
         # no need to save since we read it from file
     
 
-DEBUG_generate_keypair = False
+DEBUG_generate_keypair = True
 # Generate the user keypair (and the mnemonic seed)
 def generate_keypair(userdata: dict) -> dict:
     """
@@ -261,23 +261,23 @@ def generate_keypair(userdata: dict) -> dict:
 
         When I create the key derivation of 'whereParentsMet'
         and I rename the 'key derivation' to 'whereParentsMet.kdf'
-        When I insert 'whereParentsMet.kdf' in 'hashedAnswers'
+        When I move 'whereParentsMet.kdf' in 'hashedAnswers'
 
         When I create the key derivation of 'nameFirstPet'
         and I rename the 'key derivation' to 'nameFirstPet.kdf'
-        When I insert 'nameFirstPet.kdf' in 'hashedAnswers'
+        When I move 'nameFirstPet.kdf' in 'hashedAnswers'
 
         When I create the key derivation of 'whereHomeTown'
         and I rename the 'key derivation' to 'whereHomeTown.kdf'
-        When I insert 'whereHomeTown.kdf' in 'hashedAnswers'
+        When I move 'whereHomeTown.kdf' in 'hashedAnswers'
 
         When I create the key derivation of 'nameFirstTeacher'
         and I rename the 'key derivation' to 'nameFirstTeacher.kdf'
-        When I insert 'nameFirstTeacher.kdf' in 'hashedAnswers'
+        When I move 'nameFirstTeacher.kdf' in 'hashedAnswers'
 
         When I create the key derivation of 'nameMotherMaid'
         and I rename the 'key derivation' to 'nameMotherMaid.kdf'
-        When I insert 'nameMotherMaid.kdf' in 'hashedAnswers'
+        When I move 'nameMotherMaid.kdf' in 'hashedAnswers'
 
 
         # This prints the keyring
@@ -308,7 +308,13 @@ def generate_keypair(userdata: dict) -> dict:
     if DEBUG_generate_keypair:
         print(f'result: {resz}')
 
-    resz_json = json.loads(resz.output)
+    try:
+        resz_json = json.loads(resz.output)
+    except json.JSONDecodeError as e:
+        print(f"Error in zenroom's json reply: {resz}")
+        print(f"Error: {e}")
+        return None
+
 
     if DEBUG_generate_keypair:
         print(f"Generated keypair data: {json.dumps(resz_json, indent=2)}")
@@ -446,6 +452,9 @@ def create_Person(name, username, email, eddsaPublicKey, endpoint, newPerson=Tru
         for err in res_json['errors']:
             if err['message'] == "user: [\"has already been taken\"]":
                 return create_Person(name, username, email, eddsaPublicKey, endpoint, newPerson=False)
+            elif err['message'] == "you are not an admin":
+                raise Exception("We cannot create users, check admin key")
+                return None
 
     if newPerson:
         user_id = res_json['data']['createPerson']['agent']['id']
