@@ -6,7 +6,7 @@ from pdb import set_trace
 
 TRACE_DIR = './traces'
 REF_DIR = './test_ref'
-ENDPOINT = 'http://zenflows-debug.interfacer.dyne.org/api'
+ENDPOINT = 'https://zenflows.interfacer-staging.dyne.im/api' # current staging env
 NB_FILE = 'IFServices.ipynb'
 
 NOT_COMPARABLE = ['id', 'trackingIdentifier',
