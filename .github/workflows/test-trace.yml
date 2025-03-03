@@ -42,6 +42,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       env: 
-        IF_KEY: ${{ secrets_KEY }}
+        IF_KEY: ${{ secrets.SECRETS_KEY }}
       run: |
         pytest
