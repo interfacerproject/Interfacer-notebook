@@ -19,6 +19,11 @@ jobs:
     environment: test_trace
     steps:
     - uses: actions/checkout@v3
+    - name: Install zencode-exec latest
+      uses: sigoden/install-binary@v1
+      with:
+        repo: dyne/zenroom
+        name: zencode-exec
     - name: Set up Python 3.11
       uses: actions/setup-python@v3
       with:
@@ -29,7 +34,6 @@ jobs:
         if [ -f pip_requirements.txt ]; then pip install -r pip_requirements.txt; fi
         pip install flake8 pytest
         pip install zenroom requests notebook papermill plotly
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
