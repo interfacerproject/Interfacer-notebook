@@ -23,6 +23,7 @@ jobs:
       uses: sigoden/install-binary@v1
       with:
         repo: dyne/zenroom
+        tag: latest
         name: zencode-exec
     - name: Set up Python 3.11
       uses: actions/setup-python@v3
