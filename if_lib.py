@@ -25,7 +25,7 @@ import base64
 from datetime import datetime, timezone
 import random
 from pdb import set_trace
-from typing import Dict, Union
+from typing import Dict, Union, List, Tuple
 
 from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS
 from if_consts import EVENT_FRAG, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, \
@@ -676,10 +676,13 @@ def get_location_id(file:str, user_data:Dict[str, Union[str, Dict[str, str]]], l
         print(f"Location id available in file for {loc_data['name']}")
         loc_data['id'] = temp_loc_data['id']
 
-# Read the location id from file or generate it by calling the back-end
-DEBUG_set_user_location = False
-def set_user_location(file, users_data, locs_data, user, endpoint, use_filesystem=True):
 
+DEBUG_set_user_location = False
+# expose_as post
+def set_user_location(file:str, users_data:Dict[str, Dict[str, Union[str, Dict[str, str]]]], locs_data:Dict[str, Dict[str,str|float]], user:str, endpoint:str, use_filesystem:bool=True)->None:
+    """
+        Read the location id from file or generate it by calling the back-end
+    """
     user_data = users_data[user]
 
     if 'location_id' in user_data:
@@ -737,8 +740,11 @@ def set_user_location(file, users_data, locs_data, user, endpoint, use_filesyste
             json.dump(users_data, f)
 
 
-# Read the unit id from file or generate it by calling the back-end
-def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint, use_filesystem=True):
+# expose_as post
+def get_unit_id(file:str, user_data:Dict[str, Union[str, Dict[str, str]]], units_data:Dict[str,Dict[str,str]], name:str, label:str, symbol:str, endpoint:str, use_filesystem:bool=True)-> None:
+    """
+        Read the unit id from file or generate it by calling the back-end
+    """
     
     if name in units_data and 'id' in units_data[f'{name}']:
         print(f"Unit {name} available")
@@ -800,8 +806,11 @@ def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint, use_
         
 
 
-# Read the resource specification id or create a new one if not available
-def get_resource_spec_id(file, user_data, res_spec_data, name, note, classification, default_unit_id, endpoint,use_filesystem=True):
+# expose_as post
+def get_resource_spec_id(file:str, user_data:Dict[str, Union[str, Dict[str, str]]], res_spec_data:Dict[str,Dict[str,str]], name:str, note:str, classification:str, default_unit_id, endpoint,use_filesystem=True)->None:
+    """
+        Read the resource specification id or create a new one if not available
+    """
 
     if name in res_spec_data and 'id' in res_spec_data[f'{name}']:
         print(f"Specification {name} available")
@@ -944,11 +953,11 @@ def create_resource(user_data, res_data, res_spec_data, amount, endpoint):
     
     return res_json['data']['createEconomicEvent']['economicEvent']['id'], ts
 
-
-
-# Create the resource by calling the back-end
 DEBUG_reduce_resource = False
-def reduce_resource(user_data, res_data, res_spec_data, amount, endpoint):
+def reduce_resource(user_data:Dict[str, Union[str, Dict[str, str]]], res_data:Dict[str,str|List[str]], res_spec_data:Dict[str,Dict[str,str]], amount:int|float, endpoint:str)->Tuple[str,str]:
+    """
+        Diminuish the quantity of the resource by calling the back-end
+    """
     
     provider = user_data['id']
     receiver = user_data['id']
@@ -1015,10 +1024,20 @@ def reduce_resource(user_data, res_data, res_spec_data, amount, endpoint):
    
     return res_json['data']['createEconomicEvent']['economicEvent']['id'], ts
 
+# expose_as post
+def reduce_resource_wrapped(rec_event:Dict[str,str], user_data:Dict[str, Union[str, Dict[str, str]]], res_data:Dict[str,str|List[str]], res_spec_data:Dict[str,Dict[str,str]], amount:int|float, endpoint:str)->None:
+    """
+        Diminuish the quantity of the resource by calling the back-end
+    """
+    event_id, ts = reduce_resource(user_data, res_data, res_spec_data, amount, endpoint)
+    rec_event['event_id'] = event_id
+    rec_event['ts'] = ts
 
-# Wrapper for the resource creation
-def get_resource(res_data, res_spec_data, res_name, user_data, event_seq, amount, endpoint):
-    
+# expose_as post
+def get_resource(res_data:Dict[str,Dict[str,str|List[str]]], res_spec_data:Dict[str, Dict[str, str]], res_name:str, user_data:Dict[str, Union[str, Dict[str, str]]], event_seq:List[Dict[str,str]], amount:int|float, endpoint:str)->None:
+    """
+        Wrapper for the resource creation
+    """    
 #     breakpoint()
     res_data[f'{res_name}_res'] = {}
     cur_res = res_data[f'{res_name}_res']
@@ -1075,9 +1094,11 @@ def create_process(cur_process, user_data, endpoint):
     cur_process['id'] = res_json['data']['createProcess']['process']['id']
 
 
-# Wrapper for process creation
-def get_process(process_name, process_data, note, user_data, endpoint):
-
+# expose_as post
+def get_process(process_name:str, process_data:Dict[str, Dict[str, str]], note:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoint:str)->None:
+    """
+        Wrapper for process creation
+    """
 #     name = process_name.replace(' ', '_')
 
     if process_name in process_data:
@@ -1092,9 +1113,11 @@ def get_process(process_name, process_data, note, user_data, endpoint):
     create_process(cur_process, user_data, endpoint)    
 
 DEBUG_create_event = False
-# This function implements all actions != transfer actions
-def create_event(provider, action, note, amount, process, res_spec_data, endpoint, \
-                 existing_res:dict={}, new_res:dict={}, effort_spec:dict={}, receiver:dict={}, process2:dict={}):
+def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, amount:int|float, process:Dict[str,str], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str, \
+                 existing_res:Dict[str,str|List[str]]={}, new_res:Dict[str,str|List[str]]={}, effort_spec:Dict[str,str|int|float]={}, receiver:Dict[str, Union[str, Dict[str, str]]]={}, process2:Dict[str,str]={})->Tuple[str, str]:
+    """
+        This function implements all actions != transfer actions
+    """
 
     if not action in SUPPORTED_ACTIONS:
         print(f"We do not support {action} yet")
@@ -1257,6 +1280,21 @@ def create_event(provider, action, note, amount, process, res_spec_data, endpoin
 
     return res_json['data']['createEconomicEvent']['economicEvent']['id'], ts
 
+# expose_as post
+def create_event_wrapped(rec_event:Dict[str,str],provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, amount:int|float, process:Dict[str,str], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str, \
+                 existing_res:Dict[str,str|List[str]]={}, new_res:Dict[str,str|List[str]]={}, effort_spec:Dict[str,str|int|float]={}, receiver:Dict[str, Union[str, Dict[str, str]]]={}, process2:Dict[str,str]={})->None:
+    """
+        This function implements all actions != transfer actions
+    """
+    # wrapped version of create_event
+    event_id, ts = create_event(provider, action, note, amount, process, res_spec_data, endpoint, existing_res, new_res, \
+                 effort_spec, receiver, process2)
+    rec_event['event_id'] = event_id
+    rec_event['ts'] = ts
+    
+
+    
+
 
 # Update the id of the resource in case of transfer
 def update_id(resource, new_id):
@@ -1265,10 +1303,13 @@ def update_id(resource, new_id):
     resource['previous_ids'].append(resource['id'])
     resource['id'] = new_id
 
-# This function implements all transfer actions
-DEBUG_make_transfer = False
-def make_transfer(provider_data, action, note, receiver_data, amount, existing_res, locs_data, res_spec_data, endpoint):
 
+DEBUG_make_transfer = False
+def make_transfer(provider_data:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, 
+                  receiver_data:Dict[str, Union[str, Dict[str, str]]], amount:int|float, existing_res:Dict[str,str|List[str]], locs_data:Dict[str, Dict[str,str|float]], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str)->Tuple[str,str]:
+    """
+        This function implements all transfer actions
+    """
     ts = datetime.now(timezone.utc).isoformat()
 
     variables = {
@@ -1336,6 +1377,15 @@ def make_transfer(provider_data, action, note, receiver_data, amount, existing_r
     update_id(existing_res, transferred_id)
 
     return res_json['data']['createEconomicEvent']['economicEvent']['id'], ts
+
+# expose_as post
+def make_transfer_wrapped(rec_event:Dict[str,str], provider_data:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, 
+                  receiver_data:Dict[str, Union[str, Dict[str, str]]], amount:int|float, existing_res:Dict[str,str|List[str]], locs_data:Dict[str, Dict[str,str|float]], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str)->None:
+    
+    event_id, ts = make_transfer(provider_data, action, note, receiver_data, amount, existing_res, locs_data,
+                                 res_spec_data, endpoint)
+    rec_event['event_id'] = event_id
+    rec_event['ts'] = ts
 
 
 DEBUG_show_resource = False
