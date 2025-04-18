@@ -25,7 +25,7 @@ import base64
 from datetime import datetime, timezone
 import random
 from pdb import set_trace
-
+from typing import Dict, Union
 
 from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS
 from if_consts import EVENT_FRAG, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, \
@@ -42,7 +42,8 @@ def zenroom_wrapper(contract, keys=None, data=None):
 
 
 # Test zenroom is correctly installed and running
-def generate_random_challenge():
+# expose_as get
+def generate_random_challenge() -> str:
     """
         This function calls zenroom to generate
         a random string to be used as challenge
@@ -58,14 +59,15 @@ def generate_random_challenge():
     try:
         resz = zenroom.zencode_exec(contract)
     except Exception as e:
-        print(f'Exception in zenroom call: {e}')
-        return None
+        msg = f'Exception in zenroom call: {e}'
+        print(msg)
+        return msg
 
     resz_json = json.loads(resz.output)
 
     print(f"Generated challenge: {resz_json['challenge']}")
 
-    return
+    return resz_json['challenge']
 # we will save endpoint specific files since the data is saved on a particular endpoint
 
 # Get the seed from the server to later generate the keypair
@@ -134,8 +136,12 @@ def get_HMAC(email, endpoint, newUser=True):
 
 
 # if the HMAC is not in the conf files call the function to get it
-def read_HMAC(file, users_data, user, endpoint):
-    
+# expose_as post
+def read_HMAC(file:str, users_data:Dict[str, Dict[str, Union[str, Dict[str, str]]]], user:str, endpoint:str, use_filesystem:bool=True) -> None:
+    """
+        This function return a HMAC from the data if present (in users_data or filesystem).
+        Otherwise it calls an internal function that makes a request to the server to obtain it.
+    """
     # this should not be possible since we initialize the data, but anyway
     if not f'{user}' in users_data:
         users_data[f'{user}'] = {}
@@ -147,7 +153,7 @@ def read_HMAC(file, users_data, user, endpoint):
     if 'seedServerSideShard.HMAC' in user_data:
         print(f"Server HMAC available for {user_data['name']}")
         return
-    if os.path.isfile(file):
+    if use_filesystem and os.path.isfile(file):
         with open(file,'r') as f:
                 tmp_users_data = json.loads(f.read())
                 tmp_user_data = tmp_users_data[f'{user}'] 
@@ -162,10 +168,11 @@ def read_HMAC(file, users_data, user, endpoint):
         # save the HMAC in the user data
         user_data['seedServerSideShard.HMAC'] = res_json['data']['keypairoomServer']
 
-        # save data with HMAC
-        with open(file,'w') as f:
-            # Save the entire data structure
-            json.dump(users_data, f)
+        if use_filesystem:
+            # save data with HMAC
+            with open(file,'w') as f:
+                # Save the entire data structure
+                json.dump(users_data, f)
     else:
         user_data['seedServerSideShard.HMAC'] = tmp_user_data['seedServerSideShard.HMAC']
         # no need to save since we read it from file
@@ -321,9 +328,12 @@ def generate_keypair(userdata: dict) -> dict:
 
     return resz_json
 
-# Read the keypair from conf files or call the function to generate it
-def read_keypair(file, users_data, user):
-    
+
+# expose_as post
+def read_keypair(file:str, users_data:Dict[str, Dict[str, Union[str, Dict[str, str]]]], user:str, use_filesystem:bool=True)-> None:
+    """
+        Read the keypair from conf files or call the function to generate it
+    """    
     # this should not be possible since we initialize the data, but anyway
     if not f'{user}' in users_data:
         users_data[f'{user}'] = {}
@@ -336,7 +346,7 @@ def read_keypair(file, users_data, user):
         print(f"Keypair available for {user_data['name']}")
         return
         
-    if os.path.isfile(file):
+    if use_filesystem and os.path.isfile(file):
         with open(file,'r') as f:
                 tmp_users_data = json.loads(f.read())
                 tmp_user_data = tmp_users_data[f'{user}'] 
@@ -353,9 +363,10 @@ def read_keypair(file, users_data, user):
         user_data['keyring'] = {}
         user_data['keyring']['eddsa'] = res_json['keyring']['eddsa']
 
-        with open(file,'w') as f:
-            # save the entire data structure, not just one user
-            json.dump(users_data, f)
+        if use_filesystem:
+            with open(file,'w') as f:
+                # save the entire data structure, not just one user
+                json.dump(users_data, f)
     else:
         print(f"Keypair available from file for {user_data['name']}")
         user_data['seed'] = tmp_user_data['seed']
@@ -411,7 +422,8 @@ def create_Person(name, username, email, eddsaPublicKey, endpoint, newPerson=Tru
     if 'IF_KEY' in os.environ:
         SECRET_KEY = os.environ['IF_KEY']
     else:
-        file = '.credentials.json'
+        dir = os.path.dirname(os.path.realpath(__file__))
+        file = f'{dir}/.credentials.json'
         assert os.path.isfile(file)
 
         with open(file) as f:
@@ -464,15 +476,18 @@ def create_Person(name, username, email, eddsaPublicKey, endpoint, newPerson=Tru
     return user_id
 
 
-# Read the ID of the person from file or create a new person
-def get_id_person(file, users_data, user, endpoint):
+# expose_as post
+def get_id_person(file:str, users_data:Dict[str, Dict[str, Union[str, Dict[str, str]]]], user:str, endpoint:str, use_filesystem:bool=True)->None:
+    """
+        Read the ID of the person from file or create a new person
+    """
     user_data = users_data[f'{user}']
     
     if 'id' in user_data:
         print(f"Id available for {user_data['name']}")
         return
     
-    if os.path.isfile(file):
+    if use_filesystem and os.path.isfile(file):
         with open(file,'r') as f:
                 tmp_users_data = json.loads(f.read())
                 tmp_user_data = tmp_users_data[f'{user}']
@@ -482,8 +497,9 @@ def get_id_person(file, users_data, user, endpoint):
     if not 'id' in tmp_user_data:
         user_data['id'] = create_Person(user_data['name'], user_data['username'], user_data['email'], user_data['eddsa_public_key'], endpoint)
 #         print(json.dumps(user_data, indent=2))
-        with open(file,'w') as f:
-            json.dump(users_data, f)
+        if use_filesystem:
+            with open(file,'w') as f:
+                json.dump(users_data, f)
     else:
         print(f"Id available from file for {user_data['name']}")
         user_data['id'] = tmp_user_data['id']
@@ -575,9 +591,12 @@ def send_signed(query: str, variables: dict, username: str, eddsa: str, endpoint
     return res_json
 
 
-# Read the location id from file or generate it by calling the back-end
 DEBUG_get_location_id = False
-def get_location_id(file, user_data, locs_data, user, endpoint):
+# expose_as post
+def get_location_id(file:str, user_data:Dict[str, Union[str, Dict[str, str]]], locs_data:Dict[str, Dict[str,str|float]], user:str, endpoint:str, use_filesystem:bool=True)->None:
+    """
+        Read the location id from file or generate it by calling the back-end
+    """
 
     # this should not be possible since we initialize the data, but anyway
     if not f'{user}' in locs_data:
@@ -591,7 +610,7 @@ def get_location_id(file, user_data, locs_data, user, endpoint):
         return
 
     # check we already have a location file with an id
-    if os.path.isfile(file):
+    if use_filesystem and os.path.isfile(file):
         with open(file,'r') as f:
                 temp_locs_data = json.loads(f.read())
                 temp_loc_data = temp_locs_data[f'{user}']
@@ -648,17 +667,18 @@ def get_location_id(file, user_data, locs_data, user, endpoint):
         # reference the location in the user data
         loc_data['user_id'] = user_data['id']
 
-        # save data with id
-        with open(file,'w') as f:
-            # Save the entire location data, not just the user one
-            json.dump(locs_data, f)
+        if use_filesystem:
+            # save data with id
+            with open(file,'w') as f:
+                # Save the entire location data, not just the user one
+                json.dump(locs_data, f)
     else:
         print(f"Location id available in file for {loc_data['name']}")
         loc_data['id'] = temp_loc_data['id']
 
 # Read the location id from file or generate it by calling the back-end
 DEBUG_set_user_location = False
-def set_user_location(file, users_data, locs_data, user, endpoint):
+def set_user_location(file, users_data, locs_data, user, endpoint, use_filesystem=True):
 
     user_data = users_data[user]
 
@@ -710,21 +730,22 @@ def set_user_location(file, users_data, locs_data, user, endpoint):
     # save the id in the location data
     user_data['location_id'] = res_json['data']['updatePerson']['agent']['primaryLocation']['id']
 
-    # save data with location id (for each user, redudant)
-    with open(file,'w') as f:
-        # Save the entire location data, not just the user one
-        json.dump(users_data, f)
+    if use_filesystem:
+        # save data with location id (for each user, redudant)
+        with open(file,'w') as f:
+            # Save the entire location data, not just the user one
+            json.dump(users_data, f)
 
 
 # Read the unit id from file or generate it by calling the back-end
-def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint):
+def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint, use_filesystem=True):
     
     if name in units_data and 'id' in units_data[f'{name}']:
         print(f"Unit {name} available")
         return
 
     # check we already have a unit file with an id
-    if os.path.isfile(file):
+    if use_filesystem and os.path.isfile(file):
         with open(file,'r') as f:
                 temp_units_data = json.loads(f.read())
     else:
@@ -766,9 +787,10 @@ def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint):
         units_data[f'{name}']['symbol'] = symbol
         units_data[f'{name}']['id'] = res_json['data']['createUnit']['unit']['id']
 
-        # save data with id
-        with open(file,'w') as f:
-            json.dump(units_data, f)
+        if use_filesystem:
+            # save data with id
+            with open(file,'w') as f:
+                json.dump(units_data, f)
     else:
         print(f"Unit available in file for {temp_units_data[f'{name}']}")
         units_data[f'{name}'] = {}
@@ -779,14 +801,14 @@ def get_unit_id(file, user_data, units_data, name, label, symbol, endpoint):
 
 
 # Read the resource specification id or create a new one if not available
-def get_resource_spec_id(file, user_data, res_spec_data, name, note, classification, default_unit_id, endpoint):
+def get_resource_spec_id(file, user_data, res_spec_data, name, note, classification, default_unit_id, endpoint,use_filesystem=True):
 
     if name in res_spec_data and 'id' in res_spec_data[f'{name}']:
         print(f"Specification {name} available")
         return
 
     # check we already have a unit file with an id
-    if os.path.isfile(file):
+    if use_filesystem and os.path.isfile(file):
         with open(file,'r') as f:
                 temp_res_spec_data = json.loads(f.read())
     else:
@@ -833,9 +855,10 @@ def get_resource_spec_id(file, user_data, res_spec_data, name, note, classificat
         res_spec_data[f'{name}']['defaultUnit'] = default_unit_id
         res_spec_data[f'{name}']['id'] = res_json['data']['createResourceSpecification']['resourceSpecification']['id']
 
-        # save data with id
-        with open(file,'w') as f:
-            json.dump(res_spec_data, f)
+        if use_filesystem:
+            # save data with id
+            with open(file,'w') as f:
+                json.dump(res_spec_data, f)
     else:
         print(f"Specification available in file for {temp_res_spec_data[f'{name}']}")
         res_spec_data[f'{name}'] = {}
