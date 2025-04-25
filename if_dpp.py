@@ -18,6 +18,7 @@ import json
 import inspect
 from pdb import set_trace
 import copy
+from typing import Dict, Union, List, Tuple
 
 from if_consts import MAX_DEPTH
 from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, \
@@ -26,8 +27,8 @@ from if_lib import send_signed
 
 DEBUG_trace_query = False
 
-
-def trace_query(id, user_data, endpoint):
+# expose_as get
+def trace_query(id:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoint:str)->List[Dict[str, Union[str, Dict[str, str]]]]:
     """
         This function encapsulate the trace
         algorithm implemented by the back-end

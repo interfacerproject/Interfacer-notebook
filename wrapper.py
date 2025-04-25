@@ -7,8 +7,12 @@ import textwrap
 TAG = "expose_as"
 
 class InterfaceFunction:
-    file_to_read = None
+    """
+        This class encapsulate a ast.FunctionDef providing also
+        the necessary parameters to generate the wrapped API call
+    """
     generated_error_model = False
+    preamble_generated = False
     error_model_name = 'ErrorOutput'
     mod_parameter = 'use_filesystem'
     mod_msg = """Please not that the server filesystem is never used when calling these APIs 
@@ -21,11 +25,12 @@ class InterfaceFunction:
         self.name = node.name
         self.args = node.args.args
         self.method = method
-        InterfaceFunction.file_to_read = file_to_read
+        self.file_to_read = file_to_read
     
     def get_docstring(self, arg_names):
         docstr = ast.get_docstring(self.node) or ""
         if InterfaceFunction.mod_parameter in arg_names:
+            # Add warning that this parameter is always set to False
             ret = f"""{docstr}
 {InterfaceFunction.mod_msg}
 """
@@ -39,11 +44,12 @@ class InterfaceFunction:
             return "Any"
         t_str = ast.unparse(t)
 
-        # Add support for nested dicts and lists
+        # Check whether the type needs to be further specified
         if t_str == "dict":
             return "Dict[str, Any]"
         if t_str == "list":
             return "List[Any]"
+        # Redundant code but explicit
         if t_str.startswith("Dict["):
             return t_str  # e.g., Dict[str, Dict[str, Any]]
         if t_str.startswith("List["):
@@ -51,17 +57,21 @@ class InterfaceFunction:
         return t_str
 
     def _get_args(self):
+        """
+            Helper function to get args, their types and their defaults.
+        """
         nr_arg = len(self.args)
         nr_defaults = len(self.node.args.defaults)
         args = []
         for i in range(nr_arg):
             a = self.args[i]
             idx = nr_arg-i-1
+            # defaults are stored in an array starting with the last default
             default = ast.unparse(self.node.args.defaults[idx]) if (idx >= 0 and idx < nr_defaults) else None
             args.append((a.arg, self.resolve_type(a.annotation), default))
         return args
     
-    def generate_models(self):
+    def generate_IO_models(self):
         """
             Create input model for POST and output models for GET and POST
             Also create a generic output model for errors
@@ -98,15 +108,21 @@ class InterfaceFunction:
 
         return "\n".join(code)
         
-    def generate_wrapper(self) -> str:
-        
+    def generate_API(self) -> str:
+        """
+            This function generates the code for a single API call
+        """
+
+        # These variables are common to get and post methods
         call = (f"@app.{self.method.lower()}('/{self.name}', response_model={self.name.title()}Output|{InterfaceFunction.error_model_name})")
         arg_names = [arg.arg for arg in self.args if arg.arg != 'self']
         if self.method == 'post':
             # args_unpack = ", ".join(f"{arg}=payload.{arg}" for arg in arg_names)
+            # Deep copy since we need to pass data that is going to be modified in place and returned
             args_copy = "\n    ".join(f"{arg} = copy.deepcopy(payload.{arg})" for arg in arg_names if arg != InterfaceFunction.mod_parameter)
             return_keys = ", ".join(f'\"{arg}\": {arg}' for arg in arg_names)
             fn_args = f'payload: {self.name.title()}Input' if len(arg_names)>0 else ''
+            # Code to be generated
             code = f"""
 {call}
 def {self.name}_endpoint({fn_args}):
@@ -121,7 +137,9 @@ def {self.name}_endpoint({fn_args}):
         return {{"error": str(e)}}
     return {{"result": {{ {return_keys} }} }}
 """
-        else:
+        
+        # For get methods
+        else: 
             params = ", ".join([
                 f"{arg}: {typ}{' = ' if default else ''}{default if default else ''}"
                 for arg, typ, default in self._get_args()
@@ -160,39 +178,56 @@ def extract_interface_functions(file_to_read):
     return functions
 
 
-def build_fastapi_code(functions):
-    code = [
-        "from fastapi import FastAPI",
-        "from pydantic import BaseModel, Field",
-        "from typing import Any, Optional, List, Dict, Union, Tuple",
-        f"import {InterfaceFunction.file_to_read}",
-        "",
-        "app = FastAPI()",
-        "",
-    ]
+def build_fastapi_code(functions_in_file):
+    if len(functions_in_file) == 0:
+        return ""
+    if not InterfaceFunction.preamble_generated:
+        code = [
+            "from fastapi import FastAPI",
+            "from pydantic import BaseModel, Field",
+            "from typing import Any, Optional, List, Dict, Union, Tuple",
+        ]
+    else:
+        code = []
 
-    for func in functions:
-        code.append(func.generate_models())
-        wrapper = func.generate_wrapper()
+    code.append(f"import {functions_in_file[0].file_to_read}")
+    
+    if not InterfaceFunction.preamble_generated:
+        code.append("app = FastAPI()")
+        code.append("")
+        InterfaceFunction.preamble_generated = True
+
+    for func in functions_in_file:
+        code.append(func.generate_IO_models())
+        wrapper = func.generate_API()
         code.append(textwrap.dedent(wrapper))
     # breakpoint()
     return "\n".join(code)
     
 
-def main(input:str, output:str):
+def main(inputs:list[str], output:str):
     # breakpoint()
-    file_to_read = Path(input)
-    if not file_to_read.exists():
-        raise Exception(f"Cannot read file {input}")
     if 'wrapped' not in output:
-        raise Exception(f"Refuse to overwrite file {output}")
-    
-    functions = extract_interface_functions(file_to_read)
-    fastapi_code = build_fastapi_code(functions)
-        
-
+        # require wrapped in the file name to write to avoid accidentally 
+        # overwriting other files
+        raise Exception(f"Refuse to possibly overwrite file {output}")
     wrapped_file = Path(output)
-    wrapped_file.write_text(fastapi_code)
+    fastapi_code = []
+    
+    for input in inputs: 
+        file_to_read = Path(input)
+        if not file_to_read.exists():
+            raise Exception(f"Cannot read file {input}")
+        
+        functions = extract_interface_functions(file_to_read)
+        if len(functions) == 0:
+            print(f"Warning: file {file_to_read} does not contain any function to extract")
+        else:
+            fastapi_code.append(build_fastapi_code(functions))
+    
+    if len(fastapi_code) > 0:
+        wrapped_file.write_text("\n".join(fastapi_code))
+    
     print(f"✅ FastAPI wrapper generated in {output}")
 
 
@@ -205,10 +240,11 @@ if __name__ == "__main__":
 
     parser.add_argument(
         '-i', '--input',
-        dest='input',
+        dest='inputs',
         action='store',
         required=True,
-        help='specifies the name of the file containing the functions',
+        nargs="+",
+        help='specifies the name of the files containing the functions',
     )
     parser.add_argument(
         '-o', '--output',
@@ -224,7 +260,7 @@ if __name__ == "__main__":
         parser.print_help()
         exit(-1)
 
-    main(args.input, args.output)
+    main(args.inputs, args.output)
 
 
 # if_lib
