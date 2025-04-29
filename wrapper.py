@@ -128,7 +128,6 @@ class InterfaceFunction:
 def {self.name}_endpoint({fn_args}):
     ''{self.get_docstring(arg_names)}''
     
-    import copy
     {args_copy}
     {InterfaceFunction.mod_code if InterfaceFunction.mod_parameter in arg_names else ''}
     try:
@@ -186,12 +185,13 @@ def build_fastapi_code(functions_in_file):
             "from fastapi import FastAPI",
             "from pydantic import BaseModel, Field",
             "from typing import Any, Optional, List, Dict, Union, Tuple",
+            "import copy"
         ]
     else:
         code = []
 
     code.append(f"import {functions_in_file[0].file_to_read}")
-    
+
     if not InterfaceFunction.preamble_generated:
         code.append("app = FastAPI()")
         code.append("")
