@@ -77,7 +77,7 @@ def get_HMAC(email, endpoint, newUser=True):
     variables = {
         "firstRegistration": newUser,
         "userData": "{\"email\": \"" + email + "\"}"
-    };
+    }
 
     
     payload = {
@@ -607,6 +607,7 @@ def get_location_id(file:str, user_data:Dict[str, Union[str, Dict[str, str]]], l
 
     if 'id' in loc_data:
         print(f"Location id available for {loc_data['name']}")
+        loc_data['user_id'] = user_data['id']
         return
 
     # check we already have a location file with an id
@@ -675,6 +676,7 @@ def get_location_id(file:str, user_data:Dict[str, Union[str, Dict[str, str]]], l
     else:
         print(f"Location id available in file for {loc_data['name']}")
         loc_data['id'] = temp_loc_data['id']
+        loc_data['user_id'] = user_data['id']
 
 
 DEBUG_set_user_location = False
@@ -1039,8 +1041,8 @@ def get_resource(res_data:Dict[str,Dict[str,str|List[str]]], res_spec_data:Dict[
         Wrapper for the resource creation
     """    
 #     breakpoint()
-    res_data[f'{res_name}_res'] = {}
-    cur_res = res_data[f'{res_name}_res']
+    res_data[res_name] = {}
+    cur_res = res_data[res_name]
 
     rnd = random.randint(0, 10000)
     cur_res['res_ref_id'] = f'{res_name}-{rnd}'
@@ -1128,11 +1130,11 @@ def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, not
         # these cases (there might be valid VF actions that fall into these,
         # but we have not addressed them yet)
         if existing_res == {} and new_res == {}:
-            print(f"No resource given for event")
+            print(f"No resource given for event with action work")
             raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
         if existing_res != {} and new_res != {}:
-            print(f"Both existing and new resource given for event")
+            print(f"Both existing and new resource given for event with action work")
             raise Exception(f"Error in function {inspect.stack()[0][3]}")
     
     ts = datetime.now(timezone.utc).isoformat()
@@ -1206,7 +1208,7 @@ def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, not
         variables['event']['resourceInventoriedAs'] = existing_res['id']
         
     if action in ['produce']:
-        variables['newInventoriedResource'] = {};
+        variables['newInventoriedResource'] = {}
         variables['newInventoriedResource']['name'] = new_res['name']
         variables['newInventoriedResource']['trackingIdentifier'] = new_res['res_ref_id']
 

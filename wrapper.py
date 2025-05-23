@@ -119,7 +119,8 @@ class InterfaceFunction:
         if self.method == 'post':
             # args_unpack = ", ".join(f"{arg}=payload.{arg}" for arg in arg_names)
             # Deep copy since we need to pass data that is going to be modified in place and returned
-            args_copy = "\n    ".join(f"{arg} = copy.deepcopy(payload.{arg})" for arg in arg_names if arg != InterfaceFunction.mod_parameter)
+            # args_copy = "\n    ".join(f"{arg} = copy.deepcopy(payload.{arg})" for arg in arg_names if arg != InterfaceFunction.mod_parameter)
+            args_copy = "\n    ".join(f"{arg} = payload.{arg}" for arg in arg_names if arg != InterfaceFunction.mod_parameter)
             return_keys = ", ".join(f'\"{arg}\": {arg}' for arg in arg_names)
             fn_args = f'payload: {self.name.title()}Input' if len(arg_names)>0 else ''
             # Code to be generated
