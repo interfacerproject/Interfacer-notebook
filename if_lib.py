@@ -1307,8 +1307,8 @@ def update_id(resource, new_id):
 
 
 DEBUG_make_transfer = False
-def make_transfer(provider_data:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, 
-                  receiver_data:Dict[str, Union[str, Dict[str, str]]], amount:int|float, existing_res:Dict[str,str|List[str]], locs_data:Dict[str, Dict[str,str|float]], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str)->Tuple[str,str]:
+def make_transfer(provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, 
+                  receiver:Dict[str, Union[str, Dict[str, str]]], amount:int|float, existing_res:Dict[str,str|List[str]], locs_data:Dict[str, Dict[str,str|float]], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str)->Tuple[str,str]:
     """
         This function implements all transfer actions
     """
@@ -1318,12 +1318,12 @@ def make_transfer(provider_data:Dict[str, Union[str, Dict[str, str]]], action:st
         "event": {
             "note": note,
             "action": action,
-            "provider": provider_data['id'], 
-            "receiver": receiver_data['id'], 
+            "provider": provider['id'], 
+            "receiver": receiver['id'], 
             "resourceInventoriedAs": existing_res['id'],
             "hasPointInTime": ts,
             "toLocation": [values['id'] for key, values in locs_data.items() \
-                              if values['user_id'] == receiver_data['id']][0],
+                              if values['user_id'] == receiver['id']][0],
             "resourceQuantity": {
               "hasUnit": [values['defaultUnit'] for key, values in res_spec_data.items() \
                               if values['id'] == existing_res['spec_id']][0], 
@@ -1355,7 +1355,7 @@ def make_transfer(provider_data:Dict[str, Union[str, Dict[str, str]]], action:st
                 }
             }""" + AGENT_FRAG + LOCATION_FRAG + QUANTITY_FRAG + RESOURCE_FRAG
 
-    res_json = send_signed(query, variables, provider_data['username'], provider_data['keyring']['eddsa'], endpoint)
+    res_json = send_signed(query, variables, provider['username'], provider['keyring']['eddsa'], endpoint)
 
     if 'errors' in res_json:
         print("Error message")
@@ -1381,10 +1381,10 @@ def make_transfer(provider_data:Dict[str, Union[str, Dict[str, str]]], action:st
     return res_json['data']['createEconomicEvent']['economicEvent']['id'], ts
 
 # expose_as post
-def make_transfer_wrapped(rec_event:Dict[str,str], provider_data:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, 
-                  receiver_data:Dict[str, Union[str, Dict[str, str]]], amount:int|float, existing_res:Dict[str,str|List[str]], locs_data:Dict[str, Dict[str,str|float]], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str)->None:
+def make_transfer_wrapped(rec_event:Dict[str,str], provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, 
+                  receiver:Dict[str, Union[str, Dict[str, str]]], amount:int|float, existing_res:Dict[str,str|List[str]], locs_data:Dict[str, Dict[str,str|float]], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str)->None:
     
-    event_id, ts = make_transfer(provider_data, action, note, receiver_data, amount, existing_res, locs_data,
+    event_id, ts = make_transfer(provider, action, note, receiver, amount, existing_res, locs_data,
                                  res_spec_data, endpoint)
     rec_event['event_id'] = event_id
     rec_event['ts'] = ts
