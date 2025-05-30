@@ -1130,7 +1130,7 @@ def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, not
         # these cases (there might be valid VF actions that fall into these,
         # but we have not addressed them yet)
         if existing_res == {} and new_res == {}:
-            print(f"No resource given for event with action work")
+            print(f"No resource given for event with action {action}")
             raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
         if existing_res != {} and new_res != {}:
@@ -1170,17 +1170,13 @@ def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, not
         variables['event']['resourceQuantity'] = {}
         var_obj = variables['event']['resourceQuantity']
 
+        # find the unit from the resource's specification
         _res = {}
         if existing_res != {}:
             _res = existing_res
         elif new_res != {}:
             _res = new_res
-        
-        # if action in ['produce']:
-        #     _res = new_res
-        # else:
-        #     _res = existing_res
-        # find the unit from the resource's specification
+
         var_obj['hasUnit'] = [specs['defaultUnit'] for name, specs in res_spec_data.items() \
                               if specs['id'] == _res['spec_id']][0]
         var_obj['hasNumericalValue'] = amount
@@ -1282,8 +1278,36 @@ def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, not
 
     return res_json['data']['createEconomicEvent']['economicEvent']['id'], ts
 
+def wrap_events(rec_event:Dict, ts:str, event_id:str, action:str, existing_res:Dict[str,str|List[str]], new_res:Dict[str,str|List[str]]={}, effort_spec:Dict[str,str|int|float]={}, process:Dict[str,str]={}) -> None:
+    # deliverService {'ts': ts, 'event_id':event_id, 'action' : action}
+    # work  {'ts': ts, 'event_id':event_id, 'action' : action, 'amount': effort_spec['amount']}
+    #       {'ts': ts, 'process_id':cur_pros['id'], 'name' : cur_pros['name']}
+
+    rec_event['action'] = {}
+    rec_event['action']['ts'] = ts
+    rec_event['action']['event_id'] = event_id
+    rec_event['action']['action'] = action
+    if action == 'work':
+        rec_event['action']['amount'] = effort_spec['amount']
+    else:
+        if existing_res != {}:
+            rec_event['action']['res_name'] = existing_res['name']
+            rec_event['action']['res'] = existing_res['id']
+        elif new_res != {}:
+            rec_event['action']['res_name'] = new_res['name']
+            rec_event['action']['res'] = new_res['id']
+        else:
+            print(f"No resource given for event with action {action}")
+            raise Exception(f"Error in function {inspect.stack()[0][3]}")
+
+    if action in IN_PR_ACTIONS:
+        rec_event['process'] = {}
+        rec_event['process']['ts'] = ts
+        rec_event['process']['process_id'] = process['id']
+        rec_event['process']['name'] = process['name']
+
 # expose_as post
-def create_event_wrapped(rec_event:Dict[str,str],provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, amount:int|float, process:Dict[str,str], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str, \
+def create_event_wrapped(rec_event:Dict[str,Dict[str,str]],provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, amount:int|float, process:Dict[str,str], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str, \
                  existing_res:Dict[str,str|List[str]]={}, new_res:Dict[str,str|List[str]]={}, effort_spec:Dict[str,str|int|float]={}, receiver:Dict[str, Union[str, Dict[str, str]]]={}, process2:Dict[str,str]={})->None:
     """
         This function implements all actions != transfer actions
@@ -1291,9 +1315,9 @@ def create_event_wrapped(rec_event:Dict[str,str],provider:Dict[str, Union[str, D
     # wrapped version of create_event
     event_id, ts = create_event(provider, action, note, amount, process, res_spec_data, endpoint, existing_res, new_res, \
                  effort_spec, receiver, process2)
-    rec_event['event_id'] = event_id
-    rec_event['ts'] = ts
-    
+
+    wrap_events(rec_event, ts, event_id, action, existing_res, new_res, effort_spec, process)
+        
 
     
 
@@ -1381,13 +1405,12 @@ def make_transfer(provider:Dict[str, Union[str, Dict[str, str]]], action:str, no
     return res_json['data']['createEconomicEvent']['economicEvent']['id'], ts
 
 # expose_as post
-def make_transfer_wrapped(rec_event:Dict[str,str], provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, 
+def make_transfer_wrapped(rec_event:Dict[str,Dict[str,str]], provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, 
                   receiver:Dict[str, Union[str, Dict[str, str]]], amount:int|float, existing_res:Dict[str,str|List[str]], locs_data:Dict[str, Dict[str,str|float]], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str)->None:
     
     event_id, ts = make_transfer(provider, action, note, receiver, amount, existing_res, locs_data,
                                  res_spec_data, endpoint)
-    rec_event['event_id'] = event_id
-    rec_event['ts'] = ts
+    wrap_events(rec_event, ts, event_id, action, existing_res)
 
 
 DEBUG_show_resource = False

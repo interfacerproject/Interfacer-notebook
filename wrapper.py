@@ -119,9 +119,9 @@ class InterfaceFunction:
         if self.method == 'post':
             # args_unpack = ", ".join(f"{arg}=payload.{arg}" for arg in arg_names)
             # Deep copy since we need to pass data that is going to be modified in place and returned
-            # args_copy = "\n    ".join(f"{arg} = copy.deepcopy(payload.{arg})" for arg in arg_names if arg != InterfaceFunction.mod_parameter)
-            args_copy = "\n    ".join(f"{arg} = payload.{arg}" for arg in arg_names if arg != InterfaceFunction.mod_parameter)
-            return_keys = ", ".join(f'\"{arg}\": {arg}' for arg in arg_names)
+            args_copy = "\n    ".join(f"{arg} = copy.deepcopy(payload.{arg})" for arg in arg_names if arg != InterfaceFunction.mod_parameter)
+            # args_copy = "\n    ".join(f"{arg} = payload.{arg}" for arg in arg_names if arg != InterfaceFunction.mod_parameter)
+            return_keys = ", ".join(f'\"{arg}\": {arg} if type({arg}) != dict or is_diff({arg},payload.{arg}) else {{}}' for arg in arg_names)
             fn_args = f'payload: {self.name.title()}Input' if len(arg_names)>0 else ''
             # Code to be generated
             code = f"""
@@ -186,14 +186,29 @@ def build_fastapi_code(functions_in_file):
             "from fastapi import FastAPI",
             "from pydantic import BaseModel, Field",
             "from typing import Any, Optional, List, Dict, Union, Tuple",
-            "import copy"
+            "import copy",
+            
         ]
     else:
         code = []
 
     code.append(f"import {functions_in_file[0].file_to_read}")
+    
 
     if not InterfaceFunction.preamble_generated:
+        diff_function = f"""
+def is_diff(dict1:dict, dict2:dict)-> bool:
+    for key in dict1:
+        if key not in dict2:
+            return True
+        if type(dict1[key]) == dict and type(dict2[key]) == dict:
+            if is_diff(dict1[key],dict2[key]):
+                return True
+        elif dict1[key] != dict2[key]:
+            return True
+    return False
+"""
+        code.append(diff_function)
         code.append("app = FastAPI()")
         code.append("")
         InterfaceFunction.preamble_generated = True
