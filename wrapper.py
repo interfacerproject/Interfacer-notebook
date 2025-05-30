@@ -62,13 +62,17 @@ class InterfaceFunction:
         """
         nr_arg = len(self.args)
         nr_defaults = len(self.node.args.defaults)
+        # if nr_defaults > 1:
+        #     breakpoint()
         args = []
         for i in range(nr_arg):
             a = self.args[i]
-            idx = nr_arg-i-1
-            # defaults are stored in an array starting with the last default
-            default = ast.unparse(self.node.args.defaults[idx]) if (idx >= 0 and idx < nr_defaults) else None
+            idx = i - (nr_arg - nr_defaults)
+            # defaults are stored in an array starting with the first argument that has a default
+            default = ast.unparse(self.node.args.defaults[idx]) if idx >= 0 else None
             args.append((a.arg, self.resolve_type(a.annotation), default))
+        # if nr_defaults > 1:
+        #     breakpoint()
         return args
     
     def generate_IO_models(self):
@@ -87,6 +91,7 @@ class InterfaceFunction:
             if len(args) > 0:
                 code.append(f"class {self.name.title()}Input(BaseModel):")
                 
+                # breakpoint()
                 for arg_name, arg_type, arg_default in args:
                     # breakpoint()
                     default = arg_default if arg_default else ""

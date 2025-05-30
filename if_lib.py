@@ -1134,7 +1134,7 @@ def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, not
             raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
         if existing_res != {} and new_res != {}:
-            print(f"Both existing and new resource given for event with action work")
+            print(f"Both existing and new resource given for event with action {action}, {existing_res} and {new_res}")
             raise Exception(f"Error in function {inspect.stack()[0][3]}")
     
     ts = datetime.now(timezone.utc).isoformat()
@@ -1300,15 +1300,15 @@ def wrap_events(rec_event:Dict, ts:str, event_id:str, action:str, existing_res:D
             print(f"No resource given for event with action {action}")
             raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
-    if action in IN_PR_ACTIONS:
+    if process != {}:
         rec_event['process'] = {}
         rec_event['process']['ts'] = ts
         rec_event['process']['process_id'] = process['id']
         rec_event['process']['name'] = process['name']
 
 # expose_as post
-def create_event_wrapped(rec_event:Dict[str,Dict[str,str]],provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, amount:int|float, process:Dict[str,str], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str, \
-                 existing_res:Dict[str,str|List[str]]={}, new_res:Dict[str,str|List[str]]={}, effort_spec:Dict[str,str|int|float]={}, receiver:Dict[str, Union[str, Dict[str, str]]]={}, process2:Dict[str,str]={})->None:
+def create_event_wrapped(rec_event:Dict[str,Dict[str,str|int|float]],provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, amount:int|float, process:Dict[str,str], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str, \
+                 existing_res:Dict[str,str|List[str]]={}, new_res:Dict[str,str|List[str]]={}, effort_spec:Dict[str,str|int|float]={}, receiver:Dict[str, Union[str, Dict[str, str]]]={}, process2:Dict[str,str]={}, add_process:bool=False)->None:
     """
         This function implements all actions != transfer actions
     """
@@ -1316,7 +1316,7 @@ def create_event_wrapped(rec_event:Dict[str,Dict[str,str]],provider:Dict[str, Un
     event_id, ts = create_event(provider, action, note, amount, process, res_spec_data, endpoint, existing_res, new_res, \
                  effort_spec, receiver, process2)
 
-    wrap_events(rec_event, ts, event_id, action, existing_res, new_res, effort_spec, process)
+    wrap_events(rec_event, ts, event_id, action, existing_res, new_res, effort_spec, process if add_process else {})
         
 
     
