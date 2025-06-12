@@ -28,7 +28,7 @@ from if_lib import send_signed
 DEBUG_trace_query = False
 
 # expose_as get
-def trace_query(id:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoint:str)->List[Dict[str, Union[str, Dict[str, str]]]]:
+def trace_query(id:str, username:str, eddsa_key:str, endpoint:str)->List[Dict[str, Union[str, Dict[str, str]]]]:
     """
         This function encapsulate the trace
         algorithm implemented by the back-end
@@ -54,7 +54,7 @@ def trace_query(id:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoin
     """ + AGENT_FRAG + LOCATION_FRAG + RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
 
     res_json = send_signed(
-        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+        query, variables, username, eddsa_key, endpoint)
 
     if DEBUG_trace_query:
         print("Query")
