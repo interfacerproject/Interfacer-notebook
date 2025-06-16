@@ -27,8 +27,7 @@ from if_lib import send_signed
 
 DEBUG_trace_query = False
 
-# expose_as get
-def trace_query(id:str, username:str, eddsa_key:str, endpoint:str)->List[Dict[str, Union[str, Dict[str, str]]]]:
+def trace_query(id:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoint:str)->List:
     """
         This function encapsulate the trace
         algorithm implemented by the back-end
@@ -54,7 +53,7 @@ def trace_query(id:str, username:str, eddsa_key:str, endpoint:str)->List[Dict[st
     """ + AGENT_FRAG + LOCATION_FRAG + RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
 
     res_json = send_signed(
-        query, variables, username, eddsa_key, endpoint)
+        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
 
     if DEBUG_trace_query:
         print("Query")
@@ -74,6 +73,15 @@ def trace_query(id:str, username:str, eddsa_key:str, endpoint:str)->List[Dict[st
         raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     return res_json['data']['economicResource']['trace']
+
+# expose_as get
+def trace_query_wrapped(id:str, user_data_str:str, endpoint:str)->List:
+    """
+        This function encapsulate the trace algorithm implemented by the back-end.
+        It accepts a string via GET iso an object, and parses into an object
+    """
+    user_data = json.loads(user_data_str)
+    return trace_query(id,user_data,endpoint)
 
 
 # VERBOSE = True

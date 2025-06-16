@@ -2,10 +2,14 @@ in_files="if_lib.py if_dpp.py"
 python_wrapper=wrapper.py
 
 out_file=if_wrapped # can be specified on command line
+create_file=n
 
-while getopts "o:s" options
+while getopts "co:s" options
 do
   case "${options}" in
+    c)
+      create_file=y
+      ;;
     o)
       out_file=${OPTARG}
       ;;
@@ -22,8 +26,12 @@ do
   esac
 done
 
-python ${python_wrapper} -i ${in_files} -o ${out_file}.py
-# echo "${?}"
+if [ "${create_file}" == "y" ]
+then
+  python ${python_wrapper} -i ${in_files} -o ${out_file}.py
+else
+  ls -l ${out_file}.py > /dev/null
+fi
 
 if [ "${?}" == "0" -a "${start_webserver} " == "y " ]
 then
