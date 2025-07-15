@@ -1,3 +1,5 @@
+#!/bin/sh
+
 in_files="if_lib.py if_dpp.py"
 python_wrapper=wrapper.py
 
