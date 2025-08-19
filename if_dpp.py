@@ -26,7 +26,6 @@ from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, I
 from if_lib import send_signed
 
 DEBUG_trace_query = False
-
 def trace_query(id:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoint:str)->List:
     """
         This function encapsulate the trace
@@ -161,8 +160,6 @@ def trace_query_wrapped(id:str, user_data_str:str, endpoint:str)->List:
 
 
 DEBUG_er_before = False
-
-
 def er_before(id, user_data, dpp_children, depth, visited, endpoint):
 
     if depth > MAX_DEPTH:
@@ -240,8 +237,6 @@ def er_before(id, user_data, dpp_children, depth, visited, endpoint):
 
 
 DEBUG_ee_before = False
-
-
 def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
 
     if depth > MAX_DEPTH:
@@ -336,8 +331,6 @@ def ee_before(id, user_data, dpp_children, depth, visited, endpoint):
 
 
 DEBUG_pr_before = False
-
-
 def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
 
     if depth > MAX_DEPTH:
@@ -406,8 +399,6 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
 
 
 DEBUG_get_ddp = False
-
-
 def get_dpp(res_id, user_data, endpoint):
 
     variables = {
