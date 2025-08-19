@@ -172,6 +172,16 @@ When run again, the notebook will reuse info from existing files, avoiding recre
 
 **[🔝 back to top](#toc)**
 
+## 🤖 FastAPI
+
+The script ./doit.sh provides an API which when invoked holds documentation at http://0.0.0.0:8000/docs
+
+The API can be deployed by running:
+```
+./doit.sh -s -c
+```
+
+**[🔝 back to top](#toc)**
 ---
 
 ## 😍 Acknowledgements
