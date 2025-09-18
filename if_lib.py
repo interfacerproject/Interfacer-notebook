@@ -17,7 +17,7 @@
 # Let's start with some lovely imports that should have been installed if not available by default
 import json
 import inspect
-import requests
+
 import os
 import contextlib
 from zenroom import zenroom
@@ -32,7 +32,7 @@ from if_consts import EVENT_FRAG, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROP
     INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, PROCESS_FRAG, PROCESSGRP_FRAG, PROCESSSPEC_FRAG, \
         UNIT_FRAG, RESSPEC_FRAG
 
-from if_utils import stringify
+from if_utils import stringify, send
 
 def zenroom_wrapper(contract, keys=None, data=None):
     with open(os.devnull, 'w') as f:
@@ -90,7 +90,8 @@ def get_HMAC(email, endpoint, newUser=True):
     }
     
 
-    res = requests.post(endpoint, json=payload)
+    res = send(endpoint=endpoint, payload=payload)
+
     if DEBUG_get_HMAC:
         print("Payload")
         print(payload)
@@ -431,7 +432,8 @@ def create_Person(name, username, email, eddsaPublicKey, endpoint, newPerson=Tru
             SECRET_KEY = data['key']
         
     headers={'zenflows-admin': SECRET_KEY}
-    res = requests.post(endpoint, json=payload, headers=headers)
+    
+    res = send(endpoint=endpoint, payload=payload, headers=headers)
     
     if DEBUG_create_Person:
         print("Payload")
@@ -504,9 +506,9 @@ def get_id_person(file:str, users_data:Dict[str, Dict[str, Union[str, Dict[str, 
         print(f"Id available from file for {user_data['name']}")
         user_data['id'] = tmp_user_data['id']
     
+
 # sign and send each request now that we have a registered public key
 DEBUG_send_signed = False
-
 def send_signed(query: str, variables: dict, username: str, eddsa: str, endpoint:str) -> dict:
 
     sign_script = """
@@ -558,13 +560,12 @@ def send_signed(query: str, variables: dict, username: str, eddsa: str, endpoint
 
     # Reset the headears
     headers = {}
-    headers['content-type'] = 'application/json'
-
+    
     headers['zenflows-sign'] = resz_json['eddsa_signature']   
     headers['zenflows-user'] = username
     headers['zenflows-hash'] = resz_json['hash']
     
-    res = requests.post(endpoint, json=payload, headers=headers)
+    res = send(endpoint=endpoint, payload=payload, headers=headers)
 
     try:
         res_json = res.json()

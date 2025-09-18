@@ -20,13 +20,17 @@ from pdb import set_trace
 import copy
 from typing import Dict, Union, List, Tuple
 
+
 from if_consts import MAX_DEPTH
 from if_consts import AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, INTENT_FRAG, PROPINT_FRAG, LOCATION_FRAG, ACTION_FRAG, \
     PROCESS_FRAG, PROCESSGRP_FRAG, PROCESSSPEC_FRAG, EVENT_FRAG, RESSPEC_FRAG, UNIT_FRAG
+
 from if_lib import send_signed
+from if_utils import send
 
 DEBUG_trace_query = False
-def trace_query(id:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoint:str)->List:
+# expose_as get
+def trace_query(id:str, endpoint:str)->List:
     """
         This function encapsulate the trace
         algorithm implemented by the back-end
@@ -51,8 +55,18 @@ def trace_query(id:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoin
 
     """ + AGENT_FRAG + LOCATION_FRAG + RESOURCE_FRAG + QUANTITY_FRAG + EVENT_FRAG + PROCESS_FRAG + PROCESSGRP_FRAG + ACTION_FRAG + RESSPEC_FRAG + PROCESSSPEC_FRAG + UNIT_FRAG
 
-    res_json = send_signed(
-        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    payload = {"query": query, "variables": variables}
+
+    res = send(payload=payload, endpoint=endpoint)
+    
+    try:
+        res_json = res.json()
+    except Exception as e:
+        print("Payload")
+        print(payload)
+        print("Result")
+        print(res)
+        raise Exception(f"Exception {e} in function {inspect.stack()[0][3]}")
 
     if DEBUG_trace_query:
         print("Query")
@@ -72,15 +86,6 @@ def trace_query(id:str, user_data:Dict[str, Union[str, Dict[str, str]]], endpoin
         raise Exception(f"Error in function {inspect.stack()[0][3]}")
 
     return res_json['data']['economicResource']['trace']
-
-# expose_as get
-def trace_query_wrapped(id:str, user_data_str:str, endpoint:str)->List:
-    """
-        This function encapsulate the trace algorithm implemented by the back-end.
-        It accepts a string via GET iso an object, and parses into an object
-    """
-    user_data = json.loads(user_data_str)
-    return trace_query(id,user_data,endpoint)
 
 
 # VERBOSE = True
@@ -399,7 +404,8 @@ def pr_before(id, user_data, dpp_children, depth, visited, endpoint):
 
 
 DEBUG_get_ddp = False
-def get_dpp(res_id, user_data, endpoint):
+# expose_as get
+def get_dpp(res_id:str, endpoint:str)->List:
 
     variables = {
         "id": res_id
@@ -411,9 +417,19 @@ def get_dpp(res_id, user_data, endpoint):
         }
     }
     """
+    payload = {"query": query, "variables": variables}
 
-    res_json = send_signed(
-        query, variables, user_data['username'], user_data['keyring']['eddsa'], endpoint)
+    res = send(endpoint=endpoint, payload=payload)
+
+    try:
+        res_json = res.json()
+    except Exception as e:
+        print("Payload")
+        print(payload)
+        print("Result")
+        print(res)
+        raise Exception(f"Exception {e} in function {inspect.stack()[0][3]}")
+
 
     if DEBUG_get_ddp:
         print("Query")

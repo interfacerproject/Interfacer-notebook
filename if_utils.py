@@ -20,6 +20,9 @@ import re
 from pathlib import Path
 from collections.abc import MutableMapping
 from pdb import set_trace
+import requests
+from requests import Response
+
 
 def _flatten_dict_gen(d, parent_key, sep):
     for k, v in d.items():
@@ -114,3 +117,12 @@ def save_traces(use_case, tot_dpp, trace, be_dpp, event_seq, process_grps:dict={
         with open(file, "w") as f:
             f.write(json.dumps(process_grps, indent=2))
 
+
+def send(payload:dict, endpoint:str, headers:dict={}) -> Response:
+    
+    headers['content-type'] = 'application/json'
+    headers['accept'] = 'application/json'
+
+    res = requests.post(endpoint, json=payload, headers=headers)
+
+    return res
