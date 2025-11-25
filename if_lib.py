@@ -25,7 +25,7 @@ import base64
 from datetime import datetime, timezone
 import random
 from pdb import set_trace
-from typing import Dict, Union, List, Tuple
+from typing import Dict, Union, List, Tuple, Any
 
 from if_consts import SUPPORTED_ACTIONS, IN_PR_ACTIONS, OUT_PR_ACTIONS, IN_OUT_PR_ACTIONS
 from if_consts import EVENT_FRAG, AGENT_FRAG, QUANTITY_FRAG, RESOURCE_FRAG, PROPOSAL_FRAG, \
@@ -492,7 +492,7 @@ def get_id_person(file:str, users_data:Dict[str, Dict[str, Union[str, Dict[str, 
     if use_filesystem and os.path.isfile(file):
         with open(file,'r') as f:
                 tmp_users_data = json.loads(f.read())
-                tmp_user_data = tmp_users_data[f'{user}']
+                tmp_user_data = tmp_users_data.get(f'{user}', {})
     else:
         tmp_user_data = {}
 
@@ -574,8 +574,8 @@ def send_signed(query: str, variables: dict, username: str, eddsa: str, endpoint
         print(payload)
         print("Headers")
         print(headers)
-        print("Result")
-        print(res)
+        print("Result status code:", res.status_code)
+        print("Result text:", res.text[:500] if res.text else "(empty)")
         raise Exception(f"Exception {e} in function {inspect.stack()[0][3]}")
 
 
@@ -1117,7 +1117,7 @@ def get_process(process_name:str, process_data:Dict[str, Dict[str, str]], note:s
 
 DEBUG_create_event = False
 def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, note:str, amount:int|float, process:Dict[str,str], res_spec_data:Dict[str,Dict[str,str|List[str]]], endpoint:str, \
-                 existing_res:Dict[str,str|List[str]]={}, new_res:Dict[str,str|List[str]]={}, effort_spec:Dict[str,str|int|float]={}, receiver:Dict[str, Union[str, Dict[str, str]]]={}, process2:Dict[str,str]={})->Tuple[str, str]:
+                 existing_res:Dict[str,str|List[str]]={}, new_res:Dict[str,str|List[str]]={}, effort_spec:Dict[str,str|int|float]={}, receiver:Dict[str, Union[str, Dict[str, str]]]={}, process2:Dict[str,str]={}, metadata:Dict[str,Any]={})->Tuple[str, str]:
     """
         This function implements all actions != transfer actions
     """
@@ -1211,6 +1211,10 @@ def create_event(provider:Dict[str, Union[str, Dict[str, str]]], action:str, not
 
         variables['event']['resourceConformsTo'] = new_res['spec_id']
         variables['event']['toLocation'] = provider['location_id']
+        
+        # Add metadata to event if provided - must be serialized as JSON string
+        if metadata:
+            variables['event']['resourceMetadata'] = json.dumps(metadata)
     
     if action in ['deliverService']:
         if existing_res != {}:
