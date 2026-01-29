@@ -1,0 +1,5 @@
+[PLACEHOLDER] LoCI LAMP Main Product Image
+This is a placeholder for the main product image of the LOCI LAMP.
+Replace with actual product image file (PNG, JPG, etc.)
+Product: LOCI LAMP V 2.0
+Brand: Tchibo GmbH
