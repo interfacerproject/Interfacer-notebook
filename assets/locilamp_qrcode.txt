@@ -1,3 +1,0 @@
-[PLACEHOLDER] LoCI LAMP QR Code
-This is a placeholder for the QR code that links to the DPP.
-Replace with actual QR code image (PNG, JPG, etc.)

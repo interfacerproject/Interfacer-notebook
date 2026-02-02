@@ -43,17 +43,29 @@ def calculate_file_checksum(file_path: str) -> str:
     return sha256_hash.hexdigest()
 
 
-def sign_message(message: str, eddsa_private_key: str) -> Tuple[str, str]:
+def sign_message(message: str, eddsa_private_key: str, encode_base64: bool = False) -> Tuple[str, str]:
     """
-    Sign a message using EdDSA private key with Zenroom (matching Zenflows format)
+    Sign a message using EdDSA private key with Zenroom (matching GUI/DPP service format)
     
+    There are TWO modes in the GUI:
+    
+    1. File uploads (encode_base64=False):
+       - SignMessage(checksum) passes raw hex checksum directly
+       - Used for: upload_file_on_dpp
+       
+    2. DPP/signedPost (encode_base64=True):
+       - signDidRequest(json) base64-encodes the JSON first
+       - Used for: submit_dpp (POST /dpp)
+       
     Args:
-        message: Message to sign
+        message: Message to sign (raw string for mode 1, JSON string for mode 2)
         eddsa_private_key: EdDSA private key
+        encode_base64: If True, base64-encode the message before signing (for DPP submission)
         
     Returns:
         Tuple of (signature as base64, hash as hex)
     """
+    # This sign script matches verify_graphql.zen used by the DPP server
     sign_script = """
     Scenario eddsa: sign a message
     Given I have a 'base64' named 'gql'
@@ -66,14 +78,30 @@ def sign_message(message: str, eddsa_private_key: str) -> Tuple[str, str]:
     Then print 'hash' as 'hex'
     """
     
-    # Base64 encode the message
-    message_b64 = base64.b64encode(message.encode('utf-8')).decode('utf-8')
+    # Handle the two different signing modes from the GUI
+    if encode_base64:
+        # Mode 2: signDidRequest - base64 encode the JSON body first
+        # GUI: Buffer.from(json, "utf8").toString("base64")
+        message_for_sign = base64.b64encode(message.encode('utf-8')).decode('utf-8')
+    else:
+        # Mode 1: SignMessage for file uploads - pass raw checksum
+        message_for_sign = message
     
-    data = json.dumps({"gql": message_b64})
+    data = json.dumps({"gql": message_for_sign})
     keys = json.dumps({"keyring": {"eddsa": eddsa_private_key}})
     
     result = zenroom.zencode_exec(sign_script, keys=keys, data=data)
+    
+    # Debug output if Zenroom fails
+    if not result.output:
+        print(f"Zenroom returned empty output!")
+        print(f"Zenroom logs: {result.logs[:1000] if result.logs else 'none'}")
+        print(f"Message length: {len(message)}")
+        raise Exception(f"Zenroom sign failed: {result.logs[:500] if result.logs else 'no logs'}")
+    
     result_json = json.loads(result.output)
+    
+    return result_json['eddsa_signature'], result_json['hash']
     
     return result_json['eddsa_signature'], result_json['hash']
 
@@ -139,8 +167,20 @@ def process_dpp_values(obj: Any, eddsa_public_key: str, eddsa_private_key: str, 
     if obj is None:
         return obj
     
+    # Check if it's already an attachment response (already uploaded image)
+    # These have 'id' and 'url' keys from the DPP service
+    if isinstance(obj, dict) and obj.get('id') and obj.get('url'):
+        # Already an attachment response, return as-is
+        return obj
+    
     # Check if it's a file path (string ending with common file extensions)
+    # Only try to upload if it looks like an actual path (contains / or \) or exists on disk
     if isinstance(obj, str) and any(obj.endswith(ext) for ext in ['.pdf', '.png', '.jpg', '.jpeg', '.gif', '.txt', '.doc', '.docx']):
+        # Skip if it's just a filename without path (likely from an existing attachment response)
+        import os
+        if '/' not in obj and '\\' not in obj and not os.path.exists(obj):
+            # It's just a filename, not an actual file path - skip upload
+            return obj
         # Try to upload as a file
         try:
             return upload_file_on_dpp(obj, eddsa_public_key, eddsa_private_key, dpp_url)
@@ -162,7 +202,13 @@ def process_dpp_values(obj: Any, eddsa_public_key: str, eddsa_private_key: str, 
 
 def submit_dpp(dpp_data: Dict[str, Any], eddsa_public_key: str, eddsa_private_key: str, dpp_url: str) -> str:
     """
-    Submit a DPP to the DPP service
+    Submit a DPP to the DPP service.
+    
+    Matches GUI signedPost(DPP_URL/dpp, processedDpp, did=true) flow:
+    1. Process DPP values (upload files, replace with AttachmentResponse)
+    2. Serialize processed DPP to JSON string
+    3. Sign the JSON string using signDidRequest pattern
+    4. POST with did-pk and did-sign headers
     
     Args:
         dpp_data: DPP data to submit (will be processed for file uploads)
@@ -176,11 +222,15 @@ def submit_dpp(dpp_data: Dict[str, Any], eddsa_public_key: str, eddsa_private_ke
     # Process the DPP data to upload any files
     processed_dpp = process_dpp_values(dpp_data, eddsa_public_key, eddsa_private_key, dpp_url)
     
-    # Sign the processed DPP data (serialize as compact JSON)
-    dpp_json = json.dumps(processed_dpp, separators=(',', ':'))
-    signature, hash_val = sign_message(dpp_json, eddsa_private_key)
+    # Serialize to JSON string (this is the body that will be sent)
+    # GUI uses JSON.stringify(request) for both signing and body
+    body_json = json.dumps(processed_dpp)
     
-    # Submit the DPP
+    # Sign the JSON body - use encode_base64=True to match GUI signDidRequest
+    # which does: Buffer.from(json, "utf8").toString("base64")
+    signature, hash_val = sign_message(body_json, eddsa_private_key, encode_base64=True)
+    
+    # Submit the DPP with DID headers
     headers = {
         'did-pk': eddsa_public_key,
         'did-sign': signature,
@@ -191,11 +241,15 @@ def submit_dpp(dpp_data: Dict[str, Any], eddsa_public_key: str, eddsa_private_ke
     print(f"Public key: {eddsa_public_key[:20]}...")
     print(f"Signature: {signature[:40]}...")
     
+    # Send the exact same JSON string that was signed
     response = requests.post(
         f"{dpp_url}/dpp",
         headers=headers,
-        json=processed_dpp
+        data=body_json  # Use data= with the exact signed string, not json=
     )
+    
+    print(f"Response status: {response.status_code}")
+    print(f"Response text: {response.text[:500] if response.text else '(empty)'}")
     
     if not response.ok:
         error_msg = f"Failed to submit DPP: {response.status_code} {response.text}"
