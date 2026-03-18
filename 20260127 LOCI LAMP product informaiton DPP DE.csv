@@ -1,0 +1,90 @@
+Kategorie;Infomationstitel;Informationsspezifikationseinheit;Locilamp;
+Product Overview;Brand Name;Name der Produktmarke in Buchstaben;Tchibo GmbH;
+;Product Image;URL-Link zum Hauptbild des Produkts;;
+;Global Product Classification Code (GPC);Code in aufeinanderfolgenden Ziffern;;
+;Country of Sale;Name des Landes in Buchstaben ausgeschrieben;Deutschland;
+;Product Description;Code aus Buchstaben und Zahlen, der das Produkt beschreibt, getrennt durch ein Komma, z. B. „GSB 451, 18V“;Tischleuchte;
+;Product Name;Vollständiger Name des Produkts in Buchstaben;LOCI LAMP;
+;Net Weight;"Gewicht des Produkts in Kilogramm, angegeben mit einem Punkt als Dezimaltrennung und den Buchstaben „kg“ (z.B. 3.5 kg"")";ca. 0,345 kg;
+;GTIN;Global Trade Item Number des Produkts, angegeben als aufeinanderfolgende Ziffern;;
+;Color;Name der Farbe in Buchstaben ausgeschrieben;Holz natur;
+;Country of Origin;Name des Landes in Buchstaben ausgeschrieben;Deutschland;
+;Dimensions;"Abmessungen in mm, in der Reihenfolge Länge, Breite, Höhe, getrennt durch ein „x“ und mit der Einheit „mm“ am Ende (""LängexBreitexHöhe mm"")";220,5 x 220,5 x 278mm;
+;Model Name;Name des Modells in Buchstaben und Ziffern;LOCILAMP V 2.0;
+;TARIC Code;TARIC Code („Tarif Intégré de la Communauté“) in Fom von aufeinanderfolgende Ziffern;;
+;Condition of the Product;"Zustand des Produkts, beschriebenin Worten (z.B. ""Refurbished"")";Neu;
+;Net Content;"Anzahl der Produktinhalte in der Verpackung, angegeben mit einer Zahl und ""Piece"" / ""Pieces""";"1 Leuchte als Selbstmontage-Satz und enthält:
+• Lamellen und Kernbasis aus KROMA KRAFT Displaykarton (PVC-frei, FSC-zertifiziert)
+• Lampenschirm aus transparentem, säurefreiem Papier (FSC)
+• Textilkabel H03VVH2-F 2×0,75 mm² mit Lampenfassung E27, EU-Stecker (2-PIN) und Kippschalter. 
+Hinweis: Das Leuchtmittel (LED-Lampe, max. 8W, E27) ist nicht enthalten.";
+;Nominal Maximum RPM;"Geschwindigkeit, mit der der Motor unter Nennspannung und Nennlastbedingungen stabil und kontinuierlich arbeiten kann, in Umdrehungen pro Minute, angegeben mit einer Zahl und der Einheit ""r/min"" ";;
+;Maximum Drilling Diameter;Durchmesser in mm, angegeben mit einer Zahl und „mm“ ;;
+;Number of Gears;Anzahl der Gänge, angegeben mit einer Zahl;;
+;Torque;"Drehmoment, angegeben in nm mit einer Zahl und mit dem Kürzel ""nm"" am Ende";;
+;Warranty Duration;"Garantiedauer angegebn mit einer Zahl in Jahren und dem Zusatz ""year"" / ""years"" ";;
+;Safety Instructions;Angabe der Sicherheitshinweise in Fließtext und kurzen Sätzen. ;"• Vor jeder Montage und Pflege: Netzstecker ziehen.
+• Montage nur bei vom Stromnetz getrenntem Gerät durchführen.
+• Materialien sind nicht brandschutzzertifiziert: Abstand zu offenen Flammen und starken Wärmequellen halten (z. B. Gasherd, Heizlüfter).
+• Kabel nicht unter brennbaren Materialien verlegen und nicht quetschen.
+• Vor Feuchtigkeit schützen; nicht in Badezimmern, Außenbereichen oder auf feuchten Oberflächen einsetzen.
+• Von kleinen Kindern und Haustieren fernhalten. Kleinteile und Kabel können Gefahren verursachen.
+• Bei sichtbaren Schäden (Risse, Geruchsentwicklung, Funken, gequetschtes Kabel) sofort vom Netz trennen und nicht weiterverwenden.
+• Reparaturen an elektrischen Komponenten nur durch qualifizierte Fachkräfte durchführen lassen.";
+Repairability;Service and Repair Instructions;Verfügbarkeit von Service- und Reparaturanweisungen als Boolean-Wert, angegeben als „Yes“ oder „No“;"Ja, unter URL
+";
+;Availability of Spare Parts;Verfügbarkeit von Ersatzteilen als Boolean-Wert, angegeben als „Yes“ oder „No“;Ja;
+Environmental Impact;Water Consumption per Unit;Wasserverbrauch pro Einheit, angegeben mit einer Zahl,  einem Punkt als Dezimaltrennung und der Einheit „L“;;
+;Chemical Consumption per Unit;Chemikalienverbrauch pro Einheit, angegeben mit einer Zahl, einem Punkt als Dezimaltrennung und der Einheit „kg“;;
+;CO₂e Emissions per Unit;Kohlendioxidäquivalente Emissionen pro Einheit, angegeben mit einer Zahl,  einem Punkt als Dezimaltrennung und der Einheit „kg“;1,75 kg ;
+;Energy Consumption per Unit;Energieverbrauch pro Einheit, angegeben mit einer Zahl,  einem Punkt als Dezimaltrennung und der Einheit „kWh“;max. 0.008 kWh (mit LED max. 8 W);
+Compliance and Standards;CE Marking;Angabe, ob das Produkt eine CE-Kennzeichnung trägt, als Boolean-Wert („Yes“ = vorhanden, „No“ = nicht vorhanden);Ja;
+;RoHS Compliance;Angabe, ob das Produkt RoHS-konform ist, als Boolean-Wert („Yes“ = konform, „No“ = nicht konform);Ja;
+Certificates;Name of Certificate;Angabe des Zertifikatsnamens in Buchstaben;"CE Konform; TüV-Rheinland GS";
+Recyclability;Recycling Instructions;Angabe der Recycling- und Entsorgungsanweisungen in Fließtext mit nummerierten Schritten und Materialien;"• Elektrische und elektronische Produkte dürfen nicht mit dem Hausmüll entsorgt werden.
+• Bringen Sie defekte elektrische Komponenten zu Ihrer örtlichen Sammelstelle (Symbol: durchgestrichene Mülltonne).
+• Entsorgen Sie LED-Glühbirnen separat. Recyceln Sie Verpackungen gemäß den örtlichen Vorschriften.";
+;Material Composition;Beschreibung der Materialzusammensetzung des Produkts in Fließtext, aufgeschlüsselt nach Bauteilen und verwendeten Materialien;"• Lamellen und Basis aus KROMA KRAFT Displaykarton (PVC-frei, FSC-zertifiziert)
+• Lampenschirm aus transparentem, säurefreiem Papier (FSC)
+• Textilkabel aus Polyester, PVC und Kupfer
+• Fassung E 27 aus Kupfer, PET und verzinkter Stahl 
+• EU-Stecker (2-PIN) aus Kupfer und PVC
+• Kippschalter aus Kupfer und PP";
+;Substances of Concern and their Concentration and Location;Liste der relevanten Stoffe mit Angabe von Stoffnamen, Konzentrationsbereichen (in %) und deren Vorkommen im Produkt, strukturiert in nummerierter Listenform mit Fließtext;;
+Energy Use & Efficiency;Battery Type;Angabe des Batterietyps in Buchstaben und ggf. Abkürzungen, z. B. „Lithium-ion (Li-ion)“;;
+;Battery Charging Time;Ladezeit der Batterie, angegeben in Minuten mit der Einheit „min“;;
+;Battery Life;Laufzeit der Batterie, angegeben in Minuten mit der Einheit „min“;;
+;Charger Type;Angabe des Ladegerätetyps in Buchstaben, z. B. „Fast charger“;;
+;Maximum Electrical Power;Maximale elektrische Leistung, angegeben mit einer Zahl und der Einheit „W“;8 W;
+;Maximum Voltage;Maximale Spannung, angegeben mit einer Zahl und der Einheit „V“;250 V;
+;Maximum Current;Maximaler Strom, angegeben mit einer Zahl und der Einheit „A“;0.035 A / 2.5A;
+;Power Rating;Nennleistung, angegeben mit einer Zahl und der Einheit „W“;8 W;
+;DC Voltage;Gleichspannung, angegeben mit einer Zahl und der Einheit „V“;250 V;
+Component Information Drill;Component Description;Beschreibung der Komponente in Buchstaben, z. B. „Drill“;"Die Leuchte wird als Selbstmontage-Satz geliefert und enthält:
+• Lamellen und Kernbasis aus KROMA KRAFT Displaykarton (PVC-frei, FSC-zertifiziert)
+• Lampenschirm aus transparentem, säurefreiem Papier (FSC)
+• Textilkabel aus Polyester H03VVH2-F 2×0,75 mm² mit Lampenfassung E27 aus PVC, EU-Stecker (2-PIN) aus PVC und Kippschalter aus PP. 
+Hinweis: Das Leuchtmittel (LED-Lampe, max. 8W, E27) ist nicht enthalten.";
+;Component GTIN;Global Trade Item Number der Komponente, angegeben als aufeinanderfolgende Ziffern;;
+;Link to DPP of Component;URL-Link zur Digital Product Passport-Seite (DPP) der Komponente;;
+Component Information Charger;Component Description;Beschreibung der Ladekabel Komponente in Buchstaben, z. B. „Charger“;;
+;Component GTIN;Global Trade Item Number der Ladekabel Komponente, angegeben als aufeinanderfolgende Ziffern;;
+;Link to DPP of Component;URL-Link zur Digital Product Passport-Seite (DPP) der Ladekabel Komponente;;
+Component Information Battery;Component Description;Beschreibung der Batterie Komponente in Buchstaben, z. B. „Battery“;;
+;Component GTIN;Global Trade Item Number der Batterie Komponente, angegeben als aufeinanderfolgende Ziffern;;
+;Link to DPP of Component;URL-Link zur Digital Product Passport-Seite (DPP) der Batterie Komponente;;
+Economic Operator;Company name;Name des Unternehmens in Buchstaben;Tchibo GmbH;
+;GLN;Global Location Number, angegeben als aufeinanderfolgende Ziffern;;
+;EORI number;Economic Operators Registration and Identification, angegeben als Buchstaben- und Zifferncode;;
+;Address line 1 (street & house number);Straßenname und Hausnummer in Buchstaben und Ziffern des Unternhemens;Überseering 18;
+;Address line 2 (postal code & city);Postleitzahl und Stadt in Buchstaben und Ziffern des Unternhemens;22297 Hamburg;
+;contact information (email);E-Mail-Adresse des Unternehmens im Format name@domain.tld;service@tchibo.de;
+Information about the Repair;Reason for Repair;Angabe des Reparaturgrundes in kurzem Fließtext;;
+;Performed Action;Beschreibung der durchgeführten Reparaturen/ Maßnahme in Fließtext;;
+;Materials Used;Liste der verwendeten Materialien und Ersatzteile in Fließtext mit Bezeichnungen und ggf. Produktcodes;;
+;Date of Repair;"Datum und Uhrzeit der Reparatur, angegeben als ausgeschriebener Wochentag, Datum (""Monat Tag, Jahr"") und Uhrzeit  (""00:00:00 PM"") mit Komma getrennt";;
+Information about the Refurbishment;Performed Action;Beschreibung der durchgeführten Maßnahme in Fließtext, Maßnahmen abgetrennt voneinander durch Kommas;;
+;Materials Used;Liste der verwendeten Materialien und Ersatzteile in Test mit Bezeichnungen und ggf. Codes, abgetrennt voneinander durch einen neuen Absatz;;
+;Date and Time of Refurbishment;"Datum und Uhrzeit der Aufarbeitung, angegeben als ausgeschriebener Wochentag, Datum (""Monat Tag, Jahr"") und Uhrzeit  (""00:00:00 PM"") mit Komma getrennt";;
+Information on the Recycling;Performed Action;"Beschreibung der durchgeführten Schritte im Recyclingprozess in Fließtext mit Auflistung der einzelnen eingeleiteten Maßnahmen und deren Ergebnis angegeben als ""Maßnahme: Ergebnis."" Abgetrennt voneinander durch einen neuen Absatz";;
+;Date and Time of Recycling;"Datum und Uhrzeit des Recyclings, angegeben als ausgeschriebener Wochentag, Datum (""Monat Tag, Jahr"") und Uhrzeit  (""00:00:00 PM"") mit Komma getrennt";;
