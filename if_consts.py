@@ -14,6 +14,8 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+BASE_URL = 'https://proxy.dpp-staging.dnstest.dyne.org'
+
 # This does not include transfers
 SUPPORTED_ACTIONS = ['accept', 'cite', 'consume', 'modify', 'produce', 'use', 'work', 'deliverService']
 IN_PR_ACTIONS = ['accept', 'cite', 'consume', 'use', 'work']
